@@ -1,9 +1,8 @@
-# austral-beacon-ai-lab
-AI, automation, RAG and agentic workflows lab for Austral Beacon, End of the World Atlas, Antarctic Pulse and related southern/Antarctic media projects.
+
 
 # Austral Beacon AI Lab
 
-AI, automation, RAG and agentic workflow laboratory for Austral Beacon Media Network, End of the World Atlas, Antarctic Pulse, Antarctica Begins, and related southern / Antarctic media projects.
+AI, automation, RAG and agentic workflow laboratory for Austral Beacon Media Network, End of the World Atlas, End of the World Travel, Antarctic Pulse, Antarctica Begins, and related southern / Antarctic media projects.
 
 This repository is an external technical memory for strategy, architecture, prompts, workflows, RAG sources, experiments, dashboards and learning logs.
 
