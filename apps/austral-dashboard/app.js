@@ -88,12 +88,42 @@ const sources = [
 ];
 
 const evidence = [
-  ["Domains", "Track owned, candidate, and parked domains across the Austral Beacon ecosystem."],
-  ["Social Accounts", "Record handles, bios, launch status, visual identity, and platform ownership."],
-  ["GitHub Repositories", "List public and private repositories, prototype URLs, and deployment branches."],
-  ["Landing Pages", "Archive launch pages, copy direction, forms, analytics, and deployment history."],
-  ["Screenshots", "Store dated captures of dashboards, pages, maps, and social profiles."],
-  ["Wayback Machine Captures", "Preserve public proof of publication, brand evolution, and historical availability."]
+  {
+    name: "Live Properties",
+    summary: "Current public proof points for the Austral Beacon Media ecosystem.",
+    links: [
+      ["Lovable concept landing", "https://austral-beacon.lovable.app/"],
+      ["Intelligence Dashboard", "https://austral-beacon-media-dashboard.vercel.app"],
+      ["GitHub repository", "https://github.com/Alestelu1/austral-beacon-ai-lab"]
+    ]
+  },
+  {
+    name: "Domain Placeholders",
+    summary: "Candidate and ecosystem domains to track as brand evidence matures.",
+    links: [
+      ["endoftheworldatlas.com", "https://endoftheworldatlas.com"],
+      ["endoftheworld.travel", "https://endoftheworld.travel"],
+      ["findelmundo.travel", "https://findelmundo.travel"],
+      ["antarcticpulse.com", "https://antarcticpulse.com"],
+      ["antarcticabegins.com", "https://antarcticabegins.com"]
+    ]
+  },
+  {
+    name: "Social Accounts",
+    summary: "Record handles, bios, launch status, visual identity, and platform ownership."
+  },
+  {
+    name: "Landing Pages",
+    summary: "Archive launch pages, copy direction, forms, analytics, and deployment history."
+  },
+  {
+    name: "Screenshots",
+    summary: "Store dated captures of dashboards, pages, maps, and social profiles."
+  },
+  {
+    name: "Wayback Machine Captures",
+    summary: "Preserve public proof of publication, brand evolution, and historical availability."
+  }
 ];
 
 const actions = [
@@ -113,6 +143,16 @@ function renderCards(containerId, items, template) {
 
 function tagMarkup(tags) {
   return `<div class="tag-row">${tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}</div>`;
+}
+
+function evidenceLinksMarkup(links = []) {
+  if (!links.length) {
+    return "";
+  }
+
+  return `<div class="tag-row">${links
+    .map(([label, url]) => `<a class="tag" href="${url}" target="_blank" rel="noopener">${label}</a>`)
+    .join("")}</div>`;
 }
 
 function renderDashboard() {
@@ -152,10 +192,11 @@ function renderDashboard() {
     </article>
   `);
 
-  renderCards("evidence-grid", evidence, ([name, summary]) => `
+  renderCards("evidence-grid", evidence, (item) => `
     <article class="evidence-card">
-      <h3>${name}</h3>
-      <p>${summary}</p>
+      <h3>${item.name}</h3>
+      <p>${item.summary}</p>
+      ${evidenceLinksMarkup(item.links)}
     </article>
   `);
 
