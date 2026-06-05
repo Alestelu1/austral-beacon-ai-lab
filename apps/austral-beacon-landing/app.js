@@ -1,54 +1,54 @@
-const projects = [
+const networkProjects = [
   {
     name: "End of the World Atlas",
-    summary: "Cartographic reference and documentary storytelling for Tierra del Fuego, southern routes, and remote geography.",
-    tags: ["Maps", "Archive", "Geography"]
+    summary: "A serious cartographic and editorial atlas for Tierra del Fuego, Patagonia, maritime routes, and remote southern geography.",
+    tags: ["Atlas", "Maps", "Archive"]
+  },
+  {
+    name: "Antarctic Pulse",
+    summary: "Signals, explainers, and source-led context around Antarctic science, policy, climate, logistics, and routes.",
+    tags: ["Antarctica", "Signals", "Policy"]
   },
   {
     name: "End of the World Travel",
-    summary: "English-language travel intelligence for southern Patagonia, maritime routes, and Antarctic gateway context.",
+    summary: "English-language travel intelligence for Patagonia, Cape Horn approaches, expedition routes, and Antarctic gateway context.",
     tags: ["Travel", "English", "Routes"]
   },
   {
     name: "Fin del Mundo Travel",
-    summary: "Spanish-language travel and regional interpretation layer for southern places, services, and route planning.",
+    summary: "Spanish-language regional travel and interpretation layer for southern places, infrastructure, services, and route planning.",
     tags: ["Travel", "Spanish", "Regional"]
   },
   {
-    name: "Antarctic Pulse",
-    summary: "Signals and explainers around Antarctic science, policy, climate, logistics, and official-source updates.",
-    tags: ["Antarctica", "Science", "Signals"]
-  },
-  {
     name: "Antarctica Begins",
-    summary: "Narrative layer for Antarctic departure points, gateway cities, and the geography of access.",
-    tags: ["Gateway", "Identity", "Landing"]
+    summary: "A narrative gateway brand for Antarctic departure points, southern ports, and the geography of access.",
+    tags: ["Gateway", "Landing", "Identity"]
   },
   {
     name: "Austral Beacon AI Lab",
-    summary: "Technical prototype area for dashboards, evidence systems, source monitoring, and future AI/RAG workflows.",
+    summary: "The technical prototype area for dashboards, evidence systems, official-source monitoring, and future AI/RAG workflows.",
     tags: ["AI Lab", "RAG", "Prototype"]
   }
 ];
 
-const focusAreas = [
-  ["Puerto Williams", "Southern city and Antarctic gateway context for logistics, culture, routes, and field interpretation."],
-  ["Cape Horn", "Maritime symbol, route marker, weather frontier, and documentary geography anchor."],
-  ["Patagonia", "Regional frame for maps, travel intelligence, infrastructure, conservation, and long-form storytelling."],
-  ["Antarctic gateways", "Ports, air links, research routes, cruise corridors, and public-source operational evidence."],
-  ["Maritime routes", "Channels, straits, crossings, expedition paths, and historical route intelligence."],
-  ["Maps and archives", "Cartographic references, screenshots, source notes, Wayback captures, and public evidence trails."]
+const southernRoutes = [
+  ["Strait of Magellan", "A historical and operational maritime corridor connecting Atlantic, Pacific, ports, weather, and regional infrastructure."],
+  ["Beagle Channel", "A southern waterway for local navigation, expedition departures, border geography, and documentary route context."],
+  ["Puerto Williams", "A subantarctic city and gateway node for culture, logistics, research, and Antarctic-facing narratives."],
+  ["Cape Horn", "A symbolic and physical maritime threshold shaped by weather, navigation, memory, and conservation."],
+  ["Diego Ramirez", "Remote islands anchoring biodiversity, ocean exposure, sovereignty, and the far southern map."],
+  ["Antarctic gateways", "Ports, air links, cruise corridors, research routes, and evidence trails connecting Patagonia to Antarctica."]
 ];
 
 function tagMarkup(tags) {
   return `<div class="tag-row">${tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}</div>`;
 }
 
-function renderProjects() {
-  const grid = document.getElementById("project-grid");
-  grid.innerHTML = projects
+function renderNetwork() {
+  const grid = document.getElementById("network-grid");
+  grid.innerHTML = networkProjects
     .map((project) => `
-      <article class="card">
+      <article class="network-card">
         <h3>${project.name}</h3>
         <p>${project.summary}</p>
         ${tagMarkup(project.tags)}
@@ -57,11 +57,11 @@ function renderProjects() {
     .join("");
 }
 
-function renderFocusAreas() {
-  const grid = document.getElementById("focus-grid");
-  grid.innerHTML = focusAreas
+function renderRoutes() {
+  const grid = document.getElementById("routes-grid");
+  grid.innerHTML = southernRoutes
     .map(([name, summary]) => `
-      <article class="focus-card">
+      <article class="route-card">
         <h3>${name}</h3>
         <p>${summary}</p>
       </article>
@@ -88,10 +88,10 @@ function setupNavigation() {
 
 function setYear() {
   const year = document.getElementById("year");
-  year.textContent = `${new Date().getFullYear()} / Static prototype`;
+  year.textContent = `${new Date().getFullYear()} / Landing v2`;
 }
 
-renderProjects();
-renderFocusAreas();
+renderNetwork();
+renderRoutes();
 setupNavigation();
 setYear();
