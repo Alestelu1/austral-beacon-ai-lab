@@ -6,15 +6,15 @@
     <title>Austral Beacon Media</title>
     <meta
       name="description"
-      content="Austral Beacon Media is a documentary and cartographic media network focused on southern geography, Patagonia, maritime routes, Antarctic gateways, maps, editorial intelligence, and future AI/RAG systems."
+      content="Austral Beacon Media is a premium documentary and cartographic media network for Patagonia, Cape Horn, Puerto Williams, Antarctic routes, maritime intelligence, and future AI/RAG systems."
     >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="site-header" id="top">
+    <header class="hero-shell" id="home">
       <nav class="topbar" aria-label="Primary navigation">
-        <a class="brand" href="#top" aria-label="Austral Beacon Media home">
-          <span class="beacon-mark" aria-hidden="true"></span>
+        <a class="brand" href="#home" aria-label="Austral Beacon Media home">
+          <span class="brand-compass" aria-hidden="true"></span>
           <span>Austral Beacon Media</span>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -24,127 +24,155 @@
           <span></span>
         </button>
         <div class="site-nav" id="site-nav">
+          <a href="#home">Home</a>
           <a href="#about">About</a>
-          <a href="#projects">Projects</a>
+          <a href="#atlas">Atlas</a>
+          <a href="#routes">Routes</a>
+          <a href="#lab">AI Lab</a>
           <a href="#dashboard">Dashboard</a>
-          <a href="#geography">Geography</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
 
-      <section class="hero">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-atmosphere" aria-hidden="true">
+          <div class="map-grid"></div>
+          <div class="fog fog-one"></div>
+          <div class="fog fog-two"></div>
+          <div class="beacon-beam beam-wide"></div>
+          <div class="beacon-beam beam-narrow"></div>
+          <div class="lighthouse-scene">
+            <span class="lighthouse-light"></span>
+            <span class="lighthouse-roof"></span>
+            <span class="lighthouse-glass"></span>
+            <span class="lighthouse-tower"></span>
+            <span class="lighthouse-rock"></span>
+          </div>
+          <div class="sea-plate"></div>
+        </div>
+
         <div class="hero-copy">
-          <p class="eyebrow">Documentary cartography / Southern intelligence</p>
-          <h1>A media beacon for Patagonia, maritime routes, and Antarctic gateways.</h1>
-          <p>
-            Austral Beacon Media maps southern geography through documentary publishing,
-            cartographic storytelling, editorial intelligence, and future AI/RAG systems.
+          <p class="eyebrow">Lighthouse &amp; Maritime Intelligence — 54°–56° S</p>
+          <h1 id="hero-title">Austral Beacon Media</h1>
+          <p class="hero-line">The southern lighthouse network.</p>
+          <p class="hero-subtitle">
+            Documentary maps, maritime routes and intelligence systems from Patagonia to Antarctica.
           </p>
-          <div class="hero-actions" aria-label="Primary links">
-            <a class="button primary" href="https://austral-beacon-media-dashboard.vercel.app" target="_blank" rel="noopener">Open dashboard</a>
-            <a class="button" href="#projects">Explore projects</a>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#atlas">Enter the Network</a>
+            <a class="button" href="https://austral-beacon-media-dashboard.vercel.app" target="_blank" rel="noopener">View Intelligence Dashboard</a>
           </div>
         </div>
-        <div class="beacon-scene" aria-label="Symbolic lighthouse beacon over southern waters">
-          <div class="beam beam-one" aria-hidden="true"></div>
-          <div class="beam beam-two" aria-hidden="true"></div>
-          <div class="lighthouse" aria-hidden="true">
-            <span class="lantern"></span>
-            <span class="tower"></span>
-            <span class="base"></span>
-          </div>
-          <div class="sea-lines" aria-hidden="true"></div>
-        </div>
+
+        <aside class="hero-register" aria-label="Geographic register">
+          <span>Patagonia</span>
+          <span>Puerto Williams</span>
+          <span>Cape Horn</span>
+          <span>Antarctic routes</span>
+        </aside>
       </section>
     </header>
 
     <main>
-      <section class="section about-grid" id="about" aria-labelledby="about-title">
+      <section class="section about-section" id="about" aria-labelledby="about-title">
         <div>
           <p class="eyebrow">About Austral Beacon Media</p>
-          <h2 id="about-title">A serious southern media network for places that deserve context.</h2>
+          <h2 id="about-title">A premium documentary atlas for the far south.</h2>
         </div>
         <div class="copy-block">
           <p>
-            Austral Beacon Media focuses on southern geography, Patagonia, Puerto Williams,
-            Cape Horn, maritime routes, Antarctic gateways, maps, and documentary editorial systems.
+            Austral Beacon Media is a documentary and cartographic media network focused on southern geography,
+            Patagonia, maritime routes, Puerto Williams, Cape Horn, Antarctic gateways, and serious editorial intelligence.
           </p>
           <p>
-            Its work connects travel intelligence, public-source research, place-based publishing,
-            and the technical prototypes maintained by Austral Beacon AI Lab.
+            It treats the far south as a living map: a place of routes, weather, ports, archives, scientific signals,
+            cultural memory, and public-source evidence.
           </p>
         </div>
       </section>
 
-      <section class="section" id="projects" aria-labelledby="projects-title">
+      <section class="section" id="atlas" aria-labelledby="network-title">
         <div class="section-heading">
-          <p class="eyebrow">Projects</p>
-          <h2 id="projects-title">A connected ecosystem of southern geography brands.</h2>
+          <p class="eyebrow">The Network</p>
+          <h2 id="network-title">Connected publications and prototypes for southern geography.</h2>
         </div>
-        <div class="project-grid" id="project-grid"></div>
+        <div class="network-grid" id="network-grid"></div>
+      </section>
+
+      <section class="section routes-section" id="routes" aria-labelledby="routes-title">
+        <div class="section-heading">
+          <p class="eyebrow">Southern Routes</p>
+          <h2 id="routes-title">A navigational field from Magallanes to Antarctic gateways.</h2>
+        </div>
+        <div class="route-map" aria-label="Abstract route map">
+          <div class="route-line route-one" aria-hidden="true"></div>
+          <div class="route-line route-two" aria-hidden="true"></div>
+          <div class="route-line route-three" aria-hidden="true"></div>
+          <div class="route-pin pin-one" aria-hidden="true"></div>
+          <div class="route-pin pin-two" aria-hidden="true"></div>
+          <div class="route-pin pin-three" aria-hidden="true"></div>
+        </div>
+        <div class="routes-grid" id="routes-grid"></div>
+      </section>
+
+      <section class="section lab-section" id="lab" aria-labelledby="lab-title">
+        <div>
+          <p class="eyebrow">Austral Beacon AI Lab</p>
+          <h2 id="lab-title">Technical prototypes for evidence, retrieval, and editorial operations.</h2>
+        </div>
+        <div class="copy-block">
+          <p>
+            Austral Beacon AI Lab is the technical area behind dashboards, structured source lists, development evidence,
+            and future AI/RAG workflows for the broader media network.
+          </p>
+          <p>
+            The lab keeps the work grounded: static first, public evidence first, official sources next, retrieval systems later.
+          </p>
+        </div>
       </section>
 
       <section class="section dashboard-panel" id="dashboard" aria-labelledby="dashboard-title">
-        <div class="dashboard-copy">
+        <div>
           <p class="eyebrow">Intelligence Dashboard</p>
-          <h2 id="dashboard-title">The working surface for evidence, routes, content, and future retrieval systems.</h2>
+          <h2 id="dashboard-title">A working surface for routes, evidence, source queues, and next actions.</h2>
           <p>
-            The Austral Beacon Media Intelligence Dashboard is the first public prototype from
-            Austral Beacon AI Lab. It gathers ecosystem projects, source placeholders, brand evidence,
-            and next actions in one static browser-openable workspace.
+            The dashboard is the first public prototype connecting project status, geography monitoring, brand evidence,
+            RAG source placeholders, and future development workflows.
           </p>
         </div>
-        <div class="link-stack" aria-label="Ecosystem links">
-          <a href="https://austral-beacon-media-dashboard.vercel.app" target="_blank" rel="noopener">
-            <span>Dashboard</span>
-            <strong>austral-beacon-media-dashboard.vercel.app</strong>
-          </a>
-          <a href="https://github.com/Alestelu1/austral-beacon-ai-lab" target="_blank" rel="noopener">
-            <span>GitHub</span>
-            <strong>Alestelu1/austral-beacon-ai-lab</strong>
-          </a>
-          <a href="https://austral-beacon.lovable.app/" target="_blank" rel="noopener">
-            <span>Concept landing</span>
-            <strong>austral-beacon.lovable.app</strong>
-          </a>
-        </div>
+        <a class="feature-link" href="https://austral-beacon-media-dashboard.vercel.app" target="_blank" rel="noopener">
+          <span>Open production dashboard</span>
+          <strong>austral-beacon-media-dashboard.vercel.app</strong>
+        </a>
       </section>
 
-      <section class="section" id="geography" aria-labelledby="geography-title">
-        <div class="section-heading">
-          <p class="eyebrow">Southern Geography Focus</p>
-          <h2 id="geography-title">Field of attention from Patagonia to Antarctic routes.</h2>
-        </div>
-        <div class="focus-grid" id="focus-grid"></div>
-      </section>
-
-      <section class="section evidence-grid-section" id="evidence" aria-labelledby="evidence-title">
+      <section class="section evidence-section" id="evidence" aria-labelledby="evidence-title">
         <div>
-          <p class="eyebrow">Evidence and Development</p>
-          <h2 id="evidence-title">Built as public proof, not campaign gloss.</h2>
+          <p class="eyebrow">Evidence / Development</p>
+          <h2 id="evidence-title">A public build trail for a serious cartographic media platform.</h2>
         </div>
         <div class="copy-block">
           <p>
-            This prototype establishes a visible foundation for domains, landing pages, GitHub work,
-            dashboard evidence, screenshots, Wayback captures, and official source links.
+            Development evidence includes the GitHub repository, dashboard deployment, Lovable concept reference,
+            domain tracking, screenshots, future Wayback captures, and official source links.
           </p>
-          <p>
-            Later iterations can move static data into JSON, connect official sources, and add AI/RAG
-            workflows without changing the brand's documentary center of gravity.
-          </p>
+          <a class="feature-link compact" href="https://github.com/Alestelu1/austral-beacon-ai-lab" target="_blank" rel="noopener">
+            <span>View GitHub repository</span>
+            <strong>github.com/Alestelu1/austral-beacon-ai-lab</strong>
+          </a>
         </div>
       </section>
 
       <section class="section contact-section" id="contact" aria-labelledby="contact-title">
         <div class="section-heading">
-          <p class="eyebrow">Contact / Future Newsletter</p>
-          <h2 id="contact-title">Dispatches from the southern edge are being shaped.</h2>
+          <p class="eyebrow">Contact / Future dispatch</p>
+          <h2 id="contact-title">A southern dispatch list is being shaped.</h2>
           <p>
-            Future newsletters will track project launches, maps, route notes, official-source updates,
-            and development milestones across the Austral Beacon Media ecosystem.
+            Future dispatches will follow maps, route notes, source updates, project launches, development evidence,
+            and Antarctic gateway intelligence across the Austral Beacon Media network.
           </p>
         </div>
-        <form class="newsletter-form" aria-label="Future newsletter signup placeholder">
+        <form class="dispatch-form" aria-label="Future dispatch placeholder">
           <label for="email">Email</label>
           <div>
             <input id="email" name="email" type="email" placeholder="name@example.com" disabled>
@@ -157,7 +185,7 @@
 
     <footer class="site-footer">
       <span>Austral Beacon Media</span>
-      <span id="year">Static prototype</span>
+      <span id="year">Landing v2</span>
     </footer>
 
     <script src="app.js"></script>
