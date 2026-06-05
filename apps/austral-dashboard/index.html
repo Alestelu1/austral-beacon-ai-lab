@@ -1,1 +1,179 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Austral Dashboard</title></head><body><h1>Austral Beacon Dashboard</h1><p>Prototype v0.1</p></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Austral Beacon AI Lab Dashboard</title>
+    <meta
+      name="description"
+      content="Static prototype dashboard for the Austral Beacon ecosystem, southern geography monitoring, content queues, RAG sources, and publishing actions."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="topbar" aria-label="Primary navigation">
+        <a class="brand-mark" href="#overview" aria-label="Austral Beacon dashboard home">
+          <span class="brand-symbol" aria-hidden="true"></span>
+          <span>Austral Beacon AI Lab</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="site-nav" id="site-nav">
+          <a href="#projects">Projects</a>
+          <a href="#geography">Geography</a>
+          <a href="#queue">Queue</a>
+          <a href="#rag">RAG</a>
+          <a href="#actions">Actions</a>
+        </div>
+      </nav>
+
+      <section class="hero" id="overview">
+        <div class="hero-copy">
+          <p class="eyebrow">Public Prototype / Southern Intelligence Layer</p>
+          <h1>Austral Beacon AI Lab Dashboard</h1>
+          <p>
+            A first public prototype for connecting Antarctic Pulse, End of the World Atlas,
+            End of the World Travel, Fin del Mundo Travel, Antarctica Begins, and future
+            AI/RAG workflows into one evidence-led ecosystem.
+          </p>
+        </div>
+        <aside class="signal-panel" aria-label="Prototype status">
+          <div>
+            <span class="metric-label">Prototype</span>
+            <strong>Static v0.1</strong>
+          </div>
+          <div>
+            <span class="metric-label">Operating Area</span>
+            <strong>Subantarctic / Antarctic Gateways</strong>
+          </div>
+          <div>
+            <span class="metric-label">Evidence Mode</span>
+            <strong>Sources First</strong>
+          </div>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <section class="section overview-grid" aria-labelledby="overview-title">
+        <div>
+          <p class="eyebrow">Ecosystem Overview</p>
+          <h2 id="overview-title">A cartographic workspace for southern brands, research, and AI operations.</h2>
+        </div>
+        <div class="overview-copy">
+          <p>
+            Austral Beacon is framed as a serious maritime and documentary layer for
+            southern geography. The dashboard gathers project status, place intelligence,
+            content production, trusted sources, and brand evidence in one browser-openable file set.
+          </p>
+          <div class="stat-row" aria-label="Dashboard summary metrics">
+            <div>
+              <strong>6</strong>
+              <span>ecosystem projects</span>
+            </div>
+            <div>
+              <strong>8</strong>
+              <span>geography monitors</span>
+            </div>
+            <div>
+              <strong>9</strong>
+              <span>trusted source groups</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">Ecosystem Project Register</h2>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+      </section>
+
+      <section class="section split-layout" id="geography" aria-labelledby="geography-title">
+        <div class="section-heading">
+          <p class="eyebrow">Southern Geography Monitor</p>
+          <h2 id="geography-title">Watchlist for places, routes, channels, and official signals.</h2>
+          <p>
+            These cards are placeholders for future data feeds, map layers, source snapshots,
+            and route intelligence used across content and RAG workflows.
+          </p>
+        </div>
+        <div class="map-board" aria-label="Stylized southern geography board">
+          <div class="chart-lines" aria-hidden="true"></div>
+          <div class="coordinate-card">
+            <span>Focus Transect</span>
+            <strong>Magallanes / Cape Horn / Antarctic Routes</strong>
+            <small>Documentary cartography, operational context, public-source evidence.</small>
+          </div>
+        </div>
+        <div class="monitor-grid" id="monitor-grid"></div>
+      </section>
+
+      <section class="section" id="queue" aria-labelledby="queue-title">
+        <div class="section-heading row-heading">
+          <div>
+            <p class="eyebrow">Content Queue</p>
+            <h2 id="queue-title">Editorial and publishing pipeline.</h2>
+          </div>
+          <div class="filter-group" aria-label="Content type filters">
+            <button class="filter-button active" type="button" data-filter="all">All</button>
+            <button class="filter-button" type="button" data-filter="article">Articles</button>
+            <button class="filter-button" type="button" data-filter="social">Social</button>
+            <button class="filter-button" type="button" data-filter="reel">Reels</button>
+            <button class="filter-button" type="button" data-filter="map">Maps</button>
+            <button class="filter-button" type="button" data-filter="newsletter">Newsletters</button>
+          </div>
+        </div>
+        <div class="queue-grid" id="queue-grid"></div>
+      </section>
+
+      <section class="section sources-section" id="rag" aria-labelledby="rag-title">
+        <div class="section-heading">
+          <p class="eyebrow">RAG Sources</p>
+          <h2 id="rag-title">Trusted source placeholders for future retrieval workflows.</h2>
+        </div>
+        <div class="source-grid" id="source-grid"></div>
+      </section>
+
+      <section class="section evidence-section" id="evidence" aria-labelledby="evidence-title">
+        <div class="section-heading">
+          <p class="eyebrow">Brand Evidence</p>
+          <h2 id="evidence-title">Proof points to collect before public expansion.</h2>
+        </div>
+        <div class="evidence-grid" id="evidence-grid"></div>
+      </section>
+
+      <section class="section actions-section" id="actions" aria-labelledby="actions-title">
+        <div class="section-heading">
+          <p class="eyebrow">Next Actions</p>
+          <h2 id="actions-title">Prototype publishing checklist.</h2>
+        </div>
+        <div class="action-panel">
+          <div class="checklist" id="checklist"></div>
+          <div class="progress-card">
+            <span class="metric-label">Completion</span>
+            <strong id="progress-value">0%</strong>
+            <div class="progress-track" aria-hidden="true">
+              <span id="progress-bar"></span>
+            </div>
+            <p id="progress-note">Select completed actions as the prototype moves toward publication.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Austral Beacon AI Lab Dashboard</span>
+      <span id="timestamp">Static prototype</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
