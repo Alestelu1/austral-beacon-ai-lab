@@ -1,16 +1,16 @@
-# Austral Beacon Media Landing Prototype
+# Austral Beacon Media Landing v2
 
 Static landing page prototype for Austral Beacon Media.
 
-Austral Beacon Media is a documentary and cartographic media network focused on southern geography, Patagonia, maritime routes, Puerto Williams, Cape Horn, Antarctic gateways, maps, editorial intelligence, and future AI/RAG systems.
+Austral Beacon Media is a premium documentary and cartographic media network focused on southern geography, Patagonia, maritime routes, Puerto Williams, Cape Horn, Antarctic gateways, maps, editorial intelligence, and future AI/RAG systems.
 
-This landing page is an original plain HTML/CSS/JS implementation inspired by the existing concept direction, without copying Lovable code or assets.
+Landing v2 is inspired by the existing Lovable concept direction: cinematic dark maritime atmosphere, lighthouse/beacon symbolism, serif editorial typography, amber accents, deep navy tones, and a documentary/cartographic mood. The implementation uses original plain HTML, CSS, and JavaScript only. It does not copy Lovable code, proprietary assets, or external dependencies.
 
 ## Files
 
-- `index.html` contains the landing page structure and sections.
-- `styles.css` contains the responsive southern maritime visual system and lighthouse/beacon scene.
-- `app.js` renders project and geography cards and handles mobile navigation.
+- `index.html` contains the landing page structure and v2 sections.
+- `styles.css` contains the responsive maritime visual system, CSS lighthouse, beacon beams, fog, map-grid, and route-map effects.
+- `app.js` renders Network and Southern Routes cards and handles mobile navigation.
 - `README.md` documents the prototype.
 
 ## Links
@@ -29,8 +29,9 @@ No build step, package manager, framework, or external dependency is required.
 
 - Hero
 - About Austral Beacon Media
-- Projects
+- The Network
+- Southern Routes
+- Austral Beacon AI Lab
 - Intelligence Dashboard
-- Southern Geography Focus
-- Evidence and Development
-- Contact / Future newsletter
+- Evidence / Development
+- Contact / Future dispatch
