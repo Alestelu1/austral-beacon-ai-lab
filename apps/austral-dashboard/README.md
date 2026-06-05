@@ -23,6 +23,21 @@ The current production prototype is deployed at:
 
 https://austral-beacon-media-dashboard.vercel.app
 
+## Live Ecosystem Links
+
+- Production Dashboard: https://austral-beacon-media-dashboard.vercel.app
+- Lovable Concept Landing: https://austral-beacon.lovable.app/
+- GitHub Repository: https://github.com/Alestelu1/austral-beacon-ai-lab
+
+## Tracked Domain References
+
+- australbeacon.com
+- endoftheworldatlas.com
+- endoftheworld.travel
+- findelmundo.travel
+- antarcticpulse.com
+- antarcticabegins.com
+
 ## Prototype Scope
 
 The dashboard currently includes:
@@ -37,8 +52,8 @@ The dashboard currently includes:
 
 ## Next Iterations
 
-- Add real project URLs.
-- Add Lovable landing evidence.
+- Add real project URLs for each ecosystem property.
+- Expand Lovable landing evidence with screenshots and source notes.
 - Add screenshots.
 - Add Wayback captures.
 - Connect official source links.
