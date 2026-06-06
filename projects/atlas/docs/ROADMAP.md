@@ -13,7 +13,7 @@ Knowledge Base Foundation
 
 ## Phase 1.5
 
-- [ ] Upload Atlas Knowledge Base to GitHub
+- [x] Upload Atlas Knowledge Base to GitHub
 - [ ] Backup Atlas Knowledge Base to Google Drive
 - [ ] Create Atlas Knowledge Base page in Notion
 - [ ] Add COURSES_AND_MVP_ROADMAP.md
