@@ -11,6 +11,10 @@ Knowledge Base Foundation
 - [x] cabo-de-hornos.mdx
 - [x] canal-beagle.mdx
 - [x] islas-diego-ramirez.mdx
+- [x] Pasaje Drake
+- [x] Península Antártica
+- [x] Punta Arenas
+- [x] Estrecho de Magallanes
 
 ## Phase 1.5
 
