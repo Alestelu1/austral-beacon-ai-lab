@@ -1,0 +1,423 @@
+JSON
+[
+  {
+    "id": "puerto_williams",
+    "title": "Puerto Williams",
+    "slug": "puerto-williams",
+    "type": "gateway",
+    "region": "Patagonia Chilena",
+    "country_or_territory": "Chile",
+    "coordinates_approx": {
+      "lat": -54.9333,
+      "lng": -67.6167,
+      "approximate": true
+    },
+    "parent_entity": "isla_navarino",
+    "related_entities": ["canal_beagle", "cabo_de_hornos", "punta_arenas"],
+    "seo_focus": "logística antártica, ciudad más austral, gateway Cabo de Hornos",
+    "rag_summary": "Puerto Williams es la capital de la Provincia de la Antártica Chilena y principal nodo logístico para la navegación en el Canal Beagle y rutas hacia la Antártica.",
+    "editorial_angle": "logístico y técnico",
+    "priority": 1,
+    "content_status": "draft",
+    "recommended_project_use": ["atlas", "begins", "pulse"]
+  },
+  {
+    "id": "cabo_de_hornos",
+    "title": "Cabo de Hornos",
+    "slug": "cabo-de-hornos",
+    "type": "hito",
+    "region": "Patagonia Chilena",
+    "country_or_territory": "Chile",
+    "coordinates_approx": {
+      "lat": -55.9781,
+      "lng": -67.2736,
+      "approximate": true
+    },
+    "parent_entity": "pn_cabo_de_hornos",
+    "related_entities": ["puerto_williams", "islas_diego_ramirez", "pasaje_drake", "canal_beagle"],
+    "seo_focus": "navegación marítima, historia marítima, hito extremo sur",
+    "rag_summary": "Punto más austral del archipiélago de Tierra del Fuego, marca la confluencia entre el Océano Pacífico y el Océano Atlántico y es un hito crítico en rutas marítimas.",
+    "editorial_angle": "histórico y geográfico",
+    "priority": 1,
+    "content_status": "draft",
+    "recommended_project_use": ["atlas", "travel"]
+  },
+  {
+    "id": "canal_beagle",
+    "title": "Canal Beagle",
+    "slug": "canal-beagle",
+    "type": "ruta",
+    "region": "Patagonia Austral",
+    "country_or_territory": "Chile/Argentina",
+    "coordinates_approx": {
+      "lat": -54.8700,
+      "lng": -68.3000,
+      "approximate": true
+    },
+    "parent_entity": "patagonia_austral",
+    "related_entities": ["puerto_williams", "isla_navarino", "cabo_de_hornos", "punta_arenas"],
+    "seo_focus": "navegación interoceánica, pasaje austral",
+    "rag_summary": "Estrecho navegable que separa Tierra del Fuego de islas australes, sirviendo como vía de tránsito esencial para logística científica y comercial en el extremo sur.",
+    "editorial_angle": "cartográfico y técnico",
+    "priority": 1,
+    "content_status": "draft",
+    "recommended_project_use": ["atlas", "begins", "pulse"]
+  },
+  {
+    "id": "islas_diego_ramirez",
+    "title": "Islas Diego Ramírez",
+    "slug": "islas-diego-ramirez",
+    "type": "lugar",
+    "region": "Patagonia Chilena",
+    "country_or_territory": "Chile",
+    "coordinates_approx": {
+      "lat": -56.5000,
+      "lng": -68.7333,
+      "approximate": true
+    },
+    "parent_entity": "cabo_de_hornos",
+    "related_entities": ["cabo_de_hornos", "pasaje_drake"],
+    "seo_focus": "observación meteorológica, punto más austral de Chile",
+    "rag_summary": "Grupo de islas situadas al suroeste del Cabo de Hornos, fundamentales para el monitoreo meteorológico y científico en la zona de transición oceánica.",
+    "editorial_angle": "científico y técnico",
+    "priority": 2,
+    "content_status": "draft",
+    "recommended_project_use": ["atlas", "pulse"]
+  },
+  {
+    "id": "punta_arenas",
+    "title": "Punta Arenas",
+    "slug": "punta-arenas",
+    "type": "gateway",
+    "region": "Patagonia Chilena",
+    "country_or_territory": "Chile",
+    "coordinates_approx": {
+      "lat": -53.1636,
+      "lng": -70.9171,
+      "approximate": true
+    },
+    "parent_entity": "estrecho_magallanes",
+    "related_entities": ["puerto_williams", "canal_beagle", "peninsula_antartica"],
+    "seo_focus": "gateway antártico, capital regional, servicios logísticos",
+    "rag_summary": "Principal centro urbano y puerta de entrada estratégica para operaciones logísticas y científicas en la Patagonia austral y el continente antártico.",
+    "editorial_angle": "logístico y comercial",
+    "priority": 1,
+    "content_status": "draft",
+    "recommended_project_use": ["atlas", "begins"]
+  },
+  {
+    "id": "estrecho_magallanes",
+    "title": "Estrecho de Magallanes",
+    "slug": "estrecho-magallanes",
+    "type": "ruta",
+    "region": "Patagonia Chilena",
+    "country_or_territory": "Chile",
+    "coordinates_approx": {
+      "lat": -53.3000,
+      "lng": -70.8000,
+      "approximate": true
+    },
+    "parent_entity": "patagonia_chilena",
+    "related_entities": ["punta_arenas", "cabo_espiritu_santo", "punta_dungeness"],
+    "seo_focus": "ruta marítima, comercio interoceánico",
+    "rag_summary": "Pasaje natural navegable de vital importancia estratégica que conecta los océanos Atlántico y Pacífico a través del territorio chileno.",
+    "editorial_angle": "histórico y cartográfico",
+    "priority": 1,
+    "content_status": "draft",
+    "recommended_project_use": ["atlas"]
+  },
+  {
+    "id": "ruta_vicuna_yendegaia",
+    "title": "Ruta Vicuña–Yendegaia",
+    "slug": "ruta-vicuna-yendegaia",
+    "type": "ruta",
+    "region": "Tierra del Fuego",
+    "country_or_territory": "Chile",
+    "coordinates_approx": {
+      "lat": -54.7000,
+      "lng": -68.3000,
+      "approximate": true
+    },
+    "parent_entity": "isla_navarino",
+    "related_entities": ["isla_navarino", "pn_yendegaia"],
+    "seo_focus": "infraestructura austral, conectividad carretera",
+    "rag_summary": "Proyecto de conectividad vial terrestre que busca unir el norte de la Isla Tierra del Fuego con la bahía Yendegaia, facilitando el acceso a zonas extremas.",
+    "editorial_angle": "infraestructura y aventura",
+    "priority": 2,
+    "content_status": "draft",
+    "recommended_project_use": ["atlas", "travel"]
+  },
+  {
+    "id": "isla_navarino",
+    "title": "Isla Navarino",
+    "slug": "isla-navarino",
+    "type": "lugar",
+    "region": "Patagonia Austral",
+    "country_or_territory": "Chile",
+    "coordinates_approx": {
+      "lat": -55.0000,
+      "lng": -67.7000,
+      "approximate": true
+    },
+    "parent_entity": "provincia_antartica",
+    "related_entities": ["puerto_williams", "canal_beagle", "ruta_vicuna_yendegaia"],
+    "seo_focus": "geografía insular, biodiversidad, turismo extremo",
+    "rag_summary": "Isla de gran valor ecológico y geográfico ubicada al sur del Canal Beagle, hogar de Puerto Williams y diversas reservas naturales.",
+    "editorial_angle": "geográfico y natural",
+    "priority": 2,
+    "content_status": "draft",
+    "recommended_project_use": ["atlas", "travel"]
+  },
+  {
+    "id": "bahia_fildes",
+    "title": "Bahía Fildes",
+    "slug": "bahia-fildes",
+    "type": "gateway",
+    "region": "Antártica",
+    "country_or_territory": "Antártida (Reclamación Chilena)",
+    "coordinates_approx": {
+      "lat": -62.1933,
+      "lng": -58.8953,
+      "approximate": true
+    },
+    "parent_entity": "peninsula_antartica",
+    "related_entities": ["villa_las_estrellas", "base_frei", "base_escudero"],
+    "seo_focus": "logística aérea antártica, bases científicas",
+    "rag_summary": "Nodo logístico aeroportuario más importante de la Península Antártica, donde se concentran diversas bases internacionales y servicios de apoyo.",
+    "editorial_angle": "logístico y técnico",
+    "priority": 2,
+    "content_status": "draft",
+    "recommended_project_use": ["atlas", "begins", "pulse"]
+  },
+  {
+    "id": "villa_las_estrellas",
+    "title": "Villa Las Estrellas",
+    "slug": "villa-las-estrellas",
+    "type": "base",
+    "region": "Antártica",
+    "country_or_territory": "Antártida (Reclamación Chilena)",
+    "coordinates_approx": {
+      "lat": -62.2033,
+      "lng": -58.9633,
+      "approximate": true
+    },
+    "parent_entity": "base_frei",
+    "related_entities": ["base_frei", "base_escudero", "bahia_fildes"],
+    "seo_focus": "vida en Antártica, asentamiento civil, familia y ciencia",
+    "rag_summary": "Uno de los pocos asentamientos civiles permanentes en la Antártica, integrado funcionalmente con la Base Presidente Frei y servicios de apoyo familiar.",
+    "editorial_angle": "social y documental",
+    "priority": 1,
+    "content_status": "draft",
+    "recommended_project_use": ["atlas", "travel", "pulse"]
+  },
+  {
+    "id": "base_frei",
+    "title": "Base Presidente Frei",
+    "slug": "base-frei",
+    "type": "base",
+    "region": "Antártica",
+    "country_or_territory": "Antártida (Reclamación Chilena)",
+    "coordinates_approx": {
+      "lat": -62.2033,
+      "lng": -58.9633,
+      "approximate": true
+    },
+    "parent_entity": "bahia_fildes",
+    "related_entities": ["villa_las_estrellas", "base_escudero", "bahia_fildes"],
+    "seo_focus": "operaciones antárticas, base aérea, logística",
+    "rag_summary": "Base antártica principal de Chile operada por la Fuerza Aérea, fundamental para la conectividad y soporte logístico en la Isla Rey Jorge.",
+    "editorial_angle": "técnico y logístico",
+    "priority": 2,
+    "content_status": "draft",
+    "recommended_project_use": ["atlas", "begins"]
+  },
+  {
+    "id": "base_escudero",
+    "title": "Base Profesor Escudero",
+    "slug": "base-escudero",
+    "type": "base",
+    "region": "Antártica",
+    "country_or_territory": "Antártida (Reclamación Chilena)",
+    "coordinates_approx": {
+      "lat": -62.2017,
+      "lng": -58.9644,
+      "approximate": true
+    },
+    "parent_entity": "bahia_fildes",
+    "related_entities": ["base_frei", "villa_las_estrellas", "bahia_fildes"],
+    "seo_focus": "investigación científica antártica",
+    "rag_summary": "Centro científico operado por el INACH dedicado a la investigación polar, monitoreo climático y estudios de biodiversidad antártica.",
+    "editorial_angle": "científico",
+    "priority": 3,
+    "content_status": "draft",
+    "recommended_project_use": ["atlas", "pulse"]
+  },
+  {
+    "id": "punta_dungeness",
+    "title": "Punta Dungeness",
+    "slug": "punta-dungeness",
+    "type": "hito",
+    "region": "Patagonia Chilena",
+    "country_or_territory": "Chile",
+    "coordinates_approx": {
+      "lat": -52.3333,
+      "lng": -68.4167,
+      "approximate": true
+    },
+    "parent_entity": "estrecho_magallanes",
+    "related_entities": ["cabo_espiritu_santo", "estrecho_magallanes"],
+    "seo_focus": "navegación, faros, frontera marítima",
+    "rag_summary": "Extremo oriental del Estrecho de Magallanes, punto estratégico marcado por un faro histórico que guía la navegación hacia la boca del estrecho.",
+    "editorial_angle": "cartográfico y técnico",
+    "priority": 3,
+    "content_status": "draft",
+    "recommended_project_use": ["atlas"]
+  },
+  {
+    "id": "cabo_espiritu_santo",
+    "title": "Cabo Espíritu Santo",
+    "slug": "cabo-espiritu-santo",
+    "type": "hito",
+    "region": "Patagonia Chilena",
+    "country_or_territory": "Chile",
+    "coordinates_approx": {
+      "lat": -52.6667,
+      "lng": -68.5833,
+      "approximate": true
+    },
+    "parent_entity": "estrecho_magallanes",
+    "related_entities": ["punta_dungeness", "estrecho_magallanes"],
+    "seo_focus": "frontera geográfica, navegación",
+    "rag_summary": "Hito geográfico situado en el extremo norte de la entrada atlántica del Estrecho de Magallanes, clave para la delimitación marítima.",
+    "editorial_angle": "histórico y técnico",
+    "priority": 3,
+    "content_status": "draft",
+    "recommended_project_use": ["atlas"]
+  },
+  {
+    "id": "seno_almirantazgo",
+    "title": "Seno Almirantazgo",
+    "slug": "seno-almirantazgo",
+    "type": "lugar",
+    "region": "Tierra del Fuego",
+    "country_or_territory": "Chile",
+    "coordinates_approx": {
+      "lat": -54.3000,
+      "lng": -69.2000,
+      "approximate": true
+    },
+    "parent_entity": "pn_yendegaia",
+    "related_entities": ["pn_yendegaia", "isla_navarino"],
+    "seo_focus": "naturaleza salvaje, ecosistemas marinos",
+    "rag_summary": "Fiordo profundo que penetra la Isla Tierra del Fuego, importante refugio para fauna marina y área de alto valor para la conservación biológica.",
+    "editorial_angle": "natural y exploratorio",
+    "priority": 3,
+    "content_status": "draft",
+    "recommended_project_use": ["atlas", "travel"]
+  },
+  {
+    "id": "pn_cabo_de_hornos",
+    "title": "Parque Nacional Cabo de Hornos",
+    "slug": "pn-cabo-de-hornos",
+    "type": "lugar",
+    "region": "Patagonia Chilena",
+    "country_or_territory": "Chile",
+    "coordinates_approx": {
+      "lat": -55.8000,
+      "lng": -67.6000,
+      "approximate": true
+    },
+    "parent_entity": "provincia_antartica",
+    "related_entities": ["cabo_de_hornos", "islas_diego_ramirez"],
+    "seo_focus": "conservación, turismo extremo, área protegida",
+    "rag_summary": "Área protegida que resguarda ecosistemas subantárticos y el icónico hito geográfico del Cabo de Hornos, esencial para la investigación biológica.",
+    "editorial_angle": "ecológico y documental",
+    "priority": 2,
+    "content_status": "draft",
+    "recommended_project_use": ["atlas", "travel"]
+  },
+  {
+    "id": "pn_yendegaia",
+    "title": "Parque Nacional Yendegaia",
+    "slug": "pn-yendegaia",
+    "type": "lugar",
+    "region": "Tierra del Fuego",
+    "country_or_territory": "Chile",
+    "coordinates_approx": {
+      "lat": -54.8000,
+      "lng": -68.8000,
+      "approximate": true
+    },
+    "parent_entity": "isla_tierra_del_fuego",
+    "related_entities": ["seno_almirantazgo", "ruta_vicuna_yendegaia"],
+    "seo_focus": "biodiversidad, conservación, parque nacional",
+    "rag_summary": "Extensa área protegida que conecta fiordos, montañas y glaciares, siendo una pieza fundamental en la conservación de la Tierra del Fuego chilena.",
+    "editorial_angle": "natural y ambiental",
+    "priority": 2,
+    "content_status": "draft",
+    "recommended_project_use": ["atlas", "travel"]
+  },
+  {
+    "id": "pasaje_drake",
+    "title": "Pasaje Drake",
+    "slug": "pasaje-drake",
+    "type": "ruta",
+    "region": "Océano Austral",
+    "country_or_territory": "Internacional",
+    "coordinates_approx": {
+      "lat": -60.0000,
+      "lng": -63.0000,
+      "approximate": true
+    },
+    "parent_entity": "patagonia_austral",
+    "related_entities": ["cabo_de_hornos", "islas_diego_ramirez", "peninsula_antartica", "mar_de_scotia"],
+    "seo_focus": "logística antártica, navegación marítima, condiciones extremas",
+    "rag_summary": "Cuerpo de agua crucial que separa Sudamérica austral de la Península Antártica, conocido por sus condiciones meteorológicas extremas y rutas de navegación hacia el continente blanco.",
+    "editorial_angle": "técnico y exploratorio",
+    "priority": 1,
+    "content_status": "draft",
+    "recommended_project_use": ["atlas", "begins", "pulse"]
+  },
+  {
+    "id": "mar_de_scotia",
+    "title": "Mar de Scotia",
+    "slug": "mar-de-scotia",
+    "type": "lugar",
+    "region": "Océano Austral",
+    "country_or_territory": "Internacional",
+    "coordinates_approx": {
+      "lat": -57.0000,
+      "lng": -40.0000,
+      "approximate": true
+    },
+    "parent_entity": "pasaje_drake",
+    "related_entities": ["pasaje_drake", "peninsula_antartica"],
+    "seo_focus": "oceanografía, biodiversidad marina",
+    "rag_summary": "Mar que conecta el Pasaje Drake con el Océano Austral, vital para el estudio de las corrientes circumpolares y la dinámica biológica polar.",
+    "editorial_angle": "científico y técnico",
+    "priority": 3,
+    "content_status": "draft",
+    "recommended_project_use": ["atlas", "pulse"]
+  },
+  {
+    "id": "peninsula_antartica",
+    "title": "Península Antártica",
+    "slug": "peninsula-antartica",
+    "type": "lugar",
+    "region": "Antártica",
+    "country_or_territory": "Antártida (Tratado Antártico)",
+    "coordinates_approx": {
+      "lat": -65.0000,
+      "lng": -64.0000,
+      "approximate": true
+    },
+    "parent_entity": "continente_antartico",
+    "related_entities": ["pasaje_drake", "bahia_fildes", "mar_de_scotia"],
+    "seo_focus": "logística científica, expediciones, cambio climático",
+    "rag_summary": "Extensión geográfica septentrional del continente antártico, donde se concentra la mayor actividad científica y logística internacional del sur global.",
+    "editorial_angle": "científico y exploratorio",
+    "priority": 1,
+    "content_status": "draft",
+    "recommended_project_use": ["atlas", "begins", "pulse"]
+  }
+]
