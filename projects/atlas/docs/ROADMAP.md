@@ -10,6 +10,7 @@ Knowledge Base Foundation
 - [x] puerto-williams.mdx
 - [x] cabo-de-hornos.mdx
 - [x] canal-beagle.mdx
+- [x] islas-diego-ramirez.mdx
 
 ## Phase 1.5
 
