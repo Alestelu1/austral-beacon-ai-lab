@@ -1,0 +1,186 @@
+---
+
+# --- SEO & Core Metadata ---
+
+title: "Base Profesor Julio Escudero: Centro Científico del INACH en la Antártica"
+description: "Dossier técnico de la Base Profesor Julio Escudero. Infraestructura científica, laboratorios, monitoreo ambiental e investigación polar en Bahía Fildes."
+canonical_url: "/atlas/base-escudero"
+last_updated: "2026-06-06"
+author: "Austral Beacon"
+
+# --- Geographic Data ---
+
+type: "base"
+
+coordinates:
+lat: -62.2017
+lng: -58.9644
+elevation: 10
+approximate: true
+
+region: "Isla Rey Jorge"
+
+# --- Knowledge Graph & Relationships ---
+
+parent_entity: "bahia_fildes"
+
+related_entities:
+
+* base_frei
+* villa_las_estrellas
+* bahia_fildes
+* peninsula_antartica
+* punta_arenas
+* pasaje_drake
+
+contains:
+
+* Laboratorios Secos
+* Laboratorios Húmedos
+* Monitoreo Ambiental
+* Investigación Polar
+* Apoyo Logístico
+* Programas Científicos INACH
+
+# --- Schema.org / JSON-LD ---
+
+schema_type: "Place"
+wikidata_id: "Q2118331"
+
+# --- RAG & AI Embedding ---
+
+embedding_summary: "La Base Profesor Julio Escudero es la principal instalación científica operada por el Instituto Antártico Chileno (INACH) en Isla Rey Jorge. Ubicada en el entorno de Bahía Fildes, proporciona laboratorios, infraestructura de investigación y apoyo logístico para proyectos nacionales e internacionales. Su integración con Base Frei y Villa Las Estrellas permite desarrollar programas de monitoreo ambiental, biología marina, glaciología y cambio climático en uno de los principales centros científicos de la Antártica."
+
+technical_context: "Infraestructura científica permanente del Instituto Antártico Chileno. Proporciona laboratorios, equipamiento especializado y apoyo logístico para investigaciones multidisciplinarias. Forma parte del sistema operativo de Bahía Fildes junto con Base Frei y Villa Las Estrellas."
+
+# --- Editorial Status ---
+
+status: "draft"
+priority: 2
+-----------
+
+# Base Profesor Julio Escudero
+
+La Base Profesor Julio Escudero constituye el principal centro científico operado por el Instituto Antártico Chileno (INACH) en la Antártica. Su función principal es apoyar la investigación polar mediante infraestructura especializada, laboratorios y servicios que permiten desarrollar proyectos científicos nacionales e internacionales.
+
+Dentro del ecosistema antártico chileno, representa el componente científico del nodo de Bahía Fildes.
+
+## Geografía y Ubicación
+
+La base se encuentra en la Península Fildes, Isla Rey Jorge, dentro del archipiélago de las Shetland del Sur.
+
+Su ubicación ofrece acceso directo a ecosistemas terrestres y marinos de alto interés científico, además de beneficiarse de la infraestructura logística existente en Bahía Fildes y de la conectividad proporcionada por Base Frei.
+
+La entidad forma parte de la siguiente red geográfica:
+
+Punta Arenas
+→ Pasaje Drake
+→ Península Antártica
+→ Bahía Fildes
+→ Base Escudero
+
+## Rol Científico
+
+La misión principal de la Base Escudero es facilitar la investigación antártica.
+
+Desde sus instalaciones se desarrollan actividades vinculadas a:
+
+* Ciencias ambientales.
+* Biología marina.
+* Glaciología.
+* Oceanografía.
+* Ciencias atmosféricas.
+* Ecología polar.
+* Cambio climático.
+
+La base actúa como plataforma para investigadores chilenos e internacionales que participan en campañas científicas antárticas.
+
+## Relación con INACH
+
+La Base Profesor Julio Escudero es administrada por el Instituto Antártico Chileno (INACH), organismo responsable de coordinar gran parte de la investigación científica chilena en la Antártica.
+
+Su operación permite ejecutar proyectos del Programa Nacional de Ciencia Antártica y facilita la cooperación con instituciones científicas de distintos países.
+
+## Principales Líneas de Investigación
+
+Las investigaciones desarrolladas desde la base abarcan múltiples disciplinas:
+
+* Cambio climático y sistemas polares.
+* Glaciología.
+* Oceanografía.
+* Biología marina.
+* Ecología antártica.
+* Ciencias atmosféricas.
+* Monitoreo ambiental de largo plazo.
+
+Los datos generados contribuyen tanto a la investigación nacional como a redes internacionales de observación científica.
+
+## Infraestructura e Investigación
+
+La base cuenta con infraestructura diseñada específicamente para el trabajo científico:
+
+* Laboratorios secos.
+* Laboratorios húmedos.
+* Equipos de monitoreo ambiental.
+* Espacios de procesamiento de muestras.
+* Sistemas de almacenamiento científico.
+* Apoyo logístico para campañas de terreno.
+
+Estas capacidades permiten realizar investigaciones directamente en el entorno antártico sin depender exclusivamente de instalaciones continentales.
+
+## Relación con Base Frei y Villa Las Estrellas
+
+La Base Escudero opera dentro de un sistema integrado junto a Base Frei y Villa Las Estrellas.
+
+Base Frei proporciona:
+
+* Conectividad aérea.
+* Logística pesada.
+* Transporte de personal.
+* Apoyo operacional.
+
+Villa Las Estrellas aporta:
+
+* Infraestructura comunitaria.
+* Habitabilidad.
+* Servicios complementarios.
+
+Esta cooperación permite sostener actividades científicas de manera continua en Isla Rey Jorge.
+
+## Relevancia para Antarctic Pulse
+
+Dentro de Antarctic Pulse, Base Escudero representa una fuente primaria de actividad científica.
+
+Muchos de los estudios, observaciones y proyectos desarrollados en la base pueden transformarse en contenido relacionado con:
+
+* Cambio climático.
+* Ciencia polar.
+* Biodiversidad antártica.
+* Oceanografía.
+* Monitoreo ambiental.
+
+## Relevancia para Austral Beacon
+
+Dentro del ecosistema Austral Beacon, Base Escudero representa el componente científico del nodo antártico chileno.
+
+La estructura queda organizada de la siguiente forma:
+
+Bahía Fildes
+├── Base Frei (logística y conectividad)
+├── Villa Las Estrellas (comunidad y habitabilidad)
+└── Base Escudero (investigación científica)
+
+Esta entidad fortalece la base de conocimiento geográfica y científica utilizada por End of the World Atlas, Antarctic Pulse y futuros sistemas RAG especializados en la Antártica.
+
+## Fuentes Prioritarias
+
+* Instituto Antártico Chileno (INACH).
+* Programa Nacional de Ciencia Antártica (PROCIEN).
+* COMNAP.
+* SCAR.
+* Sistema del Tratado Antártico.
+* Base Presidente Eduardo Frei Montalva.
+* Wikidata.
+* GeoNames.
+
+---
