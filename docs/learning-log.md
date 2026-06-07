@@ -64,3 +64,37 @@ Do not treat the course as isolated exercises. Convert every useful lesson into 
 Next action:
 Start with Austral News Radar v0.1.
 
+## Entry — n8n para desarrolladores: Construyendo workflows inteligentes
+
+### Conceptos aprendidos
+
+- Crear y configurar workflows en n8n.
+- Usar triggers y conexiones OAuth2.
+- Automatizar notificaciones con Gmail y Slack.
+- Implementar human in the loop.
+- Usar Data Tables para auditoría.
+- Revisar historial de ejecuciones.
+- Manejar errores y reintentos.
+- Usar nodos de código con JavaScript.
+- Trabajar con objetos JSON estructurados.
+- Integrar IA/Gemini en un flujo de automatización.
+- Usar prompts para definir comportamiento del modelo.
+- Usar condiciones booleanas para controlar flujos.
+
+### Aplicación a Austral Beacon
+
+Este curso será usado para construir Austral News Radar v0.1: un workflow que recibe una URL o noticia, genera resumen, clasificación, ángulo editorial, título SEO y borrador social, dejando todo sujeto a revisión humana.
+
+### Aplicación a End of the World Atlas
+
+Los mismos principios servirán para preparar fuentes RAG, place cards y registros de fuentes geográficas.
+
+### Aplicación a Antarctic Pulse
+
+Permitirá monitorear noticias y señales antárticas con revisión humana antes de publicar cualquier interpretación.
+
+### Próxima acción
+
+Crear workflow manual:
+Manual URL → IA → JSON estructurado → registro → revisión humana.
+
