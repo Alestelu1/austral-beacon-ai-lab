@@ -56,6 +56,15 @@ It should eventually become the basis for agents and MVPs related to Antarctic g
 
 ## Editorial Philosophy
 
+Editorial Rule:
+
+Puerto Williams = city (ciudad más austral del mundo)
+
+Puerto Toro = hamlet/community/village (poblado o comunidad más austral del mundo)
+
+Do not treat these concepts as equivalent.
+Always distinguish between city, settlement, community and village.
+
 Prefer:
 
 - Documentary tone
