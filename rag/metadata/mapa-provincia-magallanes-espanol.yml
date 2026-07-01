@@ -1,0 +1,43 @@
+title: "Mapa Provincia Magallanes — Español"
+source_url: "https://chileestuyo.cl/folleteria/"
+publisher: "Chile es TUYO / SERNATUR Chile"
+author: null
+date: null
+source_type: "Official institutional tourism map"
+language: "Spanish"
+local_file: "rag/raw-documents/cartografia/mapas-provinciales/mapa-provincia-magallanes-espanol-WEB.pdf"
+
+geographic_tags:
+  - Chile
+  - Magallanes
+  - Provincia de Magallanes
+  - Región de Magallanes y de la Antártica Chilena
+  - Patagonia Chilena
+  - Punta Arenas
+  - Estrecho de Magallanes
+  - Tierra del Fuego context
+
+topic_tags:
+  - Cartography
+  - Provincial maps
+  - Tourism planning
+  - Routes
+  - Destinations
+  - Regional geography
+  - Official maps
+
+related_projects:
+  - End of the World Travel
+  - Fin del Mundo Travel
+  - End of the World Atlas
+  - Austral Beacon Media
+  - Antarctica Begins
+
+credibility_level: "Official institutional source"
+rag_readiness: "Needs extraction"
+
+verification_notes:
+  - "Use as official tourism cartographic context for the Province of Magallanes."
+  - "Extract place names, route names, ports, protected areas and map references before using in public editorial content."
+  - "Cross-check administrative boundaries and technical geography with INE Chile, Instituto Geográfico Militar, regional government or official cartographic sources when needed."
+  - "Use for orientation and source discovery; do not rely on the map alone for sensitive administrative or legal claims."
