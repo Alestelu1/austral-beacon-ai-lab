@@ -1,0 +1,41 @@
+title: "Parques Zona Sur"
+source_url: "https://chileestuyo.cl/folleteria/"
+publisher: "Chile es TUYO / SERNATUR Chile"
+author: null
+date: null
+source_type: "Official institutional tourism brochure"
+language: "Spanish"
+local_file: "rag/raw-documents/sernatur/parques-zona-sur-1.pdf"
+
+geographic_tags:
+  - Chile
+  - Zona Sur
+  - Patagonia
+  - Magallanes
+  - Aysén
+  - Los Lagos
+  - National Parks
+
+topic_tags:
+  - Tourism
+  - Parks
+  - Routes
+  - Travel planning
+  - Protected areas
+  - Official brochures
+
+related_projects:
+  - End of the World Travel
+  - Fin del Mundo Travel
+  - End of the World Atlas
+  - Antarctica Begins
+  - Austral Beacon Media
+
+credibility_level: "Official institutional source"
+rag_readiness: "Needs extraction"
+
+verification_notes:
+  - "Use for tourism planning and official park/destination framing."
+  - "Cross-check protected area administration and conservation claims with CONAF."
+  - "Cross-check geographic or administrative details with official Chilean sources."
+  - "Separate promotional tourism language from factual notes before using in public editorial content."
