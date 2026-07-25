@@ -1,0 +1,37 @@
+{
+  "id": "santiago-puerto-williams",
+  "origin": "Santiago",
+  "destination": "Puerto Williams",
+  "summary": "La conexión habitual desde Santiago hacia Puerto Williams se organiza en dos etapas, utilizando Punta Arenas como principal punto de enlace dentro de Chile.",
+  "stages": [
+    {
+      "from": "Santiago",
+      "to": "Punta Arenas",
+      "mode": "air",
+      "stability": "dynamic",
+      "note": "Los horarios, tarifas y disponibilidad deben verificarse directamente con proveedores oficiales antes del viaje."
+    },
+    {
+      "from": "Punta Arenas",
+      "to": "Puerto Williams",
+      "mode": "air-or-sea",
+      "stability": "dynamic",
+      "note": "La operación aérea o marítima puede variar por temporada, condiciones meteorológicas y programación del proveedor."
+    }
+  ],
+  "warnings": [
+    "No se deben asumir horarios, precios ni cupos vigentes a partir de esta ficha.",
+    "Confirma cada tramo con fuentes oficiales antes de comprar o iniciar el viaje."
+  ],
+  "sources": [
+    {
+      "title": "Información oficial de conectividad austral — registro provisional",
+      "publisher": "Austral Beacon Media",
+      "url": "https://www.endoftheworld.travel/",
+      "verifiedAt": "2026-07-24",
+      "status": "provisional"
+    }
+  ],
+  "recommendedPage": "/puerto-williams-travel-guide.html",
+  "verifiedAt": "2026-07-24"
+}
