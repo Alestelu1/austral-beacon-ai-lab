@@ -1,5 +1,6 @@
 export type AnswerStatus = "supported" | "unsupported";
-export type TravelIntent = "connectivity" | "unknown";
+export type TravelIntent = "connectivity" | "destination-info" | "unknown";
+export type Confidence = "high" | "medium" | "none";
 
 export interface RouteStage {
   from: string;
@@ -38,4 +39,48 @@ export interface TravelAnswer {
   sources: SourceReference[];
   recommendedPage?: string;
   verifiedAt?: string;
+}
+
+// --- Destination Card types ---
+
+export interface GeoCoordinates {
+  latitude: number;
+  longitude: number;
+}
+
+export interface StableData {
+  geographicContext: string;
+  culturalContext: string;
+  [key: string]: string;
+}
+
+export interface InternalLink {
+  path: string;
+  label: string;
+}
+
+export interface DestinationCard {
+  id: string;
+  name: string;
+  region: string;
+  comuna: string;
+  coordinates: GeoCoordinates;
+  summary: string;
+  stableData: StableData;
+  warnings: string[];
+  sources: SourceReference[];
+  suggestedInternalLinks: InternalLink[];
+  verifiedAt: string;
+}
+
+export interface DestinationCardAnswer {
+  status: AnswerStatus;
+  intent: "destination-info";
+  summary: string;
+  confidence: Confidence;
+  warnings: string[];
+  sources: SourceReference[];
+  suggestedInternalLinks: InternalLink[];
+  verifiedAt?: string;
+  card?: DestinationCard;
 }

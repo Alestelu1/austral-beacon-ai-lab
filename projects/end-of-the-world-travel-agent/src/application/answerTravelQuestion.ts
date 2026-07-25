@@ -1,15 +1,8 @@
 import routeData from "../../data/routes/santiago-puerto-williams.json" with { type: "json" };
 import type { RouteRecord, TravelAnswer } from "../domain/types.js";
+import { normalize } from "../domain/normalize.js";
 
 const route = routeData as RouteRecord;
-
-function normalize(value: string): string {
-  return value
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .trim();
-}
 
 function isSupportedConnectivityQuestion(question: string): boolean {
   const value = normalize(question);
