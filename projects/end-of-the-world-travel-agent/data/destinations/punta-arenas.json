@@ -1,0 +1,53 @@
+{
+  "id": "punta-arenas",
+  "name": "Punta Arenas",
+  "region": "Magallanes y de la Antártica Chilena",
+  "comuna": "Punta Arenas",
+  "coordinates": {
+    "latitude": -53.1638,
+    "longitude": -70.9171
+  },
+  "summary": "Punta Arenas es una ciudad situada junto al Estrecho de Magallanes y uno de los principales centros urbanos y puntos de conexión del extremo austral de Chile.",
+  "stableData": {
+    "geographicContext": "Se ubica en la ribera continental del Estrecho de Magallanes, en la Provincia de Magallanes, Región de Magallanes y de la Antártica Chilena.",
+    "culturalContext": "La ciudad concentra patrimonio portuario, ganadero y urbano, además de instituciones como el Museo Regional de Magallanes, dedicado a la memoria histórica de la región."
+  },
+  "warnings": [
+    "Los horarios, tarifas y disponibilidad de vuelos, ferries, navegaciones y excursiones pueden variar. Confirma cada servicio con el operador o institución responsable.",
+    "El viento y las condiciones meteorológicas pueden alterar actividades al aire libre y conexiones regionales."
+  ],
+  "sources": [
+    {
+      "title": "Reporte Comunal de Punta Arenas 2025",
+      "publisher": "Biblioteca del Congreso Nacional de Chile",
+      "url": "https://www.bcn.cl/siit/reportescomunales/comunas_v.html?idcom=12101",
+      "verifiedAt": "2026-07-26",
+      "status": "verified"
+    },
+    {
+      "title": "Punta Arenas y Estrecho de Magallanes",
+      "publisher": "Chile Travel — Servicio Nacional de Turismo",
+      "url": "https://chile.travel/destinos/punta-arenas-y-estrecho-de-magallanes/",
+      "verifiedAt": "2026-07-26",
+      "status": "verified"
+    },
+    {
+      "title": "Museo Regional de Magallanes",
+      "publisher": "Servicio Nacional del Patrimonio Cultural",
+      "url": "https://www.patrimoniocultural.gob.cl/multimedia/museo-regional-de-magallanes",
+      "verifiedAt": "2026-07-26",
+      "status": "verified"
+    }
+  ],
+  "suggestedInternalLinks": [
+    {
+      "path": "/puerto-williams",
+      "label": "Puerto Williams"
+    },
+    {
+      "path": "/cabo-de-hornos",
+      "label": "Cabo de Hornos"
+    }
+  ],
+  "verifiedAt": "2026-07-26"
+}
