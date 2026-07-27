@@ -73,8 +73,8 @@ Implementación del módulo de fichas de destino locales como segundo slice vert
 - [x] 5. Checkpoint - Verify core logic compiles
   - Ensure `npm run typecheck` passes with no errors, ask the user if questions arise.
 
-- [ ] 6. Create JSON fixture files
-  - [ ] 6.1 Create `data/destinations/punta-arenas.json`
+- [x] 6. Create JSON fixture files
+  - [x] 6.1 Create `data/destinations/punta-arenas.json`
     - Include all required fields per schema
     - `id`: "punta-arenas", `name`: "Punta Arenas"
     - Region: "Magallanes y de la Antártica Chilena", Comuna: "Punta Arenas"
@@ -86,7 +86,7 @@ Implementación del módulo de fichas de destino locales como segundo slice vert
     - `verifiedAt` with recent valid ISO date
     - _Requirements: 8.1, 8.4, 2.1, 2.2, 2.4, 7.1, 7.2, 7.3_
 
-  - [ ] 6.2 Create `data/destinations/puerto-williams.json`
+  - [x] 6.2 Create `data/destinations/puerto-williams.json`
     - Include all required fields per schema
     - `id`: "puerto-williams", `name`: "Puerto Williams"
     - Region: "Magallanes y de la Antártica Chilena", Comuna: "Cabo de Hornos"
@@ -98,7 +98,7 @@ Implementación del módulo de fichas de destino locales como segundo slice vert
     - `suggestedInternalLinks` with relative paths starting with `/`
     - _Requirements: 8.1, 8.2, 2.1, 2.2, 2.4, 7.1_
 
-  - [ ] 6.3 Create `data/destinations/cabo-de-hornos.json`
+  - [x] 6.3 Create `data/destinations/cabo-de-hornos.json`
     - Include all required fields per schema
     - `id`: "cabo-de-hornos", `name`: "Cabo de Hornos"
     - Region: "Magallanes y de la Antártica Chilena", Comuna: "Cabo de Hornos"
@@ -109,11 +109,11 @@ Implementación del módulo de fichas de destino locales como segundo slice vert
     - At least one verified Chilean institutional source
     - _Requirements: 8.1, 8.3, 8.5, 2.1, 2.2, 2.4_
 
-- [ ] 7. Checkpoint - Validate fixtures load correctly
+- [x] 7. Checkpoint - Validate fixtures load correctly
   - Ensure all 3 JSON files pass validation when loaded by the repository, ask the user if questions arise.
 
-- [ ] 8. Write unit tests
-  - [ ] 8.1 Create `tests/getDestinationCard.test.ts` — retrieval tests
+- [x] 8. Write unit tests
+  - [x] 8.1 Create `tests/getDestinationCard.test.ts` — retrieval tests
     - Test: Retrieve Punta Arenas → response `supported` with all required fields, links to Puerto Williams and Cabo de Hornos
     - Test: Retrieve Puerto Williams → response `supported` with Isla Navarino geographic data
     - Test: Retrieve Cabo de Hornos → response `supported` with disambiguation note (comuna, isla, cabo)
@@ -122,26 +122,26 @@ Implementación del módulo de fichas de destino locales como segundo slice vert
     - Verify `confidence` is `"high"` when all sources are `"verified"`
     - _Requirements: 9.1, 5.2, 5.3_
 
-  - [ ] 8.2 Add normalization and search tests to `tests/getDestinationCard.test.ts`
+  - [x] 8.2 Add normalization and search tests to `tests/getDestinationCard.test.ts`
     - Test: "Puerto Williams", "puerto williams", "PUERTO WILLIAMS", "puerto-williams" all resolve to same card
     - Test: "Cabo de Hornos", "cabo de hornos", "CABO DE HORNOS" resolve to same card
     - Test: variant without accent resolves correctly
     - _Requirements: 9.3, 1.4_
 
-  - [ ] 8.3 Add unsupported destination tests to `tests/getDestinationCard.test.ts`
+  - [x] 8.3 Add unsupported destination tests to `tests/getDestinationCard.test.ts`
     - Test: Query non-existent destination → `status: "unsupported"`, `confidence: "none"`, empty arrays, message about unavailable destination
     - Test: Query empty string → `status: "unsupported"`, message about invalid identifier
     - Test: Query whitespace-only string → `status: "unsupported"`
     - _Requirements: 9.2, 1.2, 1.3, 5.5_
 
-  - [ ] 8.4 Add validation tests to `tests/getDestinationCard.test.ts`
+  - [x] 8.4 Add validation tests to `tests/getDestinationCard.test.ts`
     - Test: JSON with missing required field → validator reports error with field path and `"missing"` violation
     - Test: JSON with invalid `verifiedAt` format → validator reports error with `"format"` violation
     - Test: JSON with coordinates out of range → validator reports `"range"` violation
     - Test: JSON with empty sources array → validator reports error
     - _Requirements: 9.4, 4.2, 4.3_
 
-- [ ] 9. Final checkpoint - Run full test suite
+- [x] 9. Final checkpoint - Run full test suite
   - Run `vitest run` to ensure all new tests pass alongside existing `answerTravelQuestion.test.ts` tests, ask the user if questions arise.
 
 ## Notes
