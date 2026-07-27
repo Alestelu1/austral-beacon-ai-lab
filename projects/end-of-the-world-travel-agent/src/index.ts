@@ -6,4 +6,4 @@ const answer = answerTravelQuestion(question);
 console.log(JSON.stringify(answer, null, 2));
 
 export { answerTravelQuestion } from "./application/answerTravelQuestion.js";
-export type { TravelAnswer } from "./domain/types.js";
+export type { TravelAnswer, DestinationCardAnswer } from "./domain/types.js";
