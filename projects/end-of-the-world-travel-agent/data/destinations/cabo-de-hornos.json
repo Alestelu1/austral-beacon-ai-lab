@@ -1,0 +1,54 @@
+{
+  "id": "cabo-de-hornos",
+  "name": "Cabo de Hornos",
+  "region": "Magallanes y de la Antártica Chilena",
+  "comuna": "Cabo de Hornos",
+  "coordinates": {
+    "latitude": -55.9833,
+    "longitude": -67.2667
+  },
+  "summary": "Cabo de Hornos designa una comuna de la Provincia Antártica Chilena y también se relaciona con la isla Hornos y el cabo geográfico situado en el archipiélago Wollaston.",
+  "stableData": {
+    "geographicContext": "La comuna de Cabo de Hornos pertenece a la Región de Magallanes y de la Antártica Chilena. Dentro de su territorio se encuentran la isla Hornos, el cabo geográfico y el Parque Nacional Cabo de Hornos.",
+    "culturalContext": "El territorio insular forma parte del ámbito histórico y cultural del pueblo yagán y conserva un importante patrimonio marítimo, natural y de navegación austral.",
+    "disambiguation": "El nombre Cabo de Hornos puede referirse a la comuna administrativa, al cabo geográfico, a la isla Hornos o al parque nacional. La ficha usa la comuna como entidad principal y distingue las demás referencias."
+  },
+  "warnings": [
+    "El acceso turístico a isla Hornos y al parque depende de navegación autorizada, condiciones meteorológicas, disponibilidad operativa y normas vigentes de CONAF.",
+    "No se deben asumir horarios, desembarcos, tarifas ni servicios de emergencia sin confirmación directa de las instituciones y operadores responsables."
+  ],
+  "sources": [
+    {
+      "title": "Reporte Comunal de Cabo de Hornos 2025",
+      "publisher": "Biblioteca del Congreso Nacional de Chile",
+      "url": "https://www.bcn.cl/siit/reportescomunales/comunas_v.html?anno=2025&idcom=12201",
+      "verifiedAt": "2026-07-25",
+      "status": "verified"
+    },
+    {
+      "title": "Cabo de Hornos",
+      "publisher": "Subsecretaría de Desarrollo Regional y Administrativo",
+      "url": "https://www.subdere.gov.cl/divisi%C3%B3n-administrativa-de-chile/gobierno-regional-de-magallanes-y-ant%C3%A1rtica-chilena/provincia-de--9",
+      "verifiedAt": "2026-07-25",
+      "status": "verified"
+    },
+    {
+      "title": "Parque Nacional Cabo de Hornos",
+      "publisher": "Corporación Nacional Forestal",
+      "url": "https://www.conaf.cl/parque_nacionales/parque-nacional-cabo-de-hornos/",
+      "verifiedAt": "2026-07-25",
+      "status": "verified"
+    }
+  ],
+  "suggestedInternalLinks": [
+    {
+      "path": "/puerto-williams",
+      "label": "Puerto Williams"
+    },
+    {
+      "path": "/punta-arenas",
+      "label": "Punta Arenas"
+    }
+  ],
+  "verifiedAt": "2026-07-25"
+}

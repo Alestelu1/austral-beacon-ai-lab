@@ -1,0 +1,53 @@
+{
+  "id": "puerto-williams",
+  "name": "Puerto Williams",
+  "region": "Magallanes y de la Antártica Chilena",
+  "comuna": "Cabo de Hornos",
+  "coordinates": {
+    "latitude": -54.9333,
+    "longitude": -67.6167
+  },
+  "summary": "Puerto Williams es una ciudad ubicada en la costa norte de Isla Navarino, en la comuna de Cabo de Hornos y la Provincia Antártica Chilena.",
+  "stableData": {
+    "geographicContext": "Se encuentra frente al Canal Beagle y funciona como capital de la comuna de Cabo de Hornos y de la Provincia Antártica Chilena.",
+    "culturalContext": "El territorio forma parte del espacio ancestral del pueblo yagán y alberga el Museo Territorial Yagán Usi, dedicado a la historia y patrimonio cultural de la zona."
+  },
+  "warnings": [
+    "Los horarios, tarifas, cupos y frecuencias de vuelos o servicios marítimos desde Punta Arenas pueden cambiar por programación, temporada y condiciones meteorológicas.",
+    "Las excursiones y navegaciones hacia sectores remotos deben confirmarse directamente con operadores autorizados y organismos responsables."
+  ],
+  "sources": [
+    {
+      "title": "INE presenta sitio de mapas de Ciudades, pueblos, aldeas y caseríos 2019",
+      "publisher": "Instituto Nacional de Estadísticas de Chile",
+      "url": "https://www.ine.gob.cl/sala-de-prensa/prensa/general/noticia/2019/09/16/ine-presenta-sitio-de-mapas-de-ciudades-pueblos-aldeas-y-caser%C3%ADos-2019-con-informaci%C3%B3n-desagregada-seg%C3%BAn-datos-censo-2017",
+      "verifiedAt": "2026-07-25",
+      "status": "verified"
+    },
+    {
+      "title": "Actualización Plan Regulador Comunal Puerto Williams, Comuna de Cabo de Hornos",
+      "publisher": "Biblioteca del Congreso Nacional de Chile — LeyChile",
+      "url": "https://www.bcn.cl/leychile/navegar?idNorma=1222916",
+      "verifiedAt": "2026-07-25",
+      "status": "verified"
+    },
+    {
+      "title": "Dirección Regional de Magallanes y Antártica Chilena",
+      "publisher": "Servicio Nacional del Patrimonio Cultural",
+      "url": "https://www.patrimoniocultural.gob.cl/magallanes",
+      "verifiedAt": "2026-07-25",
+      "status": "verified"
+    }
+  ],
+  "suggestedInternalLinks": [
+    {
+      "path": "/punta-arenas",
+      "label": "Punta Arenas"
+    },
+    {
+      "path": "/cabo-de-hornos",
+      "label": "Cabo de Hornos"
+    }
+  ],
+  "verifiedAt": "2026-07-25"
+}
