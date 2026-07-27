@@ -1,5 +1,3 @@
-
-
 # Austral Beacon AI Lab
 
 AI, automation, RAG and agentic workflow laboratory for Austral Beacon Media Network, End of the World Atlas, End of the World Travel, Antarctic Pulse, Antarctica Begins, and related southern / Antarctic media projects.
@@ -47,6 +45,13 @@ This repository supports practical work from:
 - CódigoFacilito Agents / Kiro
 - Codex, Gemini and Antigravity development workflows
 
+## Completed Training and Certifications
+
+- **Bootcamp: Agent-Based Software Development with Kiro** — CódigoFacilito, completed on July 27, 2026. Twelve-week intensive training program with more than 16 hours of classes.
+- **AWS Fundamentals Course** — CódigoFacilito, completed on July 27, 2026. 12 hours and 50 minutes of video-based training.
+
+The Kiro bootcamp was applied directly in this repository through specification-driven development, requirements and design documents, implementation task plans, TypeScript domain modeling, automated tests, Git branches and pull-request workflows.
+
 ## Repository Structure
 
 ```text
@@ -62,3 +67,4 @@ austral-beacon-ai-lab/
 ├── workflows/
 ├── data/
 └── apps/
+```
