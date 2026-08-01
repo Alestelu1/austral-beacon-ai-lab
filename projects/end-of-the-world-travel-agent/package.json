@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "tsx src/index.ts",
     "demo": "tsx src/cli.ts",
+    "api": "tsx src/api/server.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
