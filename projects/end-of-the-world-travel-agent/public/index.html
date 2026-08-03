@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>End of the World Travel Agent</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>End of the World Travel Agent</h1>
+    <p>Consulta sobre destinos y conectividad del sur austral de Chile.</p>
+  </header>
+  <main>
+    <section aria-labelledby="examples-heading">
+      <h2 id="examples-heading">Preguntas de ejemplo</h2>
+      <ul>
+        <li>¿Cómo se llega a Puerto Williams desde Santiago?</li>
+        <li>¿Qué puedo saber sobre Cabo de Hornos?</li>
+      </ul>
+    </section>
+    <form id="query-form" aria-label="Formulario de consulta">
+      <label for="question-input">Tu pregunta</label>
+      <input type="text" id="question-input" name="question"
+             placeholder="Escribe tu pregunta aquí…" autocomplete="off">
+      <button type="submit" id="submit-btn">Consultar</button>
+      <p id="validation-msg" role="alert" aria-live="assertive" hidden></p>
+    </form>
+    <div id="loading" aria-live="polite" hidden>
+      <p>Consultando al agente…</p>
+    </div>
+    <section id="results" aria-live="polite" aria-label="Resultados">
+    </section>
+  </main>
+  <script type="module" src="/js/app.client.js"></script>
+</body>
+</html>

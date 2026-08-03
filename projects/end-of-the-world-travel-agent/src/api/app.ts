@@ -1,5 +1,6 @@
 import { createServer, type IncomingMessage, type Server, type ServerResponse } from "node:http";
 import { answerTravelQuestion } from "../application/answerTravelQuestion.js";
+import { handleStaticRequest } from "./staticHandler.js";
 
 const MAX_BODY_BYTES = 16384; // 16 KB
 
@@ -58,6 +59,11 @@ export function createApp(options?: CreateAppOptions): Server {
     try {
       const url = req.url ?? "/";
       const method = req.method ?? "GET";
+
+      // Serve static files for GET requests
+      if (method === "GET" && handleStaticRequest(req, res)) {
+        return;
+      }
 
       if (url === "/health") {
         if (method !== "GET") {
