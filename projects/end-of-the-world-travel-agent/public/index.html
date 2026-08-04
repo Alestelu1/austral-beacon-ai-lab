@@ -8,13 +8,14 @@
 </head>
 <body>
   <header>
+    <span class="site-brand">Austral Beacon Media</span>
     <h1>End of the World Travel Agent</h1>
     <p>Consulta sobre destinos y conectividad del sur austral de Chile.</p>
   </header>
   <main>
-    <section aria-labelledby="examples-heading">
+    <section class="intro-editorial" aria-labelledby="examples-heading">
       <h2 id="examples-heading">Preguntas de ejemplo</h2>
-      <ul>
+      <ul class="example-chips">
         <li>¿Cómo se llega a Puerto Williams desde Santiago?</li>
         <li>¿Qué puedo saber sobre Cabo de Hornos?</li>
       </ul>
@@ -27,11 +28,15 @@
       <p id="validation-msg" role="alert" aria-live="assertive" hidden></p>
     </form>
     <div id="loading" aria-live="polite" hidden>
+      <div class="loading-indicator" aria-hidden="true"></div>
       <p>Consultando al agente…</p>
     </div>
     <section id="results" aria-live="polite" aria-label="Resultados">
     </section>
   </main>
+  <footer>
+    <p>End of the World Travel Agent · Austral Beacon Media</p>
+  </footer>
   <script type="module" src="/js/app.client.js"></script>
 </body>
 </html>
