@@ -3,6 +3,9 @@
   "scope": "Chile-linked Antarctic gateway places, infrastructure and operations",
   "status": "normalized_v2",
   "nodes": [
+    {"id":"antarctica","type":"region","name":"Antarctica"},
+    {"id":"antarctic_air_connectivity","type":"capability","name":"Antarctic air connectivity"},
+    {"id":"airfield_movement_area_conservation","type":"planned_infrastructure_action","name":"Teniente Marsh movement-area conservation"},
     {"id":"punta_arenas","type":"city_gateway","name":"Punta Arenas"},
     {"id":"puerto_williams","type":"city_gateway","name":"Puerto Williams"},
     {"id":"king_george_island","type":"antarctic_gateway_place","name":"King George Island / Isla Rey Jorge"},
