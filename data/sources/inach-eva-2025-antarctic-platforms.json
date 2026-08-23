@@ -1,0 +1,114 @@
+{
+  "document": {
+    "id": "inach-eva-2025-antarctic-platforms",
+    "title": "Enciclopedia Visual de la Antártica — 4a edición 2025",
+    "publisher": "Instituto Antártico Chileno (INACH)",
+    "source_type": "primary_institutional",
+    "authority_level": "canonical_scientific_geographic_context",
+    "publication_year": 2025,
+    "language": "es",
+    "drive_file_id": "1HKqX--t_DjvtRr5vdeQeB8Sphhzfji4g",
+    "projects": ["End of the World Atlas","Antarctica Begins","Austral Connectivity Observatory","Austral Intelligence Radar","Antarctic Pulse"]
+  },
+  "facts": [
+    {
+      "fact_id": "eva2025-fact-001",
+      "subject": "peninsula_fildes",
+      "predicate": "located_on",
+      "object": "king_george_island",
+      "statement": "La península de Fildes se ubica en isla Rey Jorge.",
+      "source_pdf_page": 138
+    },
+    {
+      "fact_id": "eva2025-fact-002",
+      "subject": "peninsula_fildes",
+      "predicate": "has_high_concentration_of",
+      "object": "antarctic_scientific_installations",
+      "statement": "INACH describe la península de Fildes como el sector con la mayor concentración de bases e instalaciones científicas en la Antártica.",
+      "source_pdf_page": 138
+    },
+    {
+      "fact_id": "eva2025-fact-003",
+      "subject": "villa_las_estrellas",
+      "predicate": "described_as",
+      "object": "chilean_population_nucleus",
+      "statement": "INACH describe Villa Las Estrellas como núcleo poblacional chileno en la península de Fildes, isla Rey Jorge.",
+      "source_pdf_page": 138
+    },
+    {
+      "fact_id": "eva2025-fact-004",
+      "subject": "base_frei",
+      "predicate": "inaugurated_in",
+      "object": "1969",
+      "statement": "La Base Presidente Eduardo Frei Montalva fue inaugurada en 1969 en isla Rey Jorge y cumple funciones como base aérea.",
+      "source_pdf_page": 122
+    },
+    {
+      "fact_id": "eva2025-fact-005",
+      "subject": "aerodromo_teniente_marsh",
+      "predicate": "inaugurated_in",
+      "object": "1980",
+      "statement": "El Aeródromo Teniente Rodolfo Marsh fue inaugurado en 1980 en isla Rey Jorge.",
+      "source_pdf_page": 122
+    },
+    {
+      "fact_id": "eva2025-fact-006",
+      "subject": "villa_las_estrellas",
+      "predicate": "inaugurated_in",
+      "object": "1984",
+      "statement": "Villa Las Estrellas fue inaugurada en 1984 en isla Rey Jorge, junto a la base Eduardo Frei.",
+      "source_pdf_page": 122
+    },
+    {
+      "fact_id": "eva2025-fact-007",
+      "subject": "base_profesor_julio_escudero",
+      "predicate": "inaugurated_in",
+      "object": "1995",
+      "statement": "INACH inauguró la Base Científica Profesor Julio Escudero en 1995 en isla Rey Jorge.",
+      "source_pdf_page": 122
+    },
+    {
+      "fact_id": "eva2025-fact-008",
+      "subject": "chile_antarctic_scientific_logistics_network",
+      "predicate": "extends_from_to",
+      "object": ["punta_arenas","glaciar_union"],
+      "statement": "INACH describe una red chilena de plataformas científico-logísticas de más de 3.000 km de extensión, desde Punta Arenas hasta Glaciar Unión.",
+      "source_pdf_page": 139
+    },
+    {
+      "fact_id": "eva2025-fact-009",
+      "subject": "chile_antarctic_scientific_logistics_network",
+      "predicate": "supported_by",
+      "object": ["inach","fuerzas_armadas_chile","anid","gore_magallanes"],
+      "statement": "La red científico-logística es descrita como apoyada por INACH, las Fuerzas Armadas, ANID y el Gobierno Regional de Magallanes y de la Antártica Chilena.",
+      "source_pdf_page": 139
+    }
+  ],
+  "platforms": [
+    {"id":"base_capitan_arturo_prat","type":"base","year":1947},
+    {"id":"base_general_bernardo_ohiggins","type":"base","year":1948},
+    {"id":"base_luis_risopatron","type":"base","year":1949},
+    {"id":"base_presidente_gabriel_gonzalez_videla","type":"base","year":1951},
+    {"id":"refugio_general_jorge_boonen_rivera","type":"refuge","year":1953},
+    {"id":"base_teniente_luis_carvajal","type":"base","year":1961},
+    {"id":"base_yelcho","type":"base","year":1962},
+    {"id":"refugio_comodoro_guesalaga","type":"refuge","year":1963},
+    {"id":"base_frei","type":"base","year":1969},
+    {"id":"aerodromo_teniente_marsh","type":"airfield","year":1980},
+    {"id":"refugio_julio_ripamonti","type":"refuge","year":1982},
+    {"id":"base_guillermo_mann","type":"base","year":1991},
+    {"id":"base_profesor_julio_escudero","type":"base","year":1995},
+    {"id":"refugio_collins","type":"refuge","year":2007},
+    {"id":"base_glaciar_union","type":"base","year":2014}
+  ],
+  "rag": {
+    "status": "normalized_v1",
+    "embedding_ready": false,
+    "next_steps": [
+      "normalize platform aliases and current operating status",
+      "cross-check Base Frei and Teniente Marsh operational roles with FACH/DGAC",
+      "connect scientific-logistics network to FACH capability graph",
+      "generate place-level semantic chunks"
+    ]
+  }
+}
