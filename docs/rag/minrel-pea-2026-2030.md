@@ -10,6 +10,7 @@
 - **Validity:** 2026–2030
 - **Drive file ID:** `1nWgAWqDbbU6OnwyLSvaeVzRrbIm0RvHy`
 - **RAG priority:** High / critical
+- **Operational tasks extracted:** 135
 
 ## Why this source matters
 
@@ -23,65 +24,97 @@ This document defines Chile's strategic Antarctic agenda for 2026–2030 and rep
 4. Medioambiente antártico y sus ecosistemas: protección y conservación.
 5. Región de Magallanes y de la Antártica Chilena: polo de desarrollo antártico.
 
-## Ten strategic objectives normalized
+## Ten strategic objectives and task coverage
 
-| # | Objective | Core RAG layers |
-|---|---|---|
-| 1 | Resguardar y promover los intereses nacionales y mantener una presencia efectiva, protegiendo los derechos soberanos de Chile sobre el Territorio Chileno Antártico. | sovereignty, presence, geography |
-| 2 | Consolidar liderazgo e influencia dentro del Sistema del Tratado Antártico y contribuir a mantener el territorio libre de conflictos internacionales. | governance, international cooperation |
-| 3 | Proteger el medioambiente antártico y marino y promover un sistema representativo de áreas marinas protegidas. | environment, biodiversity, marine conservation |
-| 4 | Potenciar investigación y tecnología antártica mediante una institucionalidad nacional robusta. | science, technology, research |
-| 5 | Consolidar Magallanes y la Antártica Chilena como polo científico, tecnológico, logístico, cultural y turístico, reforzando conectividad con Antártica. | regional development, logistics, tourism, connectivity |
-| 6 | Conservar los recursos vivos marinos antárticos y fortalecer la participación de Chile en la CCRVMA. | fisheries, marine conservation, governance |
-| 7 | Facilitar actividades económicas sostenibles, con especial énfasis en turismo antártico controlado y sostenible. | tourism, sustainability, biodiversity |
-| 8 | Fortalecer conciencia e identidad antártica nacional y difundir patrimonio histórico, científico y cultural. | identity, heritage, education |
-| 9 | Perfeccionar institucionalidad, coordinación intersectorial y legislación antártica. | governance, law, coordination |
-| 10 | Desarrollar infraestructura antártica sostenible y mejorar capacidades logísticas operativas. | infrastructure, logistics, aviation |
+| # | Objective | Tasks extracted |
+|---|---|---:|
+| 1 | Presencia efectiva e intereses nacionales en el Territorio Chileno Antártico | 19 |
+| 2 | Liderazgo e influencia dentro del Sistema del Tratado Antártico | 19 |
+| 3 | Protección del medioambiente antártico y marino | 13 |
+| 4 | Investigación y tecnología antártica | 17 |
+| 5 | Magallanes como polo científico, tecnológico, logístico, cultural y turístico | 21 |
+| 6 | Conservación de recursos vivos marinos y participación en CCRVMA | 14 |
+| 7 | Actividades económicas sostenibles y turismo antártico | 2 |
+| 8 | Conciencia, identidad y patrimonio antártico | 11 |
+| 9 | Institucionalidad, coordinación y legislación antártica | 3 |
+| 10 | Infraestructura antártica y capacidades logísticas | 16 |
+| **Total** |  | **135** |
 
-## Key actions extracted
+## Operational task matrix
 
-### Digital Antarctic connectivity
+The complete task matrix is stored at:
 
-Two separate policy layers are now modelled:
+`data/sources/minrel-pea-2026-2030-task-matrix.csv`
 
-- Objective 2 includes work to obtain consensus within Antarctic Treaty System forums regarding an Antarctic submarine fiber-optic cable.
-- Objective 5 includes feasibility analysis of possible submarine cable routes from **Punta Arenas or Puerto Williams** toward the Chilean Antarctic Territory, serving permanent bases in the South Shetland Islands and Antarctic Peninsula.
+For every one of the 135 tasks the matrix records:
 
-For Austral Beacon this confirms that the Austral Connectivity Observatory should include a permanent **digital / telecommunications** layer in addition to air, maritime and terrestrial connectivity.
+- objective number
+- task number
+- responsible institution
+- involved institutions
+- completion period
+- financing status/source
+- priority area
+- verified PDF source page
 
-### Puerto Williams Antarctic development
+This matrix is intended for monitoring, entity normalization, future RAG chunks and the Austral Intelligence Radar.
 
-Objective 7 contains an explicit action to strengthen Puerto Williams through an integrated Antarctic development plan during 2026–2030. The action is led by the Government of the Magallanes and Chilean Antarctica Region, with other public institutions involved or proposed for participation.
+## High-value findings for Austral Beacon
 
-This must be treated as a policy fact, not as evidence that every proposed project has already been implemented.
+### Puerto Williams
+
+Objective 7 includes the explicit 2026–2030 task **"Robustecer mediante un plan integral de desarrollo antártico la ciudad de Puerto Williams"**. The responsible institution is GORE Magallanes, with MINDEF, Armada and Subsecretaría de Turismo listed as involved institutions. Source page: 24.
+
+This is a policy commitment/task, not evidence that a particular project has already been implemented.
+
+### Antarctic digital connectivity
+
+Objective 5 contains a multi-stage roadmap for an Antarctic submarine fiber-optic cable. It includes feasibility, technical design, financing, environmental evaluation, land acquisition, procurement, route survey, terminal equipment and installation-related tasks. The possible connection origin explicitly includes **Punta Arenas or Puerto Williams**.
+
+Objective 10 then includes construction-stage tasks scheduled mainly for 2029–2030.
+
+For the Austral Connectivity Observatory, connectivity should therefore include four permanent layers:
+
+- air
+- maritime
+- terrestrial
+- digital / telecommunications
+
+### Magallanes as Antarctic hub
+
+Objective 5 contains 21 tasks, the largest task group in the plan. In addition to the submarine cable, it includes the Centro Antártico Internacional, treatment of Antarctic-generated waste in Magallanes and integration of Antarctic scientific infrastructure with research and education networks.
 
 ### Sustainable Antarctic tourism
 
-Objective 7 also includes studying Antarctic tourism-related activities to assess potential impacts and contribute to sustainable practices. INACH appears as lead institution with MINREL involvement in the extracted task.
+Objective 7 contains two tasks:
 
-This source can therefore support policy and strategic context for Antarctica Begins and Radar, but current operational details such as schedules, prices and active routes must still be cross-checked against first-party operator sources.
+1. Integrated Antarctic development planning for Puerto Williams.
+2. Study of Antarctic tourism activities to assess potential impacts and contribute to sustainable practices.
 
-### Environmental governance
+Operational details such as current schedules, fares and active products must still be cross-checked against first-party operator sources.
 
-Objective 3 includes continued diplomatic and scientific efforts concerning the Chile–Argentina proposal for a marine protected area in the Antarctic Peninsula.
+### Infrastructure and logistics
 
-Objective 9 includes preparation of regulation for the Antarctic environmental-impact-assessment operating committee and its procedures under Law 21.255.
+Objective 10 contains 16 tasks, including:
 
-### Antarctic science
+- conservation of the Aeródromo Teniente Marsh movement area;
+- a new passenger refuge at Teniente Rodolfo Marsh Martin;
+- port infrastructure and support sheds at Bahía Fildes;
+- submarine cable construction stages;
+- design of the future Estación Científica Conjunta Carvajal;
+- study of converting Refugio Boonen Rivera into a seasonal station;
+- the MIA infrastructure program at Isla Rey Jorge;
+- maintenance of Villa Las Estrellas housing;
+- acquisition planning for Antarctic helicopter and aircraft capabilities;
+- development of aviation control, SAR and EVACAM capabilities.
 
-Objective 4 includes collaboration on the Antarctic Laboratories Node project, subject to the corresponding ANID competition outcome.
+### Science and environment
 
-### Antarctic identity and education
+Objective 4 contains 17 science and technology tasks. Objective 3 contains 13 environmental tasks, including the Chile–Argentina Antarctic Peninsula marine protected area proposal, ZAEP management, invasive species monitoring, carbon-footprint evaluation, renewable energy and environmental-impact governance.
 
-Objective 8 includes developing and keeping updated a proposal to integrate Antarctic topics into Ministry of Education curricula, with MINEDUC and INACH linked to the task.
+### Identity and education
 
-### Air infrastructure
-
-Objective 10 includes conservation of the runway at **Aeródromo Teniente Marsh**, making the airfield a canonical infrastructure entity for Antarctica Begins and the Austral Connectivity Observatory.
-
-### Marine resources
-
-Objective 6 establishes conservation and rational use of Antarctic marine living resources as a strategic objective, with active Chilean participation in the CCRVMA as a key action.
+Objective 8 contains 11 tasks, including Antarctic content in education, the Feria Antártica Escolar, audiovisual/editorial dissemination, educational material, artistic residencies and institutional Antarctic specialization.
 
 ## High-value entities
 
@@ -92,14 +125,24 @@ Objective 6 establishes conservation and rational use of Antarctic marine living
 - Puerto Williams
 - Islas Shetland del Sur
 - Península Antártica
-- Aeródromo Teniente Marsh
+- Isla Rey Jorge
+- Bahía Fildes
+- Villa Las Estrellas
+- Aeródromo Teniente Marsh / Teniente Rodolfo Marsh Martin
+- Refugio Boonen Rivera
+- Estación Científica Conjunta Carvajal
+- Centro Antártico Internacional
 - Instituto Antártico Chileno (INACH)
-- Ministerio de Relaciones Exteriores de Chile (MINREL)
-- Armada de Chile
-- Gobierno Regional de Magallanes y de la Antártica Chilena
+- Ministerio de Relaciones Exteriores (MINREL / DIVANTARTICA)
+- Ministerio de Defensa / Ejército / Armada / FACH
+- Ministerio de Obras Públicas (MOP)
 - Subsecretaría de Telecomunicaciones (SUBTEL)
-- Ministerio de Ciencia, Tecnología, Conocimiento e Innovación
+- Gobierno Regional de Magallanes y de la Antártica Chilena
+- Ministerio de Ciencia
+- Ministerio del Medio Ambiente
 - Ministerio de Educación
+- Subsecretaría de Turismo
+- SUBPESCA / SERNAPESCA
 - Sistema del Tratado Antártico
 - CCRVMA
 - Ley N°21.255 — Estatuto Chileno Antártico
@@ -129,20 +172,16 @@ Objective 6 establishes conservation and rational use of Antarctic marine living
 
 | Project | Relevance |
 |---|---|
-| Austral Radar | Policy changes, institutions, public actions, strategic projects and implementation monitoring |
+| Austral Intelligence Radar | Monitor 135 policy tasks, deadlines, responsible institutions and implementation signals |
 | Antarctica Begins | Chilean gateways, logistics, tourism policy and Antarctic access context |
-| Austral Connectivity Observatory | Air, logistics, maritime context and digital connectivity |
+| Austral Connectivity Observatory | Air, maritime, logistics and digital connectivity |
 | Antarctic Pulse | Science, environment, conservation and Antarctic policy context |
-| End of the World Atlas | Puerto Williams, Punta Arenas, Antarctic geography and territorial relationships |
+| End of the World Atlas | Puerto Williams, Punta Arenas, Bahía Fildes, Isla Rey Jorge and territorial relationships |
 | End of the World Travel | Only validated travel information after cross-checking current operational sources |
 
 ## Provenance model
 
-The normalized JSON now anchors extracted records at section, objective and action level where available.
-
-Rule:
-
-> Never invent page numbers. Add exact PDF-page provenance only when page-level extraction has been verified. Until then, objective/action anchors are retained as the minimum provenance layer.
+The operational matrix now includes verified PDF page provenance for all 135 task rows. Factual narrative records should continue to reference the canonical document ID and, where possible, the corresponding objective/task number and PDF page.
 
 ## Technical processing status
 
@@ -150,22 +189,23 @@ Rule:
 - [x] Authority classified
 - [x] Five priority areas normalized
 - [x] All ten strategic objectives normalized
-- [x] Initial canonical entities identified
-- [x] High-value actions extracted
-- [x] Initial responsible institutions normalized where directly visible
-- [x] Initial relationships modelled
-- [x] Section/objective/action provenance added
-- [ ] Extract every remaining task under objectives 1–10
-- [ ] Add exact PDF-page provenance to every factual record
-- [ ] Normalize all responsible and involved institutions
-- [ ] Normalize financing and completion periods for every task
+- [x] All 135 operational tasks enumerated
+- [x] Responsible institutions extracted for all task rows
+- [x] Involved institutions extracted where present
+- [x] Completion periods extracted
+- [x] Financing fields extracted
+- [x] Priority-area assignments extracted
+- [x] Exact PDF page provenance added to the task matrix
+- [x] High-value entities and relationships identified
+- [ ] Normalize institutional aliases into canonical entity IDs
+- [ ] Promote high-value tasks into canonical fact/relationship JSON records
 - [ ] Generate semantic chunks
 - [ ] Generate embeddings
 
 ## Ingestion rule
 
-Do not embed the raw PDF as the only knowledge layer. First normalize factual records and provenance. Embeddings should reference canonical normalized records and preserve a route back to the original source document.
+Do not embed the raw PDF as the only knowledge layer. Normalize factual records and provenance first. Embeddings should reference canonical normalized records and preserve a route back to the original source document.
 
 ## Next source in Batch 01
 
-Once the remaining task-level extraction for this plan is complete, process **Política Nacional de Turismo Antártico 2020** and compare it against this 2026–2030 strategy to identify continuity, changes and new priorities affecting tourism, gateways, sustainability and regional development.
+The next source is **Política Nacional de Turismo Antártico 2020**. It should be normalized and then compared against this 2026–2030 plan to identify continuity, changes and new priorities affecting tourism, gateways, sustainability, Puerto Williams, Punta Arenas and regional development.
