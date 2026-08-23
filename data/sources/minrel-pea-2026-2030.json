@@ -1,0 +1,145 @@
+{
+  "document": {
+    "id": "minrel-pea-2026-2030",
+    "title": "Plan Estratégico Antártico 2026–2030",
+    "publisher": "Consejo de Política Antártica / Ministerio de Relaciones Exteriores de Chile",
+    "source_type": "primary_institutional",
+    "authority_level": "canonical",
+    "publication_date": "2025-11-06",
+    "valid_from": "2026-01-01",
+    "valid_until": "2030-12-31",
+    "language": "es",
+    "drive_file_id": "1nWgAWqDbbU6OnwyLSvaeVzRrbIm0RvHy",
+    "geographic_scope": [
+      "Chile",
+      "Región de Magallanes y de la Antártica Chilena",
+      "Territorio Chileno Antártico",
+      "Antártica",
+      "Islas Shetland del Sur",
+      "Península Antártica"
+    ],
+    "projects": [
+      "Radar",
+      "Antarctica Begins",
+      "Observatorio",
+      "Antarctic Pulse",
+      "Atlas"
+    ],
+    "topics": [
+      "governance",
+      "sovereignty",
+      "science",
+      "environment",
+      "infrastructure",
+      "aviation",
+      "telecommunications",
+      "logistics",
+      "tourism",
+      "regional_development",
+      "antarctic_identity",
+      "international_cooperation"
+    ]
+  },
+  "priority_areas": [
+    "Territorio Chileno Antártico: soberanía, presencia, infraestructura e identidad nacional",
+    "Sistema del Tratado Antártico: liderazgo de Chile",
+    "Ciencia antártica: fortalecimiento y nuevas fronteras",
+    "Medioambiente antártico y sus ecosistemas: protección y conservación",
+    "Región de Magallanes y de la Antártica Chilena: polo de desarrollo antártico"
+  ],
+  "entities": [
+    {"id":"chile","type":"state","name":"Chile"},
+    {"id":"territorio_chileno_antartico","type":"territory","name":"Territorio Chileno Antártico"},
+    {"id":"region_magallanes_antartica_chilena","type":"region","name":"Región de Magallanes y de la Antártica Chilena"},
+    {"id":"punta_arenas","type":"city_gateway","name":"Punta Arenas"},
+    {"id":"puerto_williams","type":"city_gateway","name":"Puerto Williams"},
+    {"id":"islas_shetland_del_sur","type":"antarctic_geography","name":"Islas Shetland del Sur"},
+    {"id":"peninsula_antartica","type":"antarctic_geography","name":"Península Antártica"},
+    {"id":"aerodromo_teniente_marsh","type":"infrastructure","name":"Aeródromo Teniente Marsh"},
+    {"id":"inach","type":"institution","name":"Instituto Antártico Chileno"},
+    {"id":"minrel","type":"institution","name":"Ministerio de Relaciones Exteriores de Chile"},
+    {"id":"armada_de_chile","type":"institution","name":"Armada de Chile"},
+    {"id":"gore_magallanes","type":"institution","name":"Gobierno Regional de Magallanes y de la Antártica Chilena"},
+    {"id":"sistema_tratado_antartico","type":"international_framework","name":"Sistema del Tratado Antártico"},
+    {"id":"ley_21255","type":"legal_instrument","name":"Ley N°21.255 — Estatuto Chileno Antártico"}
+  ],
+  "facts": [
+    {
+      "fact_id": "fact-minrel-0001",
+      "subject": "Plan Estratégico Antártico 2026–2030",
+      "predicate": "replaces",
+      "object": "Plan Estratégico Antártico 2021–2025",
+      "statement": "El Plan Estratégico Antártico 2026–2030 sustituye al plan correspondiente al período 2021–2025.",
+      "authority": "official_policy",
+      "confidence": 1.0
+    },
+    {
+      "fact_id": "fact-minrel-0002",
+      "subject": "Plan Estratégico Antártico 2021–2025",
+      "predicate": "completion_status",
+      "object": {"completed_pct":71,"in_progress_pct":25,"pending_pct":4},
+      "statement": "La evaluación informada por MINREL indica 71% de tareas cumplidas, 25% en desarrollo y 4% pendientes.",
+      "authority": "official_policy",
+      "confidence": 1.0
+    },
+    {
+      "fact_id": "fact-minrel-0003",
+      "subject": "Puerto Williams",
+      "predicate": "target_of",
+      "object": "integrated_antarctic_development_plan",
+      "statement": "El plan contempla robustecer Puerto Williams mediante un plan integral de desarrollo antártico durante 2026–2030.",
+      "topics": ["regional_development","infrastructure","tourism","logistics"],
+      "authority": "official_policy",
+      "temporal_scope": {"from":2026,"to":2030},
+      "confidence": 1.0
+    },
+    {
+      "fact_id": "fact-minrel-0004",
+      "subject": "Región de Magallanes y de la Antártica Chilena",
+      "predicate": "antarctic_connectivity_project",
+      "object": "submarine_fiber_optic_cable_feasibility",
+      "statement": "El plan contempla analizar trazados de cable submarino desde Punta Arenas o Puerto Williams hacia el Territorio Chileno Antártico para atender bases permanentes en las Islas Shetland del Sur y la Península Antártica.",
+      "topics": ["telecommunications","infrastructure","science","logistics"],
+      "authority": "official_policy",
+      "confidence": 1.0
+    },
+    {
+      "fact_id": "fact-minrel-0005",
+      "subject": "Objetivo N°7",
+      "predicate": "focuses_on",
+      "object": "sustainable_economic_activities_and_controlled_tourism",
+      "statement": "El Objetivo N°7 prioriza actividades económicas sostenibles permitidas por el Sistema del Tratado Antártico, con énfasis en turismo controlado y sostenible y protección de la biodiversidad.",
+      "topics": ["tourism","environment","biodiversity","governance"],
+      "authority": "official_policy",
+      "confidence": 1.0
+    },
+    {
+      "fact_id": "fact-minrel-0006",
+      "subject": "Objetivo N°10",
+      "predicate": "focuses_on",
+      "object": "sustainable_antarctic_infrastructure_and_logistics",
+      "statement": "El Objetivo N°10 busca desarrollar infraestructura antártica sostenible y mejorar las capacidades logísticas operativas.",
+      "topics": ["infrastructure","aviation","logistics"],
+      "authority": "official_policy",
+      "confidence": 1.0
+    }
+  ],
+  "relationships": [
+    {"from":"puerto_williams","relation":"candidate_origin_for","to":"antarctic_submarine_cable"},
+    {"from":"punta_arenas","relation":"candidate_origin_for","to":"antarctic_submarine_cable"},
+    {"from":"puerto_williams","relation":"target_of","to":"integrated_antarctic_development_plan"},
+    {"from":"region_magallanes_antartica_chilena","relation":"strategic_role","to":"antarctic_development_hub"},
+    {"from":"aerodromo_teniente_marsh","relation":"supports","to":"antarctic_air_connectivity"}
+  ],
+  "rag": {
+    "status": "normalized_v1",
+    "embedding_ready": false,
+    "next_steps": [
+      "extract page-level provenance",
+      "expand all strategic objectives and assigned institutions",
+      "generate semantic chunks with source anchors",
+      "validate entity aliases against existing Atlas entities",
+      "deduplicate concepts before embedding"
+    ]
+  }
+}
