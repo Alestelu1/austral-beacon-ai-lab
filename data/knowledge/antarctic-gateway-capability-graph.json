@@ -1,7 +1,7 @@
 {
-  "graph_id": "chile-antarctic-gateway-capability-v2",
-  "scope": "Chile-linked Antarctic gateway places, infrastructure and operations",
-  "status": "normalized_v2",
+  "graph_id": "chile-antarctic-gateway-capability-v3",
+  "scope": "Chile-linked Antarctic gateways, scientific platforms, infrastructure and operations",
+  "status": "normalized_v3",
   "nodes": [
     {"id":"antarctica","type":"region","name":"Antarctica"},
     {"id":"antarctic_air_connectivity","type":"capability","name":"Antarctic air connectivity"},
@@ -9,10 +9,15 @@
     {"id":"punta_arenas","type":"city_gateway","name":"Punta Arenas"},
     {"id":"puerto_williams","type":"city_gateway","name":"Puerto Williams"},
     {"id":"king_george_island","type":"antarctic_gateway_place","name":"King George Island / Isla Rey Jorge"},
+    {"id":"peninsula_fildes","type":"antarctic_place","name":"Península de Fildes"},
     {"id":"bahia_fildes","type":"antarctic_place","name":"Bahía Fildes"},
     {"id":"villa_las_estrellas","type":"settlement","name":"Villa Las Estrellas"},
-    {"id":"base_frei","type":"antarctic_station","name":"Base Frei / Frei Station"},
+    {"id":"base_frei","type":"antarctic_station","name":"Base Presidente Eduardo Frei Montalva / Frei Station"},
+    {"id":"base_profesor_julio_escudero","type":"scientific_station","name":"Base Científica Profesor Julio Escudero"},
     {"id":"aerodromo_teniente_marsh","type":"air_infrastructure","name":"Aeródromo Teniente Marsh / Teniente Rodolfo Marsh Martin"},
+    {"id":"glaciar_union","type":"deep_field_place","name":"Glaciar Unión"},
+    {"id":"base_glaciar_union","type":"scientific_station","name":"Base / Estación Polar Científica Conjunta Glaciar Unión"},
+    {"id":"chile_antarctic_scientific_logistics_network","type":"network","name":"Red chilena de plataformas científico-logísticas antárticas"},
     {"id":"bahia_fildes_port_project","type":"planned_infrastructure","name":"Infraestructura portuaria Bahía Fildes"},
     {"id":"antarctic_submarine_cable","type":"planned_digital_infrastructure","name":"Cable submarino antártico de fibra óptica"},
     {"id":"puerto_williams_antarctic_development_plan","type":"planned_regional_development","name":"Plan integral de desarrollo antártico de Puerto Williams"},
@@ -38,12 +43,21 @@
   ],
   "edges": [
     {"from":"punta_arenas","relation":"gateway_to","to":"king_george_island","evidence_scope":"institutional_and_multiple_first_party_sources"},
+    {"from":"peninsula_fildes","relation":"located_on","to":"king_george_island","evidence_scope":"inach_eva_2025"},
+    {"from":"villa_las_estrellas","relation":"located_in","to":"peninsula_fildes","evidence_scope":"inach_eva_2025"},
+    {"from":"base_frei","relation":"located_on","to":"king_george_island","evidence_scope":"inach_eva_2025"},
+    {"from":"aerodromo_teniente_marsh","relation":"located_on","to":"king_george_island","evidence_scope":"inach_eva_2025"},
+    {"from":"base_profesor_julio_escudero","relation":"located_on","to":"king_george_island","evidence_scope":"inach_eva_2025"},
+    {"from":"villa_las_estrellas","relation":"adjacent_context_to","to":"base_frei","evidence_scope":"inach_eva_2025_historical_timeline"},
+    {"from":"chile_antarctic_scientific_logistics_network","relation":"extends_from","to":"punta_arenas","evidence_scope":"inach_eva_2025"},
+    {"from":"chile_antarctic_scientific_logistics_network","relation":"extends_to","to":"glaciar_union","evidence_scope":"inach_eva_2025"},
+    {"from":"base_glaciar_union","relation":"located_at","to":"glaciar_union","evidence_scope":"inach_eva_2025_and_fach_sources"},
     {"from":"puerto_williams","relation":"recognized_as_gateway_city","to":"antarctica","evidence_scope":"minrel_policy_2020_and_plan_2026_2030"},
     {"from":"puerto_williams","relation":"candidate_origin_for","to":"antarctic_submarine_cable","evidence_scope":"minrel_plan_2026_2030"},
     {"from":"puerto_williams","relation":"target_of","to":"puerto_williams_antarctic_development_plan","evidence_scope":"minrel_plan_2026_2030"},
     {"from":"bahia_fildes","relation":"target_of","to":"bahia_fildes_port_project","evidence_scope":"minrel_plan_2026_2030"},
     {"from":"aerodromo_teniente_marsh","relation":"has_planned_upgrade","to":"airfield_movement_area_conservation","evidence_scope":"minrel_plan_2026_2030"},
-    {"from":"aerodromo_teniente_marsh","relation":"supports","to":"antarctic_air_connectivity","evidence_scope":"minrel_policy_2020_and_operator_sources"},
+    {"from":"aerodromo_teniente_marsh","relation":"supports","to":"antarctic_air_connectivity","evidence_scope":"minrel_policy_2020_operator_and_inach_sources"},
     {"from":"dap","relation":"operates_from","to":"punta_arenas","evidence_scope":"dap_first_party"},
     {"from":"dap","relation":"operates_air_sector_to","to":"king_george_island","evidence_scope":"dap_first_party"},
     {"from":"dap","relation":"offers","to":"full_day_antarctica","evidence_scope":"dap_first_party"},
@@ -71,18 +85,23 @@
   "evidence_rules": {
     "explicit_source_relation": "May be exposed as a sourced graph relationship.",
     "inferred_geographic_relation": "Do not add unless verified by an authoritative geographic source or explicit source statement.",
+    "historical_facility_fact": "May establish inauguration/history but not current operating status.",
     "planned_infrastructure": "Must never be presented as completed or operational without implementation evidence.",
-    "commercial_operation": "Must carry season/freshness metadata and be reverified before current user-facing claims."
+    "commercial_operation": "Must carry season/freshness metadata and be reverified before current user-facing claims.",
+    "state_scientific_operation": "Must not be exposed as a public passenger route unless an explicit public transport source supports it."
   },
   "temporal_rules": {
     "operator_products": "must_include_season_or_validity_window",
     "prices": "must_include_currency_amount_price_type_season_and_source",
     "routes": "must_be_reverified_before_user_facing_current_claim",
-    "institutional_policy": "may_be_used_for_strategy_context_but_not_as_proof_of_current_operation"
+    "institutional_policy": "may_be_used_for_strategy_context_but_not_as_proof_of_current_operation",
+    "facility_operating_status": "must_be_reverified_from_current_institutional_sources"
   },
   "source_classes": {
-    "institutional": ["MINREL","INACH"],
+    "institutional_policy": ["MINREL"],
+    "institutional_science_geography": ["INACH"],
+    "institutional_operations": ["FACH"],
     "first_party_commercial": ["DAP","Antarctica21"]
   },
-  "projects": ["Antarctica Begins","End of the World Travel Assistant","Austral Connectivity Observatory","Austral Intelligence Radar","End of the World Atlas"]
+  "projects": ["Antarctica Begins","End of the World Travel Assistant","Austral Connectivity Observatory","Austral Intelligence Radar","End of the World Atlas","Antarctic Pulse"]
 }
