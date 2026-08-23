@@ -1,0 +1,115 @@
+{
+  "suite_id": "magallanes-travel-qa-v1",
+  "retrieval_view": "data/retrieval/magallanes-travel-retrieval-view.json",
+  "purpose": "Validate southern Magallanes travel retrieval before embeddings and live itinerary tooling are enabled.",
+  "evaluation_rules": {
+    "current_access_requires_current_evidence": true,
+    "historical_map_times_must_not_override_current_operator_data": true,
+    "park_access_must_be_separated_from_visitor_services": true,
+    "construction_status_must_not_be_upgraded_to_completed_without_evidence": true,
+    "booking_sensitive_transport_requires_live_recheck": true
+  },
+  "cases": [
+    {
+      "id": "mag-qa-001",
+      "question": "¿Puedo conducir hoy desde Punta Arenas hasta Puerto Williams por la Ruta Y-85?",
+      "expected_chunks": ["vicuna-yendegaia-road-001"],
+      "required_points": [
+        "No existe evidencia de una conexión vial continua terminada hasta Puerto Williams.",
+        "El proyecto Vicuña–Yendegaia sigue en construcción en 2026.",
+        "La Etapa XI tuvo trabajos activos durante 2026."
+      ],
+      "must_not_claim": [
+        "Que la Ruta Y-85 ya permite conducir de forma continua hasta Puerto Williams.",
+        "Que una fecha histórica de finalización equivale a obra concluida."
+      ]
+    },
+    {
+      "id": "mag-qa-002",
+      "question": "¿Está abierto el Parque Nacional Yendegaia para visitantes con infraestructura turística?",
+      "expected_chunks": ["yendegaia-access-002"],
+      "required_points": [
+        "CONAF indica que el parque no tiene atención a visitantes.",
+        "CONAF indica que no existe infraestructura de uso público.",
+        "La existencia de accesos territoriales no equivale a servicios para visitantes."
+      ]
+    },
+    {
+      "id": "mag-qa-003",
+      "question": "¿Cómo se puede aproximar actualmente a Yendegaia?",
+      "expected_chunks": ["yendegaia-access-002","vicuna-yendegaia-road-001"],
+      "required_points": [
+        "CONAF describe un acceso marítimo desde Puerto Williams/Puerto Navarino hacia Bahía Yendegaia.",
+        "CONAF describe un acceso terrestre por Ruta Y-85 hasta Lago Fagnano y luego la senda Vicuña–Yendegaia.",
+        "El corredor vial sigue en construcción, por lo que no debe presentarse como conexión terrestre completa."
+      ]
+    },
+    {
+      "id": "mag-qa-004",
+      "question": "¿Cuánto demora actualmente el ferry entre Punta Arenas y Puerto Williams?",
+      "expected_chunks": ["tabsa-pa-pw-001"],
+      "required_points": [
+        "La página first-party actual de TABSA describe aproximadamente 32 horas.",
+        "La duración de 31 horas del mapa histórico no debe tratarse como dato actual.",
+        "El itinerario y disponibilidad deben revalidarse para una fecha específica."
+      ]
+    },
+    {
+      "id": "mag-qa-005",
+      "question": "¿TABSA tiene viajes a Caleta 2 de Mayo?",
+      "expected_chunks": ["caleta-dos-mayo-service-scope-001"],
+      "required_points": [
+        "TABSA incluye Caleta 2 de Mayo en el ámbito de servicio de Operaciones Puerto Williams.",
+        "El corpus no establece por sí solo una frecuencia fija ni disponibilidad para una fecha concreta.",
+        "Debe consultarse el itinerario first-party vigente antes de confirmar un viaje."
+      ]
+    },
+    {
+      "id": "mag-qa-006",
+      "question": "¿Qué parques forman el tramo de Magallanes de la Ruta de los Parques?",
+      "expected_chunks": ["magallanes-parks-001"],
+      "required_points": [
+        "Bernardo O'Higgins, Kawésqar, Torres del Paine, Pali Aike, Alberto de Agostini, Yendegaia y Cabo de Hornos."
+      ]
+    },
+    {
+      "id": "mag-qa-007",
+      "question": "¿Yendegaia es solo un atractivo turístico o principalmente un área protegida?",
+      "expected_chunks": ["yendegaia-place-001","responsible-travel-001"],
+      "required_points": [
+        "Es un parque nacional y debe describirse primero como área protegida.",
+        "La información de viaje debe respetar su contexto de conservación y limitaciones de uso público."
+      ]
+    },
+    {
+      "id": "mag-qa-008",
+      "question": "¿Punta Arenas y Puerto Williams son puertas de entrada a todos los parques australes con servicios disponibles hoy?",
+      "expected_chunks": ["southern-gateway-parks-001"],
+      "required_points": [
+        "La expresión gateway es contexto territorial, no garantía de acceso o servicio actual a cada parque.",
+        "Servicios marítimos, vuelos, desembarcos y accesos deben comprobarse por separado."
+      ]
+    },
+    {
+      "id": "mag-qa-009",
+      "question": "¿Qué recomendaciones responsables debería dar el Travel Assistant para recorrer la Ruta de los Parques?",
+      "expected_chunks": ["responsible-travel-001"],
+      "required_points": [
+        "Apoyar comunidades locales.",
+        "Respetar tradiciones y guardaparques.",
+        "Reducir residuos y no alimentar fauna.",
+        "Usar senderos habilitados y respetar prohibiciones de fuego."
+      ]
+    },
+    {
+      "id": "mag-qa-010",
+      "question": "Un mapa de 2022 dice que un ferry tarda 31 horas. ¿Puedo publicar ese tiempo como actual?",
+      "expected_chunks": ["tabsa-pa-pw-001"],
+      "required_points": [
+        "No.",
+        "Los tiempos de servicio son datos dinámicos.",
+        "Debe priorizarse información first-party actual y registrar fecha de verificación."
+      ]
+    }
+  ]
+}
