@@ -1,0 +1,67 @@
+{
+  "view_id": "magallanes-travel-retrieval-v1",
+  "purpose": "Agent-facing retrieval layer for southern Magallanes travel, protected areas and territorial connectivity.",
+  "rules": {
+    "prefer_authoritative_geography_for_canonical_location": true,
+    "treat_2022_access_hours_reservations_as_historical_until_reverified": true,
+    "never_infer_current_road_completion_from_historical_construction_text": true,
+    "separate_place_identity_from_access_mode_and_service_availability": true,
+    "responsible_travel_guidance_may_use_route_passport_principles": true
+  },
+  "chunks": [
+    {
+      "chunk_id": "rdp-overview-001",
+      "title": "Ruta de los Parques overview",
+      "entities": ["ruta_de_los_parques_patagonia","puerto_montt","cabo_de_hornos"],
+      "summary": "Ruta de los Parques sources describe a 2,800 km conservation and nature-travel corridor linking 17 national parks from Puerto Montt to Cabo de Hornos, integrating the Carretera Austral, Patagonian channels and the Ruta del Fin del Mundo.",
+      "source_ids": ["ruta-parques-folleto-2022","ruta-parques-pasaporte-2022"],
+      "freshness_class": "specialist_secondary_2022",
+      "allowed_uses": ["route_context","protected_area_context","responsible_travel"]
+    },
+    {
+      "chunk_id": "magallanes-parks-001",
+      "title": "National parks in the Magallanes section",
+      "entities": ["pn_bernardo_ohiggins","pn_kawesqar","pn_torres_del_paine","pn_pali_aike","pn_alberto_de_agostini","pn_yendegaia","pn_cabo_de_hornos"],
+      "summary": "The Ruta de los Parques road map explicitly lists seven national parks in the Magallanes section: Bernardo O'Higgins, Kawésqar, Torres del Paine, Pali Aike, Alberto de Agostini, Yendegaia and Cabo de Hornos.",
+      "source_ids": ["ruta-parques-mapa-rutero-magallanes","ruta-parques-folleto-2022"],
+      "freshness_class": "stable_geography_with_2022_secondary_context"
+    },
+    {
+      "chunk_id": "yendegaia-place-001",
+      "title": "Yendegaia territorial and conservation context",
+      "entities": ["pn_yendegaia","isla_grande_tierra_del_fuego","canal_beagle","cordillera_darwin"],
+      "summary": "Yendegaia is described as a national park in the far south of Isla Grande de Tierra del Fuego, associated with the Beagle Channel and Cordillera Darwin. The conservation publication records its creation in 2014 and notes the name meaning 'bahía profunda' in Yagán.",
+      "source_ids": ["yendegaia-conservation-context","ruta-parques-folleto-2022"],
+      "freshness_class": "historical_and_stable_place_context",
+      "allowed_uses": ["atlas","destination_context","conservation_history"]
+    },
+    {
+      "chunk_id": "yendegaia-access-001",
+      "title": "Yendegaia access status must be reverified",
+      "entities": ["pn_yendegaia","ruta_fin_del_mundo_extension","caleta_2_de_mayo"],
+      "summary": "Historical Yendegaia material describes an extension of the Ruta 7 / Ruta del Fin del Mundo toward Caleta 2 de Mayo as under construction at the time of publication. This is historical evidence only and does not establish the road's current completion or public-access status.",
+      "source_ids": ["yendegaia-conservation-context"],
+      "freshness_class": "historical_infrastructure_status",
+      "status": "requires_current_verification",
+      "prohibited_inference": "Do not tell travelers that the road currently reaches the park or Puerto Williams without newer official evidence."
+    },
+    {
+      "chunk_id": "southern-gateway-parks-001",
+      "title": "Puerto Williams and Punta Arenas as southern park gateways",
+      "entities": ["puerto_williams","punta_arenas","pn_alberto_de_agostini","pn_cabo_de_hornos"],
+      "summary": "The 2022 Ruta de los Parques brochure identifies Puerto Williams and Punta Arenas as gateway cities for southern protected-area access, including Alberto de Agostini and the Cabo de Hornos environment. This is route-context evidence, not proof that every current transport service or park access is available from both cities.",
+      "source_ids": ["ruta-parques-folleto-2022"],
+      "freshness_class": "specialist_secondary_2022",
+      "prohibited_inference": "Do not infer current ferry, cruise, flight or landing availability from gateway wording alone."
+    },
+    {
+      "chunk_id": "responsible-travel-001",
+      "title": "Ruta de los Parques responsible travel principles",
+      "entities": ["ruta_de_los_parques_patagonia"],
+      "summary": "The route passport promotes low-impact travel: protect ecosystems, support local communities, respect traditions, reduce waste, do not feed wildlife, observe fauna from a distance, stay on marked trails, comply with fire bans and follow park-ranger instructions.",
+      "source_ids": ["ruta-parques-pasaporte-2022"],
+      "freshness_class": "editorial_guidance",
+      "allowed_uses": ["travel_assistant_behavior_guidance","visitor_education"]
+    }
+  ]
+}
