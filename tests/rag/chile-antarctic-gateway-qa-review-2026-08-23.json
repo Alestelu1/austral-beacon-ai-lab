@@ -1,0 +1,31 @@
+{
+  "review_id": "chile-antarctic-gateway-qa-static-review-2026-08-23",
+  "suite": "tests/rag/chile-antarctic-gateway-qa.json",
+  "review_type": "pre_embedding_static_evidence_review",
+  "summary": {
+    "cases": 12,
+    "pass": 12,
+    "runtime_retrieval_tested": false,
+    "external_verification_used": ["qa-002","qa-011"]
+  },
+  "results": [
+    {"id":"qa-001","status":"pass","note":"La retrieval view contiene gateway Punta Arenas–Isla Rey Jorge y regla de revalidar disponibilidad comercial."},
+    {"id":"qa-002","status":"pass","note":"El corpus distingue gateway político de operación comercial; verificación externa Gemini + Perplexity confirmó la formulación prudente."},
+    {"id":"qa-003","status":"pass","note":"Teniente Marsh y Glaciar Unión están modelados como capas operacionales distintas."},
+    {"id":"qa-004","status":"pass","note":"Instalaciones existentes y acciones planificadas tienen estados separados."},
+    {"id":"qa-005","status":"pass","note":"Villa Las Estrellas está modelada como núcleo poblacional, no como sinónimo de base científica."},
+    {"id":"qa-006","status":"pass","note":"Punta Arenas cuenta con respaldo institucional y first-party; no depende solo de lenguaje promocional."},
+    {"id":"qa-007","status":"pass","note":"La capa deep-field prohíbe inferir una ruta turística al Polo Sur."},
+    {"id":"qa-008","status":"pass","note":"Escudero existe desde 1995 y su renovación 2030 está marcada como planned."},
+    {"id":"qa-009","status":"pass","note":"Se distinguen 15 estaciones reportadas de 21 puntos proyectados."},
+    {"id":"qa-010","status":"pass","note":"La vista exige first-party vigente para productos comerciales e institucional para contexto."},
+    {"id":"qa-011","status":"pass","note":"Punta Arenas y Puerto Williams no se igualan operacionalmente; evidencia externa refuerza esta distinción."},
+    {"id":"qa-012","status":"pass","note":"La relación Isla Rey Jorge–Península de Fildes–Villa Las Estrellas está soportada por INACH."}
+  ],
+  "limitations": [
+    "Esta revisión valida coherencia entre QA, retrieval view y fuentes normalizadas; todavía no ejecuta búsqueda vectorial real.",
+    "Las afirmaciones comerciales actuales deberán volver a verificarse cuando se implemente retrieval runtime.",
+    "Un pass estático no sustituye pruebas de ranking, recall, citation fidelity ni generación de respuesta."
+  ],
+  "decision": "batch_01_ready_for_human_review_before_embeddings_or_merge"
+}
