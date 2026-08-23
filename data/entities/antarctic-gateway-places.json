@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "entity_set": "antarctic_gateway_places",
+  "entities": [
+    {
+      "id": "punta_arenas",
+      "name": "Punta Arenas",
+      "type": "city_gateway",
+      "roles": ["antarctic_gateway","logistics_hub","tourism_departure_point"],
+      "source_scope": ["MINREL 2020 policy","MINREL 2026-2030 plan","DAP first-party","Antarctica21 first-party"]
+    },
+    {
+      "id": "puerto_williams",
+      "name": "Puerto Williams",
+      "type": "city_gateway",
+      "roles": ["antarctic_gateway","regional_development_node","candidate_digital_connectivity_origin"],
+      "source_scope": ["MINREL 2020 policy","MINREL 2026-2030 plan"],
+      "policy_status": {
+        "gateway_recognition": "explicit",
+        "integrated_antarctic_development_task": "planned_2026_2030",
+        "submarine_cable_origin": "candidate_in_feasibility_analysis"
+      }
+    },
+    {
+      "id": "king_george_island",
+      "name": "King George Island / Isla Rey Jorge",
+      "type": "antarctic_gateway_place",
+      "roles": ["air_arrival_node","expedition_transfer_node","logistics_node"],
+      "source_scope": ["DAP first-party","Antarctica21 first-party"]
+    },
+    {
+      "id": "aerodromo_teniente_marsh",
+      "name": "Aeródromo Teniente Marsh / Teniente Rodolfo Marsh Martin",
+      "type": "air_infrastructure",
+      "roles": ["antarctic_air_connectivity","passenger_operations","logistics"],
+      "source_scope": ["MINREL 2020 policy","MINREL 2026-2030 plan","operator sources"],
+      "policy_status": {
+        "continuous_air_connectivity_reference_2020": true,
+        "movement_area_conservation_task_2026_2030": "planned",
+        "additional_aeronautical_infrastructure_task_2026_2030": "planned"
+      }
+    },
+    {
+      "id": "bahia_fildes",
+      "name": "Bahía Fildes",
+      "type": "antarctic_place",
+      "roles": ["planned_port_infrastructure_node"],
+      "source_scope": ["MINREL 2026-2030 plan"],
+      "policy_status": {
+        "port_and_support_infrastructure": "planned_2026_2030"
+      }
+    },
+    {
+      "id": "villa_las_estrellas",
+      "name": "Villa Las Estrellas",
+      "type": "settlement",
+      "roles": ["tourism_visit_reference"],
+      "source_scope": ["DAP briefing 2026"],
+      "operational_note": "DAP Full Day Antarctica lists Villa Las Estrellas among possible/featured visits on King George Island, subject to program and weather conditions."
+    },
+    {
+      "id": "base_frei",
+      "name": "Base Frei / Frei Station",
+      "type": "antarctic_station",
+      "roles": ["gateway_reference","map_reference"],
+      "source_scope": ["DAP logistics map","Antarctica21 2027-2028 brochure"],
+      "verification_note": "Current entity record preserves source naming only; detailed institutional attributes should be populated from FACH/INACH before broader canonical use."
+    }
+  ],
+  "rules": {
+    "geographic_containment": "Do not infer containment or adjacency relationships solely from operator maps; verify with authoritative geographic/institutional sources before adding canonical edges.",
+    "planned_projects": "Keep planned infrastructure separate from operational infrastructure.",
+    "commercial_references": "Reverify current services before presenting them as active."
+  }
+}
