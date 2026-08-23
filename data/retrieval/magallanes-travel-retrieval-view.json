@@ -1,12 +1,14 @@
 {
-  "view_id": "magallanes-travel-retrieval-v1",
+  "view_id": "magallanes-travel-retrieval-v2",
   "purpose": "Agent-facing retrieval layer for southern Magallanes travel, protected areas and territorial connectivity.",
   "rules": {
     "prefer_authoritative_geography_for_canonical_location": true,
     "treat_2022_access_hours_reservations_as_historical_until_reverified": true,
     "never_infer_current_road_completion_from_historical_construction_text": true,
     "separate_place_identity_from_access_mode_and_service_availability": true,
-    "responsible_travel_guidance_may_use_route_passport_principles": true
+    "responsible_travel_guidance_may_use_route_passport_principles": true,
+    "live_transport_schedules_require_first_party_recheck": true,
+    "park_access_description_is_not_equivalent_to_visitor_service": true
   },
   "chunks": [
     {
@@ -30,20 +32,50 @@
       "chunk_id": "yendegaia-place-001",
       "title": "Yendegaia territorial and conservation context",
       "entities": ["pn_yendegaia","isla_grande_tierra_del_fuego","canal_beagle","cordillera_darwin"],
-      "summary": "Yendegaia is described as a national park in the far south of Isla Grande de Tierra del Fuego, associated with the Beagle Channel and Cordillera Darwin. The conservation publication records its creation in 2014 and notes the name meaning 'bahía profunda' in Yagán.",
-      "source_ids": ["yendegaia-conservation-context","ruta-parques-folleto-2022"],
-      "freshness_class": "historical_and_stable_place_context",
+      "summary": "Yendegaia is a national park in the far south of Isla Grande de Tierra del Fuego, associated with the Beagle Channel and Cordillera Darwin. Current CONAF information places it in the communes of Timaukel and Cabo de Hornos and describes a mountainous landscape of ice fields, glaciers, fjords and channels.",
+      "source_ids": ["yendegaia-conservation-context","ruta-parques-folleto-2022","yendegaia-access-current-2026-08-23"],
+      "freshness_class": "stable_place_context_with_current_conaf_validation",
       "allowed_uses": ["atlas","destination_context","conservation_history"]
     },
     {
-      "chunk_id": "yendegaia-access-001",
-      "title": "Yendegaia access status must be reverified",
-      "entities": ["pn_yendegaia","ruta_fin_del_mundo_extension","caleta_2_de_mayo"],
-      "summary": "Historical Yendegaia material describes an extension of the Ruta 7 / Ruta del Fin del Mundo toward Caleta 2 de Mayo as under construction at the time of publication. This is historical evidence only and does not establish the road's current completion or public-access status.",
-      "source_ids": ["yendegaia-conservation-context"],
-      "freshness_class": "historical_infrastructure_status",
-      "status": "requires_current_verification",
-      "prohibited_inference": "Do not tell travelers that the road currently reaches the park or Puerto Williams without newer official evidence."
+      "chunk_id": "yendegaia-access-002",
+      "title": "Current Yendegaia access and visitor-service status",
+      "entities": ["pn_yendegaia","ruta_y85","lago_fagnano","caleta_2_de_mayo","puerto_williams","puerto_navarino","bahia_yendegaia"],
+      "summary": "As of 23 August 2026, CONAF describes maritime access from Puerto Williams/Puerto Navarino toward Bahía Yendegaia and a terrestrial approach via Ruta Y-85 to Lago Fagnano plus the Vicuña–Yendegaia penetration road. CONAF simultaneously states that the park has no visitor attention and no public-use infrastructure.",
+      "source_ids": ["yendegaia-access-current-2026-08-23"],
+      "freshness_class": "current_institutional_2026",
+      "status": "access_described_but_no_visitor_services",
+      "prohibited_inference": "Do not promise a staffed entrance, public-use facilities, scheduled boat, or completed through-road connection to Puerto Williams."
+    },
+    {
+      "chunk_id": "vicuna-yendegaia-road-001",
+      "title": "Vicuña–Yendegaia road remains under construction",
+      "entities": ["ruta_y85","vicuna_yendegaia","cordillera_darwin","caleta_2_de_mayo","canal_beagle"],
+      "summary": "Current 2026 Ejército/CMT and MOP evidence shows the Vicuña–Yendegaia corridor remains under construction. Etapa XI works were active in 2026, including installation of a modular bridge in the Cordillera Darwin front. The corridor must not be represented as a completed continuous public road to Puerto Williams.",
+      "source_ids": ["yendegaia-access-current-2026-08-23"],
+      "freshness_class": "current_infrastructure_2026",
+      "status": "under_construction",
+      "prohibited_inference": "Do not state that travelers can currently drive continuously from mainland Chile to Puerto Williams through this project."
+    },
+    {
+      "chunk_id": "tabsa-pa-pw-001",
+      "title": "TABSA Punta Arenas–Puerto Williams maritime connection",
+      "entities": ["punta_arenas","puerto_williams","tabsa"],
+      "summary": "TABSA currently publishes Punta Arenas–Puerto Williams as a maritime service and describes the crossing as approximately 32 hours. Departure dates, fares, vessel assignment and availability remain booking-sensitive and must be rechecked at answer time.",
+      "source_ids": ["yendegaia-access-current-2026-08-23"],
+      "freshness_class": "live_or_booking_sensitive",
+      "allowed_uses": ["travel_routing","connectivity_context"],
+      "prohibited_inference": "Do not treat the 2022 map's 31-hour duration as current; current first-party TABSA page says approximately 32 hours."
+    },
+    {
+      "chunk_id": "caleta-dos-mayo-service-scope-001",
+      "title": "TABSA service scope includes Caleta 2 de Mayo",
+      "entities": ["puerto_williams","puerto_toro","caleta_2_de_mayo","tabsa"],
+      "summary": "TABSA's current Puerto Williams operations listing includes Punta Arenas, Puerto Williams, Puerto Toro and Caleta 2 de Mayo within its route/service scope. This confirms operator scope, not a guaranteed fixed-frequency itinerary to Caleta 2 de Mayo.",
+      "source_ids": ["yendegaia-access-current-2026-08-23"],
+      "freshness_class": "current_first_party_scope",
+      "status": "service_scope_confirmed_schedule_not_established",
+      "prohibited_inference": "Check the live itinerary before telling a traveler that a Caleta 2 de Mayo sailing is available on a specific date."
     },
     {
       "chunk_id": "southern-gateway-parks-001",
