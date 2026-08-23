@@ -1,0 +1,94 @@
+{
+  "document": {
+    "id": "antarctica21-air-cruises-2027-2028",
+    "title": "Antarctic Air-Cruises 2027–28 Season",
+    "publisher": "Antarctica21",
+    "source_type": "first_party_commercial",
+    "authority_scope": "Antarctica21 itineraries, vessels, air-cruise model, published prices, inclusions, operational descriptions and company claims",
+    "not_authoritative_for": ["general Antarctic governance", "independent safety assessment", "geopolitical claims"],
+    "season": "2027-2028",
+    "language": "en",
+    "drive_file_id": "1i15c9sMaatxSZu1tdHcksK25NG6gMv9L",
+    "projects": ["Antarctica Begins", "Travel", "Observatorio", "Radar"]
+  },
+  "entities": [
+    {"id":"antarctica21","type":"operator","name":"Antarctica21"},
+    {"id":"punta_arenas","type":"city_gateway","name":"Punta Arenas"},
+    {"id":"puerto_williams","type":"city_gateway","name":"Puerto Williams"},
+    {"id":"king_george_island","type":"antarctic_geography","name":"King George Island"},
+    {"id":"frei_station","type":"antarctic_station","name":"Frei Station"},
+    {"id":"magellan_explorer","type":"expedition_vessel","name":"Magellan Explorer"},
+    {"id":"magellan_discoverer","type":"expedition_vessel","name":"Magellan Discoverer"},
+    {"id":"explorers_house","type":"expedition_center","name":"Explorers House"},
+    {"id":"iaato","type":"industry_association","name":"IAATO"}
+  ],
+  "business_model": {
+    "type": "antarctic_air_cruise",
+    "core_route": "Punta Arenas -> King George Island by air -> expedition vessel -> Antarctic Peninsula / South Shetland Islands -> return flight to Punta Arenas",
+    "operator_claimed_flight_duration_hours": 2,
+    "origin_city": "Punta Arenas",
+    "air_arrival": "King George Island",
+    "primary_value_proposition": ["avoid sailing the Drake Passage on main air-cruise itineraries", "save travel time", "small-ship expedition experience"]
+  },
+  "itineraries": [
+    {"name":"Classic Antarctica Air-Cruise","duration_days":8,"duration_nights":7,"starting_price_usd":15995},
+    {"name":"Polar Circle Air-Cruise","duration_days":10,"duration_nights":9,"starting_price_usd":24995},
+    {"name":"Antarctica & South Georgia Air-Cruise","duration_days":18,"duration_nights":17,"starting_price_usd":17995},
+    {"name":"Antarctica Express Air-Cruise","duration_days":6,"duration_nights":5,"starting_price_usd":5995}
+  ],
+  "fleet": [
+    {"name":"Magellan Discoverer","type":"expedition_vessel"},
+    {"name":"Magellan Explorer","type":"expedition_vessel"}
+  ],
+  "operational_features": [
+    "The company states that it uses a single flight to carry all guests on an expedition to and from Antarctica.",
+    "The company states that it has priority over the flight window following a delay.",
+    "Expedition vessels carry a maximum of 76 guests according to the brochure.",
+    "Explorers House in Punta Arenas is used for expedition preparation and briefings.",
+    "The company identifies itself as an IAATO member and PTGA-accredited provider company."
+  ],
+  "facts": [
+    {
+      "fact_id":"fact-a21-0001",
+      "subject":"Antarctica21",
+      "predicate":"states_pioneered",
+      "object":"Antarctic air-cruise in 2003",
+      "authority":"first_party_operator_claim"
+    },
+    {
+      "fact_id":"fact-a21-0002",
+      "subject":"Punta Arenas",
+      "predicate":"origin_for",
+      "object":"Antarctica21 Antarctic air-cruise operations",
+      "authority":"first_party_current_operational"
+    },
+    {
+      "fact_id":"fact-a21-0003",
+      "subject":"Classic Antarctica Air-Cruise",
+      "predicate":"starting_price",
+      "object":{"currency":"USD","amount":15995,"season":"2027-2028"},
+      "authority":"first_party_current_commercial"
+    },
+    {
+      "fact_id":"fact-a21-0004",
+      "subject":"Antarctica Express Air-Cruise",
+      "predicate":"starting_price",
+      "object":{"currency":"USD","amount":5995,"season":"2027-2028"},
+      "authority":"first_party_current_commercial"
+    }
+  ],
+  "freshness": {
+    "season":"2027-2028",
+    "rule":"Re-check current Antarctica21 first-party material before publishing live availability, exact prices or departure dates."
+  },
+  "rag": {
+    "status":"normalized_v1",
+    "embedding_ready":false,
+    "next_steps":[
+      "extract full dates and price tables",
+      "extract inclusion/exclusion and contingency sections",
+      "compare operator model with DAP Full Day",
+      "generate semantic chunks"
+    ]
+  }
+}
