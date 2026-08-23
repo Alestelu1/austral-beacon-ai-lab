@@ -1,0 +1,165 @@
+{
+  "suite_id": "chile-antarctic-gateway-qa-v1",
+  "retrieval_view": "data/retrieval/chile-antarctic-gateway-retrieval-view.json",
+  "purpose": "Regression-style QA cases to validate retrieval, evidence selection and prohibited inferences before embeddings are enabled.",
+  "evaluation_rules": {
+    "must_ground_in_source_ids": true,
+    "must_distinguish_current_operation_from_policy_or_planning": true,
+    "must_distinguish_public_tourism_from_state_science_logistics": true,
+    "current_commercial_claims_require_freshness_check": true,
+    "planned_infrastructure_must_be_labeled_planned": true,
+    "unsupported_claims_should_be_answered_as_not_established_by_current_corpus": true
+  },
+  "cases": [
+    {
+      "id": "qa-001",
+      "question": "¿Cómo se llega desde Chile a Isla Rey Jorge?",
+      "expected_chunks": ["gateway-pa-kg-001"],
+      "required_points": [
+        "Punta Arenas es el nodo gateway chileno respaldado por la evidencia operativa actual del corpus.",
+        "El tramo llega a Isla Rey Jorge / sector Fildes mediante conectividad aérea documentada por operadores first-party.",
+        "La disponibilidad actual debe revalidarse antes de dar horarios, fechas o precios."
+      ],
+      "must_not_claim": [
+        "Que cualquier persona puede usar instalaciones científicas o militares.",
+        "Que todos los vuelos son regulares o diarios."
+      ],
+      "minimum_source_classes": ["institutional","first_party_commercial"]
+    },
+    {
+      "id": "qa-002",
+      "question": "¿Puerto Williams tiene vuelos comerciales a la Antártica hoy?",
+      "expected_chunks": ["pw-policy-001"],
+      "required_points": [
+        "El corpus actual reconoce a Puerto Williams como gateway en política pública.",
+        "El Plan 2026–2030 incluye desarrollo antártico para Puerto Williams y lo considera posible origen del estudio del cable submarino.",
+        "El corpus actual no establece una operación comercial antártica vigente desde Puerto Williams."
+      ],
+      "must_not_claim": [
+        "Que existen vuelos comerciales actuales desde Puerto Williams solo por su condición de gateway político.",
+        "Que el cable submarino ya está construido."
+      ]
+    },
+    {
+      "id": "qa-003",
+      "question": "¿Qué diferencia hay entre Teniente Marsh y Glaciar Unión?",
+      "expected_chunks": ["gateway-pa-kg-001","deep-field-gu-001"],
+      "required_points": [
+        "Teniente Marsh forma parte del sistema de acceso aéreo del sector de Isla Rey Jorge / Fildes.",
+        "Glaciar Unión pertenece a una red científico-logística profunda y no equivale a un gateway turístico público.",
+        "La red hacia Glaciar Unión está asociada a INACH, Fuerzas Armadas, ANID y GORE Magallanes."
+      ],
+      "must_not_claim": [
+        "Que Glaciar Unión es una alternativa turística equivalente a Teniente Marsh.",
+        "Que existe una ruta pública permanente a Glaciar Unión."
+      ]
+    },
+    {
+      "id": "qa-004",
+      "question": "¿Qué infraestructura antártica chilena está operativa y cuál está planificada?",
+      "expected_chunks": ["gateway-pa-kg-001","escudero-2030-001","pw-policy-001"],
+      "required_points": [
+        "Separar instalaciones existentes de proyectos o renovaciones planificadas.",
+        "Base Profesor Julio Escudero existe; su renovación hacia una plataforma permanente de vanguardia para 2030 está planificada.",
+        "El desarrollo antártico de Puerto Williams y el cable submarino están en nivel de política/planificación dentro del corpus."
+      ],
+      "must_not_claim": [
+        "Que la renovación de Escudero ya terminó.",
+        "Que el cable submarino ya está operativo."
+      ]
+    },
+    {
+      "id": "qa-005",
+      "question": "¿Villa Las Estrellas es una base científica?",
+      "expected_chunks": ["fildes-platform-001"],
+      "required_points": [
+        "INACH la describe como núcleo poblacional chileno en la península de Fildes.",
+        "Debe distinguirse de Base Frei, Base Profesor Julio Escudero y otras instalaciones científicas."
+      ],
+      "must_not_claim": [
+        "Que Villa Las Estrellas es sinónimo de Base Escudero.",
+        "Que toda Villa Las Estrellas es una base científica."
+      ]
+    },
+    {
+      "id": "qa-006",
+      "question": "¿Punta Arenas es realmente una puerta de entrada a la Antártica o solo una narrativa turística?",
+      "expected_chunks": ["gateway-pa-kg-001","deep-field-gu-001"],
+      "required_points": [
+        "La condición de gateway está respaldada por fuentes institucionales y operaciones first-party del corpus.",
+        "Punta Arenas aparece tanto en conectividad hacia Isla Rey Jorge como en la red científico-logística hacia Glaciar Unión.",
+        "La respuesta debe separar evidencia operativa de lenguaje promocional."
+      ]
+    },
+    {
+      "id": "qa-007",
+      "question": "¿Se puede viajar como turista desde Punta Arenas al Polo Sur usando la red chilena?",
+      "expected_chunks": ["deep-field-gu-001"],
+      "required_points": [
+        "El corpus demuestra capacidad estatal/científica hacia Glaciar Unión y operaciones profundas, no una ruta turística pública al Polo Sur.",
+        "No debe inferirse acceso comercial por el solo hecho de que FACh haya realizado operaciones al Polo Sur."
+      ],
+      "must_not_claim": [
+        "Que la FACh vende o mantiene una ruta turística al Polo Sur.",
+        "Que Glaciar Unión es un aeropuerto comercial turístico."
+      ]
+    },
+    {
+      "id": "qa-008",
+      "question": "¿Qué rol tiene Base Profesor Julio Escudero?",
+      "expected_chunks": ["fildes-platform-001","escudero-2030-001"],
+      "required_points": [
+        "Es una base científica de INACH en Isla Rey Jorge.",
+        "INACH la inauguró en 1995.",
+        "Existe una renovación planificada para transformarla hacia 2030 en una plataforma científica permanente y de vanguardia."
+      ],
+      "must_not_claim": [
+        "Que la renovación proyectada ya está completa."
+      ]
+    },
+    {
+      "id": "qa-009",
+      "question": "¿Chile tiene una red de monitoreo climático en la Antártica?",
+      "expected_chunks": ["climate-network-001"],
+      "required_points": [
+        "INACH reporta 15 estaciones meteorológicas automáticas instaladas en la fuente 2025.",
+        "La red proyectada contempla 21 puntos de monitoreo.",
+        "La cobertura descrita va desde las Shetland del Sur hasta Glaciar Unión."
+      ],
+      "must_not_claim": [
+        "Que los 21 puntos ya están operativos."
+      ]
+    },
+    {
+      "id": "qa-010",
+      "question": "¿Qué información debería usar el Travel Assistant si alguien pregunta por un viaje a la Antártica desde Chile?",
+      "expected_chunks": ["gateway-pa-kg-001","pw-policy-001"],
+      "required_points": [
+        "Priorizar productos y rutas first-party vigentes para la parte comercial.",
+        "Usar INACH/MINREL para contexto geográfico, científico y de política.",
+        "Revalidar temporada, precio y disponibilidad antes de responder como información actual.",
+        "No convertir capacidades militares/científicas en opciones turísticas."
+      ]
+    },
+    {
+      "id": "qa-011",
+      "question": "¿Puerto Williams y Punta Arenas tienen hoy el mismo rol operacional antártico?",
+      "expected_chunks": ["gateway-pa-kg-001","pw-policy-001"],
+      "required_points": [
+        "No.",
+        "En el corpus actual Punta Arenas posee evidencia operativa comercial y científico-logística más explícita.",
+        "Puerto Williams tiene un rol de gateway reconocido en política y planificación, pero no debe igualarse automáticamente a la operación comercial actual de Punta Arenas."
+      ]
+    },
+    {
+      "id": "qa-012",
+      "question": "¿Cuál es la relación entre Isla Rey Jorge, península de Fildes y Villa Las Estrellas?",
+      "expected_chunks": ["fildes-platform-001"],
+      "required_points": [
+        "La península de Fildes está en Isla Rey Jorge.",
+        "Villa Las Estrellas se encuentra dentro de este entorno de instalaciones chilenas e internacionales.",
+        "INACH describe Fildes como un sector con alta concentración de bases e instalaciones científicas."
+      ]
+    }
+  ]
+}
