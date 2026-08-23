@@ -1,0 +1,72 @@
+{
+  "document": {
+    "id": "ruta-parques-mapa-rutero-magallanes",
+    "title": "MapaRutero_Magallanes.pdf",
+    "source_type": "specialist_secondary_cartographic",
+    "drive_file_id": "1qW_CG9ZyFzpqEqgXYFCjxuMbgvwwOMjP",
+    "region": "Magallanes y de la Antartica Chilena",
+    "status": "normalized_v0_1",
+    "visual_validation_required": true
+  },
+  "explicit_places": [
+    "Isla Navarino",
+    "Isla Grande de Tierra del Fuego",
+    "Punta Arenas",
+    "Puerto Natales",
+    "Puerto Williams",
+    "Porvenir",
+    "Villa Tehuelche",
+    "Villa Punta Delgada",
+    "Bahia Azul",
+    "Cerro Sombrero",
+    "Villa Cameron",
+    "Lago Fagnano",
+    "Puerto Yungay",
+    "Puerto Eden",
+    "Tortel"
+  ],
+  "explicit_protected_areas": [
+    "Parque Nacional Bernardo O'Higgins",
+    "Parque Nacional Kawesqar",
+    "Parque Nacional Torres del Paine",
+    "Parque Nacional Pali Aike",
+    "Parque Nacional Alberto de Agostini",
+    "Parque Nacional Yendegaia",
+    "Parque Nacional Cabo de Hornos"
+  ],
+  "explicit_connectivity_elements": [
+    {"id":"primera_angostura","type":"strait_crossing","label":"Cruce Primera Angostura"},
+    {"id":"punta_arenas_puerto_williams","type":"maritime_segment","label":"Punta Arenas a Puerto Williams","source_displayed_duration":"31h"},
+    {"id":"punta_arenas_porvenir","type":"maritime_segment","label":"Punta Arenas a Porvenir","source_displayed_duration":"2h"},
+    {"id":"puerto_yungay_tortel","type":"segment","label":"Puerto Yungay a Tortel","source_displayed_duration":"13h"},
+    {"id":"puerto_eden_puerto_natales","type":"segment","label":"Puerto Eden a Puerto Natales","source_displayed_duration":"23h"}
+  ],
+  "dynamic_service_evidence": [
+    {
+      "operator":"Transbordadora Austral Broom / TABSA",
+      "source_statement":"El mapa indica diversos tramos de ferry y reserva previa en TABSA.",
+      "freshness_class":"source_historical_dynamic",
+      "publication_use":"must_reverify_current_schedule_and_reservation_rules"
+    }
+  ],
+  "extraction_notes": [
+    "El texto extraido del PDF contiene caracteres corruptos en varios nombres y etiquetas; no promover esos fragmentos a hechos canonicos sin revision visual.",
+    "Los tiempos visibles son observaciones del mapa y no deben presentarse como duraciones actuales.",
+    "La presencia de un tramo en el mapa no demuestra transitabilidad actual, frecuencia de ferry ni apertura estacional."
+  ],
+  "project_destinations": [
+    "End of the World Atlas",
+    "End of the World Travel Assistant",
+    "Austral Connectivity Observatory",
+    "Austral Intelligence Radar"
+  ],
+  "rag": {
+    "embedding_ready": false,
+    "next_steps": [
+      "visual validation of map labels and topology",
+      "normalize canonical entity IDs",
+      "cross-check current ferry and road status with primary operators/institutions",
+      "build Magallanes travel/connectivity retrieval view"
+    ]
+  }
+}
