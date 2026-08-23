@@ -18,34 +18,32 @@
       "Islas Shetland del Sur",
       "Península Antártica"
     ],
-    "projects": [
-      "Radar",
-      "Antarctica Begins",
-      "Observatorio",
-      "Antarctic Pulse",
-      "Atlas"
-    ],
+    "projects": ["Radar", "Antarctica Begins", "Observatorio", "Antarctic Pulse", "Atlas"],
     "topics": [
-      "governance",
-      "sovereignty",
-      "science",
-      "environment",
-      "infrastructure",
-      "aviation",
-      "telecommunications",
-      "logistics",
-      "tourism",
-      "regional_development",
-      "antarctic_identity",
-      "international_cooperation"
+      "governance", "sovereignty", "science", "environment", "biodiversity",
+      "infrastructure", "aviation", "maritime", "telecommunications", "logistics",
+      "tourism", "regional_development", "heritage", "antarctic_identity",
+      "international_cooperation", "education", "fisheries"
     ]
   },
   "priority_areas": [
-    "Territorio Chileno Antártico: soberanía, presencia, infraestructura e identidad nacional",
-    "Sistema del Tratado Antártico: liderazgo de Chile",
-    "Ciencia antártica: fortalecimiento y nuevas fronteras",
-    "Medioambiente antártico y sus ecosistemas: protección y conservación",
-    "Región de Magallanes y de la Antártica Chilena: polo de desarrollo antártico"
+    {"id":1,"name":"Territorio Chileno Antártico: soberanía, presencia, infraestructura e identidad nacional"},
+    {"id":2,"name":"Sistema del Tratado Antártico: liderazgo de Chile"},
+    {"id":3,"name":"Ciencia antártica: fortalecimiento y nuevas fronteras"},
+    {"id":4,"name":"Medioambiente antártico y sus ecosistemas: protección y conservación"},
+    {"id":5,"name":"Región de Magallanes y de la Antártica Chilena: polo de desarrollo antártico"}
+  ],
+  "strategic_objectives": [
+    {"id":1,"topics":["sovereignty","presence","geography"],"statement":"Resguardar y promover los intereses nacionales en el continente antártico, manteniendo una presencia efectiva en la Antártica Chilena y protegiendo los derechos soberanos de Chile sobre el Territorio Chileno Antártico."},
+    {"id":2,"topics":["governance","international_cooperation","telecommunications"],"statement":"Consolidar una posición de liderazgo e influencia dentro del Sistema del Tratado Antártico, promoviendo un régimen efectivo y la mantención del territorio libre de conflictos internacionales."},
+    {"id":3,"topics":["environment","biodiversity","marine_conservation"],"statement":"Proteger y promover el cuidado del medioambiente antártico, incluido el medioambiente marino y sus ecosistemas dependientes y asociados, e impulsar un sistema representativo de áreas marinas protegidas."},
+    {"id":4,"topics":["science","technology","research"],"statement":"Potenciar el desarrollo de la investigación y la tecnología antártica en distintas áreas del saber, sobre bases de excelencia y mediante una institucionalidad nacional robusta."},
+    {"id":5,"topics":["regional_development","logistics","tourism","telecommunications","science"],"statement":"Fortalecer y promover a la Región de Magallanes y de la Antártica Chilena como centro de actividad antártica nacional e internacional y polo de desarrollo científico, tecnológico, logístico, cultural y turístico, reforzando su conectividad con el continente antártico."},
+    {"id":6,"topics":["fisheries","marine_conservation","governance"],"statement":"Promover la conservación de los recursos vivos marinos antárticos y su uso racional, resguardando los intereses pesqueros nacionales y fortaleciendo la participación de Chile en la CCRVMA."},
+    {"id":7,"topics":["tourism","environment","biodiversity","sustainable_development"],"statement":"Facilitar actividades económicas sostenibles permitidas por el Sistema del Tratado Antártico, con enfoque ecosistémico y precautorio y especial énfasis en turismo controlado y sostenible."},
+    {"id":8,"topics":["antarctic_identity","heritage","education","culture"],"statement":"Fortalecer la conciencia e identidad antártica nacional y proteger y difundir el patrimonio histórico, científico y cultural antártico de Chile."},
+    {"id":9,"topics":["governance","law","institutional_coordination"],"statement":"Perfeccionar la institucionalidad, la coordinación intersectorial y la legislación antártica nacional mediante revisión permanente para facilitar la implementación y actualización de la Política Antártica Nacional."},
+    {"id":10,"topics":["infrastructure","logistics","aviation"],"statement":"Desarrollar infraestructura antártica sostenible y mejorar las capacidades logísticas operativas, especialmente aquellas de operación permanente."}
   ],
   "entities": [
     {"id":"chile","type":"state","name":"Chile"},
@@ -60,86 +58,53 @@
     {"id":"minrel","type":"institution","name":"Ministerio de Relaciones Exteriores de Chile"},
     {"id":"armada_de_chile","type":"institution","name":"Armada de Chile"},
     {"id":"gore_magallanes","type":"institution","name":"Gobierno Regional de Magallanes y de la Antártica Chilena"},
+    {"id":"subtel","type":"institution","name":"Subsecretaría de Telecomunicaciones"},
+    {"id":"minciencia","type":"institution","name":"Ministerio de Ciencia, Tecnología, Conocimiento e Innovación"},
+    {"id":"mineduc","type":"institution","name":"Ministerio de Educación"},
     {"id":"sistema_tratado_antartico","type":"international_framework","name":"Sistema del Tratado Antártico"},
+    {"id":"ccrvma","type":"international_organization","name":"Comisión para la Conservación de los Recursos Vivos Marinos Antárticos"},
     {"id":"ley_21255","type":"legal_instrument","name":"Ley N°21.255 — Estatuto Chileno Antártico"}
   ],
+  "key_actions": [
+    {"action_id":"action-obj2-cable-consensus","objective_id":2,"statement":"Lograr consenso en los foros del Sistema del Tratado Antártico respecto del cable submarino antártico de fibra óptica.","lead_institution":"subtel","topics":["telecommunications","international_cooperation"]},
+    {"action_id":"action-obj3-amp-peninsula","objective_id":3,"statement":"Mantener esfuerzos diplomáticos y científicos orientados a la aprobación de la propuesta Chile-Argentina de un área marina protegida en la península Antártica.","topics":["marine_conservation","international_cooperation","biodiversity"]},
+    {"action_id":"action-obj4-nodo-labs","objective_id":4,"statement":"Colaborar en el desarrollo del proyecto Nodo Laboratorios Antárticos, sujeto a la adjudicación del concurso ANID correspondiente.","topics":["science","research_infrastructure"]},
+    {"action_id":"action-obj5-cable-feasibility","objective_id":5,"statement":"Analizar la factibilidad de distintos trazados de cable submarino para conectar la Región de Magallanes y de la Antártica Chilena —desde Punta Arenas o Puerto Williams— con el Territorio Chileno Antártico y atender bases permanentes en las Islas Shetland del Sur y la Península Antártica.","topics":["telecommunications","infrastructure","science","logistics"],"places":["punta_arenas","puerto_williams","islas_shetland_del_sur","peninsula_antartica"]},
+    {"action_id":"action-obj6-ccrvma","objective_id":6,"statement":"Participar y representar a Chile en las reuniones de la CCRVMA, contribuyendo al debate técnico y político sobre manejo y conservación de recursos marinos antárticos.","topics":["fisheries","marine_conservation","governance"]},
+    {"action_id":"action-obj7-puerto-williams","objective_id":7,"statement":"Robustecer mediante un plan integral de desarrollo antártico la ciudad de Puerto Williams.","lead_institution":"gore_magallanes","involved_institutions":["armada_de_chile"],"temporal_scope":{"from":2026,"to":2030},"topics":["regional_development","infrastructure","tourism","logistics"],"places":["puerto_williams"]},
+    {"action_id":"action-obj7-tourism-impact","objective_id":7,"statement":"Estudiar el desarrollo de actividades relacionadas con el turismo antártico para evaluar impactos potenciales y contribuir a prácticas sustentables.","lead_institution":"inach","involved_institutions":["minrel"],"topics":["tourism","environment","sustainability"]},
+    {"action_id":"action-obj8-education","objective_id":8,"statement":"Desarrollar y mantener actualizada una propuesta de integración de temas antárticos en los planes de estudio del Ministerio de Educación.","lead_institution":"mineduc","involved_institutions":["inach"],"temporal_scope":{"from":2026,"to":2030},"topics":["education","antarctic_identity"]},
+    {"action_id":"action-obj9-eia-regulation","objective_id":9,"statement":"Elaborar el reglamento para el funcionamiento del Comité Operativo de Evaluación de Impacto Ambiental y sus procedimientos de evaluación de acuerdo con la Ley N°21.255.","topics":["governance","environmental_assessment","law"]},
+    {"action_id":"action-obj10-teniente-marsh","objective_id":10,"statement":"Conservar la pista del Aeródromo Teniente Marsh de la Antártica como parte de las mejoras de infraestructura y capacidades logísticas operativas.","places":["aerodromo_teniente_marsh"],"topics":["aviation","infrastructure","logistics"]}
+  ],
   "facts": [
-    {
-      "fact_id": "fact-minrel-0001",
-      "subject": "Plan Estratégico Antártico 2026–2030",
-      "predicate": "replaces",
-      "object": "Plan Estratégico Antártico 2021–2025",
-      "statement": "El Plan Estratégico Antártico 2026–2030 sustituye al plan correspondiente al período 2021–2025.",
-      "authority": "official_policy",
-      "confidence": 1.0
-    },
-    {
-      "fact_id": "fact-minrel-0002",
-      "subject": "Plan Estratégico Antártico 2021–2025",
-      "predicate": "completion_status",
-      "object": {"completed_pct":71,"in_progress_pct":25,"pending_pct":4},
-      "statement": "La evaluación informada por MINREL indica 71% de tareas cumplidas, 25% en desarrollo y 4% pendientes.",
-      "authority": "official_policy",
-      "confidence": 1.0
-    },
-    {
-      "fact_id": "fact-minrel-0003",
-      "subject": "Puerto Williams",
-      "predicate": "target_of",
-      "object": "integrated_antarctic_development_plan",
-      "statement": "El plan contempla robustecer Puerto Williams mediante un plan integral de desarrollo antártico durante 2026–2030.",
-      "topics": ["regional_development","infrastructure","tourism","logistics"],
-      "authority": "official_policy",
-      "temporal_scope": {"from":2026,"to":2030},
-      "confidence": 1.0
-    },
-    {
-      "fact_id": "fact-minrel-0004",
-      "subject": "Región de Magallanes y de la Antártica Chilena",
-      "predicate": "antarctic_connectivity_project",
-      "object": "submarine_fiber_optic_cable_feasibility",
-      "statement": "El plan contempla analizar trazados de cable submarino desde Punta Arenas o Puerto Williams hacia el Territorio Chileno Antártico para atender bases permanentes en las Islas Shetland del Sur y la Península Antártica.",
-      "topics": ["telecommunications","infrastructure","science","logistics"],
-      "authority": "official_policy",
-      "confidence": 1.0
-    },
-    {
-      "fact_id": "fact-minrel-0005",
-      "subject": "Objetivo N°7",
-      "predicate": "focuses_on",
-      "object": "sustainable_economic_activities_and_controlled_tourism",
-      "statement": "El Objetivo N°7 prioriza actividades económicas sostenibles permitidas por el Sistema del Tratado Antártico, con énfasis en turismo controlado y sostenible y protección de la biodiversidad.",
-      "topics": ["tourism","environment","biodiversity","governance"],
-      "authority": "official_policy",
-      "confidence": 1.0
-    },
-    {
-      "fact_id": "fact-minrel-0006",
-      "subject": "Objetivo N°10",
-      "predicate": "focuses_on",
-      "object": "sustainable_antarctic_infrastructure_and_logistics",
-      "statement": "El Objetivo N°10 busca desarrollar infraestructura antártica sostenible y mejorar las capacidades logísticas operativas.",
-      "topics": ["infrastructure","aviation","logistics"],
-      "authority": "official_policy",
-      "confidence": 1.0
-    }
+    {"fact_id":"fact-minrel-0001","subject":"Plan Estratégico Antártico 2026–2030","predicate":"replaces","object":"Plan Estratégico Antártico 2021–2025","statement":"El Plan Estratégico Antártico 2026–2030 sustituye al plan correspondiente al período 2021–2025.","authority":"official_policy","confidence":1.0,"provenance":{"section":"I. Preámbulo"}},
+    {"fact_id":"fact-minrel-0002","subject":"Plan Estratégico Antártico 2021–2025","predicate":"completion_status","object":{"completed_pct":71,"in_progress_pct":25,"pending_pct":4},"statement":"La evaluación informada por MINREL indica 71% de tareas cumplidas, 25% en desarrollo y 4% pendientes.","authority":"official_policy","confidence":1.0,"provenance":{"section":"II. Plan Estratégico 2021–2025: Evaluación"}},
+    {"fact_id":"fact-minrel-0003","subject":"Puerto Williams","predicate":"target_of","object":"integrated_antarctic_development_plan","statement":"El plan contempla robustecer Puerto Williams mediante un plan integral de desarrollo antártico durante 2026–2030.","topics":["regional_development","infrastructure","tourism","logistics"],"authority":"official_policy","temporal_scope":{"from":2026,"to":2030},"confidence":1.0,"provenance":{"objective_id":7,"action_id":"action-obj7-puerto-williams"}},
+    {"fact_id":"fact-minrel-0004","subject":"Región de Magallanes y de la Antártica Chilena","predicate":"antarctic_connectivity_project","object":"submarine_fiber_optic_cable_feasibility","statement":"El plan contempla analizar trazados de cable submarino desde Punta Arenas o Puerto Williams hacia el Territorio Chileno Antártico para atender bases permanentes en las Islas Shetland del Sur y la Península Antártica.","topics":["telecommunications","infrastructure","science","logistics"],"authority":"official_policy","confidence":1.0,"provenance":{"objective_id":5,"action_id":"action-obj5-cable-feasibility"}},
+    {"fact_id":"fact-minrel-0005","subject":"Objetivo N°7","predicate":"focuses_on","object":"sustainable_economic_activities_and_controlled_tourism","statement":"El Objetivo N°7 prioriza actividades económicas sostenibles permitidas por el Sistema del Tratado Antártico, con énfasis en turismo controlado y sostenible y protección de la biodiversidad.","topics":["tourism","environment","biodiversity","governance"],"authority":"official_policy","confidence":1.0,"provenance":{"objective_id":7}},
+    {"fact_id":"fact-minrel-0006","subject":"Objetivo N°10","predicate":"focuses_on","object":"sustainable_antarctic_infrastructure_and_logistics","statement":"El Objetivo N°10 busca desarrollar infraestructura antártica sostenible y mejorar las capacidades logísticas operativas.","topics":["infrastructure","aviation","logistics"],"authority":"official_policy","confidence":1.0,"provenance":{"objective_id":10}},
+    {"fact_id":"fact-minrel-0007","subject":"Política Antártica Nacional 2024","predicate":"introduces_emphasis_on","object":["Southern Ocean protection","Antarctic national identity","gender perspective"],"statement":"El plan identifica como novedades de la Política Antártica Nacional 2024 un mayor énfasis en la protección del océano Austral, la identidad antártica nacional y el enfoque de género.","authority":"official_policy","confidence":1.0,"provenance":{"section":"III. Política Antártica Nacional 2024"}}
   ],
   "relationships": [
     {"from":"puerto_williams","relation":"candidate_origin_for","to":"antarctic_submarine_cable"},
     {"from":"punta_arenas","relation":"candidate_origin_for","to":"antarctic_submarine_cable"},
     {"from":"puerto_williams","relation":"target_of","to":"integrated_antarctic_development_plan"},
     {"from":"region_magallanes_antartica_chilena","relation":"strategic_role","to":"antarctic_development_hub"},
-    {"from":"aerodromo_teniente_marsh","relation":"supports","to":"antarctic_air_connectivity"}
+    {"from":"aerodromo_teniente_marsh","relation":"supports","to":"antarctic_air_connectivity"},
+    {"from":"subtel","relation":"leads","to":"antarctic_submarine_cable_consensus_work"},
+    {"from":"inach","relation":"supports","to":"antarctic_science_and_sustainable_tourism_assessment"},
+    {"from":"mineduc","relation":"leads","to":"antarctic_education_integration"},
+    {"from":"ccrvma","relation":"governs_context_for","to":"antarctic_living_marine_resources"}
   ],
+  "provenance_policy": {
+    "status":"section_and_objective_anchored_v2",
+    "rule":"Every normalized fact or action must preserve at least a section/objective/action anchor. Add exact PDF page numbers when page-level extraction is available; never infer missing page numbers."
+  },
   "rag": {
-    "status": "normalized_v1",
-    "embedding_ready": false,
-    "next_steps": [
-      "extract page-level provenance",
-      "expand all strategic objectives and assigned institutions",
-      "generate semantic chunks with source anchors",
-      "validate entity aliases against existing Atlas entities",
-      "deduplicate concepts before embedding"
-    ]
+    "status":"normalized_v2_objectives_and_key_actions",
+    "embedding_ready":false,
+    "completed":["source_catalogue","authority_classification","five_priority_areas","ten_objectives","initial_entities","key_actions","initial_relationships","section_or_objective_provenance"],
+    "next_steps":["extract remaining tasks under objectives 1-10","add exact PDF page provenance","normalize all responsible and involved institutions","normalize financing and completion periods","generate semantic chunks with source anchors","validate entity aliases against existing Atlas entities","deduplicate concepts before embedding"]
   }
 }
