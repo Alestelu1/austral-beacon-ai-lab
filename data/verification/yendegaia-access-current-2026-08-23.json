@@ -1,0 +1,95 @@
+{
+  "verification_id": "yendegaia-access-current-2026-08-23",
+  "checked_at": "2026-08-23",
+  "scope": "Current access, road-construction status and visitor-service context for Parque Nacional Yendegaia and the Vicuña–Yendegaia corridor.",
+  "status": "verified_with_scope_limits",
+  "claims": [
+    {
+      "claim_id": "yend-2026-001",
+      "claim": "The Vicuña–Yendegaia road corridor is still under construction in 2026 and must not be described as a completed public road connection to Puerto Williams.",
+      "status": "confirmed",
+      "evidence": [
+        {
+          "source": "Ejército de Chile / Cuerpo Militar del Trabajo",
+          "date": "2026-07-14",
+          "url": "https://ejercito.cl/prensa/visor/ejercito-de-chile-instala-puente-modular-en-el-camino-vicuna-yendegaia",
+          "supports": "CMT installed a modular bridge as part of Etapa XI of Camino Vicuña–Yendegaia, described as a project to extend Ruta Y-85 toward Canal Beagle."
+        },
+        {
+          "source": "Ejército de Chile / Cuerpo Militar del Trabajo",
+          "date": "2026-05-13",
+          "url": "https://www.ejercito.cl/prensa/visor/entrenamiento-combinado-en-tierra-del-fuego-fortalecio-capacidades-de-ingenieria-militar-entre-chile-y-estados-unidos",
+          "supports": "2026 engineering work was taking place in the Cordillera Darwin front of the Vicuña–Yendegaia connectivity project."
+        },
+        {
+          "source": "Ministerio de Obras Públicas - Banco Integrado de Proyectos",
+          "date": "2026-04-21",
+          "url": "https://proyectos.mop.gob.cl/proyecto.asp?cod_p=42514",
+          "supports": "The Vicuña–Yendegaia project remains active in the MOP project system with future execution allocations."
+        }
+      ]
+    },
+    {
+      "claim_id": "yend-2026-002",
+      "claim": "Parque Nacional Yendegaia currently has no visitor attention and no public-use infrastructure according to CONAF.",
+      "status": "confirmed",
+      "evidence": [
+        {
+          "source": "CONAF",
+          "date": "current page checked 2026-08-23",
+          "url": "https://www.conaf.cl/parque_nacionales/parque-nacional-yendegaia/",
+          "supports": "CONAF explicitly states: parque nacional sin atención a visitantes ni infraestructura de uso público."
+        }
+      ]
+    },
+    {
+      "claim_id": "yend-2026-003",
+      "claim": "CONAF describes maritime access to Yendegaia from Puerto Williams/Puerto Navarino and terrestrial access through Ruta Y-85 to Lago Fagnano plus the Vicuña–Yendegaia penetration road.",
+      "status": "confirmed_as_access_description_not_service_guarantee",
+      "evidence": [
+        {
+          "source": "CONAF",
+          "date": "current page checked 2026-08-23",
+          "url": "https://www.conaf.cl/parque_nacionales/parque-nacional-yendegaia/",
+          "supports": "CONAF describes both maritime and terrestrial approaches, including a one-hour fast-boat crossing from Puerto Navarino to Bahía Yendegaia and the land approach via Ruta Y-85 to Lago Fagnano."
+        }
+      ],
+      "restriction": "Do not convert this into a promise of a scheduled public boat, park reception service, or completed through-road connection."
+    },
+    {
+      "claim_id": "yend-2026-004",
+      "claim": "TABSA currently publishes the Punta Arenas–Puerto Williams maritime route and describes the crossing as approximately 32 hours.",
+      "status": "confirmed_current_first_party_service_page",
+      "evidence": [
+        {
+          "source": "TABSA",
+          "date": "current page checked 2026-08-23",
+          "url": "https://www.tabsa.cl/rutas/parenas-pwilliams/",
+          "supports": "TABSA publishes Punta Arenas–Puerto Williams as an active route and describes a 32-hour crossing."
+        }
+      ],
+      "restriction": "Actual departure dates, fares, vessel and seat/vehicle availability must be rechecked at answer time."
+    },
+    {
+      "claim_id": "yend-2026-005",
+      "claim": "TABSA lists Puerto Williams, Puerto Toro and Caleta 2 de Mayo within the service scope of its Puerto Williams operations office.",
+      "status": "confirmed_as_operator_service_scope",
+      "evidence": [
+        {
+          "source": "TABSA",
+          "date": "current page checked 2026-08-23",
+          "url": "https://www.tabsa.cl/oficinas-terminales",
+          "supports": "The Puerto Williams operations entry lists the route/service scope: Punta Arenas, Puerto Williams, Puerto Toro, Caleta 2 de Mayo."
+        }
+      ],
+      "restriction": "This is not enough by itself to claim a fixed-frequency scheduled service to Caleta 2 de Mayo; itinerary availability must be checked separately."
+    }
+  ],
+  "safe_summary": "As of 23 August 2026, Yendegaia is reachable in territorial terms by maritime and terrestrial approaches described by CONAF, but the Vicuña–Yendegaia corridor remains under construction and the park has no visitor attention or public-use infrastructure. Current transport schedules and bookable services must be verified separately with operators.",
+  "freshness": {
+    "road_construction": "high",
+    "park_visitor_status": "high",
+    "operator_itineraries": "live_or_booking_sensitive"
+  },
+  "embedding_ready": false
+}
