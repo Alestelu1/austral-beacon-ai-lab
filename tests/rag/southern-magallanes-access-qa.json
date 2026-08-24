@@ -1,0 +1,49 @@
+{
+  "suite_id": "southern-magallanes-access-qa-v1",
+  "retrieval_view": "data/retrieval/magallanes-travel-retrieval-view.json",
+  "purpose": "Validate current visitor-access and transport distinctions for southern Magallanes.",
+  "cases": [
+    {
+      "id": "sm-qa-001",
+      "question": "¿Puedo visitar hoy el Parque Nacional Cabo de Hornos?",
+      "expected_chunks": ["cabo-hornos-current-001"],
+      "required_points": ["CONAF reports current public visitation with advance ticketing.","Access is maritime and practical landing depends on maritime/operator conditions.","There is no lodging, food or emergency service on Isla Hornos."],
+      "must_not_claim": ["Guaranteed independent landing without operator arrangements."]
+    },
+    {
+      "id": "sm-qa-002",
+      "question": "¿Alberto de Agostini tiene camping o centro de visitantes?",
+      "expected_chunks": ["agostini-current-001"],
+      "required_points": ["CONAF currently reports no administrative or public-use facilities."],
+      "must_not_claim": ["That listed opening hours imply staffed infrastructure inside the park."]
+    },
+    {
+      "id": "sm-qa-003",
+      "question": "¿Cómo se cruza desde el continente a Tierra del Fuego por Primera Angostura?",
+      "expected_chunks": ["primera-angostura-current-001"],
+      "required_points": ["The TABSA crossing links Punta Delgada and Bahía Azul.","Operational status must be checked immediately before travel."],
+      "must_not_claim": ["A fixed daily operational state without live verification."]
+    },
+    {
+      "id": "sm-qa-004",
+      "question": "¿El barco Puerto Williams–Puerto Toro es un ferry turístico?",
+      "expected_chunks": ["puerto-toro-current-001"],
+      "required_points": ["No: the current service is subsidized isolated-zone transport.","Puerto Toro residents have priority.","Visitor availability is conditional and schedules may change."],
+      "must_not_claim": ["That it is a standard sightseeing product or guaranteed visitor connection."]
+    },
+    {
+      "id": "sm-qa-005",
+      "question": "¿Puerto Toro tiene terminal portuario operativo?",
+      "expected_chunks": ["puerto-toro-terminal-001","puerto-toro-current-001"],
+      "required_points": ["DIRECTEMAR records terminal authorization.","Terminal authorization must be separated from current timetable availability."],
+      "must_not_claim": ["That authorization alone proves a fixed passenger schedule."]
+    },
+    {
+      "id": "sm-qa-006",
+      "question": "¿Puedo llegar en auto desde Punta Arenas hasta Puerto Williams usando Primera Angostura y Y-85?",
+      "expected_chunks": ["primera-angostura-current-001","vicuna-yendegaia-road-001"],
+      "required_points": ["Primera Angostura provides access to Tierra del Fuego.","The Vicuña–Yendegaia corridor remains under construction in 2026.","There is no completed continuous public road to Puerto Williams established by the current corpus."],
+      "must_not_claim": ["That the ferry plus Y-85 currently creates a continuous drive to Puerto Williams."]
+    }
+  ]
+}
