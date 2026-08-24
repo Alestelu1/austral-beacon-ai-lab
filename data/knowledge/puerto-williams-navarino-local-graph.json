@@ -1,0 +1,53 @@
+{
+  "graph_id": "puerto-williams-navarino-local-v1",
+  "scope": "Puerto Williams local and Isla Navarino place/heritage/access relationships derived from Batch 03 source extraction",
+  "status": "normalized_v1_source_scoped",
+  "nodes": [
+    {"id":"puerto_williams","type":"city_gateway","name":"Puerto Williams"},
+    {"id":"puerto_navarino","type":"settlement_transport_node","name":"Puerto Navarino"},
+    {"id":"isla_navarino","type":"island","name":"Isla Navarino"},
+    {"id":"canal_beagle","type":"waterway","name":"Canal Beagle"},
+    {"id":"ruta_y905","type":"road","name":"Ruta Y-905"},
+    {"id":"museo_martin_gusinde","type":"museum","name":"Museo Antropológico Martín Gusinde"},
+    {"id":"villa_ukika","type":"settlement_neighborhood_context","name":"Villa Ukika"},
+    {"id":"caleta_wulaia","type":"historic_coastal_site","name":"Caleta Wulaia"},
+    {"id":"seno_micalvi","type":"bay_or_inlet","name":"Seno Micalvi"},
+    {"id":"club_yates_micalvi","type":"yacht_club","name":"Club de Yates Micalvi"},
+    {"id":"antigua_comandancia_naval","type":"historic_site","name":"Antigua Comandancia Naval"},
+    {"id":"primera_casa_puerto_williams","type":"historic_site","name":"Primera Casa de Puerto Williams"},
+    {"id":"casa_stirling","type":"historic_site","name":"Casa Stirling"},
+    {"id":"cerro_la_bandera","type":"mountain_or_viewpoint_context","name":"Cerro La Bandera"},
+    {"id":"dientes_de_navarino","type":"mountain_range_trail_context","name":"Dientes de Navarino"},
+    {"id":"lago_windhond","type":"lake","name":"Lago Windhond"}
+  ],
+  "edges": [
+    {"from":"puerto_williams","relation":"located_on","to":"isla_navarino","evidence_scope":"existing_canonical_territorial_model"},
+    {"from":"puerto_williams","relation":"associated_with","to":"canal_beagle","evidence_scope":"sernatur_puerto_williams_city_map"},
+    {"from":"ruta_y905","relation":"road_context_between","to":["puerto_williams","puerto_navarino"],"evidence_scope":"sernatur_puerto_williams_city_map_plus_existing_current_verification"},
+    {"from":"museo_martin_gusinde","relation":"located_in","to":"puerto_williams","evidence_scope":"sernatur_provincia_antartica_guide"},
+    {"from":"museo_martin_gusinde","relation":"documents_context_of","to":["isla_navarino","cabo_de_hornos"],"evidence_scope":"sernatur_provincia_antartica_guide"},
+    {"from":"caleta_wulaia","relation":"dated_boat_access_context_from","to":"puerto_navarino","evidence_scope":"sernatur_provincia_antartica_guide","freshness":"requires_current_reverification"},
+    {"from":"villa_ukika","relation":"near","to":"puerto_williams","evidence_scope":"sernatur_provincia_antartica_guide","distance_claim":"about_1_km_in_source","geometry_status":"requires_authoritative_confirmation"},
+    {"from":"club_yates_micalvi","relation":"associated_with","to":"seno_micalvi","evidence_scope":"sernatur_puerto_williams_city_map"},
+    {"from":"antigua_comandancia_naval","relation":"heritage_site_in_context_of","to":"puerto_williams","evidence_scope":"sernatur_puerto_williams_city_map"},
+    {"from":"primera_casa_puerto_williams","relation":"heritage_site_in_context_of","to":"puerto_williams","evidence_scope":"sernatur_puerto_williams_city_map"},
+    {"from":"casa_stirling","relation":"heritage_site_in_context_of","to":"puerto_williams","evidence_scope":"sernatur_puerto_williams_city_map"},
+    {"from":"puerto_williams","relation":"trail_access_context_toward","to":"cerro_la_bandera","evidence_scope":"sernatur_puerto_williams_city_map","freshness":"trail_conditions_dynamic"},
+    {"from":"puerto_williams","relation":"trail_access_context_toward","to":"dientes_de_navarino","evidence_scope":"sernatur_puerto_williams_city_map","freshness":"trail_conditions_dynamic"},
+    {"from":"puerto_williams","relation":"trail_access_context_toward","to":"lago_windhond","evidence_scope":"sernatur_puerto_williams_city_map","freshness":"trail_conditions_dynamic"}
+  ],
+  "prohibited_inferences": [
+    {"claim":"A ferry symbol on the city map proves a current ferry schedule.","reason":"Map symbols do not establish current operation, frequency or availability."},
+    {"claim":"A cruise terminal symbol proves current cruise calls or public access.","reason":"Infrastructure/symbol presence is not a live service timetable."},
+    {"claim":"Tourism map positions can be promoted directly as canonical coordinates.","reason":"Atlas geometry requires authoritative producer, layer, CRS and retrieval provenance."},
+    {"claim":"Puerto Williams gateway language proves direct current commercial Antarctic flights.","reason":"Gateway policy/context and current commercial operations remain separate evidence classes."},
+    {"claim":"Villa Ukika is always open to visitors because an older guide says year-round.","reason":"Community access and visitor conditions require current, culturally appropriate verification."}
+  ],
+  "next_verification_targets": [
+    "current official Museo Martín Gusinde institutional description",
+    "current culturally appropriate Villa Ukika / Yagán community visitor context",
+    "current Caleta Wulaia access/operator context",
+    "authoritative geospatial features for Puerto Williams local nodes",
+    "current trail/access rules for Cerro La Bandera, Dientes de Navarino and Lago Windhond"
+  ]
+}
