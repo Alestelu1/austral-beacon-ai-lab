@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "entity_id": "puerto_williams",
+  "canonical_name": "Puerto Williams",
+  "entity_type": "city_gateway",
+  "status": "batch_03_consolidated_v1",
+  "admin": {
+    "country": "Chile",
+    "region": "Magallanes y de la Antártica Chilena",
+    "province": "Antártica Chilena",
+    "commune": "Cabo de Hornos"
+  },
+  "territorial_relations": {
+    "located_on": ["isla_navarino"],
+    "associated_waterway": ["canal_beagle"],
+    "road_connection": [{"route":"ruta_y905","to":"puerto_navarino","condition":"dynamic_recheck_required"}],
+    "nearby_or_related_nodes": ["puerto_navarino","puerto_toro","villa_ukika","seno_micalvi","cerro_la_bandera","dientes_de_navarino","lago_windhond"]
+  },
+  "roles": [
+    "isla_navarino_service_node",
+    "cabo_de_hornos_gateway",
+    "provincial_capital_context",
+    "antarctic_gateway_policy_node",
+    "southern_chile_travel_service_node"
+  ],
+  "cultural_heritage": {
+    "museum": {
+      "canonical_id": "museo_territorial_yagan_usi_martin_gonzalez_calderon",
+      "canonical_name": "Museo Territorial Yagan Usi - Martín González Calderón",
+      "aliases": ["Museo Antropológico Martin Gusinde","Museo Martín Gusinde"],
+      "status": "current_name_confirmed_2024",
+      "source_scope": "Servicio Nacional del Patrimonio Cultural"
+    },
+    "living_yagan_context": {
+      "nodes": ["villa_ukika"],
+      "rule": "Describe contemporary Yagan community and cultural continuity; do not reduce Villa Ukika to a static tourist attraction or use 'last descendants' as canonical present-day wording."
+    },
+    "heritage_nodes": ["casa_stirling","antigua_comandancia_naval","primera_casa_puerto_williams","caleta_wulaia"]
+  },
+  "nature_and_trails": {
+    "nodes": ["cerro_la_bandera","dientes_de_navarino","lago_windhond","caleta_wulaia"],
+    "operational_rule": "Trail existence and territorial identity may be stable, while difficulty, weather, registration requirements and access conditions require current verification.",
+    "dientes_de_navarino": {"difficulty_context":"high_technical_difficulty_in_current_public_safety_sources","registration_context":"Carabineros registration documented for expedition context","freshness":"dynamic_safety_layer"}
+  },
+  "connectivity": {
+    "air": {
+      "infrastructure": "guardiamarina_zanartu_aerodrome_scgz",
+      "authority": "DGAC Chile",
+      "commercial_route_context": "Punta Arenas-Puerto Williams published by Aerovias DAP",
+      "freshness": "schedule_and_availability_dynamic"
+    },
+    "maritime": {
+      "punta_arenas_puerto_williams": "TABSA published route; itinerary and duration dynamic",
+      "puerto_williams_puerto_toro": "subsidized isolated-zone transport; not a normal tourism product",
+      "terminal": "Terminal de Transbordadores de Puerto Williams authorized by DIRECTEMAR",
+      "freshness": "schedule_availability_weather_dynamic"
+    },
+    "road": {
+      "ruta_y905": "stable identity linking Puerto Williams and Puerto Navarino; road condition dynamic"
+    }
+  },
+  "health_and_emergency": {
+    "hospital": "Hospital Comunitario Cristina Calderón",
+    "emergency_network": ["Hospital/SAMU","Carabineros IV Comisaría Puerto Williams","Cuerpo de Bomberos de Puerto Williams","DIRECTEMAR/Capitanía de Puerto","Armada de Chile"],
+    "rule": "Documented institutional capacity does not guarantee immediate availability, response time, specialist coverage, ambulance or helicopter at a future moment."
+  },
+  "urban_capacity": {
+    "electricity": "EDELMAG isolated system context",
+    "fuel": "regulated fuel infrastructure documented; stock and hours dynamic",
+    "telecommunications": ["Fibra Óptica Austral","5G documented","FTTH/backhaul context"],
+    "banking": "BancoEstado branch context documented",
+    "water": "Río Róbalo catchment supplies Puerto Williams",
+    "sanitation": "existing system with 2026 master sanitation plan context",
+    "waste": "municipal waste/recycling initiatives documented",
+    "commerce": "local provisioning exists but no complete canonical 2026 commercial directory established"
+  },
+  "antarctic_gateway": {
+    "policy_role": "recognized strategic/gateway context in Chilean Antarctic policy and regional planning",
+    "commercial_air_service_to_antarctica": "not_established_in_current_verified_corpus",
+    "rule": "Gateway policy language must never be converted into proof of current direct commercial Antarctic flights or fly-cruise products from Puerto Williams."
+  },
+  "freshness_classes": {
+    "stable_semantic": ["identity","admin","isla_navarino_relation","canal_beagle_context","heritage_identity","museum_current_name","major_infrastructure_identity"],
+    "dynamic_revalidatable": ["flight_schedules","ferry_schedules","road_condition","trail_condition","weather","fuel_stock","banking_hours_or_cash","telecom_outages","water_interruptions","specialist_availability","emergency_response_availability"],
+    "planned_or_under_development": ["sanitation_improvements_and_master_plan_components"]
+  },
+  "prohibited_inferences": [
+    "Puerto Williams and Puerto Toro are the same settlement.",
+    "A ferry or cruise symbol on a tourism map proves a current timetable.",
+    "Puerto Navarino ramp proves a regular international passenger ferry.",
+    "A documented rescue proves helicopter availability or response time for future incidents.",
+    "Existing hospital infrastructure proves permanent specialist coverage.",
+    "Existing fuel infrastructure proves current stock.",
+    "5G or fiber infrastructure proves uninterrupted coverage at a specific location/time.",
+    "Gateway status proves direct current commercial Antarctic air service.",
+    "Villa Ukika is merely a tourist attraction or a frozen ethnographic site.",
+    "Tourism-map positions are canonical Atlas coordinates."
+  ],
+  "embedding_readiness": {
+    "stable_fields": "eligible_after_chunk_level_provenance_review",
+    "dynamic_fields": "not_for_general_embeddings_route_to_live_verification",
+    "geometry": "pending_authoritative_geospatial_provenance"
+  },
+  "source_records": [
+    "data/verification/batch-03-chilean-authoritative-validation-2026-08-24.json",
+    "data/verification/batch-03-puerto-williams-connectivity-current-2026-08-24.json",
+    "data/knowledge/puerto-williams-navarino-local-graph.json",
+    "data/sources/sernatur-puerto-williams-city-map.json",
+    "data/sources/sernatur-provincia-antartica-guide.json"
+  ]
+}
