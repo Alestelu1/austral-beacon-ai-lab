@@ -1,0 +1,44 @@
+{
+  "policy_id": "austral-beacon-embedding-readiness-v1",
+  "created_at": "2026-08-24",
+  "default": "not_ready",
+  "classes": {
+    "stable_semantic": {
+      "embedding_allowed": true,
+      "requires": ["source_id", "provenance", "fact_scope", "qa_review"],
+      "examples": ["place identity", "administrative hierarchy", "protected-area identity", "stable route identity", "conservation context", "responsible-travel principles"]
+    },
+    "dated_context": {
+      "embedding_allowed": true,
+      "requires": ["source_id", "source_date", "explicit temporal label", "qa_review"],
+      "user_facing_rule": "Never silently present dated context as current."
+    },
+    "dynamic_revalidatable": {
+      "embedding_allowed": false,
+      "route_to": ["verification_layer", "live_tool", "connectivity_observatory"],
+      "examples": ["ferry schedules", "fares", "border opening status", "temporary road conditions", "park hours", "tour availability", "booking inventory"]
+    },
+    "planned_or_under_construction": {
+      "embedding_allowed": true,
+      "requires": ["status", "source_date", "prohibited_inference"],
+      "user_facing_rule": "Must preserve planned/under-construction state and require current implementation evidence before upgrading status."
+    },
+    "unverified_or_inferred": {
+      "embedding_allowed": false,
+      "route_to": ["manual_review", "source_verification"]
+    },
+    "geometry_pending": {
+      "embedding_allowed": true,
+      "scope": "textual entity context only",
+      "geometry_use_allowed": false,
+      "user_facing_rule": "Do not invent coordinates or shapes."
+    }
+  },
+  "gates": {
+    "source_provenance_required": true,
+    "qa_review_required": true,
+    "dynamic_facts_require_revalidation": true,
+    "planned_status_must_survive_chunking": true,
+    "geometry_requires_authoritative_provenance": true
+  }
+}
