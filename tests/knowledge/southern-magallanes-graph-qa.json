@@ -1,0 +1,16 @@
+{
+  "suite_id":"southern-magallanes-graph-qa-v1",
+  "purpose":"Validate canonical territorial entities and prevent unsafe graph inferences across travel, infrastructure and policy layers.",
+  "cases":[
+    {"id":"graph-001","question":"¿Puerto Williams está conectado por carretera continua con Tierra del Fuego continental?","expected":"no_current_evidence_of_completed_through_road","required_nodes":["puerto_williams","ruta_y85","vicuna_yendegaia"],"must_not_claim":["Que la Y-85 permite hoy conducir continuamente hasta Puerto Williams."]},
+    {"id":"graph-002","question":"¿Primera Angostura conecta el continente con Tierra del Fuego?","expected":"yes_via_punta_delgada_bahia_azul","required_nodes":["primera_angostura","punta_delgada","bahia_azul","isla_grande_tierra_del_fuego"]},
+    {"id":"graph-003","question":"¿Paso Bellavista debe tratarse como abierto todo el año?","expected":"no_seasonal_dynamic","required_nodes":["paso_bellavista","ruta_y85"],"must_not_claim":["Apertura permanente sin revalidación."]},
+    {"id":"graph-004","question":"¿Puerto Williams y Puerto Navarino están conectados por una ruta terrestre?","expected":"yes_ruta_y905","required_nodes":["puerto_williams","puerto_navarino","ruta_y905"],"must_not_claim":["Que el estado del camino es siempre apto sin revisión actual."]},
+    {"id":"graph-005","question":"¿La rampa de Puerto Navarino demuestra un ferry internacional regular?","expected":"no","required_nodes":["puerto_navarino"],"must_not_claim":["Horario regular inferido desde infraestructura."]},
+    {"id":"graph-006","question":"¿El servicio Puerto Williams–Puerto Toro es un ferry turístico?","expected":"no_subsidized_isolated_zone_service","required_nodes":["puerto_williams","puerto_toro"],"must_not_claim":["Que es un producto turístico normal o que visitantes tienen prioridad."]},
+    {"id":"graph-007","question":"¿Yendegaia tiene una carretera pública terminada hasta Puerto Williams?","expected":"no","required_nodes":["pn_yendegaia","ruta_y85","vicuna_yendegaia"],"must_not_claim":["Proyecto vial igual a ruta terminada."]},
+    {"id":"graph-008","question":"¿Puerto Williams puede vincular el grafo de Magallanes con el grafo antártico?","expected":"yes_shared_canonical_id_only","required_nodes":["puerto_williams"],"must_not_claim":["Que las relaciones operativas de un grafo se transfieren automáticamente al otro."]},
+    {"id":"graph-009","question":"¿Porvenir y Cerro Sombrero pertenecen al modelo territorial de Tierra del Fuego?","expected":"yes","required_nodes":["porvenir","cerro_sombrero","isla_grande_tierra_del_fuego"]},
+    {"id":"graph-010","question":"¿Una entidad canónica puede almacenar horarios como hecho permanente?","expected":"no_dynamic_service_data_separate","must_not_claim":["Que horarios, cierres o tarifas son atributos geográficos permanentes."]}
+  ]
+}

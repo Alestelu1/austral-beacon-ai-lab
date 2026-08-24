@@ -1,0 +1,157 @@
+{
+  "document_group": {
+    "id": "dap-antarctic-operations-2026-2027",
+    "publisher": "Aerovías DAP",
+    "source_type": "first_party_commercial",
+    "authority_scope": "operator-owned services, fleet, schedules, program conditions and published prices",
+    "not_authoritative_for": ["general Antarctic governance", "geopolitical claims", "independent safety assessment"],
+    "language": ["es", "en"],
+    "projects": ["Antarctica Begins", "Travel", "Observatorio", "Radar"]
+  },
+  "sources": [
+    {
+      "title": "DAP Antarctic Logistic Services",
+      "drive_file_id": "1cmvUayQRF4o-Jl4mJ-k-eZC9pYa5Nlm2"
+    },
+    {
+      "title": "DAP Antártica Briefing",
+      "drive_file_id": "1ZJyU7GfL7fXCEhKzDlqNkIDIYcUtrn9m"
+    },
+    {
+      "title": "Antarctic Programs Season 2026-2027 — Rate",
+      "drive_file_id": "1bgVKwjYeOHfbQfNtv-Is7_wbNk1gMHQy"
+    }
+  ],
+  "entities": [
+    {"id":"dap","type":"operator","name":"Aerovías DAP"},
+    {"id":"punta_arenas","type":"city_gateway","name":"Punta Arenas"},
+    {"id":"isla_rey_jorge","type":"antarctic_geography","name":"Isla Rey Jorge / King George Island"},
+    {"id":"aerodromo_teniente_marsh","type":"infrastructure","name":"Aeródromo Teniente Marsh"},
+    {"id":"villa_las_estrellas","type":"settlement","name":"Villa Las Estrellas"},
+    {"id":"base_frei","type":"antarctic_station","name":"Base Frei"},
+    {"id":"bae_rj","type":"aircraft_family","name":"BAe 146-200 / RJ100"},
+    {"id":"king_air_300","type":"aircraft","name":"Beechcraft King Air 300"},
+    {"id":"betanzos","type":"vessel","name":"Betanzos"},
+    {"id":"zodiac_mk5","type":"vessel","name":"Zodiac MK5"},
+    {"id":"hagglunds","type":"ground_vehicle","name":"Hagglunds"}
+  ],
+  "capabilities": [
+    {
+      "capability_id":"dap-air-001",
+      "type":"air_transport",
+      "route":"Punta Arenas -> King George Island",
+      "equipment":"BAe/RJ fleet",
+      "operator_claimed_duration_hours":2,
+      "operator_claimed_passenger_capacity":70,
+      "operator_claimed_max_cargo_kg":7200,
+      "source":"DAP Antártica Briefing / DAP Antarctic Logistic Services"
+    },
+    {
+      "capability_id":"dap-air-002",
+      "type":"air_transport_medical",
+      "route":"Punta Arenas <-> King George Island",
+      "equipment":"Beechcraft King Air 300",
+      "operator_claimed_passenger_capacity":6,
+      "operator_claimed_max_cargo_kg":960,
+      "operator_claimed_duration_hours":2.5,
+      "source":"DAP Antarctic Logistic Services"
+    },
+    {
+      "capability_id":"dap-ems-001",
+      "type":"emergency_medical_service",
+      "description":"Medical transport from Antarctica to Punta Arenas, combining helicopter and aircraft when required.",
+      "source":"DAP Antarctic Logistic Services"
+    },
+    {
+      "capability_id":"dap-sea-001",
+      "type":"maritime_logistics",
+      "equipment":"Betanzos",
+      "features":["reinforced hull for ice","two helicopters on deck","three 20 ft containers","1261 m3 maximum storage claimed by operator"],
+      "source":"DAP Antarctic Logistic Services"
+    },
+    {
+      "capability_id":"dap-sea-002",
+      "type":"short_range_maritime_transport",
+      "equipment":"Zodiac MK5",
+      "operator_claimed_passenger_capacity":12,
+      "operator_claimed_load_over_tons":2,
+      "source":"DAP Antarctic Logistic Services"
+    },
+    {
+      "capability_id":"dap-land-001",
+      "type":"ground_logistics",
+      "equipment":"Hagglunds, trucks, snowmobiles, ice camp equipment",
+      "geography":"King George Island",
+      "source":"DAP Antarctic Logistic Services"
+    }
+  ],
+  "tourism_product": {
+    "name":"Full Day Antártica",
+    "season":"2026-2027",
+    "origin":"Punta Arenas",
+    "destination":"King George Island",
+    "antarctic_tour_duration_hours_approx":5,
+    "flight_duration_hours_approx":2,
+    "weather_dependent":true,
+    "published_price_usd_per_person":7060,
+    "price_includes_air_fee":true,
+    "published_departure_dates":[
+      "2026-12-04","2026-12-18","2027-01-06","2027-01-19","2027-02-09","2027-02-18","2027-03-04","2027-03-16"
+    ],
+    "included":[
+      "Punta Arenas hotel-airport transfers",
+      "four nights accommodation in Punta Arenas",
+      "round-trip Punta Arenas-King George Island flight",
+      "Antarctic program",
+      "on-board service",
+      "alternative Punta Arenas programs while awaiting flight"
+    ],
+    "not_included":["insurance","tips","transport to/from Punta Arenas","meals/services not specified"],
+    "source":"DAP Antártica Briefing + Rate 2026-2027"
+  },
+  "operational_constraints": [
+    "Program and activities are subject to weather conditions.",
+    "Flight decision is made by the captain based on Antarctic Meteorological Center / DGAC reports, according to the operator briefing.",
+    "Departure time may only be set the night before.",
+    "Visits on King George Island depend on local conditions and operator staff decisions."
+  ],
+  "facts": [
+    {
+      "fact_id":"fact-dap-0001",
+      "subject":"Aerovías DAP",
+      "predicate":"states_operation_since",
+      "object":1989,
+      "statement":"DAP states that it began flying to King George Island in 1989 and has continued Antarctic operations since then.",
+      "authority":"first_party_operator_claim"
+    },
+    {
+      "fact_id":"fact-dap-0002",
+      "subject":"Full Day Antártica",
+      "predicate":"published_price",
+      "object":{"currency":"USD","amount":7060,"season":"2026-2027"},
+      "authority":"first_party_current_commercial"
+    },
+    {
+      "fact_id":"fact-dap-0003",
+      "subject":"Punta Arenas",
+      "predicate":"origin_for",
+      "object":"DAP Antarctic Full Day and logistics air operations to King George Island",
+      "authority":"first_party_current_operational"
+    }
+  ],
+  "freshness": {
+    "rate_source_season":"2026-2027",
+    "briefing_context":"current in user Drive corpus as of 2026-08",
+    "rule":"Re-check operator website or new first-party material before publishing live availability or pricing."
+  },
+  "rag": {
+    "status":"normalized_v1",
+    "embedding_ready":false,
+    "next_steps":[
+      "extract exact page provenance from briefing",
+      "normalize current route/product validity",
+      "compare with Antarctica21",
+      "separate logistics capability from tourism product chunks"
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.1",
+  "registry_id": "southern-magallanes-authoritative-geospatial-sources",
+  "checked_at": "2026-08-24",
+  "purpose": "Authoritative-source registry for Atlas-ready coordinates, administrative hierarchy and route geometry in southern Magallanes.",
+  "sources": [
+    {
+      "source_id": "ide-chile-geoportal",
+      "institution": "IDE Chile / SNIT / Ministerio de Bienes Nacionales",
+      "source_class": "national_geospatial_infrastructure",
+      "use_for": ["dataset_discovery", "metadata", "WMS_WFS_services", "authoritative_layer_provenance"],
+      "status": "preferred_geospatial_discovery_source",
+      "note": "IDE Chile identifies its Geoportal as the national point of access to State geospatial data and OGC/ISO metadata. Individual geometries must still preserve the original producing institution and layer metadata."
+    },
+    {
+      "source_id": "mop-red-vial-nacional-2025",
+      "institution": "Dirección de Vialidad, Ministerio de Obras Públicas",
+      "source_class": "institutional_road_network",
+      "validity_context": "network information available to December 2024, published in 2025",
+      "use_for": ["official_road_role", "road_name", "surface_and_segment_context"],
+      "verified_facts": [
+        {
+          "entity_id": "ruta_y905",
+          "road_code": "Y-905",
+          "official_role_name": "Puerto Williams (Cruce Calle Yelcho) - Puerto Navarino",
+          "evidence_type": "official_road_inventory"
+        }
+      ],
+      "status": "accepted_for_road_identity_not_live_condition"
+    },
+    {
+      "source_id": "mop-tierra-del-fuego-planning",
+      "institution": "Dirección de Planeamiento, Ministerio de Obras Públicas / Gobierno Regional de Magallanes",
+      "source_class": "institutional_transport_planning",
+      "use_for": ["tierra_del_fuego_road_network_context", "route_relationships", "historical_planning_geometry_context"],
+      "verified_route_context": [
+        "Ruta Y-655 Cerro Sombrero hacia Porvenir",
+        "Ruta Y-79 Cerro Sombrero - Onaissin",
+        "Ruta 257 San Sebastián - Bahía Azul",
+        "Ruta Y-71 Porvenir - Cruce Onaissin",
+        "Ruta Y-85 Cruce Onaissin - Cameron",
+        "Ruta Y-85 Cameron - Russfin",
+        "Ruta Y-895 Russfin - San Sebastián"
+      ],
+      "status": "accepted_for_network_context_not_live_condition"
+    },
+    {
+      "source_id": "ide-chile-crs-guidance",
+      "institution": "IDE Chile",
+      "source_class": "geospatial_standard_guidance",
+      "use_for": ["crs_documentation", "epsg_recording", "transformation_provenance"],
+      "accepted_crs_examples": [
+        {"name":"WGS 84 geographic","epsg":4326},
+        {"name":"SIRGAS 2000 geographic","epsg":4674}
+      ],
+      "status": "reference_standard"
+    }
+  ],
+  "entity_geometry_queue": [
+    {"entity_id":"puerto_williams","geometry_type":"Point","status":"awaiting_authoritative_feature_or_dataset_record"},
+    {"entity_id":"puerto_navarino","geometry_type":"Point","status":"awaiting_authoritative_feature_or_dataset_record"},
+    {"entity_id":"puerto_toro","geometry_type":"Point","status":"awaiting_authoritative_feature_or_dataset_record"},
+    {"entity_id":"porvenir","geometry_type":"Point","status":"awaiting_authoritative_feature_or_dataset_record"},
+    {"entity_id":"cerro_sombrero","geometry_type":"Point","status":"awaiting_authoritative_feature_or_dataset_record"},
+    {"entity_id":"primera_angostura","geometry_type":"LineString_or_crossing_geometry","status":"awaiting_authoritative_feature_or_dataset_record"},
+    {"entity_id":"paso_san_sebastian","geometry_type":"Point","status":"awaiting_authoritative_feature_or_dataset_record"},
+    {"entity_id":"paso_bellavista","geometry_type":"Point","status":"awaiting_authoritative_feature_or_dataset_record"},
+    {"entity_id":"ruta_y905","geometry_type":"LineString_or_MultiLineString","status":"road_identity_verified_geometry_pending"},
+    {"entity_id":"ruta_y85","geometry_type":"LineString_or_MultiLineString","status":"route_context_verified_geometry_pending"},
+    {"entity_id":"pn_yendegaia","geometry_type":"Polygon_or_MultiPolygon","status":"awaiting_conaf_or_authoritative_protected_area_layer"},
+    {"entity_id":"pn_alberto_de_agostini","geometry_type":"Polygon_or_MultiPolygon","status":"awaiting_conaf_or_authoritative_protected_area_layer"},
+    {"entity_id":"pn_cabo_de_hornos","geometry_type":"Polygon_or_MultiPolygon","status":"awaiting_conaf_or_authoritative_protected_area_layer"}
+  ],
+  "rules": {
+    "no_coordinate_guessing": true,
+    "no_google_maps_as_canonical_source": true,
+    "no_wikipedia_coordinates_as_canonical_source": true,
+    "geometry_requires_producer_dataset_crs_and_retrieval_date": true,
+    "route_geometry_must_not_encode_unfinished_future_segments_as_operational": true,
+    "live_road_condition_is_not_a_geometry_attribute": true
+  }
+}

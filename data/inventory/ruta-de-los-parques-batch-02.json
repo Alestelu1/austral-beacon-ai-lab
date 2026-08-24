@@ -1,0 +1,39 @@
+{
+  "batch_id": "batch-02-ruta-de-los-parques-magallanes",
+  "source_folder": {
+    "title": "Ruta de los parques",
+    "drive_folder_id": "1dppA8zQKldm10di1nTiUYPceRkNdzhMy"
+  },
+  "status": "inventory_started",
+  "priority": "magallanes_first",
+  "files": [
+    {"drive_id":"1qW_CG9ZyFzpqEqgXYFCjxuMbgvwwOMjP","title":"MapaRutero_Magallanes.pdf","type":"map_pdf","priority":1,"action":"normalize_places_routes_and_modes"},
+    {"drive_id":"1vU91O2EhJ138v0wHdad3_X48m4M25-gR","title":"Folleto_Ruta de los Parques_2022 ES-low.pdf","type":"brochure_pdf","priority":2,"action":"extract_route_and_park_context"},
+    {"drive_id":"1CViYPotU1bB0f9r1zrqozhAz5urrgwGp","title":"pasaporte_ruta_de_los_parques_2022_version_digital-1.pdf","type":"passport_pdf","priority":3,"action":"deduplicate_then_extract"},
+    {"drive_id":"1zV6ChuiZpirrMh0wEOKqhZH8WYa7mqNl","title":"pasaporte_ruta_de_los_parques_2022_version_digital-1.pdf","type":"passport_pdf","priority":3,"action":"duplicate_candidate"},
+    {"drive_id":"1_rbAqNOt-SiR3Q-5kjs_9zjD8g-72UU2","title":"Poster_RutadelosParques_07-2021.pdf","type":"poster_pdf","priority":4,"action":"supporting_cartographic_source"},
+    {"drive_id":"1_yOPzUI6qTQ0AaYGohJRXBmkEwEqFDy-","title":"RutadelosParquesMap_2020-scaled.jpg","type":"map_image","priority":4,"action":"visual_cross_check"},
+    {"drive_id":"1Ib-sk91DVJefD5Is4aeThvExjs4m0-O0","title":"Mapa-Ruta-11-02 (2018).jpg","type":"map_image","priority":5,"action":"historical_map_cross_check"},
+    {"drive_id":"1WcH0jpCWdY6j-ycipGD6mv_lhY5HzvJV","title":"Aysén.pdf","type":"regional_pdf","priority":6,"action":"defer_until_magallanes_core"},
+    {"drive_id":"1jMZWKSBmp3H8QTZ284lKIUmAlpn5TblM","title":"LosLagos.pdf","type":"regional_pdf","priority":7,"action":"defer_until_magallanes_core"}
+  ],
+  "deduplication": {
+    "duplicate_candidates": [
+      {
+        "titles": ["pasaporte_ruta_de_los_parques_2022_version_digital-1.pdf","pasaporte_ruta_de_los_parques_2022_version_digital-1.pdf"],
+        "drive_ids": ["1CViYPotU1bB0f9r1zrqozhAz5urrgwGp","1zV6ChuiZpirrMh0wEOKqhZH8WYa7mqNl"],
+        "reason": "same_title_and_same_reported_size",
+        "status": "needs_hash_or_content_comparison"
+      }
+    ]
+  },
+  "initial_entities_from_magallanes_map": [
+    "punta_arenas","puerto_natales","puerto_williams","porvenir","cerro_sombrero","villa_cameron","isla_navarino","isla_grande_tierra_del_fuego","pn_bernardo_ohiggins","pn_kawesqar","pn_torres_del_paine","pn_pali_aike","pn_alberto_de_agostini","pn_yendegaia","pn_cabo_de_hornos","primera_angostura"
+  ],
+  "rules": [
+    "Map travel times are historical/source-date observations and must not be treated as current without revalidation.",
+    "Ferry services and reservation requirements are dynamic and require current operator verification before user-facing travel advice.",
+    "Map topology may be extracted as documentary evidence, but route operability must be independently verified when current status matters.",
+    "Magallanes corpus is processed before Aysen and Los Lagos for current project priority."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "suite_id": "tierra-del-fuego-navarino-qa-v1",
+  "retrieval_view": "data/retrieval/magallanes-travel-retrieval-view.json",
+  "purpose": "Validate traveler-facing routing for Tierra del Fuego interior, border crossings and Isla Navarino without converting stale schedules or infrastructure into unsupported current-service claims.",
+  "cases": [
+    {
+      "id": "tdf-qa-001",
+      "question": "¿Puedo cruzar hoy desde Tierra del Fuego chilena a Argentina por San Sebastián?",
+      "expected_chunks": ["san-sebastian-current-001"],
+      "required_points": ["San Sebastián es un complejo fronterizo operativo documentado en 2026.", "La apertura y condiciones del día deben verificarse en la Unidad de Pasos Fronterizos antes del viaje."],
+      "must_not_claim": ["Que el paso estará abierto a cualquier hora sin comprobarlo."]
+    },
+    {
+      "id": "tdf-qa-002",
+      "question": "¿El Paso Bellavista está abierto todo el año?",
+      "expected_chunks": ["bellavista-seasonal-001"],
+      "required_points": ["No debe tratarse como paso permanente de uso anual.", "Su operación es estacional y requiere comprobación actual."],
+      "must_not_claim": ["Que está abierto todo el año."]
+    },
+    {
+      "id": "tdf-qa-003",
+      "question": "¿Cómo llego a Porvenir desde Punta Arenas?",
+      "expected_chunks": ["porvenir-node-001","primera-angostura-current-001"],
+      "required_points": ["Existen alternativas marítimas/terrestres que deben distinguirse.", "Los horarios y cupos de TABSA deben revalidarse al momento de viajar."],
+      "must_not_claim": ["Un horario específico tomado de material antiguo."]
+    },
+    {
+      "id": "tdf-qa-004",
+      "question": "¿Hay bus actual entre Porvenir y Cerro Sombrero?",
+      "expected_chunks": ["cerro-sombrero-001"],
+      "required_points": ["El corpus conserva evidencia histórica de servicios, pero no hay horario 2026 suficientemente verificado.", "Debe consultarse una fuente actual antes de recomendar frecuencia u hora."],
+      "must_not_claim": ["Que los horarios antiguos siguen vigentes."]
+    },
+    {
+      "id": "tdf-qa-005",
+      "question": "¿Puerto Williams está conectado por carretera con Puerto Navarino?",
+      "expected_chunks": ["puerto-navarino-y905-001"],
+      "required_points": ["Sí, mediante Ruta Y-905.", "Las condiciones pueden cambiar por clima, caudales y mantenimiento vial."],
+      "must_not_claim": ["Transitabilidad garantizada en cualquier condición meteorológica."]
+    },
+    {
+      "id": "tdf-qa-006",
+      "question": "¿La nueva rampa de Puerto Navarino significa que hay ferry turístico regular a Argentina?",
+      "expected_chunks": ["puerto-navarino-ramp-001"],
+      "required_points": ["No.", "La rampa demuestra capacidad de infraestructura y reactivación de cruces marítimos internacionales, pero no prueba una frecuencia turística regular."],
+      "must_not_claim": ["Que existe un ferry turístico regular con horario fijo sin operador/itinerario vigente."]
+    },
+    {
+      "id": "tdf-qa-007",
+      "question": "¿Puedo manejar desde Punta Arenas hasta Puerto Williams pasando por Tierra del Fuego?",
+      "expected_chunks": ["primera-angostura-current-001","vicuna-yendegaia-road-001","puerto-navarino-y905-001"],
+      "required_points": ["No existe una conexión vial continua completada hasta Puerto Williams dentro del corpus actual.", "El corredor Vicuña-Yendegaia sigue en construcción."],
+      "must_not_claim": ["Que hay carretera continua operativa hasta Puerto Williams."]
+    },
+    {
+      "id": "tdf-qa-008",
+      "question": "¿Cerro Sombrero es solo una parada de carretera?",
+      "expected_chunks": ["cerro-sombrero-001"],
+      "required_points": ["No; tiene valor patrimonial vinculado a la historia petrolera de Tierra del Fuego.", "El contexto territorial estable debe separarse de los servicios de transporte actuales." ]
+    }
+  ]
+}

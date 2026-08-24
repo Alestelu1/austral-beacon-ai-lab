@@ -1,0 +1,136 @@
+objective,task_no,responsible,involved,time,funding,priority_area,source_page
+1,1,MINDEF (EJERCITO),SUBDEFENSA - EMCO,2026-2030,Presupuesto Institucional vía Ley de Presupuesto,1,8
+1,2,MINDEF (EJÉRCITO - ARMADA - FACH),SUBDEFENSA - EMCO,2027-2030,Presupuesto Institucional vía Ley de Presupuesto,1,8
+1,3,MINDEF (ARMADA - FACH),SUBDEFENSA - EMCO - OPERADORES ANTARTICOS NACIONALES,2027-2030,Presupuesto Institucional vía Ley de Presupuesto,1,8
+1,4,MINDEF (EJÉRCITO - ARMADA - FACH),SUBDEFENSA - EMCO - OPERADORES ANTARTICOS DE DEFENSA,2027-2030,Presupuesto Institucional vía Ley de Presupuesto,1,8
+1,5,MINREL - DIVANTARTICA,SUBDEFENSA - OPERADORES DE DEFENSA - INACH - MMA,2026-2030,Presupuesto Institucional vía Ley de Presupuesto,1,8
+1,6,INACH,,2026-2030,Por determinar,3,8
+1,7,INACH,,2026-2030,Por determinar,3,8
+1,8,INACH,,2026-2030,Por determinar,1 y 3,8
+1,9,INACH,,2026-2030,Por determinar,3 y 4,8
+1,10,INACH,,2026-2030,Por determinar,2 y 3,9
+1,11,INACH,,2026-2030,Por determinar,1,9
+1,12,MINDEF (EJÉRCITO - ARMADA - FACH),SUBDEFENSA - EMCO - OPERADORES ANTARTICOS DE DEFENSA - INACH,2027 - 2030,Presupuesto Institucional vía Ley de Presupuesto,1,9
+1,13,MINDEF (EJÉRCITO - ARMADA - FACH),SUBDEFENSA - EMCO - OPERADORES ANTARTICOS DE DEFENSA - INACH,2027 - 2030,Presupuesto Institucional vía Ley de Presupuesto,1,9
+1,14,MINDEF (EJÉRCITO - ARMADA),SUBDEFENSA - EMCO - OPERADORES ANTARTICOS DE DEFENSA,2027 - 2030,Presupuesto Institucional vía Ley de Presupuesto,1,9
+1,15,MINDEF (ARMADA - CONA),EMCO - ARMADA - CONA,2026-2030,Presupuesto Institucional vía Ley de Presupuesto,1,9
+1,16,MINDEF (EMCO),SUBDEFENSA - OPERADORES DE DEFENSA - INACH - MINREL - DIVANTARTICA,2026-2030,Ley de Presupuesto del Sector Público,1,9
+1,17,MINDEF (FACH),FACH,2026-2027,Ley N° 21.174 (Capacidades Estratégicas entre el 2026-2031),1,9
+1,18,MINDEF (FACH),FACH,2026 - 2030,Ley N° 21.174 (Capacidades Estratégicas entre el 2026-2031),1,9
+1,19,MINDEF (ARMADA - FACH),MINDEF-EMCO,2026 - 2030,Ley de Presupuesto del Sector Público,1,9
+2,1,SUBTEL - MINREL - DIVANTARTICA,,2026-2030,No requiere,2,10
+2,2,MINREL - MINDEF,MINCIENCIA - MMA - SUBTURISMO-INACH,2026-2030,No requiere,2,10
+2,3,MINREL - DIVANTARTICA,MINDEF,2026-2030,No requiere,1 y 2,10
+2,4,MINREL - DIVANTARTICA,MINDEF - MMA - SUBTURISMO - INACH - GORE MAGALLANES,2026-2030,Presupuesto Institucional vía Ley de Presupuesto,2,10
+2,5,MINREL - DIVANTARTICA - MMA,SUBDEFENSA - MINDEF - EMCO - OPERADORES DEFENSA - INACH - GORE MAGALLANES,2026-2030,Presupuesto Institucional vía Ley de Presupuesto,2,10
+2,6,MINREL - DIVANTARTICA,SUBDEFENSA - MINDEF - EMCO - OPERADORES DEFENSA - INACH - MMA,2026-2030,Presupuesto Institucional vía Ley de Presupuesto,2,10
+2,7,MINREL - DIVANTARTICA,SUBDEFENSA - MINDEF - INACH - GORE MAGALLANES,2026-2030,No requiere,2,10
+2,8,MINREL - DIVANTARTICA,SUBTURISMO - MINDEF - MMA - INACH,2026-2030,Presupuesto Institucional vía Ley de Presupuesto,2,11
+2,9,MINREL - DIVANTARTICA,MINDEF - INACH,2026-2030,Presupuesto Institucional vía Ley de Presupuesto,2,11
+2,10,MINMUJER - MINREL - DIVANTARTICA,INACH - MINDEF - FFAA - MMA - MINCIENCIA,2026-2030,No requiere,2,11
+2,11,MINMUJER - MINREL - DIVANTARTICA,INACH - MINDEF - FFAA - MMA - MINCIENCIA,2026-2030,,2,11
+2,12,MINREL - DIVANTARTICA,MINMUJER - MINDEF - FFAA - MINCIENCIA,2026-2030,No requiere,2,11
+2,13,INACH,MINREL - DIVANTARTICA,2026-2030,Por determinar,2 y 3,11
+2,14,INACH,,2026-2030,Por determinar,2 y 4,11
+2,15,INACH,MINREL - DIVANTARTICA,2026-2030,Por determinar,2,11
+2,16,INACH,,2026-2030,Por determinar,2 y 3,12
+2,17,INACH,MINREL - DIVANTARTICA,2026-2030,Por determinar,2 y 3,12
+2,18,MMA,MINREL - DIVANTARTICA - FFAA,2026-2030,Por determinar,2 y 4,12
+2,19,MINDEF (EJÉRCITO - ARMADA),SUBDEFENSA - EMCO,2028 - 2030,Presupuesto Institucional vía Ley de Presupuesto,1 y 2,12
+3,1,MINREL - DIVANTARTICA,INACH,2026-2030,No requiere,2,13
+3,2,INACH,MINREL -DIVANTARTICA,2026-2030,No requiere,2,13
+3,3,MMA,MINREL - DIVANTARTICA - MINDEF - FFAA - Integrantes del Comité Operativo - SEA - MINCIENCIA,2026-2030,Presupuesto Institucional vía Ley de Presupuesto,2,13
+3,4,MINDEF (FACH),FACH,2026 - 2030,Ley N° 21.174 (Capacidades Estratégicas entre el 2026-2031),1 y 4,13
+3,5,INACH,,2026-2030,Por determinar,3 y 4,13
+3,6,INACH,,2026-2030,Por determinar,3 y 4,13
+3,7,INACH,,2026-2030,Por determinar,4,14
+3,8,INACH,,2026-2030,Por determinar,4,14
+3,9,MINREL - DIVANTARTICA,MINDEF - INACH - MMA,2026-2030,Presupuesto Institucional vía Ley de Presupuesto,"1, 2 y 4",14
+3,10,MMA - MINSAL,MINREL - DIVANTARTICA - FFAA,2026-2030,Por determinar,4,14
+3,11,MMA,MINREL - DIVANTARTICA - INACH - MINSAL - MINDEF - Integrantes del Comité Operativo,2026-2027,Presupuesto Institucional vía Ley de Presupuesto,4,14
+3,12,INACH - FFAA - SMA - MMA,,2026-2030,Por determinar,1,14
+3,13,MINDEF (EMCO),MINREL - MINDEF - DIVANTARTICA - INACH - MMA,2026-2030,Ley de Presupuesto del Sector Público,4,14
+4,1,MINCIENCIA,,2026-2030,Por determinar,3,15
+4,2,MINCIENCIA,,2026-2030,Por determinar,3,15
+4,3,MINCIENCIA,,2026-2030,Por determinar,3,15
+4,4,MINCIENCIA,INACH,2026-2030,Por determinar,3,15
+4,5,MINCIENCIA,GORE MAGALLANES,2026-2030,Por determinar,3 y 4,15
+4,6,GORE MAGALLANES,Consejo Asesor en Temas Antárticos del Gobierno Regional de Magallanes y la Antártica Chilena,2026-2030,No requiere,5,15
+4,7,INACH,MINREL - DIVANTARTICA,2026-2030,Ley de Presupuesto del Sector Público,3,15
+4,8,INACH,MINCIENCIA - MINREL - DIVANTARTICA,2026-2030,Presupuesto Institucional vía Ley de Presupuesto,3,16
+4,9,INACH,MINREL - DIVANTARTICA,2026-2030,Presupuesto Institucional vía Ley de Presupuesto,2 y 3,16
+4,10,MINDEF (EJÉRCITO),INACH - IGM -DIFROL,2026-2030,Presupuesto IGM CAP. XIX,3,16
+4,11,MINDEF (FACH),FACH,2026 -2030,Ley de Presupuesto del Sector Público,1,16
+4,12,INACH,,2026-2030,Por determinar,3,16
+4,13,INACH,,2026-2030,Por determinar,1,16
+4,14,INACH,,2026-2030,Por determinar,1 y 3,16
+4,15,MINDEF (ARMADA),EMCO - MINREL - ARMADA - CONA,2026-2030,Ley de Presupuesto del Sector Público,1 y 3,16
+4,16,MINDEF (ARMADA),MINREL - DIVANTARTICA - MINDEF - INACH - MINCIENCIA,2026-2030,Ley de Presupuesto del Sector Público,1,16
+4,17,MINDEF (EMCO),MINREL - DIVANTARTICA - INACH - EJÉRCITO - ARMADA -FACH,2026-2030,Ley de Presupuesto del Sector Público,1,16
+5,1,SUBTEL,GORE MAGALLANES,2025-2026,CAF,1 y 5,17
+5,2,SUBTEL,GORE MAGALLANES - MINCIENCIA,ene-26,CAF,1 y 5,17
+5,3,SUBTEL - MINREL - DIVANTARTICA - DIPRES - MINDEF - ARMADA - INACH - DIRECTEMAR - SHOA - SERNAPESCA - GORE MAGALLANES,,2026,No requiere,3 y 5,17
+5,4,SUBTEL,GORE MAGALLANES,2026,Por determinar,3 y 5,18
+5,5,SUBTEL,,2026,Por determinar,5,18
+5,6,SUBTEL,GORE MAGALLANES,2026,Por determinar,5,18
+5,7,SUBTEL,,2026,Por determinar,1,19
+5,8,SUBTEL,,2027,Por determinar,1,19
+5,9,MMA Servicio de Evaluación Ambiental - Servicio de Biodiversidad y Áreas Protegidas - SEREMI MMA Magallanes,,2027,Por determinar,4,19
+5,10,SUBTEL - Bienes Nacionales,,2027,Por determinar,1,19
+5,11,SUBTEL,,2027,Por determinar,5,19
+5,12,MMA Servicio de Evaluación Ambiental - Servicio de Biodiversidad y Áreas Protegidas - SEREMI MMA Magallanes,,2028,Por determinar,4,20
+5,13,SUBTEL,,2028,Por determinar,5,20
+5,14,SUBTEL,,2028,Por determinar,"1, 2 y 5",20
+5,15,SUBTEL,,2029,Por determinar,"1, 2 y 5",20
+5,16,SUBTEL,,2029,Por determinar,1 y 5,20
+5,17,SUBTEL,,2029,Por determinar,5,21
+5,18,SUBTEL - MINREL - DIVANTARTICA,,2030,Por determinar,"1, 2 y 5",21
+5,19,INACH,GORE MAGALLANES - MINCIENCIA,2026 - 2030,GORE MAGALLANES,3 y 5,21
+5,20,GORE MAGALLANES,SEREMI MMA - OPERADORES ANTARTICOS - INACH,2026 - 2030,Por determinar,1 y 4,21
+5,21,MINCIENCIA,,2026-2030,Por determinar,3,21
+6,1,SUBPESCA - MINREL - DIVANTARTICA,INACH,2026 - 2030,Presupuesto Institucional vía Ley de Presupuesto,2,22
+6,2,SUBPESCA - MINREL - DIVANTARTICA,GORE MAGALLANES - INACH,2026 - 2030,No requiere,1 y 3,22
+6,3,SUBPESCA - MINREL - DIVANTARTICA,,2026 - 2030,No requiere,2,22
+6,4,SUBPESCA,,2026 - 2030,Por determinar,2,22
+6,5,SUBPESCA - MINREL - DIVANTARTICA,,2026 - 2030,Por determinar,2,22
+6,6,SUBPESCA - MINREL - DIVANTARTICA,,2026 - 2030,No requiere,2,22
+6,7,SUBPESCA,,2026 - 2030,Por determinar,2,22
+6,8,INACH - DIVANTÁRTICA,,2026 - 2030,Presupuesto Institucional vía Ley de Presupuesto,2,23
+6,9,MINREL - INACH - DIVANTÁRTICA,,2026 - 2030,Presupuesto Institucional vía Ley de Presupuesto,2,23
+6,10,MINDEF (ARMADA),SERNAPESCA - MINREL - DIVANTARTICA,2026 - 2030,Ley de Presupuesto del Sector Público,1 y 2,23
+6,11,MINDEF (ARMADA),SERNAPESCA - MINREL - DIVANTARTICA,2026 - 2030,Ley de Presupuesto del Sector Público,1 y 2,23
+6,12,SUBPESCA - DIVANTÁRTICA,SERNAPESCA - INACH,2026 - 2030,No requiere,2,23
+6,13,INACH,,2026 - 2030,Por determinar,2 y 4,23
+6,14,INACH,,2026 - 2030,Por determinar,4,23
+7,1,GORE MAGALLANES,MINDEF - ARMADA - SUBTURISMO,2026 -2030,Por determinar,5,24
+7,2,INACH,MINREL - DIVANTARTICA,2026 -2030,Por determinar,5,24
+8,1,MINEDUC,INACH,2026-2030,Por determinar,1,25
+8,2,MINDEF (EJERCITO - ARMADA - FACH),SEREMI MMA - INACH,2026-2030,Ley de Presupuesto del Sector Público,1,25
+8,3,MINDEF - EJERCITO,MINDEF - EMCO - OPERADORES ANTRATICOS DE DEFENSA -SUBDEFENSA,2026-2030,Ley de Presupuesto del Sector Público,2,25
+8,4,MINREL - DIVANTARTICA,INACH - GORE MAGALLANES,2026-2030,Ley de Presupuesto del Sector Público,1,25
+8,5,INACH,,2026-2030,Por determinar,1,25
+8,6,INACH,,2026-2030,Por determinar,1,25
+8,7,INACH,,2026-2030,Por determinar,1,25
+8,8,INACH,,2026-2030,Por determinar,3,25
+8,9,INACH,,2026-2030,Por determinar,1,26
+8,10,MINDEF (EJÉRCITO - ARMADA - FACH),SUBDEFENSA - EMCO - OPERADORES ANTARTICOS DE DEFENSA,2027 - 2030,Presupuesto Institucional vía Ley de Presupuesto,1,26
+8,11,MINDEF,MINDEF - EMCO - MINREL - DIVANTARTICA -SUBDEFENSA,2026-2030,Ley de Presupuesto del Sector Público,2,26
+9,1,MMA,MINREL - DIVANTARTICA - GORE MAGALLANES,2026,Presupuesto Institucional vía Ley de Presupuesto,4,27
+9,2,MMA,MINREL - DIVANTARTICA - GORE MAGALLANES,2026,Presupuesto Institucional vía Ley de Presupuesto,4,27
+9,3,MMA,MINREL - DIVANTARTICA - MINDEF - GORE MAGALLANES,2026,Presupuesto Institucional vía Ley de Presupuesto,4,27
+10,1,MOP,GORE MAGALLANES,2026 - 2030,Por determinar,1,28
+10,2,MOP,GORE MAGALLANES,2026 - 2030,Por determinar,1,28
+10,3,MOP,GORE MAGALLANES,2026-2030,Por determinar,1,28
+10,4,MOP,GORE MAGALLANES,2026-2030,Por determinar,1,28
+10,5,SUBTEL,,2029,Por determinar,1,28
+10,6,SUBTEL,,2029,Por determinar,1,29
+10,7,SUBTEL,,2029,Por determinar,1,29
+10,8,SUBTEL,,2030,Por determinar,1,29
+10,9,SUBTEL,,2030,Por determinar,1,29
+10,10,INACH,,2026-2030,Por determinar,1,29
+10,11,MINDEF (EJÉRCITO),SUBDEFENSA - EMCO,2029,Ley de Presupuesto del Sector Público,1,30
+10,12,MINDEF (FACH),SUBDEFENSA FACH,2026- 2030 Proyectado en Etapas,Ley N° 21.174 (Capacidades Estratégicas entre el 2026-2031),1,30
+10,13,MINDEF (FACH),FACH,2026- 2030 Proyectado en Etapas,Fuente de financiamiento por definir,1,30
+10,14,MINDEF (FACH),MINDEF-EMCO,2026 - 2030,Ley N° 21.174 (Capacidades Estratégicas entre el 2026-2031),1,30
+10,15,MINDEF (FACH),MINDEF-EMCO,2026 - 2030,Ley N° 21.174 (Capacidades Estratégicas entre el 2026-2031). Otras fuentes de financiamiento.,4,30
+10,16,MINDEF (FACH),MINDEF-EMCO,2026 - 2030,Ley N° 21.174 (Capacidades Estratégicas entre el 2026-2031).,1,30

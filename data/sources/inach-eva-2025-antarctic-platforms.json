@@ -1,0 +1,154 @@
+{
+  "document": {
+    "id": "inach-eva-2025-antarctic-platforms",
+    "title": "Enciclopedia Visual de la Antártica — 4a edición 2025",
+    "publisher": "Instituto Antártico Chileno (INACH)",
+    "source_type": "primary_institutional",
+    "authority_level": "canonical_scientific_geographic_context",
+    "publication_date": "2025-12",
+    "language": "es",
+    "isbn": "978-956-7046-31-7",
+    "drive_file_id": "1HKqX--t_DjvtRr5vdeQeB8Sphhzfji4g",
+    "projects": ["End of the World Atlas","Antarctica Begins","Austral Connectivity Observatory","Austral Intelligence Radar","Antarctic Pulse"]
+  },
+  "facts": [
+    {
+      "fact_id": "eva2025-fact-001",
+      "subject": "peninsula_fildes",
+      "predicate": "located_on",
+      "object": "king_george_island",
+      "statement": "La península de Fildes se ubica en isla Rey Jorge.",
+      "source_locator": "section:bases_antarticas_chilenas"
+    },
+    {
+      "fact_id": "eva2025-fact-002",
+      "subject": "peninsula_fildes",
+      "predicate": "has_high_concentration_of",
+      "object": "antarctic_scientific_installations",
+      "statement": "INACH describe la península de Fildes como el sector con la mayor concentración de bases e instalaciones científicas en la Antártica.",
+      "source_locator": "section:bases_antarticas_chilenas"
+    },
+    {
+      "fact_id": "eva2025-fact-003",
+      "subject": "villa_las_estrellas",
+      "predicate": "described_as",
+      "object": "chilean_population_nucleus",
+      "statement": "INACH describe Villa Las Estrellas como núcleo poblacional chileno en la península de Fildes, isla Rey Jorge.",
+      "source_locator": "section:bases_antarticas_chilenas"
+    },
+    {
+      "fact_id": "eva2025-fact-004",
+      "subject": "base_frei",
+      "predicate": "inaugurated_in",
+      "object": "1969",
+      "statement": "La Base Presidente Eduardo Frei Montalva aparece en la cronología de bases chilenas con el año 1969.",
+      "source_locator": "section:bases_antarticas_chilenas"
+    },
+    {
+      "fact_id": "eva2025-fact-005",
+      "subject": "aerodromo_teniente_marsh",
+      "predicate": "inaugurated_in",
+      "object": "1980",
+      "statement": "El Aeródromo Teniente Rodolfo Marsh aparece en la cronología con el año 1980.",
+      "source_locator": "section:bases_antarticas_chilenas"
+    },
+    {
+      "fact_id": "eva2025-fact-006",
+      "subject": "base_profesor_julio_escudero",
+      "predicate": "inaugurated_in",
+      "object": "1995",
+      "statement": "INACH inauguró la Base Científica Profesor Julio Escudero en 1995 en isla Rey Jorge.",
+      "source_locator": "section:timeline_and_bases"
+    },
+    {
+      "fact_id": "eva2025-fact-007",
+      "subject": "base_profesor_julio_escudero",
+      "predicate": "planned_to_become",
+      "object": "permanent_advanced_scientific_platform",
+      "statement": "INACH señala que Escudero, ubicada en isla Rey Jorge, será renovada con el objetivo de convertirse en una plataforma científica permanente y de vanguardia hacia 2030, con capacidad proyectada de hasta 98 personas.",
+      "source_locator": "section:nuevas_bases_para_la_ciencia",
+      "temporal_status": "planned"
+    },
+    {
+      "fact_id": "eva2025-fact-008",
+      "subject": "chile_antarctic_scientific_logistics_network",
+      "predicate": "extends_from_to",
+      "object": ["punta_arenas","glaciar_union"],
+      "statement": "INACH describe una red chilena de plataformas científico-logísticas de más de 3.000 km de extensión, desde Punta Arenas hasta Glaciar Unión.",
+      "source_locator": "section:bases_antarticas_chilenas"
+    },
+    {
+      "fact_id": "eva2025-fact-009",
+      "subject": "chile_antarctic_scientific_logistics_network",
+      "predicate": "supported_by",
+      "object": ["inach","fuerzas_armadas_chile","anid","gore_magallanes"],
+      "statement": "La red científico-logística es descrita como apoyada por INACH, las Fuerzas Armadas, ANID y el Gobierno Regional de Magallanes y de la Antártica Chilena.",
+      "source_locator": "section:bases_antarticas_chilenas"
+    },
+    {
+      "fact_id": "eva2025-fact-010",
+      "subject": "glaciar_union",
+      "predicate": "approx_distance_from",
+      "object": "south_pole_1000_km",
+      "statement": "INACH describe la Estación Polar Científica Conjunta Glaciar Unión como ubicada a aproximadamente 1.000 km del Polo Sur.",
+      "source_locator": "section:climate_change_monitoring"
+    },
+    {
+      "fact_id": "eva2025-fact-011",
+      "subject": "inach_antarctic_climate_sensor_network",
+      "predicate": "current_automatic_stations",
+      "object": 15,
+      "statement": "La Enciclopedia señala que INACH cuenta con 15 estaciones meteorológicas automáticas en una gradiente latitudinal antártica.",
+      "source_locator": "section:climate_change_monitoring"
+    },
+    {
+      "fact_id": "eva2025-fact-012",
+      "subject": "inach_antarctic_climate_sensor_network",
+      "predicate": "planned_total_points",
+      "object": 21,
+      "statement": "La red del Observatorio Antártico del Cambio Climático está proyectada para constar de 21 puntos de monitoreo.",
+      "source_locator": "section:climate_change_monitoring",
+      "temporal_status": "planned"
+    },
+    {
+      "fact_id": "eva2025-fact-013",
+      "subject": "base_profesor_julio_escudero",
+      "predicate": "has_scientific_aquarium_since",
+      "object": "2017-2018_campaign",
+      "statement": "Desde la Expedición Científica Antártica 54 (2017–2018), INACH mantiene un acuario científico en Base Profesor Julio Escudero, complementado por instalaciones en Punta Arenas y Base Yelcho.",
+      "source_locator": "section:antarctic_aquariums"
+    }
+  ],
+  "platforms": [
+    {"id":"base_capitan_arturo_prat","type":"base","year":1947},
+    {"id":"base_general_bernardo_ohiggins","type":"base","year":1948},
+    {"id":"base_luis_risopatron","type":"base","year":1949},
+    {"id":"base_presidente_gabriel_gonzalez_videla","type":"base","year":1951},
+    {"id":"refugio_general_jorge_boonen_rivera","type":"refuge","year":1953},
+    {"id":"base_teniente_luis_carvajal","type":"base","year":1961},
+    {"id":"base_yelcho","type":"base","year":1962},
+    {"id":"refugio_comodoro_guesalaga","type":"refuge","year":1963},
+    {"id":"base_frei","type":"base","year":1969},
+    {"id":"aerodromo_teniente_marsh","type":"airfield","year":1980},
+    {"id":"refugio_julio_ripamonti","type":"refuge","year":1982},
+    {"id":"base_guillermo_mann","type":"base","year":1991},
+    {"id":"base_profesor_julio_escudero","type":"base","year":1995},
+    {"id":"refugio_collins","type":"refuge","year":2007},
+    {"id":"base_glaciar_union","type":"base","year":2014}
+  ],
+  "evidence_rules": {
+    "institutional_scientific_source": "May support geographic, scientific and institutional context within the publication date.",
+    "planned_upgrade": "Must remain marked as planned until implementation is independently verified.",
+    "current_operational_status": "Must be refreshed with current INACH/FACH/DGAC evidence before user-facing claims about active status."
+  },
+  "rag": {
+    "status": "normalized_v2",
+    "embedding_ready": false,
+    "next_steps": [
+      "normalize platform aliases and current operating status",
+      "cross-check Base Frei and Teniente Marsh operational roles with current FACH/DGAC evidence",
+      "connect scientific-logistics network to FACH capability graph",
+      "generate place-level semantic chunks and retrieval views"
+    ]
+  }
+}

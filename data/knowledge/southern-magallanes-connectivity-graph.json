@@ -1,0 +1,71 @@
+{
+  "graph_id": "southern-magallanes-connectivity-v1.1",
+  "scope": "Territorial connectivity graph for Tierra del Fuego, Isla Navarino and southern protected areas",
+  "status": "normalized_v1_1",
+  "nodes": [
+    {"id":"argentina","type":"country","name":"Argentina"},
+    {"id":"porvenir","type":"city","name":"Porvenir"},
+    {"id":"cerro_sombrero","type":"settlement","name":"Cerro Sombrero"},
+    {"id":"punta_delgada","type":"settlement_transport_node","name":"Punta Delgada"},
+    {"id":"bahia_azul","type":"transport_node","name":"Bahía Azul"},
+    {"id":"primera_angostura","type":"maritime_crossing","name":"Primera Angostura"},
+    {"id":"paso_san_sebastian","type":"international_border_crossing","name":"Paso San Sebastián"},
+    {"id":"paso_bellavista","type":"international_border_crossing","name":"Paso Bellavista"},
+    {"id":"ruta_y71","type":"road","name":"Ruta Y-71"},
+    {"id":"ruta_y85","type":"road_corridor","name":"Ruta Y-85"},
+    {"id":"vicuna_yendegaia","type":"road_project","name":"Vicuña–Yendegaia road project"},
+    {"id":"caleta_2_de_mayo","type":"coastal_access_node","name":"Caleta 2 de Mayo"},
+    {"id":"puerto_williams","type":"city_gateway","name":"Puerto Williams"},
+    {"id":"puerto_navarino","type":"settlement_transport_node","name":"Puerto Navarino"},
+    {"id":"ruta_y905","type":"road","name":"Ruta Y-905"},
+    {"id":"puerto_toro","type":"settlement","name":"Puerto Toro"},
+    {"id":"pn_yendegaia","type":"protected_area","name":"Parque Nacional Yendegaia"},
+    {"id":"pn_alberto_de_agostini","type":"protected_area","name":"Parque Nacional Alberto de Agostini"},
+    {"id":"pn_cabo_de_hornos","type":"protected_area","name":"Parque Nacional Cabo de Hornos"},
+    {"id":"isla_grande_tierra_del_fuego","type":"island","name":"Isla Grande de Tierra del Fuego"},
+    {"id":"isla_navarino","type":"island","name":"Isla Navarino"},
+    {"id":"canal_beagle","type":"waterway","name":"Canal Beagle"}
+  ],
+  "edges": [
+    {"from":"primera_angostura","relation":"connects","to":"punta_delgada","evidence_scope":"tabsa_current_2026"},
+    {"from":"primera_angostura","relation":"connects","to":"bahia_azul","evidence_scope":"tabsa_current_2026"},
+    {"from":"bahia_azul","relation":"located_on","to":"isla_grande_tierra_del_fuego","evidence_scope":"current_route_context"},
+    {"from":"porvenir","relation":"located_on","to":"isla_grande_tierra_del_fuego","evidence_scope":"institutional_territorial_context"},
+    {"from":"cerro_sombrero","relation":"located_on","to":"isla_grande_tierra_del_fuego","evidence_scope":"institutional_territorial_context"},
+    {"from":"paso_san_sebastian","relation":"accessed_via","to":"ruta_y71","evidence_scope":"pasos_fronterizos_and_patagonia_chile"},
+    {"from":"paso_san_sebastian","relation":"located_on","to":"isla_grande_tierra_del_fuego","evidence_scope":"institutional_territorial_context"},
+    {"from":"paso_bellavista","relation":"accessed_via","to":"ruta_y85","evidence_scope":"pasos_fronterizos_and_patagonia_chile"},
+    {"from":"ruta_y85","relation":"supports_access_toward","to":"pn_yendegaia","evidence_scope":"conaf_current_2026"},
+    {"from":"ruta_y85","relation":"contains_project_segment","to":"vicuna_yendegaia","evidence_scope":"mop_cmt_2026"},
+    {"from":"vicuna_yendegaia","relation":"extends_toward","to":"caleta_2_de_mayo","evidence_scope":"mop_cmt_and_historical_yendegaia_context"},
+    {"from":"pn_yendegaia","relation":"located_on","to":"isla_grande_tierra_del_fuego","evidence_scope":"conaf_current_2026"},
+    {"from":"pn_yendegaia","relation":"associated_with","to":"canal_beagle","evidence_scope":"conaf_and_route_context"},
+    {"from":"puerto_williams","relation":"located_on","to":"isla_navarino","evidence_scope":"institutional_geography"},
+    {"from":"puerto_navarino","relation":"located_on","to":"isla_navarino","evidence_scope":"institutional_geography"},
+    {"from":"puerto_toro","relation":"located_on","to":"isla_navarino","evidence_scope":"institutional_geography"},
+    {"from":"ruta_y905","relation":"connects","to":"puerto_williams","evidence_scope":"dpp_antartica_2026"},
+    {"from":"ruta_y905","relation":"connects","to":"puerto_navarino","evidence_scope":"dpp_antartica_2026"},
+    {"from":"puerto_williams","relation":"maritime_connectivity_to","to":"puerto_toro","evidence_scope":"dpp_antartica_subsidized_service_2026","service_class":"subsidized_isolated_zone_non_tourist"},
+    {"from":"puerto_williams","relation":"gateway_context_for","to":"pn_cabo_de_hornos","evidence_scope":"conaf_current_and_ruta_parques"},
+    {"from":"puerto_williams","relation":"gateway_context_for","to":"pn_alberto_de_agostini","evidence_scope":"conaf_current_and_ruta_parques"},
+    {"from":"puerto_williams","relation":"maritime_access_context_for","to":"pn_yendegaia","evidence_scope":"conaf_current_2026"},
+    {"from":"puerto_navarino","relation":"maritime_access_context_for","to":"pn_yendegaia","evidence_scope":"conaf_current_2026"}
+  ],
+  "prohibited_edges": [
+    {"from":"ruta_y85","relation":"completed_road_to","to":"puerto_williams","reason":"Vicuña–Yendegaia remains under construction in 2026 and no current evidence establishes a continuous public through-road."},
+    {"from":"puerto_navarino","relation":"scheduled_international_ferry_to","to":"argentina","reason":"Ramp/infrastructure evidence does not establish a regular passenger timetable."},
+    {"from":"puerto_williams","relation":"tourism_ferry_to","to":"puerto_toro","reason":"Current service is subsidized isolated-zone transport with resident priority, not a normal tourism product."}
+  ],
+  "temporal_rules": {
+    "border_crossings":"recheck operating hours and temporary closures before current travel advice",
+    "ferry_crossings":"recheck service state, fares and waiting conditions before travel advice",
+    "roads":"recheck condition after severe weather and never infer project completion from historical documents",
+    "protected_areas":"recheck opening, ticketing and landing/access constraints from CONAF before current visitor advice"
+  },
+  "federation": {
+    "shared_node_ids":["puerto_williams"],
+    "compatible_graphs":["chile-antarctic-gateway-capability-v3"],
+    "rule":"Shared IDs may connect graphs, but edges remain source-scoped and must not transfer operational meaning across domains."
+  },
+  "projects":["End of the World Atlas","End of the World Travel Assistant","Austral Connectivity Observatory","Austral Intelligence Radar"]
+}

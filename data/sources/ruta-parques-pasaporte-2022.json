@@ -1,0 +1,49 @@
+{
+  "document": {
+    "id": "ruta-parques-pasaporte-2022",
+    "title": "Pasaporte Ruta de los Parques de la Patagonia 2022",
+    "source_type": "specialist_secondary_with_public_partners",
+    "publication_year": 2022,
+    "drive_file_id": "1CViYPotU1bB0f9r1zrqozhAz5urrgwGp",
+    "projects": ["End of the World Travel Assistant", "End of the World Atlas"]
+  },
+  "facts": [
+    {
+      "fact_id": "rdppass2022-fact-001",
+      "subject": "ruta_de_los_parques_patagonia",
+      "predicate": "described_as",
+      "object": "integral_conservation_and_responsible_nature_tourism_vision",
+      "statement": "El pasaporte describe la Ruta de los Parques como una visión integral de conservación para la Patagonia chilena, desarrollada por Tompkins Conservation y Rewilding Chile junto a CONAF, SERNATUR y otras entidades."
+    },
+    {
+      "fact_id": "rdppass2022-fact-002",
+      "subject": "ruta_de_los_parques_patagonia",
+      "predicate": "connects",
+      "object": ["puerto_montt","cabo_de_hornos"],
+      "statement": "El pasaporte describe un recorrido de 2.800 km entre Puerto Montt y Cabo de Hornos, integrando la Carretera Austral, canales patagónicos y la Ruta del Fin del Mundo."
+    },
+    {
+      "fact_id": "rdppass2022-fact-003",
+      "subject": "ruta_de_los_parques_patagonia",
+      "predicate": "includes_national_parks_count",
+      "object": 17,
+      "statement": "El pasaporte identifica 17 parques nacionales de la ruta, pertenecientes al sistema estatal de áreas protegidas y administrados por CONAF según el documento."
+    }
+  ],
+  "responsible_travel_principles": [
+    "protect ecosystems and wildlife",
+    "buy local and support communities",
+    "respect local customs and traditions",
+    "reduce waste and carry out trash",
+    "do not feed wildlife and observe from a distance",
+    "use marked trails",
+    "respect fire prohibitions",
+    "follow park-ranger instructions"
+  ],
+  "evidence_rules": {
+    "responsible_travel": "Suitable as editorial guidance and behavior principles.",
+    "park_opening_status_reservations_infrastructure": "Historical 2022 operational metadata; must be reverified with the current official protected-area authority before traveler-facing use.",
+    "map": "The document itself states that its map is only for territorial orientation and does not define borders or territorial limits."
+  },
+  "rag": {"status":"normalized_v1","embedding_ready":false}
+}

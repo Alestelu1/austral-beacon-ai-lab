@@ -1,0 +1,65 @@
+{
+  "graph_id": "fach-antarctic-air-capability-v1",
+  "scope": "Fuerza Aérea de Chile Antarctic state/science air operations documented in official institutional sources",
+  "status": "normalized_v1",
+  "nodes": [
+    {"id":"fach","type":"institution","name":"Fuerza Aérea de Chile"},
+    {"id":"inach","type":"institution","name":"Instituto Antártico Chileno"},
+    {"id":"dgac","type":"institution","name":"Dirección General de Aeronáutica Civil"},
+    {"id":"punta_arenas","type":"city_gateway","name":"Punta Arenas"},
+    {"id":"base_aerea_chabunco","type":"air_base","name":"Base Aérea Chabunco"},
+    {"id":"king_george_island","type":"antarctic_place","name":"King George Island / Isla Rey Jorge"},
+    {"id":"teniente_marsh","type":"air_infrastructure","name":"Aeródromo Teniente Marsh"},
+    {"id":"glaciar_union","type":"scientific_station","name":"Estación Polar Científica Conjunta Glaciar Unión"},
+    {"id":"south_pole","type":"antarctic_place","name":"South Pole / Polo Sur"},
+    {"id":"south_shetland_islands","type":"antarctic_region","name":"South Shetland Islands / Islas Shetland del Sur"},
+    {"id":"james_ross_island","type":"antarctic_place","name":"James Ross Island / Isla James Ross"},
+    {"id":"c130_hercules","type":"aircraft_family","name":"C-130 Hercules"},
+    {"id":"dhc6_twin_otter","type":"aircraft_family","name":"DHC-6 Twin Otter"},
+    {"id":"gulfstream_giv","type":"aircraft_family","name":"Gulfstream G-IV"},
+    {"id":"mh60m_black_hawk","type":"aircraft_family","name":"MH-60M Black Hawk"},
+    {"id":"bell_412","type":"aircraft_family","name":"Bell-412"},
+    {"id":"boeing_767","type":"aircraft_family","name":"Boeing 767"},
+    {"id":"antarctic_sar","type":"capability","name":"Antarctic Search and Rescue"},
+    {"id":"science_logistics","type":"capability","name":"Antarctic science logistics"},
+    {"id":"deep_field_air_mobility","type":"capability","name":"Antarctic deep-field air mobility"}
+  ],
+  "edges": [
+    {"from":"fach","relation":"provides","to":"science_logistics","evidence":"Revista FACh Nº285 (2021)"},
+    {"from":"fach","relation":"demonstrated","to":"deep_field_air_mobility","evidence":"Revista FACh Nº285 (2021); Nº293 (2025)"},
+    {"from":"fach","relation":"demonstrated","to":"antarctic_sar","evidence":"Revista FACh Nº280 (2019)"},
+    {"from":"inach","relation":"participates_in","to":"glaciar_union","evidence":"Revista FACh Nº285 (2021); Nº293 (2025)"},
+    {"from":"dgac","relation":"supports","to":"glaciar_union","evidence":"Revista FACh Nº285 (2021)"},
+    {"from":"base_aerea_chabunco","relation":"gateway_for_state_operations","to":"glaciar_union","evidence":"Revista FACh Nº285 (2021)"},
+    {"from":"glaciar_union","relation":"deep_field_stage_to","to":"south_pole","distance_km":1129,"evidence":"Revista FACh Nº293 (2025)"},
+    {"from":"fach","relation":"used_aircraft","to":"c130_hercules","evidence":"Revista FACh Nº285 (2021)"},
+    {"from":"fach","relation":"used_aircraft","to":"dhc6_twin_otter","evidence":"Revista FACh Nº285 (2021); Nº293 (2025)"},
+    {"from":"fach","relation":"used_aircraft","to":"gulfstream_giv","evidence":"Revista FACh Nº293 (2025)"},
+    {"from":"fach","relation":"used_aircraft","to":"mh60m_black_hawk","evidence":"Revista FACh Nº293 (2025)"},
+    {"from":"fach","relation":"used_aircraft","to":"boeing_767","evidence":"Revista FACh Nº293 (2025)"},
+    {"from":"fach","relation":"used_aircraft_for_sar","to":"bell_412","evidence":"Revista FACh Nº280 (2019)"},
+    {"from":"bell_412","relation":"documented_sar_area","to":"south_shetland_islands","evidence":"Revista FACh Nº280 (2019)"},
+    {"from":"bell_412","relation":"documented_sar_area","to":"james_ross_island","evidence":"Revista FACh Nº280 (2019)"},
+    {"from":"punta_arenas","relation":"state_air_gateway_via","to":"base_aerea_chabunco","evidence":"Revista FACh Nº285 (2021); Nº293 (2025)"}
+  ],
+  "route_classes": [
+    {
+      "id":"peninsula_gateway_route_class",
+      "pattern":"Punta Arenas -> King George Island / Teniente Marsh",
+      "use_cases":["state operations","science","commercial logistics","tourism"],
+      "note":"Current availability and user access must be resolved from source-specific records."
+    },
+    {
+      "id":"deep_field_state_science_route_class",
+      "pattern":"Punta Arenas / Base Aérea Chabunco -> Glaciar Unión -> Antarctic interior / South Pole",
+      "use_cases":["state operations","science logistics","deep-field missions"],
+      "note":"Not a public passenger route. Mission evidence demonstrates capability at documented dates only."
+    }
+  ],
+  "temporal_rules": {
+    "mission_evidence":"retain mission year and source",
+    "current_availability":"reverify before any present-tense operational claim",
+    "aircraft_basing":"do not infer permanent basing from mission participation",
+    "public_access":"do not infer public/tourism access from state or military operations"
+  }
+}

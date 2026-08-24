@@ -1,0 +1,14 @@
+{
+  "suite_id": "southern-magallanes-atlas-promotion-qa-v1",
+  "purpose": "Prevent unsupported geometry and dynamic travel data from leaking into canonical Atlas records.",
+  "cases": [
+    {"id":"atlas-geo-001","question":"Can Puerto Williams receive a canonical point from an uncited web map pin?","expected":"no","failure_class":"provenance_failure"},
+    {"id":"atlas-geo-002","question":"Can MOP road inventory verify that Y-905 is the Puerto Williams–Puerto Navarino road without yet supplying canonical geometry?","expected":"yes","failure_class":"source_scope_failure"},
+    {"id":"atlas-geo-003","question":"Can Ruta Y-85 be drawn as a completed line to Puerto Williams?","expected":"no","failure_class":"infrastructure_status_failure"},
+    {"id":"atlas-geo-004","question":"Should current ferry schedules be stored in the Atlas core entity record?","expected":"no","failure_class":"stable_dynamic_separation_failure"},
+    {"id":"atlas-geo-005","question":"Must a geometry preserve producer, dataset/layer, CRS and retrieval date?","expected":"yes","failure_class":"provenance_failure"},
+    {"id":"atlas-geo-006","question":"Can an IDE Chile catalog record be used to discover a layer while still preserving the original producing institution as geometry provenance?","expected":"yes","failure_class":"source_attribution_failure"},
+    {"id":"atlas-geo-007","question":"Can temporary road closure status modify the canonical route geometry?","expected":"no","failure_class":"temporal_model_failure"},
+    {"id":"atlas-geo-008","question":"Can CONAF or another authoritative protected-area layer be used for park polygons when exact provenance is recorded?","expected":"yes","failure_class":"source_scope_failure"}
+  ]
+}

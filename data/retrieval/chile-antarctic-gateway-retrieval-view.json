@@ -1,0 +1,71 @@
+{
+  "view_id": "chile-antarctic-gateway-retrieval-v1",
+  "purpose": "Agent-facing retrieval layer for Chile-linked Antarctic gateway, infrastructure, science and operations.",
+  "rules": {
+    "prefer_institutional_for_geography_policy_science": true,
+    "prefer_first_party_for_current_commercial_products": true,
+    "never_infer_public_access_from_state_operational_capability": true,
+    "never_present_planned_infrastructure_as_completed": true,
+    "reverify_current_routes_prices_and_seasons": true
+  },
+  "chunks": [
+    {
+      "chunk_id": "gateway-pa-kg-001",
+      "title": "Punta Arenas to King George Island gateway",
+      "entities": ["punta_arenas","king_george_island","aerodromo_teniente_marsh","base_frei","base_profesor_julio_escudero","villa_las_estrellas"],
+      "summary": "Punta Arenas functions as the principal Chilean gateway node in the current evidence base for operations to King George Island. On King George Island, the Fildes sector concentrates Chilean and international scientific-logistical infrastructure, including Teniente Marsh, Base Frei, Base Profesor Julio Escudero and Villa Las Estrellas.",
+      "source_ids": ["inach-eva-2025-antarctic-platforms","minrel-politica-turismo-antartico-2020","dap-antarctic-operations-2026-2027","antarctica21-air-cruises-2027-2028"],
+      "freshness_class": "mixed",
+      "allowed_uses": ["geographic_context","gateway_explanation","operator_routing"],
+      "prohibited_inference": "Do not imply every facility is open to visitors or that every listed operation is continuously available."
+    },
+    {
+      "chunk_id": "fildes-platform-001",
+      "title": "Fildes scientific-logistics concentration",
+      "entities": ["peninsula_fildes","king_george_island","villa_las_estrellas","base_frei","base_profesor_julio_escudero","aerodromo_teniente_marsh"],
+      "summary": "INACH describes the Fildes Peninsula on King George Island as having the largest concentration of bases and scientific installations in Antarctica. Villa Las Estrellas is described as a Chilean population nucleus within this multinational scientific-logistics setting.",
+      "source_ids": ["inach-eva-2025-antarctic-platforms"],
+      "freshness_class": "institutional_2025",
+      "allowed_uses": ["atlas","science_context","antarctic_gateway_context"]
+    },
+    {
+      "chunk_id": "escudero-2030-001",
+      "title": "Escudero renewal toward 2030",
+      "entities": ["base_profesor_julio_escudero","king_george_island","inach"],
+      "summary": "INACH states that Base Profesor Julio Escudero, on King George Island, is planned for renewal with the objective of becoming a permanent advanced scientific platform toward 2030, with projected capacity for up to 98 people.",
+      "source_ids": ["inach-eva-2025-antarctic-platforms"],
+      "freshness_class": "planned_2025_to_2030",
+      "status": "planned",
+      "prohibited_inference": "Do not state that the 2030 renewal has already been completed."
+    },
+    {
+      "chunk_id": "deep-field-gu-001",
+      "title": "Punta Arenas to Glaciar Unión scientific-logistics network",
+      "entities": ["punta_arenas","glaciar_union","inach","fuerzas_armadas_chile","anid","gore_magallanes"],
+      "summary": "INACH describes a Chilean scientific-logistics platform network extending more than 3,000 km from Punta Arenas to Glaciar Unión, supported by INACH, the Armed Forces, ANID and the regional government. Glaciar Unión is described as approximately 1,000 km from the South Pole.",
+      "source_ids": ["inach-eva-2025-antarctic-platforms","fach-antarctic-corpus-index"],
+      "freshness_class": "institutional_historical_and_2025",
+      "allowed_uses": ["science_logistics","state_capability","deep_field_context"],
+      "prohibited_inference": "This network is not evidence of a public or tourist route to Glaciar Unión or the South Pole."
+    },
+    {
+      "chunk_id": "climate-network-001",
+      "title": "INACH Antarctic climate monitoring network",
+      "entities": ["inach_antarctic_climate_sensor_network","glaciar_union","south_shetland_islands"],
+      "summary": "INACH reports 15 automatic weather stations distributed along an Antarctic latitudinal gradient, from the northern South Shetland Islands to Glaciar Unión, and a planned network of 21 monitoring points.",
+      "source_ids": ["inach-eva-2025-antarctic-platforms"],
+      "freshness_class": "institutional_2025",
+      "status": "partially_operational_with_planned_expansion"
+    },
+    {
+      "chunk_id": "pw-policy-001",
+      "title": "Puerto Williams Antarctic gateway policy role",
+      "entities": ["puerto_williams","antarctic_submarine_cable","puerto_williams_antarctic_development_plan"],
+      "summary": "Puerto Williams is recognized in Chilean policy as an Antarctic gateway city. The 2026–2030 strategic plan includes Puerto Williams as a possible origin for an Antarctic submarine cable study and assigns an integrated Antarctic development plan for the city.",
+      "source_ids": ["minrel-politica-turismo-antartico-2020","minrel-pea-2026-2030"],
+      "freshness_class": "policy_2020_and_plan_2026_2030",
+      "status": "policy_and_planning",
+      "prohibited_inference": "Do not treat these planning commitments as proof of current commercial Antarctic operations from Puerto Williams."
+    }
+  ]
+}

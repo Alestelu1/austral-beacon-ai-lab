@@ -1,0 +1,74 @@
+{
+  "corpus_id": "fach-antarctic-corpus-2019-2025",
+  "publisher": "Fuerza Aérea de Chile",
+  "source_class": "primary_institutional_first_party",
+  "authority_note": "Useful for documenting FACh operations, aircraft, missions, institutional capabilities and historical operational context. Not a substitute for current NOTAMs, schedules, aerodrome publications, regulatory records or independent verification of present-day availability.",
+  "folder": {
+    "drive_id": "1affKs9qxnF4mhmhNstZyQGf_uyA9rLOg",
+    "title": "Fach"
+  },
+  "documents": [
+    {
+      "document_id": "fach-revista-280-2019",
+      "drive_file_id": "1X0qI75ReqYwWH30LjUNezDYe4NnEcHf7",
+      "title": "Revista Fuerza Aérea de Chile Nº280",
+      "year": 2019,
+      "priority": "high",
+      "antarctic_focus": ["SAR","Bell-412","Shetland Islands","James Ross Island","connectivity"],
+      "key_value": "Documents Antarctic rescue missions and operational air capability, including rescue of Argentine aircraft passengers and Polish scientists.",
+      "ingestion_status": "normalized_summary"
+    },
+    {
+      "document_id": "fach-revista-285-2021",
+      "drive_file_id": "1ClcmRt4v49fyoE8HMjuzSpIVZyfod7zI",
+      "title": "Revista Fuerza Aérea de Chile Nº285",
+      "year": 2021,
+      "priority": "critical",
+      "antarctic_focus": ["Glaciar Unión","science logistics","C-130 Hercules","DHC-6 Twin Otter","Base Aérea Chabunco","deep-field operations"],
+      "key_value": "Strong primary source for Chilean deep-field Antarctic air logistics and support to science through Glaciar Unión.",
+      "ingestion_status": "normalized_summary"
+    },
+    {
+      "document_id": "fach-revista-293-2025",
+      "drive_file_id": "1YhckTBXjcHBVbZdfvqhjOWr8Zy_DFwKo",
+      "title": "Revista Fuerza Aérea de Chile Nº293",
+      "year": 2025,
+      "priority": "critical",
+      "antarctic_focus": ["Operación Estrella Polar III","South Pole","Glaciar Unión","MH-60M Black Hawk","DHC-6 Twin Otter","Gulfstream G-IV","Boeing 767"],
+      "key_value": "Documents the 2025 South Pole operation and the state air-mobility chain used from Chile to Glaciar Unión and onward to the South Pole.",
+      "ingestion_status": "normalized_summary"
+    },
+    {
+      "document_id": "fach-revista-294-2025",
+      "drive_file_id": "1W785mglW_xCN60fQxTzb7RBOvGmTAnzj",
+      "title": "Revista Fuerza Aérea de Chile Nº294",
+      "year": 2025,
+      "priority": "medium",
+      "antarctic_focus": ["Operación Estrella Polar III","operational safety","mission planning"],
+      "key_value": "Supplementary source focused on proactive safety and mission preparation for Estrella Polar III.",
+      "ingestion_status": "catalogued"
+    }
+  ],
+  "canonical_entities_to_promote": [
+    "Fuerza Aérea de Chile",
+    "IV Brigada Aérea",
+    "II Brigada Aérea",
+    "Grupo de Aviación N°10",
+    "Base Aérea Chabunco",
+    "Estación Polar Científica Conjunta Glaciar Unión",
+    "Aeródromo Teniente Marsh",
+    "DHC-6 Twin Otter",
+    "C-130 Hercules",
+    "Gulfstream G-IV",
+    "MH-60M Black Hawk",
+    "Bell-412",
+    "South Pole"
+  ],
+  "routing": ["Antarctica Begins","Austral Connectivity Observatory","Antarctic Pulse","Austral Intelligence Radar","End of the World Atlas"],
+  "rag_rules": {
+    "operational_capability_claims": "preserve mission date and source year",
+    "current_availability": "must be reverified with current official operational sources",
+    "aircraft_presence": "do not infer permanent basing from one mission report",
+    "historical_missions": "may be used as evidence of demonstrated capability at the documented date"
+  }
+}

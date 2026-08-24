@@ -1,0 +1,8 @@
+entity,type,current_or_planned,role,source_class,projects,verification_rule
+Punta Arenas,city_gateway,current,"departure node; logistics hub; tourism gateway",institutional + first-party,"Antarctica Begins; Travel Assistant; Observatorio; Radar; Atlas","reverify current operator routes before live claims"
+Puerto Williams,city_gateway,policy/planned,"gateway city; regional development node; candidate cable origin",institutional,"Antarctica Begins; Observatorio; Radar; Atlas","do not present cable/development program as completed"
+King George Island / Isla Rey Jorge,antarctic_gateway_place,current,"air arrival; expedition transfer; logistics node",first-party commercial,"Antarctica Begins; Travel Assistant; Observatorio; Atlas","enrich geographic relationships from authoritative institutional source"
+Aeródromo Teniente Marsh,air_infrastructure,current + planned upgrades,"air connectivity; passenger/logistics operations",institutional + first-party,"Antarctica Begins; Observatorio; Radar; Atlas","separate current airfield role from planned 2026-2030 upgrades"
+Bahía Fildes,antarctic_place,planned infrastructure node,"port infrastructure; cargo/person transfer support",institutional,"Observatorio; Radar; Atlas; Antarctica Begins","planned MOP works require implementation verification"
+Villa Las Estrellas,settlement,current reference,"tourism visit reference in DAP Full Day",first-party commercial,"Travel Assistant; Antarctica Begins; Atlas","program visits are weather/operationally conditional"
+Base Frei / Frei Station,antarctic_station,current reference,"operator-map and itinerary gateway reference",first-party commercial,"Antarctica Begins; Observatorio; Atlas","institutional attributes must be verified with FACH/INACH before canonical enrichment"

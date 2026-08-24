@@ -1,0 +1,116 @@
+{
+  "document": {
+    "id": "minrel-politica-turismo-antartico-2020",
+    "title": "Política Nacional de Turismo Antártico",
+    "publisher": "Dirección de Antártica / Ministerio de Relaciones Exteriores de Chile",
+    "source_type": "primary_institutional",
+    "authority_level": "canonical_policy_context",
+    "publication_date": "2020-01",
+    "language": "es",
+    "drive_file_id": "1T3TaJXys7NTUZBQ1Gmij8NETaX0VQ5Xg",
+    "projects": ["Antarctica Begins","Travel","Radar","Observatorio","Atlas"],
+    "topics": ["tourism","environment","safety","gateways","logistics","infrastructure","education","governance","IAATO","SAR"]
+  },
+  "policy_principles": [
+    {
+      "number": 1,
+      "statement": "Promover, ejecutar y controlar actividades y servicios de turismo antártico ambientalmente responsables, no invasivos y sujetos a evaluación de impacto ambiental, conforme al Sistema del Tratado Antártico y la normativa interna."
+    },
+    {
+      "number": 2,
+      "statement": "Gestionar operaciones de turismo antártico bajo un marco permanente de seguridad operacional y ambiental."
+    },
+    {
+      "number": 3,
+      "statement": "Incentivar un turismo antártico orientado a educar y difundir el patrimonio natural antártico, su vínculo histórico y geográfico con Chile y el rol del Sistema del Tratado Antártico."
+    },
+    {
+      "number": 4,
+      "statement": "Fortalecer el posicionamiento de la Región de Magallanes y de la Antártica Chilena como plataforma para actividades turísticas antárticas mediante servicios afines e infraestructura operacional y logística."
+    },
+    {
+      "number": 5,
+      "statement": "Promover y requerir la participación de los Operadores Turísticos Antárticos Nacionales en IAATO."
+    },
+    {
+      "number": 6,
+      "statement": "Asegurar coordinación efectiva entre las entidades públicas y privadas involucradas en el ámbito antártico nacional."
+    }
+  ],
+  "entities": [
+    {"id":"region_magallanes_antartica_chilena","type":"region","name":"Región de Magallanes y de la Antártica Chilena"},
+    {"id":"punta_arenas","type":"city_gateway","name":"Punta Arenas"},
+    {"id":"puerto_williams","type":"city_gateway","name":"Puerto Williams"},
+    {"id":"peninsula_antartica","type":"antarctic_geography","name":"Península Antártica"},
+    {"id":"aerodromo_teniente_marsh","type":"infrastructure","name":"Aeródromo Teniente Marsh"},
+    {"id":"iaato","type":"industry_association","name":"International Association of Antarctica Tour Operators"},
+    {"id":"sistema_tratado_antartico","type":"international_framework","name":"Sistema del Tratado Antártico"}
+  ],
+  "facts": [
+    {
+      "fact_id":"fact-pnta-0001",
+      "subject":"Región de Magallanes y de la Antártica Chilena",
+      "predicate":"positioned_as",
+      "object":"antarctic_tourism_gateway_platform",
+      "statement":"La política busca fortalecer a Magallanes y la Antártica Chilena como plataforma para actividades turísticas antárticas mediante servicios e infraestructura operacional y logística.",
+      "source_page":5,
+      "confidence":1.0
+    },
+    {
+      "fact_id":"fact-pnta-0002",
+      "subject":"Punta Arenas",
+      "predicate":"described_as",
+      "object":"antarctic_gateway_city",
+      "statement":"La política destaca a Punta Arenas y Puerto Williams como puertas de entrada y puentes hacia el continente antártico.",
+      "confidence":1.0
+    },
+    {
+      "fact_id":"fact-pnta-0003",
+      "subject":"Puerto Williams",
+      "predicate":"described_as",
+      "object":"antarctic_gateway_city",
+      "statement":"La política destaca a Punta Arenas y Puerto Williams como puertas de entrada y puentes hacia el continente antártico.",
+      "confidence":1.0
+    },
+    {
+      "fact_id":"fact-pnta-0004",
+      "subject":"Aeródromo Teniente Marsh",
+      "predicate":"supports",
+      "object":"antarctic_air_connectivity",
+      "statement":"La política considera la operación permanente del Aeródromo Teniente Marsh una fortaleza para generar turismo antártico a través de Chile.",
+      "confidence":1.0
+    },
+    {
+      "fact_id":"fact-pnta-0005",
+      "subject":"Chile",
+      "predicate":"has_responsibility_for",
+      "object":"antarctic_search_and_rescue",
+      "statement":"La política señala que Chile tiene responsabilidad de Búsqueda y Rescate en un área antártica asignada, lo que exige capacidades de infraestructura y servicios.",
+      "confidence":1.0
+    },
+    {
+      "fact_id":"fact-pnta-0006",
+      "subject":"Antarctic tourism operators operating from Chile",
+      "predicate":"should_participate_in",
+      "object":"IAATO",
+      "statement":"La política promueve y requiere la participación de operadores turísticos antárticos nacionales en IAATO y sostiene que las empresas que operan desde Chile deberían formar parte de dicha asociación.",
+      "confidence":1.0
+    }
+  ],
+  "relationships": [
+    {"from":"punta_arenas","relation":"gateway_to","to":"antarctica"},
+    {"from":"puerto_williams","relation":"gateway_to","to":"antarctica"},
+    {"from":"aerodromo_teniente_marsh","relation":"supports","to":"antarctic_air_connectivity"},
+    {"from":"region_magallanes_antartica_chilena","relation":"strategic_role","to":"antarctic_tourism_platform"}
+  ],
+  "rag": {
+    "status":"normalized_v1",
+    "embedding_ready":false,
+    "next_steps":[
+      "add exact page provenance to remaining gateway and SAR facts",
+      "compare policy principles against Plan Estratégico Antártico 2026-2030",
+      "normalize operator and regulatory entities",
+      "generate semantic chunks"
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "document": {
+    "id": "ruta-parques-folleto-2022",
+    "title": "Folleto Ruta de los Parques 2022 ES",
+    "publisher_context": ["Ruta de los Parques de la Patagonia", "Rewilding Chile / Tompkins Conservation", "SERNATUR", "CONAF"],
+    "source_type": "specialist_secondary_with_public_partners",
+    "publication_year": 2022,
+    "drive_file_id": "1vU91O2EhJ138v0wHdad3_X48m4M25-gR",
+    "projects": ["End of the World Travel Assistant", "End of the World Atlas", "Austral Connectivity Observatory"]
+  },
+  "facts": [
+    {
+      "fact_id": "rdp2022-fact-001",
+      "subject": "ruta_de_los_parques_patagonia",
+      "predicate": "includes",
+      "object": ["pn_alerce_andino","pn_hornopiren","pn_pumalin_douglas_tompkins","pn_corcovado","pn_melimoyu","pn_queulat","pn_isla_magdalena","pn_cerro_castillo","pn_laguna_san_rafael","pn_patagonia","pn_bernardo_ohiggins","pn_kawesqar","pn_torres_del_paine","pn_pali_aike","pn_alberto_de_agostini","pn_yendegaia","pn_cabo_de_hornos"],
+      "statement": "El folleto describe la Ruta de los Parques de la Patagonia como un corredor de 17 parques nacionales entre Puerto Montt y Cabo de Hornos."
+    },
+    {
+      "fact_id": "rdp2022-fact-002",
+      "subject": "ruta_de_los_parques_patagonia",
+      "predicate": "reported_length_km",
+      "object": 2800,
+      "statement": "El folleto reporta una extensión de 2.800 km."
+    },
+    {
+      "fact_id": "rdp2022-fact-003",
+      "subject": "pn_yendegaia",
+      "predicate": "described_as",
+      "object": "park_on_beagle_channel_in_magallanes",
+      "statement": "El folleto describe Yendegaia como parque ubicado a orillas del canal Beagle en la Región de Magallanes y perteneciente a la Reserva de la Biósfera Cabo de Hornos."
+    },
+    {
+      "fact_id": "rdp2022-fact-004",
+      "subject": "pn_alberto_de_agostini",
+      "predicate": "gateway_cities_reported",
+      "object": ["puerto_williams","punta_arenas"],
+      "statement": "El folleto señala a Puerto Williams y Punta Arenas como accesos al Parque Nacional Alberto de Agostini."
+    },
+    {
+      "fact_id": "rdp2022-fact-005",
+      "subject": "pn_cabo_de_hornos",
+      "predicate": "gateway_cities_reported",
+      "object": ["puerto_williams","punta_arenas"],
+      "statement": "El folleto describe el entorno de Cabo de Hornos como accesible desde Puerto Williams y Punta Arenas."
+    }
+  ],
+  "evidence_rules": {
+    "stable_geography": "May be used as secondary geographic context, preferably cross-checked with CONAF or authoritative cartography for canonical geometry.",
+    "access_and_services": "Must not be treated as current without verification because the publication is from 2022.",
+    "area_and_visitation_statistics": "Retain publication year and verify before presenting as current."
+  },
+  "rag": {
+    "status": "normalized_v1",
+    "embedding_ready": false
+  }
+}

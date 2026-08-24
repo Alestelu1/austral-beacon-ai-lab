@@ -1,0 +1,48 @@
+{
+  "document": {
+    "id": "yendegaia-conservation-context",
+    "title": "Parque Nacional Yendegaia",
+    "source_type": "historical_conservation_publication",
+    "drive_file_id": "18U_XdV4TJ31nP-J-Kn4LhtwlVBjxK-mr",
+    "projects": ["End of the World Atlas", "End of the World Travel Assistant", "Austral Connectivity Observatory"]
+  },
+  "facts": [
+    {
+      "fact_id": "yendegaia-fact-001",
+      "subject": "pn_yendegaia",
+      "predicate": "created_in",
+      "object": 2014,
+      "statement": "La publicación describe la creación del Parque Nacional Yendegaia en enero de 2014."
+    },
+    {
+      "fact_id": "yendegaia-fact-002",
+      "subject": "pn_yendegaia",
+      "predicate": "formed_from",
+      "object": ["state_land_111832_ha","fundacion_yendegaia_donation_38780_ha"],
+      "statement": "La publicación señala que el Estado aportó 111.832 hectáreas y Fundación Yendegaia donó 38.780 hectáreas para la creación del parque."
+    },
+    {
+      "fact_id": "yendegaia-fact-003",
+      "subject": "pn_yendegaia",
+      "predicate": "located_in",
+      "object": "isla_grande_tierra_del_fuego",
+      "statement": "El parque se describe en el extremo austral de la Isla Grande de Tierra del Fuego, entre fiordos, canales, montañas y la Cordillera Darwin."
+    },
+    {
+      "fact_id": "yendegaia-fact-004",
+      "subject": "pn_yendegaia",
+      "predicate": "name_meaning",
+      "object": "bahia_profunda",
+      "statement": "La publicación indica que Yendegaia significa 'bahía profunda' en lengua yagán."
+    },
+    {
+      "fact_id": "yendegaia-fact-005",
+      "subject": "ruta_fin_del_mundo_extension",
+      "predicate": "historically_described_as",
+      "object": "road_extension_toward_caleta_2_de_mayo",
+      "statement": "El texto histórico describe la extensión de la Ruta 7 hacia Caleta 2 de Mayo / Ruta del Fin del Mundo como obra en construcción al momento de la publicación."
+    }
+  ],
+  "temporal_warning": "Statements about road-construction status are historical and must never be presented as current without a newer MOP/CMT/official source.",
+  "rag": {"status":"normalized_v1","embedding_ready":false}
+}

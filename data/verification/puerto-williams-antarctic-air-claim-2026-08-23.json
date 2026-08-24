@@ -1,0 +1,30 @@
+{
+  "verification_id": "pw-antarctic-air-2026-08-23",
+  "claim": "Puerto Williams es reconocido por Chile como gateway antártico, pero no existe evidencia suficiente de vuelos comerciales regulares directos desde Puerto Williams hacia la Antártica en 2026.",
+  "checked_at": "2026-08-23",
+  "status": "confirmed",
+  "confidence": "high",
+  "external_ai_reviews": [
+    {
+      "system": "Gemini",
+      "result": "confirmed",
+      "role": "documentary_cross_check",
+      "note": "Separó reconocimiento estratégico de Puerto Williams de operación aérea comercial y situó la oferta antártica aérea verificada en Punta Arenas."
+    },
+    {
+      "system": "Perplexity",
+      "result": "confirmed",
+      "role": "web_source_discovery",
+      "note": "Encontró evidencia reciente consistente con conectividad aérea regular Puerto Williams–Punta Arenas y fly-cruise antártico desde Punta Arenas."
+    }
+  ],
+  "canonical_conclusion": "Puerto Williams está reconocido por Chile como nodo estratégico/gateway antártico, pero a la fecha de revisión no se ha encontrado evidencia verificable de servicios aéreos comerciales regulares o productos turísticos fly-cruise publicados que operen directamente desde Puerto Williams hacia la Antártica. La oferta aérea comercial antártica verificada en el corpus opera desde Punta Arenas.",
+  "scope_guardrails": [
+    "No afirmar que toda operación aérea privada u ocasional desde Puerto Williams es inexistente; la verificación no es exhaustiva sobre charters privados no publicados.",
+    "No usar la condición política de gateway como evidencia de conectividad aérea directa.",
+    "No confundir conectividad Santiago/Punta Arenas–Puerto Williams con conectividad Puerto Williams–Antártica.",
+    "Revalidar antes de publicar afirmaciones de actualidad futura."
+  ],
+  "qa_links": ["qa-002","qa-011"],
+  "knowledge_action": "retain_current_claim_with_stronger_external_confirmation"
+}
