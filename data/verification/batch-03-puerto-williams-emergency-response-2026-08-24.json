@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "verification_id": "batch-03-puerto-williams-emergency-response-2026-08-24",
+  "scope": "Puerto Williams emergency-response institutions, maritime authority, police, fire service and rescue/evacuation capability",
+  "verified_at": "2026-08-24",
+  "jurisdiction": "Puerto Williams / Provincia Antártica Chilena / Isla Navarino and adjacent maritime jurisdiction",
+  "source_policy": {
+    "priority": [
+      "DIRECTEMAR / Armada de Chile",
+      "Carabineros de Chile / Delegación Presidencial Provincial",
+      "Junta Nacional de Bomberos de Chile",
+      "Servicio de Salud / MINSAL",
+      "regional press only as corroboration when primary evidence exists"
+    ],
+    "rules": [
+      "Institutional presence does not prove 24/7 availability of every response asset.",
+      "Past rescue operations demonstrate capability in documented events, not guaranteed response times for future incidents.",
+      "Maritime rescue, mountain rescue, police response and medical evacuation are separate operational domains and must not be conflated.",
+      "Dynamic emergency contact numbers, staffing and asset readiness require current recheck before user-facing operational advice."
+    ]
+  },
+  "entities": [
+    {
+      "id": "gobernacion_maritima_puerto_williams",
+      "name": "Gobernación Marítima de Puerto Williams",
+      "type": "maritime_authority",
+      "status": "confirmed_current",
+      "roles": ["maritime_safety", "search_and_rescue_coordination", "maritime_jurisdiction", "navigation_safety"],
+      "evidence": [
+        {
+          "publisher": "DIRECTEMAR",
+          "url": "https://www.directemar.cl/directemar/gobernaciones-maritimas/region-de-magallanes-puerto-williams",
+          "supports": "Current institutional presence in Puerto Williams, address, phone and subordinate Capitanía de Puerto / Alcaldías de Mar network."
+        },
+        {
+          "publisher": "Armada de Chile",
+          "url": "https://www.armada.cl/amplio-operativo-desplego-la-tercera-zona-naval-en-area-de-cabo-de-hornos",
+          "supports": "2026 maritime salvage response coordinated by Gobernación Marítima de Puerto Williams near Cape Horn using naval air and maritime assets."
+        }
+      ],
+      "freshness": "semi_dynamic",
+      "embedding_readiness": "stable_role_only"
+    },
+    {
+      "id": "capitania_puerto_puerto_williams",
+      "name": "Capitanía de Puerto de Puerto Williams",
+      "type": "maritime_authority_local",
+      "status": "confirmed_current",
+      "roles": ["local_port_authority", "navigation_safety", "bad_weather_protocols", "passenger_vessel_safety"],
+      "evidence": [
+        {
+          "publisher": "DIRECTEMAR",
+          "url": "https://www.directemar.cl/directemar/gobernaciones-maritimas/region-de-magallanes-puerto-williams",
+          "supports": "Current Capitanía de Puerto in Puerto Williams."
+        },
+        {
+          "publisher": "DIRECTEMAR",
+          "url": "https://www.directemar.cl/directemar/site/tax/port/all/taxport_34_120__1.html",
+          "supports": "Local resolutions include mal tiempo plan, passenger-vessel safety measures, terminal authorizations and 2026 environmental/safety measures."
+        }
+      ],
+      "freshness": "semi_dynamic",
+      "embedding_readiness": "stable_role_only"
+    },
+    {
+      "id": "carabineros_iv_comisaria_puerto_williams",
+      "name": "IV Comisaría de Carabineros de Puerto Williams",
+      "type": "police_unit",
+      "status": "confirmed_current",
+      "roles": ["public_safety", "border_functions", "territorial_patrol", "support_in_remote_sectors"],
+      "evidence": [
+        {
+          "publisher": "Delegación Presidencial Provincial de la Antártica Chilena",
+          "url": "https://dppantartica.dpp.gob.cl/2026/05/05/carabineros-de-la-provincia-antartica-chilena-conmemora-99-aniversario-reafirmando-su-compromiso-con-la-seguridad-y-soberania-nacional/",
+          "supports": "Current IV Comisaría in Puerto Williams plus Tenencia Yendegaia and Retén Puerto Toro; public-safety and border functions."
+        },
+        {
+          "publisher": "Delegación Presidencial Provincial de la Antártica Chilena",
+          "url": "https://dppantartica.dpp.gob.cl/2026/03/30/delegado-moncada-coordina-reforzamiento-de-seguridad-publica-y-operativos-antidrogas-en-provincia-antartica-chilena/",
+          "supports": "2026 coordination between Carabineros and Armada for public security in the province."
+        }
+      ],
+      "freshness": "semi_dynamic",
+      "embedding_readiness": "stable_role_only"
+    },
+    {
+      "id": "cuerpo_bomberos_puerto_williams",
+      "name": "Cuerpo de Bomberos de Puerto Williams",
+      "type": "fire_and_rescue_service",
+      "status": "confirmed_current",
+      "roles": ["fire_response", "emergency_response", "wilderness_rescue"],
+      "evidence": [
+        {
+          "publisher": "Junta Nacional de Bomberos de Chile",
+          "url": "https://app.bomberos.cl/info_crpo_web/?id=218",
+          "supports": "Current institutional record for Cuerpo de Bomberos de Puerto Williams, one company, service area Cabo de Hornos."
+        },
+        {
+          "publisher": "Delegación Presidencial Provincial de la Antártica Chilena",
+          "url": "https://dppantartica.dpp.gob.cl/2026/05/25/primera-compania-de-bomberos-arturo-prat-celebra-39-anos-de-historia-con-desfile-conmemorativo-en-puerto-williams/",
+          "supports": "2026 confirmation of active Primera Compañía Arturo Prat and its role in wilderness rescue and emergency response."
+        }
+      ],
+      "freshness": "semi_dynamic",
+      "embedding_readiness": "stable_role_only"
+    },
+    {
+      "id": "distrito_naval_beagle_rescue_capability",
+      "name": "Distrito Naval Beagle / medios aeronavales de Puerto Williams",
+      "type": "state_rescue_capability",
+      "status": "confirmed_operational_capability_with_event_evidence",
+      "roles": ["maritime_search_and_rescue", "aeromedical_rescue_support", "remote_area_response"],
+      "evidence": [
+        {
+          "publisher": "Armada de Chile",
+          "url": "https://www.armada.cl/amplio-operativo-desplego-la-tercera-zona-naval-en-area-de-cabo-de-hornos",
+          "supports": "2026 maritime emergency response near Cape Horn included helicopter and maritime-patrol aircraft deployment."
+        },
+        {
+          "publisher": "Armada de Chile",
+          "url": "https://www.armada.cl/armada-de-chile-efectua-evacuacion-medica-en-sector-de-lago-windhond-en",
+          "supports": "Documented 2023 helicopter medical evacuation from Lago Windhond to Puerto Williams, transfer to SAMU and Hospital Comunitario Cristina Calderón."
+        },
+        {
+          "publisher": "Armada de Chile",
+          "url": "https://www.armada.cl/armadas-de-chile-y-argentina-coordinan-una-nueva-version-del-ejercicio",
+          "supports": "2026 Chile-Argentina Viekarén planning explicitly aimed at interoperability and response to maritime emergencies in the Beagle Channel."
+        }
+      ],
+      "freshness": "capability_with_dynamic_asset_readiness",
+      "embedding_readiness": "capability_context_only",
+      "warning": "Do not translate event evidence into guaranteed response time, permanent helicopter availability or automatic tourist rescue coverage."
+    }
+  ],
+  "interagency_context": {
+    "status": "confirmed_current",
+    "evidence": {
+      "publisher": "Delegación Presidencial Provincial de la Antártica Chilena",
+      "url": "https://dppantartica.dpp.gob.cl/2026/07/27/mas-de-180-personas-participan-en-la-iii-feria-de-emergencias-y-desastres-de-puerto-williams/",
+      "supports": "2026 emergency-preparedness activity involved SENAPRED, Carabineros, Hospital Comunitario Cristina Calderón, PDI, CONAF, SAG and Armada units including Capitanía de Puerto, Hospital Naval and Destacamento Aeronaval."
+    },
+    "interpretation_rule": "This confirms an interagency emergency ecosystem, not a single unified dispatch service or identical availability across agencies."
+  },
+  "qa_rules": [
+    "If asked who handles maritime emergencies, route primarily to DIRECTEMAR/Armada context, not Bomberos by default.",
+    "If asked about mountain or wilderness incidents, distinguish Bomberos wilderness-rescue role from naval air-rescue event capability and police coordination.",
+    "If asked whether a helicopter is available now, answer that current asset readiness is not established by the static corpus and requires live verification.",
+    "If asked for emergency phone numbers, recheck official current contact pages before answering.",
+    "Never infer that documented rescues imply free, guaranteed or tourist-oriented rescue service."
+  ]
+}
