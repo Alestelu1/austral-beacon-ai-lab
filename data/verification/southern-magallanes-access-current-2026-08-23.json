@@ -1,0 +1,49 @@
+{
+  "verification_id": "southern-magallanes-access-current-2026-08-23",
+  "observation_date": "2026-08-23",
+  "scope": ["pn_cabo_de_hornos","pn_alberto_de_agostini","puerto_toro","primera_angostura","puerto_williams","tierra_del_fuego"],
+  "source_priority": ["CONAF","Delegacion Presidencial Provincial Antartica Chilena","DIRECTEMAR","TABSA"],
+  "findings": [
+    {
+      "subject": "pn_cabo_de_hornos",
+      "status": "current_public_visitation_with_constraints",
+      "statement": "CONAF informa apertura diaria de 09:00 a 18:00, compra anticipada en pasesparques.cl y acceso principalmente marítimo; existe pequeño muelle y pasarela en isla Hornos, pero no hay alojamiento, alimentación ni servicios básicos o de emergencia en la unidad.",
+      "source_url": "https://www.conaf.cl/parque_nacionales/parque-nacional-cabo-de-hornos/",
+      "freshness_class": "live_or_booking_sensitive"
+    },
+    {
+      "subject": "pn_alberto_de_agostini",
+      "status": "current_public_visitation_with_no_public_infrastructure",
+      "statement": "CONAF informa apertura diaria de 09:00 a 18:00, compra anticipada en pasesparques.cl, acceso principalmente marítimo y ausencia de instalaciones administrativas o de uso público en la unidad.",
+      "source_url": "https://www.conaf.cl/parque_nacionales/parque-nacional-alberto-de-agostini/",
+      "freshness_class": "live_or_booking_sensitive"
+    },
+    {
+      "subject": "primera_angostura",
+      "status": "current_transport_service",
+      "statement": "TABSA identifica el cruce de Primera Angostura entre Punta Delgada y Bahia Azul, separados por aproximadamente 5 km; el estado operacional del cruce debe revisarse en TABSA y sus canales oficiales antes de viajar.",
+      "source_url": "https://www.tabsa.cl/rutas/primera-angostura",
+      "freshness_class": "live_or_booking_sensitive"
+    },
+    {
+      "subject": "puerto_toro",
+      "status": "current_subsidized_maritime_service_non_tourist",
+      "statement": "La Delegacion Presidencial Provincial de Antartica Chilena publica calendarios de zarpes Puerto Williams-Puerto Toro durante 2026 para un servicio marítimo subsidiado de zonas aisladas. No es un servicio turístico; residentes de Puerto Toro tienen prioridad y las fechas pueden modificarse por meteorologia o necesidades comunitarias.",
+      "source_url": "https://dppantartica.dpp.gob.cl/2026/08/10/afiches-calendario-de-zarpes-puerto-williams-puerto-toro-para-el-mes-de-agosto-de-2026/",
+      "freshness_class": "live_or_booking_sensitive"
+    },
+    {
+      "subject": "puerto_toro_terminal",
+      "status": "authorized_terminal",
+      "statement": "DIRECTEMAR registra una resolucion de mayo de 2025 que habilita la operacion del terminal portuario de transbordadores de Puerto Toro, Isla Navarino.",
+      "source_url": "https://www.directemar.cl/directemar/site/tax/port/all/taxport_34_120__1.html",
+      "freshness_class": "operational_regulatory"
+    }
+  ],
+  "agent_rules": [
+    "Never present monthly subsidized Puerto Toro sailings as a tourist ferry product.",
+    "Recheck Cabo de Hornos and Alberto de Agostini park status before giving same-day visitor guidance.",
+    "Recheck Primera Angostura operational status immediately before travel advice.",
+    "Separate authorized terminal infrastructure from guaranteed passenger service frequency."
+  ]
+}
