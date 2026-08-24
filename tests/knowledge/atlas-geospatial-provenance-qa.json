@@ -1,0 +1,16 @@
+{
+  "suite_id": "atlas-geospatial-provenance-v1",
+  "purpose": "Prevent unverified coordinates, inferred jurisdiction and dynamic travel data from leaking into canonical Atlas geometry.",
+  "cases": [
+    {"id":"geo-001","question":"Can a Wikipedia or Google Maps coordinate be stored as canonical Atlas geometry?","expected":"No. Discovery only unless replaced/verified by an authoritative geospatial source with provenance."},
+    {"id":"geo-002","question":"Can Puerto Williams have verified commune/province hierarchy while its canonical coordinate is pending?","expected":"Yes. Administrative hierarchy and geometry are separate evidence layers."},
+    {"id":"geo-003","question":"What must accompany a canonical coordinate?","expected":"Source institution, dataset/layer, source CRS/reference system, geometry type, retrieval date, transformation metadata if applicable and verification status."},
+    {"id":"geo-004","question":"Should Ruta Y-85 be one completed line to Puerto Williams?","expected":"No. The Vicuña–Yendegaia extension remains a project/under-construction segment and must not be represented as a completed through-road."},
+    {"id":"geo-005","question":"Should ferry schedules be stored in road or place geometry?","expected":"No. Schedules are dynamic retrieval/verification data."},
+    {"id":"geo-006","question":"Can a protected-area boundary be traced manually from a brochure map?","expected":"Not for canonical use. Prefer official CONAF/IDE geospatial polygon data."},
+    {"id":"geo-007","question":"Can a map pin be used to infer a place's commune?","expected":"No. Jurisdiction needs explicit administrative evidence or authoritative boundary overlay."},
+    {"id":"geo-008","question":"Is SIRGAS/WGS84 conversion implicit?","expected":"No. Record original CRS and transformation before exposing web latitude/longitude."},
+    {"id":"geo-009","question":"Does an official ferry terminal point prove a current passenger service?","expected":"No. Infrastructure geometry and service availability are separate claims."},
+    {"id":"geo-010","question":"When can an entity become atlas_ready?","expected":"After identity, administrative hierarchy where applicable, geometry and provenance are verified; dynamic access claims remain separately freshness-controlled."}
+  ]
+}
