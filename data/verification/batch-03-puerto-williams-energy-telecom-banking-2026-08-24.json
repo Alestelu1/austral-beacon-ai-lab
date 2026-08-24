@@ -1,0 +1,106 @@
+{
+  "verification_id": "batch-03-puerto-williams-energy-telecom-banking-2026-08-24",
+  "checked_at": "2026-08-24",
+  "scope": "Puerto Williams urban capacity: electricity, fuels, telecommunications and banking",
+  "source_policy": "Prefer Chilean institutional/regulatory sources; use operator first-party for service existence; keep availability and continuity dynamic.",
+  "claims": [
+    {
+      "id": "pw-electric-system-edelmag",
+      "category": "electricity",
+      "claim": "Puerto Williams is served by EDELMAG as one of the isolated/medium electrical systems of Magallanes.",
+      "status": "confirmed",
+      "freshness": "stable_context",
+      "source_class": "regulated_operator_first_party",
+      "sources": [
+        "https://sta.edelmag.cl/inicio/sector-electrico/sistema-de-magallanes/",
+        "https://plataformagd.edelmag.cl/portal/edelmag/auth/login"
+      ],
+      "notes": "System existence is stable; outages and restoration times are dynamic and must be checked live."
+    },
+    {
+      "id": "pw-edelmag-office",
+      "category": "electricity",
+      "claim": "EDELMAG publishes a customer office in Puerto Williams at Presidente Ibañez 130.",
+      "status": "confirmed",
+      "freshness": "semidynamic",
+      "source_class": "operator_first_party",
+      "sources": ["https://sta.edelmag.cl/informacion-comercial/nuestras-oficinas/"],
+      "recheck_before_user_facing_hours": true
+    },
+    {
+      "id": "pw-fuel-station-copec",
+      "category": "fuel",
+      "claim": "SEC documented a Copec service station in Puerto Williams and stated in 2023 that it was the only service station in the commune.",
+      "status": "confirmed_historical_currentness_limited",
+      "freshness": "semidynamic",
+      "source_class": "regulator_primary",
+      "sources": ["https://www.sec.cl/sec-magallanes-fiscaliza-planta-de-gas-licuado-de-petroleo-y-estacion-de-servicio-de-combustibles-de-puerto-williams/?view_full_site=true"],
+      "notes": "Do not infer 2026 stock, opening hours or uniqueness from a 2023 inspection. Fuel availability must be revalidated for travel advice."
+    },
+    {
+      "id": "pw-glp-gasco",
+      "category": "fuel",
+      "claim": "SEC documented a Gasco LPG filling plant in Puerto Williams in 2023.",
+      "status": "confirmed_historical_currentness_limited",
+      "freshness": "semidynamic",
+      "source_class": "regulator_primary",
+      "sources": ["https://www.sec.cl/sec-magallanes-fiscaliza-planta-de-gas-licuado-de-petroleo-y-estacion-de-servicio-de-combustibles-de-puerto-williams/?view_full_site=true"],
+      "notes": "Existence was regulator-verified in 2023; current operating status and stock require recheck."
+    },
+    {
+      "id": "pw-foa",
+      "category": "telecommunications",
+      "claim": "Puerto Williams is a terminal/access point of the Fibra Óptica Austral trunk infrastructure connecting the far south to the national network.",
+      "status": "confirmed",
+      "freshness": "stable_infrastructure",
+      "source_class": "institutional_primary",
+      "sources": [
+        "https://foa.subtel.gob.cl/proyecto-fibra-optica-austral/",
+        "https://www.subtel.gob.cl/wp-content/uploads/2024/09/Summary_of_Report_1_ESP_vF.pdf"
+      ],
+      "notes": "Infrastructure existence is stable; resilience, outages and retail-provider availability are dynamic."
+    },
+    {
+      "id": "pw-5g",
+      "category": "telecommunications",
+      "claim": "SUBTEL and MTT inaugurated 5G connectivity in Puerto Williams in 2022 through Entel infrastructure.",
+      "status": "confirmed",
+      "freshness": "infrastructure_context",
+      "source_class": "institutional_primary",
+      "sources": ["https://www.subtel.gob.cl/mtt-inaugura-en-puerto-williams-la-conectividad-5g-mas-austral-del-mundo/"],
+      "notes": "Do not infer universal present-day coverage, indoor signal quality, all-operator 5G, or uninterrupted service."
+    },
+    {
+      "id": "pw-telecom-resilience",
+      "category": "telecommunications",
+      "claim": "A Chilean government-commissioned feasibility study notes that Puerto Williams has moved from legacy GEO-satellite dependence to FOA-backed 4G/5G and FTTH, while retaining resilience risk from reliance on a single physical route.",
+      "status": "confirmed_with_scope",
+      "freshness": "2024_technical_context",
+      "source_class": "institutional_technical_study",
+      "sources": ["https://www.subtel.gob.cl/wp-content/uploads/2024/09/Summary_of_Report_1_ESP_vF.pdf"],
+      "notes": "Useful for infrastructure/resilience analysis; not a substitute for a live coverage map or ISP availability lookup."
+    },
+    {
+      "id": "pw-bancoestado-branch",
+      "category": "banking",
+      "claim": "BancoEstado reports that it opened a branch in Puerto Williams during 2025 as part of its territorial coverage strategy.",
+      "status": "confirmed",
+      "freshness": "stable_service_presence",
+      "source_class": "state_bank_first_party",
+      "sources": ["https://www.bancoestado.cl/content/dam/bancoestado-public/portal-investor-relations/pdf/financial-information/quarterly/2025/Informe-Financiero-Comentarios-de-la-Gerencia-Dic25.pdf"],
+      "notes": "Branch existence can be indexed; opening hours, cash availability, ATM status and specific services must be checked dynamically."
+    }
+  ],
+  "retrieval_rules": {
+    "electricity": "Embed system/operator identity, but route outage/restoration questions to live EDELMAG status channels.",
+    "fuel": "Do not promise stock or opening hours from static sources; verify current service before travel advice.",
+    "telecommunications": "Embed FOA and 5G infrastructure context; current operator coverage and outage state are dynamic.",
+    "banking": "Embed BancoEstado branch presence; ATM cash/uptime and branch hours are dynamic.",
+    "core_inference_barrier": "Infrastructure exists != service available now != stock/capacity available now != guaranteed continuity."
+  },
+  "embedding_readiness": {
+    "stable_infrastructure_claims": "eligible_after_qa",
+    "operator_presence": "eligible_with_temporal_label_if_needed",
+    "hours_stock_outages_signal_quality_cash_availability": "dynamic_not_general_embeddings"
+  }
+}
