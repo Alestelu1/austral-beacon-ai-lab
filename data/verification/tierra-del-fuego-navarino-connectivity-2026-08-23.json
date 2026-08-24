@@ -1,0 +1,99 @@
+{
+  "verification_id": "tierra-del-fuego-navarino-connectivity-2026-08-23",
+  "verified_at": "2026-08-23",
+  "scope": [
+    "Tierra del Fuego interior connectivity",
+    "San Sebastian and Bellavista border crossings",
+    "Porvenir and Cerro Sombrero context",
+    "Puerto Navarino road connectivity",
+    "current-source safeguards for traveler-facing answers"
+  ],
+  "source_classes": {
+    "institutional_current": [
+      "Unidad de Pasos Fronterizos",
+      "Delegacion Presidencial Provincial de Tierra del Fuego",
+      "Delegacion Presidencial Provincial de Antartica Chilena",
+      "Armada de Chile"
+    ],
+    "first_party_transport": ["TABSA"],
+    "institutional_secondary_context": ["SERNATUR Magallanes / Patagonia Chile dossier", "Municipalidad de Porvenir"]
+  },
+  "facts": [
+    {
+      "fact_id": "tdf-nav-001",
+      "subject": "paso_san_sebastian",
+      "predicate": "current_status_context",
+      "object": "operational_complex",
+      "statement": "La Unidad de Pasos Fronterizos reporto funcionamiento operativo del Complejo San Sebastian en abril de 2026. El complejo conecta con Argentina, esta habilitado para todo tipo de vehiculos y su acceso chileno corresponde a Ruta Y-71.",
+      "status": "current_institutional_2026",
+      "source_url": "https://www.pasosfronterizos.gov.cl/noticias/delegada-inspecciona-paso-san-sebastian-para-reforzar-la-agenda-de-seguridad-en-tierra-del-fuego/",
+      "prohibited_inference": "No prometer horario o apertura en una fecha futura sin revisar el estado operativo del dia."
+    },
+    {
+      "fact_id": "tdf-nav-002",
+      "subject": "paso_bellavista",
+      "predicate": "operates_as",
+      "object": "seasonal_border_crossing",
+      "statement": "Bellavista opera como paso fronterizo austral con apertura estacional; la Unidad de Pasos Fronterizos reporto reapertura el 1 de octubre de 2025 y en mayo de 2026 evaluo positivamente la temporada reciente.",
+      "status": "seasonal_requires_live_check",
+      "source_url": "https://www.pasosfronterizos.gov.cl/noticias/apertura-del-complejo-fronterizo-bellavista-autoridades-reforzaron-llamado-a-la-prevencion-de-incendios-forestales-y-respeto-a-la-ley-de-pesca/",
+      "prohibited_inference": "No presentarlo como abierto todo el ano."
+    },
+    {
+      "fact_id": "tdf-nav-003",
+      "subject": "porvenir",
+      "predicate": "functions_as",
+      "object": "tierra_del_fuego_service_and_tourism_node",
+      "statement": "Porvenir funciona como principal nodo urbano y de servicios de la provincia de Tierra del Fuego. Fuentes municipales mantienen oferta turistica y levantamiento de servicios para la temporada 2025-2026.",
+      "status": "current_local_context",
+      "source_url": "https://www.muniporvenir.cl/porvenir-impulsa-levantamiento-de-servicios-turisticos-para-potenciar-la-temporada-2025-2026/"
+    },
+    {
+      "fact_id": "tdf-nav-004",
+      "subject": "cerro_sombrero",
+      "predicate": "has_role",
+      "object": "heritage_and_interior_tierra_del_fuego_node",
+      "statement": "Cerro Sombrero es un nodo patrimonial y territorial del norte de Tierra del Fuego asociado historicamente a la industria petrolera. La evidencia encontrada sobre horarios de bus Porvenir-Cerro Sombrero es antigua y no debe usarse como horario actual.",
+      "status": "stable_place_context_dynamic_transport_unverified",
+      "source_url": "https://www.muniporvenir.cl/turismo/",
+      "prohibited_inference": "No publicar frecuencias de bus antiguas como vigentes."
+    },
+    {
+      "fact_id": "tdf-nav-005",
+      "subject": "ruta_y905",
+      "predicate": "connects",
+      "object": ["puerto_williams", "puerto_navarino"],
+      "statement": "La Ruta Y-905 conecta Puerto Williams con Puerto Navarino. Fuentes oficiales describen una distancia aproximada de 54-56 km y mantenimiento vial activo en 2026.",
+      "status": "current_institutional_2026",
+      "source_url": "https://dppantartica.dpp.gob.cl/2026/04/20/delegacion-antartica-chilena-coordina-soluciones-para-tramos-afectados-en-rutas-de-isla-navarino/",
+      "prohibited_inference": "El estado de transitabilidad puede cambiar por lluvias, nieve, caudales y trabajos; revalidar antes de recomendar viaje."
+    },
+    {
+      "fact_id": "tdf-nav-006",
+      "subject": "puerto_navarino",
+      "predicate": "has_current_connectivity_context",
+      "object": "road_and_maritime_border_node",
+      "statement": "Puerto Navarino esta conectado por la Ruta Y-905 con Puerto Williams y posee relevancia maritima/fronteriza en el Canal Beagle. En 2026 se inauguro una nueva rampa que el Gobierno provincial vincula con la reactivacion de cruces maritimos internacionales.",
+      "status": "current_institutional_2026",
+      "source_url": "https://dppantartica.dpp.gob.cl/2026/03/11/afiches-principales-logros-de-gobierno-en-la-provincia-antartica-chilena-entre-2022-y-2026/",
+      "prohibited_inference": "No inferir un servicio internacional regular de pasajeros sin itinerario y operador vigente."
+    },
+    {
+      "fact_id": "tdf-nav-007",
+      "subject": "punta_arenas_porvenir_maritime_service",
+      "predicate": "operated_by",
+      "object": "tabsa",
+      "statement": "TABSA mantiene infraestructura, tarifas y operacion asociada a Porvenir/Bahia Chilota. Horarios y cupos deben consultarse en la fuente first-party al momento del viaje.",
+      "status": "current_operator_scope_booking_sensitive",
+      "source_url": "https://www.tabsa.cl/",
+      "prohibited_inference": "No fijar un horario actual a partir de PDFs antiguos."
+    }
+  ],
+  "canonical_rules": [
+    "border_crossing_status_is_live_or_seasonal",
+    "historical_timetables_are_not_current_service",
+    "road_exists_does_not_mean_all_weather_guaranteed_transit",
+    "infrastructure_or_ramp_does_not_prove_regular_international_passenger_service",
+    "current traveler routing must recheck official transport and border sources"
+  ]
+}
