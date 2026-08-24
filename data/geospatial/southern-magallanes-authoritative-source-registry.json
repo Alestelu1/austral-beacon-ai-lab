@@ -1,7 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "registry_id": "southern-magallanes-authoritative-geospatial-sources",
-  "checked_at": "2026-08-23",
+  "checked_at": "2026-08-24",
   "purpose": "Authoritative-source registry for Atlas-ready coordinates, administrative hierarchy and route geometry in southern Magallanes.",
   "sources": [
     {
@@ -62,8 +62,14 @@
     {"entity_id":"puerto_toro","geometry_type":"Point","status":"awaiting_authoritative_feature_or_dataset_record"},
     {"entity_id":"porvenir","geometry_type":"Point","status":"awaiting_authoritative_feature_or_dataset_record"},
     {"entity_id":"cerro_sombrero","geometry_type":"Point","status":"awaiting_authoritative_feature_or_dataset_record"},
+    {"entity_id":"primera_angostura","geometry_type":"LineString_or_crossing_geometry","status":"awaiting_authoritative_feature_or_dataset_record"},
+    {"entity_id":"paso_san_sebastian","geometry_type":"Point","status":"awaiting_authoritative_feature_or_dataset_record"},
+    {"entity_id":"paso_bellavista","geometry_type":"Point","status":"awaiting_authoritative_feature_or_dataset_record"},
     {"entity_id":"ruta_y905","geometry_type":"LineString_or_MultiLineString","status":"road_identity_verified_geometry_pending"},
-    {"entity_id":"ruta_y85","geometry_type":"LineString_or_MultiLineString","status":"route_context_verified_geometry_pending"}
+    {"entity_id":"ruta_y85","geometry_type":"LineString_or_MultiLineString","status":"route_context_verified_geometry_pending"},
+    {"entity_id":"pn_yendegaia","geometry_type":"Polygon_or_MultiPolygon","status":"awaiting_conaf_or_authoritative_protected_area_layer"},
+    {"entity_id":"pn_alberto_de_agostini","geometry_type":"Polygon_or_MultiPolygon","status":"awaiting_conaf_or_authoritative_protected_area_layer"},
+    {"entity_id":"pn_cabo_de_hornos","geometry_type":"Polygon_or_MultiPolygon","status":"awaiting_conaf_or_authoritative_protected_area_layer"}
   ],
   "rules": {
     "no_coordinate_guessing": true,
