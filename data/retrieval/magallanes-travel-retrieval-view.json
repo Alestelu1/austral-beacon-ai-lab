@@ -1,5 +1,5 @@
 {
-  "view_id": "magallanes-travel-retrieval-v3",
+  "view_id": "magallanes-travel-retrieval-v4",
   "purpose": "Agent-facing retrieval layer for southern Magallanes travel, protected areas and territorial connectivity.",
   "rules": {
     "prefer_authoritative_geography_for_canonical_location": true,
@@ -10,142 +10,30 @@
     "live_transport_schedules_require_first_party_recheck": true,
     "park_access_description_is_not_equivalent_to_visitor_service": true,
     "subsidized_isolated_zone_transport_is_not_a_tourism_product": true,
-    "authorized_terminal_does_not_guarantee_schedule": true
+    "authorized_terminal_does_not_guarantee_schedule": true,
+    "border_crossing_status_requires_live_or_seasonal_check": true,
+    "road_existence_does_not_guarantee_all_weather_transit": true,
+    "international_ramp_or_port_infrastructure_does_not_prove_regular_passenger_service": true
   },
   "chunks": [
-    {
-      "chunk_id": "rdp-overview-001",
-      "title": "Ruta de los Parques overview",
-      "entities": ["ruta_de_los_parques_patagonia","puerto_montt","cabo_de_hornos"],
-      "summary": "Ruta de los Parques sources describe a 2,800 km conservation and nature-travel corridor linking 17 national parks from Puerto Montt to Cabo de Hornos, integrating the Carretera Austral, Patagonian channels and the Ruta del Fin del Mundo.",
-      "source_ids": ["ruta-parques-folleto-2022","ruta-parques-pasaporte-2022"],
-      "freshness_class": "specialist_secondary_2022",
-      "allowed_uses": ["route_context","protected_area_context","responsible_travel"]
-    },
-    {
-      "chunk_id": "magallanes-parks-001",
-      "title": "National parks in the Magallanes section",
-      "entities": ["pn_bernardo_ohiggins","pn_kawesqar","pn_torres_del_paine","pn_pali_aike","pn_alberto_de_agostini","pn_yendegaia","pn_cabo_de_hornos"],
-      "summary": "The Ruta de los Parques road map explicitly lists seven national parks in the Magallanes section: Bernardo O'Higgins, Kawésqar, Torres del Paine, Pali Aike, Alberto de Agostini, Yendegaia and Cabo de Hornos.",
-      "source_ids": ["ruta-parques-mapa-rutero-magallanes","ruta-parques-folleto-2022"],
-      "freshness_class": "stable_geography_with_2022_secondary_context"
-    },
-    {
-      "chunk_id": "yendegaia-place-001",
-      "title": "Yendegaia territorial and conservation context",
-      "entities": ["pn_yendegaia","isla_grande_tierra_del_fuego","canal_beagle","cordillera_darwin"],
-      "summary": "Yendegaia is a national park in the far south of Isla Grande de Tierra del Fuego, associated with the Beagle Channel and Cordillera Darwin. Current CONAF information places it in the communes of Timaukel and Cabo de Hornos and describes a mountainous landscape of ice fields, glaciers, fjords and channels.",
-      "source_ids": ["yendegaia-conservation-context","ruta-parques-folleto-2022","yendegaia-access-current-2026-08-23"],
-      "freshness_class": "stable_place_context_with_current_conaf_validation",
-      "allowed_uses": ["atlas","destination_context","conservation_history"]
-    },
-    {
-      "chunk_id": "yendegaia-access-002",
-      "title": "Current Yendegaia access and visitor-service status",
-      "entities": ["pn_yendegaia","ruta_y85","lago_fagnano","caleta_2_de_mayo","puerto_williams","puerto_navarino","bahia_yendegaia"],
-      "summary": "As of 23 August 2026, CONAF describes maritime access from Puerto Williams/Puerto Navarino toward Bahía Yendegaia and a terrestrial approach via Ruta Y-85 to Lago Fagnano plus the Vicuña–Yendegaia penetration road. CONAF simultaneously states that the park has no visitor attention and no public-use infrastructure.",
-      "source_ids": ["yendegaia-access-current-2026-08-23"],
-      "freshness_class": "current_institutional_2026",
-      "status": "access_described_but_no_visitor_services",
-      "prohibited_inference": "Do not promise a staffed entrance, public-use facilities, scheduled boat, or completed through-road connection to Puerto Williams."
-    },
-    {
-      "chunk_id": "vicuna-yendegaia-road-001",
-      "title": "Vicuña–Yendegaia road remains under construction",
-      "entities": ["ruta_y85","vicuna_yendegaia","cordillera_darwin","caleta_2_de_mayo","canal_beagle"],
-      "summary": "Current 2026 Ejército/CMT and MOP evidence shows the Vicuña–Yendegaia corridor remains under construction. Etapa XI works were active in 2026, including installation of a modular bridge in the Cordillera Darwin front. The corridor must not be represented as a completed continuous public road to Puerto Williams.",
-      "source_ids": ["yendegaia-access-current-2026-08-23"],
-      "freshness_class": "current_infrastructure_2026",
-      "status": "under_construction",
-      "prohibited_inference": "Do not state that travelers can currently drive continuously from mainland Chile to Puerto Williams through this project."
-    },
-    {
-      "chunk_id": "tabsa-pa-pw-001",
-      "title": "TABSA Punta Arenas–Puerto Williams maritime connection",
-      "entities": ["punta_arenas","puerto_williams","tabsa"],
-      "summary": "TABSA currently publishes Punta Arenas–Puerto Williams as a maritime service and describes the crossing as approximately 32 hours. Departure dates, fares, vessel assignment and availability remain booking-sensitive and must be rechecked at answer time.",
-      "source_ids": ["yendegaia-access-current-2026-08-23"],
-      "freshness_class": "live_or_booking_sensitive",
-      "allowed_uses": ["travel_routing","connectivity_context"],
-      "prohibited_inference": "Do not treat the 2022 map's 31-hour duration as current; current first-party TABSA page says approximately 32 hours."
-    },
-    {
-      "chunk_id": "caleta-dos-mayo-service-scope-001",
-      "title": "TABSA service scope includes Caleta 2 de Mayo",
-      "entities": ["puerto_williams","puerto_toro","caleta_2_de_mayo","tabsa"],
-      "summary": "TABSA's current Puerto Williams operations listing includes Punta Arenas, Puerto Williams, Puerto Toro and Caleta 2 de Mayo within its route/service scope. This confirms operator scope, not a guaranteed fixed-frequency itinerary to Caleta 2 de Mayo.",
-      "source_ids": ["yendegaia-access-current-2026-08-23"],
-      "freshness_class": "current_first_party_scope",
-      "status": "service_scope_confirmed_schedule_not_established",
-      "prohibited_inference": "Check the live itinerary before telling a traveler that a Caleta 2 de Mayo sailing is available on a specific date."
-    },
-    {
-      "chunk_id": "cabo-hornos-current-001",
-      "title": "Current Cabo de Hornos visitor-access model",
-      "entities": ["pn_cabo_de_hornos","isla_hornos","puerto_williams","punta_arenas"],
-      "summary": "Current CONAF information states that Parque Nacional Cabo de Hornos is open daily 09:00–18:00 with advance ticket purchase through Pases Parques. Access is maritime, commonly after reaching Puerto Williams by air or from Punta Arenas via prearranged navigation circuits. Isla Hornos has a small landing pier and footpath but no lodging, food, basic services or local emergency services.",
-      "source_ids": ["southern-magallanes-access-current-2026-08-23"],
-      "freshness_class": "live_or_booking_sensitive",
-      "status": "current_public_visitation_with_constraints",
-      "prohibited_inference": "Do not imply independent walk-in access or guaranteed landing; maritime conditions and operator arrangements still govern practical access."
-    },
-    {
-      "chunk_id": "agostini-current-001",
-      "title": "Current Alberto de Agostini visitor-access model",
-      "entities": ["pn_alberto_de_agostini","punta_arenas","puerto_williams"],
-      "summary": "Current CONAF information states that Parque Nacional Alberto de Agostini is open daily 09:00–18:00 with advance ticket purchase through Pases Parques. Access is mainly maritime, including private programmed navigation, and the park has no administrative or public-use facilities.",
-      "source_ids": ["southern-magallanes-access-current-2026-08-23"],
-      "freshness_class": "live_or_booking_sensitive",
-      "status": "current_public_visitation_with_no_public_infrastructure",
-      "prohibited_inference": "Do not describe the park as having visitor centers, lodging, campsites or staffed public infrastructure unless newer official evidence says so."
-    },
-    {
-      "chunk_id": "primera-angostura-current-001",
-      "title": "Current Primera Angostura crossing",
-      "entities": ["primera_angostura","punta_delgada","bahia_azul","isla_grande_tierra_del_fuego","tabsa"],
-      "summary": "TABSA identifies Primera Angostura as the ferry crossing between Punta Delgada on the mainland and Bahía Azul on Tierra del Fuego, separated by about 5 km. Operational status is dynamic and should be checked through TABSA immediately before travel.",
-      "source_ids": ["southern-magallanes-access-current-2026-08-23"],
-      "freshness_class": "live_or_booking_sensitive",
-      "status": "current_transport_service",
-      "allowed_uses": ["tierra_del_fuego_route_context","travel_routing"]
-    },
-    {
-      "chunk_id": "puerto-toro-current-001",
-      "title": "Puerto Williams–Puerto Toro subsidized maritime service",
-      "entities": ["puerto_williams","puerto_toro","isla_navarino"],
-      "summary": "In August 2026 the Delegación Presidencial Provincial de Antártica Chilena publishes sailings between Puerto Williams and Puerto Toro under a subsidized isolated-zone maritime service. It is explicitly not a tourism product: Puerto Toro residents have priority for seats and cargo, and dates may change because of weather or community needs.",
-      "source_ids": ["southern-magallanes-access-current-2026-08-23"],
-      "freshness_class": "live_or_booking_sensitive",
-      "status": "current_subsidized_maritime_service_non_tourist",
-      "prohibited_inference": "Do not market or recommend this as a normal sightseeing ferry; availability for visitors is conditional and secondary to resident needs."
-    },
-    {
-      "chunk_id": "puerto-toro-terminal-001",
-      "title": "Puerto Toro transbordador terminal authorization",
-      "entities": ["puerto_toro","isla_navarino","directemar"],
-      "summary": "DIRECTEMAR records a May 2025 local resolution enabling operation of the Puerto Toro transbordador terminal on Isla Navarino. This is infrastructure/regulatory evidence and does not by itself establish a current passenger timetable.",
-      "source_ids": ["southern-magallanes-access-current-2026-08-23"],
-      "freshness_class": "operational_regulatory",
-      "status": "authorized_terminal",
-      "prohibited_inference": "Do not derive service frequency or tourism availability from terminal authorization alone."
-    },
-    {
-      "chunk_id": "southern-gateway-parks-001",
-      "title": "Puerto Williams and Punta Arenas as southern park gateways",
-      "entities": ["puerto_williams","punta_arenas","pn_alberto_de_agostini","pn_cabo_de_hornos"],
-      "summary": "The 2022 Ruta de los Parques brochure identifies Puerto Williams and Punta Arenas as gateway cities for southern protected-area access, including Alberto de Agostini and the Cabo de Hornos environment. This is route-context evidence, not proof that every current transport service or park access is available from both cities.",
-      "source_ids": ["ruta-parques-folleto-2022"],
-      "freshness_class": "specialist_secondary_2022",
-      "prohibited_inference": "Do not infer current ferry, cruise, flight or landing availability from gateway wording alone."
-    },
-    {
-      "chunk_id": "responsible-travel-001",
-      "title": "Ruta de los Parques responsible travel principles",
-      "entities": ["ruta_de_los_parques_patagonia"],
-      "summary": "The route passport promotes low-impact travel: protect ecosystems, support local communities, respect traditions, reduce waste, do not feed wildlife, observe fauna from a distance, stay on marked trails, comply with fire bans and follow park-ranger instructions.",
-      "source_ids": ["ruta-parques-pasaporte-2022"],
-      "freshness_class": "editorial_guidance",
-      "allowed_uses": ["travel_assistant_behavior_guidance","visitor_education"]
-    }
+    {"chunk_id":"rdp-overview-001","title":"Ruta de los Parques overview","entities":["ruta_de_los_parques_patagonia","puerto_montt","cabo_de_hornos"],"summary":"Ruta de los Parques sources describe a 2,800 km conservation and nature-travel corridor linking 17 national parks from Puerto Montt to Cabo de Hornos, integrating the Carretera Austral, Patagonian channels and the Ruta del Fin del Mundo.","source_ids":["ruta-parques-folleto-2022","ruta-parques-pasaporte-2022"],"freshness_class":"specialist_secondary_2022","allowed_uses":["route_context","protected_area_context","responsible_travel"]},
+    {"chunk_id":"magallanes-parks-001","title":"National parks in the Magallanes section","entities":["pn_bernardo_ohiggins","pn_kawesqar","pn_torres_del_paine","pn_pali_aike","pn_alberto_de_agostini","pn_yendegaia","pn_cabo_de_hornos"],"summary":"The Ruta de los Parques road map explicitly lists seven national parks in the Magallanes section: Bernardo O'Higgins, Kawesqar, Torres del Paine, Pali Aike, Alberto de Agostini, Yendegaia and Cabo de Hornos.","source_ids":["ruta-parques-mapa-rutero-magallanes","ruta-parques-folleto-2022"],"freshness_class":"stable_geography_with_2022_secondary_context"},
+    {"chunk_id":"yendegaia-place-001","title":"Yendegaia territorial and conservation context","entities":["pn_yendegaia","isla_grande_tierra_del_fuego","canal_beagle","cordillera_darwin"],"summary":"Yendegaia is a national park in the far south of Isla Grande de Tierra del Fuego, associated with the Beagle Channel and Cordillera Darwin. Current CONAF information places it in the communes of Timaukel and Cabo de Hornos.","source_ids":["yendegaia-conservation-context","ruta-parques-folleto-2022","yendegaia-access-current-2026-08-23"],"freshness_class":"stable_place_context_with_current_conaf_validation","allowed_uses":["atlas","destination_context","conservation_history"]},
+    {"chunk_id":"yendegaia-access-002","title":"Current Yendegaia access and visitor-service status","entities":["pn_yendegaia","ruta_y85","lago_fagnano","caleta_2_de_mayo","puerto_williams","puerto_navarino","bahia_yendegaia"],"summary":"As of 23 August 2026, CONAF describes maritime access from Puerto Williams/Puerto Navarino toward Bahia Yendegaia and a terrestrial approach via Ruta Y-85 to Lago Fagnano plus the Vicuna-Yendegaia penetration road. CONAF simultaneously states that the park has no visitor attention and no public-use infrastructure.","source_ids":["yendegaia-access-current-2026-08-23"],"freshness_class":"current_institutional_2026","status":"access_described_but_no_visitor_services","prohibited_inference":"Do not promise a staffed entrance, public-use facilities, scheduled boat, or completed through-road connection to Puerto Williams."},
+    {"chunk_id":"vicuna-yendegaia-road-001","title":"Vicuna-Yendegaia road remains under construction","entities":["ruta_y85","vicuna_yendegaia","cordillera_darwin","caleta_2_de_mayo","canal_beagle"],"summary":"Current 2026 Ejercito/CMT and MOP evidence shows the Vicuna-Yendegaia corridor remains under construction. The corridor must not be represented as a completed continuous public road to Puerto Williams.","source_ids":["yendegaia-access-current-2026-08-23"],"freshness_class":"current_infrastructure_2026","status":"under_construction","prohibited_inference":"Do not state that travelers can currently drive continuously from mainland Chile to Puerto Williams through this project."},
+    {"chunk_id":"tabsa-pa-pw-001","title":"TABSA Punta Arenas-Puerto Williams maritime connection","entities":["punta_arenas","puerto_williams","tabsa"],"summary":"TABSA currently publishes Punta Arenas-Puerto Williams as a maritime service and describes the crossing as approximately 32 hours. Departure dates, fares, vessel assignment and availability remain booking-sensitive and must be rechecked at answer time.","source_ids":["yendegaia-access-current-2026-08-23"],"freshness_class":"live_or_booking_sensitive","allowed_uses":["travel_routing","connectivity_context"]},
+    {"chunk_id":"caleta-dos-mayo-service-scope-001","title":"TABSA service scope includes Caleta 2 de Mayo","entities":["puerto_williams","puerto_toro","caleta_2_de_mayo","tabsa"],"summary":"TABSA's current Puerto Williams operations listing includes Punta Arenas, Puerto Williams, Puerto Toro and Caleta 2 de Mayo within its route/service scope. This confirms operator scope, not a guaranteed fixed-frequency itinerary to Caleta 2 de Mayo.","source_ids":["yendegaia-access-current-2026-08-23"],"freshness_class":"current_first_party_scope","status":"service_scope_confirmed_schedule_not_established"},
+    {"chunk_id":"cabo-hornos-current-001","title":"Current Cabo de Hornos visitor-access model","entities":["pn_cabo_de_hornos","isla_hornos","puerto_williams","punta_arenas"],"summary":"Current CONAF information states that Parque Nacional Cabo de Hornos has public visitation subject to maritime access and advance planning; practical landing remains weather and operator dependent.","source_ids":["southern-magallanes-access-current-2026-08-23"],"freshness_class":"live_or_booking_sensitive","status":"current_public_visitation_with_constraints"},
+    {"chunk_id":"agostini-current-001","title":"Current Alberto de Agostini visitor-access model","entities":["pn_alberto_de_agostini","punta_arenas","puerto_williams"],"summary":"Current CONAF information states that Parque Nacional Alberto de Agostini is accessed mainly by sea and has no administrative or public-use facilities inside the unit.","source_ids":["southern-magallanes-access-current-2026-08-23"],"freshness_class":"live_or_booking_sensitive","status":"current_public_visitation_with_no_public_infrastructure"},
+    {"chunk_id":"primera-angostura-current-001","title":"Current Primera Angostura crossing","entities":["primera_angostura","punta_delgada","bahia_azul","isla_grande_tierra_del_fuego","tabsa"],"summary":"TABSA identifies Primera Angostura as the ferry crossing between Punta Delgada on the mainland and Bahia Azul on Tierra del Fuego. Operational status is dynamic and should be checked through TABSA immediately before travel.","source_ids":["southern-magallanes-access-current-2026-08-23"],"freshness_class":"live_or_booking_sensitive","status":"current_transport_service"},
+    {"chunk_id":"puerto-toro-current-001","title":"Puerto Williams-Puerto Toro subsidized maritime service","entities":["puerto_williams","puerto_toro","isla_navarino"],"summary":"In August 2026 the Delegacion Presidencial Provincial de Antartica Chilena publishes sailings between Puerto Williams and Puerto Toro under a subsidized isolated-zone maritime service. It is explicitly not a tourism product and residents have priority.","source_ids":["southern-magallanes-access-current-2026-08-23"],"freshness_class":"live_or_booking_sensitive","status":"current_subsidized_maritime_service_non_tourist"},
+    {"chunk_id":"san-sebastian-current-001","title":"San Sebastian border crossing","entities":["paso_san_sebastian","porvenir","ruta_y71","argentina"],"summary":"Unidad de Pasos Fronterizos reported the San Sebastian complex operational in April 2026. It connects Chilean Tierra del Fuego with Argentina, is authorized for all vehicle types, and uses Ruta Y-71 on the Chilean side. Daily opening and conditions remain live operational information.","source_ids":["tierra-del-fuego-navarino-connectivity-2026-08-23"],"freshness_class":"live_border_status","status":"operational_complex_requires_live_check","prohibited_inference":"Do not promise opening hours or uninterrupted passage without a same-day official check."},
+    {"chunk_id":"bellavista-seasonal-001","title":"Bellavista seasonal border crossing","entities":["paso_bellavista","timaukel","tierra_del_fuego","argentina"],"summary":"Bellavista is a seasonal border crossing in southern Tierra del Fuego. Official sources documented reopening on 1 October 2025 and reviewed its recent operation in May 2026. It must not be represented as a year-round crossing.","source_ids":["tierra-del-fuego-navarino-connectivity-2026-08-23"],"freshness_class":"seasonal_border_status","status":"seasonal_requires_live_check"},
+    {"chunk_id":"porvenir-node-001","title":"Porvenir as Tierra del Fuego service node","entities":["porvenir","tierra_del_fuego","bahia_chilota","tabsa"],"summary":"Porvenir functions as the principal urban and service node of Chilean Tierra del Fuego. Municipal sources maintain tourism and service listings, while TABSA maintains maritime operations and fare material associated with Porvenir/Bahia Chilota. Timetables and vehicle space remain booking-sensitive.","source_ids":["tierra-del-fuego-navarino-connectivity-2026-08-23"],"freshness_class":"mixed_stable_and_booking_sensitive","allowed_uses":["destination_context","route_planning"]},
+    {"chunk_id":"cerro-sombrero-001","title":"Cerro Sombrero heritage and connectivity caution","entities":["cerro_sombrero","primavera","porvenir"],"summary":"Cerro Sombrero is an interior Tierra del Fuego settlement with strong petroleum-industry heritage value. Older public documents show Porvenir-Cerro Sombrero bus services, but no sufficiently current timetable was verified for 2026; agents must not reuse old schedules as current.","source_ids":["tierra-del-fuego-navarino-connectivity-2026-08-23"],"freshness_class":"stable_place_context_dynamic_transport_unverified","status":"current_timetable_not_established"},
+    {"chunk_id":"puerto-navarino-y905-001","title":"Puerto Williams-Puerto Navarino road connection","entities":["puerto_williams","puerto_navarino","ruta_y905","isla_navarino"],"summary":"Puerto Navarino is connected to Puerto Williams by Ruta Y-905, approximately 54-56 km according to official sources. In 2026 Vialidad and the provincial delegation reported active road maintenance and weather-related deterioration on Navarino roads, so transit conditions should be rechecked before travel.","source_ids":["tierra-del-fuego-navarino-connectivity-2026-08-23"],"freshness_class":"current_road_condition_sensitive","status":"road_connection_exists_conditions_dynamic"},
+    {"chunk_id":"puerto-navarino-ramp-001","title":"Puerto Navarino maritime-border infrastructure","entities":["puerto_navarino","canal_beagle","argentina"],"summary":"The provincial government reports a new ramp in Puerto Navarino that reactivated international maritime crossing capacity. This is infrastructure and connectivity evidence, not proof of a regular tourist passenger service or fixed timetable.","source_ids":["tierra-del-fuego-navarino-connectivity-2026-08-23"],"freshness_class":"current_infrastructure_2026","status":"infrastructure_available_service_schedule_not_established","prohibited_inference":"Do not sell or recommend a regular international ferry solely from the existence of the ramp."},
+    {"chunk_id":"southern-gateway-parks-001","title":"Puerto Williams and Punta Arenas as southern park gateways","entities":["puerto_williams","punta_arenas","pn_alberto_de_agostini","pn_cabo_de_hornos"],"summary":"The 2022 Ruta de los Parques brochure identifies Puerto Williams and Punta Arenas as gateway cities for southern protected-area access. This is route-context evidence, not proof that every current transport service or park access is available from both cities.","source_ids":["ruta-parques-folleto-2022"],"freshness_class":"specialist_secondary_2022"},
+    {"chunk_id":"responsible-travel-001","title":"Ruta de los Parques responsible travel principles","entities":["ruta_de_los_parques_patagonia"],"summary":"The route passport promotes low-impact travel: protect ecosystems, support local communities, respect traditions, reduce waste, do not feed wildlife, observe fauna from a distance, stay on marked trails, comply with fire bans and follow park-ranger instructions.","source_ids":["ruta-parques-pasaporte-2022"],"freshness_class":"editorial_guidance","allowed_uses":["travel_assistant_behavior_guidance","visitor_education"]}
   ]
 }
