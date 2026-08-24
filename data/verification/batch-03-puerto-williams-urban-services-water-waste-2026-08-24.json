@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0",
+  "verification_id": "batch-03-puerto-williams-urban-services-water-waste-2026-08-24",
+  "checked_at": "2026-08-24",
+  "scope": "Puerto Williams urban services: drinking water and sanitation, waste and recycling, municipal services, and basic commercial supply context",
+  "source_priority": [
+    "Delegacion Presidencial Provincial de la Antartica Chilena",
+    "Aguas Magallanes",
+    "Municipalidad de Cabo de Hornos",
+    "Ministerio del Medio Ambiente",
+    "Gobierno Regional de Magallanes y de la Antartica Chilena",
+    "historical municipal/tourism documents only as context"
+  ],
+  "claims": [
+    {
+      "id": "pw-water-source-rio-robalo",
+      "claim": "The Rio Robalo basin supplies drinking water to Puerto Williams.",
+      "status": "confirmed_current_context",
+      "source_class": "government_current",
+      "freshness": "semi_stable",
+      "evidence": [
+        "https://dppantartica.dpp.gob.cl/2026/08/10/recorrido-preventivo-en-la-cuenca-del-rio-robalo-fortalece-preparacion-ante-riesgos-naturales-en-puerto-williams/",
+        "https://dppantartica.dpp.gob.cl/2026/03/23/delegado-moncada-supervisa-infraestructura-critica-ante-intensas-lluvias-en-cabo-de-hornos/"
+      ],
+      "retrieval_rule": "Do not infer water quality or uninterrupted supply from source identity alone."
+    },
+    {
+      "id": "pw-water-operator-aguas-magallanes",
+      "claim": "Aguas Magallanes operates and maintains drinking-water production, distribution and wastewater collection services in Puerto Williams under a collaboration/operation arrangement documented by the company.",
+      "status": "confirmed_with_historical_operator_document",
+      "source_class": "first_party_utility",
+      "freshness": "semi_stable",
+      "evidence": [
+        "https://www.aguasmagallanes.cl/recursos-ama/Memorias/Memoria%20AMA%202023%2C%2030-04-24_13-44.pdf"
+      ],
+      "note": "The operator relationship is supported, but the exact legal/contractual arrangement and current service metrics should be refreshed from newer Aguas Magallanes or SISS documentation before legal or regulatory publication."
+    },
+    {
+      "id": "pw-water-sanitation-master-plan",
+      "claim": "In 2026 authorities were prioritizing a master sanitation plan for Puerto Williams, including drinking-water and sewerage infrastructure improvements.",
+      "status": "confirmed_planned",
+      "source_class": "government_current",
+      "freshness": "planned_or_under_development",
+      "evidence": [
+        "https://dppantartica.dpp.gob.cl/2026/04/20/subdere-garantiza-continuidad-de-proyectos-pedze-para-la-provincia-antartica-chilena/"
+      ],
+      "prohibited_inference": "Do not state that the master plan has already been completed or that all urban sectors currently have upgraded water/sewerage infrastructure."
+    },
+    {
+      "id": "pw-water-emergency-history",
+      "claim": "Puerto Williams experienced a drinking-water supply emergency in 2024 after problems at the Rio Robalo intake; official testing later confirmed water suitable for human consumption before normal service resumed.",
+      "status": "confirmed_historical_context",
+      "source_class": "government_historical",
+      "freshness": "dated_context",
+      "evidence": [
+        "https://dppantartica.dpp.gob.cl/2024/05/27/informe-de-calidad-comprueba-que-el-agua-potable-en-puerto-williams-es-apta-para-el-consumo-humano/",
+        "https://dppantartica.dpp.gob.cl/2024/05/27/emergencia-comunal-en-cabo-de-hornos-cogrid-provincial-evalua-avances-en-desague-de-la-captacion-siniestrada-de-puerto-williams/"
+      ],
+      "retrieval_rule": "Use only as resilience/history context. Never answer current water-quality questions from this 2024 event."
+    },
+    {
+      "id": "pw-waste-municipal-recycling",
+      "claim": "The Municipality of Cabo de Hornos currently maintains an environmental/recycling layer with mapped recycling containers and points for materials including oils.",
+      "status": "confirmed_current_municipal_program",
+      "source_class": "municipal_current",
+      "freshness": "semi_dynamic",
+      "evidence": [
+        "https://imcabodehornos.cl/medioambiente/"
+      ],
+      "retrieval_rule": "Container locations and collection operation require recheck before route-level recommendations."
+    },
+    {
+      "id": "pw-organics-composting",
+      "claim": "A municipal/community organic-waste composting initiative in Cabo de Hornos was implemented with Ministry of the Environment support, including household containers and municipal collection/composting workflow.",
+      "status": "confirmed_program_context",
+      "source_class": "environment_ministry",
+      "freshness": "dated_context",
+      "evidence": [
+        "https://mma.gob.cl/fondo-para-el-reciclaje-en-el-fin-del-mundo-seremi-de-medio-ambiente-participa-en-puesta-en-marcha-de-proyecto-de-compostaje-de-cabo-de-hornos/"
+      ],
+      "note": "Do not assume 2026 collection frequency or program coverage from the original implementation article."
+    },
+    {
+      "id": "pw-municipal-services",
+      "claim": "The Municipality of Cabo de Hornos provides current municipal services from Puerto Williams and publishes current directories, environmental functions, municipal procedures and local development projects.",
+      "status": "confirmed_current",
+      "source_class": "municipal_current",
+      "freshness": "semi_dynamic",
+      "evidence": [
+        "https://imcabodehornos.cl/",
+        "https://imcabodehornos.cl/directorio-municipal/",
+        "https://imcabodehornos.cl/servicios-municipales/"
+      ],
+      "retrieval_rule": "Office contacts and hours must be rechecked before user-facing operational advice."
+    },
+    {
+      "id": "pw-basic-commerce",
+      "claim": "Puerto Williams has established local commercial activity and basic supply services, but the current corpus does not yet support a complete authoritative 2026 inventory of supermarkets, minimarkets, pharmacies or current stock conditions.",
+      "status": "partial_current_context",
+      "source_class": "municipal_current_plus_historical_context",
+      "freshness": "dynamic",
+      "evidence": [
+        "https://imcabodehornos.cl/",
+        "https://imcabodehornos.cl/omil/"
+      ],
+      "historical_context_only": [
+        "https://www.imcabodehornos.cl/jsmallfib_top/pladetur.pdf"
+      ],
+      "prohibited_inference": "Do not reuse old lists of shops as a current 2026 commercial directory. Do not claim stock or opening hours without live first-party verification."
+    }
+  ],
+  "system_rules": {
+    "water_quality": "Current potability, outages, boil-water advice or emergency distribution must be checked live from Aguas Magallanes, health authority, municipality or provincial emergency authority.",
+    "sanitation_projects": "Planned sanitation infrastructure remains planned until official completion evidence is available.",
+    "waste": "Existence of recycling infrastructure does not prove current pickup frequency or container availability.",
+    "commerce": "Business existence, opening hours, inventory, payment acceptance and product availability are dynamic and must not be embedded as stable facts.",
+    "travel_assistant": "For practical trip questions, prefer a live-services layer over semantic embeddings for water incidents, waste collection, shopping hours and stock."
+  },
+  "embedding_readiness": {
+    "stable_context": [
+      "Rio Robalo as drinking-water source context",
+      "municipal responsibility and environmental-program existence"
+    ],
+    "dated_context_only": [
+      "2024 water emergency",
+      "historical composting rollout"
+    ],
+    "dynamic_revalidate": [
+      "water quality",
+      "service outages",
+      "collection schedules",
+      "shop opening hours",
+      "stock and payment availability"
+    ],
+    "planned_status_preserve": [
+      "Puerto Williams sanitation master plan"
+    ]
+  }
+}
