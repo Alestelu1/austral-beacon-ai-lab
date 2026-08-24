@@ -103,7 +103,13 @@
   },
   "source_records": [
     "data/verification/batch-03-chilean-authoritative-validation-2026-08-24.json",
+    "data/verification/batch-03-trails-current-chile-2026-08-24.json",
     "data/verification/batch-03-puerto-williams-connectivity-current-2026-08-24.json",
+    "data/verification/batch-03-puerto-williams-health-emergency-2026-08-24.json",
+    "data/verification/batch-03-puerto-williams-emergency-response-2026-08-24.json",
+    "data/verification/batch-03-puerto-williams-energy-telecom-banking-2026-08-24.json",
+    "data/verification/batch-03-puerto-williams-urban-services-water-waste-2026-08-24.json",
+    "data/verification/puerto-williams-antarctic-air-claim-2026-08-23.json",
     "data/knowledge/puerto-williams-navarino-local-graph.json",
     "data/sources/sernatur-puerto-williams-city-map.json",
     "data/sources/sernatur-provincia-antartica-guide.json"
