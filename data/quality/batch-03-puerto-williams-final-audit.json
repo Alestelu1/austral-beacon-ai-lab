@@ -1,0 +1,149 @@
+{
+  "audit_id": "batch-03-puerto-williams-final-audit-v1",
+  "audited_at": "2026-08-24",
+  "branch": "rag/batch-03-puerto-williams-navarino",
+  "scope": "Canonical Puerto Williams entity, Isla Navarino local graph, current Chilean-source verification records and regression QA",
+  "result": "conditional_pass",
+  "severity_summary": {
+    "critical": 0,
+    "high": 0,
+    "medium": 4,
+    "low": 2
+  },
+  "checks": [
+    {
+      "check_id": "b03-audit-001",
+      "name": "canonical_entity_identity",
+      "result": "pass",
+      "severity": null,
+      "notes": "Puerto Williams uses canonical ID puerto_williams and remains distinct from Puerto Toro and Puerto Navarino. Administrative hierarchy is explicit."
+    },
+    {
+      "check_id": "b03-audit-002",
+      "name": "museum_name_normalization",
+      "result": "pass",
+      "severity": null,
+      "notes": "Museo Territorial Yagan Usi - Martín González Calderón is the canonical current node; Museo Antropológico Martin Gusinde and Museo Martín Gusinde are aliases only."
+    },
+    {
+      "check_id": "b03-audit-003",
+      "name": "living_yagan_context",
+      "result": "pass",
+      "severity": null,
+      "notes": "Villa Ukika is modeled as contemporary Yagan community context and not as a static tourism attraction."
+    },
+    {
+      "check_id": "b03-audit-004",
+      "name": "graph_referential_integrity",
+      "result": "pass",
+      "severity": null,
+      "notes": "All graph edge targets used in the normalized v1.1 graph are represented by canonical or local graph nodes, including cabo_de_hornos."
+    },
+    {
+      "check_id": "b03-audit-005",
+      "name": "stable_dynamic_separation",
+      "result": "pass",
+      "severity": null,
+      "notes": "Routes, terminals, hospital, fuel, telecom and banking infrastructure are separated from current schedules, stock, uptime, specialist availability and operational state."
+    },
+    {
+      "check_id": "b03-audit-006",
+      "name": "antarctic_gateway_scope",
+      "result": "pass",
+      "severity": null,
+      "notes": "Gateway policy/strategy context is not converted into proof of direct current commercial Antarctic flights or fly-cruise service from Puerto Williams."
+    },
+    {
+      "check_id": "b03-audit-007",
+      "name": "transport_inference_controls",
+      "result": "pass",
+      "severity": null,
+      "notes": "Puerto Navarino ramp does not imply regular international passenger ferry; Puerto Williams-Puerto Toro subsidized transport is not modeled as a standard tourism product."
+    },
+    {
+      "check_id": "b03-audit-008",
+      "name": "trail_and_safety_scope",
+      "result": "pass",
+      "severity": null,
+      "notes": "Dientes de Navarino and related trail contexts preserve dynamic safety and access requirements; old tourism-map claims do not override current public-safety evidence."
+    },
+    {
+      "check_id": "b03-audit-009",
+      "name": "qa_manual_review",
+      "result": "pass_manual",
+      "severity": null,
+      "notes": "All 15 regression cases are supported by the current structured corpus and canonical rules. This is a manual/static review; an executable retrieval runner is still pending."
+    },
+    {
+      "check_id": "b03-audit-010",
+      "name": "authoritative_geospatial_geometry",
+      "result": "pending",
+      "severity": "medium",
+      "notes": "Puerto Williams and local nodes still require authoritative IDE Chile/IGM/MOP/other competent-source geometries with producer, dataset/layer, CRS, geometry type and retrieval date. Tourism-map positions are not promotable."
+    },
+    {
+      "check_id": "b03-audit-011",
+      "name": "heritage_detail_validation",
+      "result": "partial",
+      "severity": "medium",
+      "notes": "Casa Stirling, Antigua Comandancia Naval and Primera Casa de Puerto Williams have stable map-level heritage context but still need stronger current Chilean heritage-source detail before richer canonical descriptions."
+    },
+    {
+      "check_id": "b03-audit-012",
+      "name": "executable_rag_qa_runner",
+      "result": "pending",
+      "severity": "medium",
+      "notes": "QA is regression data ready for a future runner but has not yet been executed against vector retrieval or an agent runtime."
+    },
+    {
+      "check_id": "b03-audit-013",
+      "name": "chunk_level_embedding_readiness",
+      "result": "partial",
+      "severity": "medium",
+      "notes": "The canonical entity separates stable and dynamic fields, but embedding readiness has not yet been applied chunk by chunk. Dynamic service state must remain outside general semantic embeddings."
+    },
+    {
+      "check_id": "b03-audit-014",
+      "name": "commercial_directory_completeness",
+      "result": "known_partial",
+      "severity": "low",
+      "notes": "No complete institutional 2026 directory of current shops, pharmacies or other commercial services is established; this is intentionally excluded from canonical stable knowledge."
+    },
+    {
+      "check_id": "b03-audit-015",
+      "name": "live_service_freshness",
+      "result": "known_dynamic",
+      "severity": "low",
+      "notes": "Schedules, road/trail conditions, fuel stock, telecom outages, cash availability, water interruptions and specialist/emergency availability require live or recent verification at answer time."
+    }
+  ],
+  "qa_summary": {
+    "suite": "tests/rag/batch-03-puerto-williams-qa.json",
+    "cases": 15,
+    "manual_expected_answer_review": "15_of_15_pass",
+    "vector_retrieval_tested": false,
+    "agent_runtime_tested": false
+  },
+  "merge_gate": {
+    "knowledge_layer_milestone": "eligible_after_final_pr_check",
+    "canonical_entity_ready": true,
+    "local_graph_ready": true,
+    "fully_atlas_ready": false,
+    "general_embeddings_ready": false,
+    "live_travel_tool_ready_without_revalidation": false
+  },
+  "prohibited_release_claims": [
+    "Batch 03 is fully Atlas-ready.",
+    "All Puerto Williams service information is current in real time.",
+    "Puerto Williams has verified direct regular commercial flights to Antarctica.",
+    "Puerto Navarino has a verified regular international passenger ferry solely because a ramp exists.",
+    "Puerto Williams-Puerto Toro is a normal tourism ferry product.",
+    "Tourism-map positions are authoritative canonical coordinates."
+  ],
+  "recommended_next_actions": [
+    "Run final branch-vs-main diff and PR review.",
+    "Open Batch 03 PR only after checking no accidental files or schema regressions were introduced.",
+    "Follow with authoritative geospatial feature discovery for Puerto Williams/Isla Navarino nodes.",
+    "Implement executable RAG QA runner and chunk-level embedding-readiness tagging in a separate technical PR."
+  ]
+}
