@@ -1,0 +1,90 @@
+{
+  "audit_id": "batch-02-magallanes-final-audit-v1",
+  "audited_at": "2026-08-24",
+  "scope": [
+    "Ruta de los Parques / Magallanes source normalization",
+    "southern Magallanes territorial entities",
+    "connectivity knowledge graph",
+    "Magallanes travel retrieval view",
+    "current verification layer",
+    "Atlas geospatial promotion gate",
+    "QA/regression datasets"
+  ],
+  "result": "conditional_pass",
+  "severity_summary": {
+    "critical": 0,
+    "high": 0,
+    "medium": 3,
+    "low": 2
+  },
+  "checks": [
+    {
+      "check_id": "audit-001",
+      "area": "canonical_ids",
+      "result": "pass",
+      "evidence": "Core IDs such as puerto_williams, puerto_navarino, puerto_toro, ruta_y85, ruta_y905 and pn_yendegaia are reused consistently across entities, graph and retrieval structures."
+    },
+    {
+      "check_id": "audit-002",
+      "area": "prohibited_inferences",
+      "result": "pass",
+      "evidence": "Graph explicitly blocks completed-road-to-Puerto-Williams, inferred scheduled international ferry from Puerto Navarino and tourist-ferry interpretation for Puerto Toro."
+    },
+    {
+      "check_id": "audit-003",
+      "area": "stable_dynamic_separation",
+      "result": "pass",
+      "evidence": "Schedules, fares, border status, road condition, bookings and temporary park conditions are not modeled as stable canonical geography."
+    },
+    {
+      "check_id": "audit-004",
+      "area": "geospatial_provenance",
+      "result": "pass_with_pending_work",
+      "evidence": "No guessed coordinates are promoted. Authoritative geometry queue and source registry are present.",
+      "severity": "medium",
+      "remaining_work": "Resolve authoritative features/layers and record producer, dataset/layer, CRS and retrieval date."
+    },
+    {
+      "check_id": "audit-005",
+      "area": "qa_execution",
+      "result": "partial",
+      "severity": "medium",
+      "evidence": "QA datasets cover travel, access, graph and Atlas promotion behavior, but no executable retrieval runner exists yet.",
+      "remaining_work": "Implement runner after embeddings/retriever are wired."
+    },
+    {
+      "check_id": "audit-006",
+      "area": "embedding_readiness",
+      "result": "partial",
+      "severity": "medium",
+      "evidence": "Architecture and exit criteria define what may be embedded, but batch-wide machine-readable chunk-level readiness is not yet implemented.",
+      "remaining_work": "Add chunk-level embedding eligibility/freshness metadata before general vectorization."
+    },
+    {
+      "check_id": "audit-007",
+      "area": "verification_dates",
+      "result": "pass_with_note",
+      "severity": "low",
+      "evidence": "Several verification records are dated 2026-08-23 because that is when checks were performed; geospatial registry audit is dated 2026-08-24. Preserve actual verification dates rather than renaming records solely to current date."
+    },
+    {
+      "check_id": "audit-008",
+      "area": "administrative_metadata",
+      "result": "pass_with_known_partials",
+      "severity": "low",
+      "evidence": "Atlas-ready queue explicitly marks some entities such as Primera Angostura, San Sebastian and Alberto de Agostini as administratively partial instead of fabricating completeness."
+    }
+  ],
+  "merge_gate": {
+    "knowledge_layer_milestone": "eligible_after_final_pr_check",
+    "fully_atlas_ready": false,
+    "general_embeddings_ready": false,
+    "live_travel_tool_ready": false
+  },
+  "post_merge_priorities": [
+    "authoritative IDE Chile/MOP/CONAF geometries",
+    "executable retrieval QA runner",
+    "machine-readable embedding readiness metadata",
+    "Batch 03 Puerto Williams / Cabo de Hornos / Isla Navarino"
+  ]
+}
