@@ -15,6 +15,7 @@
     {"id":"puerto_toro","type":"settlement","name":"Puerto Toro"},
     {"id":"isla_navarino","type":"island","name":"Isla Navarino"},
     {"id":"canal_beagle","type":"waterway","name":"Canal Beagle"},
+    {"id":"cabo_de_hornos","type":"commune_and_geographic_context","name":"Cabo de Hornos"},
     {"id":"ruta_y905","type":"road","name":"Ruta Y-905"},
     {"id":"museo_territorial_yagan_usi_martin_gonzalez_calderon","type":"museum","name":"Museo Territorial Yagan Usi - Martín González Calderón","aliases":["Museo Antropológico Martin Gusinde","Museo Martín Gusinde"],"name_status":"current_institutional_name_confirmed_2024"},
     {"id":"villa_ukika","type":"living_indigenous_community_context","name":"Villa Ukika","cultural_rule":"Describe in contemporary Yagan community and cultural-continuity context; do not reduce to a static tourist attraction."},
