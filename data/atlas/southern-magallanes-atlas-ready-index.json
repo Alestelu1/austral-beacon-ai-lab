@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.0",
-  "index_id": "southern-magallanes-atlas-ready-v1",
+  "schema_version": "1.1",
+  "index_id": "southern-magallanes-atlas-ready-v1.1",
   "status": "metadata_ready_geometry_pending",
   "purpose": "Promotion queue from canonical territorial entities into End of the World Atlas records without inventing coordinates or dynamic service facts.",
   "records": [
@@ -10,12 +10,12 @@
     {"entity_id":"porvenir","atlas_type":"place","administrative_metadata":"ready","geometry":"pending_authoritative_source","priority":"high"},
     {"entity_id":"cerro_sombrero","atlas_type":"place","administrative_metadata":"ready","geometry":"pending_authoritative_source","priority":"medium"},
     {"entity_id":"primera_angostura","atlas_type":"crossing","administrative_metadata":"partial","geometry":"pending_authoritative_source","priority":"high"},
-    {"entity_id":"paso_san_sebastian","atlas_type":"border_crossing","administrative_metadata":"ready","geometry":"pending_authoritative_source","priority":"high"},
+    {"entity_id":"paso_san_sebastian","atlas_type":"border_crossing","administrative_metadata":"partial","geometry":"pending_authoritative_source","priority":"high","warning":"Province is recorded, but commune-level administrative attribution remains to be completed from an authoritative source."},
     {"entity_id":"paso_bellavista","atlas_type":"border_crossing","administrative_metadata":"ready","geometry":"pending_authoritative_source","priority":"medium"},
     {"entity_id":"ruta_y905","atlas_type":"route","official_identity":"verified_mop","geometry":"pending_authoritative_source","priority":"high"},
     {"entity_id":"ruta_y85","atlas_type":"route_corridor","official_network_context":"verified_mop","geometry":"pending_authoritative_source","priority":"high","warning":"Do not encode the unfinished Vicuña–Yendegaia extension as a completed through-road."},
     {"entity_id":"pn_yendegaia","atlas_type":"protected_area","administrative_metadata":"ready","geometry":"pending_conaf_or_authoritative_protected_area_layer","priority":"high"},
-    {"entity_id":"pn_alberto_de_agostini","atlas_type":"protected_area","administrative_metadata":"ready","geometry":"pending_conaf_or_authoritative_protected_area_layer","priority":"high"},
+    {"entity_id":"pn_alberto_de_agostini","atlas_type":"protected_area","administrative_metadata":"partial","geometry":"pending_conaf_or_authoritative_protected_area_layer","priority":"high","warning":"Only regional administrative metadata is currently canonical; province/commune attribution should be completed from authoritative protected-area data."},
     {"entity_id":"pn_cabo_de_hornos","atlas_type":"protected_area","administrative_metadata":"ready","geometry":"pending_conaf_or_authoritative_protected_area_layer","priority":"high"}
   ],
   "promotion_rules": {
