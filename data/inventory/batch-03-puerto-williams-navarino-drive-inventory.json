@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "batch-03-puerto-williams-navarino",
+  "scope": [
+    "Puerto Williams",
+    "Puerto Toro",
+    "Puerto Navarino",
+    "Isla Navarino",
+    "Canal Beagle",
+    "Cabo de Hornos",
+    "Ruta Y-905",
+    "Provincia Antártica Chilena"
+  ],
+  "drive_discovery_date": "2026-08-24",
+  "status": "initial_inventory",
+  "sources": [
+    {
+      "drive_id": "1jU07ypx28jZVBkZVSm7ErGalfIoBxzzu",
+      "title": "Mapa Puerto Williamsweb.pdf",
+      "source_role": "local_map_context",
+      "priority": "high",
+      "notes": "Useful for local spatial/place relationships. Do not promote map coordinates or services as canonical without producer/provenance verification."
+    },
+    {
+      "drive_id": "1qNRaI-MoeNqGONm0BvCv5YFegOQkMmB7",
+      "title": "PROVINCIA ANTÁRTICA ING WEB.pdf",
+      "source_role": "provincial_destination_context",
+      "priority": "high",
+      "notes": "Potentially important for Puerto Williams, Navarino and Cabo de Hornos destination structure; current operational claims require live recheck."
+    },
+    {
+      "drive_id": "1k2QdLDF6PobdfV8cLIDsED88UrIthq4O",
+      "title": "MANUAL-DE-DESTINO-Magallanes-2025_compressed-1.pdf",
+      "source_role": "regional_destination_manual",
+      "priority": "high",
+      "notes": "Recent regional context for services, attractions and destination framing; still distinguish stable facts from dynamic 2025-2026 operational data."
+    },
+    {
+      "drive_id": "1xJOrvyo-skEbCeDL-u6svcatLqeaMRmq",
+      "title": "2.-Dossier.-Patagonia-ESPANOL.pdf",
+      "source_role": "regional_tourism_context",
+      "priority": "medium",
+      "notes": "Already used as contextual source in Batch 02; useful for cross-checking territorial and access framing."
+    },
+    {
+      "drive_id": "1uh-bkmL_M4iK7fcuIV9jTNSAYS2NU0nH",
+      "title": "5.-Dossier.-Patagonia-INGLES.pdf",
+      "source_role": "translated_regional_tourism_context",
+      "priority": "low",
+      "notes": "Likely translated duplicate/context variant. Spanish source should be preferred for canonical extraction when equivalent."
+    },
+    {
+      "drive_id": "1bI0HPApxUh77Yjuq4jy8Szgsq2Lr_Uey",
+      "title": "MAPA_MAGALLANES.pdf",
+      "source_role": "regional_map_context",
+      "priority": "medium",
+      "notes": "Useful for broader regional relationships; not sufficient alone for current transport or canonical geometry."
+    },
+    {
+      "drive_id": "1GHM0hX_EEtTc9u-H0UKYiyRa3zYw62ve",
+      "title": "Guia Parques y Reservas.pdf",
+      "source_role": "protected_area_context",
+      "priority": "medium",
+      "notes": "Potential support for protected areas relevant to Navarino/Cape Horn. Prefer CONAF for current visitor status."
+    },
+    {
+      "drive_id": "1yHXjRrVRNpwZMkyeqPJ2z-EEmahXJ88E",
+      "title": "MC0001189.pdf",
+      "source_role": "historical_source_unknown_title",
+      "priority": "review",
+      "notes": "Opaque filename. Must identify bibliographic title and publisher before canonical extraction."
+    }
+  ],
+  "deduplication_notes": [
+    "Translated Patagonia dossier variants should not be treated as independent evidence.",
+    "Potential duplicate protected-area guide copies exist elsewhere in Drive and should be compared before ingestion.",
+    "Opaque historical filenames require bibliographic identification before RAG promotion."
+  ],
+  "next_extraction_order": [
+    "Mapa Puerto Williamsweb.pdf",
+    "PROVINCIA ANTÁRTICA ING WEB.pdf",
+    "MANUAL-DE-DESTINO-Magallanes-2025_compressed-1.pdf",
+    "Guia Parques y Reservas.pdf",
+    "MC0001189.pdf"
+  ]
+}
