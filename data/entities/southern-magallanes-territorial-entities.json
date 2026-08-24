@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "entity_set": "southern_magallanes_territorial_entities",
+  "scope": "Canonical places, routes, crossings and protected-area access nodes for Tierra del Fuego and Isla Navarino",
+  "entities": [
+    {"id":"porvenir","name":"Porvenir","type":"city","region":"Magallanes y de la Antártica Chilena","roles":["tierra_del_fuego_service_node","regional_access_node"],"source_scope":["Patagonia Chile dossier","current municipal context"]},
+    {"id":"cerro_sombrero","name":"Cerro Sombrero","type":"settlement","region":"Magallanes y de la Antártica Chilena","roles":["tierra_del_fuego_interior_node","petroleum_heritage_context"],"source_scope":["Patagonia Chile dossier","municipal/territorial context"]},
+    {"id":"punta_delgada","name":"Punta Delgada","type":"settlement_transport_node","roles":["mainland_ferry_terminal_context"],"source_scope":["TABSA current route context"]},
+    {"id":"bahia_azul","name":"Bahía Azul","type":"transport_node","roles":["tierra_del_fuego_ferry_terminal_context"],"source_scope":["TABSA current route context"]},
+    {"id":"primera_angostura","name":"Primera Angostura","type":"maritime_crossing","roles":["mainland_tierra_del_fuego_crossing"],"source_scope":["TABSA current route context"],"freshness_note":"Operational status and waiting times require live recheck."},
+    {"id":"paso_san_sebastian","name":"Paso San Sebastián","type":"international_border_crossing","roles":["chile_argentina_road_crossing","tierra_del_fuego_connectivity"],"source_scope":["Patagonia Chile dossier","Unidad de Pasos Fronterizos 2026"],"freshness_note":"Opening hours and temporary closures are dynamic."},
+    {"id":"paso_bellavista","name":"Paso Bellavista","type":"international_border_crossing","roles":["seasonal_chile_argentina_crossing","ruta_y85_context"],"source_scope":["Patagonia Chile dossier","Unidad de Pasos Fronterizos 2025-2026"],"operational_status":"seasonal_dynamic"},
+    {"id":"ruta_y71","name":"Ruta Y-71","type":"road","roles":["san_sebastian_access"],"source_scope":["Patagonia Chile dossier","Unidad de Pasos Fronterizos"]},
+    {"id":"ruta_y85","name":"Ruta Y-85","type":"road_corridor","roles":["tierra_del_fuego_interior_connectivity","bellavista_access","vicuna_yendegaia_corridor"],"source_scope":["Patagonia Chile dossier","MOP/CMT 2026"],"status_note":"The Vicuña–Yendegaia extension remains under construction; do not model the corridor as a completed through-road to Puerto Williams."},
+    {"id":"vicuna_yendegaia","name":"Vicuña–Yendegaia road project","type":"road_project","roles":["southern_tierra_del_fuego_connectivity_project"],"source_scope":["MOP/CMT 2026"],"operational_status":"under_construction"},
+    {"id":"caleta_2_de_mayo","name":"Caleta 2 de Mayo","type":"coastal_access_node","roles":["yendegaia_corridor_endpoint_context","maritime_service_scope"],"source_scope":["Ruta de los Parques map","TABSA current scope","MOP/CMT context"]},
+    {"id":"puerto_williams","name":"Puerto Williams","type":"city_gateway","roles":["isla_navarino_service_node","cabo_de_hornos_gateway","antarctic_gateway_policy_node"],"source_scope":["existing Antarctic entity set","Patagonia Chile dossier","current regional sources"]},
+    {"id":"puerto_navarino","name":"Puerto Navarino","type":"settlement_transport_node","roles":["western_navarino_access_node","international_maritime_ramp_context"],"source_scope":["DPP Antártica Chilena 2026","current road context"],"freshness_note":"Ramp availability does not establish a scheduled international passenger service."},
+    {"id":"ruta_y905","name":"Ruta Y-905","type":"road","roles":["puerto_williams_puerto_navarino_connection"],"source_scope":["DPP Antártica Chilena 2026"],"freshness_note":"Road condition can change after heavy precipitation and requires current recheck for travel advice."},
+    {"id":"puerto_toro","name":"Puerto Toro","type":"settlement","roles":["isolated_zone_settlement","subsidized_maritime_connectivity_node"],"source_scope":["DPP Antártica Chilena 2026","DIRECTEMAR 2025"],"service_note":"Subsidized maritime service is not a tourism product; resident needs have priority."},
+    {"id":"pn_yendegaia","name":"Parque Nacional Yendegaia","type":"protected_area","roles":["conservation_area","southern_tierra_del_fuego_destination_context"],"source_scope":["CONAF current","Ruta de los Parques","Yendegaia conservation publication"],"visitor_status":"no_visitor_attention_no_public_use_infrastructure"},
+    {"id":"pn_alberto_de_agostini","name":"Parque Nacional Alberto de Agostini","type":"protected_area","roles":["maritime_access_protected_area"],"source_scope":["CONAF current","Ruta de los Parques"],"visitor_status":"public_visitation_with_no_public_use_infrastructure"},
+    {"id":"pn_cabo_de_hornos","name":"Parque Nacional Cabo de Hornos","type":"protected_area","roles":["maritime_access_protected_area","southern_destination"],"source_scope":["CONAF current","Ruta de los Parques"],"visitor_status":"public_visitation_with_constraints"},
+    {"id":"isla_grande_tierra_del_fuego","name":"Isla Grande de Tierra del Fuego","type":"island","roles":["territorial_container"]},
+    {"id":"isla_navarino","name":"Isla Navarino","type":"island","roles":["territorial_container"]},
+    {"id":"canal_beagle","name":"Canal Beagle","type":"waterway","roles":["southern_maritime_corridor"]}
+  ],
+  "rules": {
+    "stable_vs_dynamic":"Canonical place identity may be stable while access, schedules, border status and road condition are dynamic.",
+    "road_projects":"Never convert a road project or penetration road into a completed public through-route without current official evidence.",
+    "transport_scope":"Operator route scope or terminal authorization does not prove fixed-frequency service.",
+    "subsidized_transport":"Do not present isolated-zone subsidized transport as a normal tourism product.",
+    "shared_entities":"Reuse identical IDs such as puerto_williams across graphs to allow controlled graph federation."
+  }
+}
