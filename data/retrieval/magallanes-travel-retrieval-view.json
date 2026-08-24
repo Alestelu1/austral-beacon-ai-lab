@@ -1,5 +1,5 @@
 {
-  "view_id": "magallanes-travel-retrieval-v2",
+  "view_id": "magallanes-travel-retrieval-v3",
   "purpose": "Agent-facing retrieval layer for southern Magallanes travel, protected areas and territorial connectivity.",
   "rules": {
     "prefer_authoritative_geography_for_canonical_location": true,
@@ -8,7 +8,9 @@
     "separate_place_identity_from_access_mode_and_service_availability": true,
     "responsible_travel_guidance_may_use_route_passport_principles": true,
     "live_transport_schedules_require_first_party_recheck": true,
-    "park_access_description_is_not_equivalent_to_visitor_service": true
+    "park_access_description_is_not_equivalent_to_visitor_service": true,
+    "subsidized_isolated_zone_transport_is_not_a_tourism_product": true,
+    "authorized_terminal_does_not_guarantee_schedule": true
   },
   "chunks": [
     {
@@ -76,6 +78,56 @@
       "freshness_class": "current_first_party_scope",
       "status": "service_scope_confirmed_schedule_not_established",
       "prohibited_inference": "Check the live itinerary before telling a traveler that a Caleta 2 de Mayo sailing is available on a specific date."
+    },
+    {
+      "chunk_id": "cabo-hornos-current-001",
+      "title": "Current Cabo de Hornos visitor-access model",
+      "entities": ["pn_cabo_de_hornos","isla_hornos","puerto_williams","punta_arenas"],
+      "summary": "Current CONAF information states that Parque Nacional Cabo de Hornos is open daily 09:00–18:00 with advance ticket purchase through Pases Parques. Access is maritime, commonly after reaching Puerto Williams by air or from Punta Arenas via prearranged navigation circuits. Isla Hornos has a small landing pier and footpath but no lodging, food, basic services or local emergency services.",
+      "source_ids": ["southern-magallanes-access-current-2026-08-23"],
+      "freshness_class": "live_or_booking_sensitive",
+      "status": "current_public_visitation_with_constraints",
+      "prohibited_inference": "Do not imply independent walk-in access or guaranteed landing; maritime conditions and operator arrangements still govern practical access."
+    },
+    {
+      "chunk_id": "agostini-current-001",
+      "title": "Current Alberto de Agostini visitor-access model",
+      "entities": ["pn_alberto_de_agostini","punta_arenas","puerto_williams"],
+      "summary": "Current CONAF information states that Parque Nacional Alberto de Agostini is open daily 09:00–18:00 with advance ticket purchase through Pases Parques. Access is mainly maritime, including private programmed navigation, and the park has no administrative or public-use facilities.",
+      "source_ids": ["southern-magallanes-access-current-2026-08-23"],
+      "freshness_class": "live_or_booking_sensitive",
+      "status": "current_public_visitation_with_no_public_infrastructure",
+      "prohibited_inference": "Do not describe the park as having visitor centers, lodging, campsites or staffed public infrastructure unless newer official evidence says so."
+    },
+    {
+      "chunk_id": "primera-angostura-current-001",
+      "title": "Current Primera Angostura crossing",
+      "entities": ["primera_angostura","punta_delgada","bahia_azul","isla_grande_tierra_del_fuego","tabsa"],
+      "summary": "TABSA identifies Primera Angostura as the ferry crossing between Punta Delgada on the mainland and Bahía Azul on Tierra del Fuego, separated by about 5 km. Operational status is dynamic and should be checked through TABSA immediately before travel.",
+      "source_ids": ["southern-magallanes-access-current-2026-08-23"],
+      "freshness_class": "live_or_booking_sensitive",
+      "status": "current_transport_service",
+      "allowed_uses": ["tierra_del_fuego_route_context","travel_routing"]
+    },
+    {
+      "chunk_id": "puerto-toro-current-001",
+      "title": "Puerto Williams–Puerto Toro subsidized maritime service",
+      "entities": ["puerto_williams","puerto_toro","isla_navarino"],
+      "summary": "In August 2026 the Delegación Presidencial Provincial de Antártica Chilena publishes sailings between Puerto Williams and Puerto Toro under a subsidized isolated-zone maritime service. It is explicitly not a tourism product: Puerto Toro residents have priority for seats and cargo, and dates may change because of weather or community needs.",
+      "source_ids": ["southern-magallanes-access-current-2026-08-23"],
+      "freshness_class": "live_or_booking_sensitive",
+      "status": "current_subsidized_maritime_service_non_tourist",
+      "prohibited_inference": "Do not market or recommend this as a normal sightseeing ferry; availability for visitors is conditional and secondary to resident needs."
+    },
+    {
+      "chunk_id": "puerto-toro-terminal-001",
+      "title": "Puerto Toro transbordador terminal authorization",
+      "entities": ["puerto_toro","isla_navarino","directemar"],
+      "summary": "DIRECTEMAR records a May 2025 local resolution enabling operation of the Puerto Toro transbordador terminal on Isla Navarino. This is infrastructure/regulatory evidence and does not by itself establish a current passenger timetable.",
+      "source_ids": ["southern-magallanes-access-current-2026-08-23"],
+      "freshness_class": "operational_regulatory",
+      "status": "authorized_terminal",
+      "prohibited_inference": "Do not derive service frequency or tourism availability from terminal authorization alone."
     },
     {
       "chunk_id": "southern-gateway-parks-001",
