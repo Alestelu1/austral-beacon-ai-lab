@@ -1,0 +1,108 @@
+{
+  "verification_id": "batch-03-trails-current-chile-2026-08-24",
+  "verified_at": "2026-08-24",
+  "scope": [
+    "Cerro La Bandera",
+    "Circuito Dientes de Navarino",
+    "Lago Windhond",
+    "current safety and access guidance for Isla Navarino"
+  ],
+  "source_policy": {
+    "preferred": [
+      "Delegacion Presidencial Provincial de Antartica Chilena",
+      "Carabineros de Chile via official provincial reporting",
+      "CONAF",
+      "SERNATUR",
+      "Ministerio de Bienes Nacionales / Rutas Patrimoniales when available"
+    ],
+    "rule": "Prefer current Chilean institutional sources for present-day status and safety. Older SERNATUR attraction fichas may be retained only as dated contextual evidence, not as current operating guidance."
+  },
+  "findings": [
+    {
+      "claim_id": "nav-trails-001",
+      "subject": "dientes_de_navarino",
+      "claim": "El Circuito Dientes de Navarino sigue siendo una ruta de senderismo activa y de alta exigencia tecnica en Isla Navarino.",
+      "verification_status": "confirmed",
+      "freshness_class": "seasonal",
+      "primary_source_title": "Fin de temporada 2024-2025: Senderistas registrados en el circuito Dientes de Navarino continúan al alza",
+      "source_publisher": "Delegación Presidencial Provincial de Antártica Chilena",
+      "source_date": "2025-04-28",
+      "evidence_summary": "La Delegación reportó 1.217 senderistas registrados entre noviembre de 2024 y abril de 2025 y señala que los visitantes deben registrarse antes y después de la expedición en la IV Comisaría de Carabineros de Puerto Williams.",
+      "canonical_action": "add_new_fact",
+      "prohibited_inference": "No asumir que la ruta está abierta o segura en cualquier fecha futura sin revisar condiciones meteorológicas y de terreno."
+    },
+    {
+      "claim_id": "nav-trails-002",
+      "subject": "dientes_de_navarino",
+      "claim": "El circuito presenta riesgos reales de rescate y evacuación; la seguridad debe modelarse como dato operativo dinámico.",
+      "verification_status": "confirmed",
+      "freshness_class": "seasonal",
+      "primary_source_title": "Promueven actividades de montaña de forma segura y responsable en Isla Navarino",
+      "source_publisher": "Delegación Presidencial Provincial de Antártica Chilena",
+      "source_date": "2026-03-23",
+      "evidence_summary": "La autoridad provincial reportó 13 personas rescatadas durante la temporada 2025-2026 hasta la fecha de publicación y enfatizó capacitación, turismo responsable y seguridad.",
+      "canonical_action": "qualify",
+      "prohibited_inference": "No presentar Dientes de Navarino como trekking recreativo simple o de baja dificultad."
+    },
+    {
+      "claim_id": "nav-trails-003",
+      "subject": "dientes_de_navarino",
+      "claim": "Para excursiones con pernoctación en Isla Navarino se exige registro ante Carabineros y se recomiendan equipo adecuado, revisión meteorológica y de terreno, comunicación satelital/GPS, provisiones extra, no hacer fuego y aplicar No Deje Rastro.",
+      "verification_status": "confirmed",
+      "freshness_class": "seasonal",
+      "primary_source_title": "Operadores turísticos de Puerto Williams reciben informaciones sobre seguridad y prevención para temporada de senderismo 2024-2025",
+      "source_publisher": "Delegación Presidencial Provincial de Antártica Chilena",
+      "source_date": "2024-12-16",
+      "evidence_summary": "La publicación oficial recoge recomendaciones de organismos públicos de emergencia y señala que Dientes de Navarino, Lago Windhond y Caleta Wulaia corresponden a Rutas Patrimoniales con alto nivel de dificultad técnica.",
+      "canonical_action": "add_new_fact",
+      "prohibited_inference": "No reducir la preparación a vestimenta básica ni omitir registro y planificación de emergencia en respuestas de viaje."
+    },
+    {
+      "claim_id": "nav-trails-004",
+      "subject": "cerro_la_bandera",
+      "claim": "Cerro La Bandera forma parte del entorno de montaña utilizado actualmente en Puerto Williams y se vincula con el circuito Dientes de Navarino.",
+      "verification_status": "confirmed_with_scope_change",
+      "freshness_class": "stable",
+      "primary_source_title": "Promueven actividades de montaña de forma segura y responsable en Isla Navarino",
+      "source_publisher": "Delegación Presidencial Provincial de Antártica Chilena",
+      "source_date": "2026-03-23",
+      "evidence_summary": "La publicación informa actividades en Cerro La Bandera y lo identifica como ubicado en el circuito de senderismo Dientes de Navarino. Esta fuente actual confirma el vínculo territorial, pero no fija distancia, duración ni dificultad operativa para 2026.",
+      "canonical_action": "qualify",
+      "prohibited_inference": "No publicar como actuales los 4,5 km o la baja dificultad de antiguas fichas SERNATUR sin fuente reciente equivalente."
+    },
+    {
+      "claim_id": "nav-trails-005",
+      "subject": "lago_windhond",
+      "claim": "Lago Windhond sigue reconocido dentro del sistema de senderos de Isla Navarino, pero los detalles operativos actuales deben verificarse antes de recomendar la ruta.",
+      "verification_status": "confirmed_with_scope_change",
+      "freshness_class": "seasonal",
+      "primary_source_title": "Operadores turísticos de Puerto Williams reciben informaciones sobre seguridad y prevención para temporada de senderismo 2024-2025",
+      "source_publisher": "Delegación Presidencial Provincial de Antártica Chilena",
+      "source_date": "2024-12-16",
+      "evidence_summary": "La autoridad incluye Lago Windhond entre las Rutas Patrimoniales de Isla Navarino caracterizadas por alto nivel de dificultad técnica. Una ficha SERNATUR 2012 lo describe a 20 km al sur de Puerto Williams y sin servicios, pero esa ficha no debe usarse como fuente operativa actual.",
+      "canonical_action": "qualify",
+      "prohibited_inference": "No tratar la antigua estacionalidad 'todo el año' de SERNATUR 2012 como garantía de acceso seguro o recomendado en 2026."
+    },
+    {
+      "claim_id": "nav-trails-006",
+      "subject": "isla_navarino_outdoor_safety",
+      "claim": "Las condiciones meteorológicas y de superficie en Isla Navarino pueden cambiar rápidamente y deben revalidarse antes de cualquier recomendación de trekking o acceso vial.",
+      "verification_status": "confirmed",
+      "freshness_class": "volatile",
+      "primary_source_title": "[AFICHE] Recomendaciones frente a hielo lavado en rutas de Isla Navarino",
+      "source_publisher": "Delegación Presidencial Provincial de Antártica Chilena",
+      "source_date": "2026-08-10",
+      "evidence_summary": "La Delegación advirtió sobre hielo lavado en rutas de Isla Navarino y recomendó informarse del estado de las rutas antes de desplazarse.",
+      "canonical_action": "add_new_fact",
+      "prohibited_inference": "No convertir una geometría o existencia de sendero/camino en afirmación de transitabilidad presente."
+    }
+  ],
+  "canonical_rules": [
+    "Dientes de Navarino must be treated as a high-difficulty, safety-sensitive route.",
+    "Current route usability requires weather/terrain recheck.",
+    "Cerro La Bandera relationship to Dientes is current, but old distance/difficulty claims remain historical until reverified.",
+    "Lago Windhond remains a recognized route context; old SERNATUR 2012 use-season data must not be promoted to current status.",
+    "Registration and emergency-preparedness guidance must be surfaced for multi-day trekking.",
+    "No current tour/operator availability may be inferred from old or non-current SERNATUR registry entries."
+  ]
+}
