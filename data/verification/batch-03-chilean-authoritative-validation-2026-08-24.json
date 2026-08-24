@@ -1,0 +1,100 @@
+{
+  "verification_id": "batch-03-chilean-authoritative-validation-2026-08-24",
+  "checked_at": "2026-08-24",
+  "scope": [
+    "Museo Territorial Yagan Usi - Martín González Calderón / ex Museo Antropológico Martin Gusinde",
+    "Villa Ukika and contemporary Yagan context",
+    "Bahía/Caleta Wulaia and current access evidence"
+  ],
+  "source_policy": {
+    "country_priority": "Chile",
+    "preferred_classes": [
+      "Servicio Nacional del Patrimonio Cultural",
+      "Ministerio de las Culturas, las Artes y el Patrimonio",
+      "SERNATUR",
+      "regional public institutions",
+      "official research units"
+    ],
+    "rule": "Use Chilean institutional sources first. Tourism-facing claims remain subject to freshness checks and should not override stronger heritage or community-context sources."
+  },
+  "claims": [
+    {
+      "claim_id": "pw-museum-001",
+      "claim": "The Puerto Williams museum formerly known as Museo Antropológico Martin Gusinde was formally relaunched in January 2024 under the name Museo Territorial Yagan Usi - Martín González Calderón.",
+      "verification_status": "confirmed",
+      "source_class": "chilean_national_heritage_institution",
+      "primary_source": "Servicio Nacional del Patrimonio Cultural",
+      "source_url": "https://www.patrimoniocultural.gob.cl/noticias/reinaugurado-museo-mas-austral-del-mundo-con-nuevo-nombre-y-museografia",
+      "source_date": "2024-01-10",
+      "canonical_action": "update_name_with_alias",
+      "canonical_name": "Museo Territorial Yagan Usi - Martín González Calderón",
+      "aliases": ["Museo Antropológico Martin Gusinde", "Museo Martín Gusinde"],
+      "freshness_class": "stable",
+      "notes": "Some current Serpat index pages still expose the legacy name; retain aliases for retrieval and SEO, but prefer the 2024 renamed institution as canonical display name when context requires the current institution."
+    },
+    {
+      "claim_id": "pw-museum-002",
+      "claim": "The museum's renewed museography centers Yagan culture and explicitly connects historical interpretation with the living community.",
+      "verification_status": "confirmed",
+      "source_class": "chilean_national_heritage_institution",
+      "primary_source": "Servicio Nacional del Patrimonio Cultural / Ministerio de las Culturas",
+      "source_url": "https://www.patrimoniocultural.gob.cl/noticias/reinaugurado-museo-mas-austral-del-mundo-con-nuevo-nombre-y-museografia",
+      "source_date": "2024-01-10",
+      "canonical_action": "add_new_fact",
+      "freshness_class": "stable"
+    },
+    {
+      "claim_id": "ukika-001",
+      "claim": "Villa Ukika is a contemporary Yagan community context near Puerto Williams and is associated with the Comunidad Indígena Yaghan de Bahía Mejillones.",
+      "verification_status": "confirmed_with_scope_change",
+      "source_class": "chilean_cultural_and_heritage_institutions",
+      "primary_sources": [
+        "Servicio Nacional del Patrimonio Cultural",
+        "Ministerio de las Culturas, las Artes y el Patrimonio"
+      ],
+      "source_urls": [
+        "https://www.patrimoniocultural.gob.cl/magallanes/noticias/reinaugurado-museo-mas-austral-del-mundo-con-nuevo-nombre-y-museografia",
+        "https://www.investigacion.patrimoniocultural.gob.cl/bajo-la-lupa/coleccion-etnografica-del-museo-antropologico-martin-gusinde-de-puerto-williams"
+      ],
+      "canonical_action": "qualify",
+      "freshness_class": "stable",
+      "notes": "Avoid framing Villa Ukika as a static tourist attraction or as the place where 'the last descendants' live. Current institutional heritage sources emphasize a living Yagan community, cultural continuity, cestería, language and ties to territory/maritory."
+    },
+    {
+      "claim_id": "ukika-002",
+      "claim": "Current Yagan population is located mainly in Puerto Williams and Punta Arenas, with recognized communities maintaining cultural practices such as cestería and transmission of language and territorial knowledge.",
+      "verification_status": "confirmed",
+      "source_class": "chilean_heritage_research_unit",
+      "primary_source": "Subdirección de Investigación, Servicio Nacional del Patrimonio Cultural",
+      "source_url": "https://www.investigacion.patrimoniocultural.gob.cl/bajo-la-lupa/coleccion-etnografica-del-museo-antropologico-martin-gusinde-de-puerto-williams",
+      "canonical_action": "add_new_fact",
+      "freshness_class": "stable"
+    },
+    {
+      "claim_id": "wulaia-001",
+      "claim": "Wulaia is historically significant in Yagan territorial history and archaeological research on Isla Navarino.",
+      "verification_status": "confirmed",
+      "source_class": "chilean_heritage_research_unit",
+      "primary_source": "Subdirección de Investigación, Servicio Nacional del Patrimonio Cultural",
+      "source_url": "https://www.investigacion.patrimoniocultural.gob.cl/sites/www.investigacion.patrimoniocultural.gob.cl/files/2024-04/libro_massone_ctapa_baja.pdf",
+      "canonical_action": "add_new_fact",
+      "freshness_class": "stable"
+    },
+    {
+      "claim_id": "wulaia-002",
+      "claim": "A current regular public boat service from Puerto Navarino to Wulaia is established by the reviewed Chilean institutional sources.",
+      "verification_status": "insufficient_evidence",
+      "source_class": "chilean_official_sources_reviewed",
+      "canonical_action": "do_not_publish_as_current_service",
+      "freshness_class": "volatile",
+      "notes": "Older SERNATUR material describes Wulaia as a visitor site and mentions access context, but reviewed current SERNATUR registry entries associated with Wulaia Expediciones are not sufficient to establish a current scheduled service. Any user-facing access statement must be rechecked against an active operator/authority source at answer time."
+    }
+  ],
+  "canonical_rules": [
+    "Prefer current museum name, retain Martin Gusinde name as legacy alias.",
+    "Describe Villa Ukika as living Yagan community context, not as a frozen ethnographic attraction.",
+    "Do not use 'last descendants' framing as canonical present-day wording.",
+    "Treat Wulaia historical/cultural significance as stable, but current transport/access as dynamic and unverified until rechecked.",
+    "Do not infer regular maritime service from destination descriptions or non-current tourism registry records."
+  ]
+}
