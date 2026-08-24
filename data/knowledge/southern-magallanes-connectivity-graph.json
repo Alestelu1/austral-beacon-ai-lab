@@ -1,8 +1,9 @@
 {
-  "graph_id": "southern-magallanes-connectivity-v1",
+  "graph_id": "southern-magallanes-connectivity-v1.1",
   "scope": "Territorial connectivity graph for Tierra del Fuego, Isla Navarino and southern protected areas",
-  "status": "normalized_v1",
+  "status": "normalized_v1_1",
   "nodes": [
+    {"id":"argentina","type":"country","name":"Argentina"},
     {"id":"porvenir","type":"city","name":"Porvenir"},
     {"id":"cerro_sombrero","type":"settlement","name":"Cerro Sombrero"},
     {"id":"punta_delgada","type":"settlement_transport_node","name":"Punta Delgada"},
