@@ -115,6 +115,13 @@
       "result": "known_dynamic",
       "severity": "low",
       "notes": "Schedules, road/trail conditions, fuel stock, telecom outages, cash availability, water interruptions and specialist/emergency availability require live or recent verification at answer time."
+    },
+    {
+      "check_id": "b03-audit-016",
+      "name": "canonical_source_record_coverage",
+      "result": "pass",
+      "severity": null,
+      "notes": "Final PR review confirmed that the canonical Puerto Williams entity now references the verification records supporting trails, connectivity, health, emergency response, energy/telecom/banking, urban services, Antarctic-air claim controls, local graph and extracted SERNATUR source records."
     }
   ],
   "qa_summary": {
@@ -128,6 +135,7 @@
     "knowledge_layer_milestone": "eligible_after_final_pr_check",
     "canonical_entity_ready": true,
     "local_graph_ready": true,
+    "canonical_provenance_coverage_ready": true,
     "fully_atlas_ready": false,
     "general_embeddings_ready": false,
     "live_travel_tool_ready_without_revalidation": false
@@ -141,8 +149,7 @@
     "Tourism-map positions are authoritative canonical coordinates."
   ],
   "recommended_next_actions": [
-    "Run final branch-vs-main diff and PR review.",
-    "Open Batch 03 PR only after checking no accidental files or schema regressions were introduced.",
+    "Merge Batch 03 only after PR checks remain green on the final head commit.",
     "Follow with authoritative geospatial feature discovery for Puerto Williams/Isla Navarino nodes.",
     "Implement executable RAG QA runner and chunk-level embedding-readiness tagging in a separate technical PR."
   ]
