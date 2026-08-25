@@ -8,6 +8,7 @@
     "demo": "tsx src/cli.ts",
     "api": "tsx src/api/server.ts",
     "test": "vitest run",
+    "test:rag": "vitest run tests/ragRegression.test.ts",
     "typecheck": "tsc --noEmit",
     "build:client": "tsc -p tsconfig.client.json"
   },
