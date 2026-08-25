@@ -1,22 +1,10 @@
-export type GoldenCorpusChunk = {
-  chunk_id: string;
-  entity_id: string;
-  class: string;
-  embedding_ready: boolean;
-  text: string;
-  fact_scope?: string[];
-  source_records?: string[];
-};
+import type { Retriever, RetrievalChunk, RetrievalHit } from "./Retriever.js";
+
+export type GoldenCorpusChunk = RetrievalChunk;
 
 export type GoldenCorpus = {
   corpus_id: string;
   chunks: GoldenCorpusChunk[];
-};
-
-export type RetrievalHit = {
-  chunk: GoldenCorpusChunk;
-  score: number;
-  matchedTerms: string[];
 };
 
 const STOPWORDS = new Set([
@@ -49,7 +37,7 @@ function buildSearchText(chunk: GoldenCorpusChunk): string {
   ].join(" ");
 }
 
-export class GoldenCorpusRetriever {
+export class GoldenCorpusRetriever implements Retriever {
   private readonly chunks: GoldenCorpusChunk[];
 
   constructor(corpus: GoldenCorpus) {
