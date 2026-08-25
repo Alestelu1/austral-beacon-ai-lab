@@ -1,4 +1,4 @@
-import type { GoldenCorpusRetriever } from "./GoldenCorpusRetriever.js";
+import type { Retriever } from "./Retriever.js";
 
 export type RetrievalEvalCase = {
   id: string;
@@ -32,7 +32,7 @@ function hitAtK(retrieved: string[], expected: Set<string>, k: number): number {
 }
 
 export function evaluateRetriever(
-  retriever: Pick<GoldenCorpusRetriever, "search">,
+  retriever: Retriever,
   evalSet: RetrievalEvalSet,
   topK = 3
 ): RetrievalEvalResult {
