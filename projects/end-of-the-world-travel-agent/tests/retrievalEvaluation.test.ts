@@ -16,7 +16,7 @@ describe("Puerto Williams retrieval evaluation baseline", () => {
     const evalSet = await loadJson<RetrievalEvalSet>("data/retrieval/retrieval-eval-puerto-williams-v1.json");
     const retriever = new GoldenCorpusRetriever(corpus);
 
-    const result = evaluateRetriever(retriever, evalSet, 3);
+    const result = await evaluateRetriever(retriever, evalSet, 3);
 
     expect(result.total_cases).toBe(evalSet.cases.length);
     expect(result.recall_at_1).toBeGreaterThanOrEqual(0.5);
@@ -28,7 +28,7 @@ describe("Puerto Williams retrieval evaluation baseline", () => {
     const corpus = await loadJson<GoldenCorpus>("data/retrieval/golden-corpus-puerto-williams-v1.json");
     const evalSet = await loadJson<RetrievalEvalSet>("data/retrieval/retrieval-eval-puerto-williams-v1.json");
     const retriever = new GoldenCorpusRetriever(corpus);
-    const result = evaluateRetriever(retriever, evalSet, 3);
+    const result = await evaluateRetriever(retriever, evalSet, 3);
 
     const retrievedIds = new Set(result.cases.flatMap((testCase) => testCase.retrieved_chunk_ids));
     const excludedIds = corpus.chunks.filter((chunk) => !chunk.embedding_ready).map((chunk) => chunk.chunk_id);
