@@ -7,11 +7,13 @@ on:
     paths:
       - 'projects/end-of-the-world-travel-agent/**'
       - 'tests/rag/**'
+      - 'data/retrieval/**'
       - '.github/workflows/rag-qa.yml'
   pull_request:
     paths:
       - 'projects/end-of-the-world-travel-agent/**'
       - 'tests/rag/**'
+      - 'data/retrieval/**'
       - '.github/workflows/rag-qa.yml'
 
 jobs:
