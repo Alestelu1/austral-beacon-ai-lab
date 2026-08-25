@@ -15,6 +15,8 @@ export type RetrievalHit = {
   metadata?: Record<string, unknown>;
 };
 
+export type RetrievalResult = RetrievalHit[] | Promise<RetrievalHit[]>;
+
 export interface Retriever {
-  search(query: string, topK?: number): RetrievalHit[];
+  search(query: string, topK?: number): RetrievalResult;
 }
