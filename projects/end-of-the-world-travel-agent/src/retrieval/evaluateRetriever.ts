@@ -31,13 +31,13 @@ function hitAtK(retrieved: string[], expected: Set<string>, k: number): number {
   return retrieved.slice(0, k).some((id) => expected.has(id)) ? 1 : 0;
 }
 
-export function evaluateRetriever(
-  retriever: Retriever,
+export async function evaluateRetriever(
+  retriever: Pick<Retriever, "search">,
   evalSet: RetrievalEvalSet,
   topK = 3
-): RetrievalEvalResult {
-  const cases = evalSet.cases.map((testCase) => {
-    const hits = retriever.search(testCase.query, topK);
+): Promise<RetrievalEvalResult> {
+  const cases = await Promise.all(evalSet.cases.map(async (testCase) => {
+    const hits = await retriever.search(testCase.query, topK);
     const retrievedChunkIds = hits.map((hit) => hit.chunk.chunk_id);
     const expected = new Set(testCase.expected_chunk_ids);
     const firstRelevantIndex = retrievedChunkIds.findIndex((id) => expected.has(id));
@@ -49,7 +49,7 @@ export function evaluateRetriever(
       retrieved_chunk_ids: retrievedChunkIds,
       first_relevant_rank: firstRelevantIndex >= 0 ? firstRelevantIndex + 1 : null
     };
-  });
+  }));
 
   const total = cases.length;
   const recallAt1 = total === 0 ? 0 : cases.reduce((sum, testCase) => {
