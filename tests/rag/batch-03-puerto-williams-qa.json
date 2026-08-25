@@ -1,0 +1,30 @@
+{
+  "suite_id": "batch-03-puerto-williams-qa-v1",
+  "scope": "Regression QA for Puerto Williams canonical entity, Isla Navarino context, connectivity, heritage, safety and Antarctic gateway semantics",
+  "status": "ready_for_manual_review_and_future_runner",
+  "cases": [
+    {"id":"pw-qa-001","question":"¿Puerto Williams y Puerto Toro son el mismo asentamiento?","expected":"No. Puerto Williams y Puerto Toro son entidades distintas dentro de la comuna de Cabo de Hornos.","failure_class":"entity_failure"},
+    {"id":"pw-qa-002","question":"¿Puerto Williams está en Isla Navarino?","expected":"Sí. Puerto Williams se ubica en Isla Navarino.","failure_class":"entity_failure"},
+    {"id":"pw-qa-003","question":"¿La Ruta Y-905 conecta Puerto Williams y Puerto Navarino?","expected":"Sí, como identidad vial estable; la condición y transitabilidad deben revalidarse para consejos de viaje.","failure_class":"temporal_failure"},
+    {"id":"pw-qa-004","question":"¿La nueva rampa de Puerto Navarino demuestra que existe un ferry internacional regular de pasajeros?","expected":"No. La infraestructura o contexto de reactivación no prueba operador, frecuencia ni calendario regular.","failure_class":"unsupported_inference"},
+    {"id":"pw-qa-005","question":"¿El servicio Puerto Williams-Puerto Toro debe recomendarse como ferry turístico normal?","expected":"No. Es transporte subsidiado de zona aislada con prioridad para necesidades de residentes; horarios y cupos son dinámicos.","failure_class":"source_routing_failure"},
+    {"id":"pw-qa-006","question":"¿El nombre actual del museo es Museo Antropológico Martin Gusinde?","expected":"El nombre institucional preferido desde 2024 es Museo Territorial Yagan Usi - Martín González Calderón; Museo Antropológico Martin Gusinde se conserva como alias histórico/retrieval.","failure_class":"entity_failure"},
+    {"id":"pw-qa-007","question":"¿Villa Ukika es simplemente un atractivo turístico?","expected":"No. Debe describirse en contexto de comunidad yagán contemporánea y patrimonio vivo, con tratamiento culturalmente apropiado.","failure_class":"unsupported_inference"},
+    {"id":"pw-qa-008","question":"¿Dientes de Navarino es un trekking simple o de baja dificultad?","expected":"No. Fuentes públicas actuales lo sitúan en un contexto de alta dificultad técnica y seguridad dinámica.","failure_class":"source_routing_failure"},
+    {"id":"pw-qa-009","question":"¿La existencia de un hospital prueba especialistas permanentes y evacuación aérea garantizada?","expected":"No. La infraestructura sanitaria y capacidades documentadas no garantizan cobertura especialista, ambulancia, helicóptero ni tiempos de respuesta futuros.","failure_class":"capability_access_failure"},
+    {"id":"pw-qa-010","question":"¿La existencia de una estación de combustible prueba que habrá combustible disponible hoy?","expected":"No. Infraestructura y regulación no equivalen a stock u horario actual; requiere verificación dinámica.","failure_class":"temporal_failure"},
+    {"id":"pw-qa-011","question":"¿Fibra Óptica Austral y 5G garantizan conectividad continua en todo momento y lugar?","expected":"No. La infraestructura es estable, pero cobertura efectiva, fallas y continuidad son dinámicas.","failure_class":"temporal_failure"},
+    {"id":"pw-qa-012","question":"¿Puerto Williams tiene vuelos comerciales directos regulares a la Antártica?","expected":"No está establecido en el corpus verificado actual. El rol de gateway estratégico/político no prueba un servicio comercial directo vigente.","failure_class":"capability_access_failure"},
+    {"id":"pw-qa-013","question":"¿Un símbolo de ferry o terminal en el mapa SERNATUR sirve para responder horarios actuales?","expected":"No. El mapa sirve para contexto espacial e infraestructura; horarios y operación requieren fuente actual del operador/autoridad.","failure_class":"source_routing_failure"},
+    {"id":"pw-qa-014","question":"¿Las posiciones dibujadas en el mapa turístico pueden publicarse como coordenadas canónicas del Atlas?","expected":"No. Las geometrías del Atlas requieren productor, dataset/capa, CRS, tipo de geometría y fecha de recuperación autoritativos.","failure_class":"unsupported_inference"},
+    {"id":"pw-qa-015","question":"¿El río Róbalo es parte de la infraestructura hídrica de Puerto Williams?","expected":"Sí, como fuente territorial documentada de agua potable; calidad, cortes y contingencias requieren verificación actual.","failure_class":"temporal_failure"}
+  ],
+  "global_rules": [
+    "stable_identity_must_not_absorb_dynamic_service_state",
+    "infrastructure_does_not_equal_service_availability",
+    "policy_gateway_does_not_equal_commercial_operation",
+    "living_indigenous_context_must_not_be_reduced_to_static_tourism_attraction",
+    "tourism_maps_are_not_canonical_geospatial_authority",
+    "dynamic_travel_advice_requires_current_revalidation"
+  ]
+}

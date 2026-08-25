@@ -1,0 +1,96 @@
+{
+  "source_id": "sernatur-provincia-antartica-guide",
+  "title": "Antártica Chilena Province tourism guide",
+  "drive_file_id": "1qNRaI-MoeNqGONm0BvCv5YFegOQkMmB7",
+  "drive_title": "PROVINCIA ANTÁRTICA ING WEB.pdf",
+  "source_class": "institutional_tourism_context",
+  "retrieved_at": "2026-08-24",
+  "embedding_ready": false,
+  "provenance": {
+    "extraction_method": "Google Drive readable text extraction",
+    "page_level_reference": "pending_visual_page_review",
+    "language": "English",
+    "note": "The extracted text contains layout-order corruption in some sections; only clearly readable statements are normalized below."
+  },
+  "clearly_supported_facts": [
+    {
+      "fact_id":"pa-001",
+      "subject":"museo_martin_gusinde",
+      "predicate":"located_in",
+      "object":"puerto_williams",
+      "statement":"The guide places the Martin Gusinde Anthropological Museum in Puerto Williams.",
+      "fact_class":"stable_context"
+    },
+    {
+      "fact_id":"pa-002",
+      "subject":"museo_martin_gusinde",
+      "predicate":"focuses_on",
+      "object":["Yagan_indigenous_history","regional_exploration_history","ecosystems_and_landscapes_of_isla_navarino_and_cabo_de_hornos"],
+      "statement":"The guide describes three main museum themes: Indigenous peoples, especially the Yagan people; discovery and exploration history; and the ecosystem, landscapes and natural environment of Isla Navarino and Cabo de Hornos.",
+      "fact_class":"stable_institutional_description"
+    },
+    {
+      "fact_id":"pa-003",
+      "subject":"caleta_wulaia",
+      "predicate":"access_mode_described_as",
+      "object":"boat_only",
+      "statement":"The guide states that Caleta Wulaia can only be accessed by boat and says boarding usually takes place at Puerto Navarino.",
+      "fact_class":"dated_access_context",
+      "freshness_requirement":"reverify_before_current_travel_advice"
+    },
+    {
+      "fact_id":"pa-004",
+      "subject":"villa_ukika",
+      "predicate":"located_near",
+      "object":"puerto_williams",
+      "statement":"The guide describes Villa Ukika as located one kilometer from Puerto Williams.",
+      "fact_class":"contextual_distance_claim",
+      "verification_status":"requires_authoritative_geospatial_confirmation"
+    },
+    {
+      "fact_id":"pa-005",
+      "subject":"peninsula_fildes",
+      "predicate":"hosts",
+      "object":"villa_las_estrellas_and_multiple_national_research_facilities",
+      "statement":"The guide describes Península Fildes on King George Island as an area with a high concentration of research bases and stations and identifies Villa Las Estrellas as a Chilean population center.",
+      "fact_class":"antarctic_context",
+      "routing":"Antarctic knowledge layer rather than Puerto Williams local entity core"
+    },
+    {
+      "fact_id":"pa-006",
+      "subject":"shackleton_rescue",
+      "predicate":"rescued_by",
+      "object":"Luis_Alberto_Pardo_Villalon_and_Yelcho",
+      "statement":"The guide recounts the rescue of Shackleton's men by Chilean sailor Luis Alberto Pardo Villalón commanding the cutter Yelcho.",
+      "fact_class":"historical_context"
+    }
+  ],
+  "claims_requiring_independent_verification_before_canonical_promotion": [
+    {
+      "claim":"Puerto Williams is the southernmost city in the world.",
+      "reason":"Status/title claims depend on definitions and current institutional framing; this guide is not sufficient by itself for canonical publication."
+    },
+    {
+      "claim":"Puerto Williams is a platform for Chilean operations in Antarctica.",
+      "reason":"Useful policy/context statement, but operational meaning must remain separated from verified current commercial or state services."
+    },
+    {
+      "claim":"Villa Ukika can be visited year round.",
+      "reason":"Visitor access is dynamic and community-sensitive; the tourism guide is not enough for a current recommendation."
+    },
+    {
+      "claim":"Caleta Wulaia boat access usually boards at Puerto Navarino.",
+      "reason":"Retain as dated guide context and revalidate current operator/access arrangements before travel advice."
+    },
+    {
+      "claim":"Antarctic climate, tourism and superlative descriptions in the guide.",
+      "reason":"Scientific and current Antarctic claims should route to INACH/peer-reviewed/current institutional sources rather than this tourism guide."
+    }
+  ],
+  "canonical_rules": [
+    "Tourism-guide language is context, not automatically current operational truth.",
+    "Layout-corrupted extraction must not be normalized by guessing missing wording.",
+    "Indigenous and community descriptions require careful source review and should not be repeated with outdated or reductive wording without contemporary authoritative context.",
+    "Antarctic operational claims must remain source-scoped and cannot be transferred to commercial travel availability."
+  ]
+}

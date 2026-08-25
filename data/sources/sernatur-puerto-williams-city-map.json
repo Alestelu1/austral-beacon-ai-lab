@@ -1,0 +1,105 @@
+{
+  "source_id": "sernatur-puerto-williams-city-map",
+  "title": "Plano Ciudad de Puerto Williams / Puerto Williams City Map",
+  "publisher": "Servicio Nacional de Turismo (SERNATUR), Región de Magallanes y Antártica Chilena",
+  "source_class": "institutional_tourism_map",
+  "drive_file_id": "1jU07ypx28jZVBkZVSm7ErGalfIoBxzzu",
+  "drive_title": "Mapa Puerto Williamsweb.pdf",
+  "retrieved_at": "2026-08-24",
+  "embedding_ready": false,
+  "provenance": {
+    "extraction_method": "Google Drive readable text extraction",
+    "page_level_reference": "pending_visual_page_review",
+    "geometry_use": "not_authoritative_for_canonical_coordinates_or_geometry"
+  },
+  "stable_entities": [
+    "puerto_williams",
+    "canal_beagle",
+    "ruta_y905",
+    "puerto_navarino",
+    "rio_ukika",
+    "seno_micalvi",
+    "seno_lauta",
+    "peninsula_zanartu",
+    "puerto_eugenia",
+    "cerro_la_bandera",
+    "dientes_de_navarino",
+    "lago_windhond",
+    "punta_gusano"
+  ],
+  "urban_and_heritage_features": [
+    {"id":"mirador_yelcho","type":"viewpoint","label":"Mirador Yelcho"},
+    {"id":"club_yates_micalvi","type":"yacht_club","label":"Club de Yates Micalvi"},
+    {"id":"plaza_virgen","type":"square","label":"Plaza de la Virgen"},
+    {"id":"antigua_comandancia_naval","type":"historic_site","label":"Antigua Comandancia Naval"},
+    {"id":"primera_casa_puerto_williams","type":"historic_site","label":"Primera Casa de Puerto Williams"},
+    {"id":"parque_ukika","type":"park","label":"Parque Ukika"},
+    {"id":"villa_ukika","type":"settlement_neighborhood_context","label":"Villa Ukika"},
+    {"id":"museo_martin_gusinde","type":"museum","label":"Museo Martín Gusinde"},
+    {"id":"casa_stirling","type":"historic_site","label":"Casa Stirling"}
+  ],
+  "service_symbols_present": [
+    "tourist_information_office",
+    "supermarket",
+    "atm",
+    "police",
+    "post_office",
+    "hospital",
+    "fuel_station",
+    "airport",
+    "lookout",
+    "birdwatching",
+    "picnic_area",
+    "trail",
+    "museum",
+    "ferry",
+    "church",
+    "handcraft",
+    "yacht_club",
+    "cruise_ship_port",
+    "fishers_cove",
+    "historic_site"
+  ],
+  "route_context": [
+    {
+      "from":"puerto_williams",
+      "relation":"road_context_toward",
+      "to":"puerto_navarino",
+      "via":"ruta_y905",
+      "status":"map_context_only"
+    },
+    {
+      "from":"puerto_williams",
+      "relation":"trail_access_context_toward",
+      "to":"cerro_la_bandera",
+      "status":"map_context_only"
+    },
+    {
+      "from":"puerto_williams",
+      "relation":"trail_access_context_toward",
+      "to":"dientes_de_navarino",
+      "status":"map_context_only"
+    },
+    {
+      "from":"puerto_williams",
+      "relation":"trail_access_context_toward",
+      "to":"lago_windhond",
+      "status":"map_context_only"
+    }
+  ],
+  "responsible_travel_principles": [
+    "plan_ahead_and_prepare",
+    "travel_and_camp_on_durable_surfaces",
+    "dispose_of_waste_properly",
+    "leave_what_you_find",
+    "minimize_campfire_impacts",
+    "respect_wildlife",
+    "be_considerate_of_other_visitors"
+  ],
+  "canonical_rules": [
+    "A tourism map can identify named places and local spatial relationships but must not be used as the canonical coordinate source.",
+    "A ferry, airport, cruise-port or service symbol on the map does not establish current schedule, frequency, fare, availability or operational status.",
+    "Trail labels do not establish current trail condition, permit requirements or safety status.",
+    "Current travel advice requires live first-party or institutional revalidation."
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "verification_id": "batch-03-puerto-williams-connectivity-current-2026-08-24",
+  "verified_at": "2026-08-24",
+  "scope": [
+    "Puerto Williams air connectivity",
+    "Guardiamarina Zanartu aerodrome",
+    "Punta Arenas-Puerto Williams maritime connectivity",
+    "Puerto Williams-Puerto Toro subsidized connectivity",
+    "Puerto Navarino road and maritime infrastructure context",
+    "Puerto Williams and Puerto Toro port infrastructure"
+  ],
+  "source_priority": [
+    "DGAC Chile",
+    "DIRECTEMAR",
+    "Delegacion Presidencial Provincial de Antartica Chilena",
+    "TABSA first-party",
+    "Aerovias DAP first-party"
+  ],
+  "facts": [
+    {
+      "fact_id": "pw-con-001",
+      "subject": "guardiamarina_zanartu_aerodrome",
+      "predicate": "official_status",
+      "object": "public_aerodrome_scgz",
+      "statement": "DGAC Chile identifica al Aerodromo Guardiamarina Zanartu, designador SCGZ, como aerodromo de uso publico ubicado en Puerto Williams y administrado por la DGAC.",
+      "status": "current_authoritative_2026",
+      "source_class": "chilean_primary_authority",
+      "source_publisher": "Direccion General de Aeronautica Civil de Chile",
+      "source_url": "https://aipchile.dgac.gob.cl/designador/SCGZ",
+      "freshness_class": "volatile_operational_metadata",
+      "prohibited_inference": "No convertir las horas ATS, METAR, TAF o NOTAM visibles en una fecha concreta en hechos permanentes; deben revalidarse al responder consultas operacionales."
+    },
+    {
+      "fact_id": "pw-con-002",
+      "subject": "punta_arenas_puerto_williams_air_route",
+      "predicate": "published_regular_service",
+      "object": "aerovias_dap",
+      "statement": "Aerovias DAP publica actualmente Punta Arenas-Puerto Williams como ruta regular y mantiene oficina de vuelos regulares y carga en Puerto Williams.",
+      "status": "current_first_party_offering_2026",
+      "source_class": "first_party_operator",
+      "source_publisher": "Aerovias DAP",
+      "source_url": "https://dapairline.com/vuelos-regulares/",
+      "freshness_class": "volatile_schedule",
+      "prohibited_inference": "Las frecuencias y horas publicadas deben revalidarse antes de una recomendacion de viaje; una ruta publicada no garantiza disponibilidad para una fecha concreta."
+    },
+    {
+      "fact_id": "pw-con-003",
+      "subject": "punta_arenas_puerto_williams_maritime_route",
+      "predicate": "published_service",
+      "object": "tabsa",
+      "statement": "TABSA publica la ruta Punta Arenas-Puerto Williams y describe una navegacion aproximada de 32 horas entre ambas capitales territoriales.",
+      "status": "current_first_party_route_2026",
+      "source_class": "first_party_operator",
+      "source_publisher": "TABSA",
+      "source_url": "https://www.tabsa.cl/rutas/parenas-pwilliams/",
+      "freshness_class": "volatile_schedule_and_duration",
+      "prohibited_inference": "La duracion aproximada no equivale a tiempo garantizado y los itinerarios pueden variar por marea, clima y trafico; revalidar antes de publicar horario, fecha o disponibilidad."
+    },
+    {
+      "fact_id": "pw-con-004",
+      "subject": "puerto_williams_puerto_toro_maritime_service",
+      "predicate": "operates_as",
+      "object": "subsidized_isolated_zone_transport",
+      "statement": "La Delegacion Presidencial Provincial de Antartica Chilena publico zarpes Puerto Williams-Puerto Toro en 2026 y recalca expresamente que la navegacion no es turistica, que habitantes de Puerto Toro tienen prioridad y que las fechas pueden variar por meteorologia o necesidades locales.",
+      "status": "current_institutional_2026",
+      "source_class": "chilean_primary_authority",
+      "source_publisher": "Delegacion Presidencial Provincial de Antartica Chilena",
+      "source_url": "https://dppantartica.dpp.gob.cl/2026/03/23/afiches-calendario-de-zarpes-puerto-williams-puerto-toro-durante-marzo-y-abril-de-2026/",
+      "freshness_class": "volatile_schedule",
+      "prohibited_inference": "No presentar el servicio como ferry turistico normal, ni asumir cupos, frecuencia o prioridad para visitantes."
+    },
+    {
+      "fact_id": "pw-con-005",
+      "subject": "puerto_williams_ferry_terminal",
+      "predicate": "authorized_operation",
+      "object": "terminal_de_transbordadores_de_puerto_williams",
+      "statement": "DIRECTEMAR habilito en septiembre de 2025 la operacion del Terminal de Transbordadores de Puerto Williams, destinado al transporte de pasajeros y al embarque y descarga de carga.",
+      "status": "authoritative_infrastructure_2025_current_context",
+      "source_class": "chilean_primary_maritime_authority",
+      "source_publisher": "DIRECTEMAR",
+      "source_url": "https://www.directemar.cl/directemar/site/docs/20251009/20251009083246/12600_49.pdf",
+      "freshness_class": "stable_infrastructure_with_operational_recheck",
+      "prohibited_inference": "La habilitacion de infraestructura no demuestra por si sola una frecuencia de servicio, operador, destino o disponibilidad en una fecha concreta."
+    },
+    {
+      "fact_id": "pw-con-006",
+      "subject": "puerto_toro_ferry_terminal",
+      "predicate": "authorized_operation",
+      "object": "terminal_portuario_de_transbordadores_puerto_toro",
+      "statement": "DIRECTEMAR habilito en mayo de 2025 el Terminal Portuario de Transbordadores de Puerto Toro, describiendolo como infraestructura para carga rodada y pasajeros orientada a la conectividad entre Puerto Williams y Puerto Toro.",
+      "status": "authoritative_infrastructure_2025_current_context",
+      "source_class": "chilean_primary_maritime_authority",
+      "source_publisher": "DIRECTEMAR",
+      "source_url": "https://www.directemar.cl/directemar/site/docs/20250527/20250527152715/12600__36.pdf",
+      "freshness_class": "stable_infrastructure_with_operational_recheck",
+      "prohibited_inference": "Terminal habilitado no equivale a servicio turistico, horario fijo ni disponibilidad permanente."
+    },
+    {
+      "fact_id": "pw-con-007",
+      "subject": "puerto_navarino",
+      "predicate": "infrastructure_context",
+      "object": "new_ramp_and_international_crossing_reactivation_context",
+      "statement": "La Delegacion Presidencial Provincial de Antartica Chilena informo en marzo de 2026 la inauguracion de una nueva rampa en Puerto Navarino y la vinculo con la reactivacion de cruces maritimos internacionales.",
+      "status": "current_institutional_2026",
+      "source_class": "chilean_primary_authority",
+      "source_publisher": "Delegacion Presidencial Provincial de Antartica Chilena",
+      "source_url": "https://dppantartica.dpp.gob.cl/2026/03/11/afiches-principales-logros-de-gobierno-en-la-provincia-antartica-chilena-entre-2022-y-2026/",
+      "freshness_class": "current_infrastructure_context",
+      "prohibited_inference": "No inferir un ferry internacional regular de pasajeros, operador vigente, frecuencia o calendario a partir de la existencia de la rampa o del concepto de reactivacion."
+    },
+    {
+      "fact_id": "pw-con-008",
+      "subject": "ruta_y905",
+      "predicate": "connects",
+      "object": ["puerto_williams", "puerto_navarino"],
+      "statement": "Fuentes institucionales chilenas identifican la Ruta Y-905 como el camino que une Puerto Williams con Puerto Navarino; la condicion de la ruta es sensible a nieve, lluvia, hielo y trabajos viales.",
+      "status": "stable_route_identity_dynamic_condition",
+      "source_class": "chilean_primary_authority",
+      "source_publisher": "Delegacion Presidencial Provincial de Antartica Chilena",
+      "source_url": "https://dppantartica.dpp.gob.cl/2023/08/07/ante-contingencia-por-nieve-inspeccionan-estado-de-ruta-y-escuchan-necesidades-de-habitantes-de-zonas-alejadas-hacia-puerto-navarino/",
+      "freshness_class": "stable_identity_volatile_condition",
+      "prohibited_inference": "La existencia de la ruta no garantiza transitabilidad permanente ni condiciones aptas para turismo en una fecha dada."
+    }
+  ],
+  "canonical_rules": [
+    "official_aerodrome_identity_is_stable_but_notams_weather_and_ats_hours_are_dynamic",
+    "published_operator_route_is_not_same_as_date_specific_availability",
+    "terminal_authorization_does_not_prove_schedule",
+    "infrastructure_does_not_prove_tourism_product",
+    "subsidized_isolated_zone_service_must_not_be_marketed_as_normal_tourism",
+    "road_identity_is_separate_from_current_road_condition",
+    "puerto_navarino_ramp_does_not_prove_regular_international_passenger_ferry"
+  ],
+  "recommended_consumers": [
+    "End of the World Travel Assistant",
+    "Observatorio de Conectividad Austral",
+    "End of the World Atlas stable infrastructure layer",
+    "Antarctica Begins gateway context"
+  ]
+}

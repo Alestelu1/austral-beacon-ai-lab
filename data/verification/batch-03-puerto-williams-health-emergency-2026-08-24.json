@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "verification_id": "batch-03-puerto-williams-health-emergency-2026-08-24",
+  "scope": "Health and emergency-service facts for Puerto Williams verified against Chilean institutional sources",
+  "verified_at": "2026-08-24",
+  "status": "partial_verified",
+  "rules": {
+    "infrastructure_not_service_availability": true,
+    "emergency_contacts_are_dynamic": true,
+    "do_not_infer_24_7_service_without_current_official_source": true,
+    "do_not_infer_specialist_capacity_from_hospital_existence": true
+  },
+  "facts": [
+    {
+      "entity_id": "hospital_comunitario_cristina_calderon",
+      "canonical_name": "Hospital Comunitario Cristina Calderón",
+      "entity_type": "public_hospital",
+      "place_id": "puerto_williams",
+      "claim": "The Hospital Comunitario Cristina Calderón operates in Puerto Williams and is part of the Servicio de Salud Magallanes network.",
+      "source_class": "institutional_primary",
+      "publishers": ["Servicio de Salud Magallanes", "Ministerio de Salud"],
+      "freshness": "stable",
+      "verification_status": "confirmed",
+      "embedding_readiness": "eligible_after_chunk_provenance_review"
+    },
+    {
+      "entity_id": "hospital_comunitario_cristina_calderon",
+      "claim": "The establishment remains registered as an accredited institutional health provider; Superintendencia de Salud records its second accreditation in 2024.",
+      "source_class": "institutional_primary",
+      "publisher": "Superintendencia de Salud",
+      "freshness": "slow_changing",
+      "verification_status": "confirmed",
+      "embedding_readiness": "dated_context"
+    },
+    {
+      "entity_id": "hospital_comunitario_cristina_calderon",
+      "claim": "A June 2026 public procurement process identifies the hospital at O'Higgins 246, Puerto Williams, and concerns updating and normalizing critical hospital systems.",
+      "source_class": "institutional_primary",
+      "publisher": "Mercado Público / Hospital Comunitario Cristina Calderón",
+      "freshness": "dated_context",
+      "verification_status": "confirmed",
+      "embedding_readiness": "dated_context"
+    },
+    {
+      "entity_id": "hospital_comunitario_cristina_calderon",
+      "claim": "The hospital was actively delivering territorial health services in 2026; MINSAL reported a hospital team conducting a health operation in Caleta Douglas in February 2026.",
+      "source_class": "institutional_primary",
+      "publisher": "Ministerio de Salud",
+      "freshness": "dated_context",
+      "verification_status": "confirmed",
+      "embedding_readiness": "dated_context"
+    },
+    {
+      "entity_id": "hospital_comunitario_cristina_calderon",
+      "claim": "Specialty-care rounds were carried out in Puerto Williams in May 2026 through coordination between Servicio de Salud Magallanes and Fundación ACRUX.",
+      "source_class": "mixed_institutional_partner",
+      "publishers": ["Servicio de Salud Magallanes", "Fundación ACRUX"],
+      "freshness": "dated_context",
+      "verification_status": "confirmed_with_scope",
+      "embedding_readiness": "dated_context",
+      "scope_note": "This demonstrates periodic specialty outreach, not permanent on-site availability of every specialty."
+    }
+  ],
+  "not_yet_canonical": [
+    {
+      "field": "emergency_department_hours",
+      "reason": "No sufficiently current Chilean institutional source was located in this verification pass to state exact current hours or 24/7 coverage."
+    },
+    {
+      "field": "current_ambulance_count_and_capability",
+      "reason": "Older official sources document ambulance and emergency equipment, but were not treated as current 2026 capacity."
+    },
+    {
+      "field": "current_specialist_roster",
+      "reason": "Temporary specialty rounds do not prove permanent staffing."
+    },
+    {
+      "field": "live_emergency_contacts",
+      "reason": "Emergency phone numbers and service routing should be fetched from current official sources at answer time rather than embedded as static facts."
+    },
+    {
+      "field": "current_rescue_agency_operational_roles",
+      "reason": "Carabineros, Armada/DIRECTEMAR and Bomberos are known local institutions, but their current operational contact details and incident-response scope need a dedicated primary-source verification pass."
+    }
+  ],
+  "retrieval_policy": {
+    "stable_questions": "May use the canonical hospital identity and network relationship.",
+    "current_medical_service_questions": "Require current Servicio de Salud Magallanes or MINSAL verification.",
+    "emergency_now_questions": "Do not answer from the static RAG alone; route to live official information.",
+    "specialty_availability_questions": "Treat as dynamic unless a current official schedule explicitly confirms availability."
+  }
+}
