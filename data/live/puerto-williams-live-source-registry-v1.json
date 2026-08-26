@@ -1,0 +1,33 @@
+{
+  "registry_id": "puerto-williams-live-source-registry-v1",
+  "status": "source-discovery-ready",
+  "updated_at": "2026-08-26",
+  "policy": {
+    "never_infer_current_state_from_source_existence": true,
+    "official_source_required_for_operational_claims": true,
+    "machine_readable_feed_preferred": true,
+    "publication_page_is_not_a_live_feed": true
+  },
+  "signals": {
+    "road_condition": [
+      {
+        "source_id": "mop-magallanes-regional",
+        "producer": "Ministerio de Obras Públicas de Chile - Región de Magallanes y de la Antártica Chilena",
+        "source_class": "official_publication_monitor",
+        "url": "https://magallanes.mop.gob.cl/",
+        "machine_readable": false,
+        "operational_scope": ["road_condition", "road_maintenance", "closures", "snow_ice_context"],
+        "notes": "Official regional MOP publication channel. A publication must explicitly establish current Y-905 conditions before the assistant can state that the road is open, closed, safe or restricted."
+      },
+      {
+        "source_id": "dpp-antartica",
+        "producer": "Delegación Presidencial Provincial de la Antártica Chilena",
+        "source_class": "official_publication_monitor",
+        "url": "https://dppantartica.dpp.gob.cl/",
+        "machine_readable": false,
+        "operational_scope": ["road_condition", "local_emergency", "snow_ice_context", "trail_safety"],
+        "notes": "Official provincial source frequently used for local contingency and safety notices. Publication recency and exact territorial scope must be checked per query."
+      }
+    ]
+  }
+}
