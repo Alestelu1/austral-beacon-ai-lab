@@ -11,11 +11,15 @@ async function loadJson<T>(relativeFromRepoRoot: string): Promise<T> {
 }
 
 async function main(): Promise<void> {
-  const corpus = await loadJson<SemanticCorpus>("data/retrieval/golden-corpus-puerto-williams-v1.json");
-  const evalSet = await loadJson<RetrievalEvalSet>("data/retrieval/retrieval-eval-puerto-williams-v1.json");
+  const corpusPath = process.env.RETRIEVAL_CORPUS_FILE ?? "data/retrieval/golden-corpus-puerto-williams-v1.json";
+  const evalPath = process.env.RETRIEVAL_EVAL_FILE ?? "data/retrieval/retrieval-eval-puerto-williams-v1.json";
+  const corpus = await loadJson<SemanticCorpus>(corpusPath);
+  const evalSet = await loadJson<RetrievalEvalSet>(evalPath);
   const provider = new GeminiEmbeddingProvider();
 
   console.log(`Embedding provider: ${provider.id}`);
+  console.log(`Corpus: ${corpusPath}`);
+  console.log(`Evaluation set: ${evalPath}`);
   console.log(`Embedding-ready chunks: ${corpus.chunks.filter((chunk) => chunk.embedding_ready).length}`);
 
   const retriever = await SemanticRetriever.create(corpus, provider);
