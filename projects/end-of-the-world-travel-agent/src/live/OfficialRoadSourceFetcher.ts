@@ -17,7 +17,7 @@ export type FetchOfficialRoadSourceOptions = {
 };
 
 const LINK_PATTERN = /<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
-const STRONG_ROAD_PATTERN = /y[-\s]?905|ruta|vialidad|camino|carretera|transit|cierre|nieve|hielo|calzada/i;
+const STRONG_ROAD_PATTERN = /(?:\by[-\s]?905\b|\brutas?\b|\bvialidad\b|\bcaminos?\b|\bcarreteras?\b|\btr[aá]nsit(?:o|able|abilidad)\b|\bcierre(?:s)?\b|\bnieve\b|\bhielo\b|\bcalzada\b)/i;
 const SPANISH_DATE_PATTERN = /\b(\d{1,2})\s+de\s+(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|setiembre|octubre|noviembre|diciembre)\s+de\s+(20\d{2})\b/i;
 
 const MONTHS: Record<string, number> = {
@@ -75,8 +75,6 @@ function normalizeExplicitDate(value: string): string | null {
 
 function dateOnlyToIso(year: number, month: number, day: number): string | null {
   if (month < 1 || month > 12 || day < 1 || day > 31) return null;
-  // Conservative local-date fallback for the Magallanes source pages used in this batch.
-  // Midnight avoids inventing a later publication time when the page exposes only a date.
   const value = `${String(year).padStart(4, "0")}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}T00:00:00-04:00`;
   return normalizeExplicitDate(value);
 }
@@ -127,9 +125,6 @@ function isCandidateLink(href: string, label: string): boolean {
   const normalizedHref = decodeHtml(href).toLowerCase();
   const normalizedLabel = stripHtml(label).toLowerCase();
 
-  // Discovery stays broader than state extraction, but requires an actual road-condition
-  // signal in the URL or anchor label. Place names alone are not enough because official
-  // home pages contain many unrelated Puerto Williams publications.
   return STRONG_ROAD_PATTERN.test(normalizedHref) || STRONG_ROAD_PATTERN.test(normalizedLabel);
 }
 
@@ -165,13 +160,6 @@ function discoverCandidateUrls(indexHtml: string, baseUrl: string, maxCandidates
   return urls;
 }
 
-/**
- * Fetches an official publication channel and normalizes candidate pages.
- * This layer performs acquisition only: it never decides whether Ruta Y-905 is
- * open, closed or restricted. State extraction belongs to
- * `OfficialRoadPublicationAdapter`, and freshness belongs to
- * `RoadConditionVerifier`.
- */
 export async function fetchOfficialRoadSource(
   source: LiveVerificationSource,
   options: FetchOfficialRoadSourceOptions = {}
