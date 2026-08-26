@@ -1,5 +1,6 @@
 import type { RetrievalHit } from "../retrieval/Retriever.js";
 import { RoutedRetrievalService } from "../retrieval/RoutedRetrievalService.js";
+import { planLiveVerification, type LiveVerificationPlan } from "../live/LiveVerificationSourceRegistry.js";
 
 export type KnowledgeAnswerRoute = "stable_rag" | "live_verification";
 
@@ -10,6 +11,7 @@ export type KnowledgeAnswer = {
   hits: RetrievalHit[];
   routingReason: string;
   matchedSignals: string[];
+  verificationPlans: LiveVerificationPlan[];
 };
 
 export async function answerKnowledgeQuestion(
@@ -26,7 +28,8 @@ export async function answerKnowledgeQuestion(
       summary: "Esta consulta requiere verificación actual antes de responder; no se usó el corpus embebido como fuente operativa.",
       hits: [],
       routingReason: result.routing.reason,
-      matchedSignals: result.routing.matchedSignals
+      matchedSignals: result.routing.matchedSignals,
+      verificationPlans: planLiveVerification(result.routing.matchedSignals)
     };
   }
 
@@ -37,7 +40,8 @@ export async function answerKnowledgeQuestion(
       summary: "El corpus estable no contiene evidencia suficiente para responder esta consulta.",
       hits: [],
       routingReason: result.routing.reason,
-      matchedSignals: result.routing.matchedSignals
+      matchedSignals: result.routing.matchedSignals,
+      verificationPlans: []
     };
   }
 
@@ -47,6 +51,7 @@ export async function answerKnowledgeQuestion(
     summary: "Se recuperó evidencia estable del corpus auditado. La generación de una respuesta final debe conservar el alcance y las salvaguardas de los chunks recuperados.",
     hits: result.hits,
     routingReason: result.routing.reason,
-    matchedSignals: result.routing.matchedSignals
+    matchedSignals: result.routing.matchedSignals,
+    verificationPlans: []
   };
 }
