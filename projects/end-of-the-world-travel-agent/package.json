@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "tsx src/index.ts",
     "demo": "tsx src/cli.ts",
+    "demo:semantic": "node --env-file=.env --import tsx src/semanticCli.ts",
     "api": "tsx src/api/server.ts",
+    "api:semantic": "node --env-file=.env --import tsx src/api/semanticServer.ts",
     "test": "vitest run",
-    "test:rag": "vitest run tests/ragRegression.test.ts tests/embeddingReadiness.test.ts tests/goldenCorpusRetriever.test.ts tests/retrievalEvaluation.test.ts tests/retrievalEvaluationV2.test.ts tests/retrievalQueryRouter.test.ts tests/routedRetrievalService.test.ts tests/answerKnowledgeQuestion.test.ts tests/answerTravelAssistantQuestion.test.ts tests/retrieverContract.test.ts tests/semanticRetriever.test.ts",
+    "test:rag": "vitest run tests/ragRegression.test.ts tests/embeddingReadiness.test.ts tests/goldenCorpusRetriever.test.ts tests/retrievalEvaluation.test.ts tests/retrievalEvaluationV2.test.ts tests/retrievalQueryRouter.test.ts tests/routedRetrievalService.test.ts tests/answerKnowledgeQuestion.test.ts tests/answerTravelAssistantQuestion.test.ts tests/createSemanticTravelAssistant.test.ts tests/retrieverContract.test.ts tests/semanticRetriever.test.ts",
     "typecheck": "tsc --noEmit",
     "build:client": "tsc -p tsconfig.client.json",
     "eval:semantic:vercel": "node --env-file=.env --import tsx scripts/evaluateVercelEmbeddings.ts",
