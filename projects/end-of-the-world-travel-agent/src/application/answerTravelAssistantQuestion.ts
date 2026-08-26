@@ -2,6 +2,7 @@ import type { DestinationCardAnswer, TravelAnswer } from "../domain/types.js";
 import { answerTravelQuestion } from "./answerTravelQuestion.js";
 import { answerKnowledgeQuestion, type KnowledgeAnswer } from "./answerKnowledgeQuestion.js";
 import { RoutedRetrievalService } from "../retrieval/RoutedRetrievalService.js";
+import type { LiveVerificationExecutor } from "../live/LiveVerificationExecutor.js";
 
 export type TravelAssistantAnswer =
   | {
@@ -19,13 +20,13 @@ export type TravelAssistantAnswer =
  * Existing deterministic travel and destination-card answers keep priority so
  * current product behaviour is not broken. Questions that the deterministic
  * layer cannot support are delegated to the routed knowledge layer, which can
- * either retrieve audited stable knowledge or explicitly require live
- * verification for dynamic operational questions.
+ * retrieve audited stable knowledge or execute registered live verification.
  */
 export async function answerTravelAssistantQuestion(
   question: string,
   knowledgeService: RoutedRetrievalService,
-  topK = 3
+  topK = 3,
+  liveVerifier?: LiveVerificationExecutor
 ): Promise<TravelAssistantAnswer> {
   const deterministic = answerTravelQuestion(question);
 
@@ -36,7 +37,7 @@ export async function answerTravelAssistantQuestion(
     };
   }
 
-  const knowledge = await answerKnowledgeQuestion(question, knowledgeService, topK);
+  const knowledge = await answerKnowledgeQuestion(question, knowledgeService, topK, liveVerifier);
   return {
     kind: "knowledge",
     answer: knowledge
