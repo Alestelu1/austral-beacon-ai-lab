@@ -11,7 +11,8 @@
     "test:rag": "vitest run tests/ragRegression.test.ts",
     "typecheck": "tsc --noEmit",
     "build:client": "tsc -p tsconfig.client.json",
-    "eval:semantic:vercel": "node --env-file=.env --import tsx scripts/evaluateVercelEmbeddings.ts"
+    "eval:semantic:vercel": "node --env-file=.env --import tsx scripts/evaluateVercelEmbeddings.ts",
+    "eval:semantic:gemini": "node --env-file=.env --import tsx scripts/evaluateGeminiEmbeddings.ts"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
