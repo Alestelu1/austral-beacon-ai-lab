@@ -47,6 +47,30 @@ describe("fetchOfficialRoadSource", () => {
     expect(result.publications[0]?.publishedAt).toBe("2026-08-26T13:00:00.000Z");
   });
 
+  it("uses registered official search pages when the homepage has no road candidate", async () => {
+    const discoverySource: LiveVerificationSource = {
+      ...source,
+      discovery_urls: [source.url, `${source.url}?s=ruta`]
+    };
+
+    const fetchImpl = async (url: string) => {
+      if (url === source.url) return htmlResponse('<a href="/cultura/">Cultura</a>');
+      if (url === `${source.url}?s=ruta`) {
+        return htmlResponse('<a href="/2026/08/10/afiche-recomendaciones-frente-a-hielo-lavado-en-rutas-de-isla-navarino/">Recomendaciones frente a hielo lavado en rutas de Isla Navarino</a>');
+      }
+      return htmlResponse(`
+        <html><body>
+          <div>10 de Agosto de 2026</div>
+          <p>Atención en las rutas de Isla Navarino por hielo lavado.</p>
+        </body></html>
+      `);
+    };
+
+    const result = await fetchOfficialRoadSource(discoverySource, { fetchImpl });
+    expect(result.publications).toHaveLength(1);
+    expect(result.publications[0]?.sourceUrl).toContain("hielo-lavado-en-rutas-de-isla-navarino");
+  });
+
   it("accepts a visible Spanish publication date used by DPP pages", async () => {
     const fetchImpl = async (url: string) => {
       if (url === source.url) {
@@ -87,15 +111,15 @@ describe("fetchOfficialRoadSource", () => {
     expect(result.warnings.some((warning) => warning.includes("no detectable publication date"))).toBe(true);
   });
 
-  it("returns an acquisition warning instead of throwing on source index HTTP failure", async () => {
+  it("returns acquisition warnings instead of throwing on discovery page HTTP failure", async () => {
     const fetchImpl = async () => htmlResponse("Unavailable", 503);
     const result = await fetchOfficialRoadSource(source, { fetchImpl });
 
     expect(result.publications).toEqual([]);
-    expect(result.warnings).toContain("Source index request failed with HTTP 503.");
+    expect(result.warnings.some((warning) => warning.includes("Discovery page request failed with HTTP 503"))).toBe(true);
   });
 
-  it("ignores unrelated Puerto Williams publications on the official source index", async () => {
+  it("ignores unrelated Puerto Williams publications on official discovery pages", async () => {
     const fetchImpl = async () => htmlResponse(`
       <a href="/2026/08/24/puerto-williams-disfruta-concierto-de-musica-clasica/">Puerto Williams disfruta concierto de música clásica</a>
       <a href="/cultura/">Actividad cultural</a>
@@ -103,6 +127,6 @@ describe("fetchOfficialRoadSource", () => {
     const result = await fetchOfficialRoadSource(source, { fetchImpl });
 
     expect(result.publications).toEqual([]);
-    expect(result.warnings).toContain("No road-condition candidate publication links were discovered on the source index.");
+    expect(result.warnings).toContain("No road-condition candidate publication links were discovered on registered official discovery pages.");
   });
 });
