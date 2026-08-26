@@ -160,6 +160,11 @@ function discoverCandidateUrls(indexHtml: string, baseUrl: string, maxCandidates
   return urls;
 }
 
+function getDiscoveryUrls(source: LiveVerificationSource): string[] {
+  const values = source.discovery_urls?.length ? source.discovery_urls : [source.url];
+  return Array.from(new Set(values));
+}
+
 export async function fetchOfficialRoadSource(
   source: LiveVerificationSource,
   options: FetchOfficialRoadSourceOptions = {}
@@ -171,24 +176,37 @@ export async function fetchOfficialRoadSource(
 
   if (!fetchImpl) throw new Error("No fetch implementation is available.");
 
-  const indexResponse = await fetchImpl(source.url, {
-    headers: { "user-agent": "Austral-Beacon-Travel-Assistant/0.1 (+source-monitor)" }
-  });
+  const candidateSet = new Set<string>();
+  const discoveryUrls = getDiscoveryUrls(source);
 
-  if (!indexResponse.ok) {
-    return {
-      source,
-      publications: [],
-      fetchedAt: fetchedAt.toISOString(),
-      warnings: [`Source index request failed with HTTP ${indexResponse.status}.`]
-    };
+  for (const discoveryUrl of discoveryUrls) {
+    try {
+      const response = await fetchImpl(discoveryUrl, {
+        headers: { "user-agent": "Austral-Beacon-Travel-Assistant/0.1 (+source-monitor)" }
+      });
+
+      if (!response.ok) {
+        warnings.push(`Discovery page request failed with HTTP ${response.status}: ${discoveryUrl}`);
+        continue;
+      }
+
+      const html = await response.text();
+      const discovered = discoverCandidateUrls(html, discoveryUrl, maxCandidates);
+      for (const url of discovered) {
+        candidateSet.add(url);
+        if (candidateSet.size >= maxCandidates) break;
+      }
+      if (candidateSet.size >= maxCandidates) break;
+    } catch (error) {
+      warnings.push(
+        `Discovery page fetch failed: ${discoveryUrl} (${error instanceof Error ? error.message : "unknown error"})`
+      );
+    }
   }
 
-  const indexHtml = await indexResponse.text();
-  const candidateUrls = discoverCandidateUrls(indexHtml, source.url, maxCandidates);
-
+  const candidateUrls = Array.from(candidateSet);
   if (candidateUrls.length === 0) {
-    warnings.push("No road-condition candidate publication links were discovered on the source index.");
+    warnings.push("No road-condition candidate publication links were discovered on registered official discovery pages.");
   }
 
   const publications: OfficialRoadPublication[] = [];
@@ -211,8 +229,8 @@ export async function fetchOfficialRoadSource(
       }
 
       const text = stripHtml(html);
-      if (!text) {
-        warnings.push(`Candidate contained no usable text and was skipped: ${url}`);
+      if (!text || !STRONG_ROAD_PATTERN.test(text)) {
+        warnings.push(`Candidate did not contain road-condition evidence and was skipped: ${url}`);
         continue;
       }
 
