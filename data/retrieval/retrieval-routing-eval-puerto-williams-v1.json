@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "eval_id": "retrieval-routing-eval-puerto-williams-v1",
+  "created_at": "2026-08-26",
+  "purpose": "Evaluate whether Puerto Williams/Navarino questions should use stable RAG knowledge or require live verification before answering.",
+  "routes": ["stable_rag", "live_verification"],
+  "cases": [
+    {"id":"route-001","query":"¿Dónde está Puerto Williams?","expected_route":"stable_rag"},
+    {"id":"route-002","query":"¿Puerto Toro es otro nombre de Puerto Williams?","expected_route":"stable_rag"},
+    {"id":"route-003","query":"¿Cómo se llama actualmente el antiguo Museo Martín Gusinde?","expected_route":"stable_rag"},
+    {"id":"route-004","query":"¿Qué carretera conecta Puerto Williams con Puerto Navarino?","expected_route":"stable_rag"},
+    {"id":"route-005","query":"¿Cuál es el aeródromo de Puerto Williams?","expected_route":"stable_rag"},
+    {"id":"route-006","query":"¿Qué sabemos de Puerto Williams como gateway antártico?","expected_route":"stable_rag"},
+    {"id":"route-007","query":"¿Qué dificultad general tiene Dientes de Navarino?","expected_route":"stable_rag"},
+    {"id":"route-008","query":"¿Qué hospital existe en Puerto Williams?","expected_route":"stable_rag"},
+    {"id":"route-009","query":"¿Cuál es la fuente estable de agua potable de Puerto Williams?","expected_route":"stable_rag"},
+    {"id":"route-010","query":"¿El plan sanitario 2026 ya estaba completamente terminado?","expected_route":"stable_rag"},
+    {"id":"route-011","query":"¿Puedo usar un mapa turístico como geometría canónica del Atlas?","expected_route":"stable_rag"},
+    {"id":"route-012","query":"Is Villa Ukika part of a living Yagan community context?","expected_route":"stable_rag"},
+
+    {"id":"route-013","query":"¿Está abierta la Ruta Y-905 hoy?","expected_route":"live_verification"},
+    {"id":"route-014","query":"¿Hay nieve o hielo ahora en la carretera a Puerto Navarino?","expected_route":"live_verification"},
+    {"id":"route-015","query":"¿A qué hora sale mañana el ferry desde Puerto Williams?","expected_route":"live_verification"},
+    {"id":"route-016","query":"¿Hay pasajes disponibles hoy para volar a Puerto Williams?","expected_route":"live_verification"},
+    {"id":"route-017","query":"¿Cuál es el horario actual de DAP a Puerto Williams?","expected_route":"live_verification"},
+    {"id":"route-018","query":"¿Hay combustible disponible ahora en Puerto Williams?","expected_route":"live_verification"},
+    {"id":"route-019","query":"¿Está funcionando el cajero y hay efectivo hoy?","expected_route":"live_verification"},
+    {"id":"route-020","query":"¿Hay corte de internet o telecomunicaciones en Puerto Williams en este momento?","expected_route":"live_verification"},
+    {"id":"route-021","query":"¿Hay corte de agua hoy?","expected_route":"live_verification"},
+    {"id":"route-022","query":"¿Hay especialistas médicos disponibles esta noche en el hospital?","expected_route":"live_verification"},
+    {"id":"route-023","query":"¿Está disponible una ambulancia o evacuación aeromédica ahora mismo?","expected_route":"live_verification"},
+    {"id":"route-024","query":"¿Cómo está Dientes de Navarino hoy y qué tiempo hará durante la ruta?","expected_route":"live_verification"},
+    {"id":"route-025","query":"Is the Y-905 safe and open right now?","expected_route":"live_verification"},
+    {"id":"route-026","query":"Are there direct commercial flights from Puerto Williams to Antarctica available this week?","expected_route":"live_verification"}
+  ]
+}
