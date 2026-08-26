@@ -1,4 +1,4 @@
-import corpus from "../../../data/retrieval/golden-corpus-puerto-williams-v1.json" with { type: "json" };
+import corpus from "../../../../data/retrieval/golden-corpus-puerto-williams-v1.json" with { type: "json" };
 import { GeminiEmbeddingProvider } from "../retrieval/GeminiEmbeddingProvider.js";
 import { RoutedRetrievalService } from "../retrieval/RoutedRetrievalService.js";
 import { SemanticRetriever, type SemanticCorpus } from "../retrieval/SemanticRetriever.js";
