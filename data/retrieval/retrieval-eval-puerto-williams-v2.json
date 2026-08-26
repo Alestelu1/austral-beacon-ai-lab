@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "eval_id": "retrieval-eval-puerto-williams-v2",
+  "corpus_id": "golden-corpus-puerto-williams-v1",
+  "created_at": "2026-08-26",
+  "purpose": "Harder multilingual and adversarial retrieval benchmark for Puerto Williams/Navarino. It tests paraphrases, negative formulations, editorial safeguards and Spanish-English query variation against the same audited corpus.",
+  "metrics": ["recall_at_1", "recall_at_3", "mrr"],
+  "design": {
+    "languages": ["en", "es"],
+    "case_families": ["direct", "paraphrase", "negative_or_safeguard", "ambiguity_or_distractor"],
+    "dynamic_operational_questions": "evaluated separately in routing tests; this benchmark measures retrieval of embeddable knowledge only"
+  },
+  "cases": [
+    {"id":"ret2-001","language":"en","family":"direct","query":"Where is Puerto Williams located administratively and geographically?","expected_chunk_ids":["pw-identity-admin-001"]},
+    {"id":"ret2-002","language":"es","family":"paraphrase","query":"¿En qué isla, comuna, provincia y región se encuentra Puerto Williams?","expected_chunk_ids":["pw-identity-admin-001"]},
+    {"id":"ret2-003","language":"en","family":"ambiguity_or_distractor","query":"Is Puerto Williams on Isla Navarino by the Beagle Channel, or is it a settlement on mainland Patagonia?","expected_chunk_ids":["pw-identity-admin-001"]},
+
+    {"id":"ret2-004","language":"en","family":"negative_or_safeguard","query":"Should Puerto Toro be treated as an alternate name for Puerto Williams?","expected_chunk_ids":["pw-settlement-distinction-002"]},
+    {"id":"ret2-005","language":"es","family":"direct","query":"¿Puerto Toro y Puerto Williams son el mismo asentamiento?","expected_chunk_ids":["pw-settlement-distinction-002"]},
+    {"id":"ret2-006","language":"es","family":"ambiguity_or_distractor","query":"Una guía mezcla Puerto Navarino, Puerto Toro y Puerto Williams como si fueran un solo lugar. ¿Qué conocimiento corrige esa confusión?","expected_chunk_ids":["pw-settlement-distinction-002"]},
+
+    {"id":"ret2-007","language":"en","family":"negative_or_safeguard","query":"Why should Villa Ukika not be described as a frozen ethnographic attraction or only in terms of 'last descendants'?","expected_chunk_ids":["pw-yagan-context-003"]},
+    {"id":"ret2-008","language":"es","family":"paraphrase","query":"¿Cómo debe describirse Villa Ukika respecto de la continuidad cultural yagán actual?","expected_chunk_ids":["pw-yagan-context-003"]},
+    {"id":"ret2-009","language":"en","family":"direct","query":"What living Indigenous community context is associated with Villa Ukika?","expected_chunk_ids":["pw-yagan-context-003"]},
+
+    {"id":"ret2-010","language":"es","family":"direct","query":"¿Cuál es el nombre institucional actual del antiguo Museo Martín Gusinde?","expected_chunk_ids":["pw-museum-004"]},
+    {"id":"ret2-011","language":"en","family":"paraphrase","query":"If a source says Museo Antropologico Martin Gusinde, what current museum identity should our system normalize it to?","expected_chunk_ids":["pw-museum-004"]},
+    {"id":"ret2-012","language":"es","family":"ambiguity_or_distractor","query":"¿Museo Martín Gusinde es todavía el nombre institucional vigente o un alias histórico para recuperación y SEO?","expected_chunk_ids":["pw-museum-004"]},
+
+    {"id":"ret2-013","language":"es","family":"direct","query":"¿Qué ruta vial conecta de forma estable Puerto Williams con Puerto Navarino?","expected_chunk_ids":["pw-y905-005"]},
+    {"id":"ret2-014","language":"en","family":"negative_or_safeguard","query":"Does knowing that Y-905 connects Puerto Williams and Puerto Navarino prove the road is open and safe right now?","expected_chunk_ids":["pw-y905-005"]},
+    {"id":"ret2-015","language":"es","family":"ambiguity_or_distractor","query":"Necesito identificar la carretera Williams–Navarino, no el estado actual de nieve o cierres. ¿Qué chunk corresponde?","expected_chunk_ids":["pw-y905-005"]},
+
+    {"id":"ret2-016","language":"es","family":"direct","query":"¿Cuál es el aeródromo público que sirve a Puerto Williams y cuál es su designador?","expected_chunk_ids":["pw-airport-006"]},
+    {"id":"ret2-017","language":"en","family":"paraphrase","query":"Which DGAC aerodrome infrastructure is associated with Puerto Williams?","expected_chunk_ids":["pw-airport-006"]},
+    {"id":"ret2-018","language":"en","family":"negative_or_safeguard","query":"Does the existence of SCGZ prove that a particular flight is available today?","expected_chunk_ids":["pw-airport-006"]},
+
+    {"id":"ret2-019","language":"es","family":"negative_or_safeguard","query":"¿Que Puerto Williams sea un gateway antártico estratégico significa que hoy existan vuelos comerciales regulares directos a la Antártica desde allí?","expected_chunk_ids":["pw-antarctic-gateway-007"]},
+    {"id":"ret2-020","language":"en","family":"ambiguity_or_distractor","query":"Separate policy gateway status from evidence of a currently published Puerto Williams Antarctic fly-cruise product.","expected_chunk_ids":["pw-antarctic-gateway-007"]},
+    {"id":"ret2-021","language":"es","family":"paraphrase","query":"¿Qué precaución editorial debemos aplicar al hablar de Puerto Williams como puerta de entrada a la Antártica?","expected_chunk_ids":["pw-antarctic-gateway-007"]},
+
+    {"id":"ret2-022","language":"es","family":"direct","query":"¿Qué nivel de dificultad técnica tiene Dientes de Navarino según las fuentes de seguridad pública?","expected_chunk_ids":["pw-dientes-safety-008"]},
+    {"id":"ret2-023","language":"en","family":"negative_or_safeguard","query":"Can the embedded Dientes de Navarino difficulty fact tell me today's trail condition, weather or registration requirement?","expected_chunk_ids":["pw-dientes-safety-008"]},
+    {"id":"ret2-024","language":"es","family":"paraphrase","query":"Busco el contexto estable de seguridad y dificultad de Dientes, no un parte meteorológico de hoy.","expected_chunk_ids":["pw-dientes-safety-008"]},
+
+    {"id":"ret2-025","language":"es","family":"direct","query":"¿Cómo se llama el hospital público de Puerto Williams?","expected_chunk_ids":["pw-health-009"]},
+    {"id":"ret2-026","language":"en","family":"negative_or_safeguard","query":"Does having Hospital Comunitario Cristina Calderon guarantee a specialist, ambulance or medevac at this exact moment?","expected_chunk_ids":["pw-health-009"]},
+    {"id":"ret2-027","language":"es","family":"ambiguity_or_distractor","query":"Una ficha confunde existencia de hospital con disponibilidad permanente de especialistas. ¿Qué evidencia evita esa inferencia?","expected_chunk_ids":["pw-health-009"]},
+
+    {"id":"ret2-028","language":"es","family":"direct","query":"¿Qué cuenca forma parte de la infraestructura de agua potable de Puerto Williams?","expected_chunk_ids":["pw-water-010"]},
+    {"id":"ret2-029","language":"en","family":"negative_or_safeguard","query":"Does the Rio Robalo water-source fact prove there is no water interruption or pressure problem today?","expected_chunk_ids":["pw-water-010"]},
+    {"id":"ret2-030","language":"es","family":"paraphrase","query":"Necesito la fuente de abastecimiento estable de agua de Puerto Williams, no la calidad o presión de este momento.","expected_chunk_ids":["pw-water-010"]},
+
+    {"id":"ret2-031","language":"es","family":"negative_or_safeguard","query":"¿El plan maestro sanitario mencionado en 2026 demuestra que todas las obras de saneamiento ya terminaron?","expected_chunk_ids":["pw-sanitation-plan-011"]},
+    {"id":"ret2-032","language":"en","family":"paraphrase","query":"How should the 2026 Puerto Williams sanitation master-plan be represented: completed infrastructure or planned/under-development context?","expected_chunk_ids":["pw-sanitation-plan-011"]},
+    {"id":"ret2-033","language":"es","family":"ambiguity_or_distractor","query":"Un texto convierte una iniciativa sanitaria de 2026 en una obra completamente ejecutada. ¿Qué chunk contiene la salvaguarda contra esa inferencia?","expected_chunk_ids":["pw-sanitation-plan-011"]},
+
+    {"id":"ret2-034","language":"es","family":"negative_or_safeguard","query":"¿Puedo copiar las coordenadas aproximadas de un mapa turístico y tratarlas como geometría canónica del Atlas?","expected_chunk_ids":["pw-geometry-014"]},
+    {"id":"ret2-035","language":"en","family":"direct","query":"What geographic context can be stated for Puerto Williams while authoritative canonical coordinates are still pending?","expected_chunk_ids":["pw-geometry-014"]},
+    {"id":"ret2-036","language":"es","family":"ambiguity_or_distractor","query":"Sé que Puerto Williams está en Isla Navarino junto al canal Beagle, pero aún necesito procedencia geoespacial oficial antes de fijar un punto canónico. ¿Qué conocimiento cubre esto?","expected_chunk_ids":["pw-geometry-014"]}
+  ],
+  "release_gate": {
+    "minimum_recall_at_1": 0.75,
+    "minimum_recall_at_3": 0.90,
+    "minimum_mrr": 0.82,
+    "perfect_score_is_not_required": true,
+    "required_review": "Inspect failures by language and family before adopting a semantic or hybrid retriever."
+  }
+}
