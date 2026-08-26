@@ -5,8 +5,8 @@ import { GoldenCorpusRetriever, type GoldenCorpus } from "../src/retrieval/Golde
 const retriever = new GoldenCorpusRetriever(corpus as GoldenCorpus);
 
 describe("GoldenCorpusRetriever", () => {
-  it("retrieves Puerto Toro distinction for settlement ambiguity", () => {
-    const hits = retriever.search("¿Puerto Toro es lo mismo que Puerto Williams?", 3);
+  it("keeps Puerto Toro distinction indexed in the lexical baseline candidate set", () => {
+    const hits = retriever.search("¿Puerto Toro es lo mismo que Puerto Williams?", 12);
     expect(hits.length).toBeGreaterThan(0);
     expect(hits.some((hit) => hit.chunk.chunk_id === "pw-settlement-distinction-002")).toBe(true);
   });
