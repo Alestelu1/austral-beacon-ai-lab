@@ -38,10 +38,11 @@ describe("answerKnowledgeQuestion", () => {
     expect(answer.status).toBe("retrieved");
     expect(answer.route).toBe("stable_rag");
     expect(answer.hits[0]?.chunk.chunk_id).toBe("pw-y905-005");
+    expect(answer.verificationPlans).toEqual([]);
     expect(retriever.calls).toBe(1);
   });
 
-  it("blocks embeddings for a live operational question", async () => {
+  it("blocks embeddings and proposes official source checks for a live road question", async () => {
     const retriever = new StubRetriever([stableHit]);
     const service = new RoutedRetrievalService(retriever);
 
@@ -53,6 +54,24 @@ describe("answerKnowledgeQuestion", () => {
     expect(answer.status).toBe("live_verification_required");
     expect(answer.route).toBe("live_verification");
     expect(answer.hits).toEqual([]);
+    expect(retriever.calls).toBe(0);
+
+    const roadPlan = answer.verificationPlans.find((plan) => plan.signal === "road_condition");
+    expect(roadPlan?.status).toBe("source_check_required");
+    expect(roadPlan?.sources.map((source) => source.source_id)).toContain("mop-magallanes-regional");
+    expect(roadPlan?.sources.map((source) => source.source_id)).toContain("dpp-antartica");
+  });
+
+  it("does not pretend an adapter exists for unsupported live signals", async () => {
+    const retriever = new StubRetriever([stableHit]);
+    const service = new RoutedRetrievalService(retriever);
+
+    const answer = await answerKnowledgeQuestion("¿Hay combustible ahora?", service);
+
+    expect(answer.status).toBe("live_verification_required");
+    expect(answer.verificationPlans.some((plan) =>
+      plan.signal === "fuel_or_cash_state" && plan.status === "unsupported_signal"
+    )).toBe(true);
     expect(retriever.calls).toBe(0);
   });
 
@@ -68,6 +87,7 @@ describe("answerKnowledgeQuestion", () => {
     expect(answer.status).toBe("no_evidence");
     expect(answer.route).toBe("stable_rag");
     expect(answer.hits).toEqual([]);
+    expect(answer.verificationPlans).toEqual([]);
     expect(retriever.calls).toBe(1);
   });
 });
