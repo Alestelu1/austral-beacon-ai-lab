@@ -12,7 +12,7 @@ async function loadJson<T>(relativeFromRepoRoot: string): Promise<T> {
 
 async function main(): Promise<void> {
   const corpusPath = process.env.RETRIEVAL_CORPUS_FILE ?? "data/retrieval/golden-corpus-puerto-williams-v1.json";
-  const evalPath = process.env.RETRIEVAL_EVAL_FILE ?? "data/retrieval/retrieval-eval-puerto-williams-v1.json";
+  const evalPath = process.argv[2] ?? process.env.RETRIEVAL_EVAL_FILE ?? "data/retrieval/retrieval-eval-puerto-williams-v1.json";
   const corpus = await loadJson<SemanticCorpus>(corpusPath);
   const evalSet = await loadJson<RetrievalEvalSet>(evalPath);
   const provider = new GeminiEmbeddingProvider();
