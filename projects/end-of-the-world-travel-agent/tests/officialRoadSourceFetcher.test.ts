@@ -29,7 +29,7 @@ describe("fetchOfficialRoadSource", () => {
         <html>
           <head>
             <meta property="og:title" content="Estado de Ruta Y-905" />
-            <meta property="article:published_time" content="2026-08-26T09:00:00-04:00" />
+            <meta content="2026-08-26T09:00:00-04:00" property="article:published_time" />
           </head>
           <body>La Ruta Y-905 se encuentra abierta y transitable.</body>
         </html>
@@ -47,7 +47,36 @@ describe("fetchOfficialRoadSource", () => {
     expect(result.publications[0]?.publishedAt).toBe("2026-08-26T13:00:00.000Z");
   });
 
-  it("does not invent a date when the official page lacks one", async () => {
+  it("accepts a visible Spanish publication date used by DPP pages", async () => {
+    const fetchImpl = async (url: string) => {
+      if (url === source.url) {
+        return htmlResponse('<a href="/2026/08/10/afiche-recomendaciones-frente-a-hielo-lavado-en-rutas-de-isla-navarino/">Recomendaciones frente a hielo lavado en rutas</a>');
+      }
+      return htmlResponse(`
+        <html><head><title>Recomendaciones frente a hielo lavado</title></head>
+        <body><div>10 de Agosto de 2026</div><p>Atención en las rutas de Isla Navarino por hielo lavado.</p></body></html>
+      `);
+    };
+
+    const result = await fetchOfficialRoadSource(source, { fetchImpl });
+    expect(result.publications).toHaveLength(1);
+    expect(result.publications[0]?.publishedAt).toContain("2026-08-10");
+  });
+
+  it("can use the official YYYY/MM/DD permalink as a conservative date fallback", async () => {
+    const fetchImpl = async (url: string) => {
+      if (url === source.url) {
+        return htmlResponse('<a href="/2026/08/26/ruta-y-905-transitable/">Ruta Y-905 transitable</a>');
+      }
+      return htmlResponse("<html><body>La Ruta Y-905 se encuentra transitable.</body></html>");
+    };
+
+    const result = await fetchOfficialRoadSource(source, { fetchImpl });
+    expect(result.publications).toHaveLength(1);
+    expect(result.publications[0]?.publishedAt).toContain("2026-08-26");
+  });
+
+  it("does not invent a date when neither the page nor URL exposes one", async () => {
     const fetchImpl = async (url: string) => {
       if (url === source.url) return htmlResponse('<a href="/ruta-y-905/">Ruta Y-905</a>');
       return htmlResponse("<html><body>Ruta Y-905 abierta.</body></html>");
@@ -55,7 +84,7 @@ describe("fetchOfficialRoadSource", () => {
 
     const result = await fetchOfficialRoadSource(source, { fetchImpl });
     expect(result.publications).toEqual([]);
-    expect(result.warnings.some((warning) => warning.includes("no machine-detectable publication date"))).toBe(true);
+    expect(result.warnings.some((warning) => warning.includes("no detectable publication date"))).toBe(true);
   });
 
   it("returns an acquisition warning instead of throwing on source index HTTP failure", async () => {
@@ -66,8 +95,11 @@ describe("fetchOfficialRoadSource", () => {
     expect(result.warnings).toContain("Source index request failed with HTTP 503.");
   });
 
-  it("ignores unrelated links on the official source index", async () => {
-    const fetchImpl = async () => htmlResponse('<a href="/cultura/">Actividad cultural</a>');
+  it("ignores unrelated Puerto Williams publications on the official source index", async () => {
+    const fetchImpl = async () => htmlResponse(`
+      <a href="/2026/08/24/puerto-williams-disfruta-concierto-de-musica-clasica/">Puerto Williams disfruta concierto de música clásica</a>
+      <a href="/cultura/">Actividad cultural</a>
+    `);
     const result = await fetchOfficialRoadSource(source, { fetchImpl });
 
     expect(result.publications).toEqual([]);
