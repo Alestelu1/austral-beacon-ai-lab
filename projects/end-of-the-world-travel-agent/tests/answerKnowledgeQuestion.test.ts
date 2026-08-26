@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { answerKnowledgeQuestion } from "../src/application/answerKnowledgeQuestion.js";
 import { RoutedRetrievalService } from "../src/retrieval/RoutedRetrievalService.js";
 import type { Retriever, RetrievalHit } from "../src/retrieval/Retriever.js";
+import type { LiveVerificationExecutor } from "../src/live/LiveVerificationExecutor.js";
 
 class StubRetriever implements Retriever {
   public calls = 0;
@@ -25,6 +26,17 @@ const stableHit: RetrievalHit = {
   score: 0.91
 };
 
+const verifiedLiveExecutor: LiveVerificationExecutor = {
+  async execute(signals) {
+    return signals.map((signal) => ({
+      status: signal === "road_condition" ? "verified" : "unsupported",
+      signal,
+      summary: signal === "road_condition" ? "Ruta Y-905 live verification returned verified_open." : "unsupported",
+      result: null
+    }));
+  }
+};
+
 describe("answerKnowledgeQuestion", () => {
   it("returns stable audited evidence for a stable question", async () => {
     const retriever = new StubRetriever([stableHit]);
@@ -39,10 +51,11 @@ describe("answerKnowledgeQuestion", () => {
     expect(answer.route).toBe("stable_rag");
     expect(answer.hits[0]?.chunk.chunk_id).toBe("pw-y905-005");
     expect(answer.verificationPlans).toEqual([]);
+    expect(answer.liveExecutions).toEqual([]);
     expect(retriever.calls).toBe(1);
   });
 
-  it("blocks embeddings and proposes official source checks for a live road question", async () => {
+  it("blocks embeddings and proposes official source checks when no live executor is injected", async () => {
     const retriever = new StubRetriever([stableHit]);
     const service = new RoutedRetrievalService(retriever);
 
@@ -54,12 +67,31 @@ describe("answerKnowledgeQuestion", () => {
     expect(answer.status).toBe("live_verification_required");
     expect(answer.route).toBe("live_verification");
     expect(answer.hits).toEqual([]);
+    expect(answer.liveExecutions).toEqual([]);
     expect(retriever.calls).toBe(0);
 
     const roadPlan = answer.verificationPlans.find((plan) => plan.signal === "road_condition");
     expect(roadPlan?.status).toBe("source_check_required");
     expect(roadPlan?.sources.map((source) => source.source_id)).toContain("mop-magallanes-regional");
     expect(roadPlan?.sources.map((source) => source.source_id)).toContain("dpp-antartica");
+  });
+
+  it("executes live verification for a road-condition query without calling the retriever", async () => {
+    const retriever = new StubRetriever([stableHit]);
+    const service = new RoutedRetrievalService(retriever);
+
+    const answer = await answerKnowledgeQuestion(
+      "¿Está abierta la Ruta Y-905 hoy?",
+      service,
+      3,
+      verifiedLiveExecutor
+    );
+
+    expect(answer.status).toBe("live_verified");
+    expect(answer.route).toBe("live_verification");
+    expect(answer.liveExecutions.some((execution) => execution.signal === "road_condition" && execution.status === "verified")).toBe(true);
+    expect(answer.hits).toEqual([]);
+    expect(retriever.calls).toBe(0);
   });
 
   it("does not pretend an adapter exists for unsupported live signals", async () => {
@@ -88,6 +120,7 @@ describe("answerKnowledgeQuestion", () => {
     expect(answer.route).toBe("stable_rag");
     expect(answer.hits).toEqual([]);
     expect(answer.verificationPlans).toEqual([]);
+    expect(answer.liveExecutions).toEqual([]);
     expect(retriever.calls).toBe(1);
   });
 });
