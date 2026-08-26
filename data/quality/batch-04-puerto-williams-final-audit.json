@@ -1,0 +1,59 @@
+{
+  "batch_id": "batch-04-puerto-williams-geospatial-qa",
+  "status": "conditional_pass",
+  "audited_at": "2026-08-26",
+  "scope": [
+    "Puerto Williams semantic retrieval baseline",
+    "stable-RAG versus live-verification routing",
+    "Gemini embedding retrieval evaluation",
+    "first conservative live road-condition verification pipeline for Ruta Y-905",
+    "authoritative geospatial provenance plan"
+  ],
+  "validated": {
+    "semantic_retrieval_v1": {
+      "cases": 12,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "mrr": 1.0
+    },
+    "semantic_retrieval_v2": {
+      "cases": 36,
+      "recall_at_1": 0.972,
+      "recall_at_3": 1.0,
+      "mrr": 0.986
+    },
+    "routing": "dynamic operational questions are blocked from stable embeddings",
+    "live_y905": "pipeline executes source registry -> acquisition -> adaptation -> freshness verification and fails closed as live_not_verified when sufficiently fresh explicit official evidence is unavailable",
+    "ci": "typecheck and full RAG/live regression suite passing at branch head before audit"
+  },
+  "known_limits": [
+    {
+      "severity": "medium",
+      "item": "Authoritative canonical geometry remains pending for selected Puerto Williams/Navarino entities.",
+      "policy": "Textual geographic context may be embedded; geometry use remains blocked where provenance is incomplete."
+    },
+    {
+      "severity": "medium",
+      "item": "Official DPP/MOP publication discovery is not a guaranteed machine-readable live feed and may fail to surface relevant posts from site search/index pages.",
+      "policy": "Never convert source availability or discovery failure into an open/closed road assertion; return live_not_verified."
+    },
+    {
+      "severity": "low",
+      "item": "The relative_time routing signal has no standalone executor; it is contextual and operational executors such as road_condition carry the actual verification work.",
+      "policy": "Do not treat unsupported relative_time as an error when a supported operational signal is also present."
+    }
+  ],
+  "release_decision": {
+    "knowledge_layer": "pass",
+    "semantic_retrieval": "pass",
+    "routing_safeguards": "pass",
+    "y905_live_tool": "pass_fail_closed",
+    "general_live_travel_operations": "not_ready",
+    "authoritative_geometry": "pending"
+  },
+  "next_recommended_scope": [
+    "merge only after explicit human approval",
+    "recover feature/southern-chile-knowledge-expansion stash after Batch 04 is merged",
+    "move next to territorial expansion rather than extending this branch into a general live-data platform"
+  ]
+}
