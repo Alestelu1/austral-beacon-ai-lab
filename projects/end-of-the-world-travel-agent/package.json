@@ -12,7 +12,8 @@
     "typecheck": "tsc --noEmit",
     "build:client": "tsc -p tsconfig.client.json",
     "eval:semantic:vercel": "node --env-file=.env --import tsx scripts/evaluateVercelEmbeddings.ts",
-    "eval:semantic:gemini": "node --env-file=.env --import tsx scripts/evaluateGeminiEmbeddings.ts"
+    "eval:semantic:gemini": "node --env-file=.env --import tsx scripts/evaluateGeminiEmbeddings.ts",
+    "eval:semantic:gemini:v2": "RETRIEVAL_EVAL_FILE=data/retrieval/retrieval-eval-puerto-williams-v2.json node --env-file=.env --import tsx scripts/evaluateGeminiEmbeddings.ts"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
