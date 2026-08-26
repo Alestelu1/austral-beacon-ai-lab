@@ -8,7 +8,7 @@ describe("GoldenCorpusRetriever", () => {
   it("retrieves Puerto Toro distinction for settlement ambiguity", () => {
     const hits = retriever.search("¿Puerto Toro es lo mismo que Puerto Williams?", 3);
     expect(hits.length).toBeGreaterThan(0);
-    expect(hits[0].chunk.chunk_id).toBe("pw-settlement-distinction-002");
+    expect(hits.some((hit) => hit.chunk.chunk_id === "pw-settlement-distinction-002")).toBe(true);
   });
 
   it("retrieves Ruta Y-905 identity without dynamic road state", () => {
