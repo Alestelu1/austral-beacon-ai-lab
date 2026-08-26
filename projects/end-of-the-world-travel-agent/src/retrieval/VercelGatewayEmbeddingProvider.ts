@@ -32,7 +32,7 @@ export class VercelGatewayEmbeddingProvider implements EmbeddingProvider {
     }
 
     this.apiKey = apiKey;
-    this.model = options.model ?? "google/gemini-embedding-2";
+    this.model = options.model ?? process.env.AI_GATEWAY_EMBEDDING_MODEL ?? "google/gemini-embedding-2";
     this.id = `vercel-ai-gateway:${this.model}`;
     this.endpoint = `${(options.baseUrl ?? "https://ai-gateway.vercel.sh/v1").replace(/\/$/, "")}/embeddings`;
     this.fetchImpl = options.fetchImpl ?? fetch;
