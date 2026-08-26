@@ -7,6 +7,7 @@ export type LiveVerificationSource = {
   producer: string;
   source_class: "official_publication_monitor" | "official_live_feed";
   url: string;
+  discovery_urls?: string[];
   machine_readable: boolean;
   operational_scope: string[];
   notes: string;
