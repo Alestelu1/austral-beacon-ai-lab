@@ -48,8 +48,8 @@ function readBody(req: IncomingMessage): Promise<string> {
 }
 
 export interface CreateAppOptions {
-  /** Override the answer function (used for testing error handling) */
-  answerFn?: (question: string) => unknown;
+  /** Override the answer function. Async answerers are supported for semantic retrieval. */
+  answerFn?: (question: string) => unknown | Promise<unknown>;
 }
 
 export function createApp(options?: CreateAppOptions): Server {
@@ -82,7 +82,6 @@ export function createApp(options?: CreateAppOptions): Server {
           return;
         }
 
-        // Read body with size limit
         let body: string;
         try {
           body = await readBody(req);
@@ -95,13 +94,11 @@ export function createApp(options?: CreateAppOptions): Server {
           return;
         }
 
-        // Empty body
         if (body.length === 0) {
           sendError(res, 400, "INVALID_JSON", "Invalid JSON body");
           return;
         }
 
-        // Parse JSON
         let parsed: unknown;
         try {
           parsed = JSON.parse(body);
@@ -110,13 +107,11 @@ export function createApp(options?: CreateAppOptions): Server {
           return;
         }
 
-        // Validate parsed body is an object
         if (typeof parsed !== "object" || parsed === null || Array.isArray(parsed)) {
           sendError(res, 400, "INVALID_REQUEST", "Request body must be a JSON object");
           return;
         }
 
-        // Validate question field
         const obj = parsed as Record<string, unknown>;
         if (!("question" in obj)) {
           sendError(res, 400, "INVALID_REQUEST", "Field \"question\" is required");
@@ -131,9 +126,8 @@ export function createApp(options?: CreateAppOptions): Server {
           return;
         }
 
-        // Invoke answer function and return structured response
         const question = obj["question"].trim();
-        const result = answer(question);
+        const result = await answer(question);
         sendJson(res, 200, result);
         return;
       }
