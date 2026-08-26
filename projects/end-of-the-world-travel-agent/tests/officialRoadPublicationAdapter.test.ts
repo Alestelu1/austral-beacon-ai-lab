@@ -73,14 +73,14 @@ describe("adaptOfficialRoadPublication", () => {
     expect(result.observation?.routeState).toBe("unknown");
   });
 
-  it("can structure an older explicit official statement while leaving freshness to the verifier", () => {
+  it("can structure an older explicit route-scoped statement while leaving freshness to the verifier", () => {
     const result = adaptOfficialRoadPublication({
-      sourceId: "dpp-antartica-2023",
-      sourceUrl: "https://dppantartica.dpp.gob.cl/2023/08/07/ante-contingencia-por-nieve-inspeccionan-estado-de-ruta-y-escuchan-necesidades-de-habitantes-de-zonas-alejadas-hacia-puerto-navarino/",
+      sourceId: "dpp-antartica-stale-fixture",
+      sourceUrl: "https://dppantartica.dpp.gob.cl/example-stale-y905",
       producer,
       publishedAt: "2023-08-07T12:00:00-04:00",
-      title: "Ante contingencia por nieve inspeccionan estado de ruta hacia Puerto Navarino",
-      text: "La comitiva inspeccionó la Ruta Y-905. La autoridad destacó la ventaja de mantener la ruta abierta con la mantención y despeje realizados."
+      title: "Estado de Ruta Y-905",
+      text: "La Ruta Y-905 se encontraba abierta y transitable hacia Puerto Navarino al momento de la publicación."
     });
 
     expect(result.observation?.routeState).toBe("open");
