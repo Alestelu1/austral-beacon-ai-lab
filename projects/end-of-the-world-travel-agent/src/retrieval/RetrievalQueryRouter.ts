@@ -7,10 +7,18 @@ export type RetrievalRoutingDecision = {
 };
 
 const LIVE_PATTERNS: Array<{ label: string; pattern: RegExp }> = [
-  { label: "relative_time", pattern: /\b(hoy|ahora|ahora mismo|esta noche|mañana|esta semana|right now|today|tonight|tomorrow|this week|currently)\b/i },
+  {
+    label: "relative_time",
+    pattern:
+      /\b(hoy|ahora|ahora mismo|esta mañana|esta tarde|esta noche|mañana|esta semana|right now|today|this morning|this afternoon|tonight|tomorrow|this week|currently)\b/i
+  },
   { label: "schedule", pattern: /\b(horario|hora sale|sale mañana|schedule|departure|departures)\b/i },
   { label: "availability", pattern: /\b(disponible|disponibilidad|available|availability|pasajes|tickets|booking)\b/i },
-  { label: "road_condition", pattern: /\b(abierta|abierto|cerrada|cerrado|estado de la ruta|safe and open|road condition|nieve|hielo|snow|ice)\b/i },
+  {
+    label: "road_condition",
+    pattern:
+      /\b(abierta|abierto|cerrada|cerrado|estado de la ruta|transitable|intransitable|se puede pasar|se puede transitar|se puede manejar|se puede conducir|puedo pasar|puedo manejar|puedo conducir|safe and open|road condition|drivable|driveable|passable|can i drive|can we drive|open to traffic|nieve|hielo|snow|ice)\b/i
+  },
   { label: "service_outage", pattern: /\b(corte|interrupci[oó]n|outage|sin servicio|service interruption)\b/i },
   { label: "fuel_or_cash_state", pattern: /\b(combustible|fuel|efectivo|cash|cajero|atm)\b/i },
   { label: "medical_operational_state", pattern: /\b(especialistas|ambulancia|evacuaci[oó]n aerom[eé]dica|medevac|specialist|ambulance)\b/i },
