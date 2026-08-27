@@ -1,11 +1,13 @@
 import { resolve } from "node:path";
 import routeData from "../../data/routes/santiago-puerto-williams.json" with { type: "json" };
+import puntaArenasRouteData from "../../data/routes/punta-arenas-puerto-williams.json" with { type: "json" };
 import type { DestinationCardAnswer, RouteRecord, TravelAnswer } from "../domain/types.js";
 import { normalize } from "../domain/normalize.js";
 import { LocalJsonDestinationCardRepository } from "../adapters/LocalJsonDestinationCardRepository.js";
 import { getDestinationCard } from "./getDestinationCard.js";
 
 const route = routeData as RouteRecord;
+const puntaArenasRoute = puntaArenasRouteData as RouteRecord;
 
 // Singleton: se instancia una vez al cargar el módulo
 const destinationRepository = new LocalJsonDestinationCardRepository(
@@ -57,29 +59,62 @@ function extractDestinationName(normalized: string): string | null {
 
 // --- Detección de conectividad (existente) ---
 
+const TRAVEL_TERMS = [
+  "llegar", "viajar", "ir", "ruta", "conexion", "como llegar",
+  "how to get", "how do i get", "how can i get", "travel", "route",
+  "reach", "ways to reach", "get to", "get from",
+];
+
+function mentionsTravelIntent(normalized: string): boolean {
+  return TRAVEL_TERMS.some((term) => normalized.includes(term));
+}
+
 function isSupportedConnectivityQuestion(normalized: string): boolean {
   const mentionsOrigin = normalized.includes("santiago");
   const mentionsDestination = normalized.includes("puerto williams");
-  const mentionsTravel = ["llegar", "viajar", "ir", "ruta", "conexion", "como llegar", "how to get", "travel", "route"].some((term) => normalized.includes(term));
 
-  return mentionsOrigin && mentionsDestination && mentionsTravel;
+  return mentionsOrigin && mentionsDestination && mentionsTravelIntent(normalized);
+}
+
+/**
+ * Recognizes the Punta Arenas -> Puerto Williams connectivity question,
+ * kept distinct from the Santiago -> Puerto Williams route.
+ *
+ * Gated on NOT mentioning Santiago so a Santiago query (which names Punta Arenas
+ * as a waypoint) keeps its own route and identity.
+ */
+function isSupportedPuntaArenasConnectivityQuestion(normalized: string): boolean {
+  const mentionsPuntaArenas = normalized.includes("punta arenas");
+  const mentionsDestination = normalized.includes("puerto williams");
+  const mentionsSantiago = normalized.includes("santiago");
+
+  return mentionsPuntaArenas && mentionsDestination && !mentionsSantiago && mentionsTravelIntent(normalized);
+}
+
+function toConnectivityAnswer(source: RouteRecord): TravelAnswer {
+  return {
+    status: "supported",
+    intent: "connectivity",
+    summary: source.summary,
+    stages: source.stages,
+    warnings: source.warnings,
+    sources: source.sources,
+    recommendedPage: source.recommendedPage,
+    verifiedAt: source.verifiedAt
+  };
 }
 
 export function answerTravelQuestion(question: string): TravelAnswer | DestinationCardAnswer {
   const normalized = normalize(question);
 
-  // 1. Prioridad: connectivity
+  // 1. Prioridad: connectivity (Santiago -> Puerto Williams)
   if (isSupportedConnectivityQuestion(normalized)) {
-    return {
-      status: "supported",
-      intent: "connectivity",
-      summary: route.summary,
-      stages: route.stages,
-      warnings: route.warnings,
-      sources: route.sources,
-      recommendedPage: route.recommendedPage,
-      verifiedAt: route.verifiedAt
-    };
+    return toConnectivityAnswer(route);
+  }
+
+  // 1b. Connectivity (Punta Arenas -> Puerto Williams), distinct from Santiago
+  if (isSupportedPuntaArenasConnectivityQuestion(normalized)) {
+    return toConnectivityAnswer(puntaArenasRoute);
   }
 
   // 2. destination-info (dos pasos)
