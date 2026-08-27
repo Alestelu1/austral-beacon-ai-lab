@@ -1,5 +1,5 @@
 import { createServer, type IncomingMessage, type Server, type ServerResponse } from "node:http";
-import { answerTravelQuestion } from "../application/answerTravelQuestion.js";
+import { answerViaAssistant } from "../application/answerViaAssistant.js";
 import { handleStaticRequest } from "./staticHandler.js";
 
 const MAX_BODY_BYTES = 16384; // 16 KB
@@ -53,7 +53,7 @@ export interface CreateAppOptions {
 }
 
 export function createApp(options?: CreateAppOptions): Server {
-  const answer = options?.answerFn ?? answerTravelQuestion;
+  const answer = options?.answerFn ?? answerViaAssistant;
 
   return createServer(async (req: IncomingMessage, res: ServerResponse) => {
     try {
