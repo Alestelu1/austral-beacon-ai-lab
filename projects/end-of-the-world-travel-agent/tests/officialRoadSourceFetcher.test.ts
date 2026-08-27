@@ -119,6 +119,22 @@ describe("fetchOfficialRoadSource", () => {
     expect(result.warnings.some((warning) => warning.includes("Discovery page request failed with HTTP 503"))).toBe(true);
   });
 
+  it("fails closed when an official discovery request exceeds the configured timeout", async () => {
+    const fetchImpl = async () =>
+      await new Promise<Response>(() => {
+        // Intentionally never resolves; fetchOfficialRoadSource must enforce its own timeout.
+      });
+
+    const result = await fetchOfficialRoadSource(source, {
+      fetchImpl,
+      requestTimeoutMs: 10
+    });
+
+    expect(result.publications).toEqual([]);
+    expect(result.warnings.some((warning) => warning.includes("Request timed out after 10 ms"))).toBe(true);
+    expect(result.warnings).toContain("No road-condition candidate publication links were discovered on registered official discovery pages.");
+  });
+
   it("ignores unrelated Puerto Williams publications on official discovery pages", async () => {
     const fetchImpl = async () => htmlResponse(`
       <a href="/2026/08/24/puerto-williams-disfruta-concierto-de-musica-clasica/">Puerto Williams disfruta concierto de música clásica</a>
