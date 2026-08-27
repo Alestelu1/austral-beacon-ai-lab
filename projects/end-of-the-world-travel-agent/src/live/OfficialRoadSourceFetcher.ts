@@ -14,6 +14,7 @@ export type FetchOfficialRoadSourceOptions = {
   fetchImpl?: FetchLike;
   fetchedAt?: Date;
   maxCandidates?: number;
+  requestTimeoutMs?: number;
 };
 
 const LINK_PATTERN = /<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
@@ -165,6 +166,32 @@ function getDiscoveryUrls(source: LiveVerificationSource): string[] {
   return Array.from(new Set(values));
 }
 
+async function fetchWithTimeout(
+  fetchImpl: FetchLike,
+  input: string,
+  init: RequestInit,
+  timeoutMs: number
+): Promise<Response> {
+  const controller = new AbortController();
+  let timeoutHandle: ReturnType<typeof setTimeout> | undefined;
+
+  const timeoutPromise = new Promise<Response>((_, reject) => {
+    timeoutHandle = setTimeout(() => {
+      controller.abort();
+      reject(new Error(`Request timed out after ${timeoutMs} ms.`));
+    }, timeoutMs);
+  });
+
+  try {
+    return await Promise.race([
+      fetchImpl(input, { ...init, signal: controller.signal }),
+      timeoutPromise
+    ]);
+  } finally {
+    if (timeoutHandle) clearTimeout(timeoutHandle);
+  }
+}
+
 export async function fetchOfficialRoadSource(
   source: LiveVerificationSource,
   options: FetchOfficialRoadSourceOptions = {}
@@ -172,18 +199,25 @@ export async function fetchOfficialRoadSource(
   const fetchImpl = options.fetchImpl ?? globalThis.fetch;
   const fetchedAt = options.fetchedAt ?? new Date();
   const maxCandidates = options.maxCandidates ?? 8;
+  const requestTimeoutMs = options.requestTimeoutMs ?? 5000;
   const warnings: string[] = [];
 
   if (!fetchImpl) throw new Error("No fetch implementation is available.");
+  if (!Number.isFinite(requestTimeoutMs) || requestTimeoutMs <= 0) {
+    throw new Error("requestTimeoutMs must be a positive finite number.");
+  }
 
   const candidateSet = new Set<string>();
   const discoveryUrls = getDiscoveryUrls(source);
 
   for (const discoveryUrl of discoveryUrls) {
     try {
-      const response = await fetchImpl(discoveryUrl, {
-        headers: { "user-agent": "Austral-Beacon-Travel-Assistant/0.1 (+source-monitor)" }
-      });
+      const response = await fetchWithTimeout(
+        fetchImpl,
+        discoveryUrl,
+        { headers: { "user-agent": "Austral-Beacon-Travel-Assistant/0.1 (+source-monitor)" } },
+        requestTimeoutMs
+      );
 
       if (!response.ok) {
         warnings.push(`Discovery page request failed with HTTP ${response.status}: ${discoveryUrl}`);
@@ -213,9 +247,12 @@ export async function fetchOfficialRoadSource(
 
   for (const url of candidateUrls) {
     try {
-      const response = await fetchImpl(url, {
-        headers: { "user-agent": "Austral-Beacon-Travel-Assistant/0.1 (+source-monitor)" }
-      });
+      const response = await fetchWithTimeout(
+        fetchImpl,
+        url,
+        { headers: { "user-agent": "Austral-Beacon-Travel-Assistant/0.1 (+source-monitor)" } },
+        requestTimeoutMs
+      );
       if (!response.ok) {
         warnings.push(`Candidate request failed with HTTP ${response.status}: ${url}`);
         continue;
