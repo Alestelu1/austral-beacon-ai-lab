@@ -47,6 +47,23 @@ describe("Puerto Williams stable-vs-live retrieval routing", () => {
     }
   });
 
+  it("routes bilingual and paraphrased road-operational questions to live verification", () => {
+    const liveQueries = [
+      "¿Se puede pasar en auto hacia Puerto Navarino esta tarde?",
+      "¿Se puede transitar por la Y-905?",
+      "¿Puedo manejar hacia Puerto Navarino hoy?",
+      "Can I drive toward Puerto Navarino this afternoon?",
+      "Is the road to Puerto Navarino drivable right now?",
+      "Is the Y-905 passable today?"
+    ];
+
+    for (const query of liveQueries) {
+      const decision = routeRetrievalQuery(query);
+      expect(decision.route).toBe("live_verification");
+      expect(decision.matchedSignals.length).toBeGreaterThan(0);
+    }
+  });
+
   it("keeps stable entity and policy questions in RAG", () => {
     const stableQueries = [
       "¿Dónde está Puerto Williams?",
