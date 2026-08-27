@@ -12,6 +12,7 @@ export type VerifyY905LiveOptions = {
   checkedAt?: Date;
   maxEvidenceAgeHours?: number;
   maxCandidatesPerSource?: number;
+  requestTimeoutMs?: number;
 };
 
 export type Y905LiveVerificationResult = {
@@ -60,7 +61,8 @@ export async function verifyY905Live(
       const fetched = await fetchOfficialRoadSource(source, {
         fetchImpl: options.fetchImpl,
         fetchedAt: checkedAt,
-        maxCandidates: options.maxCandidatesPerSource
+        maxCandidates: options.maxCandidatesPerSource,
+        requestTimeoutMs: options.requestTimeoutMs
       });
 
       warnings.push(...fetched.warnings.map((warning) => `${source.source_id}: ${warning}`));
