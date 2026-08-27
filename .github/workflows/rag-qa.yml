@@ -1,0 +1,43 @@
+name: RAG QA
+
+on:
+  push:
+    branches:
+      - rag/batch-04-puerto-williams-geospatial-qa
+    paths:
+      - 'projects/end-of-the-world-travel-agent/**'
+      - 'tests/rag/**'
+      - 'data/retrieval/**'
+      - '.github/workflows/rag-qa.yml'
+  pull_request:
+    paths:
+      - 'projects/end-of-the-world-travel-agent/**'
+      - 'tests/rag/**'
+      - 'data/retrieval/**'
+      - '.github/workflows/rag-qa.yml'
+
+jobs:
+  rag-qa:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/end-of-the-world-travel-agent
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: projects/end-of-the-world-travel-agent/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Run RAG regression suite
+        run: npm run test:rag

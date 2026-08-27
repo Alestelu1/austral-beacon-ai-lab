@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "batch-04-puerto-williams-geospatial-qa",
+  "created_at": "2026-08-24",
+  "scope": [
+    "Puerto Williams",
+    "Puerto Navarino",
+    "Puerto Toro",
+    "Isla Navarino",
+    "Ruta Y-905",
+    "Cabo de Hornos",
+    "selected local heritage and trail nodes"
+  ],
+  "objective": "Close the authoritative-geometry and technical QA gaps left by Batch 03 without promoting tourism-map positions or inferred coordinates into canonical Atlas geometry.",
+  "authoritative_source_order": [
+    "IDE Chile / competent public geospatial service",
+    "Instituto Geografico Militar",
+    "MOP Direccion de Vialidad for roads",
+    "DIRECTEMAR / SHOA where maritime geometry is authoritative",
+    "CONAF or competent protected-area authority where applicable",
+    "other Chilean public producer with explicit layer provenance"
+  ],
+  "minimum_geometry_provenance": [
+    "producer",
+    "dataset_or_service_title",
+    "layer_or_feature_type",
+    "service_type_or_distribution_format",
+    "source_url",
+    "retrieved_at",
+    "crs",
+    "geometry_type",
+    "feature_identifier_or_selection_rule",
+    "license_or_usage_context_when_available"
+  ],
+  "service_policy": {
+    "wms": "visualization_only_unless_feature_provenance_can_be_resolved_elsewhere",
+    "wfs": "preferred_for_feature_level_vector_extraction_when_producer_and_layer_are_authoritative",
+    "arcgis_feature_service": "acceptable_if_first-party public producer and layer metadata are explicit",
+    "geojson": "acceptable_if first-party public producer and dataset provenance are explicit",
+    "tourism_map": "context_only_not_canonical_geometry"
+  },
+  "initial_official_findings": [
+    {
+      "finding_id": "b04-geo-001",
+      "subject": "ide_chile_service_capability",
+      "status": "confirmed",
+      "statement": "IDE Chile documents publication and consumption of WMS, WFS, ArcGIS REST and GeoJSON services; WFS is the preferred path for authoritative feature-level extraction when an appropriate public layer is identified.",
+      "source_url": "https://www.ide.cl/productos-y-servicios/herramientas/geonodo/manuales/publicacion-de-servicios/",
+      "source_class": "chilean_national_geospatial_infrastructure"
+    },
+    {
+      "finding_id": "b04-geo-002",
+      "subject": "ruta_y905",
+      "status": "official_route_identity_reconfirmed",
+      "statement": "MOP planning material continues to identify Reposicion Ruta Y-905, Williams - Navarino, reinforcing the stable route identity while geometry extraction still requires an authoritative vector layer or equivalent feature-level source.",
+      "source_url": "https://planeamiento.mop.gob.cl/uploads/sites/12/2025/02/detalle-asignado-ejecutado-a-enero-2025.pdf",
+      "source_class": "chilean_primary_public_works"
+    },
+    {
+      "finding_id": "b04-geo-003",
+      "subject": "caleta_eugenia_puerto_toro",
+      "status": "project_not_completed_road",
+      "statement": "Direccion de Vialidad reported in December 2025 a definitive project for an approximately 37 km penetration road between Caleta Eugenia and Puerto Toro. This is project geometry/context and must not be modeled as an already completed continuous public road.",
+      "source_url": "https://vialidad.mop.gob.cl/2025/12/09/presentan-proyecto-definitivo-de-camino-de-penetracion-caleta-eugenia-puerto-toro-a-comunidad-de-la-provincia-antartica-chilena/",
+      "source_class": "chilean_primary_road_authority"
+    }
+  ],
+  "geometry_targets": [
+    {"entity_id":"puerto_williams","preferred_geometry":"point_or_official_settlement_feature","status":"pending_layer_discovery"},
+    {"entity_id":"puerto_navarino","preferred_geometry":"point_or_official_settlement_feature","status":"pending_layer_discovery"},
+    {"entity_id":"puerto_toro","preferred_geometry":"point_or_official_settlement_feature","status":"pending_layer_discovery"},
+    {"entity_id":"ruta_y905","preferred_geometry":"authoritative_road_line","status":"pending_vector_layer_discovery"},
+    {"entity_id":"isla_navarino","preferred_geometry":"official_polygon_or_named_island_feature","status":"pending_layer_discovery"},
+    {"entity_id":"cabo_de_hornos","preferred_geometry":"official_administrative_and_or_geographic_feature","status":"pending_layer_discovery"}
+  ],
+  "prohibited_actions": [
+    "Do not manually copy coordinates from Google Maps or tourism maps into canonical Atlas data.",
+    "Do not infer a full road line from endpoints.",
+    "Do not treat WMS pixels as canonical feature geometry without explicit feature provenance.",
+    "Do not promote planned road alignments as completed roads.",
+    "Do not merge geographic Cabo de Hornos and administrative comuna Cabo de Hornos into one geometry without explicit entity typing."
+  ],
+  "technical_followup": {
+    "qa_runner": "build executable runner for tests/rag/batch-03-puerto-williams-qa.json",
+    "embedding_readiness": "apply stable/dynamic/planned classification at chunk level after provenance is attached",
+    "merge_gate": "no geometry becomes atlas-ready until producer, layer, CRS, geometry type and retrieval provenance are captured"
+  },
+  "status": "active_discovery"
+}

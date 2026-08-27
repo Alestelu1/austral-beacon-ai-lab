@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0",
+  "corpus_id": "golden-corpus-puerto-williams-v1",
+  "created_at": "2026-08-24",
+  "policy": "data/retrieval/embedding-readiness-policy.json",
+  "canonical_entity": "data/entities/puerto-williams-canonical-entity.json",
+  "purpose": "Small audited corpus for retrieval experiments. Stable knowledge may be embedded; dynamic operational state is explicitly excluded and routed to live verification.",
+  "chunks": [
+    {
+      "chunk_id": "pw-identity-admin-001",
+      "entity_id": "puerto_williams",
+      "class": "stable_semantic",
+      "embedding_ready": true,
+      "text": "Puerto Williams is a city in Chile, in the Magallanes y de la Antartica Chilena Region, Antartica Chilena Province and Cabo de Hornos commune. It is located on Isla Navarino and is associated with the Beagle Channel.",
+      "fact_scope": ["identity", "administrative_hierarchy", "isla_navarino_relation", "canal_beagle_context"],
+      "source_records": ["data/entities/puerto-williams-canonical-entity.json"],
+      "qa_review": "passed_batch_03"
+    },
+    {
+      "chunk_id": "pw-settlement-distinction-002",
+      "entity_id": "puerto_williams",
+      "class": "stable_semantic",
+      "embedding_ready": true,
+      "text": "Puerto Williams, Puerto Toro and Puerto Navarino are distinct settlements or territorial nodes. Puerto Toro must not be presented as another name for Puerto Williams.",
+      "fact_scope": ["settlement_identity", "entity_disambiguation"],
+      "source_records": ["data/knowledge/puerto-williams-navarino-local-graph.json"],
+      "qa_review": "passed_batch_03"
+    },
+    {
+      "chunk_id": "pw-yagan-context-003",
+      "entity_id": "puerto_williams",
+      "class": "stable_semantic",
+      "embedding_ready": true,
+      "text": "Villa Ukika should be described in the context of a living Yagan community and contemporary cultural continuity, not as a static ethnographic attraction or with canonical wording such as 'last descendants'.",
+      "fact_scope": ["living_yagan_context", "editorial_safeguard"],
+      "source_records": ["data/verification/batch-03-chilean-authoritative-validation-2026-08-24.json"],
+      "qa_review": "passed_batch_03"
+    },
+    {
+      "chunk_id": "pw-museum-004",
+      "entity_id": "puerto_williams",
+      "class": "dated_context",
+      "embedding_ready": true,
+      "source_date": "2024",
+      "temporal_label": "current institutional name confirmed in 2024",
+      "text": "The current institutional name confirmed in 2024 is Museo Territorial Yagan Usi - Martin Gonzalez Calderon. Museo Antropologico Martin Gusinde and Museo Martin Gusinde are retained as historical aliases for retrieval and SEO.",
+      "fact_scope": ["museum_identity", "name_normalization"],
+      "source_records": ["data/verification/batch-03-chilean-authoritative-validation-2026-08-24.json"],
+      "qa_review": "passed_batch_03"
+    },
+    {
+      "chunk_id": "pw-y905-005",
+      "entity_id": "ruta_y905",
+      "class": "stable_semantic",
+      "embedding_ready": true,
+      "text": "Ruta Y-905 is the stable road connection between Puerto Williams and Puerto Navarino. Its current transit condition is not part of this embedded fact and requires recent verification.",
+      "fact_scope": ["route_identity", "territorial_connection"],
+      "source_records": ["data/verification/batch-03-puerto-williams-connectivity-current-2026-08-24.json"],
+      "qa_review": "passed_batch_03",
+      "live_revalidation_fields": ["road_condition", "closures", "snow_or_ice_condition"]
+    },
+    {
+      "chunk_id": "pw-airport-006",
+      "entity_id": "puerto_williams",
+      "class": "stable_semantic",
+      "embedding_ready": true,
+      "text": "Puerto Williams is served by the public Guardiamarina Zanartu aerodrome, designator SCGZ, administered within the Chilean DGAC system. Flight schedules and availability are dynamic and must be verified separately.",
+      "fact_scope": ["airport_identity", "major_infrastructure_identity"],
+      "source_records": ["data/verification/batch-03-puerto-williams-connectivity-current-2026-08-24.json"],
+      "qa_review": "passed_batch_03",
+      "live_revalidation_fields": ["flight_schedule", "availability", "notam", "weather"]
+    },
+    {
+      "chunk_id": "pw-antarctic-gateway-007",
+      "entity_id": "puerto_williams",
+      "class": "dated_context",
+      "embedding_ready": true,
+      "source_date": "2026",
+      "temporal_label": "verified corpus status as of August 2026",
+      "text": "Puerto Williams has strategic Antarctic gateway context in Chilean policy and regional planning. In the verified corpus as of August 2026, this gateway status does not establish a current direct regular commercial Antarctic flight or fly-cruise product from Puerto Williams.",
+      "fact_scope": ["antarctic_gateway_policy", "commercial_service_scope"],
+      "source_records": ["data/verification/puerto-williams-antarctic-air-claim-2026-08-23.json"],
+      "qa_review": "passed_batch_03"
+    },
+    {
+      "chunk_id": "pw-dientes-safety-008",
+      "entity_id": "dientes_de_navarino",
+      "class": "dated_context",
+      "embedding_ready": true,
+      "source_date": "2026",
+      "temporal_label": "public-safety context verified in 2024-2026 sources",
+      "text": "Dientes de Navarino is documented in current public-safety sources as a high technical difficulty mountain route. Operational conditions, weather and registration requirements are dynamic and must be revalidated before travel advice is given.",
+      "fact_scope": ["trail_identity", "difficulty_context", "safety_scope"],
+      "source_records": ["data/verification/batch-03-trails-current-chile-2026-08-24.json"],
+      "qa_review": "passed_batch_03",
+      "live_revalidation_fields": ["trail_condition", "weather", "registration_requirements", "closures"]
+    },
+    {
+      "chunk_id": "pw-health-009",
+      "entity_id": "puerto_williams",
+      "class": "stable_semantic",
+      "embedding_ready": true,
+      "text": "Puerto Williams has the Hospital Comunitario Cristina Calderon as part of its public health infrastructure. The existence of the hospital does not prove permanent specialist coverage, immediate ambulance availability or guaranteed aeromedical evacuation capacity.",
+      "fact_scope": ["hospital_identity", "capacity_safeguard"],
+      "source_records": ["data/verification/batch-03-puerto-williams-health-emergency-2026-08-24.json"],
+      "qa_review": "passed_batch_03",
+      "live_revalidation_fields": ["specialist_availability", "ambulance_availability", "medevac_availability"]
+    },
+    {
+      "chunk_id": "pw-water-010",
+      "entity_id": "puerto_williams",
+      "class": "stable_semantic",
+      "embedding_ready": true,
+      "text": "The Rio Robalo catchment is part of Puerto Williams potable-water infrastructure. This stable infrastructure fact does not establish current water quality, pressure or absence of service interruptions at a specific time.",
+      "fact_scope": ["water_source_infrastructure"],
+      "source_records": ["data/verification/batch-03-puerto-williams-urban-services-water-waste-2026-08-24.json"],
+      "qa_review": "passed_batch_03",
+      "live_revalidation_fields": ["water_quality_now", "service_interruption", "pressure"]
+    },
+    {
+      "chunk_id": "pw-sanitation-plan-011",
+      "entity_id": "puerto_williams",
+      "class": "planned_or_under_construction",
+      "embedding_ready": true,
+      "status": "planned_or_under_development",
+      "source_date": "2026",
+      "text": "A 2026 sanitation master-plan context exists for Puerto Williams. It must remain represented as planned or under development and must not be converted into a claim that all proposed sanitation improvements are already completed.",
+      "fact_scope": ["sanitation_planning"],
+      "source_records": ["data/verification/batch-03-puerto-williams-urban-services-water-waste-2026-08-24.json"],
+      "prohibited_inference": "planned sanitation improvements are already completed",
+      "qa_review": "passed_batch_03"
+    },
+    {
+      "chunk_id": "pw-dynamic-schedules-012",
+      "entity_id": "puerto_williams",
+      "class": "dynamic_revalidatable",
+      "embedding_ready": false,
+      "text": "Current flight schedules, ferry departures, fares and booking availability are dynamic operational data.",
+      "fact_scope": ["transport_operations"],
+      "route_to": ["verification_layer", "live_tool", "connectivity_observatory"],
+      "exclusion_reason": "Would become stale and could cause incorrect travel advice."
+    },
+    {
+      "chunk_id": "pw-dynamic-services-013",
+      "entity_id": "puerto_williams",
+      "class": "dynamic_revalidatable",
+      "embedding_ready": false,
+      "text": "Fuel stock, banking hours or cash availability, telecom outages, water interruptions and current specialist or emergency availability are dynamic service-state data.",
+      "fact_scope": ["live_service_state"],
+      "route_to": ["verification_layer", "live_tool"],
+      "exclusion_reason": "Infrastructure existence is not equivalent to present service availability."
+    },
+    {
+      "chunk_id": "pw-geometry-014",
+      "entity_id": "puerto_williams",
+      "class": "geometry_pending",
+      "embedding_ready": true,
+      "geometry_use_allowed": false,
+      "text": "Puerto Williams is located on Isla Navarino on the Beagle Channel. Canonical coordinates or geometry remain pending authoritative geospatial provenance and must not be inferred from tourism-map positions.",
+      "fact_scope": ["textual_geographic_context"],
+      "source_records": ["data/entities/puerto-williams-canonical-entity.json"],
+      "qa_review": "passed_batch_03"
+    }
+  ],
+  "summary": {
+    "total_chunks": 14,
+    "embedding_ready": 12,
+    "excluded_dynamic": 2,
+    "geometry_use_blocked": 1
+  },
+  "release_gate": "This manifest is a golden-corpus seed, not proof that a production vector index has been created."
+}
