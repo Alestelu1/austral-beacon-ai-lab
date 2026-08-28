@@ -1,11 +1,27 @@
 import { resolve } from "node:path";
 import routeData from "../../data/routes/santiago-puerto-williams.json" with { type: "json" };
-import type { DestinationCardAnswer, RouteRecord, TravelAnswer } from "../domain/types.js";
+import puntaArenasRouteData from "../../data/routes/punta-arenas-puerto-williams.json" with { type: "json" };
+import pwCaboRelationshipData from "../../data/relationships/puerto-williams-cabo-de-hornos.json" with { type: "json" };
+import antarcticAccessData from "../../data/relationships/antarctica-access-from-chile.json" with { type: "json" };
+import type {
+  AntarcticAccessAnswer,
+  AntarcticAccessRecord,
+  DestinationCardAnswer,
+  PlaceRelationshipRecord,
+  RelationshipAnswer,
+  RouteRecord,
+  TravelAnswer
+} from "../domain/types.js";
 import { normalize } from "../domain/normalize.js";
 import { LocalJsonDestinationCardRepository } from "../adapters/LocalJsonDestinationCardRepository.js";
 import { getDestinationCard } from "./getDestinationCard.js";
+import { answerPlaceRelationship } from "./answerPlaceRelationship.js";
+import { answerAntarcticAccess } from "./answerAntarcticAccess.js";
 
 const route = routeData as RouteRecord;
+const puntaArenasRoute = puntaArenasRouteData as RouteRecord;
+const pwCaboRelationship = pwCaboRelationshipData as PlaceRelationshipRecord;
+const antarcticAccess = antarcticAccessData as AntarcticAccessRecord;
 
 // Singleton: se instancia una vez al cargar el módulo
 const destinationRepository = new LocalJsonDestinationCardRepository(
@@ -57,29 +73,130 @@ function extractDestinationName(normalized: string): string | null {
 
 // --- Detección de conectividad (existente) ---
 
+const TRAVEL_TERMS = [
+  "llegar", "viajar", "ir", "ruta", "conexion", "como llegar",
+  "how to get", "how do i get", "how can i get", "travel", "route",
+  "reach", "ways to reach", "get to", "get from",
+];
+
+function mentionsTravelIntent(normalized: string): boolean {
+  return TRAVEL_TERMS.some((term) => normalized.includes(term));
+}
+
 function isSupportedConnectivityQuestion(normalized: string): boolean {
   const mentionsOrigin = normalized.includes("santiago");
   const mentionsDestination = normalized.includes("puerto williams");
-  const mentionsTravel = ["llegar", "viajar", "ir", "ruta", "conexion", "como llegar", "how to get", "travel", "route"].some((term) => normalized.includes(term));
 
-  return mentionsOrigin && mentionsDestination && mentionsTravel;
+  return mentionsOrigin && mentionsDestination && mentionsTravelIntent(normalized);
 }
 
-export function answerTravelQuestion(question: string): TravelAnswer | DestinationCardAnswer {
+/**
+ * Recognizes the Punta Arenas -> Puerto Williams connectivity question,
+ * kept distinct from the Santiago -> Puerto Williams route.
+ *
+ * Gated on NOT mentioning Santiago so a Santiago query (which names Punta Arenas
+ * as a waypoint) keeps its own route and identity.
+ */
+function isSupportedPuntaArenasConnectivityQuestion(normalized: string): boolean {
+  const mentionsPuntaArenas = normalized.includes("punta arenas");
+  const mentionsDestination = normalized.includes("puerto williams");
+  const mentionsSantiago = normalized.includes("santiago");
+
+  return mentionsPuntaArenas && mentionsDestination && !mentionsSantiago && mentionsTravelIntent(normalized);
+}
+
+function toConnectivityAnswer(source: RouteRecord): TravelAnswer {
+  return {
+    status: "supported",
+    intent: "connectivity",
+    summary: source.summary,
+    stages: source.stages,
+    warnings: source.warnings,
+    sources: source.sources,
+    recommendedPage: source.recommendedPage,
+    verifiedAt: source.verifiedAt
+  };
+}
+
+// --- Detección de acceso a la Antártica desde Chile ---
+
+/**
+ * Recognizes a question about how to access Antarctica from Chile (or from
+ * Punta Arenas / Puerto Williams). Matches when Antarctica is named together
+ * with an access/travel intent or a "can I reach / se puede llegar" phrasing.
+ */
+function isAntarcticAccessQuestion(normalized: string): boolean {
+  const mentionsAntarctica =
+    normalized.includes("antartica") || normalized.includes("antarctica") || normalized.includes("antartida");
+
+  if (!mentionsAntarctica) return false;
+
+  const accessPhrases = [
+    "se puede llegar",
+    "se puede viajar",
+    "can i reach",
+    "can i get",
+    "can we reach",
+    "how do i get",
+    "how can i travel",
+    "how do i travel",
+    "reach",
+    "get to"
+  ];
+
+  const hasAccessPhrase = accessPhrases.some((phrase) => normalized.includes(phrase));
+
+  return hasAccessPhrase || mentionsTravelIntent(normalized);
+}
+
+// --- Detección de relación entre lugares (Puerto Williams / Cabo de Hornos) ---
+
+/**
+ * Recognizes a question about the relationship between Puerto Williams and
+ * Cabo de Hornos / Cape Horn (administrative and geographic), as opposed to a
+ * travel/connectivity question. Matches when both places are named and the
+ * question is not a connectivity query.
+ */
+function isPuertoWilliamsCaboRelationshipQuestion(normalized: string): boolean {
+  const mentionsPuertoWilliams = normalized.includes("puerto williams");
+  const mentionsCabo =
+    normalized.includes("cabo de hornos") ||
+    normalized.includes("cape horn") ||
+    normalized.includes("isla hornos") ||
+    normalized.includes("cabo hornos");
+
+  if (!mentionsPuertoWilliams || !mentionsCabo) return false;
+
+  // A travel/connectivity question is handled by the connectivity path, not here.
+  if (mentionsTravelIntent(normalized)) return false;
+
+  return true;
+}
+
+export function answerTravelQuestion(
+  question: string
+): TravelAnswer | DestinationCardAnswer | RelationshipAnswer | AntarcticAccessAnswer {
   const normalized = normalize(question);
 
-  // 1. Prioridad: connectivity
+  // 0. Prioridad máxima: acceso a la Antártica desde Chile
+  //    (evita que "desde Punta Arenas/Puerto Williams" se enrute como conectividad local)
+  if (isAntarcticAccessQuestion(normalized)) {
+    return answerAntarcticAccess(antarcticAccess);
+  }
+
+  // 1. Prioridad: connectivity (Santiago -> Puerto Williams)
   if (isSupportedConnectivityQuestion(normalized)) {
-    return {
-      status: "supported",
-      intent: "connectivity",
-      summary: route.summary,
-      stages: route.stages,
-      warnings: route.warnings,
-      sources: route.sources,
-      recommendedPage: route.recommendedPage,
-      verifiedAt: route.verifiedAt
-    };
+    return toConnectivityAnswer(route);
+  }
+
+  // 1b. Connectivity (Punta Arenas -> Puerto Williams), distinct from Santiago
+  if (isSupportedPuntaArenasConnectivityQuestion(normalized)) {
+    return toConnectivityAnswer(puntaArenasRoute);
+  }
+
+  // 1c. Relationship (Puerto Williams / Cabo de Hornos), before destination-info
+  if (isPuertoWilliamsCaboRelationshipQuestion(normalized)) {
+    return answerPlaceRelationship(pwCaboRelationship);
   }
 
   // 2. destination-info (dos pasos)

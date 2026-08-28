@@ -1,0 +1,45 @@
+{
+  "id": "punta-arenas-puerto-williams",
+  "origin": "Punta Arenas",
+  "destination": "Puerto Williams",
+  "summary": "Punta Arenas es el principal punto de enlace dentro de Chile hacia Puerto Williams, en Isla Navarino. Existe una ruta aérea publicada por Aerovías DAP y una ruta marítima publicada por TABSA entre ambas capitales territoriales. La identidad de estas rutas es estable, pero los horarios, frecuencias, tarifas y disponibilidad son operativos y deben verificarse con cada operador antes de viajar.",
+  "stages": [
+    {
+      "from": "Punta Arenas",
+      "to": "Puerto Williams",
+      "mode": "air",
+      "stability": "dynamic",
+      "note": "Aerovías DAP publica Punta Arenas–Puerto Williams como ruta aérea regular. Una ruta publicada no garantiza disponibilidad en una fecha concreta: los horarios, frecuencias y cupos deben confirmarse directamente con el operador antes del viaje."
+    },
+    {
+      "from": "Punta Arenas",
+      "to": "Puerto Williams",
+      "mode": "sea",
+      "stability": "dynamic",
+      "note": "TABSA publica la ruta marítima Punta Arenas–Puerto Williams, con una navegación aproximada de 32 horas entre ambas capitales territoriales. La duración aproximada no equivale a tiempo garantizado y los itinerarios pueden variar por marea, clima y programación; confirma horario y disponibilidad con el operador antes del viaje."
+    }
+  ],
+  "warnings": [
+    "No se deben asumir horarios, precios, frecuencias ni cupos vigentes a partir de esta ficha.",
+    "La existencia de una ruta publicada por un operador no equivale a disponibilidad para una fecha concreta: confirma cada tramo con el operador correspondiente (Aerovías DAP para el tramo aéreo, TABSA para el tramo marítimo).",
+    "La disponibilidad de servicios aéreos y marítimos entre Punta Arenas y Puerto Williams puede variar por temporada, programación del operador y condiciones meteorológicas del extremo austral."
+  ],
+  "sources": [
+    {
+      "title": "Aerovías DAP — Vuelos regulares (ruta Punta Arenas–Puerto Williams)",
+      "publisher": "Aerovías DAP",
+      "url": "https://dapairline.com/vuelos-regulares/",
+      "verifiedAt": "2026-08-24",
+      "status": "verified"
+    },
+    {
+      "title": "TABSA — Ruta Punta Arenas–Puerto Williams",
+      "publisher": "Transbordadora Austral Broom (TABSA)",
+      "url": "https://www.tabsa.cl/rutas/parenas-pwilliams/",
+      "verifiedAt": "2026-08-24",
+      "status": "verified"
+    }
+  ],
+  "recommendedPage": "/puerto-williams-travel-guide.html",
+  "verifiedAt": "2026-08-24"
+}
