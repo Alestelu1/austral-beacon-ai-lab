@@ -36,7 +36,7 @@ export async function answerKnowledgeQuestion(
       return {
         status: "live_verification_required",
         route: "live_verification",
-        summary: "Esta consulta requiere verificación actual antes de responder; no se usó el corpus embebido como fuente operativa.",
+        summary: "Esta consulta depende de información que cambia día a día (horarios, salidas, disponibilidad o estado actual), por lo que debe confirmarse con la fuente oficial correspondiente antes de viajar. No entregamos este dato desde información almacenada, para no dar una respuesta desactualizada.",
         hits: [],
         routingReason: result.routing.reason,
         matchedSignals: result.routing.matchedSignals,
@@ -64,7 +64,7 @@ export async function answerKnowledgeQuestion(
     return {
       status: "live_not_verified",
       route: "live_verification",
-      summary: "No se encontró evidencia oficial suficientemente reciente y explícita para confirmar el estado operativo solicitado.",
+      summary: "No pudimos confirmar el estado actual con una fuente oficial reciente, así que no afirmamos que esté disponible ni operativo en este momento. Se trata de información que cambia con frecuencia y debe verificarse directamente con la fuente oficial correspondiente antes de viajar.",
       hits: [],
       routingReason: result.routing.reason,
       matchedSignals: result.routing.matchedSignals,
@@ -77,7 +77,7 @@ export async function answerKnowledgeQuestion(
     return {
       status: "no_evidence",
       route: "stable_rag",
-      summary: "El corpus estable no contiene evidencia suficiente para responder esta consulta.",
+      summary: "Todavía no tenemos información verificada para responder esta consulta. Preferimos indicarlo antes que ofrecer una respuesta sin respaldo.",
       hits: [],
       routingReason: result.routing.reason,
       matchedSignals: result.routing.matchedSignals,
@@ -89,7 +89,7 @@ export async function answerKnowledgeQuestion(
   return {
     status: "retrieved",
     route: "stable_rag",
-    summary: "Se recuperó evidencia estable del corpus auditado. La generación de una respuesta final debe conservar el alcance y las salvaguardas de los chunks recuperados.",
+    summary: "Encontramos información verificada relacionada con tu consulta. Los datos que cambian con frecuencia (horarios, tarifas o disponibilidad) deben confirmarse siempre con la fuente oficial correspondiente antes de viajar.",
     hits: result.hits,
     routingReason: result.routing.reason,
     matchedSignals: result.routing.matchedSignals,

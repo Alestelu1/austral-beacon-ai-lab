@@ -50,7 +50,7 @@
   "warnings": [
     "El estatus de gateway (puerta de entrada) es un contexto de política y no equivale a un servicio comercial en operación.",
     "Un producto publicado por un operador no equivale a una operación verificada de forma independiente ni a disponibilidad para una fecha concreta: horarios, salidas, frecuencias, precios y cupos son dinámicos y deben confirmarse con el operador de primera parte antes de viajar.",
-    "La verificación de una fuente (source_verified) confirma que el operador publica el producto, no que la operación esté verificada de forma independiente (operation_independently_verified).",
+    "Que una fuente esté verificada significa que el operador publica ese producto; no confirma por sí sola que la operación esté comprobada de forma independiente ni que exista una salida disponible en una fecha concreta.",
     "Las operaciones aéreas estatales o científicas (FACh/INACH) no son un servicio de pasajeros ni una ruta turística pública.",
     "La infraestructura planificada o en construcción no debe interpretarse como infraestructura operativa ni como un servicio disponible.",
     "No se dispone de evidencia verificada de vuelos comerciales regulares directos desde Puerto Williams hacia la Antártica; los productos comerciales antárticos documentados en fuentes de primera parte se publican/ofrecen desde Punta Arenas."

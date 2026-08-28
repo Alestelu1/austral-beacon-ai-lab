@@ -74,7 +74,8 @@ function extractDestinationName(normalized: string): string | null {
 // --- Detección de conectividad (existente) ---
 
 const TRAVEL_TERMS = [
-  "llegar", "viajar", "ir", "ruta", "conexion", "como llegar",
+  "llegar", "llegar a", "llego", "viajar", "viajar a", "viajo", "ir", "ir a",
+  "ruta", "conexion", "como llegar",
   "how to get", "how do i get", "how can i get", "travel", "route",
   "reach", "ways to reach", "get to", "get from",
 ];

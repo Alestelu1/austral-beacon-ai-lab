@@ -59,14 +59,50 @@ export type UnifiedTravelAnswer =
  *   as a "knowledge" answer that keeps its live status explicit. Dynamic
  *   operational questions are NEVER relabelled as stable authoritative answers.
  */
+/**
+ * Derives user-facing warnings for a Knowledge-Layer answer from the data the
+ * answer already carries. For live-verification routes it adds a time-sensitive
+ * caveat and, when the verification plan lists registered official sources,
+ * names those producers so the traveler knows where to confirm. It never
+ * invents an official source: producer names come only from
+ * `verificationPlans` entries that are `source_check_required`.
+ */
+function deriveKnowledgeWarnings(knowledge: KnowledgeAnswer): string[] {
+  const warnings: string[] = [];
+
+  if (knowledge.route === "live_verification") {
+    warnings.push(
+      "Esta información es sensible al tiempo (horarios, salidas, disponibilidad o estado actual) y debe confirmarse directamente con la fuente oficial correspondiente antes de viajar."
+    );
+
+    const officialProducers = Array.from(
+      new Set(
+        knowledge.verificationPlans
+          .filter((plan) => plan.status === "source_check_required")
+          .flatMap((plan) => plan.sources.map((source) => source.producer))
+      )
+    );
+
+    if (officialProducers.length > 0) {
+      warnings.push(`Fuentes oficiales sugeridas para verificar: ${officialProducers.join("; ")}.`);
+    }
+  } else if (knowledge.status === "retrieved") {
+    warnings.push(
+      "Los datos que cambian con frecuencia (horarios, tarifas, cupos o disponibilidad) deben confirmarse con la fuente oficial o el operador correspondiente antes de viajar."
+    );
+  }
+
+  return warnings;
+}
+
 function mapKnowledgeAnswer(knowledge: KnowledgeAnswer): UnifiedTravelAnswer {
   if (knowledge.route === "stable_rag" && knowledge.status === "no_evidence") {
     return {
       status: "unsupported",
       intent: "unknown",
-      summary: "La base local todavía no contiene evidencia suficiente para responder esta consulta.",
+      summary: knowledge.summary,
       stages: [],
-      warnings: ["No se generó una respuesta especulativa."],
+      warnings: [],
       sources: []
     };
   }
@@ -79,7 +115,7 @@ function mapKnowledgeAnswer(knowledge: KnowledgeAnswer): UnifiedTravelAnswer {
     route: knowledge.route,
     knowledgeStatus: knowledge.status,
     summary: knowledge.summary,
-    warnings: [],
+    warnings: deriveKnowledgeWarnings(knowledge),
     matchedSignals: knowledge.matchedSignals
   };
 }
