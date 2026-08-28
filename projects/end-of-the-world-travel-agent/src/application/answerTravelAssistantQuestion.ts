@@ -1,4 +1,9 @@
-import type { DestinationCardAnswer, RelationshipAnswer, TravelAnswer } from "../domain/types.js";
+import type {
+  AntarcticAccessAnswer,
+  DestinationCardAnswer,
+  RelationshipAnswer,
+  TravelAnswer
+} from "../domain/types.js";
 import { answerTravelQuestion } from "./answerTravelQuestion.js";
 import { answerKnowledgeQuestion, type KnowledgeAnswer } from "./answerKnowledgeQuestion.js";
 import { RoutedRetrievalService } from "../retrieval/RoutedRetrievalService.js";
@@ -7,7 +12,7 @@ import type { LiveVerificationExecutor } from "../live/LiveVerificationExecutor.
 export type TravelAssistantAnswer =
   | {
       kind: "deterministic_travel";
-      answer: TravelAnswer | DestinationCardAnswer | RelationshipAnswer;
+      answer: TravelAnswer | DestinationCardAnswer | RelationshipAnswer | AntarcticAccessAnswer;
     }
   | {
       kind: "knowledge";

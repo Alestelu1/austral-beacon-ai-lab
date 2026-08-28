@@ -29,7 +29,11 @@ describe("answerTravelQuestion — destination-info with covered destinations", 
     const answer = answerTravelQuestion("¿Qué es Puerto Williams?");
 
     expect(answer.intent).toBe("destination-info");
-    if (!("suggestedInternalLinks" in answer) || "distinctReferents" in answer) {
+    if (
+      !("suggestedInternalLinks" in answer) ||
+      "distinctReferents" in answer ||
+      "pathways" in answer
+    ) {
       throw new Error("Expected DestinationCardAnswer");
     }
     expect(answer.status).toBe("supported");
@@ -42,7 +46,11 @@ describe("answerTravelQuestion — destination-info with covered destinations", 
     const answer = answerTravelQuestion("Cuéntame sobre Punta Arenas");
 
     expect(answer.intent).toBe("destination-info");
-    if (!("suggestedInternalLinks" in answer) || "distinctReferents" in answer) {
+    if (
+      !("suggestedInternalLinks" in answer) ||
+      "distinctReferents" in answer ||
+      "pathways" in answer
+    ) {
       throw new Error("Expected DestinationCardAnswer");
     }
     expect(answer.status).toBe("supported");
@@ -55,7 +63,11 @@ describe("answerTravelQuestion — destination-info with covered destinations", 
     const answer = answerTravelQuestion("Información de Cabo de Hornos");
 
     expect(answer.intent).toBe("destination-info");
-    if (!("suggestedInternalLinks" in answer) || "distinctReferents" in answer) {
+    if (
+      !("suggestedInternalLinks" in answer) ||
+      "distinctReferents" in answer ||
+      "pathways" in answer
+    ) {
       throw new Error("Expected DestinationCardAnswer");
     }
     expect(answer.status).toBe("supported");
@@ -69,7 +81,11 @@ describe("answerTravelQuestion — destination-info case/accent variations", () 
     const answer = answerTravelQuestion("HABLAME DE PUERTO WILLIAMS");
 
     expect(answer.intent).toBe("destination-info");
-    if (!("suggestedInternalLinks" in answer) || "distinctReferents" in answer) {
+    if (
+      !("suggestedInternalLinks" in answer) ||
+      "distinctReferents" in answer ||
+      "pathways" in answer
+    ) {
       throw new Error("Expected DestinationCardAnswer");
     }
     expect(answer.status).toBe("supported");
@@ -80,7 +96,11 @@ describe("answerTravelQuestion — destination-info case/accent variations", () 
     const answer = answerTravelQuestion("Donde esta Punta Arenas");
 
     expect(answer.intent).toBe("destination-info");
-    if (!("suggestedInternalLinks" in answer) || "distinctReferents" in answer) {
+    if (
+      !("suggestedInternalLinks" in answer) ||
+      "distinctReferents" in answer ||
+      "pathways" in answer
+    ) {
       throw new Error("Expected DestinationCardAnswer");
     }
     expect(answer.status).toBe("supported");
@@ -93,7 +113,11 @@ describe("answerTravelQuestion — destination-info uncovered destination", () =
     const answer = answerTravelQuestion("¿Qué es Ushuaia?");
 
     expect(answer.intent).toBe("destination-info");
-    if (!("suggestedInternalLinks" in answer) || "distinctReferents" in answer) {
+    if (
+      !("suggestedInternalLinks" in answer) ||
+      "distinctReferents" in answer ||
+      "pathways" in answer
+    ) {
       throw new Error("Expected DestinationCardAnswer");
     }
     expect(answer.status).toBe("unsupported");

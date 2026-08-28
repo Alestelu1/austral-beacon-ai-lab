@@ -2,7 +2,10 @@ import { resolve } from "node:path";
 import routeData from "../../data/routes/santiago-puerto-williams.json" with { type: "json" };
 import puntaArenasRouteData from "../../data/routes/punta-arenas-puerto-williams.json" with { type: "json" };
 import pwCaboRelationshipData from "../../data/relationships/puerto-williams-cabo-de-hornos.json" with { type: "json" };
+import antarcticAccessData from "../../data/relationships/antarctica-access-from-chile.json" with { type: "json" };
 import type {
+  AntarcticAccessAnswer,
+  AntarcticAccessRecord,
   DestinationCardAnswer,
   PlaceRelationshipRecord,
   RelationshipAnswer,
@@ -13,10 +16,12 @@ import { normalize } from "../domain/normalize.js";
 import { LocalJsonDestinationCardRepository } from "../adapters/LocalJsonDestinationCardRepository.js";
 import { getDestinationCard } from "./getDestinationCard.js";
 import { answerPlaceRelationship } from "./answerPlaceRelationship.js";
+import { answerAntarcticAccess } from "./answerAntarcticAccess.js";
 
 const route = routeData as RouteRecord;
 const puntaArenasRoute = puntaArenasRouteData as RouteRecord;
 const pwCaboRelationship = pwCaboRelationshipData as PlaceRelationshipRecord;
+const antarcticAccess = antarcticAccessData as AntarcticAccessRecord;
 
 // Singleton: se instancia una vez al cargar el módulo
 const destinationRepository = new LocalJsonDestinationCardRepository(
@@ -113,6 +118,37 @@ function toConnectivityAnswer(source: RouteRecord): TravelAnswer {
   };
 }
 
+// --- Detección de acceso a la Antártica desde Chile ---
+
+/**
+ * Recognizes a question about how to access Antarctica from Chile (or from
+ * Punta Arenas / Puerto Williams). Matches when Antarctica is named together
+ * with an access/travel intent or a "can I reach / se puede llegar" phrasing.
+ */
+function isAntarcticAccessQuestion(normalized: string): boolean {
+  const mentionsAntarctica =
+    normalized.includes("antartica") || normalized.includes("antarctica") || normalized.includes("antartida");
+
+  if (!mentionsAntarctica) return false;
+
+  const accessPhrases = [
+    "se puede llegar",
+    "se puede viajar",
+    "can i reach",
+    "can i get",
+    "can we reach",
+    "how do i get",
+    "how can i travel",
+    "how do i travel",
+    "reach",
+    "get to"
+  ];
+
+  const hasAccessPhrase = accessPhrases.some((phrase) => normalized.includes(phrase));
+
+  return hasAccessPhrase || mentionsTravelIntent(normalized);
+}
+
 // --- Detección de relación entre lugares (Puerto Williams / Cabo de Hornos) ---
 
 /**
@@ -139,8 +175,14 @@ function isPuertoWilliamsCaboRelationshipQuestion(normalized: string): boolean {
 
 export function answerTravelQuestion(
   question: string
-): TravelAnswer | DestinationCardAnswer | RelationshipAnswer {
+): TravelAnswer | DestinationCardAnswer | RelationshipAnswer | AntarcticAccessAnswer {
   const normalized = normalize(question);
+
+  // 0. Prioridad máxima: acceso a la Antártica desde Chile
+  //    (evita que "desde Punta Arenas/Puerto Williams" se enrute como conectividad local)
+  if (isAntarcticAccessQuestion(normalized)) {
+    return answerAntarcticAccess(antarcticAccess);
+  }
 
   // 1. Prioridad: connectivity (Santiago -> Puerto Williams)
   if (isSupportedConnectivityQuestion(normalized)) {

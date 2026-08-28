@@ -1,6 +1,15 @@
-import type { DestinationCardAnswer, RelationshipAnswer, TravelAnswer } from "../domain/types.js";
+import type {
+  AntarcticAccessAnswer,
+  DestinationCardAnswer,
+  RelationshipAnswer,
+  TravelAnswer
+} from "../domain/types.js";
 
-type AnyAnswer = TravelAnswer | DestinationCardAnswer | RelationshipAnswer;
+type AnyAnswer = TravelAnswer | DestinationCardAnswer | RelationshipAnswer | AntarcticAccessAnswer;
+
+function isAntarcticAccessAnswer(answer: AnyAnswer): answer is AntarcticAccessAnswer {
+  return answer.intent === "antarctic-access";
+}
 
 function isRelationshipAnswer(answer: AnyAnswer): answer is RelationshipAnswer {
   return answer.intent === "relationship";
@@ -159,6 +168,63 @@ function formatRelationshipSupported(answer: RelationshipAnswer): string {
   return lines.join("\n");
 }
 
+function formatAntarcticAccessSupported(answer: AntarcticAccessAnswer): string {
+  const categoryLabel: Record<string, string> = {
+    "gateway-policy": "Contexto de política / gateway",
+    "commercial-product": "Producto comercial publicado",
+    "state-science": "Capacidad estatal o científica (no turística)",
+    "planned-infrastructure": "Infraestructura planificada (no operativa)"
+  };
+
+  const lines: string[] = [];
+
+  lines.push("━━━ Acceso a la Antártica desde Chile ━━━");
+  lines.push("");
+  lines.push(`Resumen: ${answer.summary}`);
+
+  if (answer.pathways.length > 0) {
+    lines.push("");
+    lines.push("Vías de acceso (por categoría de evidencia):");
+    for (const pathway of answer.pathways) {
+      const label = categoryLabel[pathway.category] ?? pathway.category;
+      lines.push(`  • [${label}] ${pathway.title} — origen: ${pathway.origin}`);
+      lines.push(`     ${pathway.description}`);
+    }
+  }
+
+  lines.push("");
+  lines.push("Aclaración sobre Puerto Williams:");
+  lines.push(`  ${answer.puertoWilliamsClarification}`);
+
+  if (answer.warnings.length > 0) {
+    lines.push("");
+    lines.push("Advertencias:");
+    for (const warning of answer.warnings) {
+      lines.push(`  • ${warning}`);
+    }
+  }
+
+  if (answer.sources.length > 0) {
+    lines.push("");
+    lines.push("Fuentes:");
+    for (let i = 0; i < answer.sources.length; i++) {
+      const source = answer.sources[i]!;
+      lines.push(`  ${i + 1}. ${source.title}`);
+      lines.push(`     Editor: ${source.publisher}`);
+      lines.push(`     URL: ${source.url}`);
+      lines.push(`     Verificado: ${source.verifiedAt}`);
+    }
+  }
+
+  lines.push("");
+  lines.push(`Confianza: ${answer.confidence}`);
+  if (answer.verifiedAt) {
+    lines.push(`Verificado: ${answer.verifiedAt}`);
+  }
+
+  return lines.join("\n");
+}
+
 function formatUnsupported(answer: AnyAnswer): string {
   if (isDestinationCardAnswer(answer)) {
     return "⚠ El destino consultado no está disponible en la base local.";
@@ -169,6 +235,10 @@ function formatUnsupported(answer: AnyAnswer): string {
 export function formatAnswer(answer: AnyAnswer): string {
   if (answer.status === "unsupported") {
     return formatUnsupported(answer);
+  }
+
+  if (isAntarcticAccessAnswer(answer)) {
+    return formatAntarcticAccessSupported(answer);
   }
 
   if (isRelationshipAnswer(answer)) {

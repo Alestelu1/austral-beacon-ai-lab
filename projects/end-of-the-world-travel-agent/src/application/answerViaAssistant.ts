@@ -1,5 +1,10 @@
 import corpus from "../../../../data/retrieval/golden-corpus-puerto-williams-v1.json" with { type: "json" };
-import type { DestinationCardAnswer, RelationshipAnswer, TravelAnswer } from "../domain/types.js";
+import type {
+  AntarcticAccessAnswer,
+  DestinationCardAnswer,
+  RelationshipAnswer,
+  TravelAnswer
+} from "../domain/types.js";
 import { GoldenCorpusRetriever, type GoldenCorpus } from "../retrieval/GoldenCorpusRetriever.js";
 import { RoutedRetrievalService } from "../retrieval/RoutedRetrievalService.js";
 import { DefaultLiveVerificationExecutor } from "../live/LiveVerificationExecutor.js";
@@ -41,6 +46,7 @@ export type UnifiedTravelAnswer =
   | TravelAnswer
   | DestinationCardAnswer
   | RelationshipAnswer
+  | AntarcticAccessAnswer
   | KnowledgeUiAnswer;
 
 /**
