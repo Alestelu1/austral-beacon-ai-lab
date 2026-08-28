@@ -1,5 +1,5 @@
 export type AnswerStatus = "supported" | "unsupported";
-export type TravelIntent = "connectivity" | "destination-info" | "unknown";
+export type TravelIntent = "connectivity" | "destination-info" | "relationship" | "unknown";
 export type Confidence = "high" | "medium" | "none";
 
 export interface RouteStage {
@@ -83,4 +83,52 @@ export interface DestinationCardAnswer {
   suggestedInternalLinks: InternalLink[];
   verifiedAt?: string;
   card?: DestinationCard;
+}
+
+// --- Place relationship types ---
+
+/**
+ * A single named referent that a place name can resolve to.
+ *
+ * Used to keep distinct meanings (commune, cape, island, park, city) explicitly
+ * separated so the assistant never collapses them into one entity.
+ */
+export interface PlaceReferent {
+  kind: "city" | "commune" | "cape" | "island" | "national-park" | "province";
+  name: string;
+  description: string;
+}
+
+/**
+ * A curated, source-backed relationship record between two places.
+ *
+ * Separates the stable administrative relationship and geographic distinction
+ * from dynamic access details, and enumerates the distinct referents of an
+ * ambiguous name to prevent entity collapse.
+ */
+export interface PlaceRelationshipRecord {
+  id: string;
+  subject: string;
+  object: string;
+  administrativeRelation: string;
+  geographicDistinction: string;
+  distinctReferents: PlaceReferent[];
+  warnings: string[];
+  sources: SourceReference[];
+  suggestedInternalLinks: InternalLink[];
+  verifiedAt: string;
+}
+
+export interface RelationshipAnswer {
+  status: AnswerStatus;
+  intent: "relationship";
+  summary: string;
+  administrativeRelation: string;
+  geographicDistinction: string;
+  distinctReferents: PlaceReferent[];
+  confidence: Confidence;
+  warnings: string[];
+  sources: SourceReference[];
+  suggestedInternalLinks: InternalLink[];
+  verifiedAt?: string;
 }

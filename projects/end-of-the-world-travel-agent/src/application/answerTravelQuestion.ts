@@ -1,13 +1,22 @@
 import { resolve } from "node:path";
 import routeData from "../../data/routes/santiago-puerto-williams.json" with { type: "json" };
 import puntaArenasRouteData from "../../data/routes/punta-arenas-puerto-williams.json" with { type: "json" };
-import type { DestinationCardAnswer, RouteRecord, TravelAnswer } from "../domain/types.js";
+import pwCaboRelationshipData from "../../data/relationships/puerto-williams-cabo-de-hornos.json" with { type: "json" };
+import type {
+  DestinationCardAnswer,
+  PlaceRelationshipRecord,
+  RelationshipAnswer,
+  RouteRecord,
+  TravelAnswer
+} from "../domain/types.js";
 import { normalize } from "../domain/normalize.js";
 import { LocalJsonDestinationCardRepository } from "../adapters/LocalJsonDestinationCardRepository.js";
 import { getDestinationCard } from "./getDestinationCard.js";
+import { answerPlaceRelationship } from "./answerPlaceRelationship.js";
 
 const route = routeData as RouteRecord;
 const puntaArenasRoute = puntaArenasRouteData as RouteRecord;
+const pwCaboRelationship = pwCaboRelationshipData as PlaceRelationshipRecord;
 
 // Singleton: se instancia una vez al cargar el módulo
 const destinationRepository = new LocalJsonDestinationCardRepository(
@@ -104,7 +113,33 @@ function toConnectivityAnswer(source: RouteRecord): TravelAnswer {
   };
 }
 
-export function answerTravelQuestion(question: string): TravelAnswer | DestinationCardAnswer {
+// --- Detección de relación entre lugares (Puerto Williams / Cabo de Hornos) ---
+
+/**
+ * Recognizes a question about the relationship between Puerto Williams and
+ * Cabo de Hornos / Cape Horn (administrative and geographic), as opposed to a
+ * travel/connectivity question. Matches when both places are named and the
+ * question is not a connectivity query.
+ */
+function isPuertoWilliamsCaboRelationshipQuestion(normalized: string): boolean {
+  const mentionsPuertoWilliams = normalized.includes("puerto williams");
+  const mentionsCabo =
+    normalized.includes("cabo de hornos") ||
+    normalized.includes("cape horn") ||
+    normalized.includes("isla hornos") ||
+    normalized.includes("cabo hornos");
+
+  if (!mentionsPuertoWilliams || !mentionsCabo) return false;
+
+  // A travel/connectivity question is handled by the connectivity path, not here.
+  if (mentionsTravelIntent(normalized)) return false;
+
+  return true;
+}
+
+export function answerTravelQuestion(
+  question: string
+): TravelAnswer | DestinationCardAnswer | RelationshipAnswer {
   const normalized = normalize(question);
 
   // 1. Prioridad: connectivity (Santiago -> Puerto Williams)
@@ -115,6 +150,11 @@ export function answerTravelQuestion(question: string): TravelAnswer | Destinati
   // 1b. Connectivity (Punta Arenas -> Puerto Williams), distinct from Santiago
   if (isSupportedPuntaArenasConnectivityQuestion(normalized)) {
     return toConnectivityAnswer(puntaArenasRoute);
+  }
+
+  // 1c. Relationship (Puerto Williams / Cabo de Hornos), before destination-info
+  if (isPuertoWilliamsCaboRelationshipQuestion(normalized)) {
+    return answerPlaceRelationship(pwCaboRelationship);
   }
 
   // 2. destination-info (dos pasos)

@@ -1,9 +1,13 @@
-import type { DestinationCardAnswer, TravelAnswer } from "../domain/types.js";
+import type { DestinationCardAnswer, RelationshipAnswer, TravelAnswer } from "../domain/types.js";
 
-function isDestinationCardAnswer(
-  answer: TravelAnswer | DestinationCardAnswer
-): answer is DestinationCardAnswer {
-  return "confidence" in answer;
+type AnyAnswer = TravelAnswer | DestinationCardAnswer | RelationshipAnswer;
+
+function isRelationshipAnswer(answer: AnyAnswer): answer is RelationshipAnswer {
+  return answer.intent === "relationship";
+}
+
+function isDestinationCardAnswer(answer: AnyAnswer): answer is DestinationCardAnswer {
+  return answer.intent === "destination-info";
 }
 
 function formatConnectivitySupported(answer: TravelAnswer): string {
@@ -105,16 +109,70 @@ function formatDestinationInfoSupported(answer: DestinationCardAnswer): string {
   return lines.join("\n");
 }
 
-function formatUnsupported(answer: TravelAnswer | DestinationCardAnswer): string {
+function formatRelationshipSupported(answer: RelationshipAnswer): string {
+  const lines: string[] = [];
+
+  lines.push("━━━ Relación entre lugares ━━━");
+  lines.push("");
+  lines.push("Relación administrativa:");
+  lines.push(`  ${answer.administrativeRelation}`);
+
+  lines.push("");
+  lines.push("Distinción geográfica:");
+  lines.push(`  ${answer.geographicDistinction}`);
+
+  if (answer.distinctReferents.length > 0) {
+    lines.push("");
+    lines.push("Referentes distintos del nombre:");
+    for (const referent of answer.distinctReferents) {
+      lines.push(`  • ${referent.name} [${referent.kind}]`);
+      lines.push(`     ${referent.description}`);
+    }
+  }
+
+  if (answer.warnings.length > 0) {
+    lines.push("");
+    lines.push("Advertencias:");
+    for (const warning of answer.warnings) {
+      lines.push(`  • ${warning}`);
+    }
+  }
+
+  if (answer.sources.length > 0) {
+    lines.push("");
+    lines.push("Fuentes:");
+    for (let i = 0; i < answer.sources.length; i++) {
+      const source = answer.sources[i]!;
+      lines.push(`  ${i + 1}. ${source.title}`);
+      lines.push(`     Editor: ${source.publisher}`);
+      lines.push(`     URL: ${source.url}`);
+      lines.push(`     Verificado: ${source.verifiedAt}`);
+    }
+  }
+
+  lines.push("");
+  lines.push(`Confianza: ${answer.confidence}`);
+  if (answer.verifiedAt) {
+    lines.push(`Verificado: ${answer.verifiedAt}`);
+  }
+
+  return lines.join("\n");
+}
+
+function formatUnsupported(answer: AnyAnswer): string {
   if (isDestinationCardAnswer(answer)) {
     return "⚠ El destino consultado no está disponible en la base local.";
   }
   return "⚠ La base local todavía no contiene evidencia suficiente para responder esta consulta.";
 }
 
-export function formatAnswer(answer: TravelAnswer | DestinationCardAnswer): string {
+export function formatAnswer(answer: AnyAnswer): string {
   if (answer.status === "unsupported") {
     return formatUnsupported(answer);
+  }
+
+  if (isRelationshipAnswer(answer)) {
+    return formatRelationshipSupported(answer);
   }
 
   if (isDestinationCardAnswer(answer)) {
