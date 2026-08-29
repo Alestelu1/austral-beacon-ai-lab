@@ -11,10 +11,12 @@ function createRepository() {
 }
 
 describe("getDestinationCard — fixture loading", () => {
-  it("loads exactly 3 destination cards from data/destinations/", () => {
+  it("loads all destination cards from data/destinations/", () => {
     const repository = createRepository();
     const cards = repository.listAll();
-    expect(cards).toHaveLength(3);
+    expect(cards).toHaveLength(4);
+    const ids = cards.map((c) => c.id).sort();
+    expect(ids).toEqual(["cabo-de-hornos", "puerto-toro", "puerto-williams", "punta-arenas"]);
   });
 });
 

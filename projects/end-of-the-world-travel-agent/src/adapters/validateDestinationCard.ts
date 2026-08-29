@@ -59,9 +59,11 @@ export function validateDestinationCard(raw: unknown): ValidationResult {
     }
   }
 
-  // coordinates
+  // coordinates (optional; when present it must be a valid object with in-range values).
+  // Some entities intentionally omit coordinates when the authoritative point is pending;
+  // geometry is never fabricated.
   if (!("coordinates" in raw)) {
-    errors.push({ path: "coordinates", violation: "missing", message: "Field \"coordinates\" is required" });
+    // Absent coordinates are allowed.
   } else if (!isObject(raw["coordinates"])) {
     errors.push({ path: "coordinates", violation: "type", message: "Field \"coordinates\" must be an object" });
   } else {

@@ -1,0 +1,45 @@
+{
+  "id": "puerto-toro",
+  "name": "Puerto Toro",
+  "region": "Magallanes y de la Antártica Chilena",
+  "comuna": "Cabo de Hornos",
+  "summary": "Puerto Toro es una localidad de la comuna de Cabo de Hornos, en la Provincia Antártica Chilena, ubicada en la Isla Navarino. Es un asentamiento distinto de Puerto Williams y de Puerto Navarino.",
+  "stableData": {
+    "geographicContext": "Se encuentra en la Isla Navarino, en la comuna de Cabo de Hornos, Provincia Antártica Chilena, Región de Magallanes y de la Antártica Chilena. Su punto geográfico autoritativo aún está pendiente de fuente oficial, por lo que esta ficha no incluye coordenadas.",
+    "culturalContext": "Puerto Toro es una localidad aislada del extremo austral de Chile. La base de conocimiento la registra como un asentamiento distinto de Puerto Williams; no debe presentarse como otro nombre de Puerto Williams ni de Puerto Navarino.",
+    "distinction": "Puerto Toro, Puerto Williams y Puerto Navarino son asentamientos o nodos territoriales distintos. Puerto Toro no es Puerto Williams."
+  },
+  "warnings": [
+    "Puerto Toro es una localidad distinta de Puerto Williams y de Puerto Navarino; no debe confundirse ni presentarse como un mismo lugar.",
+    "La conexión marítima documentada entre Puerto Williams y Puerto Toro corresponde a un servicio subsidiado de zona aislada con prioridad para residentes; no es un producto turístico y sus fechas pueden variar. No asumas horarios, frecuencias ni disponibilidad: confírmalos con las instituciones responsables antes de planificar cualquier viaje.",
+    "El punto geográfico autoritativo de Puerto Toro está pendiente de fuente oficial; esta ficha no entrega coordenadas."
+  ],
+  "sources": [
+    {
+      "title": "Reporte Comunal de Cabo de Hornos 2025",
+      "publisher": "Biblioteca del Congreso Nacional de Chile",
+      "url": "https://www.bcn.cl/siit/reportescomunales/comunas_v.html?anno=2025&idcom=12201",
+      "verifiedAt": "2026-08-24",
+      "status": "verified"
+    },
+    {
+      "title": "Delegación Presidencial Provincial de la Antártica Chilena — conectividad marítima Puerto Williams–Puerto Toro",
+      "publisher": "Delegación Presidencial Provincial de la Antártica Chilena",
+      "url": "https://dppantartica.dpp.gob.cl/",
+      "verifiedAt": "2026-08-24",
+      "status": "verified"
+    },
+    {
+      "title": "DIRECTEMAR — habilitación del Terminal Portuario de Transbordadores de Puerto Toro (2025)",
+      "publisher": "Dirección General del Territorio Marítimo y de Marina Mercante (DIRECTEMAR)",
+      "url": "https://www.directemar.cl/",
+      "verifiedAt": "2026-08-24",
+      "status": "verified"
+    }
+  ],
+  "suggestedInternalLinks": [
+    { "path": "/puerto-williams", "label": "Puerto Williams" },
+    { "path": "/cabo-de-hornos", "label": "Cabo de Hornos" }
+  ],
+  "verifiedAt": "2026-08-24"
+}

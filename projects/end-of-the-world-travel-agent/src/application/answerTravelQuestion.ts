@@ -39,11 +39,17 @@ const DESTINATION_INFO_INDICATORS = [
   "sobre",
   "acerca de",
   "describir", "descripcion",
+  // English identity indicators
+  "what is", "what are",
+  "tell me about",
+  "about",
+  "information",
 ];
 
 const KNOWN_DESTINATIONS: Array<{ pattern: string; identifier: string }> = [
   { pattern: "punta arenas", identifier: "punta arenas" },
   { pattern: "puerto williams", identifier: "puerto williams" },
+  { pattern: "puerto toro", identifier: "puerto toro" },
   { pattern: "cabo de hornos", identifier: "cabo de hornos" },
 ];
 

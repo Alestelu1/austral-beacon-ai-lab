@@ -76,7 +76,12 @@ export interface DestinationCard {
   name: string;
   region: string;
   comuna: string;
-  coordinates: GeoCoordinates;
+  /**
+   * Optional. Some entities (e.g. localities whose authoritative point is still
+   * pending) intentionally omit coordinates. When present it must be valid;
+   * geometry is never fabricated.
+   */
+  coordinates?: GeoCoordinates;
   summary: string;
   stableData: StableData;
   warnings: string[];
