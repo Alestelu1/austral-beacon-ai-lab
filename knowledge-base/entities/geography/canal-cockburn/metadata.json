@@ -1,0 +1,21 @@
+{
+  "entity_id": "canal-cockburn",
+  "canonical_name": "Canal Cockburn",
+  "entity_type": "channel",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["travel", "atlas", "science", "editorial", "austral-intelligence"],
+  "requires_citation": true,
+  "requires_human_review": false,
+  "operational_state": false,
+  "rag_priority": "high",
+  "authority": {
+    "primary": "SBAP/SIMBIO",
+    "geospatial_precision": "pending authoritative hydrographic/geospatial source"
+  },
+  "uncertainty_policy": {
+    "general_geography": "public",
+    "navigation_and_conditions": "operational_dynamic",
+    "precise_coordinates": "pending authoritative source"
+  }
+}
