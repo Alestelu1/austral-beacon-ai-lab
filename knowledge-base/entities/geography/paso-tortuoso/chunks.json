@@ -1,0 +1,25 @@
+{
+  "entity_id": "paso-tortuoso",
+  "chunks": [
+    {
+      "id": "paso-tortuoso-stable-geography",
+      "text": "Paso Tortuoso es un sector del Estrecho de Magallanes comprendido entre Punta San Jerónimo y Cabo Quod. DIRECTEMAR indica una extensión total aproximada de 6,3 millas náuticas.",
+      "claim_ids": ["pt-001", "pt-002"],
+      "source_ids": ["directemar-paso-tortuoso"],
+      "topics": ["geography", "paso_tortuoso"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    },
+    {
+      "id": "paso-tortuoso-operational-currents",
+      "text": "DIRECTEMAR describe interacción de corrientes del Canal Jerónimo sobre Paso Tortuoso. Este contenido es operacional y debe verificarse contra información vigente antes de utilizarse para navegación o planificación marítima.",
+      "claim_ids": ["pt-003"],
+      "source_ids": ["directemar-paso-tortuoso"],
+      "topics": ["currents", "navigation", "live_verification"],
+      "sensitivity": "operational_dynamic",
+      "requires_current_verification": true,
+      "embedding_eligible": false,
+      "blocked_consumers": ["travel-agent"]
+    }
+  ]
+}
