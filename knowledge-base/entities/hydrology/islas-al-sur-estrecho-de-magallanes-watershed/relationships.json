@@ -1,0 +1,17 @@
+{
+  "entity_id": "islas-al-sur-estrecho-de-magallanes-watershed",
+  "relationships": [
+    {"target":"isla-santa-ines-y-carlos-iii-watershed","type":"has_subwatershed","status":"verified_candidate","area_ha":748152,"percentage":26.786,"source_id":"sbap-simbio-cuenca-127"},
+    {"target":"islas-sur-santa-ines-oeste-canal-barbara-cockburn-watershed","type":"has_subwatershed","status":"verified_candidate","area_ha":674408,"percentage":24.146,"source_id":"sbap-simbio-cuenca-127"},
+    {"target":"isla-desolacion-y-adyacentes-watershed","type":"has_subwatershed","status":"verified_candidate","area_ha":454978,"percentage":16.289,"source_id":"sbap-simbio-cuenca-127"},
+    {"target":"islas-sur-seno-dyvenor-canal-abra-oeste-santa-ines-watershed","type":"has_subwatershed","status":"verified_candidate","area_ha":344984,"percentage":12.351,"source_id":"sbap-simbio-cuenca-127"},
+    {"target":"islas-clarence-y-adyacentes-watershed","type":"has_subwatershed","status":"verified_candidate","area_ha":228194,"percentage":8.17,"source_id":"sbap-simbio-cuenca-127"},
+    {"target":"isla-capitan-aracena-y-adyacentes-watershed","type":"has_subwatershed","status":"verified_candidate","area_ha":212016,"percentage":7.591,"source_id":"sbap-simbio-cuenca-127"},
+    {"target":"isla-jacques-watershed","type":"has_subwatershed","status":"verified_candidate","area_ha":130348,"percentage":4.667,"source_id":"sbap-simbio-cuenca-127"},
+    {"target":"strait-of-magellan","type":"regional_hydrographic_context","status":"verified_general","sensitivity":"public_core"},
+    {"target":"isla-santa-ines","type":"contains_named_subwatershed_context_for","status":"verified_general","sensitivity":"public_core"},
+    {"target":"isla-clarence","type":"contains_named_subwatershed_context_for","status":"verified_general","sensitivity":"public_core"},
+    {"target":"isla-capitan-aracena","type":"contains_named_subwatershed_context_for","status":"verified_general","sensitivity":"public_core"}
+  ],
+  "relationship_rule": "has_subwatershed expresses hydrological hierarchy only. It must not be interpreted as ecological, administrative, legal, protected-area or navigational containment."
+}
