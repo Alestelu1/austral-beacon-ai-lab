@@ -1,0 +1,7 @@
+{
+  "entity_id": "sur-santa-ines-oeste-canal-barbara-cockburn-watershed",
+  "chunks": [
+    {"id":"bna1274-overview","scope":"public_core","text":"La subcuenca BNA 1274, Islas al sur de Isla Santa Inés y al oeste de Canal Bárbara y Canal Cockburn, pertenece a la cuenca Islas al Sur Estrecho de Magallanes. SBAP/SIMBIO registra 674.408 ha, equivalentes al 24,146% de la cuenca padre."},
+    {"id":"bna1274-hierarchy","scope":"public_core","text":"La subcuenca BNA 1274 se divide en una subsubcuenca homónima abreviada de código BNA 12740 que representa el 100% de su superficie. Los topónimos del nombre oficial describen contexto geográfico y no deben interpretarse como límites administrativos o de protección."}
+  ]
+}
