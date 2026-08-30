@@ -1,0 +1,156 @@
+{
+  "projection_id": "travel-strait-of-magellan-v1",
+  "source_of_truth": "knowledge-base",
+  "consumer": "end-of-the-world-travel-assistant",
+  "geographic_scopes": ["magallanes", "patagonia"],
+  "entity_id": "strait-of-magellan",
+  "canonical_name_es": "Estrecho de Magallanes",
+  "canonical_name_en": "Strait of Magellan",
+  "status": "ready_for_implementation_review",
+  "projection_mode": "stable_public_core_only",
+  "principles": {
+    "no_parallel_canonical_entity": true,
+    "no_direct_projection_from_legacy_atlas": true,
+    "claim_level_provenance_required": true,
+    "operational_information_requires_live_verification": true,
+    "restricted_context_not_publicly_projectable": true,
+    "unknown_or_unsupported_relationships_must_not_be_inferred": true
+  },
+  "allowed_claims": [
+    {
+      "claim_id": "strait-length-330-nm",
+      "use": "stable_geographic_context",
+      "embedding_eligible": true
+    }
+  ],
+  "conditionally_allowed_claims": [
+    {
+      "claim_id": "strait-jurisdiction-chile",
+      "use": "minimal_neutral_geographic_context_only",
+      "embedding_eligible": false,
+      "requires_human_review": true,
+      "reason": "Territorial/legal context must not be expanded into treaty interpretation, sovereignty argumentation or disputed-boundary reasoning."
+    },
+    {
+      "claim_id": "first-narrows-length",
+      "use": "stable_geographic_description_only",
+      "embedding_eligible": false,
+      "requires_scope_guard": true,
+      "reason": "Do not combine with currents, tides or navigation advice in the stable travel projection."
+    },
+    {
+      "claim_id": "second-narrows-length",
+      "use": "stable_geographic_description_only",
+      "embedding_eligible": false,
+      "requires_scope_guard": true,
+      "reason": "Do not combine with currents or navigation advice in the stable travel projection."
+    },
+    {
+      "claim_id": "paso-tortuoso-length",
+      "use": "stable_geographic_description_only",
+      "embedding_eligible": false,
+      "requires_scope_guard": true,
+      "reason": "Paso Tortuoso operational context is separately classified operational_dynamic."
+    }
+  ],
+  "blocked_claims": [
+    {
+      "claim_id": "strait-navigation-open-all-flags",
+      "reason": "restricted legal/treaty context pending primary legal-source review"
+    },
+    {
+      "claim_id": "strait-navigation-interest-areas",
+      "reason": "operational navigation model"
+    },
+    {
+      "claim_id": "first-narrows-current-tide",
+      "reason": "operational_dynamic"
+    },
+    {
+      "claim_id": "paso-tortuoso-traffic-control",
+      "reason": "operational_dynamic and requires current verification"
+    }
+  ],
+  "allowed_relationships": [
+    {
+      "target": "goleta-ancud",
+      "type": "historically_related_to",
+      "status_required": ["verified"]
+    },
+    {
+      "target": "taking-possession-strait-of-magellan-1843",
+      "type": "site_of_historical_event",
+      "status_required": ["verified"],
+      "requires_neutral_historical_framing": true
+    }
+  ],
+  "conditionally_allowed_relationships": [
+    {
+      "target": "punta-arenas",
+      "type": "logistically_connected_to",
+      "current_status": "sourced_or_existing_entity",
+      "requirement_before_projection": "verify explicit canonical claim/provenance for Punta Arenas relationship"
+    },
+    {
+      "target": "fuerte-bulnes",
+      "type": "historically_related_to",
+      "current_status": "verified_initial",
+      "requirement_before_projection": "promote relationship after package review"
+    },
+    {
+      "target": "puerto-del-hambre",
+      "type": "historically_related_to",
+      "current_status": "verified_initial",
+      "requirement_before_projection": "promote relationship after package review"
+    }
+  ],
+  "blocked_relationship_types": [
+    "contains_navigation_sector",
+    "navigation_control_point"
+  ],
+  "atlas_only_or_internal_context": [
+    "hydrology BNA units",
+    "marine ecosystem classification detail",
+    "navigation currents and tides",
+    "traffic-control procedures",
+    "pilotage and radio procedures",
+    "treaty interpretation",
+    "sovereignty argumentation",
+    "strategic or military interpretation"
+  ],
+  "required_answer_behaviors": {
+    "identity_questions": "Answer from stable public-core facts only.",
+    "navigation_questions": "Do not answer from stable projection; route to live/current verification or state that current official verification is required.",
+    "legal_or_sovereignty_questions": "Do not adjudicate or expand from travel projection; use restricted-context workflow with human review where authorized.",
+    "relationship_questions": "Use only explicitly approved relationships from this projection contract.",
+    "language": "Prefer output language matching the user query when supported by the application layer."
+  },
+  "initial_supported_query_intents": [
+    "what_is_strait_of_magellan",
+    "where_is_strait_of_magellan",
+    "stable_geographic_context_strait"
+  ],
+  "deferred_query_intents": [
+    "current_navigation_conditions",
+    "currents_and_tides",
+    "shipping_or_vessel_guidance",
+    "ferry_or_crossing_status",
+    "legal_treaty_interpretation",
+    "sovereignty_analysis"
+  ],
+  "implementation_constraints": {
+    "do_not_modify_canonical_knowledge": true,
+    "do_not_copy_full_entity_into_data_entities_as_new_truth": true,
+    "projection_must_reference_canonical_claim_ids": true,
+    "projection_must_preserve_source_ids": true,
+    "existing_travel_agent_regressions_must_remain_green": true
+  },
+  "minimum_tests_for_first_integration": [
+    "Spanish Strait identity question",
+    "English Strait identity question",
+    "no navigation-current/tide leakage",
+    "no treaty/sovereignty interpretation leakage",
+    "unsupported dynamic Strait query requires live verification or returns safe unsupported response",
+    "existing Puerto Williams/Puerto Toro/Villa Ukika/Cape Horn regressions remain green"
+  ]
+}
