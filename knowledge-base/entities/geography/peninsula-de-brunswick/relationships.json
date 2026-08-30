@@ -1,0 +1,10 @@
+{
+  "entity_id": "peninsula-de-brunswick",
+  "relationships": [
+    {"target": "punta-arenas", "type": "contains_or_hosts_urban_context", "status": "verified_context"},
+    {"target": "reserva-nacional-magallanes", "type": "contains_protected_area", "status": "verified"},
+    {"target": "reserva-nacional-laguna-parrillar", "type": "contains_protected_area", "status": "verified"},
+    {"target": "strait-of-magellan", "type": "bounded_by_or_projects_into", "status": "verified_general_geography"},
+    {"target": "francisco-coloane-amcp-mu", "type": "coastal_margin_related_to", "status": "verified_context"}
+  ]
+}
