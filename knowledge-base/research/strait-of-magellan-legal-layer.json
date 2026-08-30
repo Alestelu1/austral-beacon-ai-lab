@@ -2,6 +2,12 @@
   "domain": "strait-of-magellan",
   "layer": "legal_and_navigation_regime",
   "status": "incomplete_official_sources_required",
+  "sensitivity": "restricted_context",
+  "retrieval_scope": ["internal-research", "austral-intelligence"],
+  "blocked_consumers": ["travel-agent"],
+  "requires_citation": true,
+  "requires_human_review": true,
+  "public_answer_allowed": false,
   "available_sources": [
     {
       "source_id": "ranson-2011-condicion-juridica-estrecho",
@@ -33,6 +39,6 @@
       "status": "missing_from_drive_corpus"
     }
   ],
-  "promotion_rule": "Do not create canonical treaty or legal-regime claims from academic secondary literature alone. Require official treaty text or official Chilean legal repository evidence.",
-  "notes": "DIRECTEMAR states that the Strait lies under Chilean jurisdiction and that navigation is assured under the 1881 and 1984 treaties; this can be cited as DIRECTEMAR's institutional statement, but treaty-level legal interpretation remains pending primary legal sources."
+  "promotion_rule": "Do not create canonical treaty or legal-regime claims from academic secondary literature alone. Require official treaty text or official Chilean legal repository evidence, and human review before any public use.",
+  "notes": "Preserve for internal context. Do not include this layer in Travel Agent retrieval by default."
 }
