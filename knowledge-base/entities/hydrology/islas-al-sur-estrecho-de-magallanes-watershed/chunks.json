@@ -1,0 +1,23 @@
+{
+  "entity_id": "islas-al-sur-estrecho-de-magallanes-watershed",
+  "chunks": [
+    {
+      "id": "bna127-overview",
+      "scope": "public_core",
+      "text": "Islas al Sur Estrecho de Magallanes is Chilean watershed BNA 127. DGA confirms the BNA code and name, and SBAP/SIMBIO records a current area of 2,793,078 hectares. The watershed belongs to the austral hydrological classification and must not be confused with an ecosystem, protected area or navigation route.",
+      "source_ids": ["dga-atlas-agua-2016-bna", "sbap-simbio-cuenca-127"]
+    },
+    {
+      "id": "bna127-subwatersheds",
+      "scope": "public_core",
+      "text": "SBAP/SIMBIO divides BNA 127 into seven principal subwatersheds: Isla Santa Ines y Carlos III; Islas al S. Isla Sta Ines y al O. Canal Barbara y Canal Cockburn; Isla Desolacion y adyacentes; Islas al S. del Seno Dyvenor y Canal Abra al O. I. Sta Ines; Islas Clarence y adyacentes; Isla Capitan Aracena y adyacentes; and Isla Jacques.",
+      "source_ids": ["sbap-simbio-cuenca-127"]
+    },
+    {
+      "id": "bna127-area-versioning",
+      "scope": "internal_research",
+      "text": "DGA Atlas del Agua 2016 reports BNA 127 as 27,931 km2 while current SBAP/SIMBIO reports 2,793,078 ha. Preserve both values with source/date metadata; the small difference is consistent with rounding or product-version effects and should not be silently normalized.",
+      "source_ids": ["dga-atlas-agua-2016-bna", "sbap-simbio-cuenca-127"]
+    }
+  ]
+}
