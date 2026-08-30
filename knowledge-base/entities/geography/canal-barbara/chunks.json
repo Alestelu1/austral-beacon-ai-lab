@@ -1,0 +1,19 @@
+{
+  "entity_id": "canal-barbara",
+  "chunks": [
+    {
+      "chunk_id": "canal-barbara-public-001",
+      "text": "Canal Barbara es una geoforma marina del sector occidental de Magallanes reconocida por SIMBIO/MMA dentro de la cuenca Islas al Sur Estrecho de Magallanes y del ecosistema marino Cockburn Magdalena - Magallanes.",
+      "sensitivity": "public_core",
+      "retrieval_scope": ["atlas", "travel", "travel-agent", "antarctic-pulse"]
+    },
+    {
+      "chunk_id": "canal-barbara-governance-001",
+      "text": "Las condiciones de navegacion, fondeo, hielo o accesibilidad de Canal Barbara no deben inferirse de fuentes historicas ni de fichas ambientales; requieren verificacion hidrográfica y maritima vigente.",
+      "sensitivity": "operational_dynamic",
+      "retrieval_scope": ["austral-intelligence"],
+      "requires_current_verification": true,
+      "blocked_consumers": ["travel-agent"]
+    }
+  ]
+}
