@@ -1,0 +1,10 @@
+{
+  "entity_id": "canal-jeronimo",
+  "entity_type": "channel",
+  "country": "Chile",
+  "region": "Magallanes y de la Antartica Chilena",
+  "sensitivity": "public_core",
+  "status": "canonical",
+  "authorities": ["DIRECTEMAR", "MMA/SIMBIO"],
+  "operational_layer": "operational_dynamic"
+}
