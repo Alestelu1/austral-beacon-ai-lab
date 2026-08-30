@@ -1,0 +1,19 @@
+{
+  "entity_id": "canal-jeronimo",
+  "chunks": [
+    {
+      "chunk_id": "canal-jeronimo-public-001",
+      "text": "Canal Jeronimo es un canal del sistema hidrografico asociado al Estrecho de Magallanes. Su existencia y relacion geografica general pueden usarse como contexto publico en Atlas y Travel.",
+      "sensitivity": "public_core",
+      "retrieval_scope": ["atlas", "travel", "travel-agent"]
+    },
+    {
+      "chunk_id": "canal-jeronimo-operational-001",
+      "text": "DIRECTEMAR documenta interaccion de corrientes entre Canal Jeronimo y Paso Tortuoso. Cualquier intensidad, direccion o efecto de navegacion debe verificarse con informacion maritima vigente.",
+      "sensitivity": "operational_dynamic",
+      "retrieval_scope": ["austral-intelligence"],
+      "requires_current_verification": true,
+      "blocked_consumers": ["travel-agent"]
+    }
+  ]
+}
