@@ -1,0 +1,17 @@
+{
+  "entity_id": "isla-capitan-aracena",
+  "chunks": [
+    {
+      "id": "isla-capitan-aracena-public-01",
+      "scope": ["atlas", "travel", "travel-agent", "antarctic-pulse"],
+      "sensitivity": "public_core",
+      "text": "Isla Capitán Aracena is an island of southern Magallanes. SBAP/SIMBIO recognizes it as a geoform of the marine ecosystems Cockburn Magdalena - Magallanes (ECOMAR-056) and Estrecho de Magallanes Central - Magallanes (ECOMAR-058)."
+    },
+    {
+      "id": "isla-capitan-aracena-public-02",
+      "scope": ["atlas", "editorial"],
+      "sensitivity": "public_core",
+      "text": "The official basin Islas al Sur Estrecho de Magallanes includes a subbasin named Isla Capitan Aracena y adyacentes. This provides general spatial context but should not be used as a substitute for authoritative coastal geometry or navigation data."
+    }
+  ]
+}
