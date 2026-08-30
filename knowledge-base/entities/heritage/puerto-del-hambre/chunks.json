@@ -1,0 +1,26 @@
+{
+  "entity_id": "puerto-del-hambre",
+  "chunks": [
+    {
+      "id": "puerto-del-hambre-identity-01",
+      "text": "Puerto del Hambre es el nombre por el que se conoce ampliamente al sitio cuyo nombre oficial, según la publicación `Puerto del Hambre. Más allá de la leyenda`, es Ciudad del Rey Don Felipe. El sitio se emplaza al norte de la península de Santa Ana, en la ribera continental del Estrecho de Magallanes.",
+      "topics": ["Puerto del Hambre", "Ciudad del Rey Don Felipe", "Península de Santa Ana", "Estrecho de Magallanes"],
+      "source_ids": ["puerto-del-hambre-mas-alla-leyenda"],
+      "is_operational_state": false
+    },
+    {
+      "id": "puerto-del-hambre-deep-history-02",
+      "text": "La historia humana del sector de Puerto del Hambre es más extensa que el intento de colonización hispana del siglo XVI. El corpus arqueológico contextualiza ocupaciones humanas de miles de años de profundidad y modos de vida vinculados tanto a recursos terrestres como marítimos.",
+      "topics": ["arqueología", "poblamiento", "historia indígena", "Magallanes"],
+      "source_ids": ["puerto-del-hambre-mas-alla-leyenda"],
+      "is_operational_state": false
+    },
+    {
+      "id": "puerto-del-hambre-research-03",
+      "text": "Desde mediados del siglo XX, Puerto del Hambre ha sido objeto de investigaciones arqueológicas e históricas. La publicación menciona trabajos asociados a Jesús Veiga, Omar Ortiz-Troncoso y el Instituto de la Patagonia.",
+      "topics": ["arqueología histórica", "Instituto de la Patagonia", "investigación"],
+      "source_ids": ["puerto-del-hambre-mas-alla-leyenda"],
+      "is_operational_state": false
+    }
+  ]
+}
