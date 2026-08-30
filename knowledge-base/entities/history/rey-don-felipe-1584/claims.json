@@ -1,0 +1,33 @@
+{
+  "entity_id": "rey-don-felipe-1584",
+  "claims": [
+    {
+      "id": "rey-don-felipe-founded-1584-03-25",
+      "claim": "La publicación `Puerto del Hambre. Más allá de la leyenda` cita un plano histórico de la Ciudad del Rey Don Felipe fechado el 25 de marzo de 1584.",
+      "source_ids": ["puerto-del-hambre-mas-alla-leyenda"],
+      "confidence": "high",
+      "stable": true
+    },
+    {
+      "id": "rey-don-felipe-founded-by-sarmiento",
+      "claim": "Pedro Sarmiento de Gamboa fundó Rey Don Felipe en una playa al norte de la península de Santa Ana como núcleo administrativo de la gobernación proyectada.",
+      "source_ids": ["puerto-del-hambre-mas-alla-leyenda"],
+      "confidence": "high",
+      "stable": true
+    },
+    {
+      "id": "rey-don-felipe-linked-puerto-hambre",
+      "claim": "El sitio de Rey Don Felipe es ampliamente conocido posteriormente como Puerto del Hambre.",
+      "source_ids": ["puerto-del-hambre-mas-alla-leyenda", "bienes-nacionales-rey-don-felipe-martinic"],
+      "confidence": "high",
+      "stable": true
+    },
+    {
+      "id": "rey-don-felipe-preexisting-human-occupation",
+      "claim": "Las excavaciones y estudios del sector muestran que existieron ocupaciones humanas antes y después del episodio colonial hispano del siglo XVI.",
+      "source_ids": ["puerto-del-hambre-mas-alla-leyenda"],
+      "confidence": "high",
+      "stable": true
+    }
+  ]
+}
