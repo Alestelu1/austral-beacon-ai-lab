@@ -1,0 +1,9 @@
+{
+  "entity_id": "isla-capitan-aracena",
+  "relationships": [
+    {"target": "cockburn-magdalena-magallanes-marine-ecosystem", "type": "geoform_of", "status": "verified", "sensitivity": "public_core"},
+    {"target": "estrecho-de-magallanes-central-magallanes-marine-ecosystem", "type": "geoform_of", "status": "verified", "sensitivity": "public_core"},
+    {"target": "canal-cockburn", "type": "regional_hydrographic_context", "status": "verified_general", "sensitivity": "public_core"},
+    {"target": "strait-of-magellan", "type": "regional_strait_context", "status": "verified_general", "sensitivity": "public_core"}
+  ]
+}
