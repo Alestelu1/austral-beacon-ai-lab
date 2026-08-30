@@ -1,0 +1,31 @@
+{
+  "entity_id": "islas-al-sur-estrecho-de-magallanes-watershed",
+  "sources": [
+    {
+      "source_id": "dga-atlas-agua-2016-bna",
+      "institution": "Direccion General de Aguas (DGA)",
+      "type": "primary_institutional",
+      "authority": "high",
+      "date_context": "2016 atlas; source table based on DGA hydrology/SIG data from 2015",
+      "use_for": ["official_bna_code", "official_name", "macrozone", "rounded_area_km2"],
+      "notes": "Confirms BNA 127, name Islas al Sur Estrecho de Magallanes, and 27,931 km2 as a rounded atlas value."
+    },
+    {
+      "source_id": "sbap-simbio-cuenca-127",
+      "institution": "SBAP/SIMBIO",
+      "type": "primary_institutional",
+      "authority": "high_current",
+      "use_for": ["current_watershed_record", "area_ha", "subwatershed_hierarchy", "subwatershed_area", "subwatershed_percentage"],
+      "notes": "Current public biodiversity platform record for Cuenca 127."
+    },
+    {
+      "source_id": "drive-directemar-estrecho-context",
+      "institution": "DIRECTEMAR",
+      "type": "primary_institutional_context",
+      "drive_file_id": "1QFH7cg2eEJ-HX1ZRkdq4LjPk5YBLpbVk",
+      "authority": "high_for_navigation_context_only",
+      "use_for": ["strait_context"],
+      "not_for": ["watershed_geometry", "watershed_area", "subwatershed_hierarchy"]
+    }
+  ]
+}
