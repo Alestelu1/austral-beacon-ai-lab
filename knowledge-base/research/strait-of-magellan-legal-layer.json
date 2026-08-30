@@ -1,0 +1,38 @@
+{
+  "domain": "strait-of-magellan",
+  "layer": "legal_and_navigation_regime",
+  "status": "incomplete_official_sources_required",
+  "available_sources": [
+    {
+      "source_id": "ranson-2011-condicion-juridica-estrecho",
+      "title": "Condición jurídica del Estrecho de Magallanes",
+      "author": "John Ranson García",
+      "publication": "Revista Chilena de Derecho, vol. 38 n. 3, 2011",
+      "drive_file_id": "13t0VWk0gaAJd1Hb8o8246I4x45BlkfBc",
+      "source_type": "academic_secondary",
+      "use": "context_and_legal_analysis_only"
+    },
+    {
+      "source_id": "directemar-generalidades-estrecho",
+      "institution": "DIRECTEMAR",
+      "title": "Generalidades del Estrecho de Magallanes",
+      "drive_file_id": "1eE7bF_YJk06jk_YDzeKRse_WlTBpWVJv",
+      "source_type": "institutional_operational",
+      "use": "navigation_and_jurisdiction_context"
+    }
+  ],
+  "required_primary_sources": [
+    {
+      "title": "Tratado de Límites entre Chile y Argentina de 1881",
+      "preferred_institutions": ["Biblioteca del Congreso Nacional de Chile", "Ministerio de Relaciones Exteriores de Chile"],
+      "status": "missing_from_drive_corpus"
+    },
+    {
+      "title": "Tratado de Paz y Amistad entre Chile y Argentina de 1984",
+      "preferred_institutions": ["Biblioteca del Congreso Nacional de Chile", "Ministerio de Relaciones Exteriores de Chile"],
+      "status": "missing_from_drive_corpus"
+    }
+  ],
+  "promotion_rule": "Do not create canonical treaty or legal-regime claims from academic secondary literature alone. Require official treaty text or official Chilean legal repository evidence.",
+  "notes": "DIRECTEMAR states that the Strait lies under Chilean jurisdiction and that navigation is assured under the 1881 and 1984 treaties; this can be cited as DIRECTEMAR's institutional statement, but treaty-level legal interpretation remains pending primary legal sources."
+}
