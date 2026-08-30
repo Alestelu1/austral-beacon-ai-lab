@@ -1,0 +1,26 @@
+{
+  "entity_id": "isla-capitan-aracena",
+  "sources": [
+    {
+      "source_id": "simbio-ecomar-056",
+      "institution": "SBAP / Ministerio del Medio Ambiente via SIMBIO",
+      "title": "Ecosistema marino Cockburn Magdalena - Magallanes",
+      "authority_class": "primary_institutional",
+      "use": ["entity_existence", "marine_ecosystem_relation"]
+    },
+    {
+      "source_id": "simbio-ecomar-058",
+      "institution": "SBAP / Ministerio del Medio Ambiente via SIMBIO",
+      "title": "Ecosistema marino Estrecho de Magallanes Central - Magallanes",
+      "authority_class": "primary_institutional",
+      "use": ["marine_ecosystem_relation", "regional_context"]
+    },
+    {
+      "source_id": "simbio-basin-127",
+      "institution": "SBAP / Ministerio del Medio Ambiente via SIMBIO",
+      "title": "Cuenca Islas al Sur Estrecho de Magallanes",
+      "authority_class": "primary_institutional",
+      "use": ["subbasin_context", "regional_spatial_relation"]
+    }
+  ]
+}
