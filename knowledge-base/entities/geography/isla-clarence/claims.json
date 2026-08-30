@@ -1,0 +1,7 @@
+{
+  "entity_id": "isla-clarence",
+  "claims": [
+    {"id":"clarence-001","claim":"Isla Clarence is a geoform of the Estrecho de Magallanes Central - Magallanes marine ecosystem (ECOMAR-058).","source_id":"sbap-simbio-ecomar-058","status":"verified","sensitivity":"public_core","confidence":"high"},
+    {"id":"clarence-002","claim":"SBAP/SIMBIO identifies the subcuenca Islas Clarence y adyacentes within the cuenca Islas al Sur Estrecho de Magallanes.","source_id":"sbap-simbio-cuenca-127","status":"verified","sensitivity":"public_core","confidence":"high"}
+  ]
+}
