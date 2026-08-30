@@ -1,0 +1,24 @@
+{
+  "id": "strait-of-magellan",
+  "canonical_name_es": "Estrecho de Magallanes",
+  "canonical_name_en": "Strait of Magellan",
+  "entity_type": "body_of_water",
+  "country": "Chile",
+  "region": "Región de Magallanes y de la Antártica Chilena",
+  "canonical_status": "initial_sourced",
+  "authority_policy": "Prefer Chilean institutional and primary sources; separate stable geographic facts from dynamic operational information and from historical/legal interpretation.",
+  "source_priority": "high",
+  "legacy_source": "projects/atlas/content/estrecho-magallanes.mdx",
+  "legacy_status": "retain_as_editorial_draft_until_canonical_promotion",
+  "last_audited": "2026-08-29",
+  "coverage": {
+    "geography": "partial_good",
+    "navigation": "good_initial",
+    "history": "pending",
+    "heritage": "pending",
+    "legal_sovereignty": "pending_primary_legal_sources",
+    "indigenous_context": "pending",
+    "hydrography_cartography": "pending",
+    "infrastructure": "partial"
+  }
+}
