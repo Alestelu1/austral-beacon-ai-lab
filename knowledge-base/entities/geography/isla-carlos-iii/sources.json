@@ -1,0 +1,21 @@
+{
+  "entity_id": "isla-carlos-iii",
+  "sources": [
+    {
+      "source_id": "mma-simbio-francisco-coloane",
+      "institution": "Ministerio del Medio Ambiente",
+      "title": "Francisco Coloane - Plataforma Políticas de la Biodiversidad",
+      "source_type": "institutional_primary_or_official_register",
+      "authority": "high",
+      "use": ["ecological_context", "protected_area_relationships", "species_context"]
+    },
+    {
+      "source_id": "mma-francisco-coloane-amcp",
+      "institution": "Ministerio del Medio Ambiente",
+      "title": "Área Marina Costera Protegida Francisco Coloane",
+      "source_type": "institutional_technical",
+      "authority": "high",
+      "use": ["regional_geography", "amcp_context"]
+    }
+  ]
+}
