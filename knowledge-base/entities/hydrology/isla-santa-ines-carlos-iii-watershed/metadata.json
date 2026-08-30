@@ -1,0 +1,16 @@
+{
+  "entity_id": "isla-santa-ines-carlos-iii-watershed",
+  "entity_type": "watershed_unit",
+  "category": "subwatershed",
+  "official_system": "BNA",
+  "official_id": "1273",
+  "parent_watershed": "islas-al-sur-estrecho-de-magallanes-watershed",
+  "surface_ha": 748152,
+  "share_parent_percent": 26.786,
+  "subsubwatershed_code": "12730",
+  "sensitivity": "public_core",
+  "status": "canonical",
+  "stable_layers": ["name", "BNA_code", "parent_hierarchy", "surface", "share_parent"],
+  "geometry_policy": "Use official hydrological geometry only; do not derive exact geometry from tourism maps.",
+  "retrieval_scopes": ["atlas", "travel", "travel-agent", "austral-intelligence"]
+}
