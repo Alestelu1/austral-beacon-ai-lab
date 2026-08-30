@@ -1,0 +1,26 @@
+{
+  "entity_id": "peninsula-de-brunswick",
+  "claims": [
+    {
+      "id": "brunswick-reserva-magallanes",
+      "claim": "CONAF ubica la Reserva Nacional Magallanes en la Península de Brunswick, al oeste de Punta Arenas.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_id": "conaf-reserva-magallanes"
+    },
+    {
+      "id": "brunswick-laguna-parrillar",
+      "claim": "La Reserva Nacional Laguna Parrillar protege una cuenca ubicada en la Península de Brunswick.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_id": "conaf-laguna-parrillar"
+    },
+    {
+      "id": "brunswick-francisco-coloane-margin",
+      "claim": "Fuentes del Ministerio del Medio Ambiente describen el AMCP-MU Francisco Coloane en relación con el margen suroeste de la Península de Brunswick.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_id": "mma-francisco-coloane-amcp"
+    }
+  ]
+}
