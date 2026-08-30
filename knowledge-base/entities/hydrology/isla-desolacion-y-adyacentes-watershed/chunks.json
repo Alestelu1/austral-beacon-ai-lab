@@ -1,0 +1,12 @@
+{
+  "entity_id": "isla-desolacion-y-adyacentes-watershed",
+  "chunks": [
+    {
+      "chunk_id": "bna1270-public-1",
+      "text": "Isla Desolacion y adyacentes es la subcuenca BNA 1270 de la cuenca Islas al Sur Estrecho de Magallanes. SBAP/SIMBIO registra 454978 ha, equivalentes al 16.289% de BNA 127. Su subsubcuenca homonima BNA 12700 representa el 100% de la unidad.",
+      "retrieval_scope": ["atlas", "austral-intelligence"],
+      "sensitivity": "public_core",
+      "requires_citation": true
+    }
+  ]
+}
