@@ -1,0 +1,10 @@
+{
+  "entity_id": "reserva-nacional-magallanes",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "authority": "CONAF",
+  "stable_layers": ["protected_area_category", "general_location", "creation_date", "ecosystems", "conservation_context"],
+  "dynamic_layers": ["opening_status", "hours", "trail_conditions", "winter_access", "services", "restrictions"],
+  "retrieval_scope": ["atlas", "travel", "travel-agent", "austral-intelligence"],
+  "requires_dynamic_verification_for_visit_advice": true
+}
