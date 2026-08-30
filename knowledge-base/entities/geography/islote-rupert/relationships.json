@@ -1,0 +1,10 @@
+{
+  "entity_id": "islote-rupert",
+  "relationships": [
+    {"target": "strait-of-magellan", "type": "located_in", "status": "verified"},
+    {"target": "isla-carlos-iii", "type": "ecological_sector_pair", "status": "verified"},
+    {"target": "francisco-coloane-marine-park", "type": "ecologically_connected_to", "status": "verified"},
+    {"target": "magellanic-penguin", "type": "nesting_area_for", "status": "verified"},
+    {"target": "humpback-whale", "type": "feeding_area_context", "status": "verified"}
+  ]
+}
