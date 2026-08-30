@@ -1,0 +1,10 @@
+{
+  "entity_id": "fuerte-bulnes",
+  "relationships": [
+    {"predicate": "located_at", "target": "punta-santa-ana", "status": "verified"},
+    {"predicate": "historically_related_to", "target": "goleta-ancud", "status": "verified"},
+    {"predicate": "historically_related_to", "target": "taking-possession-strait-of-magellan-1843", "status": "verified"},
+    {"predicate": "located_on", "target": "strait-of-magellan", "status": "verified"},
+    {"predicate": "historically_related_to", "target": "puerto-del-hambre", "status": "verified_general"}
+  ]
+}
