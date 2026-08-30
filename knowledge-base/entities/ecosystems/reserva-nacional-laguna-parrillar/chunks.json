@@ -1,0 +1,8 @@
+{
+  "entity_id": "reserva-nacional-laguna-parrillar",
+  "chunks": [
+    {"id":"rnlp-overview","sensitivity":"public_core","text":"La Reserva Nacional Laguna Parrillar es un área protegida de CONAF ubicada en la comuna de Punta Arenas. Fue creada en 1977 y protege la cuenca de la laguna Parrillar, el río San Juan, vegetación y fauna asociadas."},
+    {"id":"rnlp-fauna","sensitivity":"public_core","text":"CONAF destaca en la Reserva Nacional Laguna Parrillar especies de especial interés como huemul, puma, carpintero negro, peuquito y concón."},
+    {"id":"rnlp-visit-policy","sensitivity":"operational_dynamic","text":"La apertura estacional, el estado del camino, horarios, restricciones y servicios de la Reserva Nacional Laguna Parrillar deben verificarse en CONAF o Pases Parques antes de entregar orientación de visita."}
+  ]
+}
