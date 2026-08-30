@@ -1,0 +1,10 @@
+{
+  "entity_id": "sur-santa-ines-oeste-canal-barbara-cockburn-watershed",
+  "relationships": [
+    {"target":"islas-al-sur-estrecho-de-magallanes-watershed","type":"subwatershed_of","status":"verified","sensitivity":"public_core"},
+    {"target":"isla-santa-ines","type":"named_geographic_context","status":"verified_general","sensitivity":"public_core"},
+    {"target":"canal-barbara","type":"named_geographic_context","status":"verified_general","sensitivity":"public_core"},
+    {"target":"canal-cockburn","type":"named_geographic_context","status":"verified_general","sensitivity":"public_core"},
+    {"target":"sur-santa-ines-oeste-canal-barbara-cockburn-subsubwatershed","type":"has_subsubwatershed","status":"verified_candidate","official_id":"12740","sensitivity":"public_core"}
+  ]
+}
