@@ -1,0 +1,11 @@
+{
+  "entity_id": "paso-tortuoso",
+  "entity_type": "navigational_passage",
+  "country": "Chile",
+  "region": "Magallanes y de la Antartica Chilena",
+  "sensitivity": "public_core",
+  "status": "canonical",
+  "authority": "DIRECTEMAR",
+  "operational_layer": "operational_dynamic",
+  "requires_current_verification_for_navigation": true
+}
