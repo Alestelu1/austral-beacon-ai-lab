@@ -1,0 +1,32 @@
+{
+  "entity_id": "los-pinguinos",
+  "claims": [
+    {
+      "id": "los-pinguinos-composition",
+      "claim": "Monumento Natural Los Pingüinos is formed by Isla Magdalena and Isla Marta in the Strait of Magellan, Chile.",
+      "status": "verified",
+      "source_id": "conaf-los-pinguinos",
+      "sensitivity": "public_core"
+    },
+    {
+      "id": "los-pinguinos-magdalena-fauna",
+      "claim": "Isla Magdalena supports a major breeding colony of Magellanic penguins and other seabirds.",
+      "status": "verified",
+      "source_id": "conaf-los-pinguinos",
+      "sensitivity": "public_core"
+    },
+    {
+      "id": "los-pinguinos-marta-fauna",
+      "claim": "Isla Marta supports imperial cormorants and breeding areas for South American sea lions and fur seals.",
+      "status": "verified",
+      "source_id": "conaf-los-pinguinos",
+      "sensitivity": "public_core"
+    },
+    {
+      "id": "los-pinguinos-operations-policy",
+      "claim": "Closures, landing rules, schedules and visitor protocols require live verification with CONAF.",
+      "status": "policy",
+      "sensitivity": "operational_dynamic"
+    }
+  ]
+}
