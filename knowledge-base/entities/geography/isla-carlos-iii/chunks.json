@@ -1,0 +1,23 @@
+{
+  "entity_id": "isla-carlos-iii",
+  "chunks": [
+    {
+      "id": "isla-carlos-iii-geography",
+      "text": "Isla Carlos III se ubica en el sector centro-occidental del Estrecho de Magallanes y está asociada al sistema protegido Francisco Coloane.",
+      "sensitivity": "public_core",
+      "retrieval_scope": ["atlas", "travel", "science"]
+    },
+    {
+      "id": "isla-carlos-iii-ecology",
+      "text": "El sector Isla Carlos III–Islote Rupert es relevante para la alimentación de ballena jorobada en aguas interiores. Isla Carlos III alberga varias colonias de lobo marino común, incluida al menos una colonia reproductiva.",
+      "sensitivity": "public_core",
+      "retrieval_scope": ["atlas", "travel", "science"]
+    },
+    {
+      "id": "isla-carlos-iii-access-warning",
+      "text": "La información sobre navegación, desembarco, operadores o condiciones de acceso a Isla Carlos III debe verificarse con fuentes actuales antes de dar orientación al viajero.",
+      "sensitivity": "operational_dynamic",
+      "retrieval_scope": ["travel"]
+    }
+  ]
+}
