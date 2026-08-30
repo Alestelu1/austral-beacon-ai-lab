@@ -1,0 +1,11 @@
+{
+  "entity_id": "goleta-ancud",
+  "relationships": [
+    {"predicate": "originated_from", "target": "ancud", "status": "verified"},
+    {"predicate": "commanded_by", "target": "juan-guillermos", "status": "verified"},
+    {"predicate": "participated_in", "target": "taking-possession-strait-of-magellan-1843", "status": "verified"},
+    {"predicate": "historically_related_to", "target": "strait-of-magellan", "status": "verified"},
+    {"predicate": "historically_related_to", "target": "fuerte-bulnes", "status": "pending_entity_completion"},
+    {"predicate": "memorialized_by", "target": "monument-tripulantes-goleta-ancud", "status": "verified"}
+  ]
+}
