@@ -1,0 +1,40 @@
+{
+  "entity_id": "islas-al-sur-estrecho-de-magallanes-watershed",
+  "claims": [
+    {
+      "id": "bna127-001",
+      "statement": "The watershed Islas al Sur Estrecho de Magallanes is identified by Chile's DGA as BNA code 127.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["dga-atlas-agua-2016-bna"]
+    },
+    {
+      "id": "bna127-002",
+      "statement": "SBAP/SIMBIO currently records an area of 2,793,078 hectares for BNA 127.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["sbap-simbio-cuenca-127"]
+    },
+    {
+      "id": "bna127-003",
+      "statement": "The DGA Atlas del Agua reports 27,931 km2 for BNA 127; the small difference from the current SBAP/SIMBIO hectare figure is consistent with rounding and/or product version differences and must not be silently normalized.",
+      "status": "verified_with_measurement_note",
+      "sensitivity": "public_core",
+      "source_ids": ["dga-atlas-agua-2016-bna", "sbap-simbio-cuenca-127"]
+    },
+    {
+      "id": "bna127-004",
+      "statement": "SBAP/SIMBIO divides BNA 127 into seven listed subwatershed units whose reported percentages sum to 100 percent.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["sbap-simbio-cuenca-127"]
+    },
+    {
+      "id": "bna127-005",
+      "statement": "BNA 127 is a hydrological classification and must not be treated as a marine ecosystem, protected area, political-administrative boundary, or navigation route.",
+      "status": "modeling_rule",
+      "sensitivity": "public_core",
+      "source_ids": ["dga-atlas-agua-2016-bna", "sbap-simbio-cuenca-127"]
+    }
+  ]
+}
