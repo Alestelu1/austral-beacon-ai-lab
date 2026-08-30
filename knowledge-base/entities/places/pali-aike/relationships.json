@@ -1,0 +1,8 @@
+{
+  "entity_id": "pali-aike",
+  "relationships": [
+    {"target": "magallanes-province", "type": "located_in", "status": "verified"},
+    {"target": "san-gregorio", "type": "located_in_commune", "status": "verified"},
+    {"target": "route-255-ch", "type": "access_context", "status": "verified_operational_context"}
+  ]
+}
