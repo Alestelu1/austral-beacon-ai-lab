@@ -1,0 +1,16 @@
+{
+  "entity_id": "islas-al-sur-estrecho-de-magallanes-watershed",
+  "entity_type": "watershed",
+  "official_id": "BNA-127",
+  "authority": ["DGA", "SBAP/SIMBIO"],
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "stable_layers": ["official_name", "bna_code", "watershed_hierarchy", "subwatershed_names", "official_area_reference"],
+  "dynamic_or_versioned_layers": ["digital_geometry", "derived_area_calculations", "thematic_overlays"],
+  "retrieval_scopes": ["atlas", "travel", "travel-agent", "intelligence"],
+  "modeling_rules": [
+    "Do not treat a BNA watershed as an ecosystem or protected area.",
+    "Preserve source date and cartographic version for geometry or spatial calculations.",
+    "Do not silently overwrite small area differences between institutional products; classify likely rounding or version effects."
+  ]
+}
