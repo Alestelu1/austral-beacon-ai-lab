@@ -1,0 +1,9 @@
+{
+  "entity_id": "los-pinguinos",
+  "relationships": [
+    {"target": "strait-of-magellan", "type": "located_in", "status": "verified"},
+    {"target": "isla-magdalena", "type": "contains", "status": "verified"},
+    {"target": "isla-marta", "type": "contains", "status": "verified"},
+    {"target": "punta-arenas", "type": "tourism_access_context", "status": "verified_operational_context"}
+  ]
+}
