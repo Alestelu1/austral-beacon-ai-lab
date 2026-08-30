@@ -1,0 +1,25 @@
+{
+  "entity_id": "pali-aike",
+  "claims": [
+    {
+      "id": "pali-aike-category-location",
+      "claim": "Parque Nacional Pali Aike is a national park in San Gregorio commune, Magallanes province, Chile.",
+      "status": "verified",
+      "source_id": "conaf-pali-aike",
+      "sensitivity": "public_core"
+    },
+    {
+      "id": "pali-aike-volcanic-geomorphology",
+      "claim": "CONAF highlights Pali Aike for volcanic geomorphology including low volcanic cones, natural caves, craters and lava fields.",
+      "status": "verified",
+      "source_id": "conaf-pali-aike",
+      "sensitivity": "public_core"
+    },
+    {
+      "id": "pali-aike-operational-dynamic",
+      "claim": "Opening, road conditions, ticketing and seasonal closures are dynamic and require live verification with CONAF or Pases Parques.",
+      "status": "policy",
+      "sensitivity": "operational_dynamic"
+    }
+  ]
+}
