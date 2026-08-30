@@ -1,0 +1,30 @@
+{
+  "entity_id": "patagonia-antarctica-geological-connection",
+  "claims": [
+    {
+      "id": "antarctic-peninsula-southwest-patagonia-connection",
+      "claim": "INACH señala que investigaciones científicas han mostrado que la península Antártica estuvo unida al margen suroccidental de Patagonia en el contexto de la fragmentación de Gondwana.",
+      "source_ids": ["inach-enciclopedia-visual-antartica-2018"],
+      "confidence": "high",
+      "claim_type": "geology",
+      "stable": true
+    },
+    {
+      "id": "madre-dios-duque-york-trinidad-geology",
+      "claim": "INACH describe una identidad geológica compartida entre rocas de las islas Madre de Dios y Duque de York, en Última Esperanza, y rocas de la península Trinidad, en el norte de la península Antártica.",
+      "source_ids": ["inach-enciclopedia-visual-antartica-2018"],
+      "confidence": "high",
+      "claim_type": "geology",
+      "stable": true
+    },
+    {
+      "id": "punta-arenas-antarctic-proximity-context",
+      "claim": "El material educativo de INACH destaca la proximidad geográfica relativa entre Punta Arenas y la Antártica a través del paso Drake y presenta a Punta Arenas como un nodo relevante para expediciones hacia el continente.",
+      "source_ids": ["inach-enciclopedia-visual-antartica-2018"],
+      "confidence": "high",
+      "claim_type": "geography_and_logistics_context",
+      "stable": true
+    }
+  ],
+  "safeguard": "Do not use geological continuity as evidence for sovereignty, boundary, or territorial claims."
+}
