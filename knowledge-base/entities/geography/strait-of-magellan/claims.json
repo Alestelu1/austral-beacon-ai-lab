@@ -1,0 +1,68 @@
+{
+  "entity_id": "strait-of-magellan",
+  "claims": [
+    {
+      "id": "strait-jurisdiction-chile",
+      "claim": "El Estrecho de Magallanes se encuentra íntegramente bajo jurisdicción de Chile.",
+      "stability": "stable",
+      "source_ids": ["directemar-generalidades-estrecho-magallanes"],
+      "status": "verified"
+    },
+    {
+      "id": "strait-navigation-open-all-flags",
+      "claim": "DIRECTEMAR señala que, de acuerdo con los tratados chileno-argentinos de 1881 y 1984, la navegación del Estrecho está asegurada a buques de todas las banderas en todo tiempo y circunstancia.",
+      "stability": "stable_legal_context",
+      "source_ids": ["directemar-generalidades-estrecho-magallanes"],
+      "status": "verified_pending_primary_legal_source"
+    },
+    {
+      "id": "strait-length-330-nm",
+      "claim": "DIRECTEMAR define una longitud total de 330 millas náuticas desde Punta Dúngenes hasta Islotes Evangelistas.",
+      "stability": "stable",
+      "source_ids": ["directemar-generalidades-estrecho-magallanes"],
+      "status": "verified"
+    },
+    {
+      "id": "strait-navigation-interest-areas",
+      "claim": "DIRECTEMAR identifica Primera Angostura, Segunda Angostura y Paso Tortuoso como las tres áreas principales de interés para la navegación del Estrecho.",
+      "stability": "stable_operational_model",
+      "source_ids": ["directemar-generalidades-estrecho-magallanes"],
+      "status": "verified"
+    },
+    {
+      "id": "first-narrows-length",
+      "claim": "La Primera Angostura se extiende aproximadamente 8 millas náuticas desde Punta Delgada hasta el bajo Satélite.",
+      "stability": "stable",
+      "source_ids": ["directemar-primera-angostura"],
+      "status": "verified"
+    },
+    {
+      "id": "first-narrows-current-tide",
+      "claim": "DIRECTEMAR indica que en sicigias la corriente de Primera Angostura puede alcanzar 8 nudos y la amplitud de marea 8 metros.",
+      "stability": "operational_reference",
+      "source_ids": ["directemar-primera-angostura"],
+      "status": "verified_with_date_sensitive_use"
+    },
+    {
+      "id": "second-narrows-length",
+      "claim": "La Segunda Angostura se extiende aproximadamente 12 millas náuticas desde Cabo Gregorio hasta Cabo San Vicente.",
+      "stability": "stable",
+      "source_ids": ["directemar-segunda-angostura"],
+      "status": "verified"
+    },
+    {
+      "id": "paso-tortuoso-length",
+      "claim": "Paso Tortuoso se extiende aproximadamente 6,3 millas náuticas entre Punta San Jerónimo y Cabo Quod.",
+      "stability": "stable",
+      "source_ids": ["directemar-paso-tortuoso"],
+      "status": "verified"
+    },
+    {
+      "id": "paso-tortuoso-traffic-control",
+      "claim": "La navegación por Paso Tortuoso está sujeta a procedimientos especiales de reporte y control de tráfico marítimo establecidos por DIRECTEMAR.",
+      "stability": "dynamic_operational",
+      "source_ids": ["directemar-paso-tortuoso"],
+      "status": "verified_requires_current_check_for_travel_or_navigation_advice"
+    }
+  ]
+}
