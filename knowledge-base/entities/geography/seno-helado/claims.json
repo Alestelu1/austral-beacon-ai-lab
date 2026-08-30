@@ -1,0 +1,26 @@
+{
+  "entity_id": "seno-helado",
+  "claims": [
+    {
+      "claim_id": "seno-helado-001",
+      "claim": "Seno Helado es una geoforma marina reconocida por SIMBIO/MMA dentro del ecosistema marino Cockburn Magdalena - Magallanes.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["mma-simbio-seno-helado"]
+    },
+    {
+      "claim_id": "seno-helado-002",
+      "claim": "Fuentes institucionales historicas lo relacionan con la parte oriental de Isla Santa Ines y con el sistema de Canal Barbara.",
+      "status": "verified_historical_context",
+      "sensitivity": "public_core",
+      "source_ids": ["mma-francisco-coloane-historical-baseline"]
+    },
+    {
+      "claim_id": "seno-helado-003",
+      "claim": "Observaciones historicas sobre hielo, fondeo, accesibilidad o navegacion no describen necesariamente las condiciones actuales.",
+      "status": "governance_rule",
+      "sensitivity": "operational_dynamic",
+      "requires_current_verification": true
+    }
+  ]
+}
