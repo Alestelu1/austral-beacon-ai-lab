@@ -1,0 +1,57 @@
+{
+  "domain": "magallanes-cartography",
+  "status": "initial_source_register",
+  "purpose": "Track cartographic sources available in Drive and constrain how they may be used in the canonical knowledge base.",
+  "policy": {
+    "tourism_maps": "Use for orientation, place discovery and non-legal spatial context only.",
+    "do_not_use_for": ["international_boundary_adjudication", "sovereignty_claims", "precise_geodetic_coordinates", "nautical_navigation", "survey_grade_measurements"],
+    "preferred_future_authorities": ["SHOA", "Instituto Geografico Militar de Chile", "IDE Chile", "official regional geospatial portals"],
+    "requires_source_date": true,
+    "requires_citation": true
+  },
+  "sources": [
+    {
+      "title": "Mapa Provincia de Magallanes",
+      "drive_file_id": "1jdWpwA-uHNMXHpUMnq2H7rGndShinRJY",
+      "source_context": "SERNATUR / tourism cartography",
+      "authority_class": "institutional_promotional",
+      "allowed_use": ["place_discovery", "tourism_orientation", "general_spatial_relationships"]
+    },
+    {
+      "title": "Mapa Region de Magallanes y Antartica Chilena 2022",
+      "drive_file_id": "14qU2t_OAz394zf6xuRwE0JuoNTjTMRVx",
+      "authority_class": "institutional_promotional",
+      "allowed_use": ["regional_orientation", "place_discovery", "editorial_context"]
+    },
+    {
+      "title": "Mapa Rutero Magallanes",
+      "drive_file_id": "1qW_CG9ZyFzpqEqgXYFCjxuMbgvwwOMjP",
+      "authority_class": "institutional_or_promotional_pending_metadata_review",
+      "allowed_use": ["road_network_discovery", "route_context"],
+      "dynamic_warning": "Road conditions, closures and ferry operations require current verification."
+    },
+    {
+      "title": "Mapa Punta Arenas 2023",
+      "drive_file_id": "1MQ0zu7xjmW1JNQ0w0Pm1kMSj9_bBUl7P",
+      "authority_class": "institutional_promotional",
+      "allowed_use": ["urban_orientation", "place_discovery"]
+    },
+    {
+      "title": "Mapa Puerto Williams",
+      "drive_file_id": "1jU07ypx28jZVBkZVSm7ErGalfIoBxzzu",
+      "authority_class": "institutional_promotional",
+      "allowed_use": ["urban_orientation", "place_discovery"]
+    },
+    {
+      "title": "Mapa Porvenir 2022",
+      "drive_file_id": "1lfdsXNhhnqyT-jknTpznQUNANG3yag-c",
+      "authority_class": "institutional_promotional",
+      "allowed_use": ["urban_orientation", "place_discovery"]
+    }
+  ],
+  "next_steps": [
+    "Extract candidate place entities and route relationships from tourism maps.",
+    "Cross-check important coordinates and geometries against authoritative geospatial sources when available.",
+    "Keep boundary-sensitive and nautical layers outside public retrieval unless backed by the appropriate official authority."
+  ]
+}
