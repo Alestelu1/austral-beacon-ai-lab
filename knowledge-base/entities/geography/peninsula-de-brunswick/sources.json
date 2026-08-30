@@ -1,0 +1,29 @@
+{
+  "entity_id": "peninsula-de-brunswick",
+  "sources": [
+    {
+      "source_id": "conaf-reserva-magallanes",
+      "institution": "CONAF",
+      "title": "Reserva Nacional Magallanes",
+      "source_type": "institutional_primary",
+      "authority": "high",
+      "use": ["peninsula_context", "protected_area_location"]
+    },
+    {
+      "source_id": "conaf-laguna-parrillar",
+      "institution": "CONAF",
+      "title": "Reserva Nacional Laguna Parrillar",
+      "source_type": "institutional_primary",
+      "authority": "high",
+      "use": ["watershed_context", "southern_peninsula_access_context"]
+    },
+    {
+      "source_id": "mma-francisco-coloane-amcp",
+      "institution": "Ministerio del Medio Ambiente",
+      "title": "Área Marina Costera Protegida Francisco Coloane",
+      "source_type": "institutional_technical",
+      "authority": "high",
+      "use": ["western_coastal_context", "marine_protected_area_relationships"]
+    }
+  ]
+}
