@@ -1,0 +1,20 @@
+{
+  "entity_id": "reserva-nacional-magallanes",
+  "sources": [
+    {
+      "source_id": "conaf-reserva-nacional-magallanes",
+      "institution": "Corporación Nacional Forestal (CONAF)",
+      "source_type": "primary_institutional",
+      "authority_class": "high",
+      "use": ["category", "location", "creation", "ecosystems", "flora", "fauna", "visitor_operations"]
+    },
+    {
+      "source_id": "sernatur-mapa-provincia-magallanes",
+      "institution": "SERNATUR",
+      "drive_file_id": "1jdWpwA-uHNMXHpUMnq2H7rGndShinRJY",
+      "source_type": "institutional_promotional",
+      "authority_class": "secondary_for_discovery",
+      "use": ["entity_discovery", "tourism_context"]
+    }
+  ]
+}
