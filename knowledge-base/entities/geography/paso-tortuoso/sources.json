@@ -1,0 +1,16 @@
+{
+  "entity_id": "paso-tortuoso",
+  "sources": [
+    {
+      "id": "directemar-paso-tortuoso",
+      "institution": "Dirección General del Territorio Marítimo y de Marina Mercante (DIRECTEMAR)",
+      "country": "Chile",
+      "source_type": "institutional_primary",
+      "priority": "high",
+      "title": "Paso Tortuoso",
+      "drive_file_id": "12_--iY-QY9enYJG51SfzTXa0w5OpW93n",
+      "captured_at": "2026-08-29",
+      "topics": ["paso_tortuoso", "currents", "traffic_control", "navigation", "pilotage"]
+    }
+  ]
+}
