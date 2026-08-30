@@ -1,0 +1,7 @@
+{
+  "entity_id": "isla-clarence",
+  "chunks": [
+    {"id":"isla-clarence-overview","text":"Isla Clarence is an island of Chile's Magallanes region and is recognized by SBAP/SIMBIO as a geoform of the Estrecho de Magallanes Central - Magallanes marine ecosystem (ECOMAR-058).","sensitivity":"public_core","approved_consumers":["atlas","travel","travel-agent","antarctic-pulse","editorial"]},
+    {"id":"isla-clarence-watershed-context","text":"SBAP/SIMBIO identifies the subcuenca Islas Clarence y adyacentes within the cuenca Islas al Sur Estrecho de Magallanes. This is watershed context and must not be treated as an administrative boundary.","sensitivity":"public_core","approved_consumers":["atlas","travel","travel-agent","editorial"]}
+  ]
+}
