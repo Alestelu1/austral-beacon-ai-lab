@@ -1,0 +1,19 @@
+{
+  "entity_id": "estrecho-magallanes-central-magallanes-marine-ecosystem",
+  "chunks": [
+    {
+      "id": "ecomar058-identity",
+      "text": "Estrecho de Magallanes Central - Magallanes is the official marine ecosystem ECOMAR-058 in the Magallanes ecoregion. SIMBIO/SBAP reports it as a marina continental ecosystem with a total surface of 5,867.005 square kilometres.",
+      "source_ids": ["simbio-sbap-ecomar-058"],
+      "sensitivity": "public_core",
+      "retrieval_scope": ["atlas", "travel", "antarctic-pulse", "austral-intelligence"]
+    },
+    {
+      "id": "ecomar058-geoforms",
+      "text": "Official geoforms associated with ECOMAR-058 include the Strait of Magellan, Isla Capitan Aracena, Isla Santa Ines, Isla Dawson, Isla Clarence and Peninsula Brunswick. This is an ecological-spatial classification and does not by itself define administrative, legal or protected-area boundaries.",
+      "source_ids": ["simbio-sbap-ecomar-058"],
+      "sensitivity": "public_core",
+      "retrieval_scope": ["atlas", "travel-agent", "antarctic-pulse", "austral-intelligence"]
+    }
+  ]
+}
