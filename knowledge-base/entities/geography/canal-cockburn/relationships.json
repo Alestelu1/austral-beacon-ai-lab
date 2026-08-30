@@ -1,0 +1,9 @@
+{
+  "entity_id": "canal-cockburn",
+  "relationships": [
+    {"target": "cockburn-magdalena-magallanes-marine-ecosystem", "type": "part_of_ecosystem_context", "status": "verified", "sensitivity": "public_core"},
+    {"target": "canal-barbara", "type": "regional_hydrographic_context", "status": "verified_general", "sensitivity": "public_core"},
+    {"target": "isla-santa-ines", "type": "regional_hydrographic_context", "status": "verified_general", "sensitivity": "public_core"},
+    {"target": "isla-capitan-aracena", "type": "regional_hydrographic_context", "status": "verified_general", "sensitivity": "public_core"}
+  ]
+}
