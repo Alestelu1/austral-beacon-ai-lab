@@ -6,8 +6,16 @@
       "id": "costa-expuesta-patagonia-sur-magallanes-marine-ecosystem",
       "entity_type": "marine_ecosystem",
       "priority": "medium_high",
-      "reason": "Referenced by Isla Santa Ines as an official SBAP/SIMBIO ecosystem context.",
+      "reason": "Referenced by Isla Santa Ines and BNA 1272/1270 as an official SBAP/SIMBIO ecosystem context.",
       "required_authorities": ["SBAP/SIMBIO", "scientific literature for ecological detail"],
+      "promotion_state": "verified_candidate"
+    },
+    {
+      "id": "estrecho-magallanes-oeste-magallanes-marine-ecosystem",
+      "entity_type": "marine_ecosystem",
+      "priority": "medium_high",
+      "reason": "SBAP/SIMBIO records overlap with BNA 1270 Isla Desolacion y adyacentes.",
+      "required_authorities": ["SBAP/SIMBIO", "scientific literature for ecological detail", "DIRECTEMAR/SHOA for hydrographic context where relevant"],
       "promotion_state": "verified_candidate"
     },
     {
@@ -37,20 +45,22 @@
       "official_id": "12740"
     },
     {
-      "id": "isla-desolacion-y-adyacentes-watershed",
-      "entity_type": "subwatershed",
-      "priority": "medium_high",
-      "reason": "SBAP/SIMBIO lists this subwatershed as 16.289% of BNA 127.",
-      "required_authorities": ["SBAP/SIMBIO", "DGA or official hydrological/cartographic source for further hydrological detail"],
-      "promotion_state": "verified_candidate"
+      "id": "isla-desolacion-y-adyacentes-subsubwatershed",
+      "entity_type": "subsubwatershed",
+      "priority": "medium",
+      "reason": "SBAP/SIMBIO defines BNA 12700 as the 100% child unit of canonical subcuenca BNA 1270.",
+      "required_authorities": ["SBAP/SIMBIO"],
+      "promotion_state": "verified_candidate",
+      "official_id": "12700"
     },
     {
-      "id": "islas-sur-seno-dyvenor-canal-abra-oeste-santa-ines-watershed",
-      "entity_type": "subwatershed",
-      "priority": "medium_high",
-      "reason": "SBAP/SIMBIO lists this subwatershed as 12.351% of BNA 127.",
-      "required_authorities": ["SBAP/SIMBIO", "DGA or official hydrological/cartographic source for further hydrological detail"],
-      "promotion_state": "verified_candidate"
+      "id": "islas-sur-seno-dyvenor-canal-abra-oeste-santa-ines-subsubwatershed",
+      "entity_type": "subsubwatershed",
+      "priority": "medium",
+      "reason": "SBAP/SIMBIO defines BNA 12720 as the 100% child unit of canonical subcuenca BNA 1272.",
+      "required_authorities": ["SBAP/SIMBIO"],
+      "promotion_state": "verified_candidate",
+      "official_id": "12720"
     },
     {
       "id": "islas-clarence-y-adyacentes-watershed",
@@ -87,7 +97,9 @@
     {"id":"isla-clarence","resolved_as":"canonical","package":"knowledge-base/entities/geography/isla-clarence"},
     {"id":"islas-al-sur-estrecho-de-magallanes-watershed","resolved_as":"canonical","official_id":"BNA-127","package":"knowledge-base/entities/hydrology/islas-al-sur-estrecho-de-magallanes-watershed"},
     {"id":"isla-santa-ines-carlos-iii-watershed","aliases":["isla-santa-ines-y-carlos-iii-watershed"],"resolved_as":"canonical","official_id":"1273","package":"knowledge-base/entities/hydrology/isla-santa-ines-carlos-iii-watershed"},
-    {"id":"sur-santa-ines-oeste-canal-barbara-cockburn-watershed","aliases":["islas-sur-santa-ines-oeste-canal-barbara-cockburn-watershed"],"resolved_as":"canonical","official_id":"1274","package":"knowledge-base/entities/hydrology/sur-santa-ines-oeste-canal-barbara-cockburn-watershed"}
+    {"id":"sur-santa-ines-oeste-canal-barbara-cockburn-watershed","aliases":["islas-sur-santa-ines-oeste-canal-barbara-cockburn-watershed"],"resolved_as":"canonical","official_id":"1274","package":"knowledge-base/entities/hydrology/sur-santa-ines-oeste-canal-barbara-cockburn-watershed"},
+    {"id":"isla-desolacion-y-adyacentes-watershed","resolved_as":"canonical","official_id":"1270","package":"knowledge-base/entities/hydrology/isla-desolacion-y-adyacentes-watershed"},
+    {"id":"islas-sur-seno-dyvenor-canal-abra-oeste-santa-ines-watershed","resolved_as":"canonical","official_id":"1272","package":"knowledge-base/entities/hydrology/islas-sur-seno-dyvenor-canal-abra-oeste-santa-ines-watershed"}
   ],
   "rule": "A dangling graph target may remain referenced when evidence is sufficient for the relation, but it must not be treated as a complete canonical entity until its own source, claim and retrieval package is created."
 }
