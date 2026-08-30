@@ -1,0 +1,26 @@
+{
+  "entity_id": "isla-capitan-aracena",
+  "claims": [
+    {
+      "id": "ica-001",
+      "claim": "Isla Capitán Aracena is recognized by SBAP/SIMBIO as a geoform of the marine ecosystem Cockburn Magdalena - Magallanes (ECOMAR-056).",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_id": "simbio-ecomar-056"
+    },
+    {
+      "id": "ica-002",
+      "claim": "Isla Capitán Aracena is also recognized as a geoform of Estrecho de Magallanes Central - Magallanes (ECOMAR-058).",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_id": "simbio-ecomar-058"
+    },
+    {
+      "id": "ica-003",
+      "claim": "The basin Islas al Sur Estrecho de Magallanes includes a subbasin named Isla Capitan Aracena y adyacentes.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_id": "simbio-basin-127"
+    }
+  ]
+}
