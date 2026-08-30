@@ -1,0 +1,12 @@
+{
+  "entity_id": "parque-marino-francisco-coloane",
+  "relationships": [
+    {"target":"strait-of-magellan","type":"located_in","status":"verified"},
+    {"target":"isla-carlos-iii","type":"associated_with","status":"verified_pending_dedicated_entity"},
+    {"target":"islote-rupert","type":"associated_with","status":"verified_pending_dedicated_entity"},
+    {"target":"area-marina-costera-protegida-francisco-coloane","type":"nested_within_broader_protected_system","status":"verified_pending_dedicated_entity"},
+    {"target":"megaptera-novaeangliae","type":"protects_feeding_area_of","status":"verified_pending_species_entity"},
+    {"target":"spheniscus-magellanicus","type":"protects_reproductive_area_of","status":"verified_pending_species_entity"},
+    {"target":"otaria-flavescens","type":"protects_reproductive_area_of","status":"verified_pending_species_entity"}
+  ]
+}
