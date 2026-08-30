@@ -1,0 +1,31 @@
+{
+  "entity_id": "fuerte-bulnes",
+  "sources": [
+    {
+      "source_id": "armada-toma-posesion-estrecho-1843",
+      "institution": "Armada de Chile",
+      "title": "La toma de posesión del Estrecho de Magallanes - 21 de septiembre de 1843",
+      "drive_file_id": "1sxYGjeEGH_DYTGqGPV1I-wvvB0fAHdVg",
+      "source_type": "institutional_history",
+      "authority": "high"
+    },
+    {
+      "source_id": "bienes-nacionales-rey-don-felipe-martinic",
+      "institution": "Ministerio de Bienes Nacionales",
+      "title": "Rey Don Felipe: Acontecimientos Históricos",
+      "author": "Mateo Martinic",
+      "drive_file_id": "13gtfA8E8PNgqOKZqeOtuMYwkxNlYCbNS",
+      "source_type": "institutional_historical_publication",
+      "authority": "high"
+    },
+    {
+      "source_id": "mc0012277-fuerte-bulnes-reconstruction",
+      "institution": "Biblioteca Nacional de Chile / corpus histórico",
+      "title": "MC0012277.pdf",
+      "drive_file_id": "1e_M2xSy9OzL6ZNDtOP50Btfwhb2NcATI",
+      "source_type": "historical_document",
+      "authority": "medium_high",
+      "cataloging_status": "needs_bibliographic_normalization"
+    }
+  ]
+}
