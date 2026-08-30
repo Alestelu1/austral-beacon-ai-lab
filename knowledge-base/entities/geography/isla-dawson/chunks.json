@@ -1,0 +1,23 @@
+{
+  "entity_id": "isla-dawson",
+  "chunks": [
+    {
+      "id": "isla-dawson-overview",
+      "text": "Isla Dawson is an island of Chile's Magallanes region and is recognized by SBAP/SIMBIO as a geoform of the Estrecho de Magallanes Central - Magallanes marine ecosystem (ECOMAR-058).",
+      "sensitivity": "public_core",
+      "approved_consumers": ["atlas", "travel", "travel-agent", "antarctic-pulse", "editorial"]
+    },
+    {
+      "id": "isla-dawson-ecosystem-context",
+      "text": "SBAP/SIMBIO also recognizes regional terrestrial and watershed contexts associated with Isla Dawson, including the watershed unit Islas Dawson, Wickam y adyacentes. These relationships are ecological and hydrological context, not administrative boundaries.",
+      "sensitivity": "public_core",
+      "approved_consumers": ["atlas", "travel", "travel-agent", "antarctic-pulse", "editorial"]
+    },
+    {
+      "id": "isla-dawson-paleoenvironment",
+      "text": "Institutional historical material places northern Isla Dawson in a former glacial-lake paleoenvironmental context together with Bahia Inutil and Segunda Angostura. This is historical geological context and should not be interpreted as a description of present hydrology.",
+      "sensitivity": "public_core",
+      "approved_consumers": ["atlas", "editorial", "austral-intelligence"]
+    }
+  ]
+}
