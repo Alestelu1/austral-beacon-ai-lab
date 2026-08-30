@@ -10,8 +10,9 @@
     {"target": "punta-delgada", "type": "navigation_control_point", "status": "sourced"},
     {"target": "cabo-froward", "type": "geographic_sector_related_to", "status": "pending_dedicated_entity"},
     {"target": "cabo-pilar", "type": "geographic_sector_related_to", "status": "pending_dedicated_entity"},
-    {"target": "goleta-ancud", "type": "historically_related_to", "status": "pending_historical_source_integration"},
-    {"target": "fuerte-bulnes", "type": "historically_related_to", "status": "pending_historical_source_integration"},
+    {"target": "goleta-ancud", "type": "historically_related_to", "status": "verified"},
+    {"target": "taking-possession-strait-of-magellan-1843", "type": "site_of_historical_event", "status": "verified"},
+    {"target": "fuerte-bulnes", "type": "historically_related_to", "status": "verified_initial"},
     {"target": "puerto-del-hambre", "type": "historically_related_to", "status": "pending_historical_source_integration"}
   ]
 }
