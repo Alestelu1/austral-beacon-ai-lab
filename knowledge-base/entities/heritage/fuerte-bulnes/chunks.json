@@ -1,0 +1,19 @@
+{
+  "entity_id": "fuerte-bulnes",
+  "chunks": [
+    {
+      "id": "fuerte-bulnes-history-01",
+      "text": "Fuerte Bulnes es un sitio histórico situado en el sector de Punta Santa Ana, en el Estrecho de Magallanes, relacionado con la expedición de la Goleta Ancud y con el establecimiento chileno en el área durante la década de 1840.",
+      "topics": ["Fuerte Bulnes", "Punta Santa Ana", "Estrecho de Magallanes", "1840s"],
+      "source_ids": ["armada-toma-posesion-estrecho-1843", "bienes-nacionales-rey-don-felipe-martinic"],
+      "is_operational_state": false
+    },
+    {
+      "id": "fuerte-bulnes-expedition-02",
+      "text": "La fuente histórica de la Armada de Chile señala que la expedición de la Goleta Ancud incluía miembros destinados a integrar la futura guarnición del fuerte que se establecería en el sector de Punta Santa Ana.",
+      "topics": ["Goleta Ancud", "guarnición", "Punta Santa Ana"],
+      "source_ids": ["armada-toma-posesion-estrecho-1843"],
+      "is_operational_state": false
+    }
+  ]
+}
