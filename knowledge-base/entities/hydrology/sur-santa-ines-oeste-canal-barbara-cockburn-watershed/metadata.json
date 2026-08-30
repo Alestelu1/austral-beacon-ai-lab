@@ -1,0 +1,16 @@
+{
+  "entity_id": "sur-santa-ines-oeste-canal-barbara-cockburn-watershed",
+  "entity_type": "watershed_unit",
+  "category": "subwatershed",
+  "official_system": "BNA",
+  "official_id": "1274",
+  "parent_watershed": "islas-al-sur-estrecho-de-magallanes-watershed",
+  "surface_ha": 674408,
+  "share_parent_percent": 24.146,
+  "subsubwatershed_code": "12740",
+  "sensitivity": "public_core",
+  "status": "canonical",
+  "stable_layers": ["name", "BNA_code", "parent_hierarchy", "surface", "share_parent"],
+  "geometry_policy": "Use official hydrological geometry only; do not infer exact boundaries from place names.",
+  "retrieval_scopes": ["atlas", "travel", "travel-agent", "austral-intelligence"]
+}
