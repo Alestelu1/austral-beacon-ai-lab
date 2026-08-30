@@ -1,0 +1,11 @@
+{
+  "entity_id": "peninsula-de-brunswick",
+  "entity_type": "peninsula",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["atlas", "travel", "editorial"],
+  "requires_citation": true,
+  "requires_human_review": false,
+  "precision_warning": "Do not use tourism maps or descriptive prose as survey-grade geometry. Validate exact boundaries and coordinates against authoritative geospatial sources.",
+  "dynamic_fields": ["road_access", "closures", "travel_times"]
+}
