@@ -1,0 +1,23 @@
+{
+  "status": "active",
+  "purpose": "Track graph targets referenced by canonical entities that still require their own canonical package.",
+  "targets": [
+    {
+      "id": "isla-santa-ines",
+      "entity_type": "island",
+      "priority": "high",
+      "reason": "Referenced by Canal Barbara and Seno Helado and supported by MMA/SIMBIO historical-environmental context.",
+      "required_authorities": ["MMA/SIMBIO", "IGM or IDE Chile for geospatial validation"],
+      "promotion_state": "verified_candidate"
+    },
+    {
+      "id": "cockburn-magdalena-magallanes-marine-ecosystem",
+      "entity_type": "marine_ecosystem",
+      "priority": "high",
+      "reason": "Referenced by Canal Barbara and Seno Helado as an official SIMBIO/MMA ecosystem context.",
+      "required_authorities": ["MMA/SIMBIO", "scientific literature for ecological detail"],
+      "promotion_state": "verified_candidate"
+    }
+  ],
+  "rule": "A dangling graph target may remain referenced when evidence is sufficient for the relation, but it must not be treated as a complete canonical entity until its own source, claim and retrieval package is created."
+}
