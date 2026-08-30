@@ -1,0 +1,26 @@
+{
+  "entity_id": "early-human-occupation-central-strait",
+  "claims": [
+    {
+      "id": "central-strait-human-history-deep-time",
+      "claim": "El corpus arqueológico de Puerto del Hambre sitúa la historia humana de Magallanes en una escala de miles de años, anterior a los episodios coloniales europeos.",
+      "source_ids": ["puerto-del-hambre-mas-alla-leyenda"],
+      "confidence": "high",
+      "stable": true
+    },
+    {
+      "id": "central-strait-land-sea-subsistence",
+      "claim": "La publicación describe evidencias cercanas a Puerto del Hambre y la península de Santa Ana asociadas a comunidades que combinaron recursos terrestres y marítimos.",
+      "source_ids": ["puerto-del-hambre-mas-alla-leyenda"],
+      "confidence": "high",
+      "stable": true
+    },
+    {
+      "id": "central-strait-ethnic-attribution-caution",
+      "claim": "El corpus actual no permite atribuir automáticamente cada evidencia arqueológica del sector central del Estrecho a una identidad histórica específica sin fuentes especializadas adicionales.",
+      "source_ids": ["puerto-del-hambre-mas-alla-leyenda"],
+      "confidence": "methodological",
+      "stable": true
+    }
+  ]
+}
