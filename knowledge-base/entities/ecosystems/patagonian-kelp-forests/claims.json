@@ -1,0 +1,46 @@
+{
+  "entity_id": "patagonian-kelp-forests",
+  "claims": [
+    {
+      "id": "kelp-forest-primary-species",
+      "claim": "Los bosques submarinos de la Patagonia austral están formados principalmente por Macrocystis pyrifera.",
+      "source_ids": ["bosques-submarinos-patagonia-2024"],
+      "confidence": "high",
+      "claim_type": "ecology",
+      "stable": true
+    },
+    {
+      "id": "kelp-forest-biodiversity-function",
+      "claim": "Los bosques de huiro proporcionan hábitat, alimentación, refugio y lugares de reproducción para una biodiversidad marina rica.",
+      "source_ids": ["bosques-submarinos-patagonia-2024"],
+      "confidence": "high",
+      "claim_type": "ecosystem_function",
+      "stable": true
+    },
+    {
+      "id": "kelp-forest-austral-abundance",
+      "claim": "En Chile, Macrocystis pyrifera es común en bahías y estuarios y alcanza especial abundancia en fiordos y canales patagónicos de las regiones australes.",
+      "source_ids": ["bosques-submarinos-patagonia-2024"],
+      "confidence": "high",
+      "claim_type": "distribution",
+      "stable": true
+    },
+    {
+      "id": "kelp-research-magellan-strait-1960s",
+      "claim": "La investigación chilena sobre huiros en la Patagonia austral incluye estudios de diversidad y distribución vertical de algas en la zona del Estrecho de Magallanes desde la década de 1960.",
+      "source_ids": ["bosques-submarinos-patagonia-2024"],
+      "confidence": "high",
+      "claim_type": "science_history",
+      "stable": true
+    },
+    {
+      "id": "kelp-carbon-potential-research-estimate",
+      "claim": "El corpus científico describe un alto potencial de secuestro y exportación de carbono para los bosques de huiro del Estrecho de Magallanes, pero las cifras corresponden a estimaciones de estudios específicos y no deben tratarse como valores universales.",
+      "source_ids": ["bosques-submarinos-patagonia-2024"],
+      "confidence": "medium_high",
+      "claim_type": "research_estimate",
+      "stable": false,
+      "requires_method_context": true
+    }
+  ]
+}
