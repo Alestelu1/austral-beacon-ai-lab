@@ -1,0 +1,8 @@
+{
+  "entity_id": "canal-jeronimo",
+  "relationships": [
+    {"target": "paso-tortuoso", "type": "hydrodynamically_connected_to", "status": "verified"},
+    {"target": "strait-of-magellan", "type": "connected_to", "status": "verified"},
+    {"target": "peninsula-de-brunswick", "type": "adjacent_geographic_context", "status": "verified_general"}
+  ]
+}
