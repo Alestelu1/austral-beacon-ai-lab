@@ -1,0 +1,8 @@
+{
+  "entity_id": "reserva-nacional-laguna-parrillar",
+  "relationships": [
+    {"target":"punta-arenas","type":"near","status":"verified"},
+    {"target":"laguna-parrillar","type":"protects_watershed_of","status":"verified_pending_dedicated_entity"},
+    {"target":"rio-san-juan-magallanes","type":"protects_watershed_of","status":"verified_pending_dedicated_entity"}
+  ]
+}
