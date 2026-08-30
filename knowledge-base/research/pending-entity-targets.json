@@ -19,18 +19,58 @@
       "promotion_state": "verified_candidate"
     },
     {
-      "id": "islas-clarence-y-adyacentes-watershed",
-      "entity_type": "watershed_unit",
-      "priority": "medium",
-      "reason": "SBAP/SIMBIO identifies Islas Clarence y adyacentes as a subcuenca within Islas al Sur Estrecho de Magallanes and it is referenced by the canonical Isla Clarence entity.",
+      "id": "isla-santa-ines-y-carlos-iii-watershed",
+      "entity_type": "subwatershed",
+      "priority": "high",
+      "reason": "SBAP/SIMBIO lists this subwatershed as 26.786% of BNA 127 and it links two already canonical island entities.",
       "required_authorities": ["SBAP/SIMBIO", "DGA or official hydrological/cartographic source for further hydrological detail"],
       "promotion_state": "verified_candidate"
     },
     {
-      "id": "islas-al-sur-estrecho-de-magallanes-watershed",
-      "entity_type": "watershed_unit",
+      "id": "islas-sur-santa-ines-oeste-canal-barbara-cockburn-watershed",
+      "entity_type": "subwatershed",
+      "priority": "high",
+      "reason": "SBAP/SIMBIO lists this subwatershed as 24.146% of BNA 127 and it links canonical Isla Santa Ines, Canal Barbara and Canal Cockburn entities.",
+      "required_authorities": ["SBAP/SIMBIO", "DGA or official hydrological/cartographic source for further hydrological detail"],
+      "promotion_state": "verified_candidate"
+    },
+    {
+      "id": "isla-desolacion-y-adyacentes-watershed",
+      "entity_type": "subwatershed",
       "priority": "medium_high",
-      "reason": "SBAP/SIMBIO defines the cuenca Islas al Sur Estrecho de Magallanes (BNA 127), which contains several canonical and candidate island subunits in the graph.",
+      "reason": "SBAP/SIMBIO lists this subwatershed as 16.289% of BNA 127.",
+      "required_authorities": ["SBAP/SIMBIO", "DGA or official hydrological/cartographic source for further hydrological detail"],
+      "promotion_state": "verified_candidate"
+    },
+    {
+      "id": "islas-sur-seno-dyvenor-canal-abra-oeste-santa-ines-watershed",
+      "entity_type": "subwatershed",
+      "priority": "medium_high",
+      "reason": "SBAP/SIMBIO lists this subwatershed as 12.351% of BNA 127.",
+      "required_authorities": ["SBAP/SIMBIO", "DGA or official hydrological/cartographic source for further hydrological detail"],
+      "promotion_state": "verified_candidate"
+    },
+    {
+      "id": "islas-clarence-y-adyacentes-watershed",
+      "entity_type": "subwatershed",
+      "priority": "medium_high",
+      "reason": "SBAP/SIMBIO lists this subwatershed as 8.17% of BNA 127 and it is referenced by canonical Isla Clarence.",
+      "required_authorities": ["SBAP/SIMBIO", "DGA or official hydrological/cartographic source for further hydrological detail"],
+      "promotion_state": "verified_candidate"
+    },
+    {
+      "id": "isla-capitan-aracena-y-adyacentes-watershed",
+      "entity_type": "subwatershed",
+      "priority": "medium_high",
+      "reason": "SBAP/SIMBIO lists this subwatershed as 7.591% of BNA 127 and it is referenced by canonical Isla Capitan Aracena.",
+      "required_authorities": ["SBAP/SIMBIO", "DGA or official hydrological/cartographic source for further hydrological detail"],
+      "promotion_state": "verified_candidate"
+    },
+    {
+      "id": "isla-jacques-watershed",
+      "entity_type": "subwatershed",
+      "priority": "medium",
+      "reason": "SBAP/SIMBIO lists Isla Jacques as 4.667% of BNA 127.",
       "required_authorities": ["SBAP/SIMBIO", "DGA or official hydrological/cartographic source for further hydrological detail"],
       "promotion_state": "verified_candidate"
     }
@@ -42,7 +82,8 @@
     {"id":"isla-capitan-aracena","resolved_as":"canonical","package":"knowledge-base/entities/geography/isla-capitan-aracena"},
     {"id":"estrecho-magallanes-central-magallanes-marine-ecosystem","aliases":["estrecho-de-magallanes-central-magallanes-marine-ecosystem"],"resolved_as":"canonical","official_id":"ECOMAR-058","package":"knowledge-base/entities/ecosystems/estrecho-magallanes-central-magallanes-marine-ecosystem"},
     {"id":"isla-dawson","resolved_as":"canonical","package":"knowledge-base/entities/geography/isla-dawson"},
-    {"id":"isla-clarence","resolved_as":"canonical","package":"knowledge-base/entities/geography/isla-clarence"}
+    {"id":"isla-clarence","resolved_as":"canonical","package":"knowledge-base/entities/geography/isla-clarence"},
+    {"id":"islas-al-sur-estrecho-de-magallanes-watershed","resolved_as":"canonical","official_id":"BNA-127","package":"knowledge-base/entities/hydrology/islas-al-sur-estrecho-de-magallanes-watershed"}
   ],
   "rule": "A dangling graph target may remain referenced when evidence is sufficient for the relation, but it must not be treated as a complete canonical entity until its own source, claim and retrieval package is created."
 }
