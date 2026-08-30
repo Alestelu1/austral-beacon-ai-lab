@@ -1,0 +1,20 @@
+{
+  "entity_id": "pali-aike",
+  "sources": [
+    {
+      "source_id": "conaf-pali-aike",
+      "institution": "CONAF",
+      "source_type": "primary_institutional",
+      "title": "Parque Nacional Pali Aike",
+      "url": "https://www.conaf.cl/parque_nacionales/parque-nacional-pali-aike/",
+      "use": ["category", "administrative_location", "geomorphology", "fauna", "visitor_operations"]
+    },
+    {
+      "source_id": "sernatur-mapa-provincia-magallanes",
+      "institution": "SERNATUR",
+      "source_type": "institutional_promotional",
+      "drive_file_id": "1jdWpwA-uHNMXHpUMnq2H7rGndShinRJY",
+      "use": ["discovery", "tourism_context"]
+    }
+  ]
+}
