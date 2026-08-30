@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "entity_id": "villa_ukika",
+  "canonical_name": "Villa Ukika",
+  "entity_type": "living_indigenous_community_context",
+  "status": "batch_03_consolidated_v1",
+  "admin": {
+    "country": "Chile",
+    "region": "Magallanes y de la Antártica Chilena",
+    "province": "Antártica Chilena",
+    "commune": "Cabo de Hornos"
+  },
+  "territorial_relations": {
+    "located_on": ["isla_navarino"],
+    "community_context_near": ["puerto_williams"],
+    "associated_community": ["comunidad_indigena_yaghan_de_bahia_mejillones"],
+    "distinct_from": ["puerto_williams"]
+  },
+  "cultural_context": {
+    "framing": "living_yagan_community_and_cultural_continuity",
+    "supported_practices": ["cesteria", "transmision_de_lengua", "vinculos_con_territorio_y_maritorio"],
+    "rule": "Describe Villa Ukika as a contemporary, living Yagán community context with cultural continuity. Do not reduce it to a static tourist attraction or a frozen ethnographic site, and do not use 'last descendants' wording."
+  },
+  "geometry_status": "pending_authoritative_point",
+  "provisional_context": {
+    "distance_to_puerto_williams": "SERNATUR provincial tourism guide describes Villa Ukika as located about one kilometer from Puerto Williams; this is a provisional contextual claim and requires authoritative geospatial confirmation.",
+    "visitor_access": "dynamic_revalidatable_and_culturally_sensitive"
+  },
+  "prohibited_inferences": [
+    "Villa Ukika is merely a tourist attraction or a frozen ethnographic site.",
+    "Villa Ukika is the place where 'the last descendants' of the Yagán people live.",
+    "Villa Ukika is the same settlement as Puerto Williams.",
+    "The ~1 km distance from Puerto Williams is authoritative geometry.",
+    "SERNATUR tourism-map positions are canonical Atlas coordinates.",
+    "Villa Ukika can be visited year round or without current culturally appropriate verification.",
+    "Any specific Yagán population figure for Villa Ukika (none is established in the verified corpus)."
+  ],
+  "embedding_readiness": {
+    "stable_fields": ["identity", "living_yagan_context", "community_context_near_puerto_williams", "entity_distinction"],
+    "dynamic_fields": ["visitor_access"],
+    "geometry": "pending_authoritative_geospatial_provenance"
+  },
+  "source_records": [
+    "data/verification/batch-03-chilean-authoritative-validation-2026-08-24.json",
+    "data/knowledge/puerto-williams-navarino-local-graph.json",
+    "data/entities/puerto-williams-canonical-entity.json"
+  ]
+}

@@ -28,7 +28,7 @@ describe("createSemanticTravelAssistant", () => {
     const assistant = await createSemanticTravelAssistant(new KeywordEmbeddingProvider());
 
     expect(assistant.providerId).toBe("test:keyword");
-    expect(assistant.indexedChunkCount).toBe(12);
+    expect(assistant.indexedChunkCount).toBe(13);
   });
 
   it("retrieves stable knowledge through the semantic path", async () => {

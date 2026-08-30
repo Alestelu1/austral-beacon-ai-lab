@@ -24,7 +24,7 @@ class KeywordEmbeddingProvider implements EmbeddingProvider {
 describe("SemanticRetriever", () => {
   it("indexes only embedding-ready chunks", async () => {
     const retriever = await SemanticRetriever.create(goldenCorpus, new KeywordEmbeddingProvider());
-    expect(retriever.indexedChunkCount).toBe(12);
+    expect(retriever.indexedChunkCount).toBe(13);
   });
 
   it("retrieves the settlement distinction for Puerto Toro", async () => {

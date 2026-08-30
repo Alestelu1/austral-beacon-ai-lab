@@ -3,6 +3,7 @@ import routeData from "../../data/routes/santiago-puerto-williams.json" with { t
 import puntaArenasRouteData from "../../data/routes/punta-arenas-puerto-williams.json" with { type: "json" };
 import pwCaboRelationshipData from "../../data/relationships/puerto-williams-cabo-de-hornos.json" with { type: "json" };
 import antarcticAccessData from "../../data/relationships/antarctica-access-from-chile.json" with { type: "json" };
+import villaUkikaRelationshipData from "../../data/relationships/villa-ukika-puerto-williams.json" with { type: "json" };
 import type {
   AntarcticAccessAnswer,
   AntarcticAccessRecord,
@@ -22,6 +23,7 @@ const route = routeData as RouteRecord;
 const puntaArenasRoute = puntaArenasRouteData as RouteRecord;
 const pwCaboRelationship = pwCaboRelationshipData as PlaceRelationshipRecord;
 const antarcticAccess = antarcticAccessData as AntarcticAccessRecord;
+const villaUkikaRelationship = villaUkikaRelationshipData as PlaceRelationshipRecord;
 
 // Singleton: se instancia una vez al cargar el módulo
 const destinationRepository = new LocalJsonDestinationCardRepository(
@@ -156,6 +158,18 @@ function isAntarcticAccessQuestion(normalized: string): boolean {
   return hasAccessPhrase || mentionsTravelIntent(normalized);
 }
 
+// --- Detección de Villa Ukika (contexto de comunidad yagán viva) ---
+
+/**
+ * Recognizes questions about Villa Ukika: its identity as a living Yagán
+ * community context and its relationship with / distinction from Puerto Williams.
+ * Answered deterministically via the source-backed relationship record, not as a
+ * tourism destination card.
+ */
+function isVillaUkikaQuestion(normalized: string): boolean {
+  return normalized.includes("villa ukika") || normalized.includes("ukika");
+}
+
 // --- Detección de relación entre lugares (Puerto Williams / Cabo de Hornos) ---
 
 /**
@@ -204,6 +218,12 @@ export function answerTravelQuestion(
   // 1c. Relationship (Puerto Williams / Cabo de Hornos), before destination-info
   if (isPuertoWilliamsCaboRelationshipQuestion(normalized)) {
     return answerPlaceRelationship(pwCaboRelationship);
+  }
+
+  // 1d. Villa Ukika (living Yagán community context), before destination-info
+  //     so it is answered as a community-context relationship, not a tourism card.
+  if (isVillaUkikaQuestion(normalized)) {
+    return answerPlaceRelationship(villaUkikaRelationship);
   }
 
   // 2. destination-info (dos pasos)

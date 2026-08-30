@@ -15,7 +15,7 @@ describe("Puerto Williams retrieval benchmark v2", () => {
     const evalSet = await loadJson<RetrievalEvalSet>("data/retrieval/retrieval-eval-puerto-williams-v2.json");
     const readyIds = new Set(corpus.chunks.filter((chunk) => chunk.embedding_ready).map((chunk) => chunk.chunk_id));
 
-    expect(evalSet.cases).toHaveLength(36);
+    expect(evalSet.cases).toHaveLength(39);
     for (const testCase of evalSet.cases) {
       expect(testCase.expected_chunk_ids.length).toBeGreaterThan(0);
       for (const expectedId of testCase.expected_chunk_ids) {

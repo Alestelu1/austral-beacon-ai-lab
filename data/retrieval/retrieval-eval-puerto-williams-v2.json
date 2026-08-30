@@ -57,7 +57,10 @@
 
     {"id":"ret2-034","language":"es","family":"negative_or_safeguard","query":"¿Puedo copiar las coordenadas aproximadas de un mapa turístico y tratarlas como geometría canónica del Atlas?","expected_chunk_ids":["pw-geometry-014"]},
     {"id":"ret2-035","language":"en","family":"direct","query":"What geographic context can be stated for Puerto Williams while authoritative canonical coordinates are still pending?","expected_chunk_ids":["pw-geometry-014"]},
-    {"id":"ret2-036","language":"es","family":"ambiguity_or_distractor","query":"Sé que Puerto Williams está en Isla Navarino junto al canal Beagle, pero aún necesito procedencia geoespacial oficial antes de fijar un punto canónico. ¿Qué conocimiento cubre esto?","expected_chunk_ids":["pw-geometry-014"]}
+    {"id":"ret2-036","language":"es","family":"ambiguity_or_distractor","query":"Sé que Puerto Williams está en Isla Navarino junto al canal Beagle, pero aún necesito procedencia geoespacial oficial antes de fijar un punto canónico. ¿Qué conocimiento cubre esto?","expected_chunk_ids":["pw-geometry-014"]},
+    {"id":"ret2-037","language":"en","family":"direct","query":"What is Villa Ukika and its living Yagan community context near Puerto Williams?","expected_chunk_ids":["vu-identity-001"]},
+    {"id":"ret2-038","language":"es","family":"paraphrase","query":"¿Qué es Villa Ukika y su relación con la comunidad yagán de Bahía Mejillones en Isla Navarino?","expected_chunk_ids":["vu-identity-001"]},
+    {"id":"ret2-039","language":"es","family":"ambiguity_or_distractor","query":"Villa Ukika es distinta de Puerto Williams; ¿qué contexto de comunidad yagán viva describe el corpus para Villa Ukika?","expected_chunk_ids":["vu-identity-001"]}
   ],
   "release_gate": {
     "minimum_recall_at_1": 0.75,

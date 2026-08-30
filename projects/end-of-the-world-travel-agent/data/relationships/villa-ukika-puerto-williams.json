@@ -1,0 +1,45 @@
+{
+  "id": "villa-ukika-puerto-williams",
+  "subject": "Villa Ukika",
+  "object": "Puerto Williams",
+  "administrativeRelation": "Villa Ukika es un contexto comunitario yagán contemporáneo y vivo, ubicado en la Isla Navarino, comuna de Cabo de Hornos, y asociado a la Comunidad Indígena Yaghan de Bahía Mejillones. Se describe en el marco de una comunidad yagán viva y de continuidad cultural, no como una atracción turística ni como un sitio etnográfico estático.",
+  "geographicDistinction": "Villa Ukika está situada cerca de Puerto Williams, pero es un lugar distinto de Puerto Williams: no deben tratarse como el mismo asentamiento. Su punto geográfico autoritativo está pendiente de confirmación, por lo que no se entregan coordenadas. Las fuentes turísticas describen a Villa Ukika a alrededor de un kilómetro de Puerto Williams, pero ese dato es contextual y provisional, y requiere confirmación geoespacial autoritativa.",
+  "distinctReferents": [
+    {
+      "kind": "city",
+      "name": "Puerto Williams",
+      "description": "Ciudad y capital de la comuna de Cabo de Hornos, en la costa norte de la Isla Navarino."
+    },
+    {
+      "kind": "community-context",
+      "name": "Villa Ukika",
+      "description": "Contexto comunitario yagán contemporáneo y vivo cercano a Puerto Williams, asociado a la Comunidad Indígena Yaghan de Bahía Mejillones; distinto de Puerto Williams y no reducible a una atracción turística."
+    }
+  ],
+  "warnings": [
+    "Villa Ukika es un contexto de comunidad yagán viva y de continuidad cultural; no debe presentarse como una atracción turística ni como un sitio etnográfico estático, ni describirse con la fórmula de \"últimos descendientes\".",
+    "Villa Ukika y Puerto Williams son lugares distintos; no deben confundirse ni tratarse como el mismo asentamiento.",
+    "El punto geográfico autoritativo de Villa Ukika está pendiente de confirmación; no se entregan coordenadas y la distancia de referencia a Puerto Williams es contextual y provisional.",
+    "El acceso de visitantes a Villa Ukika es dinámico y culturalmente sensible: debe verificarse de forma actual y culturalmente apropiada, y no se asume acceso permanente ni durante todo el año."
+  ],
+  "sources": [
+    {
+      "title": "Validación autoritativa chilena (batch-03): Villa Ukika y contexto yagán contemporáneo",
+      "publisher": "Servicio Nacional del Patrimonio Cultural — Ministerio de las Culturas, las Artes y el Patrimonio",
+      "url": "https://www.investigacion.patrimoniocultural.gob.cl/bajo-la-lupa/coleccion-etnografica-del-museo-antropologico-martin-gusinde-de-puerto-williams",
+      "verifiedAt": "2026-08-24",
+      "status": "verified"
+    },
+    {
+      "title": "Servicio Nacional del Patrimonio Cultural — comunidad yagán y continuidad cultural",
+      "publisher": "Servicio Nacional del Patrimonio Cultural",
+      "url": "https://www.patrimoniocultural.gob.cl/",
+      "verifiedAt": "2026-08-24",
+      "status": "verified"
+    }
+  ],
+  "suggestedInternalLinks": [
+    { "path": "/puerto-williams", "label": "Puerto Williams" }
+  ],
+  "verifiedAt": "2026-08-24"
+}

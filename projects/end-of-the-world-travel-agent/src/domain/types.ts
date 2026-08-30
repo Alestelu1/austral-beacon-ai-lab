@@ -111,7 +111,14 @@ export interface DestinationCardAnswer {
  * separated so the assistant never collapses them into one entity.
  */
 export interface PlaceReferent {
-  kind: "city" | "commune" | "cape" | "island" | "national-park" | "province";
+  kind:
+    | "city"
+    | "commune"
+    | "cape"
+    | "island"
+    | "national-park"
+    | "province"
+    | "community-context";
   name: string;
   description: string;
 }
