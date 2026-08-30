@@ -1,0 +1,9 @@
+{
+  "entity_id": "seno-helado",
+  "relationships": [
+    {"target":"canal-barbara","type":"geographically_related_to","status":"verified_general","sensitivity":"public_core"},
+    {"target":"isla-santa-ines","type":"adjacent_geographic_context","status":"verified_historical_context","sensitivity":"public_core"},
+    {"target":"cockburn-magdalena-magallanes-marine-ecosystem","type":"part_of_ecosystem_context","status":"verified","sensitivity":"public_core"},
+    {"target":"strait-of-magellan","type":"western_sector_context","status":"verified_general","sensitivity":"public_core"}
+  ]
+}
