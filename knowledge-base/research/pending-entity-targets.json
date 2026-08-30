@@ -85,6 +85,57 @@
       "reason": "SBAP/SIMBIO lists Isla Jacques as 4.667% of BNA 127.",
       "required_authorities": ["SBAP/SIMBIO", "DGA or official hydrological/cartographic source for further hydrological detail"],
       "promotion_state": "verified_candidate"
+    },
+    {
+      "id": "cabo-froward",
+      "entity_type": "cape",
+      "priority": "medium_high",
+      "reason": "Referenced by canonical Strait-domain relationships but does not yet have a complete canonical package.",
+      "required_authorities": ["IGM/IDE Chile for geospatial validation", "Chilean institutional geographic or heritage sources as applicable"],
+      "promotion_state": "referenced_candidate"
+    },
+    {
+      "id": "cabo-pilar",
+      "entity_type": "cape",
+      "priority": "medium",
+      "reason": "Referenced by canonical Strait-domain relationships but does not yet have a complete canonical package.",
+      "required_authorities": ["IGM/IDE Chile", "DIRECTEMAR/SHOA where hydrographic context is used"],
+      "promotion_state": "referenced_candidate"
+    },
+    {
+      "id": "islotes-evangelistas",
+      "entity_type": "islets",
+      "priority": "medium_high",
+      "reason": "Referenced by the Strait geographic/navigation model as the western mouth reference and requires its own authoritative package before promotion.",
+      "required_authorities": ["DIRECTEMAR/SHOA", "IGM/IDE Chile"],
+      "promotion_state": "referenced_candidate"
+    },
+    {
+      "id": "humpback-whale",
+      "aliases": ["megaptera-novaeangliae"],
+      "entity_type": "species",
+      "priority": "medium",
+      "reason": "Referenced by Strait marine-ecosystem relationships. Common-name and scientific-name slugs must be reconciled before canonical promotion.",
+      "required_authorities": ["SBAP/MMA", "Chilean scientific literature"],
+      "promotion_state": "referenced_candidate"
+    },
+    {
+      "id": "magellanic-penguin",
+      "aliases": ["spheniscus-magellanicus"],
+      "entity_type": "species",
+      "priority": "medium",
+      "reason": "Referenced by Strait marine/protected-area relationships. Common-name and scientific-name slugs must be reconciled before canonical promotion.",
+      "required_authorities": ["SBAP/MMA", "CONAF where protected-area context applies", "Chilean scientific literature"],
+      "promotion_state": "referenced_candidate"
+    },
+    {
+      "id": "south-american-sea-lion",
+      "aliases": ["otaria-flavescens"],
+      "entity_type": "species",
+      "priority": "medium",
+      "reason": "Referenced by Strait marine/protected-area relationships. Common-name and scientific-name slugs must be reconciled before canonical promotion.",
+      "required_authorities": ["SBAP/MMA", "Chilean scientific literature"],
+      "promotion_state": "referenced_candidate"
     }
   ],
   "resolved_targets": [
@@ -101,5 +152,8 @@
     {"id":"isla-desolacion-y-adyacentes-watershed","resolved_as":"canonical","official_id":"1270","package":"knowledge-base/entities/hydrology/isla-desolacion-y-adyacentes-watershed"},
     {"id":"islas-sur-seno-dyvenor-canal-abra-oeste-santa-ines-watershed","resolved_as":"canonical","official_id":"1272","package":"knowledge-base/entities/hydrology/islas-sur-seno-dyvenor-canal-abra-oeste-santa-ines-watershed"}
   ],
-  "rule": "A dangling graph target may remain referenced when evidence is sufficient for the relation, but it must not be treated as a complete canonical entity until its own source, claim and retrieval package is created."
+  "rules": [
+    "A dangling graph target may remain referenced when evidence is sufficient for the relation, but it must not be treated as a complete canonical entity until its own source, claim and retrieval package is created.",
+    "Common-name and scientific-name species slugs must resolve to one canonical species entity before promotion."
+  ]
 }
