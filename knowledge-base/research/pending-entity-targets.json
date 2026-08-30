@@ -19,20 +19,22 @@
       "promotion_state": "verified_candidate"
     },
     {
-      "id": "isla-santa-ines-y-carlos-iii-watershed",
-      "entity_type": "subwatershed",
-      "priority": "high",
-      "reason": "SBAP/SIMBIO lists this subwatershed as 26.786% of BNA 127 and it links two already canonical island entities.",
-      "required_authorities": ["SBAP/SIMBIO", "DGA or official hydrological/cartographic source for further hydrological detail"],
-      "promotion_state": "verified_candidate"
+      "id": "isla-santa-ines-carlos-iii-subsubwatershed",
+      "entity_type": "subsubwatershed",
+      "priority": "medium_high",
+      "reason": "SBAP/SIMBIO defines subsubcuenca BNA 12730 as the 100% child unit of canonical subcuenca BNA 1273.",
+      "required_authorities": ["SBAP/SIMBIO"],
+      "promotion_state": "verified_candidate",
+      "official_id": "12730"
     },
     {
-      "id": "islas-sur-santa-ines-oeste-canal-barbara-cockburn-watershed",
-      "entity_type": "subwatershed",
-      "priority": "high",
-      "reason": "SBAP/SIMBIO lists this subwatershed as 24.146% of BNA 127 and it links canonical Isla Santa Ines, Canal Barbara and Canal Cockburn entities.",
-      "required_authorities": ["SBAP/SIMBIO", "DGA or official hydrological/cartographic source for further hydrological detail"],
-      "promotion_state": "verified_candidate"
+      "id": "sur-santa-ines-oeste-canal-barbara-cockburn-subsubwatershed",
+      "entity_type": "subsubwatershed",
+      "priority": "medium_high",
+      "reason": "SBAP/SIMBIO defines subsubcuenca BNA 12740 as the 100% child unit of canonical subcuenca BNA 1274.",
+      "required_authorities": ["SBAP/SIMBIO"],
+      "promotion_state": "verified_candidate",
+      "official_id": "12740"
     },
     {
       "id": "isla-desolacion-y-adyacentes-watershed",
@@ -83,7 +85,9 @@
     {"id":"estrecho-magallanes-central-magallanes-marine-ecosystem","aliases":["estrecho-de-magallanes-central-magallanes-marine-ecosystem"],"resolved_as":"canonical","official_id":"ECOMAR-058","package":"knowledge-base/entities/ecosystems/estrecho-magallanes-central-magallanes-marine-ecosystem"},
     {"id":"isla-dawson","resolved_as":"canonical","package":"knowledge-base/entities/geography/isla-dawson"},
     {"id":"isla-clarence","resolved_as":"canonical","package":"knowledge-base/entities/geography/isla-clarence"},
-    {"id":"islas-al-sur-estrecho-de-magallanes-watershed","resolved_as":"canonical","official_id":"BNA-127","package":"knowledge-base/entities/hydrology/islas-al-sur-estrecho-de-magallanes-watershed"}
+    {"id":"islas-al-sur-estrecho-de-magallanes-watershed","resolved_as":"canonical","official_id":"BNA-127","package":"knowledge-base/entities/hydrology/islas-al-sur-estrecho-de-magallanes-watershed"},
+    {"id":"isla-santa-ines-carlos-iii-watershed","aliases":["isla-santa-ines-y-carlos-iii-watershed"],"resolved_as":"canonical","official_id":"1273","package":"knowledge-base/entities/hydrology/isla-santa-ines-carlos-iii-watershed"},
+    {"id":"sur-santa-ines-oeste-canal-barbara-cockburn-watershed","aliases":["islas-sur-santa-ines-oeste-canal-barbara-cockburn-watershed"],"resolved_as":"canonical","official_id":"1274","package":"knowledge-base/entities/hydrology/sur-santa-ines-oeste-canal-barbara-cockburn-watershed"}
   ],
   "rule": "A dangling graph target may remain referenced when evidence is sufficient for the relation, but it must not be treated as a complete canonical entity until its own source, claim and retrieval package is created."
 }
