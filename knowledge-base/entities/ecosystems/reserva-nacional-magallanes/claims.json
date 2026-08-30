@@ -1,0 +1,10 @@
+{
+  "entity_id": "reserva-nacional-magallanes",
+  "claims": [
+    {"id":"rnm-001","claim":"La Reserva Nacional Magallanes está ubicada en la península de Brunswick, comuna de Punta Arenas.","source_id":"conaf-reserva-nacional-magallanes","status":"verified"},
+    {"id":"rnm-002","claim":"Fue creada el 13 de febrero de 1932 mediante Decreto 1093.","source_id":"conaf-reserva-nacional-magallanes","status":"verified"},
+    {"id":"rnm-003","claim":"CONAF informa una superficie de 13.500 hectáreas.","source_id":"conaf-reserva-nacional-magallanes","status":"verified"},
+    {"id":"rnm-004","claim":"Protege bosques magallánicos, turberas y la cuenca de la laguna Lynch.","source_id":"conaf-reserva-nacional-magallanes","status":"verified"},
+    {"id":"rnm-005","claim":"La información de apertura, senderos y condiciones de visita es dinámica y debe verificarse en fuentes oficiales antes de responder consultas operativas.","source_id":"conaf-reserva-nacional-magallanes","status":"policy"}
+  ]
+}
