@@ -1,0 +1,27 @@
+{
+  "entity_id": "patagonia-antarctica-geological-connection",
+  "sensitivity": "public_core",
+  "chunks": [
+    {
+      "id": "patagonia-antarctica-geology-01",
+      "text": "INACH explica que la península Antártica y el margen suroccidental de Patagonia comparten una historia geológica vinculada a la fragmentación de Gondwana. Esta relación debe interpretarse en términos científicos y geológicos.",
+      "topics": ["Gondwana", "Patagonia", "península Antártica", "geología"],
+      "source_ids": ["inach-enciclopedia-visual-antartica-2018"],
+      "retrieval_scope": ["antarctic-pulse", "atlas", "travel-agent"]
+    },
+    {
+      "id": "patagonia-antarctica-rocks-02",
+      "text": "La Enciclopedia visual de la Antártica de INACH señala similitudes geológicas entre rocas de las islas Madre de Dios y Duque de York, en Última Esperanza, y rocas de la península Trinidad, en el norte de la península Antártica, lo que apoya una historia geológica común.",
+      "topics": ["Madre de Dios", "Duque de York", "península Trinidad", "geología"],
+      "source_ids": ["inach-enciclopedia-visual-antartica-2018"],
+      "retrieval_scope": ["antarctic-pulse", "atlas"]
+    },
+    {
+      "id": "punta-arenas-antarctic-science-gateway-03",
+      "text": "INACH destaca la cercanía relativa entre el extremo austral de Sudamérica y la Antártica a través del paso Drake y presenta a Punta Arenas como un nodo relevante para expediciones científicas, exploratorias y comerciales hacia el continente.",
+      "topics": ["Punta Arenas", "Antártica", "paso Drake", "ciencia polar"],
+      "source_ids": ["inach-enciclopedia-visual-antartica-2018"],
+      "retrieval_scope": ["antarctic-pulse", "antarctica-begins", "travel-agent"]
+    }
+  ]
+}
