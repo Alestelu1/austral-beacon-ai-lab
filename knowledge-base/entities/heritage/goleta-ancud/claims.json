@@ -1,0 +1,45 @@
+{
+  "entity_id": "goleta-ancud",
+  "claims": [
+    {
+      "id": "goleta-ancud-zarpe-1843-05-22",
+      "claim": "La Goleta Ancud zarpó desde Ancud el 22 de mayo de 1843 en la expedición destinada a la toma de posesión del Estrecho de Magallanes.",
+      "source_ids": ["archivo-nacional-zarpe-goleta-ancud-2026"],
+      "confidence": "high",
+      "claim_type": "historical_event",
+      "stable": true
+    },
+    {
+      "id": "goleta-ancud-command-juan-guillermos",
+      "claim": "La expedición fue comandada por Juan Guillermos, forma castellanizada de John Williams.",
+      "source_ids": ["archivo-nacional-zarpe-goleta-ancud-2026", "memoria-chilena-diario-goleta-ancud-1843"],
+      "confidence": "high",
+      "claim_type": "historical_fact",
+      "stable": true
+    },
+    {
+      "id": "estrecho-possession-1843-09-21",
+      "claim": "La Armada de Chile fecha la toma de posesión del Estrecho de Magallanes el 21 de septiembre de 1843.",
+      "source_ids": ["armada-toma-posesion-estrecho-1843"],
+      "confidence": "high",
+      "claim_type": "historical_event",
+      "stable": true
+    },
+    {
+      "id": "goleta-ancud-historical-diary",
+      "claim": "Existe una edición documental del diario de la Goleta Ancud al mando de Juan Guillermos correspondiente a la expedición de 1843, publicada en 1901.",
+      "source_ids": ["memoria-chilena-diario-goleta-ancud-1843"],
+      "confidence": "high",
+      "claim_type": "documentary_source",
+      "stable": true
+    },
+    {
+      "id": "goleta-ancud-public-monument-punta-arenas",
+      "claim": "El Consejo de Monumentos Nacionales registra un Monumento a los Tripulantes de la Goleta Ancud en Punta Arenas.",
+      "source_ids": ["cmn-monumento-tripulantes-goleta-ancud"],
+      "confidence": "high",
+      "claim_type": "heritage",
+      "stable": true
+    }
+  ]
+}
