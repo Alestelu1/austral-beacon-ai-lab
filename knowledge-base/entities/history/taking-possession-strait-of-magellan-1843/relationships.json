@@ -1,0 +1,10 @@
+{
+  "entity_id": "taking-possession-strait-of-magellan-1843",
+  "relationships": [
+    {"predicate": "occurred_at", "target": "strait-of-magellan", "status": "verified"},
+    {"predicate": "associated_with", "target": "punta-santa-ana", "status": "verified"},
+    {"predicate": "involved_vessel", "target": "goleta-ancud", "status": "verified"},
+    {"predicate": "led_by", "target": "juan-guillermos", "status": "verified"},
+    {"predicate": "preceded", "target": "fuerte-bulnes", "status": "pending_entity_completion"}
+  ]
+}
