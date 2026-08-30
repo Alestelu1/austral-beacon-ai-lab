@@ -1,0 +1,14 @@
+{
+  "id": "pali-aike",
+  "canonical_name": "Parque Nacional Pali Aike",
+  "entity_type": "protected_area",
+  "protection_category": "parque_nacional",
+  "country": "Chile",
+  "region": "Magallanes y de la Antártica Chilena",
+  "province": "Magallanes",
+  "commune": "San Gregorio",
+  "sensitivity": "public_core",
+  "status": "canonical",
+  "authority": "CONAF",
+  "dynamic_fields": ["opening_hours", "seasonal_closures", "road_conditions", "ticketing", "visitor_rules"]
+}
