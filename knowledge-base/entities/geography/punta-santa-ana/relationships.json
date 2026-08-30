@@ -1,0 +1,11 @@
+{
+  "entity_id": "punta-santa-ana",
+  "relationships": [
+    {"predicate": "located_on", "target": "strait-of-magellan", "status": "verified"},
+    {"predicate": "associated_with", "target": "puerto-del-hambre", "status": "verified"},
+    {"predicate": "associated_with", "target": "fuerte-bulnes", "status": "verified_initial"},
+    {"predicate": "associated_with", "target": "taking-possession-strait-of-magellan-1843", "status": "verified"},
+    {"predicate": "historically_related_to", "target": "goleta-ancud", "status": "verified"},
+    {"predicate": "contains_context_about", "target": "prehispanic-human-occupation-central-strait", "status": "requires_dedicated_entity"}
+  ]
+}
