@@ -1,0 +1,24 @@
+{
+  "entity_id": "puerto-del-hambre",
+  "sources": [
+    {
+      "source_id": "puerto-del-hambre-mas-alla-leyenda",
+      "title": "Puerto del Hambre. Más allá de la leyenda",
+      "authors": ["Soledad González Díaz", "Víctor Martínez Mellado", "Simón Urbina Araya"],
+      "isbn": "978-956-410-276-4",
+      "drive_file_id": "1AWgVZnBzQmjlRs63eQVnxT80ToHwPfhE",
+      "source_type": "historical_archaeological_publication",
+      "authority": "high",
+      "publisher_status": "needs_normalization"
+    },
+    {
+      "source_id": "bienes-nacionales-rey-don-felipe-martinic",
+      "institution": "Ministerio de Bienes Nacionales",
+      "title": "Rey Don Felipe: Acontecimientos Históricos",
+      "author": "Mateo Martinic",
+      "drive_file_id": "13gtfA8E8PNgqOKZqeOtuMYwkxNlYCbNS",
+      "source_type": "institutional_historical_publication",
+      "authority": "high"
+    }
+  ]
+}
