@@ -1,0 +1,20 @@
+{
+  "entity_id": "los-pinguinos",
+  "sources": [
+    {
+      "source_id": "conaf-los-pinguinos",
+      "institution": "CONAF",
+      "source_type": "primary_institutional",
+      "title": "Monumento Natural Los Pingüinos",
+      "url": "https://www.conaf.cl/parque_nacionales/monumento-natural-los-pinguinos/",
+      "use": ["category", "administrative_location", "island_composition", "fauna", "visitor_operations"]
+    },
+    {
+      "source_id": "sernatur-mapa-provincia-magallanes",
+      "institution": "SERNATUR",
+      "source_type": "institutional_promotional",
+      "drive_file_id": "1jdWpwA-uHNMXHpUMnq2H7rGndShinRJY",
+      "use": ["discovery", "tourism_context"]
+    }
+  ]
+}
