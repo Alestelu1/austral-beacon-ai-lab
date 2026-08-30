@@ -1,0 +1,22 @@
+{
+  "entity_id": "isla-capitan-aracena",
+  "canonical_name": "Isla Capitán Aracena",
+  "entity_type": "island",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["travel", "atlas", "science", "editorial", "austral-intelligence"],
+  "requires_citation": true,
+  "requires_human_review": false,
+  "operational_state": false,
+  "rag_priority": "high",
+  "authority": {
+    "primary": "SBAP/SIMBIO",
+    "geospatial_precision": "pending authoritative geospatial or hydrographic source"
+  },
+  "uncertainty_policy": {
+    "general_geography": "public",
+    "ecosystem_membership": "public_with_source",
+    "navigation_access": "operational_dynamic",
+    "precise_geometry": "pending authoritative source"
+  }
+}
