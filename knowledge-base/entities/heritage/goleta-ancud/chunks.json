@@ -1,0 +1,26 @@
+{
+  "entity_id": "goleta-ancud",
+  "chunks": [
+    {
+      "id": "goleta-ancud-history-01",
+      "text": "La Goleta Ancud zarpó desde Ancud el 22 de mayo de 1843 en la expedición destinada a la toma de posesión del Estrecho de Magallanes. La nave estuvo comandada por Juan Guillermos, forma castellanizada de John Williams.",
+      "topics": ["Goleta Ancud", "1843", "Juan Guillermos", "Estrecho de Magallanes"],
+      "source_ids": ["archivo-nacional-zarpe-goleta-ancud-2026", "memoria-chilena-diario-goleta-ancud-1843"],
+      "is_operational_state": false
+    },
+    {
+      "id": "goleta-ancud-possession-02",
+      "text": "La Armada de Chile fecha la toma de posesión del Estrecho de Magallanes el 21 de septiembre de 1843, durante la expedición de la Goleta Ancud.",
+      "topics": ["toma de posesión", "Estrecho de Magallanes", "1843"],
+      "source_ids": ["armada-toma-posesion-estrecho-1843"],
+      "is_operational_state": false
+    },
+    {
+      "id": "goleta-ancud-heritage-03",
+      "text": "El Consejo de Monumentos Nacionales registra en Punta Arenas un Monumento a los Tripulantes de la Goleta Ancud, integrando la expedición de 1843 a la memoria patrimonial regional.",
+      "topics": ["patrimonio", "Punta Arenas", "monumento"],
+      "source_ids": ["cmn-monumento-tripulantes-goleta-ancud"],
+      "is_operational_state": false
+    }
+  ]
+}
