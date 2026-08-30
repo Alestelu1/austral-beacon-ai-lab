@@ -1,0 +1,12 @@
+{
+  "entity_id": "islas-sur-seno-dyvenor-canal-abra-oeste-santa-ines-watershed",
+  "chunks": [
+    {
+      "chunk_id": "bna1272-public-1",
+      "text": "Islas al sur del Seno Dyvenor y Canal Abra al oeste de Isla Santa Ines es la subcuenca BNA 1272 de la cuenca Islas al Sur Estrecho de Magallanes. SBAP/SIMBIO registra 344984 ha, equivalentes al 12.351% de BNA 127. Su subsubcuenca BNA 12720 representa el 100% de la unidad.",
+      "retrieval_scope": ["atlas", "austral-intelligence"],
+      "sensitivity": "public_core",
+      "requires_citation": true
+    }
+  ]
+}
