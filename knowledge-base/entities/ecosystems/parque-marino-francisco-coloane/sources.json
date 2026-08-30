@@ -1,0 +1,28 @@
+{
+  "entity_id": "parque-marino-francisco-coloane",
+  "sources": [
+    {
+      "source_id": "subpesca-parques-marinos-francisco-coloane",
+      "institution": "Subsecretaría de Pesca y Acuicultura (SUBPESCA)",
+      "source_type": "primary_institutional",
+      "authority_class": "high",
+      "use": ["category", "creation_instrument", "surface_area", "location", "conservation_objectives", "target_species"]
+    },
+    {
+      "source_id": "mma-francisco-coloane-records",
+      "institution": "Ministerio del Medio Ambiente",
+      "source_type": "primary_institutional_secondary_for_classification",
+      "authority_class": "high_with_modeling_conflict",
+      "use": ["broader_protected_system_context", "isla-carlos-iii", "islote-rupert", "historical_registry_context"],
+      "conflict_note": "MMA/SIMBIO contains records with category/surface labels that should not be silently merged with the SUBPESCA Parque Marino record."
+    },
+    {
+      "source_id": "sernatur-mapa-provincia-magallanes",
+      "institution": "SERNATUR",
+      "drive_file_id": "1jdWpwA-uHNMXHpUMnq2H7rGndShinRJY",
+      "source_type": "institutional_promotional",
+      "authority_class": "secondary_for_discovery",
+      "use": ["entity_discovery", "tourism_context"]
+    }
+  ]
+}
