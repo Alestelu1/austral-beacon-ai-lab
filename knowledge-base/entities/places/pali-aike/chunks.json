@@ -1,0 +1,18 @@
+{
+  "entity_id": "pali-aike",
+  "chunks": [
+    {
+      "id": "pali-aike-overview",
+      "text": "Parque Nacional Pali Aike is a protected area in San Gregorio commune, Magallanes province, Chile. CONAF highlights its volcanic geomorphology, including low volcanic cones, natural caves, craters and lava fields.",
+      "sensitivity": "public_core",
+      "allowed_consumers": ["end-of-the-world-atlas", "end-of-the-world-travel", "travel-agent"]
+    },
+    {
+      "id": "pali-aike-operations-policy",
+      "text": "Opening hours, seasonal closures, ticketing, visitor rules and road conditions for Pali Aike must be verified against current CONAF or Pases Parques information.",
+      "sensitivity": "operational_dynamic",
+      "allowed_consumers": ["travel-agent"],
+      "requires_live_verification": true
+    }
+  ]
+}
