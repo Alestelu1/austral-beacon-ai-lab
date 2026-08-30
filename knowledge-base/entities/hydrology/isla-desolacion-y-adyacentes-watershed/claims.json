@@ -1,0 +1,9 @@
+{
+  "entity_id": "isla-desolacion-y-adyacentes-watershed",
+  "claims": [
+    {"id":"bna1270-c1","claim":"La subcuenca oficial se denomina Isla Desolacion y adyacentes y tiene codigo BNA 1270.","source_id":"sbap-simbio-subcuenca-1270","status":"verified","sensitivity":"public_core"},
+    {"id":"bna1270-c2","claim":"Pertenece a la cuenca BNA 127 Islas al Sur Estrecho de Magallanes.","source_id":"sbap-simbio-subcuenca-1270","status":"verified","sensitivity":"public_core"},
+    {"id":"bna1270-c3","claim":"Su superficie registrada es 454978 ha, equivalente al 16.289% de BNA 127.","source_id":"sbap-simbio-subcuenca-1270","status":"verified","sensitivity":"public_core"},
+    {"id":"bna1270-c4","claim":"La subsubcuenca homonima BNA 12700 representa el 100% de la subcuenca.","source_id":"sbap-simbio-subcuenca-1270","status":"verified","sensitivity":"public_core"}
+  ]
+}
