@@ -1,0 +1,9 @@
+{
+  "entity_id": "paso-tortuoso",
+  "relationships": [
+    {"target": "strait-of-magellan", "type": "part_of", "status": "verified"},
+    {"target": "canal-jeronimo", "type": "hydrodynamically_connected_to", "status": "verified"},
+    {"target": "punta-san-jeronimo", "type": "eastern_or_local_endpoint_reference", "status": "verified_pending_entity"},
+    {"target": "cabo-quod", "type": "endpoint_reference", "status": "verified_pending_entity"}
+  ]
+}
