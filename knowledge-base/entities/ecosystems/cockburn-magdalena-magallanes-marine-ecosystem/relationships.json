@@ -1,0 +1,11 @@
+{
+  "entity_id": "cockburn-magdalena-magallanes-marine-ecosystem",
+  "relationships": [
+    {"target": "canal-barbara", "type": "includes_geoform", "status": "verified", "sensitivity": "public_core"},
+    {"target": "isla-carlos-iii", "type": "includes_geoform", "status": "verified", "sensitivity": "public_core"},
+    {"target": "isla-santa-ines", "type": "includes_geoform", "status": "verified", "sensitivity": "public_core"},
+    {"target": "seno-helado", "type": "includes_geoform", "status": "verified", "sensitivity": "public_core"},
+    {"target": "canal-cockburn", "type": "includes_geoform", "status": "verified_candidate", "sensitivity": "public_core"},
+    {"target": "isla-capitan-aracena", "type": "includes_geoform", "status": "verified_candidate", "sensitivity": "public_core"}
+  ]
+}
