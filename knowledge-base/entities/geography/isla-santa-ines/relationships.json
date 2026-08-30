@@ -1,0 +1,10 @@
+{
+  "entity_id": "isla-santa-ines",
+  "relationships": [
+    {"target": "isla-carlos-iii", "type": "shares_subcuenca_context", "status": "verified_general", "sensitivity": "public_core"},
+    {"target": "canal-barbara", "type": "regional_hydrographic_context", "status": "verified_general", "sensitivity": "public_core"},
+    {"target": "seno-helado", "type": "regional_hydrographic_context", "status": "verified_general", "sensitivity": "public_core"},
+    {"target": "cockburn-magdalena-magallanes-marine-ecosystem", "type": "geoform_of", "status": "verified", "sensitivity": "public_core"},
+    {"target": "costa-expuesta-patagonia-sur-magallanes-marine-ecosystem", "type": "geoform_of", "status": "verified_candidate", "sensitivity": "public_core"}
+  ]
+}
