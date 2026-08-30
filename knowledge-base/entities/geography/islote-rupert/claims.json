@@ -1,0 +1,26 @@
+{
+  "entity_id": "islote-rupert",
+  "claims": [
+    {
+      "id": "rupert-penguin-nesting",
+      "claim": "El Ministerio del Medio Ambiente identifica al Islote Rupert como una zona importante de nidificación del pingüino de Magallanes.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_id": "mma-simbio-francisco-coloane"
+    },
+    {
+      "id": "rupert-carlos-iii-sector",
+      "claim": "El sector Isla Carlos III–Islote Rupert es relevante para la alimentación de ballena jorobada en aguas interiores.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_id": "mma-simbio-francisco-coloane"
+    },
+    {
+      "id": "rupert-protection-measure",
+      "claim": "SIMBIO registra una medida de protección específica para Isla Rupert mediante Decreto Exento 275 de 2006 del Ministerio de Bienes Nacionales.",
+      "status": "verified_official_register",
+      "sensitivity": "public_core",
+      "source_id": "mma-simbio-francisco-coloane"
+    }
+  ]
+}
