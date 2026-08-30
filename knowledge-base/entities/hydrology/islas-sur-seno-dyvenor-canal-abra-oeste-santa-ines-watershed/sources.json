@@ -1,0 +1,14 @@
+{
+  "entity_id": "islas-sur-seno-dyvenor-canal-abra-oeste-santa-ines-watershed",
+  "sources": [
+    {
+      "source_id": "sbap-simbio-subcuenca-1272",
+      "institution": "SBAP/SIMBIO",
+      "authority_domain": "hydrology_biodiversity_cartographic_reference",
+      "source_type": "institutional_primary",
+      "url": "https://simbio.mma.gob.cl/Subsubcuencas/Details/12720",
+      "verified_at": "2026-08-30",
+      "supports": ["official_name", "bna_code", "parent_watershed", "area", "subsubwatershed_structure", "ecosystem_overlap_context"]
+    }
+  ]
+}
