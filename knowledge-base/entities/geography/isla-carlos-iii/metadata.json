@@ -1,0 +1,12 @@
+{
+  "entity_id": "isla-carlos-iii",
+  "entity_type": "island",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["atlas", "travel", "science", "editorial"],
+  "requires_citation": true,
+  "requires_human_review": false,
+  "dynamic_fields": ["access", "navigation", "operators", "landing_conditions"],
+  "primary_authorities": ["Ministerio del Medio Ambiente", "SUBPESCA", "Ministerio de Bienes Nacionales"],
+  "notes": "Keep island protection status distinct from Parque Marino Francisco Coloane and AMCP-MU Francisco Coloane categories."
+}
