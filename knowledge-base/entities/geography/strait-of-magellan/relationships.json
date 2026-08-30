@@ -1,0 +1,17 @@
+{
+  "entity_id": "strait-of-magellan",
+  "relationships": [
+    {"target": "punta-arenas", "type": "logistically_connected_to", "status": "sourced_or_existing_entity"},
+    {"target": "punta-dungenes", "type": "eastern_mouth_reference", "status": "sourced"},
+    {"target": "islotes-evangelistas", "type": "western_mouth_reference", "status": "sourced"},
+    {"target": "primera-angostura", "type": "contains_navigation_sector", "status": "sourced"},
+    {"target": "segunda-angostura", "type": "contains_navigation_sector", "status": "sourced"},
+    {"target": "paso-tortuoso", "type": "contains_navigation_sector", "status": "sourced"},
+    {"target": "punta-delgada", "type": "navigation_control_point", "status": "sourced"},
+    {"target": "cabo-froward", "type": "geographic_sector_related_to", "status": "pending_dedicated_entity"},
+    {"target": "cabo-pilar", "type": "geographic_sector_related_to", "status": "pending_dedicated_entity"},
+    {"target": "goleta-ancud", "type": "historically_related_to", "status": "pending_historical_source_integration"},
+    {"target": "fuerte-bulnes", "type": "historically_related_to", "status": "pending_historical_source_integration"},
+    {"target": "puerto-del-hambre", "type": "historically_related_to", "status": "pending_historical_source_integration"}
+  ]
+}
