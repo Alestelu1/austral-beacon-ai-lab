@@ -1,0 +1,21 @@
+{
+  "entity_id": "seno-helado",
+  "sources": [
+    {
+      "source_id": "mma-simbio-seno-helado",
+      "institution": "Ministerio del Medio Ambiente / SIMBIO",
+      "source_type": "primary_institutional",
+      "authority_class": "environmental_geography",
+      "supports": ["place_existence", "marine_ecosystem_context"],
+      "public_retrieval_filter": "geography_ecosystem_only"
+    },
+    {
+      "source_id": "mma-francisco-coloane-historical-baseline",
+      "institution": "Ministerio del Medio Ambiente",
+      "source_type": "institutional_historical_baseline",
+      "authority_class": "historical_environmental_context",
+      "supports": ["historical_relation_to_isla_santa_ines", "historical_relation_to_canal_barbara"],
+      "public_retrieval_filter": "historical_context_only"
+    }
+  ]
+}
