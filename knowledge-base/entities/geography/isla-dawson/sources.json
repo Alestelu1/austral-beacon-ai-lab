@@ -1,0 +1,30 @@
+{
+  "entity_id": "isla-dawson",
+  "sources": [
+    {
+      "source_id": "sbap-simbio-ecomar-058",
+      "institution": "SBAP/SIMBIO",
+      "source_type": "official_biodiversity_platform",
+      "authority_domains": ["marine_ecosystem", "geoform_relationship"],
+      "role": "primary",
+      "url": "https://simbio.mma.gob.cl/EcosistemasMarinos/VistaImpresion/64"
+    },
+    {
+      "source_id": "sbap-simbio-magallanes-region",
+      "institution": "SBAP/SIMBIO",
+      "source_type": "official_biodiversity_platform",
+      "authority_domains": ["regional_biodiversity", "watershed_context"],
+      "role": "primary",
+      "url": "https://simbio.mma.gob.cl/DPA/VistaImpresionRegion/5"
+    },
+    {
+      "source_id": "drive-puerto-del-hambre-context",
+      "institution": "institutional_historical_publication",
+      "source_type": "drive_document",
+      "drive_id": "1AWgVZnBzQmjlRs63eQVnxT80ToHwPfhE",
+      "authority_domains": ["paleoenvironmental_context"],
+      "role": "secondary_context",
+      "public_retrieval_filter": "paleoenvironment_only"
+    }
+  ]
+}
