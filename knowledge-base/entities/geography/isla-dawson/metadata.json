@@ -1,0 +1,19 @@
+{
+  "entity_id": "isla-dawson",
+  "entity_type": "island",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "rag_priority": "high",
+  "authority_profile": {
+    "geography_ecosystem": "SBAP/SIMBIO",
+    "geospatial_precision": "IGM/IDE Chile/SHOA pending",
+    "history": "separate specialized-source layer"
+  },
+  "operational_state": false,
+  "public_answer_allowed": true,
+  "requires_citation": true,
+  "notes": [
+    "Do not use the geographic entity as a shortcut for sensitive historical narratives.",
+    "Coordinates or exact geometry require a competent geospatial authority."
+  ]
+}
