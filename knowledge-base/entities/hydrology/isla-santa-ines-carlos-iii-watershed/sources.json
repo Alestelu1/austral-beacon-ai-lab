@@ -1,0 +1,19 @@
+{
+  "entity_id": "isla-santa-ines-carlos-iii-watershed",
+  "sources": [
+    {
+      "source_id": "sbap-simbio-subcuenca-1273",
+      "institution": "SBAP/SIMBIO",
+      "source_type": "primary_institutional",
+      "authority": "high",
+      "supports": ["name", "BNA_code", "parent_watershed", "surface", "share_parent", "subsubwatershed_code"]
+    },
+    {
+      "source_id": "sbap-simbio-subsubcuenca-12730",
+      "institution": "SBAP/SIMBIO",
+      "source_type": "primary_institutional",
+      "authority": "high",
+      "supports": ["subsubwatershed_name", "subsubwatershed_code", "surface"]
+    }
+  ]
+}
