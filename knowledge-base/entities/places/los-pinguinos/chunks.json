@@ -1,0 +1,18 @@
+{
+  "entity_id": "los-pinguinos",
+  "chunks": [
+    {
+      "id": "los-pinguinos-overview",
+      "text": "Monumento Natural Los Pingüinos is a protected area in the Strait of Magellan, Chile, formed by Isla Magdalena and Isla Marta. CONAF distinguishes their ecological roles, including breeding colonies of Magellanic penguins on Magdalena and cormorants and pinnipeds on Marta.",
+      "sensitivity": "public_core",
+      "allowed_consumers": ["end-of-the-world-atlas", "end-of-the-world-travel", "travel-agent", "antarctic-pulse"]
+    },
+    {
+      "id": "los-pinguinos-operations-policy",
+      "text": "Seasonal closures, landing permissions, visitor schedules, operator availability and visitor protocols for Monumento Natural Los Pingüinos must be verified against current CONAF information.",
+      "sensitivity": "operational_dynamic",
+      "allowed_consumers": ["travel-agent"],
+      "requires_live_verification": true
+    }
+  ]
+}
