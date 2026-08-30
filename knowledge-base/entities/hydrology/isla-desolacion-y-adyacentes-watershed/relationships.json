@@ -1,0 +1,9 @@
+{
+  "entity_id": "isla-desolacion-y-adyacentes-watershed",
+  "relationships": [
+    {"target":"islas-al-sur-estrecho-de-magallanes-watershed","type":"part_of_watershed","status":"verified","sensitivity":"public_core"},
+    {"target":"isla-desolacion-y-adyacentes-subsubwatershed","type":"has_subsubwatershed","official_id":"BNA-12700","status":"verified_candidate","sensitivity":"public_core"},
+    {"target":"costa-expuesta-patagonia-sur-magallanes-marine-ecosystem","type":"overlaps_ecosystem_context","status":"verified_general","sensitivity":"public_core"},
+    {"target":"estrecho-magallanes-oeste-magallanes-marine-ecosystem","type":"overlaps_ecosystem_context","status":"verified_candidate","sensitivity":"public_core"}
+  ]
+}
