@@ -1,0 +1,18 @@
+{
+  "entity_id": "patagonia-antarctica-geological-connection",
+  "sensitivity": "public_core",
+  "sources": [
+    {
+      "source_id": "inach-enciclopedia-visual-antartica-2018",
+      "institution": "Instituto Antártico Chileno",
+      "title": "Enciclopedia visual de la Antártica",
+      "year": 2018,
+      "isbn": "978-956-7046-12-6",
+      "drive_file_id": "1Wxcye-F4-XLPc2Oop2BZFsR2QH84-EZZ",
+      "source_type": "institutional_science_education",
+      "authority": "high",
+      "retrieved_from_drive": true,
+      "public_retrieval_filter": "science_geology_geography_only"
+    }
+  ]
+}
