@@ -1,0 +1,29 @@
+{
+  "entity_id": "estrecho-magallanes-central-magallanes-marine-ecosystem",
+  "official_id": "ECOMAR-058",
+  "entity_type": "marine_ecosystem",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["atlas", "travel", "science", "editorial", "austral-intelligence"],
+  "requires_citation": true,
+  "requires_human_review": false,
+  "public_answer_allowed": true,
+  "is_operational_state": false,
+  "rag_priority": "high",
+  "authority": "SIMBIO/SBAP",
+  "coverage": {
+    "identity": "verified",
+    "ecoregion": "verified",
+    "surface": "verified",
+    "geoforms": "verified_initial",
+    "species": "pending_scientific_sources",
+    "oceanography": "pending_authoritative_sources",
+    "protected_areas": "context_only",
+    "environmental_projects": "operational_dynamic"
+  },
+  "uncertainty_policy": [
+    "Do not infer administrative or legal boundaries from ecosystem membership.",
+    "Do not expose SEIA project listings as permanent ecosystem attributes.",
+    "Use authoritative hydrographic sources for navigation and bathymetry."
+  ]
+}
