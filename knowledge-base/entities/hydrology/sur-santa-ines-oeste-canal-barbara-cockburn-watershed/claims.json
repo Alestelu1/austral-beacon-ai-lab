@@ -1,0 +1,10 @@
+{
+  "entity_id": "sur-santa-ines-oeste-canal-barbara-cockburn-watershed",
+  "claims": [
+    {"id":"bna1274-001","claim":"La subcuenca pertenece a la cuenca BNA 127 Islas al Sur Estrecho de Magallanes.","status":"verified","source_id":"sbap-simbio-subcuenca-1274","sensitivity":"public_core"},
+    {"id":"bna1274-002","claim":"Su código BNA es 1274.","status":"verified","source_id":"sbap-simbio-subcuenca-1274","sensitivity":"public_core"},
+    {"id":"bna1274-003","claim":"SBAP/SIMBIO registra una superficie de 674.408 ha, equivalente al 24,146% de la cuenca BNA 127.","status":"verified","source_id":"sbap-simbio-subcuenca-1274","sensitivity":"public_core"},
+    {"id":"bna1274-004","claim":"La subcuenca se divide en una subsubcuenca homónima abreviada de código BNA 12740 que representa el 100% de su superficie.","status":"verified","source_id":"sbap-simbio-subsubcuenca-12740","sensitivity":"public_core"},
+    {"id":"bna1274-005","claim":"Las referencias a Isla Santa Inés, Canal Bárbara y Canal Cockburn en el nombre oficial son contexto geográfico de la unidad hidrológica y no prueban por sí solas límites administrativos o de protección.","status":"modeling_rule","sensitivity":"public_core"}
+  ]
+}
