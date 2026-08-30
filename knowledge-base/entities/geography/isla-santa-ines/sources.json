@@ -1,0 +1,29 @@
+{
+  "entity_id": "isla-santa-ines",
+  "sources": [
+    {
+      "source_id": "simbio-subcuenca-1273",
+      "institution": "Ministerio del Medio Ambiente / SIMBIO",
+      "title": "Subcuenca Isla Santa Ines y Carlos III",
+      "source_type": "official_biodiversity_geospatial_context",
+      "authority": "high",
+      "supports": ["subcuenca_membership", "regional_context"]
+    },
+    {
+      "source_id": "simbio-ecomar-056",
+      "institution": "Ministerio del Medio Ambiente / SIMBIO",
+      "title": "Ecosistema marino Cockburn Magdalena - Magallanes",
+      "source_type": "official_marine_ecosystem_registry",
+      "authority": "high",
+      "supports": ["ecosystem_geoform_membership"]
+    },
+    {
+      "source_id": "simbio-ecomar-057",
+      "institution": "Ministerio del Medio Ambiente / SIMBIO",
+      "title": "Ecosistema marino Costa Expuesta de Patagonia Sur - Magallanes",
+      "source_type": "official_marine_ecosystem_registry",
+      "authority": "high",
+      "supports": ["ecosystem_geoform_membership"]
+    }
+  ]
+}
