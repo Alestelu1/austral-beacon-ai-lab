@@ -1,0 +1,11 @@
+{
+  "entity_id": "puerto-del-hambre",
+  "relationships": [
+    {"predicate": "official_historical_name", "target": "ciudad-del-rey-don-felipe", "status": "verified"},
+    {"predicate": "located_at", "target": "peninsula-de-santa-ana", "status": "verified"},
+    {"predicate": "located_on", "target": "strait-of-magellan", "status": "verified"},
+    {"predicate": "historically_related_to", "target": "fuerte-bulnes", "status": "verified_initial"},
+    {"predicate": "contains_context_about", "target": "indigenous-occupation-magallanes", "status": "requires_dedicated_entity"},
+    {"predicate": "studied_by", "target": "instituto-de-la-patagonia", "status": "verified_initial"}
+  ]
+}
