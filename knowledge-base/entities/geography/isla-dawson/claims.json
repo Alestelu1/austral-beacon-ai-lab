@@ -1,0 +1,30 @@
+{
+  "entity_id": "isla-dawson",
+  "claims": [
+    {
+      "id": "dawson-001",
+      "claim": "Isla Dawson is a geoform of the Estrecho de Magallanes Central - Magallanes marine ecosystem (ECOMAR-058).",
+      "source_id": "sbap-simbio-ecomar-058",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "confidence": "high"
+    },
+    {
+      "id": "dawson-002",
+      "claim": "SBAP/SIMBIO identifies a watershed unit named Islas Dawson, Wickam y adyacentes in the Magallanes region.",
+      "source_id": "sbap-simbio-magallanes-region",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "confidence": "high"
+    },
+    {
+      "id": "dawson-003",
+      "claim": "Institutional historical material places northern Isla Dawson within a former glacial-lake paleoenvironmental context that also involved Bahia Inutil and Segunda Angostura.",
+      "source_id": "drive-puerto-del-hambre-context",
+      "status": "verified_contextual",
+      "sensitivity": "public_core",
+      "confidence": "medium_high",
+      "scope_note": "Historical/paleoenvironmental context only; do not infer current hydrology."
+    }
+  ]
+}
