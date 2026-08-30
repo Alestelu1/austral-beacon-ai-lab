@@ -1,0 +1,21 @@
+{
+  "entity_id": "cockburn-magdalena-magallanes-marine-ecosystem",
+  "sources": [
+    {
+      "source_id": "simbio-ecomar-056",
+      "institution": "Ministerio del Medio Ambiente / SIMBIO",
+      "title": "Ecosistema marino Cockburn Magdalena - Magallanes",
+      "source_type": "official_marine_ecosystem_registry",
+      "authority": "high",
+      "supports": ["ecosystem_identity", "external_id", "ecoregion", "area", "zone", "origin_zone", "geoforms"]
+    },
+    {
+      "source_id": "simbio-cuenca-127",
+      "institution": "Ministerio del Medio Ambiente / SIMBIO",
+      "title": "Cuenca Islas al Sur Estrecho de Magallanes",
+      "source_type": "official_biodiversity_geospatial_context",
+      "authority": "high",
+      "supports": ["regional_ecosystem_context"]
+    }
+  ]
+}
