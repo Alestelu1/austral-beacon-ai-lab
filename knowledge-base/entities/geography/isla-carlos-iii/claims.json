@@ -1,0 +1,33 @@
+{
+  "entity_id": "isla-carlos-iii",
+  "claims": [
+    {
+      "id": "carlos-iii-francisco-coloane-context",
+      "claim": "Isla Carlos III forma parte del contexto geográfico del sistema protegido Francisco Coloane en el sector centro-occidental del Estrecho de Magallanes.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_id": "mma-francisco-coloane-amcp"
+    },
+    {
+      "id": "carlos-iii-humpback-feeding-context",
+      "claim": "El sector Isla Carlos III–Islote Rupert es identificado por el Ministerio del Medio Ambiente como un área de gran importancia para la alimentación de ballena jorobada en aguas interiores del país.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_id": "mma-simbio-francisco-coloane"
+    },
+    {
+      "id": "carlos-iii-sea-lion-colonies",
+      "claim": "Isla Carlos III alberga varias colonias de lobo marino común, incluida al menos una colonia reproductiva.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_id": "mma-simbio-francisco-coloane"
+    },
+    {
+      "id": "carlos-iii-protection-measure",
+      "claim": "SIMBIO registra una medida de protección específica para Isla Carlos Tercero mediante Decreto Exento 662 de 2005 del Ministerio de Bienes Nacionales.",
+      "status": "verified_official_register",
+      "sensitivity": "public_core",
+      "source_id": "mma-simbio-francisco-coloane"
+    }
+  ]
+}
