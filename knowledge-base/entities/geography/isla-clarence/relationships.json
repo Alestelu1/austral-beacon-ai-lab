@@ -1,0 +1,8 @@
+{
+  "entity_id": "isla-clarence",
+  "relationships": [
+    {"target":"estrecho-magallanes-central-magallanes-marine-ecosystem","type":"geoform_of","status":"verified","sensitivity":"public_core"},
+    {"target":"islas-clarence-y-adyacentes-watershed","type":"associated_watershed_unit","status":"verified_candidate","sensitivity":"public_core"},
+    {"target":"islas-al-sur-estrecho-de-magallanes-watershed","type":"part_of_watershed_context","status":"verified_candidate","sensitivity":"public_core"}
+  ]
+}
