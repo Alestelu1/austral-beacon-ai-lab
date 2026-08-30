@@ -1,0 +1,14 @@
+{
+  "entity_id": "isla-desolacion-y-adyacentes-watershed",
+  "entity_type": "subwatershed",
+  "official_id": "BNA-1270",
+  "parent_watershed": "islas-al-sur-estrecho-de-magallanes-watershed",
+  "area_ha": 454978,
+  "share_parent_percent": 16.289,
+  "country": "Chile",
+  "region": "Magallanes y de la Antartica Chilena",
+  "sensitivity": "public_core",
+  "status": "canonical",
+  "geometry_status": "official_referential_not_embedded",
+  "requires_citation": true
+}
