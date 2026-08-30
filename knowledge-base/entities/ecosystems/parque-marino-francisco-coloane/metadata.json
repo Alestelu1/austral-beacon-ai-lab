@@ -1,0 +1,11 @@
+{
+  "entity_id": "parque-marino-francisco-coloane",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "authority": "SUBPESCA",
+  "stable_layers": ["marine_protected_area_category", "general_location", "creation_instrument", "conservation_objectives", "target_species"],
+  "dynamic_layers": ["tourism_rules", "whale_watching_rules", "navigation_restrictions", "access_conditions", "operator_status"],
+  "retrieval_scope": ["atlas", "travel", "travel-agent", "antarctic-pulse", "austral-intelligence"],
+  "requires_dynamic_verification_for_visit_advice": true,
+  "modeling_note": "Do not merge Parque Marino Francisco Coloane with the larger Area Marina Costera Protegida Francisco Coloane; model as separate protected-area entities."
+}
