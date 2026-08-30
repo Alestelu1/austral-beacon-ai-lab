@@ -6,24 +6,16 @@
       "id": "costa-expuesta-patagonia-sur-magallanes-marine-ecosystem",
       "entity_type": "marine_ecosystem",
       "priority": "medium_high",
-      "reason": "Referenced by Isla Santa Ines as an official SIMBIO/MMA ecosystem context.",
-      "required_authorities": ["MMA/SIMBIO", "scientific literature for ecological detail"],
+      "reason": "Referenced by Isla Santa Ines as an official SBAP/SIMBIO ecosystem context.",
+      "required_authorities": ["SBAP/SIMBIO", "scientific literature for ecological detail"],
       "promotion_state": "verified_candidate"
     },
     {
-      "id": "canal-cockburn",
-      "entity_type": "channel",
-      "priority": "medium_high",
-      "reason": "Listed by SIMBIO/MMA as a geoform of the Cockburn Magdalena - Magallanes marine ecosystem.",
-      "required_authorities": ["MMA/SIMBIO", "DIRECTEMAR or SHOA for hydrographic detail"],
-      "promotion_state": "verified_candidate"
-    },
-    {
-      "id": "isla-capitan-aracena",
-      "entity_type": "island",
-      "priority": "medium",
-      "reason": "Listed by SIMBIO/MMA as a geoform of the Cockburn Magdalena - Magallanes marine ecosystem.",
-      "required_authorities": ["MMA/SIMBIO", "IGM or IDE Chile for geospatial validation"],
+      "id": "estrecho-de-magallanes-central-magallanes-marine-ecosystem",
+      "entity_type": "marine_ecosystem",
+      "priority": "high",
+      "reason": "Referenced by Isla Capitan Aracena as an official SBAP/SIMBIO ecosystem context (ECOMAR-058) and directly connected to the Strait domain.",
+      "required_authorities": ["SBAP/SIMBIO", "DIRECTEMAR/SHOA for hydrographic context where relevant", "scientific literature for ecological detail"],
       "promotion_state": "verified_candidate"
     }
   ],
@@ -37,6 +29,16 @@
       "id": "cockburn-magdalena-magallanes-marine-ecosystem",
       "resolved_as": "canonical",
       "package": "knowledge-base/entities/ecosystems/cockburn-magdalena-magallanes-marine-ecosystem"
+    },
+    {
+      "id": "canal-cockburn",
+      "resolved_as": "canonical",
+      "package": "knowledge-base/entities/geography/canal-cockburn"
+    },
+    {
+      "id": "isla-capitan-aracena",
+      "resolved_as": "canonical",
+      "package": "knowledge-base/entities/geography/isla-capitan-aracena"
     }
   ],
   "rule": "A dangling graph target may remain referenced when evidence is sufficient for the relation, but it must not be treated as a complete canonical entity until its own source, claim and retrieval package is created."
