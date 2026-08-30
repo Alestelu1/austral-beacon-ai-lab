@@ -1,0 +1,17 @@
+{
+  "entity_id": "cockburn-magdalena-magallanes-marine-ecosystem",
+  "external_id": "ECOMAR-056",
+  "entity_type": "marine_ecosystem",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "source_priority": "high",
+  "ecoregion": "Magallanes",
+  "zone": "Cockburn Magdalena",
+  "origin_zone": "marina continental",
+  "area_km2": 2280.897,
+  "retrieval_scope": ["atlas", "travel", "travel-agent", "antarctic-pulse", "austral-intelligence"],
+  "requires_citation": true,
+  "public_answer_allowed": true,
+  "not_an_administrative_boundary": true,
+  "not_an_access_authorization": true
+}
