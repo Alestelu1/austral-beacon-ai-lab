@@ -1,0 +1,9 @@
+{
+  "entity_id": "isla-santa-ines-carlos-iii-watershed",
+  "relationships": [
+    {"target":"islas-al-sur-estrecho-de-magallanes-watershed","type":"subwatershed_of","status":"verified","sensitivity":"public_core"},
+    {"target":"isla-santa-ines","type":"named_geographic_context","status":"verified_general","sensitivity":"public_core"},
+    {"target":"isla-carlos-iii","type":"named_geographic_context","status":"verified_general","sensitivity":"public_core"},
+    {"target":"isla-santa-ines-carlos-iii-subsubwatershed","type":"has_subsubwatershed","status":"verified_candidate","official_id":"12730","sensitivity":"public_core"}
+  ]
+}
