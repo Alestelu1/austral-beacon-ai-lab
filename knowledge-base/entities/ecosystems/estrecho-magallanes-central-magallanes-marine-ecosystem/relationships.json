@@ -1,0 +1,11 @@
+{
+  "entity_id": "estrecho-magallanes-central-magallanes-marine-ecosystem",
+  "relationships": [
+    {"target":"strait-of-magellan","type":"includes_geoform","status":"verified","sensitivity":"public_core"},
+    {"target":"isla-capitan-aracena","type":"includes_geoform","status":"verified","sensitivity":"public_core"},
+    {"target":"isla-santa-ines","type":"includes_geoform","status":"verified","sensitivity":"public_core"},
+    {"target":"peninsula-de-brunswick","type":"includes_geoform","status":"verified","sensitivity":"public_core"},
+    {"target":"isla-dawson","type":"includes_geoform","status":"verified_candidate_target","sensitivity":"public_core"},
+    {"target":"isla-clarence","type":"includes_geoform","status":"verified_candidate_target","sensitivity":"public_core"}
+  ]
+}
