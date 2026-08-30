@@ -1,0 +1,17 @@
+{
+  "entity_id": "islote-rupert",
+  "chunks": [
+    {
+      "id": "islote-rupert-ecology",
+      "text": "Islote Rupert forma parte del sistema ecológico asociado a Isla Carlos III y Francisco Coloane. El Ministerio del Medio Ambiente lo identifica como una zona importante de nidificación del pingüino de Magallanes.",
+      "sensitivity": "public_core",
+      "retrieval_scope": ["atlas", "travel", "science"]
+    },
+    {
+      "id": "islote-rupert-safety",
+      "text": "No deben generarse instrucciones precisas de aproximación, desembarco o acceso a sitios de nidificación en Islote Rupert sin una fuente oficial actual y sin considerar restricciones de conservación.",
+      "sensitivity": "operational_dynamic",
+      "retrieval_scope": ["travel"]
+    }
+  ]
+}
