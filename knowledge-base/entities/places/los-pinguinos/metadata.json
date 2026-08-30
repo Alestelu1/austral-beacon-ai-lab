@@ -1,0 +1,15 @@
+{
+  "id": "los-pinguinos",
+  "canonical_name": "Monumento Natural Los Pingüinos",
+  "entity_type": "protected_area",
+  "protection_category": "monumento_natural",
+  "country": "Chile",
+  "region": "Magallanes y de la Antártica Chilena",
+  "province": "Magallanes",
+  "commune": "Punta Arenas",
+  "components": ["isla-magdalena", "isla-marta"],
+  "sensitivity": "public_core",
+  "status": "canonical",
+  "authority": "CONAF",
+  "dynamic_fields": ["seasonal_closures", "landing_conditions", "visitor_hours", "operator_availability", "visitor_protocols"]
+}
