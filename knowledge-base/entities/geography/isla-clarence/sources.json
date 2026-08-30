@@ -1,0 +1,7 @@
+{
+  "entity_id": "isla-clarence",
+  "sources": [
+    {"source_id":"sbap-simbio-ecomar-058","institution":"SBAP/SIMBIO","role":"primary","url":"https://simbio.mma.gob.cl/EcosistemasMarinos/VistaImpresion/64"},
+    {"source_id":"sbap-simbio-cuenca-127","institution":"SBAP/SIMBIO","role":"primary","url":"https://simbio.mma.gob.cl/Cuencas/Details/127"}
+  ]
+}
