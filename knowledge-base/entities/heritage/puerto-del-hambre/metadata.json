@@ -1,0 +1,18 @@
+{
+  "id": "puerto-del-hambre",
+  "canonical_name": "Puerto del Hambre",
+  "canonical_historical_name": "Ciudad del Rey Don Felipe",
+  "entity_type": "historic_settlement_and_archaeological_site",
+  "country": "Chile",
+  "region": "Región de Magallanes y de la Antártica Chilena",
+  "associated_place": "punta-santa-ana",
+  "status": "sourced",
+  "sensitivity": "public_core",
+  "source_priority": "high",
+  "rag_priority": "high",
+  "retrieval_scope": ["atlas", "travel", "heritage", "austral-intelligence"],
+  "requires_citation": true,
+  "public_answer_allowed": true,
+  "requires_human_review": false,
+  "projects": ["end-of-the-world-atlas", "end-of-the-world-travel", "travel-agent", "austral-intelligence"]
+}
