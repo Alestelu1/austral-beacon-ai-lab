@@ -11,11 +11,19 @@
       "promotion_state": "verified_candidate"
     },
     {
-      "id": "estrecho-de-magallanes-central-magallanes-marine-ecosystem",
-      "entity_type": "marine_ecosystem",
-      "priority": "high",
-      "reason": "Referenced by Isla Capitan Aracena as an official SBAP/SIMBIO ecosystem context (ECOMAR-058) and directly connected to the Strait domain.",
-      "required_authorities": ["SBAP/SIMBIO", "DIRECTEMAR/SHOA for hydrographic context where relevant", "scientific literature for ecological detail"],
+      "id": "isla-dawson",
+      "entity_type": "island",
+      "priority": "medium_high",
+      "reason": "Listed by SBAP/SIMBIO as an official geoform of ECOMAR-058 and highly relevant to the Strait of Magellan domain.",
+      "required_authorities": ["SBAP/SIMBIO", "IGM or IDE Chile for geospatial validation", "Chilean institutional historical sources for heritage context"],
+      "promotion_state": "verified_candidate"
+    },
+    {
+      "id": "isla-clarence",
+      "entity_type": "island",
+      "priority": "medium",
+      "reason": "Listed by SBAP/SIMBIO as an official geoform of ECOMAR-058.",
+      "required_authorities": ["SBAP/SIMBIO", "IGM or IDE Chile for geospatial validation"],
       "promotion_state": "verified_candidate"
     }
   ],
@@ -39,6 +47,13 @@
       "id": "isla-capitan-aracena",
       "resolved_as": "canonical",
       "package": "knowledge-base/entities/geography/isla-capitan-aracena"
+    },
+    {
+      "id": "estrecho-magallanes-central-magallanes-marine-ecosystem",
+      "aliases": ["estrecho-de-magallanes-central-magallanes-marine-ecosystem"],
+      "resolved_as": "canonical",
+      "official_id": "ECOMAR-058",
+      "package": "knowledge-base/entities/ecosystems/estrecho-magallanes-central-magallanes-marine-ecosystem"
     }
   ],
   "rule": "A dangling graph target may remain referenced when evidence is sufficient for the relation, but it must not be treated as a complete canonical entity until its own source, claim and retrieval package is created."
