@@ -1,0 +1,26 @@
+{
+  "entity_id": "fuerte-bulnes",
+  "claims": [
+    {
+      "id": "fuerte-bulnes-punta-santa-ana",
+      "claim": "Fuerte Bulnes está asociado al sector de Punta Santa Ana, en el Estrecho de Magallanes.",
+      "source_ids": ["armada-toma-posesion-estrecho-1843", "bienes-nacionales-rey-don-felipe-martinic"],
+      "confidence": "high",
+      "stable": true
+    },
+    {
+      "id": "fuerte-bulnes-expedition-link",
+      "claim": "La expedición de la Goleta Ancud de 1843 incluía integrantes destinados a la futura guarnición del fuerte que se establecería en el sector.",
+      "source_ids": ["armada-toma-posesion-estrecho-1843"],
+      "confidence": "high",
+      "stable": true
+    },
+    {
+      "id": "fuerte-bulnes-monument-national-reference",
+      "claim": "La publicación del Ministerio de Bienes Nacionales `Rey Don Felipe: Acontecimientos Históricos` se refiere a Fuerte Bulnes como Monumento Nacional.",
+      "source_ids": ["bienes-nacionales-rey-don-felipe-martinic"],
+      "confidence": "high",
+      "stable": true
+    }
+  ]
+}
