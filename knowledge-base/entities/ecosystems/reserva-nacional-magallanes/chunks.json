@@ -1,0 +1,8 @@
+{
+  "entity_id": "reserva-nacional-magallanes",
+  "chunks": [
+    {"id":"rnm-overview","sensitivity":"public_core","text":"La Reserva Nacional Magallanes es un área protegida de CONAF ubicada en la península de Brunswick, comuna de Punta Arenas. Fue creada en 1932 y protege bosques magallánicos, turberas y la cuenca de la laguna Lynch."},
+    {"id":"rnm-ecosystems","sensitivity":"public_core","text":"Entre los ambientes de la Reserva Nacional Magallanes se encuentran bosques de lenga, coigüe de Magallanes y ñirre, además de turberas con especies del género Sphagnum."},
+    {"id":"rnm-visit-policy","sensitivity":"operational_dynamic","text":"Horarios, apertura, estado de senderos, restricciones y condiciones invernales de la Reserva Nacional Magallanes deben verificarse en CONAF o Pases Parques antes de entregar orientación de visita."}
+  ]
+}
