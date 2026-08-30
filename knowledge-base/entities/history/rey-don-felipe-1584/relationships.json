@@ -1,0 +1,11 @@
+{
+  "entity_id": "rey-don-felipe-1584",
+  "relationships": [
+    {"predicate": "founded_by", "target": "pedro-sarmiento-de-gamboa", "status": "verified"},
+    {"predicate": "located_at", "target": "peninsula-de-santa-ana", "status": "verified"},
+    {"predicate": "located_on", "target": "strait-of-magellan", "status": "verified"},
+    {"predicate": "later_known_as", "target": "puerto-del-hambre", "status": "verified"},
+    {"predicate": "preceded_by_context", "target": "early-human-occupation-central-strait", "status": "verified_context"},
+    {"predicate": "historically_related_to", "target": "nombre-de-jesus-1584", "status": "pending_dedicated_entity"}
+  ]
+}
