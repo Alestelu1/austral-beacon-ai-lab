@@ -1,0 +1,36 @@
+{
+  "entity_id": "patagonian-kelp-forests",
+  "sensitivity": "public_core",
+  "chunks": [
+    {
+      "id": "kelp-forest-ecology-01",
+      "text": "Los bosques submarinos de la Patagonia austral están formados principalmente por Macrocystis pyrifera, una macroalga parda conocida como huiro. Estos bosques proporcionan hábitat, alimentación, refugio y zonas de reproducción para una biodiversidad marina rica.",
+      "topics": ["huiro", "Macrocystis pyrifera", "biodiversidad", "ecosistemas marinos"],
+      "source_ids": ["bosques-submarinos-patagonia-2024"],
+      "retrieval_scope": ["travel-agent", "atlas", "antarctic-pulse"],
+      "excluded_topics": ["territorial_disputes", "sovereignty", "legal_interpretation"]
+    },
+    {
+      "id": "kelp-forest-magellan-strait-02",
+      "text": "El Estrecho de Magallanes forma parte de una región de investigación de larga data sobre bosques de huiro. La literatura científica chilena incluye estudios de algas desde la década de 1960 y trabajos recientes sobre comunidades de invertebrados, productividad y conservación.",
+      "topics": ["Estrecho de Magallanes", "ciencia marina", "conservación"],
+      "source_ids": ["bosques-submarinos-patagonia-2024"],
+      "retrieval_scope": ["travel-agent", "atlas", "antarctic-pulse"]
+    },
+    {
+      "id": "kelp-forest-austral-distribution-03",
+      "text": "Macrocystis pyrifera alcanza especial abundancia en fiordos y canales patagónicos de las regiones australes de Chile. La literatura científica citada incluye estudios en Puerto Toro, Isla Navarino, y en el canal Beagle chileno.",
+      "topics": ["Patagonia austral", "Isla Navarino", "Puerto Toro", "canal Beagle"],
+      "source_ids": ["bosques-submarinos-patagonia-2024"],
+      "retrieval_scope": ["travel-agent", "atlas", "antarctic-pulse"]
+    },
+    {
+      "id": "kelp-forest-climate-04",
+      "text": "La investigación contemporánea sobre bosques de huiro estudia sus respuestas a cambios ambientales, su conservación, el manejo sustentable y su papel en servicios ecosistémicos. Las estimaciones de captura o exportación de carbono deben presentarse como resultados de estudios específicos y no como valores universales.",
+      "topics": ["cambio climático", "carbono", "servicios ecosistémicos", "manejo sustentable"],
+      "source_ids": ["bosques-submarinos-patagonia-2024"],
+      "retrieval_scope": ["antarctic-pulse", "atlas", "travel-agent"],
+      "requires_citation": true
+    }
+  ]
+}
