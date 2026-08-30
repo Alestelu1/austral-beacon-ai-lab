@@ -1,0 +1,26 @@
+{
+  "entity_id": "taking-possession-strait-of-magellan-1843",
+  "claims": [
+    {
+      "id": "possession-date-1843-09-21",
+      "claim": "La Armada de Chile fecha la toma de posesión del Estrecho de Magallanes el 21 de septiembre de 1843.",
+      "source_ids": ["armada-toma-posesion-estrecho-1843"],
+      "confidence": "high",
+      "stable": true
+    },
+    {
+      "id": "possession-expedition-goleta-ancud",
+      "claim": "El acto se realizó en el contexto de la expedición de la Goleta Ancud comandada por Juan Guillermos.",
+      "source_ids": ["armada-toma-posesion-estrecho-1843", "archivo-nacional-zarpe-goleta-ancud-2026", "memoria-chilena-diario-goleta-ancud-1843"],
+      "confidence": "high",
+      "stable": true
+    },
+    {
+      "id": "possession-punta-santa-ana-sector",
+      "claim": "La fuente de la Armada sitúa la recalada de la expedición en una ensenada adyacente a Punta Santa Ana antes del acto de posesión.",
+      "source_ids": ["armada-toma-posesion-estrecho-1843"],
+      "confidence": "high",
+      "stable": true
+    }
+  ]
+}
