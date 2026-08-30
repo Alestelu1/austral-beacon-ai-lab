@@ -1,0 +1,17 @@
+{
+  "entity_id": "cockburn-magdalena-magallanes-marine-ecosystem",
+  "chunks": [
+    {
+      "id": "cmm-public-01",
+      "text": "Cockburn Magdalena - Magallanes es un ecosistema marino oficial de la ecorregión Magallanes, registrado por SIMBIO/MMA con identificador ECOMAR-056 y una superficie total de 2.280,897 km².",
+      "sensitivity": "public_core",
+      "retrieval_scope": ["atlas", "antarctic-pulse", "travel-agent"]
+    },
+    {
+      "id": "cmm-public-02",
+      "text": "Entre las geoformas que SIMBIO/MMA incluye en el ecosistema Cockburn Magdalena - Magallanes están Canal Bárbara, Isla Carlos III, Isla Santa Inés y Seno Helado. Esta clasificación representa contexto ecológico marino y no equivale a una categoría administrativa o de área protegida.",
+      "sensitivity": "public_core",
+      "retrieval_scope": ["atlas", "travel", "antarctic-pulse", "austral-intelligence"]
+    }
+  ]
+}
