@@ -1,0 +1,10 @@
+{
+  "entity_id": "reserva-nacional-laguna-parrillar",
+  "claims": [
+    {"id":"rnlp-001","claim":"La Reserva Nacional Laguna Parrillar está ubicada en la comuna de Punta Arenas, Región de Magallanes y de la Antártica Chilena.","source_id":"conaf-reserva-nacional-laguna-parrillar","status":"verified"},
+    {"id":"rnlp-002","claim":"Fue creada el 22 de abril de 1977 mediante DS 245 del Ministerio de Agricultura.","source_id":"conaf-reserva-nacional-laguna-parrillar","status":"verified"},
+    {"id":"rnlp-003","claim":"CONAF informa una superficie de 18.414 hectáreas.","source_id":"conaf-reserva-nacional-laguna-parrillar","status":"verified"},
+    {"id":"rnlp-004","claim":"Entre sus objetivos de conservación se encuentra proteger la calidad de la cuenca hidrográfica de la laguna Parrillar, el río San Juan y sus tributarios, junto con vegetación y fauna asociadas.","source_id":"conaf-reserva-nacional-laguna-parrillar","status":"verified"},
+    {"id":"rnlp-005","claim":"La información de apertura, acceso, camino y condiciones de visita es dinámica y debe verificarse en fuentes oficiales antes de responder consultas operativas.","source_id":"conaf-reserva-nacional-laguna-parrillar","status":"policy"}
+  ]
+}
