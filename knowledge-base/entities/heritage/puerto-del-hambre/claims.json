@@ -1,0 +1,41 @@
+{
+  "entity_id": "puerto-del-hambre",
+  "claims": [
+    {
+      "id": "puerto-del-hambre-official-name",
+      "claim": "La publicación `Puerto del Hambre. Más allá de la leyenda` indica que el nombre oficial del sitio es Ciudad del Rey Don Felipe.",
+      "source_ids": ["puerto-del-hambre-mas-alla-leyenda"],
+      "confidence": "high",
+      "stable": true
+    },
+    {
+      "id": "puerto-del-hambre-location",
+      "claim": "Puerto del Hambre se emplaza al norte de la península de Santa Ana, en la ribera continental del Estrecho de Magallanes.",
+      "source_ids": ["puerto-del-hambre-mas-alla-leyenda"],
+      "confidence": "high",
+      "stable": true
+    },
+    {
+      "id": "puerto-del-hambre-deep-human-history",
+      "claim": "La historia humana del sector es anterior y más amplia que el intento de colonización hispana del siglo XVI, e incluye evidencias arqueológicas de ocupaciones y modos de vida vinculados a recursos terrestres y marítimos.",
+      "source_ids": ["puerto-del-hambre-mas-alla-leyenda"],
+      "confidence": "high",
+      "stable": true
+    },
+    {
+      "id": "puerto-del-hambre-archaeological-research",
+      "claim": "La publicación señala investigaciones arqueológicas e históricas en el sitio desde mediados del siglo XX y menciona trabajos vinculados a Jesús Veiga, Omar Ortiz-Troncoso y el Instituto de la Patagonia.",
+      "source_ids": ["puerto-del-hambre-mas-alla-leyenda"],
+      "confidence": "high",
+      "stable": true
+    },
+    {
+      "id": "puerto-del-hambre-protection-1968",
+      "claim": "La publicación indica que el sitio arqueológico cuenta con protección desde enero de 1968.",
+      "source_ids": ["puerto-del-hambre-mas-alla-leyenda"],
+      "confidence": "medium_high",
+      "stable": true,
+      "note": "Debe corroborarse con la fuente patrimonial oficial directa antes de promover este claim a máxima autoridad."
+    }
+  ]
+}
