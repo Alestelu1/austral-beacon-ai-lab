@@ -1,0 +1,29 @@
+{
+  "entity_id": "isla-santa-ines",
+  "claims": [
+    {
+      "id": "isi-001",
+      "claim": "Isla Santa Inés forma parte de la subcuenca oficial Isla Santa Ines y Carlos III dentro de la cuenca Islas al Sur Estrecho de Magallanes.",
+      "source_ids": ["simbio-subcuenca-1273"],
+      "status": "verified",
+      "sensitivity": "public_core",
+      "stable": true
+    },
+    {
+      "id": "isi-002",
+      "claim": "SIMBIO/MMA incluye Isla Santa Inés como geoforma del ecosistema marino Cockburn Magdalena - Magallanes.",
+      "source_ids": ["simbio-ecomar-056"],
+      "status": "verified",
+      "sensitivity": "public_core",
+      "stable": true
+    },
+    {
+      "id": "isi-003",
+      "claim": "SIMBIO/MMA incluye Isla Santa Inés también como geoforma del ecosistema marino Costa Expuesta de Patagonia Sur - Magallanes.",
+      "source_ids": ["simbio-ecomar-057"],
+      "status": "verified",
+      "sensitivity": "public_core",
+      "stable": true
+    }
+  ]
+}
