@@ -1,0 +1,14 @@
+{
+  "entity_id": "isla-desolacion-y-adyacentes-watershed",
+  "sources": [
+    {
+      "source_id": "sbap-simbio-subcuenca-1270",
+      "institution": "SBAP/SIMBIO",
+      "authority_domain": "hydrology_biodiversity_cartographic_reference",
+      "source_type": "institutional_primary",
+      "url": "https://simbio.mma.gob.cl/Subcuencas/Details/1270",
+      "verified_at": "2026-08-30",
+      "supports": ["official_name", "bna_code", "parent_watershed", "area", "subsubwatershed_structure", "ecosystem_overlap_context"]
+    }
+  ]
+}
