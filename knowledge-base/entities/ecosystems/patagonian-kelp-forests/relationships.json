@@ -1,0 +1,12 @@
+{
+  "entity_id": "patagonian-kelp-forests",
+  "relationships": [
+    {"predicate": "primarily_formed_by", "target": "macrocystis-pyrifera", "status": "verified"},
+    {"predicate": "occurs_in", "target": "strait-of-magellan", "status": "verified"},
+    {"predicate": "occurs_in", "target": "isla-navarino", "status": "verified_literature_context"},
+    {"predicate": "studied_at", "target": "puerto-toro", "status": "verified_literature_context"},
+    {"predicate": "studied_at", "target": "punta-santa-ana", "status": "verified"},
+    {"predicate": "studied_at", "target": "bahia-municion", "status": "verified"},
+    {"predicate": "provides", "target": "marine-habitat-and-nursery-functions", "status": "verified"}
+  ]
+}
