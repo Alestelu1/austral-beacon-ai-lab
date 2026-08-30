@@ -1,0 +1,17 @@
+{
+  "entity_id": "isla-santa-ines",
+  "chunks": [
+    {
+      "id": "isla-santa-ines-public-01",
+      "text": "Isla Santa Inés es una isla del archipiélago austral de Magallanes. SIMBIO/MMA la reconoce en la subcuenca Isla Santa Ines y Carlos III, dentro de la cuenca Islas al Sur Estrecho de Magallanes.",
+      "sensitivity": "public_core",
+      "retrieval_scope": ["atlas", "travel", "travel-agent"]
+    },
+    {
+      "id": "isla-santa-ines-public-02",
+      "text": "SIMBIO/MMA incluye Isla Santa Inés como geoforma de más de un ecosistema marino oficial, entre ellos Cockburn Magdalena - Magallanes y Costa Expuesta de Patagonia Sur - Magallanes. Esta clasificación ecológica no debe interpretarse como una categoría administrativa o de área protegida.",
+      "sensitivity": "public_core",
+      "retrieval_scope": ["atlas", "antarctic-pulse", "austral-intelligence"]
+    }
+  ]
+}
