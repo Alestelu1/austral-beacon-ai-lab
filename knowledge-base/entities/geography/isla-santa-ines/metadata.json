@@ -1,0 +1,12 @@
+{
+  "entity_id": "isla-santa-ines",
+  "entity_type": "island",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "source_priority": "high",
+  "retrieval_scope": ["atlas", "travel", "travel-agent", "antarctic-pulse", "austral-intelligence"],
+  "requires_citation": true,
+  "public_answer_allowed": true,
+  "geospatial_precision": "general_only_pending_authoritative_geometry",
+  "operational_navigation_allowed": false
+}
