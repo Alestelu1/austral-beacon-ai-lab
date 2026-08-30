@@ -1,7 +1,7 @@
 {
   "domain": "magallanes-cartography",
-  "status": "initial_source_register",
-  "purpose": "Track cartographic sources available in Drive and constrain how they may be used in the canonical knowledge base.",
+  "status": "candidate_extraction_started",
+  "purpose": "Track cartographic sources available in Drive, discover place and route candidates, and constrain how tourism maps may be used in the canonical knowledge base.",
   "policy": {
     "tourism_maps": "Use for orientation, place discovery and non-legal spatial context only.",
     "do_not_use_for": ["international_boundary_adjudication", "sovereignty_claims", "precise_geodetic_coordinates", "nautical_navigation", "survey_grade_measurements"],
@@ -39,8 +39,9 @@
     {
       "title": "Mapa Puerto Williams",
       "drive_file_id": "1jU07ypx28jZVBkZVSm7ErGalfIoBxzzu",
+      "source_context": "SERNATUR / Puerto Williams city map",
       "authority_class": "institutional_promotional",
-      "allowed_use": ["urban_orientation", "place_discovery"]
+      "allowed_use": ["urban_orientation", "place_discovery", "general_access_context"]
     },
     {
       "title": "Mapa Porvenir 2022",
@@ -49,8 +50,46 @@
       "allowed_use": ["urban_orientation", "place_discovery"]
     }
   ],
+  "candidate_entities": [
+    {"id": "pali-aike-national-park", "label": "Parque Nacional Pali Aike", "category": "protected_area", "source_ids": ["1jdWpwA-uHNMXHpUMnq2H7rGndShinRJY"], "promotion_status": "requires_primary_conaf_crosscheck"},
+    {"id": "laguna-parrillar-national-reserve", "label": "Reserva Nacional Laguna Parrillar", "category": "protected_area", "source_ids": ["1jdWpwA-uHNMXHpUMnq2H7rGndShinRJY"], "promotion_status": "requires_primary_conaf_crosscheck"},
+    {"id": "magallanes-national-reserve", "label": "Reserva Nacional Magallanes", "category": "protected_area", "source_ids": ["1jdWpwA-uHNMXHpUMnq2H7rGndShinRJY"], "promotion_status": "requires_primary_conaf_crosscheck"},
+    {"id": "los-pinguinos-natural-monument", "label": "Monumento Natural Los Pingüinos", "category": "protected_area", "source_ids": ["1jdWpwA-uHNMXHpUMnq2H7rGndShinRJY"], "promotion_status": "requires_primary_conaf_crosscheck"},
+    {"id": "isla-magdalena", "label": "Isla Magdalena", "category": "island", "source_ids": ["1jdWpwA-uHNMXHpUMnq2H7rGndShinRJY"], "promotion_status": "candidate"},
+    {"id": "isla-marta", "label": "Isla Marta", "category": "island", "source_ids": ["1jdWpwA-uHNMXHpUMnq2H7rGndShinRJY"], "promotion_status": "candidate"},
+    {"id": "faro-san-isidro", "label": "Faro San Isidro", "category": "maritime_heritage", "source_ids": ["1jdWpwA-uHNMXHpUMnq2H7rGndShinRJY"], "promotion_status": "requires_armada_or_directemar_crosscheck"},
+    {"id": "san-gregorio", "label": "San Gregorio", "category": "locality_and_heritage_sector", "source_ids": ["1jdWpwA-uHNMXHpUMnq2H7rGndShinRJY"], "promotion_status": "candidate"},
+    {"id": "parque-marino-francisco-coloane", "label": "Parque Marino Francisco Coloane", "category": "marine_protected_area", "source_ids": ["1jdWpwA-uHNMXHpUMnq2H7rGndShinRJY"], "promotion_status": "requires_environmental_primary_crosscheck"},
+    {"id": "cerro-la-bandera", "label": "Cerro La Bandera", "category": "mountain_trail_destination", "source_ids": ["1jU07ypx28jZVBkZVSm7ErGalfIoBxzzu"], "promotion_status": "candidate"},
+    {"id": "dientes-de-navarino", "label": "Dientes de Navarino", "category": "mountain_range_and_trekking_area", "source_ids": ["1jU07ypx28jZVBkZVSm7ErGalfIoBxzzu"], "promotion_status": "candidate_requires_route_safety_sources"},
+    {"id": "lago-windhond", "label": "Lago Windhond", "category": "lake", "source_ids": ["1jU07ypx28jZVBkZVSm7ErGalfIoBxzzu"], "promotion_status": "candidate"},
+    {"id": "puerto-navarino", "label": "Puerto Navarino", "category": "locality", "source_ids": ["1jU07ypx28jZVBkZVSm7ErGalfIoBxzzu"], "promotion_status": "candidate"},
+    {"id": "puerto-eugenia", "label": "Puerto Eugenia", "category": "locality", "source_ids": ["1jU07ypx28jZVBkZVSm7ErGalfIoBxzzu"], "promotion_status": "candidate"},
+    {"id": "seno-micalvi", "label": "Seno Micalvi", "category": "bay_or_inlet", "source_ids": ["1jU07ypx28jZVBkZVSm7ErGalfIoBxzzu"], "promotion_status": "candidate"},
+    {"id": "seno-lauta", "label": "Seno Lauta", "category": "bay_or_inlet", "source_ids": ["1jU07ypx28jZVBkZVSm7ErGalfIoBxzzu"], "promotion_status": "candidate"},
+    {"id": "punta-cuna", "label": "Punta Cuña", "category": "coastal_feature", "source_ids": ["1jU07ypx28jZVBkZVSm7ErGalfIoBxzzu"], "promotion_status": "candidate"},
+    {"id": "peninsula-zanartu", "label": "Península Zañartu", "category": "peninsula", "source_ids": ["1jU07ypx28jZVBkZVSm7ErGalfIoBxzzu"], "promotion_status": "candidate"},
+    {"id": "museo-martin-gusinde", "label": "Museo Antropológico Martín Gusinde", "category": "museum", "source_ids": ["1jU07ypx28jZVBkZVSm7ErGalfIoBxzzu"], "promotion_status": "requires_snpc_primary_crosscheck"},
+    {"id": "casa-stirling", "label": "Casa Stirling", "category": "heritage_site", "source_ids": ["1jU07ypx28jZVBkZVSm7ErGalfIoBxzzu"], "promotion_status": "requires_heritage_primary_crosscheck"},
+    {"id": "club-yates-micalvi", "label": "Club de Yates Micalvi", "category": "maritime_facility", "source_ids": ["1jU07ypx28jZVBkZVSm7ErGalfIoBxzzu"], "promotion_status": "candidate_dynamic_facility"}
+  ],
+  "candidate_relationships": [
+    {"subject": "punta-arenas", "predicate": "faces", "object": "strait-of-magellan", "status": "general_spatial_context"},
+    {"subject": "faro-san-isidro", "predicate": "located_on_coast_of", "object": "strait-of-magellan", "status": "candidate_requires_primary_crosscheck"},
+    {"subject": "isla-magdalena", "predicate": "part_of", "object": "los-pinguinos-natural-monument", "status": "candidate_requires_conaf_crosscheck"},
+    {"subject": "isla-marta", "predicate": "part_of", "object": "los-pinguinos-natural-monument", "status": "candidate_requires_conaf_crosscheck"},
+    {"subject": "puerto-williams", "predicate": "located_on", "object": "beagle-channel", "status": "supported_by_sernatur_map_and_existing_entity"},
+    {"subject": "villa-ukika", "predicate": "located_within_urban_context", "object": "puerto-williams", "status": "supported_by_sernatur_city_map"},
+    {"subject": "seno-micalvi", "predicate": "located_at", "object": "puerto-williams", "status": "general_spatial_context"},
+    {"subject": "museo-martin-gusinde", "predicate": "located_in", "object": "puerto-williams", "status": "candidate_requires_primary_crosscheck"},
+    {"subject": "casa-stirling", "predicate": "located_in", "object": "puerto-williams", "status": "candidate_requires_primary_crosscheck"},
+    {"subject": "ruta-y-905", "predicate": "provides_road_access_context_for", "object": "puerto-williams", "status": "discovery_only_dynamic_verification_required"}
+  ],
   "next_steps": [
-    "Extract candidate place entities and route relationships from tourism maps.",
+    "Cross-check protected areas with CONAF or the relevant environmental authority before canonical promotion.",
+    "Cross-check Faro San Isidro and maritime infrastructure with Armada, DIRECTEMAR or SHOA.",
+    "Cross-check Museo Martin Gusinde and Casa Stirling with Servicio Nacional del Patrimonio Cultural or Consejo de Monumentos Nacionales.",
+    "Use route and trail names only as discovery candidates until current access and safety sources are verified.",
     "Cross-check important coordinates and geometries against authoritative geospatial sources when available.",
     "Keep boundary-sensitive and nautical layers outside public retrieval unless backed by the appropriate official authority."
   ]
