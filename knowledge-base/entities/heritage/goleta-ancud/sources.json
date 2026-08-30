@@ -1,0 +1,41 @@
+{
+  "entity_id": "goleta-ancud",
+  "sources": [
+    {
+      "source_id": "archivo-nacional-zarpe-goleta-ancud-2026",
+      "institution": "Archivo Nacional de Chile",
+      "title": "El zarpe de la Goleta Ancud: memoria histórica de una efeméride poco conocida",
+      "drive_file_id": "1hU3HeueHPqdAq-VXPoaLM74M9yS90kXt",
+      "source_type": "institutional_secondary",
+      "authority": "high",
+      "retrieved_from_drive": true
+    },
+    {
+      "source_id": "armada-toma-posesion-estrecho-1843",
+      "institution": "Armada de Chile",
+      "title": "La toma de posesión del Estrecho de Magallanes - 21 de septiembre de 1843",
+      "drive_file_id": "1sxYGjeEGH_DYTGqGPV1I-wvvB0fAHdVg",
+      "source_type": "institutional_history",
+      "authority": "high",
+      "retrieved_from_drive": true
+    },
+    {
+      "source_id": "memoria-chilena-diario-goleta-ancud-1843",
+      "institution": "Biblioteca Nacional de Chile / Memoria Chilena",
+      "title": "Diario de la Goleta Ancud al mando del Capitán de Fragata don Juan Guillermos (1843)",
+      "drive_file_id": "1yHXjRrVRNpwZMkyeqPJ2z-EEmahXJ88E",
+      "source_type": "historical_primary_document_edition",
+      "authority": "very_high",
+      "retrieved_from_drive": true
+    },
+    {
+      "source_id": "cmn-monumento-tripulantes-goleta-ancud",
+      "institution": "Consejo de Monumentos Nacionales de Chile",
+      "title": "Monumento a los Tripulantes de la Goleta Ancud",
+      "drive_file_id": "1dzAlXCCthYkUKKpQzo7qobbm_faRMRqO",
+      "source_type": "institutional_heritage",
+      "authority": "high",
+      "retrieved_from_drive": true
+    }
+  ]
+}
