@@ -1,0 +1,10 @@
+{
+  "entity_id": "isla-santa-ines-carlos-iii-watershed",
+  "claims": [
+    {"id":"bna1273-001","claim":"La subcuenca Isla Santa Inés y Carlos III pertenece a la cuenca BNA 127 Islas al Sur Estrecho de Magallanes.","status":"verified","source_id":"sbap-simbio-subcuenca-1273","sensitivity":"public_core"},
+    {"id":"bna1273-002","claim":"Su código BNA es 1273.","status":"verified","source_id":"sbap-simbio-subcuenca-1273","sensitivity":"public_core"},
+    {"id":"bna1273-003","claim":"SBAP/SIMBIO registra una superficie de 748.152 ha, equivalente al 26,786% de la cuenca BNA 127.","status":"verified","source_id":"sbap-simbio-subcuenca-1273","sensitivity":"public_core"},
+    {"id":"bna1273-004","claim":"La subcuenca se divide en una subsubcuenca homónima de código BNA 12730 que representa el 100% de su superficie.","status":"verified","source_id":"sbap-simbio-subsubcuenca-12730","sensitivity":"public_core"},
+    {"id":"bna1273-005","claim":"La unidad hidrológica no debe modelarse como equivalente a las islas Santa Inés o Carlos III ni como área protegida o ecosistema marino.","status":"modeling_rule","sensitivity":"public_core"}
+  ]
+}
