@@ -1,0 +1,20 @@
+{
+  "entity_id": "canal-cockburn",
+  "sources": [
+    {
+      "source_id": "simbio-ecomar-056",
+      "institution": "SBAP / Ministerio del Medio Ambiente via SIMBIO",
+      "title": "Ecosistema marino Cockburn Magdalena - Magallanes",
+      "authority_class": "primary_institutional",
+      "use": ["entity_existence", "marine_ecosystem_relation", "regional_context"],
+      "public_retrieval_filter": "geography_ecosystem_only"
+    },
+    {
+      "source_id": "simbio-subcuenca-1274",
+      "institution": "SBAP / Ministerio del Medio Ambiente via SIMBIO",
+      "title": "Subcuenca Islas al S. Isla Sta Ines y al O. Canal Barbara y Canal Cockburn",
+      "authority_class": "primary_institutional",
+      "use": ["watershed_context", "regional_spatial_relation"]
+    }
+  ]
+}
