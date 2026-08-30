@@ -1,0 +1,11 @@
+{
+  "entity_id": "parque-marino-francisco-coloane",
+  "claims": [
+    {"id":"pmfc-001","claim":"SUBPESCA identifica a Francisco Coloane como Parque Marino ubicado en el Estrecho de Magallanes, asociado a isla Carlos III.","source_id":"subpesca-parques-marinos-francisco-coloane","status":"verified"},
+    {"id":"pmfc-002","claim":"Fue declarado mediante DS 276 de 5 de agosto de 2003.","source_id":"subpesca-parques-marinos-francisco-coloane","status":"verified"},
+    {"id":"pmfc-003","claim":"SUBPESCA informa una superficie de 1.506 hectáreas para el Parque Marino, dentro de un Área Marina Costera Protegida de mayor extensión.","source_id":"subpesca-parques-marinos-francisco-coloane","status":"verified"},
+    {"id":"pmfc-004","claim":"Sus objetivos incluyen preservar el área de alimentación de la ballena jorobada y conservar áreas de reproducción del pingüino de Magallanes y del lobo marino común.","source_id":"subpesca-parques-marinos-francisco-coloane","status":"verified"},
+    {"id":"pmfc-005","claim":"El Parque Marino y el Área Marina Costera Protegida Francisco Coloane deben modelarse como figuras distintas para evitar mezclar categorías y superficies.","source_id":"subpesca-parques-marinos-francisco-coloane","status":"modeling_rule"},
+    {"id":"pmfc-006","claim":"Las reglas de navegación, avistamiento y acceso turístico son operativas y deben verificarse en fuentes oficiales vigentes antes de responder consultas de visita.","source_id":"subpesca-parques-marinos-francisco-coloane","status":"policy"}
+  ]
+}
