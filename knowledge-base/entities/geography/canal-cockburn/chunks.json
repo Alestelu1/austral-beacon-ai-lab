@@ -1,0 +1,17 @@
+{
+  "entity_id": "canal-cockburn",
+  "chunks": [
+    {
+      "id": "canal-cockburn-public-01",
+      "scope": ["atlas", "travel", "travel-agent", "antarctic-pulse"],
+      "sensitivity": "public_core",
+      "text": "Canal Cockburn is a hydrographic feature of southern Magallanes. SBAP/SIMBIO recognizes it as a geoform of the marine ecosystem Cockburn Magdalena - Magallanes (ECOMAR-056)."
+    },
+    {
+      "id": "canal-cockburn-public-02",
+      "scope": ["atlas", "editorial"],
+      "sensitivity": "public_core",
+      "text": "Canal Cockburn is also named in an official subbasin of the basin Islas al Sur Estrecho de Magallanes, linking it spatially with Isla Santa Ines and Canal Barbara. These biodiversity-system records are suitable for general geographic context, not navigation guidance."
+    }
+  ]
+}
