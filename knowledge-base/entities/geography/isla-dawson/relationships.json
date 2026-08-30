@@ -1,0 +1,23 @@
+{
+  "entity_id": "isla-dawson",
+  "relationships": [
+    {
+      "target": "estrecho-magallanes-central-magallanes-marine-ecosystem",
+      "type": "geoform_of",
+      "status": "verified",
+      "sensitivity": "public_core"
+    },
+    {
+      "target": "strait-of-magellan",
+      "type": "regional_geographic_context",
+      "status": "verified_general",
+      "sensitivity": "public_core"
+    },
+    {
+      "target": "islas-dawson-wickam-y-adyacentes-watershed",
+      "type": "associated_watershed_unit",
+      "status": "verified_candidate",
+      "sensitivity": "public_core"
+    }
+  ]
+}
