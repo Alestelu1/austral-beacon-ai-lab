@@ -1,0 +1,14 @@
+{
+  "id": "goleta-ancud",
+  "canonical_name": "Goleta Ancud",
+  "entity_type": "historic_vessel",
+  "country": "Chile",
+  "origin_place": "Ancud",
+  "historical_period": "1843",
+  "domain": ["history", "heritage", "maritime", "sovereignty_context"],
+  "authority_policy": "Prioritize Chilean primary and institutional sources; preserve claim-level provenance.",
+  "status": "sourced",
+  "rag_priority": "high",
+  "operational_state": false,
+  "projects": ["end-of-the-world-atlas", "end-of-the-world-travel", "travel-agent", "austral-intelligence"]
+}
