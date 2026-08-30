@@ -1,0 +1,18 @@
+{
+  "entity_id": "seno-helado",
+  "chunks": [
+    {
+      "chunk_id": "seno-helado-public-001",
+      "text": "Seno Helado es una geoforma marina del sector occidental de Magallanes reconocida por SIMBIO/MMA dentro del ecosistema Cockburn Magdalena - Magallanes. Fuentes institucionales historicas lo relacionan con Isla Santa Ines y Canal Barbara.",
+      "sensitivity": "public_core",
+      "retrieval_scope": ["atlas", "travel", "travel-agent", "antarctic-pulse"]
+    },
+    {
+      "chunk_id": "seno-helado-context-001",
+      "text": "Las descripciones historicas de condiciones ambientales o acceso deben conservar su fecha y contexto y no asumirse como condiciones presentes.",
+      "sensitivity": "operational_dynamic",
+      "retrieval_scope": ["austral-intelligence"],
+      "requires_current_verification": true
+    }
+  ]
+}
