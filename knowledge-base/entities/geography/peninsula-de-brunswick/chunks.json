@@ -1,0 +1,23 @@
+{
+  "entity_id": "peninsula-de-brunswick",
+  "chunks": [
+    {
+      "id": "brunswick-geography",
+      "text": "La Península de Brunswick es una unidad geográfica central del entorno de Punta Arenas y del Estrecho de Magallanes. CONAF sitúa en ella a la Reserva Nacional Magallanes y la cuenca protegida de Laguna Parrillar.",
+      "sensitivity": "public_core",
+      "retrieval_scope": ["atlas", "travel"]
+    },
+    {
+      "id": "brunswick-marine-context",
+      "text": "El margen suroeste de la Península de Brunswick se relaciona con el contexto geográfico del AMCP-MU Francisco Coloane en el sector centro-occidental del Estrecho de Magallanes.",
+      "sensitivity": "public_core",
+      "retrieval_scope": ["atlas", "science", "travel"]
+    },
+    {
+      "id": "brunswick-precision-warning",
+      "text": "Las geometrías exactas, coordenadas y límites cartográficos de la Península de Brunswick deben validarse con fuentes geoespaciales autoritativas antes de utilizarse en aplicaciones de precisión.",
+      "sensitivity": "public_core",
+      "retrieval_scope": ["atlas"]
+    }
+  ]
+}
