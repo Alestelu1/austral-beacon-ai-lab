@@ -1,0 +1,19 @@
+{
+  "entity_id": "patagonian-kelp-forests",
+  "sensitivity": "public_core",
+  "sources": [
+    {
+      "source_id": "bosques-submarinos-patagonia-2024",
+      "title": "Bosques submarinos de la Patagonia",
+      "editor": "Iván Gómez Ocampo",
+      "year": 2024,
+      "isbn": "978-956-418-537-8",
+      "drive_file_id": "1uCbQ2f6doVdsCSKMOKsx-Rr_5re6UUKc",
+      "source_type": "scientific_synthesis",
+      "authority": "high",
+      "funding_context": ["FONDAP IDEAL 15150003", "FONDECYT 1201069", "FONDECYT 1201053"],
+      "retrieved_from_drive": true,
+      "public_retrieval_filter": "science_ecology_only"
+    }
+  ]
+}
