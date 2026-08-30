@@ -1,0 +1,8 @@
+{
+  "entity_id": "reserva-nacional-magallanes",
+  "relationships": [
+    {"target":"punta-arenas","type":"near","status":"verified"},
+    {"target":"peninsula-de-brunswick","type":"located_on","status":"verified_pending_dedicated_entity"},
+    {"target":"laguna-lynch","type":"protects_watershed_of","status":"verified_pending_dedicated_entity"}
+  ]
+}
