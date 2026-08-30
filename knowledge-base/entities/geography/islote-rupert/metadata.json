@@ -1,0 +1,10 @@
+{
+  "entity_id": "islote-rupert",
+  "entity_type": "islet",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["atlas", "travel", "science", "editorial"],
+  "requires_citation": true,
+  "dynamic_fields": ["access", "navigation", "landing_conditions"],
+  "ecological_sensitivity": "avoid_precise_access_instructions_to_nesting_sites"
+}
