@@ -1,0 +1,15 @@
+{
+  "id": "punta-santa-ana",
+  "canonical_name": "Punta Santa Ana",
+  "entity_type": "geographic_point",
+  "country": "Chile",
+  "region": "Región de Magallanes y de la Antártica Chilena",
+  "status": "candidate_stub",
+  "canonical": false,
+  "sensitivity": "public_core",
+  "retrieval_scope": ["internal-research", "austral-intelligence"],
+  "blocked_consumers": ["travel-agent"],
+  "public_answer_allowed": false,
+  "requires_human_review": true,
+  "completion_note": "Existing relationships are retained as research graph evidence, but the entity must not be treated as canonical until metadata, sources, claims and public chunks are fully completed and reviewed."
+}
