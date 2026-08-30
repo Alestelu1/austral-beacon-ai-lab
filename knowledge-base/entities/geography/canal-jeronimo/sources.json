@@ -1,0 +1,23 @@
+{
+  "entity_id": "canal-jeronimo",
+  "sources": [
+    {
+      "source_id": "directemar-paso-tortuoso",
+      "title": "5. Paso Tortuoso",
+      "institution": "DIRECTEMAR / Armada de Chile",
+      "source_type": "primary_institutional",
+      "authority_class": "hydrography_navigation",
+      "drive_file_id": "12_--iY-QY9enYJG51SfzTXa0w5OpW93n",
+      "supports": ["hydrographic_relation_to_paso_tortuoso", "cross_current_interaction"],
+      "public_retrieval_filter": "stable_geography_only"
+    },
+    {
+      "source_id": "mma-simbio-canal-san-jeronimo",
+      "institution": "Ministerio del Medio Ambiente / SIMBIO",
+      "source_type": "primary_institutional",
+      "authority_class": "environmental_geography",
+      "supports": ["place_existence", "regional_context"],
+      "public_retrieval_filter": "geography_ecosystem_only"
+    }
+  ]
+}
