@@ -1,0 +1,16 @@
+{
+  "entity_id": "estrecho-magallanes-central-magallanes-marine-ecosystem",
+  "sources": [
+    {
+      "source_id": "simbio-sbap-ecomar-058",
+      "title": "Ecosistema marino Estrecho de Magallanes Central - Magallanes",
+      "institution": "SIMBIO / Servicio de Biodiversidad y Areas Protegidas",
+      "authority_class": "primary_institutional",
+      "source_type": "official_biodiversity_information_system",
+      "url": "https://simbio.mma.gob.cl/EcosistemasMarinos/Details/64",
+      "supports": ["official_id", "name", "ecoregion", "surface", "zone", "origin", "geoforms"],
+      "retrieval_scope": ["public_core"],
+      "requires_citation": true
+    }
+  ]
+}
