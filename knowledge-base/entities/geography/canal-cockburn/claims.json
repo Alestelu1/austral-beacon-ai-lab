@@ -1,0 +1,25 @@
+{
+  "entity_id": "canal-cockburn",
+  "claims": [
+    {
+      "id": "cc-001",
+      "claim": "Canal Cockburn is recognized by SBAP/SIMBIO as a geoform of the marine ecosystem Cockburn Magdalena - Magallanes (ECOMAR-056).",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_id": "simbio-ecomar-056"
+    },
+    {
+      "id": "cc-002",
+      "claim": "Canal Cockburn is named in the official subbasin Islas al S. Isla Sta Ines y al O. Canal Barbara y Canal Cockburn, within the basin Islas al Sur Estrecho de Magallanes.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_id": "simbio-subcuenca-1274"
+    },
+    {
+      "id": "cc-003",
+      "claim": "Navigation, current, bathymetric and route guidance for Canal Cockburn must not be inferred from biodiversity-system records.",
+      "status": "governance_rule",
+      "sensitivity": "operational_dynamic"
+    }
+  ]
+}
