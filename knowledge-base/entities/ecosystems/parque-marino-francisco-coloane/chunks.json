@@ -1,0 +1,9 @@
+{
+  "entity_id": "parque-marino-francisco-coloane",
+  "chunks": [
+    {"id":"pmfc-overview","sensitivity":"public_core","text":"El Parque Marino Francisco Coloane es un área marina protegida del Estrecho de Magallanes, asociada a isla Carlos III. SUBPESCA informa que fue declarada en 2003 y que el parque posee 1.506 hectáreas dentro de un sistema protegido marino más amplio."},
+    {"id":"pmfc-conservation","sensitivity":"public_core","text":"Entre los objetivos de conservación del Parque Marino Francisco Coloane se encuentran preservar el área de alimentación de la ballena jorobada y conservar áreas de reproducción del pingüino de Magallanes y del lobo marino común, además de proteger comunidades acuáticas del sector."},
+    {"id":"pmfc-modeling","sensitivity":"internal_research","text":"No fusionar el Parque Marino Francisco Coloane con el Área Marina Costera Protegida Francisco Coloane. Las fuentes institucionales muestran registros históricos con categorías y superficies diferentes; mantener ambas figuras separadas hasta completar su modelado específico."},
+    {"id":"pmfc-visit-policy","sensitivity":"operational_dynamic","text":"Reglas de navegación, avistamiento de cetáceos, acceso turístico, desembarcos y otras condiciones operativas en Francisco Coloane deben verificarse en la autoridad competente antes de entregar orientación actual."}
+  ]
+}
