@@ -1,0 +1,29 @@
+{
+  "entity_id": "patagonian-kelp-forests",
+  "entity_type": "marine_ecosystem",
+  "canonical_name": "Bosques submarinos de huiro de la Patagonia austral",
+  "primary_species": "Macrocystis pyrifera",
+  "country": "Chile",
+  "region": "Patagonia austral",
+  "domains": ["marine_ecology", "biodiversity", "conservation", "climate_science", "southern_ocean_science"],
+  "sensitivity": "public_core",
+  "retrieval_scope": ["travel", "atlas", "antarctic-pulse", "editorial", "austral-intelligence"],
+  "requires_citation": true,
+  "requires_human_review": false,
+  "operational_state": false,
+  "rag_priority": "high",
+  "source_authority": "scientific_high",
+  "uncertainty_policy": {
+    "stable_ecology_claims": "public",
+    "quantitative_carbon_estimates": "study_specific_only",
+    "historical_geopolitical_context_in_source": "exclude_from_public_chunks"
+  },
+  "coverage": {
+    "ecology": "good_initial",
+    "distribution": "partial",
+    "associated_species": "partial",
+    "carbon_cycle": "partial_study_specific",
+    "conservation": "good_initial",
+    "geospatial_layer": "pending_authoritative_mapping"
+  }
+}
