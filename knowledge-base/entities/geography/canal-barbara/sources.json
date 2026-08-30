@@ -1,0 +1,21 @@
+{
+  "entity_id": "canal-barbara",
+  "sources": [
+    {
+      "source_id": "mma-simbio-canal-barbara",
+      "institution": "Ministerio del Medio Ambiente / SIMBIO",
+      "source_type": "primary_institutional",
+      "authority_class": "environmental_geography",
+      "supports": ["place_existence", "watershed_context", "marine_ecosystem_context"],
+      "public_retrieval_filter": "geography_ecosystem_only"
+    },
+    {
+      "source_id": "mma-francisco-coloane-historical-baseline",
+      "institution": "Ministerio del Medio Ambiente",
+      "source_type": "institutional_historical_baseline",
+      "authority_class": "historical_environmental_context",
+      "supports": ["historical_geographic_context"],
+      "public_retrieval_filter": "historical_context_only"
+    }
+  ]
+}
