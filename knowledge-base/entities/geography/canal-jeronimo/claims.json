@@ -1,0 +1,20 @@
+{
+  "entity_id": "canal-jeronimo",
+  "claims": [
+    {
+      "claim_id": "canal-jeronimo-001",
+      "claim": "Canal Jeronimo forma parte del sistema hidrografico asociado al Estrecho de Magallanes.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["directemar-paso-tortuoso", "mma-simbio-canal-san-jeronimo"]
+    },
+    {
+      "claim_id": "canal-jeronimo-002",
+      "claim": "DIRECTEMAR documenta que las corrientes del Canal Jeronimo interactuan con Paso Tortuoso y pueden producir efectos transversales sobre la navegacion.",
+      "status": "verified",
+      "sensitivity": "operational_dynamic",
+      "requires_current_verification": true,
+      "source_ids": ["directemar-paso-tortuoso"]
+    }
+  ]
+}
