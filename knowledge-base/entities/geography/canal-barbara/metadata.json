@@ -1,0 +1,15 @@
+{
+  "id": "canal-barbara",
+  "canonical_name": "Canal Bárbara",
+  "entity_type": "channel",
+  "country": "Chile",
+  "region": "Magallanes y de la Antártica Chilena",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "source_priority": "medium_high",
+  "geometry_status": "pending_authoritative_geometry",
+  "operational_navigation_allowed": false,
+  "retrieval_scope": ["atlas", "travel", "science", "austral-intelligence"],
+  "requires_citation": true,
+  "public_answer_allowed": true
+}
