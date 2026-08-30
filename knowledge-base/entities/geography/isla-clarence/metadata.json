@@ -1,0 +1,15 @@
+{
+  "entity_id": "isla-clarence",
+  "entity_type": "island",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "rag_priority": "medium",
+  "authority_profile": {
+    "geography_ecosystem": "SBAP/SIMBIO",
+    "watershed_context": "SBAP/SIMBIO",
+    "geospatial_precision": "IGM/IDE Chile/SHOA pending"
+  },
+  "operational_state": false,
+  "public_answer_allowed": true,
+  "requires_citation": true
+}
