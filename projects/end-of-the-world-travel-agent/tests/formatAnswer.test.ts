@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { formatAnswer } from "../src/ui/formatAnswer.js";
-import type { DestinationCardAnswer, TravelAnswer } from "../src/domain/types.js";
+import type { DestinationCardAnswer, StraitInfoAnswer, TravelAnswer } from "../src/domain/types.js";
 
 describe("formatAnswer — connectivity supported", () => {
   const answer: TravelAnswer = {
@@ -118,6 +118,54 @@ describe("formatAnswer — destination-info supported", () => {
     expect(output).toContain("/cabo-de-hornos");
     expect(output).toContain("Confianza: high");
     expect(output).toContain("Verificado: 2026-07-25");
+  });
+});
+
+describe("formatAnswer — Strait info supported", () => {
+  const answer: StraitInfoAnswer = {
+    status: "supported",
+    intent: "strait-info",
+    summary: "El Estrecho de Magallanes es un paso marítimo natural en el extremo sur de Chile, en la Región de Magallanes y de la Antártica Chilena.",
+    facts: [
+      {
+        entityId: "strait-of-magellan",
+        claimId: "strait-length-330-nm",
+        text: "DIRECTEMAR define una longitud total de 330 millas náuticas.",
+        sourceIds: ["directemar-generalidades-estrecho-magallanes"],
+        sensitivity: "public_core",
+        embeddingEligible: true,
+      },
+      {
+        entityId: "strait-of-magellan",
+        claimId: "strait-jurisdiction-chile",
+        text: "DIRECTEMAR señala que el Estrecho se encuentra íntegramente bajo jurisdicción de Chile.",
+        sourceIds: ["directemar-generalidades-estrecho-magallanes"],
+        sensitivity: "public_core",
+        embeddingEligible: true,
+      },
+    ],
+    confidence: "high",
+    warnings: ["La información operacional requiere verificación vigente."],
+    sources: [
+      {
+        title: "DIRECTEMAR — Generalidades del Estrecho de Magallanes",
+        publisher: "DIRECTEMAR",
+        url: "https://www.directemar.cl/",
+        verifiedAt: "2026-08-29",
+        status: "verified",
+      },
+    ],
+    suggestedInternalLinks: [],
+    verifiedAt: "2026-08-29",
+  };
+
+  it("keeps the concise summary and renders projected facts in a separate block", () => {
+    const output = formatAnswer(answer);
+    expect(output).toContain(`Resumen: ${answer.summary}`);
+    expect(output).toContain("Hechos verificados:");
+    expect(output).toContain("330 millas náuticas");
+    expect(output).toContain("jurisdicción de Chile");
+    expect(output.indexOf("Hechos verificados:")).toBeGreaterThan(output.indexOf("Resumen:"));
   });
 });
 
