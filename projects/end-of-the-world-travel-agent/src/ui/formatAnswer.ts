@@ -5,6 +5,7 @@ import type {
   StraitInfoAnswer,
   TravelAnswer
 } from "../domain/types.js";
+import { formatCliUrl } from "./cliFormat.js";
 
 type AnyAnswer =
   | TravelAnswer
@@ -27,6 +28,20 @@ function isRelationshipAnswer(answer: AnyAnswer): answer is RelationshipAnswer {
 
 function isDestinationCardAnswer(answer: AnyAnswer): answer is DestinationCardAnswer {
   return answer.intent === "destination-info";
+}
+
+function pushSources(lines: string[], sources: AnyAnswer["sources"]): void {
+  if (sources.length === 0) return;
+
+  lines.push("");
+  lines.push("Fuentes:");
+  for (let i = 0; i < sources.length; i++) {
+    const source = sources[i]!;
+    lines.push(`  ${i + 1}. ${source.title}`);
+    lines.push(`     Editor: ${source.publisher}`);
+    lines.push(`     URL: ${formatCliUrl(source.url)}`);
+    lines.push(`     Verificado: ${source.verifiedAt}`);
+  }
 }
 
 function formatConnectivitySupported(answer: TravelAnswer): string {
@@ -55,17 +70,7 @@ function formatConnectivitySupported(answer: TravelAnswer): string {
     }
   }
 
-  if (answer.sources.length > 0) {
-    lines.push("");
-    lines.push("Fuentes:");
-    for (let i = 0; i < answer.sources.length; i++) {
-      const source = answer.sources[i]!;
-      lines.push(`  ${i + 1}. ${source.title}`);
-      lines.push(`     Editor: ${source.publisher}`);
-      lines.push(`     URL: ${source.url}`);
-      lines.push(`     Verificado: ${source.verifiedAt}`);
-    }
-  }
+  pushSources(lines, answer.sources);
 
   if (answer.verifiedAt) {
     lines.push("");
@@ -99,17 +104,7 @@ function formatDestinationInfoSupported(answer: DestinationCardAnswer): string {
     }
   }
 
-  if (answer.sources.length > 0) {
-    lines.push("");
-    lines.push("Fuentes:");
-    for (let i = 0; i < answer.sources.length; i++) {
-      const source = answer.sources[i]!;
-      lines.push(`  ${i + 1}. ${source.title}`);
-      lines.push(`     Editor: ${source.publisher}`);
-      lines.push(`     URL: ${source.url}`);
-      lines.push(`     Verificado: ${source.verifiedAt}`);
-    }
-  }
+  pushSources(lines, answer.sources);
 
   if (answer.suggestedInternalLinks.length > 0) {
     lines.push("");
@@ -157,17 +152,7 @@ function formatRelationshipSupported(answer: RelationshipAnswer): string {
     }
   }
 
-  if (answer.sources.length > 0) {
-    lines.push("");
-    lines.push("Fuentes:");
-    for (let i = 0; i < answer.sources.length; i++) {
-      const source = answer.sources[i]!;
-      lines.push(`  ${i + 1}. ${source.title}`);
-      lines.push(`     Editor: ${source.publisher}`);
-      lines.push(`     URL: ${source.url}`);
-      lines.push(`     Verificado: ${source.verifiedAt}`);
-    }
-  }
+  pushSources(lines, answer.sources);
 
   lines.push("");
   lines.push(`Confianza: ${answer.confidence}`);
@@ -214,17 +199,7 @@ function formatAntarcticAccessSupported(answer: AntarcticAccessAnswer): string {
     }
   }
 
-  if (answer.sources.length > 0) {
-    lines.push("");
-    lines.push("Fuentes:");
-    for (let i = 0; i < answer.sources.length; i++) {
-      const source = answer.sources[i]!;
-      lines.push(`  ${i + 1}. ${source.title}`);
-      lines.push(`     Editor: ${source.publisher}`);
-      lines.push(`     URL: ${source.url}`);
-      lines.push(`     Verificado: ${source.verifiedAt}`);
-    }
-  }
+  pushSources(lines, answer.sources);
 
   lines.push("");
   lines.push(`Confianza: ${answer.confidence}`);
@@ -249,17 +224,7 @@ function formatStraitInfoSupported(answer: StraitInfoAnswer): string {
     }
   }
 
-  if (answer.sources.length > 0) {
-    lines.push("");
-    lines.push("Fuentes:");
-    for (let i = 0; i < answer.sources.length; i++) {
-      const source = answer.sources[i]!;
-      lines.push(`  ${i + 1}. ${source.title}`);
-      lines.push(`     Editor: ${source.publisher}`);
-      lines.push(`     URL: ${source.url}`);
-      lines.push(`     Verificado: ${source.verifiedAt}`);
-    }
-  }
+  pushSources(lines, answer.sources);
 
   lines.push("");
   lines.push(`Confianza: ${answer.confidence}`);
