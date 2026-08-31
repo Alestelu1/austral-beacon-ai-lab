@@ -216,6 +216,14 @@ function formatStraitInfoSupported(answer: StraitInfoAnswer): string {
   lines.push("");
   lines.push(`Resumen: ${answer.summary}`);
 
+  if (answer.facts.length > 0) {
+    lines.push("");
+    lines.push("Hechos verificados:");
+    for (const fact of answer.facts) {
+      lines.push(`  • ${fact.text}`);
+    }
+  }
+
   if (answer.warnings.length > 0) {
     lines.push("");
     lines.push("Advertencias:");
