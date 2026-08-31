@@ -2,6 +2,7 @@ import type {
   AntarcticAccessAnswer,
   DestinationCardAnswer,
   RelationshipAnswer,
+  StraitInfoAnswer,
   TravelAnswer
 } from "../domain/types.js";
 import { answerTravelQuestion } from "./answerTravelQuestion.js";
@@ -12,7 +13,12 @@ import type { LiveVerificationExecutor } from "../live/LiveVerificationExecutor.
 export type TravelAssistantAnswer =
   | {
       kind: "deterministic_travel";
-      answer: TravelAnswer | DestinationCardAnswer | RelationshipAnswer | AntarcticAccessAnswer;
+      answer:
+        | TravelAnswer
+        | DestinationCardAnswer
+        | RelationshipAnswer
+        | AntarcticAccessAnswer
+        | StraitInfoAnswer;
     }
   | {
       kind: "knowledge";

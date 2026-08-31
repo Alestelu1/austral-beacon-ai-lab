@@ -3,6 +3,7 @@ import type {
   AntarcticAccessAnswer,
   DestinationCardAnswer,
   RelationshipAnswer,
+  StraitInfoAnswer,
   TravelAnswer
 } from "../domain/types.js";
 import { GoldenCorpusRetriever, type GoldenCorpus } from "../retrieval/GoldenCorpusRetriever.js";
@@ -47,6 +48,7 @@ export type UnifiedTravelAnswer =
   | DestinationCardAnswer
   | RelationshipAnswer
   | AntarcticAccessAnswer
+  | StraitInfoAnswer
   | KnowledgeUiAnswer;
 
 /**

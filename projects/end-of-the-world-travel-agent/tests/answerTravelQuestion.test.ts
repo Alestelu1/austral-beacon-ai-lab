@@ -32,7 +32,8 @@ describe("answerTravelQuestion — destination-info with covered destinations", 
     if (
       !("suggestedInternalLinks" in answer) ||
       "distinctReferents" in answer ||
-      "pathways" in answer
+      "pathways" in answer ||
+      "facts" in answer
     ) {
       throw new Error("Expected DestinationCardAnswer");
     }
@@ -49,7 +50,8 @@ describe("answerTravelQuestion — destination-info with covered destinations", 
     if (
       !("suggestedInternalLinks" in answer) ||
       "distinctReferents" in answer ||
-      "pathways" in answer
+      "pathways" in answer ||
+      "facts" in answer
     ) {
       throw new Error("Expected DestinationCardAnswer");
     }
@@ -66,7 +68,8 @@ describe("answerTravelQuestion — destination-info with covered destinations", 
     if (
       !("suggestedInternalLinks" in answer) ||
       "distinctReferents" in answer ||
-      "pathways" in answer
+      "pathways" in answer ||
+      "facts" in answer
     ) {
       throw new Error("Expected DestinationCardAnswer");
     }
@@ -84,7 +87,8 @@ describe("answerTravelQuestion — destination-info case/accent variations", () 
     if (
       !("suggestedInternalLinks" in answer) ||
       "distinctReferents" in answer ||
-      "pathways" in answer
+      "pathways" in answer ||
+      "facts" in answer
     ) {
       throw new Error("Expected DestinationCardAnswer");
     }
@@ -99,7 +103,8 @@ describe("answerTravelQuestion — destination-info case/accent variations", () 
     if (
       !("suggestedInternalLinks" in answer) ||
       "distinctReferents" in answer ||
-      "pathways" in answer
+      "pathways" in answer ||
+      "facts" in answer
     ) {
       throw new Error("Expected DestinationCardAnswer");
     }
@@ -116,7 +121,8 @@ describe("answerTravelQuestion — destination-info uncovered destination", () =
     if (
       !("suggestedInternalLinks" in answer) ||
       "distinctReferents" in answer ||
-      "pathways" in answer
+      "pathways" in answer ||
+      "facts" in answer
     ) {
       throw new Error("Expected DestinationCardAnswer");
     }

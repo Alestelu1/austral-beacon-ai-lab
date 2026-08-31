@@ -4,6 +4,7 @@ export type TravelIntent =
   | "destination-info"
   | "relationship"
   | "antarctic-access"
+  | "strait-info"
   | "unknown";
 export type Confidence = "high" | "medium" | "none";
 
@@ -200,6 +201,37 @@ export interface AntarcticAccessAnswer {
   summary: string;
   pathways: AntarcticAccessPathway[];
   puertoWilliamsClarification: string;
+  confidence: Confidence;
+  warnings: string[];
+  sources: SourceReference[];
+  suggestedInternalLinks: InternalLink[];
+  verifiedAt?: string;
+}
+
+// --- Strait of Magellan travel projection types ---
+
+/**
+ * A single projected fact for the Strait of Magellan travel projection.
+ *
+ * Every projected fact preserves the canonical provenance chain required by the
+ * projection contract: the canonical entity id, the canonical claim id, the
+ * canonical source ids and the sensitivity. No fact may exist here that is not
+ * derived from an approved canonical claim.
+ */
+export interface StraitProjectedFact {
+  entityId: string;
+  claimId: string;
+  text: string;
+  sourceIds: string[];
+  sensitivity: string;
+  embeddingEligible: boolean;
+}
+
+export interface StraitInfoAnswer {
+  status: AnswerStatus;
+  intent: "strait-info";
+  summary: string;
+  facts: StraitProjectedFact[];
   confidence: Confidence;
   warnings: string[];
   sources: SourceReference[];

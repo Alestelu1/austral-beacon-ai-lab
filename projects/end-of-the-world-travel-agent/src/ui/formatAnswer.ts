@@ -2,10 +2,20 @@ import type {
   AntarcticAccessAnswer,
   DestinationCardAnswer,
   RelationshipAnswer,
+  StraitInfoAnswer,
   TravelAnswer
 } from "../domain/types.js";
 
-type AnyAnswer = TravelAnswer | DestinationCardAnswer | RelationshipAnswer | AntarcticAccessAnswer;
+type AnyAnswer =
+  | TravelAnswer
+  | DestinationCardAnswer
+  | RelationshipAnswer
+  | AntarcticAccessAnswer
+  | StraitInfoAnswer;
+
+function isStraitInfoAnswer(answer: AnyAnswer): answer is StraitInfoAnswer {
+  return answer.intent === "strait-info";
+}
 
 function isAntarcticAccessAnswer(answer: AnyAnswer): answer is AntarcticAccessAnswer {
   return answer.intent === "antarctic-access";
@@ -225,6 +235,40 @@ function formatAntarcticAccessSupported(answer: AntarcticAccessAnswer): string {
   return lines.join("\n");
 }
 
+function formatStraitInfoSupported(answer: StraitInfoAnswer): string {
+  const lines: string[] = [];
+  lines.push("━━━ Estrecho de Magallanes ━━━");
+  lines.push("");
+  lines.push(`Resumen: ${answer.summary}`);
+
+  if (answer.warnings.length > 0) {
+    lines.push("");
+    lines.push("Advertencias:");
+    for (const warning of answer.warnings) {
+      lines.push(`  • ${warning}`);
+    }
+  }
+
+  if (answer.sources.length > 0) {
+    lines.push("");
+    lines.push("Fuentes:");
+    for (let i = 0; i < answer.sources.length; i++) {
+      const source = answer.sources[i]!;
+      lines.push(`  ${i + 1}. ${source.title}`);
+      lines.push(`     Editor: ${source.publisher}`);
+      lines.push(`     URL: ${source.url}`);
+      lines.push(`     Verificado: ${source.verifiedAt}`);
+    }
+  }
+
+  lines.push("");
+  lines.push(`Confianza: ${answer.confidence}`);
+  if (answer.verifiedAt) {
+    lines.push(`Verificado: ${answer.verifiedAt}`);
+  }
+  return lines.join("\n");
+}
+
 function formatUnsupported(answer: AnyAnswer): string {
   if (isDestinationCardAnswer(answer)) {
     return "⚠ El destino consultado no está disponible en la base local.";
@@ -235,6 +279,10 @@ function formatUnsupported(answer: AnyAnswer): string {
 export function formatAnswer(answer: AnyAnswer): string {
   if (answer.status === "unsupported") {
     return formatUnsupported(answer);
+  }
+
+  if (isStraitInfoAnswer(answer)) {
+    return formatStraitInfoSupported(answer);
   }
 
   if (isAntarcticAccessAnswer(answer)) {

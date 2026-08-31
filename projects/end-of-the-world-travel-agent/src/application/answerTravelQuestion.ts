@@ -11,6 +11,7 @@ import type {
   PlaceRelationshipRecord,
   RelationshipAnswer,
   RouteRecord,
+  StraitInfoAnswer,
   TravelAnswer
 } from "../domain/types.js";
 import { normalize } from "../domain/normalize.js";
@@ -18,6 +19,7 @@ import { LocalJsonDestinationCardRepository } from "../adapters/LocalJsonDestina
 import { getDestinationCard } from "./getDestinationCard.js";
 import { answerPlaceRelationship } from "./answerPlaceRelationship.js";
 import { answerAntarcticAccess } from "./answerAntarcticAccess.js";
+import { answerStraitInfo } from "./answerStraitInfo.js";
 
 const route = routeData as RouteRecord;
 const puntaArenasRoute = puntaArenasRouteData as RouteRecord;
@@ -158,6 +160,40 @@ function isAntarcticAccessQuestion(normalized: string): boolean {
   return hasAccessPhrase || mentionsTravelIntent(normalized);
 }
 
+// --- Detección del Estrecho de Magallanes (proyección estable v1) ---
+
+/**
+ * Operational / legal / sovereignty signals for the Strait. If a Strait query
+ * contains any of these, it must NOT be answered from the stable projection;
+ * it falls through so it never receives static operational or legal content.
+ */
+const STRAIT_NON_STABLE_TERMS = [
+  // operational navigation / dynamic
+  "corriente", "corrientes", "marea", "mareas", "nudos", "current", "currents", "tide", "tides",
+  "navegar", "navegacion", "navigation", "navegabilidad", "navigate", "sailing", "shipping",
+  "control de trafico", "traffic control", "pilotaje", "pilotage", "radio", "vhf",
+  "cruce", "crossing", "ferry", "transbordador", "calado", "calados", "faro", "faros", "baliza",
+  "condiciones actuales", "estado actual", "hoy", "clima", "weather",
+  // legal / sovereignty
+  "soberania", "sovereignty", "tratado", "tratados", "treaty", "limite", "limites", "border",
+  "jurisdiccion", "jurisdiction", "territorial", "geopolit", "estrategic", "strategic", "militar", "military"
+];
+
+function isStraitStableInfoQuestion(normalized: string): boolean {
+  const mentionsStrait =
+    normalized.includes("estrecho de magallanes") ||
+    normalized.includes("strait of magellan") ||
+    normalized.includes("estrecho magallanes") ||
+    normalized.includes("magellan strait");
+
+  if (!mentionsStrait) return false;
+
+  // Never answer operational/legal/sovereignty Strait questions from the stable projection.
+  if (STRAIT_NON_STABLE_TERMS.some((t) => normalized.includes(t))) return false;
+
+  return true;
+}
+
 // --- Detección de Villa Ukika (contexto de comunidad yagán viva) ---
 
 /**
@@ -196,7 +232,12 @@ function isPuertoWilliamsCaboRelationshipQuestion(normalized: string): boolean {
 
 export function answerTravelQuestion(
   question: string
-): TravelAnswer | DestinationCardAnswer | RelationshipAnswer | AntarcticAccessAnswer {
+):
+  | TravelAnswer
+  | DestinationCardAnswer
+  | RelationshipAnswer
+  | AntarcticAccessAnswer
+  | StraitInfoAnswer {
   const normalized = normalize(question);
 
   // 0. Prioridad máxima: acceso a la Antártica desde Chile
@@ -224,6 +265,13 @@ export function answerTravelQuestion(
   //     so it is answered as a community-context relationship, not a tourism card.
   if (isVillaUkikaQuestion(normalized)) {
     return answerPlaceRelationship(villaUkikaRelationship);
+  }
+
+  // 1e. Strait of Magellan — stable identity/geographic projection v1 only.
+  //     Operational/legal/sovereignty Strait questions are excluded by the
+  //     detector and fall through (never answered from the stable projection).
+  if (isStraitStableInfoQuestion(normalized)) {
+    return answerStraitInfo();
   }
 
   // 2. destination-info (dos pasos)
