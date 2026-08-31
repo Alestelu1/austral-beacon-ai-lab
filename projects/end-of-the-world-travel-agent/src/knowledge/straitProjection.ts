@@ -2,6 +2,7 @@ import contract from "../../../../knowledge-base/projections/travel/strait-of-ma
 import canonicalClaims from "../../../../knowledge-base/entities/geography/strait-of-magellan/claims.json" with { type: "json" };
 import canonicalSources from "../../../../knowledge-base/entities/geography/strait-of-magellan/sources.json" with { type: "json" };
 import canonicalChunks from "../../../../knowledge-base/entities/geography/strait-of-magellan/chunks.json" with { type: "json" };
+import canonicalMetadata from "../../../../knowledge-base/entities/geography/strait-of-magellan/metadata.json" with { type: "json" };
 import type { StraitProjectedFact } from "../domain/types.js";
 
 /**
@@ -52,6 +53,21 @@ export const STRAIT_PROJECTION_ID = "travel-strait-of-magellan-v1";
 const claimsData = canonicalClaims as { entity_id: string; claims: CanonicalClaim[] };
 const sourcesData = canonicalSources as { sources: Array<{ id?: string; source_id?: string }> };
 const chunksData = canonicalChunks as { chunks: CanonicalChunk[] };
+const metadata = canonicalMetadata as { country?: string; region?: string };
+
+/** Canonical stable Chilean geographic context (from canonical metadata). */
+export const STRAIT_COUNTRY = metadata.country ?? "Chile";
+export const STRAIT_REGION = metadata.region ?? "Región de Magallanes y de la Antártica Chilena";
+
+/**
+ * Per-claim matcher: which safe canonical chunk best expresses a given claim.
+ * Keyed by canonical claim id so the length claim and the jurisdiction claim
+ * each select their own public_core chunk (never an operational one).
+ */
+const CLAIM_CHUNK_MATCHER: Record<string, RegExp> = {
+  "strait-length-330-nm": /330|millas n[aá]uticas|D[uú]ngenes|Evangelistas/i,
+  "strait-jurisdiction-chile": /jurisdicci[oó]n de Chile|Patagonia chilena/i
+};
 
 /** Canonical source ids present in the entity's sources.json (both field variants). */
 const canonicalSourceIds = new Set<string>(
@@ -90,14 +106,15 @@ function claimSourceIds(claim: CanonicalClaim): string[] {
  */
 function findSafeChunkText(claim: CanonicalClaim): string | undefined {
   const claimSources = new Set(claimSourceIds(claim));
+  const matcher = CLAIM_CHUNK_MATCHER[claim.id];
+  if (!matcher) return undefined;
   const safe = chunksData.chunks.find((ch) => {
     if (ch.blocked_consumers?.includes(CONSUMER)) return false;
     if (ch.embedding_eligible === false) return false;
     if (ch.sensitivity && ch.sensitivity !== "public_core") return false;
     const chSources = ch.source_ids ?? [];
     const sharesSource = chSources.some((s) => claimSources.has(s));
-    // The length/mouths chunk is the canonical stable geographic description.
-    return sharesSource && /330|millas n[aá]uticas|D[uú]ngenes|Evangelistas/i.test(ch.text);
+    return sharesSource && matcher.test(ch.text);
   });
   return safe?.text;
 }

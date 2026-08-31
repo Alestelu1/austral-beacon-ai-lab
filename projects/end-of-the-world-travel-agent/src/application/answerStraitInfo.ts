@@ -1,7 +1,9 @@
 import type { SourceReference, StraitInfoAnswer } from "../domain/types.js";
 import {
   buildStraitProjectionFacts,
-  straitProjectionSources
+  straitProjectionSources,
+  STRAIT_COUNTRY,
+  STRAIT_REGION
 } from "../knowledge/straitProjection.js";
 
 /**
@@ -16,8 +18,12 @@ import {
 export function answerStraitInfo(): StraitInfoAnswer {
   const facts = buildStraitProjectionFacts();
 
+  // Lead with the verified Chilean geographic/administrative context (public_core),
+  // as required by the project policy: prefer complete geographic context over
+  // artificially neutral wording. Country and region come from canonical metadata.
   const summary =
-    "El Estrecho de Magallanes es un paso marítimo natural en el extremo sur de Sudamérica. " +
+    `El Estrecho de Magallanes es un paso marítimo natural en el extremo sur de ${STRAIT_COUNTRY}, ` +
+    `en la ${STRAIT_REGION}. ` +
     facts.map((f) => f.text).join(" ");
 
   // Preserve provenance: build user-facing sources from the canonical source ids

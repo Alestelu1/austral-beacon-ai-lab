@@ -161,36 +161,73 @@ function isAntarcticAccessQuestion(normalized: string): boolean {
 }
 
 // --- Detección del Estrecho de Magallanes (proyección estable v1) ---
+//
+// Classification is INTENT-based, not keyword-based. Per the project policy,
+// stable verified Chilean geographic/administrative/jurisdictional context is
+// public_core: mentions of "Chile", "chileno", "jurisdicción" or "territorial"
+// must NOT by themselves suppress a stable geographic answer.
 
-/**
- * Operational / legal / sovereignty signals for the Strait. If a Strait query
- * contains any of these, it must NOT be answered from the stable projection;
- * it falls through so it never receives static operational or legal content.
- */
-const STRAIT_NON_STABLE_TERMS = [
-  // operational navigation / dynamic
-  "corriente", "corrientes", "marea", "mareas", "nudos", "current", "currents", "tide", "tides",
-  "navegar", "navegacion", "navigation", "navegabilidad", "navigate", "sailing", "shipping",
-  "control de trafico", "traffic control", "pilotaje", "pilotage", "radio", "vhf",
-  "cruce", "crossing", "ferry", "transbordador", "calado", "calados", "faro", "faros", "baliza",
-  "condiciones actuales", "estado actual", "hoy", "clima", "weather",
-  // legal / sovereignty
-  "soberania", "sovereignty", "tratado", "tratados", "treaty", "limite", "limites", "border",
-  "jurisdiccion", "jurisdiction", "territorial", "geopolit", "estrategic", "strategic", "militar", "military"
-];
-
-function isStraitStableInfoQuestion(normalized: string): boolean {
-  const mentionsStrait =
+function mentionsStrait(normalized: string): boolean {
+  return (
     normalized.includes("estrecho de magallanes") ||
     normalized.includes("strait of magellan") ||
     normalized.includes("estrecho magallanes") ||
-    normalized.includes("magellan strait");
+    normalized.includes("magellan strait")
+  );
+}
 
-  if (!mentionsStrait) return false;
+/**
+ * Operational-dynamic INTENT: current currents/tides, traffic control, pilotage,
+ * current navigation conditions, ferry/crossing status, weather-sensitive access.
+ * These require current official verification and must not be answered from the
+ * stable projection.
+ */
+const STRAIT_OPERATIONAL_INTENT: RegExp[] = [
+  /\bcorrientes?\b/, /\bmareas?\b/, /\bnudos\b/, /\bcurrents?\b/, /\btides?\b/,
+  /control de tr[aá]fico/, /traffic control/, /pilotaje/, /pilotage/, /\bvhf\b/,
+  /condiciones? (actuales|de navegaci[oó]n)/, /navigation conditions?/,
+  /estado actual/, /\bhoy\b/, /\bahora\b/, /right now/, /\btoday\b/,
+  /clima|weather/, /transbordador|ferry|cruce actual|crossing status/,
+  /calados?/, /se puede (navegar|cruzar|pasar)/, /can (i|we|you) (sail|cross|navigate)/
+];
 
-  // Never answer operational/legal/sovereignty Strait questions from the stable projection.
-  if (STRAIT_NON_STABLE_TERMS.some((t) => normalized.includes(t))) return false;
+/**
+ * Legal / treaty-interpretation / sovereignty-argumentation INTENT.
+ * These belong to a specialized legal-geopolitical workflow, not the Travel
+ * projection. Note this targets INTENT phrases (treaty interpretation, who has
+ * better right, disputed boundaries, legal rights derived), NOT the bare words
+ * "jurisdicción" / "territorial" / "Chile", which are ordinary public-core
+ * geographic context.
+ */
+const STRAIT_LEGAL_INTENT: RegExp[] = [
+  /tratado/, /treaty/,
+  /soberan[ií]a/, /sovereignt/,
+  /derechos? soberanos?/, /sovereign rights?/,
+  /mejor derecho/, /better (right|claim)/,
+  /disputa|disput(ed|e)/, /reclamaci[oó]n territorial|territorial claim/,
+  /l[ií]mite (disputad|no resuelt)|disputed boundar|unresolved boundar/,
+  /qu[eé] establece jur[ií]dicamente|legal(ly)? establish|interpretaci[oó]n (legal|jur[ií]dica)/,
+  /derecho internacional|international law/,
+  /geopol[ií]tic|geopolitic/, /estrat[eé]gic|strategic/, /\bmilitar\b|\bmilitary\b/
+];
 
+function hasOperationalStraitIntent(normalized: string): boolean {
+  return STRAIT_OPERATIONAL_INTENT.some((re) => re.test(normalized));
+}
+
+function hasLegalStraitIntent(normalized: string): boolean {
+  return STRAIT_LEGAL_INTENT.some((re) => re.test(normalized));
+}
+
+/**
+ * Answerable from the stable Strait projection when the query is a stable
+ * geographic/administrative/jurisdictional identity or location question and is
+ * NOT an operational or legal/treaty-interpretation intent.
+ */
+function isStraitStableInfoQuestion(normalized: string): boolean {
+  if (!mentionsStrait(normalized)) return false;
+  if (hasOperationalStraitIntent(normalized)) return false;
+  if (hasLegalStraitIntent(normalized)) return false;
   return true;
 }
 

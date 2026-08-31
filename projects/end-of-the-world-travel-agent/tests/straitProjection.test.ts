@@ -6,9 +6,9 @@ import {
 } from "../src/knowledge/straitProjection.js";
 
 // Claim ids from the canonical entity, grouped by contract disposition.
-const ALLOWED = ["strait-length-330-nm"];
+// strait-jurisdiction-chile is now an ALLOWED public_core Chilean context claim.
+const ALLOWED = ["strait-length-330-nm", "strait-jurisdiction-chile"];
 const CONDITIONAL_NOT_IN_V1 = [
-  "strait-jurisdiction-chile",
   "first-narrows-length",
   "second-narrows-length",
   "paso-tortuoso-length"

@@ -110,6 +110,69 @@ describe("Strait of Magellan — no operational/legal leakage", () => {
   });
 });
 
+describe("Strait of Magellan — verified Chilean geographic/jurisdictional context (public_core)", () => {
+  it("'¿Qué es el Estrecho de Magallanes?' mentions Chile when supported", () => {
+    expect(assertedText(asStrait("¿Qué es el Estrecho de Magallanes?"))).toContain("chile");
+  });
+
+  it("'¿Dónde está el Estrecho de Magallanes?' includes Chile + Región de Magallanes y de la Antártica Chilena", () => {
+    const t = assertedText(asStrait("¿Dónde está el Estrecho de Magallanes?"));
+    expect(t).toContain("chile");
+    expect(t).toContain("region de magallanes y de la antartica chilena");
+  });
+
+  it("'¿En qué país está el Estrecho de Magallanes?' -> Chile (strait-info)", () => {
+    const a = asStrait("¿En qué país está el Estrecho de Magallanes?");
+    expect(a.intent).toBe("strait-info");
+    expect(assertedText(a)).toContain("chile");
+  });
+
+  it("'¿El Estrecho de Magallanes está en Chile?' -> supported factual answer", () => {
+    const a = asStrait("¿El Estrecho de Magallanes está en Chile?");
+    expect(a.status).toBe("supported");
+    expect(assertedText(a)).toContain("chile");
+  });
+
+  it("'¿Bajo qué jurisdicción está el Estrecho de Magallanes?' -> DIRECTEMAR jurisdiction fact, no treaty interpretation", () => {
+    const a = asStrait("¿Bajo qué jurisdicción está el Estrecho de Magallanes?");
+    expect(a.intent).toBe("strait-info");
+    const t = assertedText(a);
+    expect(t).toContain("jurisdiccion de chile");
+    // The jurisdiction claim id is projected with preserved provenance.
+    expect(a.facts.some((f) => f.claimId === "strait-jurisdiction-chile")).toBe(true);
+    // No treaty interpretation is introduced.
+    for (const term of ["tratado", "1881", "1984", "banderas", "soberania"]) {
+      expect(t).not.toContain(term);
+    }
+  });
+
+  it("the jurisdiction fact preserves canonical claim_id + source_ids", () => {
+    const a = asStrait("¿El Estrecho de Magallanes está en Chile?");
+    const jur = a.facts.find((f) => f.claimId === "strait-jurisdiction-chile");
+    expect(jur).toBeDefined();
+    expect(jur!.entityId).toBe("strait-of-magellan");
+    expect(jur!.sourceIds).toContain("directemar-generalidades-estrecho-magallanes");
+  });
+
+  it("keyword 'jurisdicción'/'territorial' alone does NOT suppress the stable answer", () => {
+    expect(answerTravelQuestion("¿Bajo qué jurisdicción está el Estrecho de Magallanes?").intent).toBe("strait-info");
+  });
+});
+
+describe("Strait of Magellan — legal/treaty & operational intents remain excluded", () => {
+  it("'¿Qué establece jurídicamente el Tratado de 1881?' is NOT strait-info", () => {
+    expect(answerTravelQuestion("¿Qué establece jurídicamente el Tratado de 1881?").intent).not.toBe("strait-info");
+  });
+
+  it("'¿Quién tiene mejor derecho territorial sobre el Estrecho?' is NOT strait-info", () => {
+    expect(answerTravelQuestion("¿Quién tiene mejor derecho territorial sobre el Estrecho de Magallanes?").intent).not.toBe("strait-info");
+  });
+
+  it("'¿Qué corrientes hay hoy en el Estrecho de Magallanes?' is NOT stable projection", () => {
+    expect(answerTravelQuestion("¿Qué corrientes hay hoy en el Estrecho de Magallanes?").intent).not.toBe("strait-info");
+  });
+});
+
 describe("Strait integration — existing flows unchanged", () => {
   it("Puerto Williams destination-info still resolves", () => {
     expect(answerTravelQuestion("¿Qué es Puerto Williams?").intent).toBe("destination-info");
