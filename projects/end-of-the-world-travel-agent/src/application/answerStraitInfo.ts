@@ -18,13 +18,12 @@ import {
 export function answerStraitInfo(): StraitInfoAnswer {
   const facts = buildStraitProjectionFacts();
 
-  // Lead with the verified Chilean geographic/administrative context (public_core),
-  // as required by the project policy: prefer complete geographic context over
-  // artificially neutral wording. Country and region come from canonical metadata.
+  // Keep the summary concise and role-oriented. Contract-approved facts remain
+  // separate so the presentation layer can show them as traceable evidence
+  // without repeating them inside the summary.
   const summary =
     `El Estrecho de Magallanes es un paso marítimo natural en el extremo sur de ${STRAIT_COUNTRY}, ` +
-    `en la ${STRAIT_REGION}. ` +
-    facts.map((f) => f.text).join(" ");
+    `en la ${STRAIT_REGION}.`;
 
   // Preserve provenance: build user-facing sources from the canonical source ids
   // used by the projected facts. Institution names come from canonical sources.json.
