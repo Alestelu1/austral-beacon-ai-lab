@@ -14,6 +14,8 @@
     "claim_level_provenance_required": true,
     "operational_information_requires_live_verification": true,
     "restricted_context_not_publicly_projectable": true,
+    "verified_chilean_geographic_context_is_public_core": true,
+    "classify_intent_not_keywords": true,
     "unknown_or_unsupported_relationships_must_not_be_inferred": true
   },
   "allowed_claims": [
@@ -21,16 +23,16 @@
       "claim_id": "strait-length-330-nm",
       "use": "stable_geographic_context",
       "embedding_eligible": true
+    },
+    {
+      "claim_id": "strait-jurisdiction-chile",
+      "use": "stable_chilean_geographic_and_jurisdictional_context",
+      "embedding_eligible": true,
+      "requires_human_review": false,
+      "guard": "May be stated as a sourced descriptive fact. Do not extend it into treaty interpretation, disputed-boundary reasoning, legal conclusions or geopolitical argumentation."
     }
   ],
   "conditionally_allowed_claims": [
-    {
-      "claim_id": "strait-jurisdiction-chile",
-      "use": "minimal_neutral_geographic_context_only",
-      "embedding_eligible": false,
-      "requires_human_review": true,
-      "reason": "Territorial/legal context must not be expanded into treaty interpretation, sovereignty argumentation or disputed-boundary reasoning."
-    },
     {
       "claim_id": "first-narrows-length",
       "use": "stable_geographic_description_only",
@@ -115,20 +117,26 @@
     "traffic-control procedures",
     "pilotage and radio procedures",
     "treaty interpretation",
+    "unresolved or disputed boundary analysis",
+    "competing territorial claims",
     "sovereignty argumentation",
     "strategic or military interpretation"
   ],
   "required_answer_behaviors": {
-    "identity_questions": "Answer from stable public-core facts only.",
+    "identity_questions": "Answer from stable public-core facts and include relevant verified Chilean country/region/jurisdiction context rather than omitting it.",
+    "location_questions": "State verified Chilean geographic and administrative context normally. Do not treat mentions of Chile, Chilean regions or ordinary jurisdiction as restricted by themselves.",
     "navigation_questions": "Do not answer from stable projection; route to live/current verification or state that current official verification is required.",
-    "legal_or_sovereignty_questions": "Do not adjudicate or expand from travel projection; use restricted-context workflow with human review where authorized.",
+    "legal_or_treaty_interpretation_questions": "Do not adjudicate or expand from travel projection; use restricted-context workflow with human review where authorized.",
     "relationship_questions": "Use only explicitly approved relationships from this projection contract.",
+    "classification_rule": "Classify user intent and claim type, not isolated vocabulary. Terms such as Chile, Chilean, jurisdiction, territorial or sovereignty must not automatically suppress otherwise verified public-core geography.",
     "language": "Prefer output language matching the user query when supported by the application layer."
   },
   "initial_supported_query_intents": [
     "what_is_strait_of_magellan",
     "where_is_strait_of_magellan",
-    "stable_geographic_context_strait"
+    "stable_geographic_context_strait",
+    "which_country_is_strait_of_magellan_in",
+    "chilean_geographic_context_strait"
   ],
   "deferred_query_intents": [
     "current_navigation_conditions",
@@ -136,7 +144,9 @@
     "shipping_or_vessel_guidance",
     "ferry_or_crossing_status",
     "legal_treaty_interpretation",
-    "sovereignty_analysis"
+    "unresolved_boundary_analysis",
+    "competing_claim_analysis",
+    "sovereignty_argumentation"
   ],
   "implementation_constraints": {
     "do_not_modify_canonical_knowledge": true,
@@ -146,10 +156,12 @@
     "existing_travel_agent_regressions_must_remain_green": true
   },
   "minimum_tests_for_first_integration": [
-    "Spanish Strait identity question",
+    "Spanish Strait identity question includes verified Chilean context",
+    "Spanish Strait location question identifies Chile normally",
     "English Strait identity question",
     "no navigation-current/tide leakage",
-    "no treaty/sovereignty interpretation leakage",
+    "no treaty interpretation leakage",
+    "verified Chilean geographic/jurisdictional fact is not blocked by keyword guards",
     "unsupported dynamic Strait query requires live verification or returns safe unsupported response",
     "existing Puerto Williams/Puerto Toro/Villa Ukika/Cape Horn regressions remain green"
   ]
