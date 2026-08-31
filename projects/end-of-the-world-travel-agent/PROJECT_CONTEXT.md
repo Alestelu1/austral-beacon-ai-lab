@@ -18,6 +18,19 @@ Examples of normal `public_core` context include:
 
 Mentioning Chile, a Chilean region, or a stable jurisdictional fact is not by itself sensitive, propagandistic or geopolitical analysis. The assistant should not omit important Chilean context merely because terms such as `Chile`, `chileno`, `jurisdicción` or `territorial` appear.
 
+## Response composition rule
+
+Public answers should be layered rather than repetitive.
+
+- `Resumen` gives the shortest useful identity, role or disambiguation of the entity. It should normally be one concise sentence.
+- `Contexto geográfico` carries location, region, province, commune, neighboring geographic features and other spatial/administrative detail.
+- `Contexto cultural` carries cultural, historical, community and heritage context.
+- `Advertencias` carries operational uncertainty, current-verification requirements and safety caveats.
+
+Do not repeat the same administrative or geographic sentence in both `Resumen` and `Contexto geográfico`. If the summary already identifies the entity, move detailed region/province/commune wording to the geographic block. This rule applies to deterministic JSON cards and to any future LLM/system prompt or text generator.
+
+For CLI presentation, preserve the canonical source URL in data/provenance, but compact long URLs only at render time so narrow terminals remain readable. Presentation truncation must never mutate the stored source URL.
+
 ## What the Travel Assistant must NOT do
 
 The Travel Assistant is not the agent for:
@@ -104,7 +117,7 @@ Do not break their existing passing behavior while migrating.
 
 ## Current implementation milestone
 
-Strait of Magellan Travel Projection v1 has been implemented locally with stable-knowledge routing and operational/legal leakage guards. The next correction is to ensure the intent detector does not suppress Chilean geographic or jurisdictional context merely because of isolated terms such as `jurisdicción` or `territorial`.
+Strait of Magellan Travel Projection v1 is implemented with stable Chilean geographic/jurisdictional context and intent-aware exclusions for legal/treaty and operational-dynamic queries.
 
 The desired rule is:
 
