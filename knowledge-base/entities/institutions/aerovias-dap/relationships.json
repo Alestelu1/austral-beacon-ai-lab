@@ -1,0 +1,16 @@
+{
+  "relationships": [
+    {
+      "predicate": "PUBLISHES_ANTARCTIC_PRODUCT_FROM",
+      "target": "punta-arenas",
+      "status": "verified_current",
+      "source_ids": ["dap-antarctic-adventure-2026"]
+    },
+    {
+      "predicate": "SERVES_ANTARCTIC_DESTINATION",
+      "target": "isla-rey-jorge",
+      "status": "candidate_target",
+      "source_ids": ["dap-antarctic-adventure-2026", "dap-antarctic-logistics-2026"]
+    }
+  ]
+}
