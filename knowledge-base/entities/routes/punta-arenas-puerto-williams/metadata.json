@@ -1,0 +1,11 @@
+{
+  "id": "punta-arenas-puerto-williams",
+  "canonical_name": "Punta Arenas → Puerto Williams",
+  "entity_type": "intercity_travel_corridor",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["travel", "connectivity", "observatory"],
+  "origin": "punta-arenas",
+  "destination": "puerto-williams",
+  "governance_notes": "The corridor identity is reusable. Operator schedules, frequencies, fares, capacity, sailing duration and date-specific availability are operational_dynamic and require current verification."
+}
