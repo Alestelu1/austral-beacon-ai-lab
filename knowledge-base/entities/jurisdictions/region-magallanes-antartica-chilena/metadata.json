@@ -1,0 +1,10 @@
+{
+  "id": "region-magallanes-antartica-chilena",
+  "canonical_name": "Región de Magallanes y de la Antártica Chilena",
+  "entity_type": "region",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["travel", "atlas", "observatory", "connectivity"],
+  "country": "Chile",
+  "governance_notes": "Population, current authorities, budgets and changing indicators are operational or statistical data and must not be treated as stable identity claims."
+}
