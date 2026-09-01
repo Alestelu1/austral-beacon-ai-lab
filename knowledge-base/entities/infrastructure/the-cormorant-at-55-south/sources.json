@@ -1,0 +1,31 @@
+{
+  "sources": [
+    {
+      "id": "royal-caribbean-group-cormorant-gateway-2025",
+      "institution": "Royal Caribbean Group",
+      "source_type": "primary_corporate_source",
+      "title": "A New Gateway to Antarctica: Silversea’s Southernmost Hotel, The Cormorant at 55 South",
+      "url": "https://www.royalcaribbeangroup.com/a-new-gateway-to-antarctica",
+      "verified_at": "2026-09-01",
+      "authority_domain": ["project_identity", "operator", "location", "gateway_role"]
+    },
+    {
+      "id": "royal-caribbean-group-cormorant-150-rooms-2025",
+      "institution": "Royal Caribbean Group",
+      "source_type": "primary_corporate_source",
+      "title": "Royal Caribbean Group Navigates Beyond the Ocean, Adding More Land-Based Hospitality and Destinations",
+      "url": "https://www.royalcaribbeangroup.com/beyond-the-ocean",
+      "verified_at": "2026-09-01",
+      "authority_domain": ["capacity", "location", "development_status", "antarctic_gateway_role"]
+    },
+    {
+      "id": "silversea-cormorant-design-2026",
+      "institution": "Silversea",
+      "source_type": "primary_corporate_source",
+      "title": "Silversea Reveals Design Details of The Cormorant at 55 South",
+      "url": "https://www.silversea.com/blog/destinations/antarctica/silversea-reveals-design-details-of-the-cormorant-at-55-south",
+      "verified_at": "2026-09-01",
+      "authority_domain": ["development_status", "guest_use", "location_context"]
+    }
+  ]
+}
