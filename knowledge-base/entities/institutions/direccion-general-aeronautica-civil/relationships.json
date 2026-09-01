@@ -4,7 +4,7 @@
       "predicate": "ADMINISTERS",
       "target": "aerodromo-guardiamarina-zanartu",
       "status": "verified",
-      "source_ids": ["dgac-estructura-organizacional"]
+      "source_ids": ["dgac-guardiamarina-zanartu"]
     }
   ]
 }
