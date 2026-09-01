@@ -1,0 +1,12 @@
+{
+  "chunks": [
+    {
+      "id": "capitania-fildes-stable-001",
+      "text": "La Capitanía de Puerto de Bahía Fildes es una repartición de DIRECTEMAR con sede indicada en Villa Las Estrellas y jurisdicción marítima formalmente definida para Bahía Fildes.",
+      "claim_ids": ["capitania-fildes-identity-001", "capitania-fildes-seat-002", "capitania-fildes-jurisdiction-003"],
+      "source_ids": ["directemar-magallanes-antartica-capitania-fildes", "directemar-jurisdicciones-maritime-2025"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    }
+  ]
+}

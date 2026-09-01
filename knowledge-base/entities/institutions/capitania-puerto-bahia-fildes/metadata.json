@@ -1,0 +1,11 @@
+{
+  "id": "capitania-puerto-bahia-fildes",
+  "canonical_name": "Capitanía de Puerto de Bahía Fildes",
+  "entity_type": "maritime_authority_local_office",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["atlas", "travel", "observatory", "connectivity", "antarctic-pulse"],
+  "parent_institution": "directemar",
+  "seat": "villa-las-estrellas",
+  "governance_notes": "Current port conditions, safety measures, bunkering permissions and operational notices are operational_dynamic and require current DIRECTEMAR verification."
+}

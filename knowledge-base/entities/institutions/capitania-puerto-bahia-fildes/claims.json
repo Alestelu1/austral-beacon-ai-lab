@@ -1,0 +1,34 @@
+{
+  "claims": [
+    {
+      "id": "capitania-fildes-identity-001",
+      "statement": "La Capitanía de Puerto de Bahía Fildes es una repartición de la Autoridad Marítima chilena dependiente de DIRECTEMAR.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["directemar-magallanes-antartica-capitania-fildes", "directemar-jurisdicciones-maritime-2025"]
+    },
+    {
+      "id": "capitania-fildes-seat-002",
+      "statement": "DIRECTEMAR indica Villa Las Estrellas como dirección de la Capitanía de Puerto de Bahía Fildes.",
+      "status": "verified_current",
+      "sensitivity": "public_core",
+      "source_ids": ["directemar-magallanes-antartica-capitania-fildes"],
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "capitania-fildes-jurisdiction-003",
+      "statement": "DIRECTEMAR establece formalmente una jurisdicción marítima para la Capitanía de Puerto de Bahía Fildes.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["directemar-jurisdicciones-maritime-2025"]
+    },
+    {
+      "id": "capitania-fildes-operational-004",
+      "statement": "Las condiciones de puerto, medidas de seguridad, bunkering y disposiciones operativas de Bahía Fildes requieren consulta de las resoluciones vigentes de DIRECTEMAR.",
+      "status": "governance_constraint",
+      "sensitivity": "operational_dynamic",
+      "source_ids": ["directemar-magallanes-antartica-capitania-fildes"],
+      "requires_current_verification": true
+    }
+  ]
+}

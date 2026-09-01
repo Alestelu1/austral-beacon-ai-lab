@@ -1,0 +1,21 @@
+{
+  "sources": [
+    {
+      "id": "fach-antartica-villa-estrellas",
+      "institution": "Fuerza Aérea de Chile",
+      "source_type": "official_webpage",
+      "title": "Antártica — Fuerza Aérea de Chile",
+      "url": "https://fach.mil.cl/antartica",
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "fach-villa-estrellas-viviendas-2025",
+      "institution": "Fuerza Aérea de Chile",
+      "source_type": "official_news",
+      "title": "Fuerza Aérea de Chile implementa mejoramiento habitacional en la Antártica",
+      "url": "https://fach.mil.cl/noticias/2025/junio/fuerza-aerea-de-chile-implementa-mejoramiento-habitacional-en-la-antartica",
+      "source_date": "2025-06-27",
+      "verified_at": "2026-09-01"
+    }
+  ]
+}

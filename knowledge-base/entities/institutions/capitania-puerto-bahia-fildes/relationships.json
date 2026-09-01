@@ -1,0 +1,22 @@
+{
+  "relationships": [
+    {
+      "predicate": "PART_OF",
+      "target": "directemar",
+      "status": "verified",
+      "source_ids": ["directemar-magallanes-antartica-capitania-fildes"]
+    },
+    {
+      "predicate": "SEAT_AT",
+      "target": "villa-las-estrellas",
+      "status": "verified_current",
+      "source_ids": ["directemar-magallanes-antartica-capitania-fildes"]
+    },
+    {
+      "predicate": "MARITIME_AUTHORITY_FOR",
+      "target": "bahia-fildes",
+      "status": "verified",
+      "source_ids": ["directemar-jurisdicciones-maritime-2025"]
+    }
+  ]
+}

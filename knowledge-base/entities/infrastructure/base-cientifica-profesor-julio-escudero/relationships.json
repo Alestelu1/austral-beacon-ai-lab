@@ -1,0 +1,22 @@
+{
+  "relationships": [
+    {
+      "predicate": "OPERATED_BY",
+      "target": "inach",
+      "status": "verified",
+      "source_ids": ["inach-procien-base-escudero"]
+    },
+    {
+      "predicate": "LOCATED_ON",
+      "target": "isla-rey-jorge",
+      "status": "verified",
+      "source_ids": ["inach-procien-base-escudero"]
+    },
+    {
+      "predicate": "SCIENTIFIC_CONTEXT_NEAR",
+      "target": "bahia-fildes",
+      "status": "verified",
+      "source_ids": ["inach-bach-base-escudero"]
+    }
+  ]
+}

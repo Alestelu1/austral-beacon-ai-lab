@@ -1,0 +1,34 @@
+{
+  "claims": [
+    {
+      "id": "villa-estrellas-founded-001",
+      "statement": "Villa Las Estrellas fue inaugurada en 1984 en Isla Rey Jorge.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["fach-antartica-villa-estrellas"]
+    },
+    {
+      "id": "villa-estrellas-current-context-002",
+      "statement": "La Fuerza Aérea de Chile indica que Villa Las Estrellas hoy constituye parte integral de la Base Aérea Antártica Presidente Frei.",
+      "status": "verified_current",
+      "sensitivity": "public_core",
+      "source_ids": ["fach-antartica-villa-estrellas", "fach-villa-estrellas-viviendas-2025"],
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "villa-estrellas-families-historical-003",
+      "statement": "La Fuerza Aérea de Chile señala que familias chilenas habitaron Villa Las Estrellas hasta 2018.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["fach-antartica-villa-estrellas"]
+    },
+    {
+      "id": "villa-estrellas-population-governance-004",
+      "statement": "La población actual, servicios disponibles y acceso de visitantes no deben inferirse de descripciones históricas de Villa Las Estrellas y requieren verificación institucional vigente.",
+      "status": "governance_constraint",
+      "sensitivity": "operational_dynamic",
+      "source_ids": ["fach-antartica-villa-estrellas"],
+      "requires_current_verification": true
+    }
+  ]
+}

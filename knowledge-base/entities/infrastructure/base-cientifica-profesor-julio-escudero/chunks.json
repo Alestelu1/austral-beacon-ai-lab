@@ -1,0 +1,12 @@
+{
+  "chunks": [
+    {
+      "id": "escudero-stable-001",
+      "text": "La Base Científica Profesor Julio Escudero es una instalación científica de INACH ubicada en la península Fildes de Isla Rey Jorge, islas Shetland del Sur.",
+      "claim_ids": ["escudero-identity-001", "escudero-location-002"],
+      "source_ids": ["inach-procien-base-escudero"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "relationships": [
+    {
+      "predicate": "LOCATED_ON",
+      "target": "isla-rey-jorge",
+      "status": "verified",
+      "source_ids": ["fach-antartica-villa-estrellas"]
+    },
+    {
+      "predicate": "PART_OF",
+      "target": "base-aerea-antartica-presidente-frei",
+      "status": "verified_current",
+      "source_ids": ["fach-antartica-villa-estrellas", "fach-villa-estrellas-viviendas-2025"]
+    },
+    {
+      "predicate": "NEAR_INFRASTRUCTURE",
+      "target": "aerodromo-teniente-rodolfo-marsh",
+      "status": "verified",
+      "source_ids": ["fach-antartica-villa-estrellas"]
+    }
+  ]
+}

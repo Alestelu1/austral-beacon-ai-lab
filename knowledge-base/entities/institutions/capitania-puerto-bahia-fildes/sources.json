@@ -1,0 +1,29 @@
+{
+  "sources": [
+    {
+      "id": "directemar-magallanes-antartica-capitania-fildes",
+      "institution": "Dirección General del Territorio Marítimo y de Marina Mercante",
+      "source_type": "official_webpage",
+      "title": "Región de Magallanes y Antártica Chilena — Capitanía de Puerto de Bahía Fildes",
+      "url": "https://www.directemar.cl/directemar/gobernaciones-maritimas/region-de-magallanes-y-antartica-chilena",
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "directemar-jurisdicciones-maritime-2025",
+      "institution": "Dirección General del Territorio Marítimo y de Marina Mercante",
+      "source_type": "official_regulatory_document",
+      "title": "Fija jurisdicción de las Gobernaciones Marítimas y establece las Capitanías de Puerto y sus respectivas jurisdicciones",
+      "url": "https://www.directemar.cl/directemar/site/docs/20221019/20221019114454/tm_025a_actualizada_al_04_jun_2025.pdf",
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "directemar-capitania-fildes-history-2023",
+      "institution": "Dirección General del Territorio Marítimo y de Marina Mercante",
+      "source_type": "official_news",
+      "title": "Capitanía de Puerto de Bahía Fildes: 36 años de historia",
+      "url": "https://www.directemar.cl/directemar/capitania-de-puerto-de-bahia-fildes-36-anos-de-historia-de-los-bravos",
+      "source_date": "2023-01-05",
+      "verified_at": "2026-09-01"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "claims": [
+    {
+      "id": "escudero-identity-001",
+      "statement": "La Base Científica Profesor Julio Escudero es una instalación científica del Instituto Antártico Chileno.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["inach-procien-base-escudero", "inach-bach-base-escudero"]
+    },
+    {
+      "id": "escudero-location-002",
+      "statement": "La Base Científica Profesor Julio Escudero se ubica en la península Fildes de la Isla Rey Jorge, islas Shetland del Sur.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["inach-procien-base-escudero"]
+    },
+    {
+      "id": "escudero-operations-governance-003",
+      "statement": "La dotación, capacidad disponible, campañas y equipamiento operativo de la Base Escudero requieren verificación vigente de INACH antes de ser utilizados como información actual.",
+      "status": "governance_constraint",
+      "sensitivity": "operational_dynamic",
+      "source_ids": ["inach-procien-base-escudero"],
+      "requires_current_verification": true
+    }
+  ]
+}

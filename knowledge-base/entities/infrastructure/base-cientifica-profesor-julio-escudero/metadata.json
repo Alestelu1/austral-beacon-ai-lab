@@ -1,0 +1,12 @@
+{
+  "id": "base-cientifica-profesor-julio-escudero",
+  "canonical_name": "Base Científica Profesor Julio Escudero",
+  "aliases": ["Base Escudero", "Profesor Julio Escudero"],
+  "entity_type": "scientific_research_base",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["atlas", "travel", "antarctic-pulse", "science"],
+  "operator": "inach",
+  "geographic_context": ["isla-rey-jorge", "peninsula-fildes"],
+  "governance_notes": "Treat population, campaign staffing, capacity, equipment and operational availability as dynamic or semistable; do not project them as permanent Travel facts without current INACH verification."
+}

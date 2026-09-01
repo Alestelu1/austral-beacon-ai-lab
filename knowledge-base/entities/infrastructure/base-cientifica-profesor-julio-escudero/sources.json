@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "id": "inach-procien-base-escudero",
+      "institution": "Instituto Antártico Chileno",
+      "source_type": "official_program_document",
+      "title": "Programa Nacional de Ciencia Antártica — infraestructura científica",
+      "url": "https://www.inach.cl/wp-content/uploads/2013/03/procien2013.pdf",
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "inach-bach-base-escudero",
+      "institution": "Instituto Antártico Chileno",
+      "source_type": "official_science_publication",
+      "title": "Boletín Antártico Chileno — Base Profesor Julio Escudero",
+      "url": "https://www.inach.cl/wp-content/uploads/2023/08/BACH-32-n1y2-2013-esp.pdf",
+      "verified_at": "2026-09-01"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "villa-las-estrellas",
+  "canonical_name": "Villa Las Estrellas",
+  "entity_type": "antarctic_settlement_complex",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["atlas", "travel", "antarctic-pulse"],
+  "country": "Chile",
+  "geographic_context": ["isla-rey-jorge"],
+  "current_context": "integral_component_of_base_frei",
+  "governance_notes": "Do not infer current permanent family population, service availability or visitor access from historical descriptions. Current population and services require fresh FACH or responsible-institution verification."
+}
