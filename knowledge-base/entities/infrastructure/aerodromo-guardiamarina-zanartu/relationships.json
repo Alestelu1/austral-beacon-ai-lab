@@ -1,0 +1,22 @@
+{
+  "relationships": [
+    {
+      "predicate": "SERVES_PLACE",
+      "target": "puerto-williams",
+      "status": "verified",
+      "source_ids": ["dgac-ifis-scgz-2026-08-30", "dgac-65-aniversario-guardiamarina-zanartu"]
+    },
+    {
+      "predicate": "LOCATED_ON",
+      "target": "isla-navarino",
+      "status": "verified",
+      "source_ids": ["dgac-65-aniversario-guardiamarina-zanartu"]
+    },
+    {
+      "predicate": "ADMINISTERED_BY",
+      "target": "direccion-general-aeronautica-civil",
+      "status": "candidate_target",
+      "source_ids": ["dgac-ifis-scgz-2026-08-30", "dgac-65-aniversario-guardiamarina-zanartu"]
+    }
+  ]
+}
