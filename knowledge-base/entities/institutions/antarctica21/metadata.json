@@ -1,0 +1,11 @@
+{
+  "id": "antarctica21",
+  "canonical_name": "Antarctica21",
+  "aliases": ["Antarctica XXI"],
+  "entity_type": "private_antarctic_expedition_operator",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["travel", "atlas", "antarctic-gateway"],
+  "country": "Chile",
+  "governance_notes": "Air-cruise itineraries, seasons, departures, prices, vessel assignments and availability are commercial operational data and require current verification. Operator-published passenger volumes or traffic shares must not be treated as independent statistics without institutional corroboration."
+}
