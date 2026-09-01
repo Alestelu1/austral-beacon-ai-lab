@@ -1,0 +1,10 @@
+{
+  "relationships": [
+    {
+      "predicate": "RESPONSIBLE_FOR",
+      "target": "muelle-multiproposito-puerto-williams",
+      "status": "verified",
+      "source_ids": ["mop-muelle-multiproposito-puerto-williams"]
+    }
+  ]
+}
