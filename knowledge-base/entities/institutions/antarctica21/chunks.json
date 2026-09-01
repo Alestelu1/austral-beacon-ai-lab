@@ -1,0 +1,22 @@
+{
+  "chunks": [
+    {
+      "id": "antarctica21-chunk-001",
+      "text": "Antarctica21 es un operador privado chileno de expediciones antárticas que publica productos Air-Cruise con origen en Punta Arenas.",
+      "claim_ids": ["antarctica21-institution-001"],
+      "source_ids": ["antarctica21-air-cruises-2026"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    },
+    {
+      "id": "antarctica21-chunk-002",
+      "text": "Antarctica21 publica productos Air-Cruise que combinan vuelos desde Punta Arenas hacia Isla Rey Jorge con expedición marítima antártica. Itinerarios, temporadas, fechas, precios, disponibilidad y asignación de naves requieren verificación actual con el operador.",
+      "claim_ids": ["antarctica21-air-cruise-002", "antarctica21-express-003"],
+      "source_ids": ["antarctica21-classic-air-cruise-2026", "antarctica21-air-cruises-2026", "antarctica21-express-air-cruise-2026"],
+      "sensitivity": "operational_dynamic",
+      "embedding_eligible": false,
+      "requires_current_verification": true,
+      "blocked_consumers": ["travel-agent"]
+    }
+  ]
+}
