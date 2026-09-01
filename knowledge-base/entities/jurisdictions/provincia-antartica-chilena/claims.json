@@ -1,0 +1,18 @@
+{
+  "claims": [
+    {
+      "id": "provincia-antartica-claim-001",
+      "statement": "La Provincia Antártica Chilena pertenece a la Región de Magallanes y de la Antártica Chilena.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["bcn-provincia-antartica-chilena"]
+    },
+    {
+      "id": "provincia-antartica-claim-002",
+      "statement": "La Provincia Antártica Chilena está compuesta por las comunas de Antártica y Cabo de Hornos.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["bcn-provincia-antartica-chilena"]
+    }
+  ]
+}
