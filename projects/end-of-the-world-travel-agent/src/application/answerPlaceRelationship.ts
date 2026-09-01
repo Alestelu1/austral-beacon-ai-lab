@@ -1,35 +1,41 @@
 import type { PlaceRelationshipRecord, RelationshipAnswer } from "../domain/types.js";
+import { buildVillaUkikaRelationship } from "../knowledge/villaUkikaProjection.js";
 
 /**
  * Builds a structured relationship answer from a curated, source-backed
  * relationship record.
  *
- * Pure function. Keeps the stable administrative relation and geographic
- * distinction separate, preserves the distinct referents of an ambiguous name
- * so callers never collapse commune/cape/island/park into one entity, and
- * carries warnings and source metadata unchanged. It invents nothing beyond the
- * record.
+ * Incremental canonical migration rule:
+ * Villa Ukika is now projected at runtime from the canonical knowledge-base.
+ * The legacy JSON may still be passed by the existing router, but is ignored as
+ * a served source of truth for this relationship. Other relationships keep their
+ * existing behaviour until they receive their own canonical projection.
  */
 export function answerPlaceRelationship(record: PlaceRelationshipRecord): RelationshipAnswer {
-  const confidence: RelationshipAnswer["confidence"] = record.sources.some(
+  const effectiveRecord =
+    record.id === "villa-ukika-puerto-williams"
+      ? buildVillaUkikaRelationship()
+      : record;
+
+  const confidence: RelationshipAnswer["confidence"] = effectiveRecord.sources.some(
     (source) => source.status === "provisional"
   )
     ? "medium"
     : "high";
 
-  const summary = `${record.administrativeRelation} ${record.geographicDistinction}`;
+  const summary = `${effectiveRecord.administrativeRelation} ${effectiveRecord.geographicDistinction}`;
 
   return {
     status: "supported",
     intent: "relationship",
     summary,
-    administrativeRelation: record.administrativeRelation,
-    geographicDistinction: record.geographicDistinction,
-    distinctReferents: record.distinctReferents,
+    administrativeRelation: effectiveRecord.administrativeRelation,
+    geographicDistinction: effectiveRecord.geographicDistinction,
+    distinctReferents: effectiveRecord.distinctReferents,
     confidence,
-    warnings: record.warnings,
-    sources: record.sources,
-    suggestedInternalLinks: record.suggestedInternalLinks,
-    verifiedAt: record.verifiedAt
+    warnings: effectiveRecord.warnings,
+    sources: effectiveRecord.sources,
+    suggestedInternalLinks: effectiveRecord.suggestedInternalLinks,
+    verifiedAt: effectiveRecord.verifiedAt
   };
 }
