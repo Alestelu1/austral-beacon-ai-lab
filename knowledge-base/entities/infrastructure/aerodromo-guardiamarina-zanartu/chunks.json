@@ -1,0 +1,30 @@
+{
+  "chunks": [
+    {
+      "id": "guardiamarina-zanartu-identity",
+      "text": "El Aeródromo Guardiamarina Zañartu es un aeródromo público administrado por la DGAC que sirve a Puerto Williams, en Isla Navarino, Chile. Su indicador de lugar es SCGZ.",
+      "claim_ids": ["guardiamarina-zanartu-public-aerodrome", "guardiamarina-zanartu-scgz", "guardiamarina-zanartu-location"],
+      "source_ids": ["dgac-ifis-scgz-2026-08-30", "dgac-65-aniversario-guardiamarina-zanartu"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    },
+    {
+      "id": "guardiamarina-zanartu-runway-stable",
+      "text": "IFIS DGAC publica para el Aeródromo Guardiamarina Zañartu una pista 08/26 de 1440 por 29 metros y superficie asfáltica.",
+      "claim_ids": ["guardiamarina-zanartu-runway"],
+      "source_ids": ["dgac-ifis-scgz-2026-08-30"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    },
+    {
+      "id": "guardiamarina-zanartu-operational-warning",
+      "text": "Horarios ATS, frecuencias, NOTAM, disponibilidad de pista y restricciones operacionales deben verificarse con información aeronáutica DGAC vigente.",
+      "claim_ids": ["guardiamarina-zanartu-current-operations"],
+      "source_ids": ["dgac-ifis-scgz-2026-08-30"],
+      "sensitivity": "operational_dynamic",
+      "requires_current_verification": true,
+      "embedding_eligible": false,
+      "blocked_consumers": ["travel-agent"]
+    }
+  ]
+}
