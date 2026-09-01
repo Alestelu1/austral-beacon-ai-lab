@@ -1,14 +1,17 @@
 {
   "projection_id": "travel-antarctica-commercial-access-v1",
   "consumer": "travel-agent",
-  "purpose": "Project operator-published commercial Antarctic access identity together with stable Chilean gateway geography and infrastructure, while excluding aggregate traffic statistics and date-specific operational availability.",
+  "purpose": "Project operator-published commercial Antarctic access identity together with stable Chilean gateway geography, science and infrastructure, while excluding aggregate traffic statistics and date-specific operational availability.",
   "entities": [
     "aerovias-dap",
     "antarctica21",
     "isla-rey-jorge",
     "bahia-fildes",
     "base-aerea-antartica-presidente-frei",
-    "aerodromo-teniente-rodolfo-marsh"
+    "aerodromo-teniente-rodolfo-marsh",
+    "base-cientifica-profesor-julio-escudero",
+    "villa-las-estrellas",
+    "capitania-puerto-bahia-fildes"
   ],
   "allowed_claims": [
     {"entity_id": "aerovias-dap", "claim_id": "dap-institution-001"},
@@ -20,19 +23,32 @@
     {"entity_id": "bahia-fildes", "claim_id": "bahia-fildes-claim-001", "disposition": "stable_public_core"},
     {"entity_id": "base-aerea-antartica-presidente-frei", "claim_id": "base-frei-claim-001", "disposition": "stable_public_core"},
     {"entity_id": "aerodromo-teniente-rodolfo-marsh", "claim_id": "marsh-claim-001", "disposition": "stable_public_core"},
-    {"entity_id": "aerodromo-teniente-rodolfo-marsh", "claim_id": "marsh-claim-002", "disposition": "stable_public_core"}
+    {"entity_id": "aerodromo-teniente-rodolfo-marsh", "claim_id": "marsh-claim-002", "disposition": "stable_public_core"},
+    {"entity_id": "base-cientifica-profesor-julio-escudero", "claim_id": "escudero-identity-001", "disposition": "stable_public_core"},
+    {"entity_id": "base-cientifica-profesor-julio-escudero", "claim_id": "escudero-location-002", "disposition": "stable_public_core"},
+    {"entity_id": "villa-las-estrellas", "claim_id": "villa-estrellas-founded-001", "disposition": "stable_public_core"},
+    {"entity_id": "villa-las-estrellas", "claim_id": "villa-estrellas-current-context-002", "disposition": "current_context_requires_reverification"},
+    {"entity_id": "villa-las-estrellas", "claim_id": "villa-estrellas-families-historical-003", "disposition": "historical_public_core"},
+    {"entity_id": "capitania-puerto-bahia-fildes", "claim_id": "capitania-fildes-identity-001", "disposition": "stable_public_core"},
+    {"entity_id": "capitania-puerto-bahia-fildes", "claim_id": "capitania-fildes-seat-002", "disposition": "current_context_requires_reverification"},
+    {"entity_id": "capitania-puerto-bahia-fildes", "claim_id": "capitania-fildes-jurisdiction-003", "disposition": "stable_public_core"}
   ],
   "blocked_claims": [
     {"entity_id": "aerovias-dap", "claim_id": "dap-traffic-statistics-004", "reason": "No independent institutional corroboration for aggregate traffic or market-share claims."},
-    {"entity_id": "antarctica21", "claim_id": "antarctica21-traffic-statistics-004", "reason": "Commercial material is not an independent traffic-statistics source."}
+    {"entity_id": "antarctica21", "claim_id": "antarctica21-traffic-statistics-004", "reason": "Commercial material is not an independent traffic-statistics source."},
+    {"entity_id": "base-cientifica-profesor-julio-escudero", "claim_id": "escudero-operations-governance-003", "reason": "Staffing, capacity, campaign activity and equipment availability require current INACH verification."},
+    {"entity_id": "villa-las-estrellas", "claim_id": "villa-estrellas-population-governance-004", "reason": "Current population, visitor access and service availability require current responsible-institution verification."},
+    {"entity_id": "capitania-puerto-bahia-fildes", "claim_id": "capitania-fildes-operational-004", "reason": "Port conditions, bunkering and local operational measures require current DIRECTEMAR resolutions."}
   ],
   "rules": [
     "A first-party operator page verifies that the operator publishes the product; it does not independently verify a departure on a particular date.",
     "Do not expose schedules, prices, availability, vessel assignment or passenger capacity as stable facts.",
     "Do not infer total Antarctic passenger traffic, market share or gateway share from operator marketing material.",
+    "Do not project traffic or operation counts merely because DGAC, an operator or another source publishes a historical figure; statistical series require a dedicated verification policy.",
     "Puerto Williams may appear in a published itinerary without implying a direct commercial flight from Puerto Williams to Antarctica.",
     "Gateway-policy claims from MINREL remain a separate evidence category from commercial products.",
     "Runway condition, NOTAMs, weather, aerodrome service hours, maritime conditions, bunkering status and current port operations require live official verification.",
-    "Stable geography and infrastructure identity may be projected from FACH, DGAC and DIRECTEMAR without implying present commercial availability."
+    "Current population, visitor access, staffing and service availability at Villa Las Estrellas or Base Escudero require current responsible-institution verification.",
+    "Stable geography, science infrastructure and authority identity may be projected from INACH, FACH, DGAC and DIRECTEMAR without implying present commercial availability."
   ]
 }
