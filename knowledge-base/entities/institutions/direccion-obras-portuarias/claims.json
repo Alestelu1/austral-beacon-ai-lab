@@ -1,0 +1,25 @@
+{
+  "claims": [
+    {
+      "id": "dop-claim-001",
+      "statement": "La Dirección de Obras Portuarias contribuye al desarrollo territorial mediante infraestructura en zonas costeras marítimas, fluviales y lacustres.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["dop-direcciones-mision-funciones"]
+    },
+    {
+      "id": "dop-claim-002",
+      "statement": "Entre sus funciones se encuentran planificar infraestructura portuaria, desarrollar proyectos de obras portuarias y supervisar y fiscalizar obras públicas portuarias y de dragado.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["dop-direcciones-mision-funciones"]
+    },
+    {
+      "id": "dop-claim-003",
+      "statement": "La Dirección de Obras Portuarias es el servicio responsable del proyecto de infraestructura portuaria multipropósito en Puerto Williams.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["mop-muelle-multiproposito-puerto-williams"]
+    }
+  ]
+}
