@@ -1,0 +1,36 @@
+{
+  "sources": [
+    {
+      "id": "dap-home-2026",
+      "institution": "Aerovías DAP",
+      "source_type": "first_party_webpage",
+      "title": "DAP Airlines — sitio oficial",
+      "url": "https://dapairline.com/",
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "dap-antarctic-adventure-2026",
+      "institution": "Aerovías DAP",
+      "source_type": "first_party_product_page",
+      "title": "Antarctic Adventure",
+      "url": "https://dapairline.com/en/antarctic-adventure/",
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "dap-antarctic-logistics-2026",
+      "institution": "Aerovías DAP",
+      "source_type": "first_party_logistics_page",
+      "title": "Logística & Carga",
+      "url": "https://dapairline.com/logistica-carga/",
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "dap-brands-2026",
+      "institution": "Aerovías DAP",
+      "source_type": "first_party_company_page",
+      "title": "Nuestras Marcas",
+      "url": "https://dapairline.com/nuestras-marcas/",
+      "verified_at": "2026-09-01"
+    }
+  ]
+}
