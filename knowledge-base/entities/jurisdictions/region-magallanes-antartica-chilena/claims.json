@@ -1,0 +1,18 @@
+{
+  "claims": [
+    {
+      "id": "magallanes-region-claim-001",
+      "statement": "La Región de Magallanes y de la Antártica Chilena es una región de Chile ubicada en el extremo austral del país.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["bcn-region-magallanes-antartica-chilena"]
+    },
+    {
+      "id": "magallanes-region-claim-002",
+      "statement": "La división político-administrativa regional incluye las provincias de Magallanes, Última Esperanza, Tierra del Fuego y Antártica Chilena.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["bcn-region-magallanes-antartica-chilena"]
+    }
+  ]
+}
