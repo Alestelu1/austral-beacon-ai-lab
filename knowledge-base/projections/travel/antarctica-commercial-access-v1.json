@@ -1,6 +1,7 @@
 {
   "projection_id": "travel-antarctica-commercial-access-v1",
   "consumer": "travel-agent",
+  "shared_context_projection": "../shared/antarctic-gateway-king-george-v1.json",
   "purpose": "Project operator-published commercial Antarctic access identity together with stable Chilean gateway geography, science and infrastructure, while excluding aggregate traffic statistics and date-specific operational availability.",
   "entities": [
     "aerovias-dap",
