@@ -1,0 +1,10 @@
+{
+  "relationships": [
+    {
+      "predicate": "LOCATED_IN",
+      "target": "provincia-antartica-chilena",
+      "status": "verified",
+      "source_ids": ["bcn-comuna-cabo-de-hornos"]
+    }
+  ]
+}
