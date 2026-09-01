@@ -1,0 +1,8 @@
+{
+  "id": "canal-beagle",
+  "canonical_name": "Canal Beagle",
+  "entity_type": "channel",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["atlas", "travel", "observatory", "connectivity"]
+}

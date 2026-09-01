@@ -1,0 +1,12 @@
+{
+  "chunks": [
+    {
+      "id": "beagle-core-001",
+      "text": "El Canal Beagle bordea la costa norte de Isla Navarino y Puerto Williams se ubica en su ribera sur. Este chunk no contiene interpretación limítrofe ni jurídica.",
+      "claim_ids": ["beagle-001", "beagle-002"],
+      "source_ids": ["armada-esmeralda-canal-beagle-2020", "armada-puerto-williams-navarino-2004"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    }
+  ]
+}

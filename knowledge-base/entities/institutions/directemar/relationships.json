@@ -1,0 +1,16 @@
+{
+  "relationships": [
+    {
+      "predicate": "PART_OF",
+      "target": "armada-de-chile",
+      "status": "candidate_target",
+      "source_ids": ["directemar-mision-vision"]
+    },
+    {
+      "predicate": "HAS_LOCAL_AUTHORITY",
+      "target": "capitania-puerto-puerto-williams",
+      "status": "candidate_target",
+      "source_ids": ["directemar-mision-vision"]
+    }
+  ]
+}

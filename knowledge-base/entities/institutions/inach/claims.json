@@ -1,0 +1,18 @@
+{
+  "claims": [
+    {
+      "id": "inach-001",
+      "claim": "INACH es un organismo técnico del Ministerio de Relaciones Exteriores de Chile.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["inach-transparencia-competencias"]
+    },
+    {
+      "id": "inach-002",
+      "claim": "INACH tiene funciones de planificación, coordinación, orientación y control de actividades científicas y tecnológicas antárticas y puede realizar investigación y difusión en materias antárticas.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["inach-transparencia-competencias"]
+    }
+  ]
+}

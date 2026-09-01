@@ -9,7 +9,13 @@
     {
       "predicate": "LOCATED_ON",
       "target": "isla-navarino",
-      "status": "candidate_target",
+      "status": "verified",
+      "source_ids": ["chile-travel-puerto-williams-2026"]
+    },
+    {
+      "predicate": "ADJACENT_TO",
+      "target": "canal-beagle",
+      "status": "verified",
       "source_ids": ["chile-travel-puerto-williams-2026"]
     },
     {
@@ -17,6 +23,24 @@
       "target": "aerodromo-guardiamarina-zanartu",
       "status": "verified",
       "source_ids": ["chile-travel-puerto-williams-2026"]
+    },
+    {
+      "predicate": "HAS_INFRASTRUCTURE",
+      "target": "muelle-multiproposito-puerto-williams",
+      "status": "verified",
+      "source_ids": ["mop-obras-maritimas-muelle-multiproposito-puerto-williams"]
+    },
+    {
+      "predicate": "HAS_INFRASTRUCTURE",
+      "target": "the-cormorant-at-55-south",
+      "status": "verified",
+      "source_ids": ["royal-caribbean-group-cormorant-gateway-2025"]
+    },
+    {
+      "predicate": "NEAR_COMMUNITY_CONTEXT",
+      "target": "villa-ukika",
+      "status": "verified",
+      "source_ids": ["batch-03-chilean-authoritative-validation-2026-08-24"]
     }
   ]
 }

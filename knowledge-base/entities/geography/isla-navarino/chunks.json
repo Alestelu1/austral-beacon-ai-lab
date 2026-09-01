@@ -1,0 +1,12 @@
+{
+  "chunks": [
+    {
+      "id": "navarino-core-001",
+      "text": "Isla Navarino está en la comuna de Cabo de Hornos, Provincia Antártica Chilena, Región de Magallanes y de la Antártica Chilena. Puerto Williams se encuentra en su costa norte, junto al Canal Beagle.",
+      "claim_ids": ["navarino-001", "navarino-002"],
+      "source_ids": ["bcn-isla-navarino-concesion-2008", "armada-puerto-williams-navarino-2004"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    }
+  ]
+}

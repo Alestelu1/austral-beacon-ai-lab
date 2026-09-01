@@ -1,0 +1,22 @@
+{
+  "relationships": [
+    {
+      "predicate": "CONTAINS_PLACE",
+      "target": "puerto-williams",
+      "status": "verified",
+      "source_ids": ["armada-puerto-williams-navarino-2004"]
+    },
+    {
+      "predicate": "BORDERS_WATERBODY",
+      "target": "canal-beagle",
+      "status": "verified",
+      "source_ids": ["armada-puerto-williams-navarino-2004"]
+    },
+    {
+      "predicate": "LOCATED_IN",
+      "target": "comuna-cabo-de-hornos",
+      "status": "verified",
+      "source_ids": ["bcn-isla-navarino-concesion-2008"]
+    }
+  ]
+}

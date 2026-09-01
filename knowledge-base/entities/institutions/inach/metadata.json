@@ -1,0 +1,11 @@
+{
+  "id": "inach",
+  "canonical_name": "Instituto Antártico Chileno",
+  "aliases": ["INACH"],
+  "entity_type": "government_science_institution",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["antarctic-pulse", "atlas", "travel", "science"],
+  "country": "Chile",
+  "parent_institution": "ministerio-relaciones-exteriores"
+}

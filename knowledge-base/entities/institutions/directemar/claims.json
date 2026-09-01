@@ -1,0 +1,18 @@
+{
+  "claims": [
+    {
+      "id": "directemar-001",
+      "claim": "DIRECTEMAR es un organismo de alto nivel de la Armada de Chile que actúa como servicio público del Estado de Chile.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["directemar-mision-vision"]
+    },
+    {
+      "id": "directemar-002",
+      "claim": "Su misión comprende seguridad marítima, protección de la vida humana en el mar, protección del medio ambiente acuático, policía marítima y fiscalización y regulación de actividades en el ámbito marítimo de su jurisdicción.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["directemar-mision-vision"]
+    }
+  ]
+}

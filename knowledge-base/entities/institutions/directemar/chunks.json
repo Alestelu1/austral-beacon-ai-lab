@@ -1,0 +1,12 @@
+{
+  "chunks": [
+    {
+      "id": "directemar-core-001",
+      "text": "DIRECTEMAR es la institución de la Armada de Chile que cumple funciones de Autoridad Marítima Nacional y servicio público marítimo, incluyendo seguridad marítima, protección de la vida humana en el mar y fiscalización de actividades marítimas.",
+      "claim_ids": ["directemar-001", "directemar-002"],
+      "source_ids": ["directemar-mision-vision"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    }
+  ]
+}

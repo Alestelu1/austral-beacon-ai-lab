@@ -1,0 +1,11 @@
+{
+  "id": "directemar",
+  "canonical_name": "Dirección General del Territorio Marítimo y de Marina Mercante",
+  "aliases": ["DIRECTEMAR", "Autoridad Marítima Nacional"],
+  "entity_type": "maritime_authority",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["atlas", "travel", "observatory", "connectivity", "antarctic-pulse"],
+  "country": "Chile",
+  "parent_institution": "armada-de-chile"
+}

@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "id": "bcn-isla-navarino-concesion-2008",
+      "institution": "Biblioteca del Congreso Nacional de Chile",
+      "source_type": "official_legal_record",
+      "title": "Decreto 644 Exento - inmueble fiscal ubicado en Isla Navarino",
+      "url": "https://www.bcn.cl/leychile/navegar?idNorma=269072",
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "armada-puerto-williams-navarino-2004",
+      "institution": "Armada de Chile",
+      "source_type": "official_webpage",
+      "title": "51 años cumple Puerto Williams",
+      "url": "https://www.armada.cl/noticias-navales/51-anos-cumple-puerto-williams",
+      "verified_at": "2026-09-01"
+    }
+  ]
+}

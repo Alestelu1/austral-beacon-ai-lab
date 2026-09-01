@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "id": "armada-esmeralda-canal-beagle-2020",
+      "institution": "Armada de Chile",
+      "source_type": "official_webpage",
+      "title": "Unidades del Distrito Naval Beagle efectuaron escolta de la Esmeralda durante navegación por Canal Beagle",
+      "url": "https://www.armada.cl/noticias-navales/unidades-del-distrito-naval-beagle-efectuaron-escolta-de-la-esmeralda",
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "armada-puerto-williams-navarino-2004",
+      "institution": "Armada de Chile",
+      "source_type": "official_webpage",
+      "title": "51 años cumple Puerto Williams",
+      "url": "https://www.armada.cl/noticias-navales/51-anos-cumple-puerto-williams",
+      "verified_at": "2026-09-01"
+    }
+  ]
+}

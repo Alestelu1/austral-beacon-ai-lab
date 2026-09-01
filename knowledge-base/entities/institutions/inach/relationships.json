@@ -1,0 +1,10 @@
+{
+  "relationships": [
+    {
+      "predicate": "TECHNICAL_BODY_OF",
+      "target": "ministerio-relaciones-exteriores",
+      "status": "candidate_target",
+      "source_ids": ["inach-transparencia-competencias"]
+    }
+  ]
+}

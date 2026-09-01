@@ -1,0 +1,12 @@
+{
+  "chunks": [
+    {
+      "id": "inach-core-001",
+      "text": "El Instituto Antártico Chileno (INACH) es un organismo técnico del Ministerio de Relaciones Exteriores de Chile con funciones científicas, tecnológicas y de difusión en materias antárticas.",
+      "claim_ids": ["inach-001", "inach-002"],
+      "source_ids": ["inach-transparencia-competencias"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    }
+  ]
+}

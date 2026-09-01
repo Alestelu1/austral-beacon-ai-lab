@@ -1,0 +1,9 @@
+{
+  "id": "isla-navarino",
+  "canonical_name": "Isla Navarino",
+  "entity_type": "island",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["atlas", "travel", "observatory"],
+  "country": "Chile"
+}
