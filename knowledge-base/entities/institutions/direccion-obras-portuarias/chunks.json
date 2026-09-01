@@ -1,0 +1,20 @@
+{
+  "chunks": [
+    {
+      "id": "dop-chunk-001",
+      "text": "La Dirección de Obras Portuarias (DOP) es un servicio público chileno que planifica, desarrolla, supervisa y fiscaliza infraestructura portuaria y costera en zonas marítimas, fluviales y lacustres.",
+      "claim_ids": ["dop-claim-001", "dop-claim-002"],
+      "source_ids": ["dop-direcciones-mision-funciones"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    },
+    {
+      "id": "dop-chunk-002",
+      "text": "La DOP es el servicio responsable del proyecto de infraestructura portuaria multipropósito en Puerto Williams.",
+      "claim_ids": ["dop-claim-003"],
+      "source_ids": ["mop-muelle-multiproposito-puerto-williams"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    }
+  ]
+}
