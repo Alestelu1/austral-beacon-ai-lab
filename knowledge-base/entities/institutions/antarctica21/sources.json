@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "id": "antarctica21-classic-air-cruise-2026",
+      "institution": "Antarctica21",
+      "source_type": "first_party_product_page",
+      "title": "Classic Antarctica Air-Cruise",
+      "url": "https://www.antarctica21.com/our-expeditions/classic-antarctica-air-cruise",
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "antarctica21-air-cruises-2026",
+      "institution": "Antarctica21",
+      "source_type": "first_party_product_overview",
+      "title": "Antarctic Air-Cruises",
+      "url": "https://www.antarctica21.com/antarctic-air-cruises",
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "antarctica21-express-air-cruise-2026",
+      "institution": "Antarctica21",
+      "source_type": "first_party_product_page",
+      "title": "Antarctica Express Air-Cruise",
+      "url": "https://www.antarctica21.com/our-expeditions/antarctica-express-air-cruise",
+      "verified_at": "2026-09-01"
+    }
+  ]
+}
