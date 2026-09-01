@@ -1,0 +1,12 @@
+{
+  "chunks": [
+    {
+      "id": "puq-wpu-route-chunk-001",
+      "text": "Punta Arenas y Puerto Williams están conectadas por un corredor de viaje con opciones aéreas y marítimas publicadas por operadores. Horarios, frecuencias, tarifas, cupos y disponibilidad deben verificarse actualmente.",
+      "claim_ids": ["puq-wpu-corridor-001"],
+      "source_ids": ["dap-puq-wpu-route-2026", "tabsa-puq-wpu-route-2026"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    }
+  ]
+}
