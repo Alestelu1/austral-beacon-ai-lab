@@ -1,0 +1,13 @@
+{
+  "id": "direccion-obras-portuarias",
+  "canonical_name": "Dirección de Obras Portuarias",
+  "aliases": ["DOP"],
+  "entity_type": "public_port_infrastructure_agency",
+  "status": "canonical",
+  "lifecycle_status": "operational",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["travel", "atlas", "observatory", "connectivity"],
+  "country": "Chile",
+  "parent_institution": "Ministerio de Obras Públicas",
+  "governance_notes": "Project budgets, construction percentages, schedules and contract status are operational_dynamic and require current verification."
+}
