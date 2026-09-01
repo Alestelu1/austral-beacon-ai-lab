@@ -16,6 +16,7 @@ import type {
 } from "../domain/types.js";
 import { normalize } from "../domain/normalize.js";
 import { LocalJsonDestinationCardRepository } from "../adapters/LocalJsonDestinationCardRepository.js";
+import { ProjectedDestinationCardRepository } from "../adapters/ProjectedDestinationCardRepository.js";
 import { getDestinationCard } from "./getDestinationCard.js";
 import { answerPlaceRelationship } from "./answerPlaceRelationship.js";
 import { answerAntarcticAccess } from "./answerAntarcticAccess.js";
@@ -27,10 +28,14 @@ const pwCaboRelationship = pwCaboRelationshipData as PlaceRelationshipRecord;
 const antarcticAccess = antarcticAccessData as AntarcticAccessRecord;
 const villaUkikaRelationship = villaUkikaRelationshipData as PlaceRelationshipRecord;
 
-// Singleton: se instancia una vez al cargar el módulo
-const destinationRepository = new LocalJsonDestinationCardRepository(
+// Incremental migration: legacy cards remain available for destinations not yet
+// projected from the canonical knowledge-base. Puerto Williams is overridden by
+// ProjectedDestinationCardRepository and therefore no longer uses its local JSON
+// as the served source of truth.
+const legacyDestinationRepository = new LocalJsonDestinationCardRepository(
   resolve(import.meta.dirname, "../../data/destinations")
 );
+const destinationRepository = new ProjectedDestinationCardRepository(legacyDestinationRepository);
 
 // --- Constantes de detección ---
 
