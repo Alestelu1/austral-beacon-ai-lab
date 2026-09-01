@@ -1,0 +1,16 @@
+{
+  "id": "aerodromo-guardiamarina-zanartu",
+  "canonical_name": "Aeródromo Guardiamarina Zañartu",
+  "entity_type": "public_aerodrome",
+  "status": "canonical",
+  "lifecycle_status": "operational",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["travel", "atlas", "observatory", "connectivity"],
+  "official_id": "SCGZ",
+  "country": "Chile",
+  "region": "Región de Magallanes y de la Antártica Chilena",
+  "province": "Provincia Antártica Chilena",
+  "commune": "Cabo de Hornos",
+  "nearest_place": "Puerto Williams",
+  "governance_notes": "Operational aviation data such as ATS hours, frequencies, NOTAM, runway availability and temporary restrictions require current DGAC/AIP verification and are not stable public_core facts."
+}
