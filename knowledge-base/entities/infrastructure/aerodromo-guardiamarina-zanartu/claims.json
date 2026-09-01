@@ -1,0 +1,43 @@
+{
+  "claims": [
+    {
+      "id": "guardiamarina-zanartu-public-aerodrome",
+      "text": "El Aeródromo Guardiamarina Zañartu es un aeródromo de uso público administrado por la Dirección General de Aeronáutica Civil (DGAC).",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["dgac-ifis-scgz-2026-08-30", "dgac-65-aniversario-guardiamarina-zanartu"]
+    },
+    {
+      "id": "guardiamarina-zanartu-scgz",
+      "text": "El indicador de lugar del Aeródromo Guardiamarina Zañartu es SCGZ.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["dgac-ifis-scgz-2026-08-30"]
+    },
+    {
+      "id": "guardiamarina-zanartu-location",
+      "text": "El aeródromo se ubica en Puerto Williams, Región de Magallanes y de la Antártica Chilena, Chile, en Isla Navarino.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["dgac-ifis-scgz-2026-08-30", "dgac-65-aniversario-guardiamarina-zanartu"]
+    },
+    {
+      "id": "guardiamarina-zanartu-runway",
+      "text": "IFIS DGAC publica para SCGZ una pista 08/26 de 1440 por 29 metros y superficie asfáltica.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "verified_at": "2026-09-01",
+      "source_ids": ["dgac-ifis-scgz-2026-08-30"]
+    },
+    {
+      "id": "guardiamarina-zanartu-current-operations",
+      "text": "Los horarios ATS, frecuencias, disponibilidad, NOTAM y restricciones operacionales del aeródromo requieren verificación aeronáutica vigente antes de su uso.",
+      "status": "governance_rule",
+      "sensitivity": "operational_dynamic",
+      "requires_current_verification": true,
+      "embedding_eligible": false,
+      "blocked_consumers": ["travel-agent"],
+      "source_ids": ["dgac-ifis-scgz-2026-08-30"]
+    }
+  ]
+}
