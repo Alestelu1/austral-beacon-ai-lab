@@ -1,0 +1,11 @@
+{
+  "id": "comuna-cabo-de-hornos",
+  "canonical_name": "Comuna de Cabo de Hornos",
+  "entity_type": "commune",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["travel", "atlas", "observatory", "connectivity"],
+  "country": "Chile",
+  "parent_jurisdiction": "provincia-antartica-chilena",
+  "governance_notes": "Population, current authorities, municipal budgets and changing indicators are dynamic data and must not be treated as stable identity claims."
+}
