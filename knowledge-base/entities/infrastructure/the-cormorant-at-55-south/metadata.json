@@ -1,0 +1,16 @@
+{
+  "id": "the-cormorant-at-55-south",
+  "canonical_name": "The Cormorant at 55 South",
+  "entity_type": "private_gateway_hospitality_infrastructure",
+  "status": "sourced",
+  "lifecycle_status": "in_construction",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["travel", "atlas", "antarctic-gateway"],
+  "country": "Chile",
+  "region": "Región de Magallanes y de la Antártica Chilena",
+  "nearest_place": "Puerto Williams",
+  "operator_brand": "Silversea",
+  "parent_group": "Royal Caribbean Group",
+  "admission_rationale": "Admitted exceptionally under the infrastructure gatekeeper because the property is explicitly designed as part of Silversea's Antarctica Fly Cruise logistics in Puerto Williams and has declared capacity of 150 rooms.",
+  "governance_notes": "Opening date, construction progress, booking availability and operating details are dynamic and require current verification."
+}
