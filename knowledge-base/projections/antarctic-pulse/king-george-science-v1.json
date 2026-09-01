@@ -1,0 +1,59 @@
+{
+  "projection_id": "antarctic-pulse-king-george-science-v1",
+  "projection_type": "product_projection",
+  "consumer": "antarctic-pulse",
+  "dependencies": [
+    "../shared/antarctic-gateway-king-george-v1.json"
+  ],
+  "purpose": "Present the scientific and institutional context of the Chilean presence on King George Island, emphasizing research infrastructure, public institutions and stable geographic relationships without turning operational or commercial data into permanent facts.",
+  "focus_entities": [
+    "isla-rey-jorge",
+    "bahia-fildes",
+    "base-cientifica-profesor-julio-escudero",
+    "inach",
+    "base-aerea-antartica-presidente-frei",
+    "aerodromo-teniente-rodolfo-marsh",
+    "direccion-general-aeronautica-civil",
+    "villa-las-estrellas",
+    "capitania-puerto-bahia-fildes",
+    "directemar"
+  ],
+  "presentation_layers": [
+    "physical_geography",
+    "science_infrastructure",
+    "civil_and_aeronautical_infrastructure",
+    "maritime_authority",
+    "historical_civil_context"
+  ],
+  "preferred_relationships": [
+    {"subject": "base-cientifica-profesor-julio-escudero", "predicate": "OPERATED_BY", "object": "inach"},
+    {"subject": "base-cientifica-profesor-julio-escudero", "predicate": "LOCATED_ON", "object": "isla-rey-jorge"},
+    {"subject": "aerodromo-teniente-rodolfo-marsh", "predicate": "ADMINISTERED_BY", "object": "direccion-general-aeronautica-civil"},
+    {"subject": "capitania-puerto-bahia-fildes", "predicate": "PART_OF", "object": "directemar"},
+    {"subject": "capitania-puerto-bahia-fildes", "predicate": "MARITIME_AUTHORITY_FOR", "object": "bahia-fildes"},
+    {"subject": "villa-las-estrellas", "predicate": "PART_OF", "object": "base-aerea-antartica-presidente-frei"}
+  ],
+  "blocked_domains": [
+    "current_air_traffic_statistics",
+    "current_passenger_counts",
+    "market_share",
+    "current_staffing",
+    "current_science_campaign_capacity",
+    "current_equipment_availability",
+    "current_population",
+    "current_runway_condition",
+    "notams",
+    "weather",
+    "current_port_conditions",
+    "bunkering_status",
+    "commercial_availability"
+  ],
+  "rules": [
+    "Use INACH as the primary institutional authority for scientific-infrastructure claims where available.",
+    "Use DGAC for aerodrome administration and aviation facts, and DIRECTEMAR for maritime-authority facts.",
+    "Keep historical Villa Las Estrellas context distinct from claims about current population or services.",
+    "Do not infer current research capacity, staffing, campaign activity or equipment availability from older institutional documents.",
+    "Do not import operator marketing or commercial-product claims into Antarctic Pulse unless the editorial question is explicitly about logistics or access.",
+    "Do not publish Antarctic traffic statistics until a dedicated statistical verification policy and authoritative series are available."
+  ]
+}
