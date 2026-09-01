@@ -1,0 +1,20 @@
+{
+  "chunks": [
+    {
+      "id": "dgac-chunk-001",
+      "text": "La Dirección General de Aeronáutica Civil (DGAC) es la autoridad aeronáutica civil de Chile. Regula y supervisa la actividad aeronáutica civil dentro de su competencia, desarrolla infraestructura aeronáutica y presta servicios aeronáuticos especializados.",
+      "claim_ids": ["dgac-claim-001", "dgac-claim-002"],
+      "source_ids": ["dgac-estructura-organizacional"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    },
+    {
+      "id": "dgac-chunk-002",
+      "text": "La DGAC fue creada en 1930 como parte del desarrollo de la institucionalidad aeronáutica chilena.",
+      "claim_ids": ["dgac-claim-003"],
+      "source_ids": ["dgac-creacion-institucional"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    }
+  ]
+}
