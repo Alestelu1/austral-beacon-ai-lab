@@ -1,0 +1,6 @@
+{
+  "relationships": [
+    {"predicate":"ORIGIN","target":"punta-arenas","status":"verified","source_ids":["dap-puq-wpu-route-2026","tabsa-puq-wpu-route-2026"]},
+    {"predicate":"DESTINATION","target":"puerto-williams","status":"verified","source_ids":["dap-puq-wpu-route-2026","tabsa-puq-wpu-route-2026"]}
+  ]
+}
