@@ -1,0 +1,85 @@
+{
+  "projection_id": "travel-puerto-williams-v1",
+  "source_of_truth": "knowledge-base",
+  "consumer": "end-of-the-world-travel-assistant",
+  "entity_id": "puerto-williams",
+  "status": "implemented",
+  "projection_mode": "stable_public_core_only",
+  "principles": {
+    "no_parallel_canonical_entity": true,
+    "claim_level_provenance_required": true,
+    "operational_information_requires_live_verification": true,
+    "restricted_context_not_publicly_projectable": true,
+    "unknown_or_unsupported_relationships_must_not_be_inferred": true,
+    "canonical_geometry_required_before_coordinates": true
+  },
+  "allowed_claims": [
+    {
+      "claim_id": "puerto-williams-claim-001",
+      "use": "city_identity",
+      "embedding_eligible": true
+    },
+    {
+      "claim_id": "puerto-williams-claim-002",
+      "use": "stable_geographic_and_administrative_context",
+      "embedding_eligible": true
+    },
+    {
+      "claim_id": "puerto-williams-claim-003",
+      "use": "stable_tourism_recognition",
+      "embedding_eligible": true
+    },
+    {
+      "claim_id": "puerto-williams-claim-004",
+      "use": "stable_access_infrastructure_identity",
+      "embedding_eligible": true,
+      "guard": "May identify the aerodrome as access infrastructure. Do not infer current flight schedules, seats, fares or operating conditions."
+    }
+  ],
+  "allowed_relationships": [
+    {
+      "target": "comuna-cabo-de-hornos",
+      "type": "LOCATED_IN",
+      "status_required": ["verified"]
+    },
+    {
+      "target": "isla-navarino",
+      "type": "LOCATED_ON",
+      "status_required": ["verified"]
+    },
+    {
+      "target": "canal-beagle",
+      "type": "ADJACENT_TO",
+      "status_required": ["verified"]
+    },
+    {
+      "target": "aerodromo-guardiamarina-zanartu",
+      "type": "SERVED_BY",
+      "status_required": ["verified"]
+    },
+    {
+      "target": "villa-ukika",
+      "type": "NEAR_COMMUNITY_CONTEXT",
+      "status_required": ["verified"],
+      "guard": "Do not infer population, genealogy, representation, access conditions or tourist availability from this relationship."
+    }
+  ],
+  "blocked_context": [
+    "current flight schedules",
+    "current maritime schedules",
+    "fares and seat availability",
+    "current construction progress",
+    "hotel availability or opening status",
+    "visitor access to living Indigenous communities",
+    "uncited demographic claims",
+    "non-authoritative coordinates"
+  ],
+  "implementation_constraints": {
+    "do_not_modify_canonical_knowledge": true,
+    "do_not_copy_full_entity_into_agent_data_as_new_truth": true,
+    "projection_must_reference_canonical_claim_ids": true,
+    "projection_must_preserve_source_ids": true,
+    "legacy_destination_json_is_fallback_only": true,
+    "existing_travel_agent_regressions_must_remain_green": true
+  }
+}
