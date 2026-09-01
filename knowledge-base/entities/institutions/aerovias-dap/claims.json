@@ -1,0 +1,40 @@
+{
+  "claims": [
+    {
+      "id": "dap-institution-001",
+      "statement": "Aerovías DAP es un operador aéreo privado chileno que publica servicios regulares en Magallanes y productos/logística antártica bajo sus marcas del grupo.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["dap-home-2026", "dap-brands-2026"]
+    },
+    {
+      "id": "dap-antarctic-product-002",
+      "statement": "Aerovías DAP publica un producto comercial antártico desde Punta Arenas hacia Isla Rey Jorge, incluido el programa Full Day Antarctica.",
+      "status": "verified_current",
+      "sensitivity": "operational_dynamic",
+      "source_ids": ["dap-antarctic-adventure-2026"],
+      "verified_at": "2026-09-01",
+      "requires_current_verification": true,
+      "embedding_eligible": false
+    },
+    {
+      "id": "dap-antarctic-logistics-003",
+      "statement": "DAP publica capacidades de logística aérea, marítima y terrestre para operaciones en Patagonia y Antártica, con Punta Arenas como base logística de sus operaciones antárticas.",
+      "status": "verified_current",
+      "sensitivity": "operational_dynamic",
+      "source_ids": ["dap-antarctic-logistics-2026"],
+      "verified_at": "2026-09-01",
+      "requires_current_verification": true,
+      "embedding_eligible": false
+    },
+    {
+      "id": "dap-traffic-statistics-004",
+      "statement": "No se proyectan como estadísticas independientes las afirmaciones corporativas de DAP sobre proporción del movimiento antártico, volumen agregado de pasajeros o participación de mercado sin corroboración de una fuente pública institucional independiente.",
+      "status": "governance_constraint",
+      "sensitivity": "public_core",
+      "source_ids": ["dap-antarctic-logistics-2026"],
+      "embedding_eligible": false,
+      "blocked_consumers": ["travel-agent"]
+    }
+  ]
+}
