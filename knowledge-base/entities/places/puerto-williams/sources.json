@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "id": "ine-ciudades-2019-puerto-williams",
+      "institution": "Instituto Nacional de Estadísticas",
+      "source_type": "official_webpage",
+      "title": "INE presenta sitio de mapas de Ciudades, pueblos, aldeas y caseríos 2019",
+      "url": "https://www.ine.gob.cl/sala-de-prensa/prensa/general/noticia/2019/09/16/ine-presenta-sitio-de-mapas-de-ciudades-pueblos-aldeas-y-caser%C3%ADos-2019-con-informaci%C3%B3n-desagregada-seg%C3%BAn-datos-censo-2017",
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "sernatur-best-tourism-villages-puerto-williams",
+      "institution": "Servicio Nacional de Turismo",
+      "source_type": "official_webpage",
+      "title": "Organización Mundial del Turismo reconoce a Puerto Williams y Pica por su aporte al turismo rural",
+      "url": "https://www.sernatur.cl/organizacion-mundial-del-turismo-reconoce-a-puerto-williams-y-pica-por-su-aporte-al-turismo-rural/",
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "chile-travel-puerto-williams-2026",
+      "institution": "Chile Travel / SERNATUR",
+      "source_type": "official_destination_page",
+      "title": "Puerto Williams",
+      "url": "https://chile.travel/atractivos/puerto-williams/",
+      "verified_at": "2026-09-01"
+    }
+  ]
+}
