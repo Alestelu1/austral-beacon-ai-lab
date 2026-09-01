@@ -1,102 +1,103 @@
 {
   "id": "antarctica-access-from-chile",
   "subject": "Acceso a la Antártica desde Chile",
-  "summary": "Chile reconoce a Punta Arenas y Puerto Williams como ciudades puerta de entrada (gateway) hacia la Antártica en su política antártica. Los productos comerciales antárticos documentados en fuentes de primera parte se publican/ofrecen desde Punta Arenas (Aerovías DAP y Antarctica21) para temporadas específicas. El reconocimiento de gateway no equivale a un servicio comercial; la identidad de un producto publicado no equivale a una operación verificada de forma independiente ni a disponibilidad para una fecha concreta; y las capacidades estatales o científicas no constituyen una ruta turística pública.",
+  "summary": "La política antártica chilena distingue el rol de gateway de Punta Arenas y Puerto Williams del acceso comercial efectivo. En el corpus verificado, Antarctica21 y Aerovías DAP publican productos antárticos con origen en Punta Arenas. La publicación de un producto por su operador no confirma una salida, disponibilidad o condición operacional para una fecha concreta y no constituye una estadística independiente de tráfico antártico.",
   "pathways": [
     {
       "category": "gateway-policy",
       "origin": "Punta Arenas",
-      "title": "Punta Arenas como puerta de entrada antártica (contexto de política)",
-      "description": "La Política Nacional de Turismo Antártico de Chile (MINREL, 2020) describe a Punta Arenas como ciudad puerta de entrada y plataforma logística hacia el continente antártico. Este es un contexto estratégico y de política, no una prueba de un servicio comercial en una fecha específica.",
+      "title": "Punta Arenas como puerta de entrada antártica",
+      "description": "La Política Nacional de Turismo Antártico de Chile describe a Punta Arenas dentro del sistema chileno de puertas de entrada y plataforma logística antártica. Este es contexto de política pública, no evidencia de una salida comercial específica.",
       "sourceIds": ["minrel-politica-turismo-antartico-2020"]
     },
     {
       "category": "gateway-policy",
       "origin": "Puerto Williams",
-      "title": "Puerto Williams como nodo gateway reconocido (contexto de política)",
-      "description": "La política antártica de Chile reconoce también a Puerto Williams como ciudad puerta de entrada y nodo estratégico. Este reconocimiento es de política y planificación regional; no establece por sí mismo vuelos comerciales ni productos turísticos que operen directamente desde Puerto Williams.",
-      "sourceIds": ["minrel-politica-turismo-antartico-2020", "pw-antarctic-air-2026-08-23"]
+      "title": "Puerto Williams como nodo gateway de política antártica",
+      "description": "Puerto Williams forma parte del contexto chileno de gateway y planificación antártica. Ese reconocimiento no implica por sí solo la existencia de vuelos comerciales directos Puerto Williams–Antártica.",
+      "sourceIds": ["minrel-politica-turismo-antartico-2020"]
     },
     {
       "category": "commercial-product",
       "origin": "Punta Arenas",
-      "title": "Producto aéreo antártico publicado desde Punta Arenas (Aerovías DAP)",
-      "description": "Aerovías DAP publica/ofrece, como operador de primera parte, un producto antártico Punta Arenas–Isla Rey Jorge (King George Island), incluido el programa \"Full Day Antártica\", para la temporada documentada 2026-2027. Esta es la identidad de un producto comercial publicado por el operador; por sí sola no constituye evidencia independiente de operación actual, de una salida garantizada ni de disponibilidad, cupos, horarios o precios para una fecha concreta, que deben confirmarse directamente con el operador.",
-      "sourceIds": ["dap-antarctic-operations-2026-2027"]
+      "title": "DAP — producto aéreo antártico publicado",
+      "description": "Aerovías DAP publica un producto comercial desde Punta Arenas hacia Isla Rey Jorge, incluido Full Day Antarctica. Fechas, horarios, precios, cupos y operación efectiva son dinámicos y deben confirmarse con el operador.",
+      "sourceIds": ["dap-antarctic-adventure-2026"]
     },
     {
       "category": "commercial-product",
       "origin": "Punta Arenas",
-      "title": "Producto air-cruise antártico publicado desde Punta Arenas (Antarctica21)",
-      "description": "Antarctica21 publica/ofrece, como operador de primera parte, un producto air-cruise que combina un vuelo desde Punta Arenas hacia Isla Rey Jorge con navegación de expedición hacia la Península Antártica e Islas Shetland del Sur, con itinerarios para la temporada 2027-2028. Al corresponder a una temporada futura, no debe describirse como un servicio actualmente en operación: es la identidad de un producto comercial publicado, cuyos precios, fechas y disponibilidad son dinámicos y deben revalidarse con el operador.",
-      "sourceIds": ["antarctica21-air-cruises-2027-2028"]
+      "title": "Antarctica21 — Air-Cruise publicado desde Punta Arenas",
+      "description": "Antarctica21 publica productos Air-Cruise que combinan vuelo desde Punta Arenas hacia Isla Rey Jorge con navegación de expedición antártica. Algunos itinerarios Express pueden incluir Puerto Williams; esto no implica un vuelo comercial directo Puerto Williams–Antártica.",
+      "sourceIds": ["antarctica21-classic-air-cruise-2026", "antarctica21-express-air-cruise-2026"]
     },
     {
       "category": "state-science",
       "origin": "Punta Arenas / Base Aérea Chabunco",
-      "title": "Operaciones aéreas estatales y científicas (FACh) — no es ruta turística",
-      "description": "La Fuerza Aérea de Chile documenta operaciones aéreas estatales y de logística científica desde Punta Arenas (Base Aérea Chabunco) hacia la Antártica, incluyendo misiones de campo profundo y búsqueda y rescate. Estas capacidades estatales y científicas no constituyen un servicio de pasajeros ni una ruta turística pública y no deben interpretarse como una vía de acceso comercial.",
+      "title": "Operaciones aéreas estatales y científicas — no son ruta turística",
+      "description": "Las capacidades estatales y científicas chilenas hacia la Antártica se mantienen separadas de los productos comerciales. No deben interpretarse como un servicio público de pasajeros ni como una oferta turística.",
       "sourceIds": ["fach-antarctic-air-capability-v1"]
     },
     {
       "category": "planned-infrastructure",
-      "origin": "Antártica / Magallanes",
-      "title": "Infraestructura planificada (no operativa)",
-      "description": "El Plan Estratégico Antártico y la política antártica describen trabajos planificados o en análisis, como mejoras en el Aeródromo Teniente Marsh, infraestructura portuaria en Bahía Fildes, un cable submarino de fibra óptica y un plan integral de desarrollo antártico de Puerto Williams. Son proyectos planificados o futuros y no deben presentarse como infraestructura operativa ni como servicios disponibles.",
+      "origin": "Magallanes / Antártica",
+      "title": "Infraestructura planificada — no operativa",
+      "description": "Los planes estratégicos antárticos contienen proyectos y mejoras futuras. Su inclusión como planificación no autoriza presentarlos como infraestructura actualmente operativa ni como servicios disponibles.",
       "sourceIds": ["minrel-pea-2026-2030"]
     }
   ],
-  "puertoWilliamsClarification": "A la fecha de verificación (2026-08-23), la base de conocimiento no contiene evidencia de servicios aéreos comerciales regulares ni de productos turísticos fly-cruise publicados que operen directamente desde Puerto Williams hacia la Antártica. Puerto Williams está reconocido como gateway en la política antártica de Chile, pero los productos comerciales antárticos documentados en fuentes de primera parte se publican/ofrecen desde Punta Arenas. No debe confundirse la conectividad Punta Arenas–Puerto Williams con una conectividad Puerto Williams–Antártica.",
+  "puertoWilliamsClarification": "En el corpus verificado al 2026-09-01 no se ha confirmado un producto aéreo comercial directo Puerto Williams–Antártica. Puerto Williams sí aparece como nodo gateway de política y puede formar parte de itinerarios marítimos publicados por operadores. La ausencia de evidencia en el corpus no debe convertirse en una afirmación absoluta de inexistencia; cualquier nueva operación debe verificarse con una fuente primaria actual.",
   "warnings": [
-    "El estatus de gateway (puerta de entrada) es un contexto de política y no equivale a un servicio comercial en operación.",
-    "Un producto publicado por un operador no equivale a una operación verificada de forma independiente ni a disponibilidad para una fecha concreta: horarios, salidas, frecuencias, precios y cupos son dinámicos y deben confirmarse con el operador de primera parte antes de viajar.",
-    "Que una fuente esté verificada significa que el operador publica ese producto; no confirma por sí sola que la operación esté comprobada de forma independiente ni que exista una salida disponible en una fecha concreta.",
-    "Las operaciones aéreas estatales o científicas (FACh/INACH) no son un servicio de pasajeros ni una ruta turística pública.",
-    "La infraestructura planificada o en construcción no debe interpretarse como infraestructura operativa ni como un servicio disponible.",
-    "No se dispone de evidencia verificada de vuelos comerciales regulares directos desde Puerto Williams hacia la Antártica; los productos comerciales antárticos documentados en fuentes de primera parte se publican/ofrecen desde Punta Arenas."
+    "Gateway-policy y commercial-product son categorías distintas: el reconocimiento estratégico de una ciudad no prueba un servicio comercial.",
+    "Los productos de Antarctica21 y DAP son evidencia de primera parte de lo que cada operador publica; no son verificación independiente de una salida concreta.",
+    "Horarios, fechas, precios, cupos, disponibilidad, aeronaves, naves y condiciones operativas requieren verificación actual.",
+    "No usar material comercial de Antarctica21 o DAP para afirmar cifras agregadas de pasajeros, participación de mercado, cuota de gateway o tráfico antártico total.",
+    "Las operaciones estatales/científicas no son rutas turísticas públicas.",
+    "La infraestructura planificada o en construcción no debe presentarse como operativa."
   ],
   "sources": [
     {
       "title": "Política Nacional de Turismo Antártico (2020)",
       "publisher": "Dirección de Antártica — Ministerio de Relaciones Exteriores de Chile",
-      "url": "https://www.minrel.gob.cl/",
-      "verifiedAt": "2026-08-23",
+      "url": "https://www.minrel.gob.cl/minrel/site/docs/20250613/20250613163437/4a__texto_politica_nacional_de_turismo_antartico_2020.pdf",
+      "verifiedAt": "2026-09-01",
       "status": "verified"
     },
     {
-      "title": "Verificación: gateway vs. servicio aéreo comercial directo desde Puerto Williams",
-      "publisher": "Austral Beacon Media — registro de verificación pw-antarctic-air-2026-08-23",
-      "url": "https://www.endoftheworld.travel/",
-      "verifiedAt": "2026-08-23",
-      "status": "verified"
-    },
-    {
-      "title": "DAP — Producto antártico publicado \"Full Day Antártica\" (temporada 2026-2027)",
+      "title": "DAP — Antarctic Adventure",
       "publisher": "Aerovías DAP",
-      "url": "https://dapairline.com/",
-      "verifiedAt": "2026-08-23",
+      "url": "https://dapairline.com/en/antarctic-adventure/",
+      "verifiedAt": "2026-09-01",
       "status": "verified",
-      "evidenceNote": "Fuente de primera parte: verifica la publicación del producto por el operador, no una operación verificada de forma independiente."
+      "evidenceNote": "Fuente de primera parte: confirma que DAP publica el producto, no una salida o disponibilidad específica."
     },
     {
-      "title": "Antarctica21 — Producto air-cruise publicado (temporada 2027-2028)",
+      "title": "Antarctica21 — Classic Antarctica Air-Cruise",
       "publisher": "Antarctica21",
-      "url": "https://antarctica21.com/",
-      "verifiedAt": "2026-08-23",
+      "url": "https://www.antarctica21.com/our-expeditions/classic-antarctica-air-cruise",
+      "verifiedAt": "2026-09-01",
       "status": "verified",
-      "evidenceNote": "Fuente de primera parte para una temporada futura: verifica la publicación del producto, no una operación actual ni una salida garantizada."
+      "evidenceNote": "Fuente de primera parte: confirma la identidad del producto Air-Cruise, no una salida específica."
     },
     {
-      "title": "Capacidad aérea antártica estatal y científica (FACh)",
-      "publisher": "Fuerza Aérea de Chile — Revista FACh",
+      "title": "Antarctica21 — Antarctica Express Air-Cruise",
+      "publisher": "Antarctica21",
+      "url": "https://www.antarctica21.com/our-expeditions/antarctica-express-air-cruise",
+      "verifiedAt": "2026-09-01",
+      "status": "verified",
+      "evidenceNote": "Fuente de primera parte: algunos itinerarios publicados incluyen Puerto Williams; esto no prueba un vuelo directo Puerto Williams–Antártica."
+    },
+    {
+      "title": "Capacidad aérea antártica estatal y científica",
+      "publisher": "Fuerza Aérea de Chile",
       "url": "https://www.fach.mil.cl/",
       "verifiedAt": "2026-08-23",
       "status": "verified"
     }
   ],
   "suggestedInternalLinks": [
-    { "path": "/punta-arenas", "label": "Punta Arenas" },
-    { "path": "/puerto-williams", "label": "Puerto Williams" }
+    {"path": "/punta-arenas", "label": "Punta Arenas"},
+    {"path": "/puerto-williams", "label": "Puerto Williams"}
   ],
-  "verifiedAt": "2026-08-23"
+  "verifiedAt": "2026-09-01"
 }
