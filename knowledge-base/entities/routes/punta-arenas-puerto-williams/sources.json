@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "id": "dap-puq-wpu-route-2026",
+      "institution": "Aerovías DAP",
+      "source_type": "first_party_operator_webpage",
+      "title": "Vuelos Regulares — Punta Arenas–Puerto Williams",
+      "url": "https://dapairline.com/vuelos-regulares/",
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "tabsa-puq-wpu-route-2026",
+      "institution": "Transbordadora Austral Broom (TABSA)",
+      "source_type": "first_party_operator_webpage",
+      "title": "Ruta Punta Arenas–Puerto Williams",
+      "url": "https://www.tabsa.cl/rutas/parenas-pwilliams/",
+      "verified_at": "2026-08-24"
+    }
+  ]
+}
