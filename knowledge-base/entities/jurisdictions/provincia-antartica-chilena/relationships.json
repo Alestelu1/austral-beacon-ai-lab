@@ -1,0 +1,16 @@
+{
+  "relationships": [
+    {
+      "predicate": "LOCATED_IN",
+      "target": "region-magallanes-antartica-chilena",
+      "status": "verified",
+      "source_ids": ["bcn-provincia-antartica-chilena"]
+    },
+    {
+      "predicate": "CONTAINS_JURISDICTION",
+      "target": "comuna-cabo-de-hornos",
+      "status": "verified",
+      "source_ids": ["bcn-provincia-antartica-chilena"]
+    }
+  ]
+}
