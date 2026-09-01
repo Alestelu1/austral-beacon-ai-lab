@@ -70,13 +70,17 @@ function findClaim(id: string): CanonicalClaim {
 }
 
 function claimText(claim: CanonicalClaim): string {
+  // Atomic claim text is preferred so one multi-claim RAG chunk cannot broaden
+  // the meaning of a projected fact. A safe canonical chunk is only a fallback.
+  if (claim.statement) return claim.statement;
+  if (claim.claim) return claim.claim;
   const safeChunk = chunksData.chunks.find((chunk) =>
     chunk.claim_ids?.includes(claim.id) &&
     chunk.sensitivity === "public_core" &&
     chunk.embedding_eligible !== false &&
     !chunk.blocked_consumers?.includes("travel-agent")
   );
-  return safeChunk?.text ?? claim.statement ?? claim.claim ?? "";
+  return safeChunk?.text ?? "";
 }
 
 function projectedSources(claims: CanonicalClaim[]): SourceReference[] {
