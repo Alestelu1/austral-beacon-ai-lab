@@ -1,0 +1,23 @@
+{
+  "sources": [
+    {
+      "id": "mop-obras-maritimas-muelle-multiproposito-puerto-williams",
+      "institution": "Ministerio de Obras Públicas",
+      "service": "Dirección de Obras Portuarias",
+      "source_type": "official_project_page",
+      "title": "Obras Marítimas Infraestructura Portuaria Multipropósito en Puerto Williams",
+      "url": "https://www.mop.gob.cl/project/construccion-obras-maritimas-infraestructura-portuaria-multiproposito-en-puerto-williams/",
+      "verified_at": "2026-09-01",
+      "authority_domains": ["port_infrastructure", "public_works", "project_identity", "project_scope"]
+    },
+    {
+      "id": "mop-programa-inversiones-2026-puerto-williams",
+      "institution": "Ministerio de Obras Públicas",
+      "service": "Dirección de Planeamiento",
+      "source_type": "official_investment_program",
+      "title": "Programa Base Año 2026 - Iniciativas de Inversión MOP",
+      "verified_at": "2026-09-01",
+      "authority_domains": ["budget_programming", "project_status", "public_investment"]
+    }
+  ]
+}
