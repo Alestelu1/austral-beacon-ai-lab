@@ -1,0 +1,12 @@
+{
+  "chunks": [
+    {
+      "id": "cabo-hornos-commune-chunk-001",
+      "text": "La Comuna de Cabo de Hornos pertenece a la Provincia Antártica Chilena y a la Región de Magallanes y de la Antártica Chilena.",
+      "claim_ids": ["cabo-hornos-commune-claim-001"],
+      "source_ids": ["bcn-comuna-cabo-de-hornos"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    }
+  ]
+}
