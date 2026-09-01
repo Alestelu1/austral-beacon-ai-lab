@@ -1,0 +1,22 @@
+{
+  "relationships": [
+    {
+      "predicate": "LOCATED_IN",
+      "target": "puerto-williams",
+      "status": "verified",
+      "source_ids": ["mop-obras-maritimas-muelle-multiproposito-puerto-williams"]
+    },
+    {
+      "predicate": "OPERATED_OR_DELIVERED_BY",
+      "target": "direccion-de-obras-portuarias",
+      "status": "candidate_target",
+      "source_ids": ["mop-obras-maritimas-muelle-multiproposito-puerto-williams"]
+    },
+    {
+      "predicate": "SERVES_CORRIDOR",
+      "target": "canal-beagle",
+      "status": "verified",
+      "source_ids": ["mop-obras-maritimas-muelle-multiproposito-puerto-williams"]
+    }
+  ]
+}
