@@ -1,0 +1,20 @@
+{
+  "chunks": [
+    {
+      "id": "puerto-williams-chunk-001",
+      "text": "Puerto Williams es una ciudad chilena ubicada en Isla Navarino, en la comuna de Cabo de Hornos, Región de Magallanes y de la Antártica Chilena. El INE la incorporó en 2019 dentro de las localidades clasificadas como ciudades bajo su nueva conceptualización geográfica.",
+      "claim_ids": ["puerto-williams-claim-001", "puerto-williams-claim-002"],
+      "source_ids": ["ine-ciudades-2019-puerto-williams", "sernatur-best-tourism-villages-puerto-williams", "chile-travel-puerto-williams-2026"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    },
+    {
+      "id": "puerto-williams-chunk-002",
+      "text": "Puerto Williams recibió en 2021 el reconocimiento Best Tourism Villages de la Organización Mundial del Turismo. El Aeródromo Guardiamarina Zañartu sirve a la ciudad como infraestructura de acceso aéreo.",
+      "claim_ids": ["puerto-williams-claim-003", "puerto-williams-claim-004"],
+      "source_ids": ["sernatur-best-tourism-villages-puerto-williams", "chile-travel-puerto-williams-2026"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    }
+  ]
+}
