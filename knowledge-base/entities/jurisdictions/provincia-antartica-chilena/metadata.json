@@ -1,0 +1,11 @@
+{
+  "id": "provincia-antartica-chilena",
+  "canonical_name": "Provincia Antártica Chilena",
+  "entity_type": "province",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["travel", "atlas", "observatory", "connectivity"],
+  "country": "Chile",
+  "parent_jurisdiction": "region-magallanes-antartica-chilena",
+  "governance_notes": "Current authorities, population and time-varying administrative indicators are dynamic data and must not be treated as stable identity claims."
+}
