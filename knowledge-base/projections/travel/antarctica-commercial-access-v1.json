@@ -1,14 +1,26 @@
 {
   "projection_id": "travel-antarctica-commercial-access-v1",
   "consumer": "travel-agent",
-  "purpose": "Project only operator-published commercial Antarctic access identity while excluding aggregate traffic statistics and date-specific availability.",
-  "entities": ["aerovias-dap", "antarctica21"],
+  "purpose": "Project operator-published commercial Antarctic access identity together with stable Chilean gateway geography and infrastructure, while excluding aggregate traffic statistics and date-specific operational availability.",
+  "entities": [
+    "aerovias-dap",
+    "antarctica21",
+    "isla-rey-jorge",
+    "bahia-fildes",
+    "base-aerea-antartica-presidente-frei",
+    "aerodromo-teniente-rodolfo-marsh"
+  ],
   "allowed_claims": [
     {"entity_id": "aerovias-dap", "claim_id": "dap-institution-001"},
     {"entity_id": "aerovias-dap", "claim_id": "dap-antarctic-product-002", "disposition": "dynamic_requires_current_verification"},
     {"entity_id": "antarctica21", "claim_id": "antarctica21-institution-001"},
     {"entity_id": "antarctica21", "claim_id": "antarctica21-air-cruise-002", "disposition": "dynamic_requires_current_verification"},
-    {"entity_id": "antarctica21", "claim_id": "antarctica21-express-003", "disposition": "dynamic_requires_current_verification"}
+    {"entity_id": "antarctica21", "claim_id": "antarctica21-express-003", "disposition": "dynamic_requires_current_verification"},
+    {"entity_id": "isla-rey-jorge", "claim_id": "isla-rey-jorge-claim-001", "disposition": "stable_public_core"},
+    {"entity_id": "bahia-fildes", "claim_id": "bahia-fildes-claim-001", "disposition": "stable_public_core"},
+    {"entity_id": "base-aerea-antartica-presidente-frei", "claim_id": "base-frei-claim-001", "disposition": "stable_public_core"},
+    {"entity_id": "aerodromo-teniente-rodolfo-marsh", "claim_id": "marsh-claim-001", "disposition": "stable_public_core"},
+    {"entity_id": "aerodromo-teniente-rodolfo-marsh", "claim_id": "marsh-claim-002", "disposition": "stable_public_core"}
   ],
   "blocked_claims": [
     {"entity_id": "aerovias-dap", "claim_id": "dap-traffic-statistics-004", "reason": "No independent institutional corroboration for aggregate traffic or market-share claims."},
@@ -19,6 +31,8 @@
     "Do not expose schedules, prices, availability, vessel assignment or passenger capacity as stable facts.",
     "Do not infer total Antarctic passenger traffic, market share or gateway share from operator marketing material.",
     "Puerto Williams may appear in a published itinerary without implying a direct commercial flight from Puerto Williams to Antarctica.",
-    "Gateway-policy claims from MINREL remain a separate evidence category from commercial products."
+    "Gateway-policy claims from MINREL remain a separate evidence category from commercial products.",
+    "Runway condition, NOTAMs, weather, aerodrome service hours, maritime conditions, bunkering status and current port operations require live official verification.",
+    "Stable geography and infrastructure identity may be projected from FACH, DGAC and DIRECTEMAR without implying present commercial availability."
   ]
 }
