@@ -1,0 +1,22 @@
+{
+  "relationships": [
+    {
+      "predicate": "PUBLISHES_ANTARCTIC_PRODUCT_FROM",
+      "target": "punta-arenas",
+      "status": "verified_current",
+      "source_ids": ["antarctica21-classic-air-cruise-2026", "antarctica21-air-cruises-2026"]
+    },
+    {
+      "predicate": "USES_ANTARCTIC_AIR_GATEWAY",
+      "target": "isla-rey-jorge",
+      "status": "candidate_target",
+      "source_ids": ["antarctica21-classic-air-cruise-2026"]
+    },
+    {
+      "predicate": "ITINERARY_MAY_INCLUDE",
+      "target": "puerto-williams",
+      "status": "verified_current",
+      "source_ids": ["antarctica21-express-air-cruise-2026"]
+    }
+  ]
+}
