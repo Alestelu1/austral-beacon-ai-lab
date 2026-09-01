@@ -1,0 +1,30 @@
+{
+  "chunks": [
+    {
+      "id": "pier-pw-stable-identity",
+      "text": "El Muelle Multipropósito de Puerto Williams es una infraestructura portuaria ubicada en Puerto Williams, Región de Magallanes y de la Antártica Chilena, Chile. El proyecto está a cargo de la Dirección de Obras Portuarias del Ministerio de Obras Públicas y utiliza el código BIP 30137224-0.",
+      "claim_ids": ["pier-located-in-puerto-williams", "pier-bip-30137224-0"],
+      "source_ids": ["mop-obras-maritimas-muelle-multiproposito-puerto-williams"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    },
+    {
+      "id": "pier-pw-purpose-and-scope",
+      "text": "El proyecto se desarrolla en dos etapas e incorpora infraestructura marítima y terrestre para atención de embarcaciones y pasajeros. El MOP señala que busca atender naves que transitan por el canal Beagle, incluidas naves científicas y cruceros con destino a la Antártica.",
+      "claim_ids": ["pier-two-stage-configuration", "pier-serves-scientific-and-antarctic-cruise-traffic"],
+      "source_ids": ["mop-obras-maritimas-muelle-multiproposito-puerto-williams"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    },
+    {
+      "id": "pier-pw-dynamic-status",
+      "text": "El estado de ejecución, fechas de término, presupuestos y porcentajes de avance del Muelle Multipropósito de Puerto Williams son datos dinámicos. Deben verificarse nuevamente en fuentes oficiales del MOP antes de responder consultas actuales o publicar estados de obra vigentes.",
+      "claim_ids": ["pier-project-state-execution-2026-09-01", "pier-official-page-completion-date-stale"],
+      "source_ids": ["mop-obras-maritimas-muelle-multiproposito-puerto-williams", "mop-programa-inversiones-2026-puerto-williams"],
+      "sensitivity": "operational_dynamic",
+      "requires_current_verification": true,
+      "embedding_eligible": false,
+      "blocked_consumers": ["travel-agent"]
+    }
+  ]
+}
