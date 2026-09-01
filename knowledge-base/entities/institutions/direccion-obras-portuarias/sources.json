@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "id": "dop-direcciones-mision-funciones",
+      "institution": "Dirección de Obras Portuarias",
+      "source_type": "official_webpage",
+      "title": "Direcciones de la DOP",
+      "url": "https://dop.mop.gob.cl/direcciones-de-la-dop/",
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "mop-muelle-multiproposito-puerto-williams",
+      "institution": "Ministerio de Obras Públicas",
+      "source_type": "official_project_page",
+      "title": "Construcción Obras Marítimas Infraestructura Portuaria Multipropósito en Puerto Williams",
+      "url": "https://www.mop.gob.cl/project/construccion-obras-maritimas-infraestructura-portuaria-multiproposito-en-puerto-williams/",
+      "verified_at": "2026-09-01"
+    }
+  ]
+}
