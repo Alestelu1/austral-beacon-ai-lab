@@ -1,0 +1,11 @@
+{
+  "id": "aerovias-dap",
+  "canonical_name": "Aerovías DAP",
+  "aliases": ["DAP Airlines", "DAP", "DAP Antártica", "Antarctic Airways"],
+  "entity_type": "private_air_operator",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["travel", "atlas", "connectivity", "antarctic-gateway"],
+  "country": "Chile",
+  "governance_notes": "Commercial schedules, departures, prices, capacities, product availability and Antarctic operating conditions are dynamic. Corporate claims about aggregate traffic or market share must not be treated as independent statistics."
+}
