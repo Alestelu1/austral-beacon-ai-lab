@@ -1,0 +1,10 @@
+{
+  "relationships": [
+    {
+      "predicate": "CONTAINS_JURISDICTION",
+      "target": "provincia-antartica-chilena",
+      "status": "verified",
+      "source_ids": ["bcn-region-magallanes-antartica-chilena"]
+    }
+  ]
+}
