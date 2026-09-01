@@ -1,0 +1,12 @@
+{
+  "id": "direccion-general-aeronautica-civil",
+  "canonical_name": "Dirección General de Aeronáutica Civil",
+  "aliases": ["DGAC"],
+  "entity_type": "civil_aviation_authority",
+  "status": "canonical",
+  "lifecycle_status": "operational",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["travel", "atlas", "observatory", "connectivity"],
+  "country": "Chile",
+  "governance_notes": "Operational aviation data published by DGAC/AIP must be treated as operational_dynamic and re-verified before use."
+}
