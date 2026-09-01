@@ -1,0 +1,45 @@
+{
+  "claims": [
+    {
+      "id": "cormorant-location-puerto-williams",
+      "text": "The Cormorant at 55 South está ubicado en Puerto Williams, Chile.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["royal-caribbean-group-cormorant-gateway-2025", "royal-caribbean-group-cormorant-150-rooms-2025"]
+    },
+    {
+      "id": "cormorant-capacity-150-rooms",
+      "text": "Royal Caribbean Group describe The Cormorant at 55 South como un hotel de 150 habitaciones.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["royal-caribbean-group-cormorant-150-rooms-2025"]
+    },
+    {
+      "id": "cormorant-antarctica-fly-cruise-role",
+      "text": "Silversea y Royal Caribbean Group presentan The Cormorant at 55 South como parte del recorrido logístico y de hospitalidad asociado a Antarctica Fly Cruise desde Puerto Williams.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["royal-caribbean-group-cormorant-gateway-2025", "silversea-cormorant-design-2026"]
+    },
+    {
+      "id": "cormorant-opening-2026",
+      "text": "Las fuentes corporativas de Silversea/Royal Caribbean Group anuncian apertura de The Cormorant at 55 South durante 2026.",
+      "status": "verified_dynamic",
+      "sensitivity": "operational_dynamic",
+      "verified_at": "2026-09-01",
+      "requires_current_verification": true,
+      "embedding_eligible": false,
+      "source_ids": ["silversea-cormorant-design-2026"]
+    },
+    {
+      "id": "cormorant-booking-and-operation-status",
+      "text": "Disponibilidad, fecha exacta de apertura, estado de construcción y condiciones operativas del hotel requieren verificación vigente antes de responder como información actual.",
+      "status": "governance_rule",
+      "sensitivity": "operational_dynamic",
+      "requires_current_verification": true,
+      "embedding_eligible": false,
+      "blocked_consumers": ["travel-agent"],
+      "source_ids": ["silversea-cormorant-design-2026"]
+    }
+  ]
+}
