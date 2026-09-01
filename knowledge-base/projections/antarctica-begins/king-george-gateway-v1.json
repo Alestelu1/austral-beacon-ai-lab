@@ -1,0 +1,56 @@
+{
+  "projection_id": "antarctica-begins-king-george-gateway-v1",
+  "projection_type": "product_projection",
+  "consumer": "antarctica-begins",
+  "dependencies": [
+    "../shared/antarctic-gateway-king-george-v1.json",
+    "../travel/antarctica-commercial-access-v1.json"
+  ],
+  "purpose": "Present the Chilean Antarctic gateway chain from southern Chile to King George Island, separating stable gateway geography and infrastructure from operator-published commercial products and from state/science capabilities.",
+  "focus_entities": [
+    "punta-arenas",
+    "puerto-williams",
+    "aerovias-dap",
+    "antarctica21",
+    "isla-rey-jorge",
+    "bahia-fildes",
+    "base-aerea-antartica-presidente-frei",
+    "aerodromo-teniente-rodolfo-marsh",
+    "capitania-puerto-bahia-fildes"
+  ],
+  "supplemental_claims": [
+    {"entity_id": "punta-arenas", "claim_id": "punta-arenas-claim-001", "disposition": "stable_public_core"},
+    {"entity_id": "punta-arenas", "claim_id": "punta-arenas-claim-002", "disposition": "stable_public_core"},
+    {"entity_id": "punta-arenas", "claim_id": "punta-arenas-claim-003", "disposition": "stable_public_core"},
+    {"entity_id": "puerto-williams", "claim_id": "puerto-williams-claim-001", "disposition": "stable_public_core"},
+    {"entity_id": "puerto-williams", "claim_id": "puerto-williams-claim-002", "disposition": "stable_public_core"},
+    {"entity_id": "puerto-williams", "claim_id": "puerto-williams-claim-004", "disposition": "stable_public_core"}
+  ],
+  "presentation_layers": [
+    "gateway_origin_context",
+    "commercial_access_identity",
+    "king_george_arrival_infrastructure",
+    "maritime_authority_context"
+  ],
+  "blocked_domains": [
+    "current_prices",
+    "current_departure_dates",
+    "current_availability",
+    "current_air_traffic_statistics",
+    "current_passenger_counts",
+    "market_share",
+    "current_runway_condition",
+    "notams",
+    "weather",
+    "current_port_conditions",
+    "bunkering_status"
+  ],
+  "rules": [
+    "Do not equate gateway-policy status with a guaranteed commercial service.",
+    "Operator pages verify that a product is published by that operator; they do not independently verify a departure on a specific date.",
+    "Do not infer a direct Puerto Williams-Antarctica commercial flight from an itinerary that merely includes Puerto Williams.",
+    "Keep commercial operators distinct from FACH, DGAC, DIRECTEMAR and INACH roles.",
+    "Use the shared King George projection for stable destination-side context instead of duplicating its claims here.",
+    "Any current schedules, prices, availability, weather, NOTAM or port condition require live first-party or official verification."
+  ]
+}
