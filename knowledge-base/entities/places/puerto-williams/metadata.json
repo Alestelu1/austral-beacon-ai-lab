@@ -1,0 +1,12 @@
+{
+  "id": "puerto-williams",
+  "canonical_name": "Puerto Williams",
+  "entity_type": "city",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["travel", "atlas", "observatory", "connectivity"],
+  "country": "Chile",
+  "parent_jurisdiction": "comuna-cabo-de-hornos",
+  "geographic_context": ["isla-navarino", "canal-beagle"],
+  "governance_notes": "Transport schedules, service availability, current construction status and tourism capacity are dynamic and require current verification."
+}
