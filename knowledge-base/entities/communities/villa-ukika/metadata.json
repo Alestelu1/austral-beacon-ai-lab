@@ -1,0 +1,11 @@
+{
+  "id": "villa-ukika",
+  "canonical_name": "Villa Ukika",
+  "entity_type": "living_indigenous_community_context",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["travel", "atlas", "cultural-context"],
+  "country": "Chile",
+  "geometry_status": "pending_authoritative_point",
+  "governance_notes": "Describe Villa Ukika as a contemporary living Yagan community context. Do not reduce it to a static tourist attraction or use 'last descendants' wording. Visitor access is dynamic and culturally sensitive."
+}

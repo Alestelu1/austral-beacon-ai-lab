@@ -1,0 +1,29 @@
+{
+  "sources": [
+    {
+      "id": "serpat-museo-yagan-usi-2024",
+      "institution": "Servicio Nacional del Patrimonio Cultural",
+      "source_type": "official_webpage",
+      "title": "Reinaugurado museo más austral del mundo con nuevo nombre y museografía",
+      "url": "https://www.patrimoniocultural.gob.cl/magallanes/noticias/reinaugurado-museo-mas-austral-del-mundo-con-nuevo-nombre-y-museografia",
+      "source_date": "2024-01-10",
+      "verified_at": "2026-08-24"
+    },
+    {
+      "id": "serpat-investigacion-coleccion-yagan",
+      "institution": "Subdirección de Investigación, Servicio Nacional del Patrimonio Cultural",
+      "source_type": "official_research_webpage",
+      "title": "Colección etnográfica del Museo Antropológico Martin Gusinde de Puerto Williams",
+      "url": "https://www.investigacion.patrimoniocultural.gob.cl/bajo-la-lupa/coleccion-etnografica-del-museo-antropologico-martin-gusinde-de-puerto-williams",
+      "verified_at": "2026-08-24"
+    },
+    {
+      "id": "austral-batch-03-validation-2026-08-24",
+      "institution": "Austral Beacon",
+      "source_type": "internal_verification_record",
+      "title": "Batch 03 Chilean authoritative validation",
+      "repository_path": "data/verification/batch-03-chilean-authoritative-validation-2026-08-24.json",
+      "verified_at": "2026-08-24"
+    }
+  ]
+}

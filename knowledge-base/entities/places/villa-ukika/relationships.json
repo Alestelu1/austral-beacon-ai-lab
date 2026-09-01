@@ -1,15 +1,10 @@
 {
-  "entity_id": "villa-ukika",
   "relationships": [
-    {"target": "puerto-williams", "relation": "near"},
-    {"target": "isla-navarino", "relation": "located_on"},
-    {"target": "pueblo-yagan", "relation": "cultural_context"},
-    {"target": "rio-ukika", "relation": "associated_with"},
-    {"target": "parque-ukika", "relation": "adjacent_or_associated"},
-    {"target": "bahia-mejillones", "relation": "historical_family_origin_mentioned_in_source"},
-    {"target": "robalo", "relation": "historical_family_origin_mentioned_in_source"},
-    {"target": "punta-truco", "relation": "historical_family_origin_mentioned_in_source"},
-    {"target": "museo-territorial-yagan-usi", "relation": "cultural_interpretation_link"}
-  ],
-  "provenance_note": "Relations are limited to connections explicitly supported by the source documents. They should not be interpreted as claims of legal status, ownership, genealogy or political representation."
+    {
+      "predicate": "MIGRATED_TO",
+      "target": "communities/villa-ukika",
+      "status": "verified",
+      "source_ids": ["austral-batch-03-validation-2026-08-24"]
+    }
+  ]
 }

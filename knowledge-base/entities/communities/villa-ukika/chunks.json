@@ -1,0 +1,18 @@
+[
+  {
+    "chunk_id": "villa-ukika-community-001",
+    "text": "Villa Ukika is a contemporary living Yagan community context near Puerto Williams on Isla Navarino. Austral Beacon's Chilean-source validation requires that it not be reduced to a static tourist attraction or framed as a frozen ethnographic site.",
+    "claim_ids": ["villa-ukika-identity-001"],
+    "source_ids": ["serpat-museo-yagan-usi-2024", "austral-batch-03-validation-2026-08-24"],
+    "sensitivity": "public_core",
+    "embedding_eligible": true
+  },
+  {
+    "chunk_id": "villa-ukika-community-002",
+    "text": "Villa Ukika is associated with the Comunidad Indígena Yaghan de Bahía Mejillones. Current Chilean heritage sources emphasize Yagan cultural continuity, including basketry, language transmission and ties to territory and maritory.",
+    "claim_ids": ["villa-ukika-community-002", "villa-ukika-culture-003"],
+    "source_ids": ["serpat-museo-yagan-usi-2024", "serpat-investigacion-coleccion-yagan", "austral-batch-03-validation-2026-08-24"],
+    "sensitivity": "public_core",
+    "embedding_eligible": true
+  }
+]

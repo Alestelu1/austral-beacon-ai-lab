@@ -1,33 +1,11 @@
 {
   "id": "villa-ukika",
-  "name": "Villa Ukika",
-  "entity_type": "community",
-  "country": "Chile",
-  "region": "Región de Magallanes y de la Antártica Chilena",
-  "province": "Provincia Antártica Chilena",
-  "commune": "Cabo de Hornos",
-  "island": "Isla Navarino",
-  "nearby_city": "Puerto Williams",
-  "cultural_context": ["Pueblo Yagán"],
-  "topics": [
-    "cultura yagán",
-    "comunidad",
-    "patrimonio cultural",
-    "cestería",
-    "pesca artesanal",
-    "Puerto Williams",
-    "Isla Navarino"
-  ],
-  "source_documents": [
-    "2.-Dossier.-Patagonia-ESPANOL.pdf",
-    "MANUAL-DE-DESTINO-Magallanes-2025_compressed-1.pdf",
-    "FolletoPuertoWilliams2022 v.5_c.pdf"
-  ],
-  "projects": [
-    "end-of-the-world-atlas",
-    "end-of-the-world-travel",
-    "travel-agent"
-  ],
-  "source_priority": "high",
-  "verification_status": "document-sourced"
+  "canonical_name": "Villa Ukika",
+  "entity_type": "legacy_redirect",
+  "status": "legacy_redirect",
+  "sensitivity": "internal_research",
+  "retrieval_scope": [],
+  "canonical_target": "knowledge-base/entities/communities/villa-ukika",
+  "retrieval_blocked": true,
+  "migration_note": "Canonical entity migrated to communities/ to align with ENTITY_TAXONOMY.md."
 }

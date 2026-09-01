@@ -1,0 +1,28 @@
+{
+  "relationships": [
+    {
+      "predicate": "COMMUNITY_CONTEXT_NEAR",
+      "target": "puerto-williams",
+      "status": "verified",
+      "source_ids": ["serpat-museo-yagan-usi-2024", "austral-batch-03-validation-2026-08-24"]
+    },
+    {
+      "predicate": "LOCATED_ON",
+      "target": "isla-navarino",
+      "status": "verified",
+      "source_ids": ["austral-batch-03-validation-2026-08-24"]
+    },
+    {
+      "predicate": "LOCATED_IN",
+      "target": "comuna-cabo-de-hornos",
+      "status": "verified",
+      "source_ids": ["austral-batch-03-validation-2026-08-24"]
+    },
+    {
+      "predicate": "ASSOCIATED_WITH_COMMUNITY",
+      "target": "comunidad-indigena-yaghan-bahia-mejillones",
+      "status": "candidate_target",
+      "source_ids": ["serpat-museo-yagan-usi-2024", "austral-batch-03-validation-2026-08-24"]
+    }
+  ]
+}

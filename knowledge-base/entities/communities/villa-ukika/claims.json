@@ -1,0 +1,32 @@
+{
+  "claims": [
+    {
+      "id": "villa-ukika-identity-001",
+      "claim": "Villa Ukika is a contemporary Yagan community context near Puerto Williams.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["serpat-museo-yagan-usi-2024", "austral-batch-03-validation-2026-08-24"]
+    },
+    {
+      "id": "villa-ukika-community-002",
+      "claim": "Villa Ukika is associated with the Comunidad Indígena Yaghan de Bahía Mejillones.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["serpat-museo-yagan-usi-2024", "serpat-investigacion-coleccion-yagan", "austral-batch-03-validation-2026-08-24"]
+    },
+    {
+      "id": "villa-ukika-culture-003",
+      "claim": "Current Chilean heritage sources frame Yagan cultural continuity through practices including basketry, language transmission and ties to territory and maritory.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["serpat-investigacion-coleccion-yagan", "austral-batch-03-validation-2026-08-24"]
+    },
+    {
+      "id": "villa-ukika-geometry-004",
+      "claim": "An authoritative canonical point geometry for Villa Ukika has not yet been established in the verified corpus.",
+      "status": "governance_constraint",
+      "sensitivity": "public_core",
+      "source_ids": ["austral-batch-03-validation-2026-08-24"]
+    }
+  ]
+}
