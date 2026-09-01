@@ -1,0 +1,7 @@
+{
+  "relationships": [
+    {"predicate":"VIA","target":"punta-arenas","status":"verified","source_ids":["latam-scl-puq-route-2026","dap-puq-wpu-route-2026"]},
+    {"predicate":"DESTINATION","target":"puerto-williams","status":"verified","source_ids":["dap-puq-wpu-route-2026"]},
+    {"predicate":"ORIGIN_EXTERNAL","target":"santiago-de-chile","status":"candidate_target","source_ids":["latam-scl-puq-route-2026"]}
+  ]
+}

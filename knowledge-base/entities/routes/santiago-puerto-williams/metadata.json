@@ -1,0 +1,12 @@
+{
+  "id": "santiago-puerto-williams",
+  "canonical_name": "Santiago → Puerto Williams via Punta Arenas",
+  "entity_type": "composed_travel_corridor",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["travel", "connectivity", "observatory"],
+  "origin_external": "santiago-de-chile",
+  "via": "punta-arenas",
+  "destination": "puerto-williams",
+  "governance_notes": "The corridor pattern is reusable. Operator schedules, fares, capacity and date-specific availability are operational_dynamic and require current verification."
+}

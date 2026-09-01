@@ -1,0 +1,29 @@
+{
+  "claims": [
+    {
+      "id": "scl-wpu-composed-corridor-001",
+      "statement": "Un corredor de viaje verificable desde Santiago hacia Puerto Williams puede estructurarse vía Punta Arenas, combinando el tramo Santiago–Punta Arenas con el tramo Punta Arenas–Puerto Williams.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["latam-scl-puq-route-2026", "dap-puq-wpu-route-2026"]
+    },
+    {
+      "id": "scl-puq-air-service-002",
+      "statement": "LATAM publica vuelos directos entre Santiago y Punta Arenas.",
+      "status": "verified_current",
+      "sensitivity": "operational_dynamic",
+      "source_ids": ["latam-scl-puq-route-2026"],
+      "verified_at": "2026-09-01",
+      "requires_current_verification": true
+    },
+    {
+      "id": "puq-wpu-air-service-003",
+      "statement": "Aerovías DAP publica una ruta aérea regular entre Punta Arenas y Puerto Williams.",
+      "status": "verified_current",
+      "sensitivity": "operational_dynamic",
+      "source_ids": ["dap-puq-wpu-route-2026"],
+      "verified_at": "2026-09-01",
+      "requires_current_verification": true
+    }
+  ]
+}

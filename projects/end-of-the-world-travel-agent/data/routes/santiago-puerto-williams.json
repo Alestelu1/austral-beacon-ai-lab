@@ -2,36 +2,16 @@
   "id": "santiago-puerto-williams",
   "origin": "Santiago",
   "destination": "Puerto Williams",
-  "summary": "La conexión habitual desde Santiago hacia Puerto Williams se organiza en dos etapas, utilizando Punta Arenas como principal punto de enlace dentro de Chile.",
+  "summary": "Un corredor verificable desde Santiago hacia Puerto Williams puede estructurarse vía Punta Arenas. Esta ficha es una proyección de la Knowledge Base y no garantiza disponibilidad para una fecha concreta.",
   "stages": [
-    {
-      "from": "Santiago",
-      "to": "Punta Arenas",
-      "mode": "air",
-      "stability": "dynamic",
-      "note": "Los horarios, tarifas y disponibilidad deben verificarse directamente con proveedores oficiales antes del viaje."
-    },
-    {
-      "from": "Punta Arenas",
-      "to": "Puerto Williams",
-      "mode": "air-or-sea",
-      "stability": "dynamic",
-      "note": "La operación aérea o marítima puede variar por temporada, condiciones meteorológicas y programación del proveedor."
-    }
+    {"from":"Santiago","to":"Punta Arenas","mode":"air","stability":"dynamic","note":"LATAM publica el tramo Santiago–Punta Arenas; horarios, tarifas y cupos requieren verificación actual."},
+    {"from":"Punta Arenas","to":"Puerto Williams","mode":"air-or-sea","stability":"dynamic","note":"El segundo tramo requiere verificar servicios vigentes y disponibilidad con operadores responsables."}
   ],
-  "warnings": [
-    "No se deben asumir horarios, precios ni cupos vigentes a partir de esta ficha.",
-    "Confirma cada tramo con fuentes oficiales antes de comprar o iniciar el viaje."
-  ],
+  "warnings": ["Esta ficha es una proyección de conocimiento canónico, no una fuente independiente.","No asumir horarios, precios, frecuencias, conexiones garantizadas ni disponibilidad vigente."],
   "sources": [
-    {
-      "title": "Información oficial de conectividad austral — registro provisional",
-      "publisher": "Austral Beacon Media",
-      "url": "https://www.endoftheworld.travel/",
-      "verifiedAt": "2026-07-24",
-      "status": "provisional"
-    }
+    {"title":"Vuelos desde Santiago a Punta Arenas","publisher":"LATAM Airlines","url":"https://www.latamairlines.com/cl/es/destinos/vuelos-desde-santiago-a-punta-arenas","verifiedAt":"2026-09-01","status":"verified","evidenceNote":"Confirma que LATAM publica el tramo SCL–PUQ; no garantiza disponibilidad futura."},
+    {"title":"Vuelos Regulares — Punta Arenas–Puerto Williams","publisher":"Aerovías DAP","url":"https://dapairline.com/vuelos-regulares/","verifiedAt":"2026-09-01","status":"verified","evidenceNote":"Confirma que DAP publica el tramo PUQ–WPU; no garantiza disponibilidad para una fecha concreta."}
   ],
   "recommendedPage": "/puerto-williams-travel-guide.html",
-  "verifiedAt": "2026-07-24"
+  "verifiedAt": "2026-09-01"
 }

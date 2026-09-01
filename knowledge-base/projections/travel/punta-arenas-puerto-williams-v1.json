@@ -1,0 +1,9 @@
+{
+  "projection_id": "travel-punta-arenas-puerto-williams-v1",
+  "source_of_truth": "knowledge-base/entities/routes/punta-arenas-puerto-williams",
+  "consumer": "end-of-the-world-travel-assistant",
+  "projection_mode": "stable_corridor_with_dynamic_service_guards",
+  "allowed_claims": ["puq-wpu-corridor-001"],
+  "dynamic_claims": ["puq-wpu-air-service-002", "puq-wpu-sea-service-003"],
+  "rules": {"current_service_requires_verification":true,"no_schedule_or_fare_as_stable_fact":true}
+}

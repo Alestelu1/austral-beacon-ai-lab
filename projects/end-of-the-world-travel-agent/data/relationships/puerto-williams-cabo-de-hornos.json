@@ -2,66 +2,20 @@
   "id": "puerto-williams-cabo-de-hornos",
   "subject": "Puerto Williams",
   "object": "Cabo de Hornos",
-  "administrativeRelation": "Puerto Williams es la ciudad y capital de la comuna de Cabo de Hornos, en la Provincia Antártica Chilena, Región de Magallanes y de la Antártica Chilena. En ese sentido administrativo, Puerto Williams pertenece a la comuna de Cabo de Hornos.",
-  "geographicDistinction": "Puerto Williams se ubica en la costa norte de la Isla Navarino, frente al Canal Beagle. El cabo de Hornos propiamente tal y la isla Hornos se encuentran mucho más al sur, en el archipiélago Wollaston. Por lo tanto, aunque Puerto Williams pertenece a la comuna de Cabo de Hornos, no está situado en el cabo de Hornos ni en la isla Hornos.",
+  "administrativeRelation": "Puerto Williams está ubicado en la comuna de Cabo de Hornos, Provincia Antártica Chilena, Región de Magallanes y de la Antártica Chilena.",
+  "geographicDistinction": "La pertenencia de Puerto Williams a la comuna de Cabo de Hornos no significa que la ciudad sea el cabo geográfico, la isla Hornos o el Parque Nacional Cabo de Hornos. Esos referentes deben mantenerse separados.",
   "distinctReferents": [
-    {
-      "kind": "city",
-      "name": "Puerto Williams",
-      "description": "Ciudad en la costa norte de Isla Navarino, capital de la comuna de Cabo de Hornos y de la Provincia Antártica Chilena."
-    },
-    {
-      "kind": "commune",
-      "name": "Comuna de Cabo de Hornos",
-      "description": "Comuna administrativa de la Provincia Antártica Chilena cuya capital es Puerto Williams; abarca Isla Navarino y territorios insulares al sur."
-    },
-    {
-      "kind": "cape",
-      "name": "Cabo de Hornos (cabo geográfico)",
-      "description": "Accidente geográfico en el archipiélago Wollaston, en el extremo sur del territorio insular, distinto de la ciudad de Puerto Williams."
-    },
-    {
-      "kind": "island",
-      "name": "Isla Hornos",
-      "description": "Isla del archipiélago Wollaston donde se sitúa el cabo geográfico; su acceso depende de navegación autorizada."
-    },
-    {
-      "kind": "national-park",
-      "name": "Parque Nacional Cabo de Hornos",
-      "description": "Área protegida administrada por CONAF dentro de la comuna de Cabo de Hornos, con visita sujeta a restricciones."
-    }
+    {"kind":"city","name":"Puerto Williams","description":"Ciudad de Isla Navarino dentro de la comuna de Cabo de Hornos."},
+    {"kind":"commune","name":"Comuna de Cabo de Hornos","description":"Unidad político-administrativa de la Provincia Antártica Chilena."},
+    {"kind":"cape","name":"Cabo de Hornos (cabo geográfico)","description":"Referente geográfico distinto de Puerto Williams y de la comuna administrativa."},
+    {"kind":"island","name":"Isla Hornos","description":"Isla asociada al cabo geográfico; no debe confundirse con Puerto Williams."},
+    {"kind":"national-park","name":"Parque Nacional Cabo de Hornos","description":"Área protegida distinta de la comuna y del cabo geográfico."}
   ],
-  "warnings": [
-    "El nombre \"Cabo de Hornos\" puede referirse a la comuna administrativa, al cabo geográfico, a la isla Hornos o al Parque Nacional Cabo de Hornos; no deben tratarse como una sola entidad.",
-    "La pertenencia administrativa de Puerto Williams a la comuna de Cabo de Hornos no implica cercanía física ni acceso directo al cabo geográfico o a la isla Hornos.",
-    "El acceso turístico a la isla Hornos y al Parque Nacional Cabo de Hornos depende de navegación autorizada, condiciones meteorológicas, disponibilidad operativa y normas vigentes de CONAF, y debe confirmarse con las instituciones y operadores responsables."
-  ],
+  "warnings": ["Esta ficha es una proyección de entidades canónicas y no una fuente independiente.","El acceso a isla Hornos o al parque es información operacional y debe verificarse actualmente."],
   "sources": [
-    {
-      "title": "Reporte Comunal de Cabo de Hornos 2025",
-      "publisher": "Biblioteca del Congreso Nacional de Chile",
-      "url": "https://www.bcn.cl/siit/reportescomunales/comunas_v.html?anno=2025&idcom=12201",
-      "verifiedAt": "2026-07-25",
-      "status": "verified"
-    },
-    {
-      "title": "Actualización Plan Regulador Comunal Puerto Williams, Comuna de Cabo de Hornos",
-      "publisher": "Biblioteca del Congreso Nacional de Chile — LeyChile",
-      "url": "https://www.bcn.cl/leychile/navegar?idNorma=1222916",
-      "verifiedAt": "2026-07-25",
-      "status": "verified"
-    },
-    {
-      "title": "Parque Nacional Cabo de Hornos",
-      "publisher": "Corporación Nacional Forestal",
-      "url": "https://www.conaf.cl/parque_nacionales/parque-nacional-cabo-de-hornos/",
-      "verifiedAt": "2026-07-25",
-      "status": "verified"
-    }
+    {"title":"Organización Mundial del Turismo reconoce a Puerto Williams y Pica por su aporte al turismo rural","publisher":"Servicio Nacional de Turismo","url":"https://www.sernatur.cl/organizacion-mundial-del-turismo-reconoce-a-puerto-williams-y-pica-por-su-aporte-al-turismo-rural/","verifiedAt":"2026-09-01","status":"verified"},
+    {"title":"Reporte Comunal de Cabo de Hornos","publisher":"Biblioteca del Congreso Nacional de Chile","url":"https://www.bcn.cl/siit/reportescomunales/comunas_v.html?anno=2025&idcom=12201","verifiedAt":"2026-09-01","status":"verified"}
   ],
-  "suggestedInternalLinks": [
-    { "path": "/puerto-williams", "label": "Puerto Williams" },
-    { "path": "/cabo-de-hornos", "label": "Cabo de Hornos" }
-  ],
-  "verifiedAt": "2026-07-25"
+  "suggestedInternalLinks": [{"path":"/puerto-williams","label":"Puerto Williams"},{"path":"/cabo-de-hornos","label":"Cabo de Hornos"}],
+  "verifiedAt": "2026-09-01"
 }

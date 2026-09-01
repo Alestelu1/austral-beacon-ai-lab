@@ -1,0 +1,12 @@
+{
+  "chunks": [
+    {
+      "id": "scl-wpu-route-chunk-001",
+      "text": "Desde Santiago, un corredor verificable hacia Puerto Williams puede estructurarse vía Punta Arenas. La disponibilidad de cada vuelo o servicio concreto debe verificarse para la fecha de viaje.",
+      "claim_ids": ["scl-wpu-composed-corridor-001"],
+      "source_ids": ["latam-scl-puq-route-2026", "dap-puq-wpu-route-2026"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    }
+  ]
+}

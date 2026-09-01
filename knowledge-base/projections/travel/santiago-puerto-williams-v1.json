@@ -1,0 +1,9 @@
+{
+  "projection_id": "travel-santiago-puerto-williams-v1",
+  "source_of_truth": "knowledge-base/entities/routes/santiago-puerto-williams",
+  "consumer": "end-of-the-world-travel-assistant",
+  "projection_mode": "stable_composed_corridor_with_dynamic_service_guards",
+  "allowed_claims": ["scl-wpu-composed-corridor-001"],
+  "dynamic_claims": ["scl-puq-air-service-002", "puq-wpu-air-service-003"],
+  "rules": {"current_service_requires_verification":true,"no_schedule_fare_or_capacity_as_stable_fact":true}
+}

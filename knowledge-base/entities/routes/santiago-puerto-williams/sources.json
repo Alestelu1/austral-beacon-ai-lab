@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "id": "latam-scl-puq-route-2026",
+      "institution": "LATAM Airlines",
+      "source_type": "first_party_operator_webpage",
+      "title": "Vuelos desde Santiago a Punta Arenas",
+      "url": "https://www.latamairlines.com/cl/es/destinos/vuelos-desde-santiago-a-punta-arenas",
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "dap-puq-wpu-route-2026",
+      "institution": "Aerovías DAP",
+      "source_type": "first_party_operator_webpage",
+      "title": "Vuelos Regulares — Punta Arenas–Puerto Williams",
+      "url": "https://dapairline.com/vuelos-regulares/",
+      "verified_at": "2026-09-01"
+    }
+  ]
+}

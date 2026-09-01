@@ -1,0 +1,7 @@
+{
+  "projection_id": "travel-puerto-williams-cabo-de-hornos-v1",
+  "source_of_truth": ["knowledge-base/entities/places/puerto-williams","knowledge-base/entities/jurisdictions/comuna-cabo-de-hornos"],
+  "consumer": "end-of-the-world-travel-assistant",
+  "projection_mode": "stable_relationship_and_disambiguation_only",
+  "rules": {"distinguish_commune_cape_island_and_park":true,"access_is_operational_dynamic":true,"do_not_infer_proximity_from_administrative_membership":true}
+}
