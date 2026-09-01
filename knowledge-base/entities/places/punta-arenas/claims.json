@@ -1,0 +1,25 @@
+{
+  "claims": [
+    {
+      "id": "punta-arenas-claim-001",
+      "statement": "Punta Arenas es la capital de la Región de Magallanes y de la Antártica Chilena.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["subdere-magallanes-regional-capital"]
+    },
+    {
+      "id": "punta-arenas-claim-002",
+      "statement": "Punta Arenas es una ciudad situada junto al Estrecho de Magallanes.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["chile-travel-punta-arenas-2026", "ine-degurba-punta-arenas"]
+    },
+    {
+      "id": "punta-arenas-claim-003",
+      "statement": "Chile Travel describe Punta Arenas como una base estratégica para la exploración antártica.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["chile-travel-punta-arenas-2026"]
+    }
+  ]
+}

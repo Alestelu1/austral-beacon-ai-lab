@@ -1,0 +1,22 @@
+{
+  "relationships": [
+    {
+      "predicate": "CAPITAL_OF",
+      "target": "region-magallanes-antartica-chilena",
+      "status": "verified",
+      "source_ids": ["subdere-magallanes-regional-capital"]
+    },
+    {
+      "predicate": "ADJACENT_TO",
+      "target": "strait-of-magellan",
+      "status": "verified",
+      "source_ids": ["chile-travel-punta-arenas-2026", "ine-degurba-punta-arenas"]
+    },
+    {
+      "predicate": "LOCATED_IN",
+      "target": "comuna-punta-arenas",
+      "status": "candidate_target",
+      "source_ids": ["subdere-magallanes-regional-capital"]
+    }
+  ]
+}

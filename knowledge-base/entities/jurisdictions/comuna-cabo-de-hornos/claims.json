@@ -6,6 +6,13 @@
       "status": "verified",
       "sensitivity": "public_core",
       "source_ids": ["bcn-comuna-cabo-de-hornos"]
+    },
+    {
+      "id": "cabo-hornos-commune-claim-002",
+      "statement": "El nombre Cabo de Hornos también aparece en una entidad distinta: el Parque Nacional Cabo de Hornos, ubicado por CONAF en la comuna de Cabo de Hornos y en el archipiélago Wollaston.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["conaf-parque-nacional-cabo-de-hornos"]
     }
   ]
 }

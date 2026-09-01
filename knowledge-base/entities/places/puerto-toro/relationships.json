@@ -1,0 +1,22 @@
+{
+  "relationships": [
+    {
+      "predicate": "LOCATED_IN",
+      "target": "comuna-cabo-de-hornos",
+      "status": "verified",
+      "source_ids": ["dga-puerto-toro-2025"]
+    },
+    {
+      "predicate": "LOCATED_ON",
+      "target": "isla-navarino",
+      "status": "verified",
+      "source_ids": ["sernatur-puerto-toro-attractiveness-catalog"]
+    },
+    {
+      "predicate": "DISTINCT_FROM",
+      "target": "puerto-williams",
+      "status": "verified",
+      "source_ids": ["dga-puerto-toro-2025", "sernatur-puerto-toro-attractiveness-catalog"]
+    }
+  ]
+}

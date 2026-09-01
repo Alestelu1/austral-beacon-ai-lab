@@ -4,8 +4,8 @@
   "entity_type": "commune",
   "status": "canonical",
   "sensitivity": "public_core",
-  "retrieval_scope": ["travel", "atlas", "observatory", "connectivity"],
+  "retrieval_scope": ["travel", "atlas", "observatory"],
   "country": "Chile",
   "parent_jurisdiction": "provincia-antartica-chilena",
-  "governance_notes": "Population, current authorities, municipal budgets and changing indicators are dynamic data and must not be treated as stable identity claims."
+  "governance_notes": "The administrative commune must not be collapsed with the geographic Cape Horn, Isla Hornos or Parque Nacional Cabo de Hornos. Current visitor access, navigation and park-entry conditions are operational_dynamic."
 }

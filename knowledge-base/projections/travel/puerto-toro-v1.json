@@ -1,0 +1,15 @@
+{
+  "projection_id": "travel-puerto-toro-v1",
+  "source_of_truth": "knowledge-base",
+  "consumer": "end-of-the-world-travel-assistant",
+  "entity_id": "puerto-toro",
+  "status": "ready_for_runtime",
+  "projection_mode": "stable_public_core_only",
+  "allowed_claims": [
+    {"claim_id": "puerto-toro-claim-001", "embedding_eligible": true},
+    {"claim_id": "puerto-toro-claim-002", "embedding_eligible": true},
+    {"claim_id": "puerto-toro-claim-003", "embedding_eligible": true}
+  ],
+  "blocked_context": ["current maritime timetable", "ticket availability", "visitor access assumptions", "unverified coordinates"],
+  "principles": {"no_parallel_canonical_entity": true, "claim_level_provenance_required": true, "operational_information_requires_live_verification": true}
+}

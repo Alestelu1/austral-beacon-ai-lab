@@ -1,0 +1,25 @@
+{
+  "claims": [
+    {
+      "id": "puerto-toro-claim-001",
+      "statement": "Puerto Toro es un poblado de la comuna de Cabo de Hornos, Provincia Antártica Chilena.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["dga-puerto-toro-2025"]
+    },
+    {
+      "id": "puerto-toro-claim-002",
+      "statement": "SERNATUR registra Puerto Toro como un pueblo/localidad de Isla Navarino, en la comuna de Cabo de Hornos.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["sernatur-puerto-toro-attractiveness-catalog"]
+    },
+    {
+      "id": "puerto-toro-claim-003",
+      "statement": "Puerto Toro cuenta con infraestructura portuaria pública inaugurada por el Ministerio de Obras Públicas en 2025.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["mop-puerto-toro-port-2025"]
+    }
+  ]
+}

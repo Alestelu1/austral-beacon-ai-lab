@@ -1,0 +1,15 @@
+{
+  "projection_id": "travel-punta-arenas-v1",
+  "source_of_truth": "knowledge-base",
+  "consumer": "end-of-the-world-travel-assistant",
+  "entity_id": "punta-arenas",
+  "status": "ready_for_runtime",
+  "projection_mode": "stable_public_core_only",
+  "allowed_claims": [
+    {"claim_id": "punta-arenas-claim-001", "embedding_eligible": true},
+    {"claim_id": "punta-arenas-claim-002", "embedding_eligible": true},
+    {"claim_id": "punta-arenas-claim-003", "embedding_eligible": true}
+  ],
+  "blocked_context": ["current flights", "seasonal international routes", "current ferry schedules", "weather", "expedition availability", "unverified coordinates"],
+  "principles": {"no_parallel_canonical_entity": true, "claim_level_provenance_required": true, "operational_information_requires_live_verification": true}
+}

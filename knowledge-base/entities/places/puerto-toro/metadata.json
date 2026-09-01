@@ -1,0 +1,13 @@
+{
+  "id": "puerto-toro",
+  "canonical_name": "Puerto Toro",
+  "entity_type": "settlement",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["travel", "atlas", "connectivity"],
+  "country": "Chile",
+  "parent_jurisdiction": "comuna-cabo-de-hornos",
+  "geographic_context": ["isla-navarino"],
+  "geometry_status": "pending_authoritative_point",
+  "governance_notes": "Do not infer current maritime schedules, visitor availability or coordinates from tourism material. Puerto Toro is distinct from Puerto Williams and Puerto Navarino."
+}

@@ -3,9 +3,17 @@
     {
       "id": "bcn-comuna-cabo-de-hornos",
       "institution": "Biblioteca del Congreso Nacional de Chile",
-      "source_type": "official_territorial_reference",
-      "title": "Cabo de Hornos — Reporte Comunal 2025",
+      "source_type": "official_public_information",
+      "title": "Reporte Comunal de Cabo de Hornos 2025",
       "url": "https://www.bcn.cl/siit/reportescomunales/comunas_v.html?anno=2025&idcom=12201",
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "conaf-parque-nacional-cabo-de-hornos",
+      "institution": "Corporación Nacional Forestal",
+      "source_type": "official_protected_area_page",
+      "title": "Parque Nacional Cabo de Hornos",
+      "url": "https://www.conaf.cl/parque_nacionales/parque-nacional-cabo-de-hornos/",
       "verified_at": "2026-09-01"
     }
   ]

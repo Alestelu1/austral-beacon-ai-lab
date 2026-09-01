@@ -5,6 +5,18 @@
       "target": "provincia-antartica-chilena",
       "status": "verified",
       "source_ids": ["bcn-comuna-cabo-de-hornos"]
+    },
+    {
+      "predicate": "CONTAINS_PLACE",
+      "target": "puerto-williams",
+      "status": "verified",
+      "source_ids": ["bcn-comuna-cabo-de-hornos"]
+    },
+    {
+      "predicate": "CONTAINS_PROTECTED_AREA",
+      "target": "parque-nacional-cabo-de-hornos",
+      "status": "candidate_target",
+      "source_ids": ["conaf-parque-nacional-cabo-de-hornos"]
     }
   ]
 }

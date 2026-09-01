@@ -1,0 +1,14 @@
+{
+  "id": "punta-arenas",
+  "canonical_name": "Punta Arenas",
+  "entity_type": "city",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["travel", "atlas", "antarctic-gateway", "connectivity"],
+  "country": "Chile",
+  "region": "Región de Magallanes y de la Antártica Chilena",
+  "parent_jurisdiction": "comuna-punta-arenas",
+  "adjacent_geography": ["strait-of-magellan"],
+  "geometry_status": "pending_authoritative_point",
+  "governance_notes": "Flight schedules, seasonal international connections, ferry availability, weather and expedition departures are operational_dynamic and require current verification."
+}

@@ -1,0 +1,14 @@
+{
+  "projection_id": "travel-cabo-de-hornos-v1",
+  "source_of_truth": "knowledge-base",
+  "consumer": "end-of-the-world-travel-assistant",
+  "entity_id": "comuna-cabo-de-hornos",
+  "status": "ready_for_runtime",
+  "projection_mode": "stable_public_core_only",
+  "allowed_claims": [
+    {"claim_id": "cabo-hornos-commune-claim-001", "embedding_eligible": true},
+    {"claim_id": "cabo-hornos-commune-claim-002", "embedding_eligible": true}
+  ],
+  "blocked_context": ["current park access", "navigation conditions", "landing availability", "weather", "treaty interpretation", "sovereignty argumentation"],
+  "principles": {"no_parallel_canonical_entity": true, "claim_level_provenance_required": true, "disambiguation_required": true}
+}

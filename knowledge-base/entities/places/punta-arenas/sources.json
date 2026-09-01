@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "id": "subdere-magallanes-regional-capital",
+      "institution": "Subsecretaría de Desarrollo Regional y Administrativo",
+      "source_type": "official_webpage",
+      "title": "Gobierno Regional de Magallanes y Antártica Chilena",
+      "url": "https://www.subdere.gov.cl/divisi%C3%B3n-administrativa-de-chile/gobierno-regional-de-magallanes-y-ant%C3%A1rtica-chilena",
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "chile-travel-punta-arenas-2026",
+      "institution": "Chile Travel / SERNATUR",
+      "source_type": "official_destination_page",
+      "title": "Punta Arenas y Estrecho de Magallanes",
+      "url": "https://chile.travel/destinos/punta-arenas-y-estrecho-de-magallanes/",
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "ine-degurba-punta-arenas",
+      "institution": "Instituto Nacional de Estadísticas",
+      "source_type": "official_report_pdf",
+      "title": "Reporte resultado aplicación de piloto Grado de Urbanización (DEGURBA) en Chile",
+      "url": "https://www.ine.gob.cl/docs/default-source/geodatos-abiertos/publicaciones/indicadores-urbanos/reporte-resultado-aplicaci%C3%B3n-de-piloto-grado-de-urbanizaci%C3%B3n-%28degurba%29-en-chile.pdf",
+      "verified_at": "2026-09-01"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "id": "dga-puerto-toro-2025",
+      "institution": "Dirección General de Aguas, Ministerio de Obras Públicas",
+      "source_type": "official_webpage",
+      "title": "DGA Magallanes amplía red de monitoreo de aguas subterráneas con nueva estación en Puerto Toro",
+      "url": "https://dga.mop.gob.cl/dga-magallanes-amplia-red-de-monitoreo-de-aguas-subterraneas-con-nueva-estacion-en-puerto-toro/",
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "mop-puerto-toro-port-2025",
+      "institution": "Ministerio de Obras Públicas",
+      "source_type": "official_webpage",
+      "title": "MOP inaugura infraestructura portuaria en el poblado más austral del mundo",
+      "url": "https://www.mop.gob.cl/mop-inaugura-infraestructura-portuaria-en-el-poblado-mas-austral-del-mundo/",
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "sernatur-puerto-toro-attractiveness-catalog",
+      "institution": "Servicio Nacional de Turismo",
+      "source_type": "official_catalog_pdf",
+      "title": "Atractivos Turísticos 2012 - Región de Magallanes y Antártica Chilena: Puerto Toro",
+      "url": "https://www.sernatur.cl/wp-content/uploads/2018/09/XII-REGION-DE-MAGALLANES-Y-ANTARTICA-CHILENA.pdf",
+      "verified_at": "2026-09-01"
+    }
+  ]
+}
