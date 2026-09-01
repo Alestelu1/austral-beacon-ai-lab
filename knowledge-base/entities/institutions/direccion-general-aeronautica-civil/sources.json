@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "id": "dgac-estructura-organizacional",
+      "institution": "Dirección General de Aeronáutica Civil",
+      "source_type": "official_webpage",
+      "title": "Estructura Organizacional – DGAC",
+      "url": "https://www.dgac.gob.cl/acerca-de-la-dgac-2/estructura-organizacional/",
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "dgac-creacion-institucional",
+      "institution": "Dirección General de Aeronáutica Civil",
+      "source_type": "official_webpage",
+      "title": "Creación de la Dirección General de Aeronáutica Civil",
+      "url": "https://www.dgac.gob.cl/creacion-de-la-direccion-general-de-aeronautica-civil-2/",
+      "verified_at": "2026-09-01"
+    }
+  ]
+}
