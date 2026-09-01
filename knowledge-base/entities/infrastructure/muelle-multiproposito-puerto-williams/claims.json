@@ -1,0 +1,56 @@
+{
+  "claims": [
+    {
+      "id": "pier-located-in-puerto-williams",
+      "claim": "El Muelle Multipropósito está ubicado en Puerto Williams, Región de Magallanes y de la Antártica Chilena, Chile.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["mop-obras-maritimas-muelle-multiproposito-puerto-williams"],
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "pier-bip-30137224-0",
+      "claim": "El proyecto está identificado por el MOP con el código BIP 30137224-0.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["mop-obras-maritimas-muelle-multiproposito-puerto-williams"],
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "pier-two-stage-configuration",
+      "claim": "El proyecto se estructura en dos etapas e incorpora obras marítimas, explanada, servicios para embarcaciones y edificaciones para recepción y administración de pasajeros.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["mop-obras-maritimas-muelle-multiproposito-puerto-williams"],
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "pier-serves-scientific-and-antarctic-cruise-traffic",
+      "claim": "El MOP señala que la infraestructura permitirá atender naves que transitan por el canal Beagle, incluidas naves científicas y cruceros con destino a la Antártica.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["mop-obras-maritimas-muelle-multiproposito-puerto-williams"],
+      "verified_at": "2026-09-01"
+    },
+    {
+      "id": "pier-project-state-execution-2026-09-01",
+      "claim": "La ficha oficial del MOP mostraba el proyecto en estado de ejecución al 1 de septiembre de 2026.",
+      "status": "verified_dynamic",
+      "sensitivity": "operational_dynamic",
+      "source_ids": ["mop-obras-maritimas-muelle-multiproposito-puerto-williams", "mop-programa-inversiones-2026-puerto-williams"],
+      "verified_at": "2026-09-01",
+      "requires_current_verification": true,
+      "freshness_ttl_days": 30
+    },
+    {
+      "id": "pier-official-page-completion-date-stale",
+      "claim": "La ficha del proyecto conserva una fecha de término 30-12-2025 pese a mostrar el proyecto en ejecución en 2026; esa fecha se considera desactualizada y no debe reutilizarse como fecha vigente de término sin una fuente oficial posterior.",
+      "status": "conflict_noted",
+      "sensitivity": "operational_dynamic",
+      "source_ids": ["mop-obras-maritimas-muelle-multiproposito-puerto-williams", "mop-programa-inversiones-2026-puerto-williams"],
+      "verified_at": "2026-09-01",
+      "requires_current_verification": true,
+      "embedding_eligible": false
+    }
+  ]
+}
