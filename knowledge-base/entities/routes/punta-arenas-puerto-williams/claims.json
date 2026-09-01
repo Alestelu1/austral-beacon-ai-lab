@@ -1,0 +1,29 @@
+{
+  "claims": [
+    {
+      "id": "puq-wpu-corridor-001",
+      "statement": "Punta Arenas y Puerto Williams están conectadas por un corredor de viaje que puede incluir transporte aéreo o marítimo.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["dap-puq-wpu-route-2026", "tabsa-puq-wpu-route-2026"]
+    },
+    {
+      "id": "puq-wpu-air-service-002",
+      "statement": "Aerovías DAP publica una ruta aérea regular entre Punta Arenas y Puerto Williams.",
+      "status": "verified_current",
+      "sensitivity": "operational_dynamic",
+      "source_ids": ["dap-puq-wpu-route-2026"],
+      "verified_at": "2026-09-01",
+      "requires_current_verification": true
+    },
+    {
+      "id": "puq-wpu-sea-service-003",
+      "statement": "TABSA publica una ruta marítima entre Punta Arenas y Puerto Williams.",
+      "status": "verified_current",
+      "sensitivity": "operational_dynamic",
+      "source_ids": ["tabsa-puq-wpu-route-2026"],
+      "verified_at": "2026-08-24",
+      "requires_current_verification": true
+    }
+  ]
+}
