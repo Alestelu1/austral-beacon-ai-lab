@@ -1,0 +1,22 @@
+{
+  "chunks": [
+    {
+      "id": "cormorant-identity",
+      "text": "The Cormorant at 55 South es una infraestructura hotelera privada en Puerto Williams, Chile, vinculada por Silversea/Royal Caribbean Group a Antarctica Fly Cruise. Royal Caribbean Group la describe como un hotel de 150 habitaciones.",
+      "claim_ids": ["cormorant-location-puerto-williams", "cormorant-capacity-150-rooms", "cormorant-antarctica-fly-cruise-role"],
+      "source_ids": ["royal-caribbean-group-cormorant-gateway-2025", "royal-caribbean-group-cormorant-150-rooms-2025", "silversea-cormorant-design-2026"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    },
+    {
+      "id": "cormorant-opening-dynamic",
+      "text": "Las fuentes corporativas anuncian apertura durante 2026, pero la fecha exacta, disponibilidad y estado de construcción requieren verificación vigente.",
+      "claim_ids": ["cormorant-opening-2026", "cormorant-booking-and-operation-status"],
+      "source_ids": ["silversea-cormorant-design-2026"],
+      "sensitivity": "operational_dynamic",
+      "requires_current_verification": true,
+      "embedding_eligible": false,
+      "blocked_consumers": ["travel-agent"]
+    }
+  ]
+}
