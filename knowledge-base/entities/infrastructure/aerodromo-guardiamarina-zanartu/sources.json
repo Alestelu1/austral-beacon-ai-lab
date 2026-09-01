@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {
+      "id": "dgac-ifis-scgz-2026-08-30",
+      "institution": "Dirección General de Aeronáutica Civil (DGAC)",
+      "source_type": "official_operational_registry",
+      "title": "IFIS: Aeródromo Guardiamarina Zañartu (PUB) (SCGZ)",
+      "url": "https://aipchile.dgac.gob.cl/designador/SCGZ",
+      "verified_at": "2026-09-01",
+      "authority_domain": ["aerodrome_identity", "location", "runway", "administration", "current_aeronautical_information"]
+    },
+    {
+      "id": "dgac-65-aniversario-guardiamarina-zanartu",
+      "institution": "Dirección General de Aeronáutica Civil (DGAC)",
+      "source_type": "official_institutional_article",
+      "title": "65° Aniversario de Aeródromo Guardiamarina Zañartu",
+      "url": "https://www.dgac.gob.cl/65-aniversario-de-aerodromo-guardiamarina-zanartu/",
+      "verified_at": "2026-09-01",
+      "authority_domain": ["history", "administration", "infrastructure", "public_use"]
+    }
+  ]
+}
