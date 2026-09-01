@@ -1,0 +1,16 @@
+{
+  "id": "muelle-multiproposito-puerto-williams",
+  "canonical_name": "Muelle Multipropósito de Puerto Williams",
+  "entity_type": "port_infrastructure",
+  "status": "sourced",
+  "sensitivity": "public_core",
+  "lifecycle_status": "in_construction",
+  "official_id": "BIP 30137224-0",
+  "retrieval_scope": ["atlas", "travel", "observatory", "radar"],
+  "country": "Chile",
+  "region": "Región de Magallanes y de la Antártica Chilena",
+  "locality": "Puerto Williams",
+  "responsible_institution": "Dirección de Obras Portuarias, Ministerio de Obras Públicas",
+  "dynamic_state_requires_reverification": true,
+  "last_reviewed": "2026-09-01"
+}
