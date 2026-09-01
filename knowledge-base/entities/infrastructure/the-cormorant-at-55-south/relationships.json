@@ -1,0 +1,22 @@
+{
+  "relationships": [
+    {
+      "predicate": "LOCATED_IN",
+      "target": "puerto-williams",
+      "status": "verified",
+      "source_ids": ["royal-caribbean-group-cormorant-gateway-2025", "royal-caribbean-group-cormorant-150-rooms-2025"]
+    },
+    {
+      "predicate": "OPERATED_BY",
+      "target": "silversea",
+      "status": "candidate_target",
+      "source_ids": ["royal-caribbean-group-cormorant-gateway-2025", "silversea-cormorant-design-2026"]
+    },
+    {
+      "predicate": "PART_OF_TRAVEL_SYSTEM",
+      "target": "antarctica-fly-cruise",
+      "status": "candidate_target",
+      "source_ids": ["royal-caribbean-group-cormorant-gateway-2025", "silversea-cormorant-design-2026"]
+    }
+  ]
+}
