@@ -1,0 +1,22 @@
+{
+  "relationships": [
+    {
+      "predicate": "LOCATED_IN",
+      "target": "comuna-cabo-de-hornos",
+      "status": "verified",
+      "source_ids": ["sernatur-best-tourism-villages-puerto-williams"]
+    },
+    {
+      "predicate": "LOCATED_ON",
+      "target": "isla-navarino",
+      "status": "candidate_target",
+      "source_ids": ["chile-travel-puerto-williams-2026"]
+    },
+    {
+      "predicate": "SERVED_BY",
+      "target": "aerodromo-guardiamarina-zanartu",
+      "status": "verified",
+      "source_ids": ["chile-travel-puerto-williams-2026"]
+    }
+  ]
+}
