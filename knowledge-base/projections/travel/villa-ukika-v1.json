@@ -1,0 +1,34 @@
+{
+  "projection_id": "travel-villa-ukika-v1",
+  "source_of_truth": "knowledge-base",
+  "consumer": "end-of-the-world-travel-assistant",
+  "entity_id": "villa-ukika",
+  "projection_mode": "stable_public_core_community_context",
+  "principles": {
+    "no_parallel_canonical_entity": true,
+    "claim_level_provenance_required": true,
+    "living_community_not_tourism_attraction": true,
+    "visitor_access_requires_current_culturally_appropriate_verification": true,
+    "authoritative_geometry_required_before_coordinates": true,
+    "prohibited_last_descendants_framing": true
+  },
+  "allowed_claims": [
+    {"claim_id": "villa-ukika-identity-001", "use": "identity"},
+    {"claim_id": "villa-ukika-community-002", "use": "community_association"},
+    {"claim_id": "villa-ukika-culture-003", "use": "living_cultural_continuity"},
+    {"claim_id": "villa-ukika-geometry-004", "use": "geometry_guard"}
+  ],
+  "allowed_relationships": [
+    {"predicate": "COMMUNITY_CONTEXT_NEAR", "target": "puerto-williams"},
+    {"predicate": "LOCATED_ON", "target": "isla-navarino"},
+    {"predicate": "LOCATED_IN", "target": "comuna-cabo-de-hornos"}
+  ],
+  "blocked_or_deferred": [
+    "visitor access or opening assumptions",
+    "authoritative coordinates",
+    "population counts without a specific verified source",
+    "genealogy or political representation inference",
+    "tourism-attraction framing",
+    "last descendants wording"
+  ]
+}
