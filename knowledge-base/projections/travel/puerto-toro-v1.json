@@ -8,8 +8,30 @@
   "allowed_claims": [
     {"claim_id": "puerto-toro-claim-001", "embedding_eligible": true},
     {"claim_id": "puerto-toro-claim-002", "embedding_eligible": true},
-    {"claim_id": "puerto-toro-claim-003", "embedding_eligible": true}
+    {"claim_id": "puerto-toro-claim-003", "embedding_eligible": true},
+    {"claim_id": "puerto-toro-claim-004", "embedding_eligible": true}
   ],
-  "blocked_context": ["current maritime timetable", "ticket availability", "visitor access assumptions", "unverified coordinates"],
-  "principles": {"no_parallel_canonical_entity": true, "claim_level_provenance_required": true, "operational_information_requires_live_verification": true}
+  "allowed_relationships": [
+    {"target": "comuna-cabo-de-hornos", "type": "LOCATED_IN", "status_required": ["verified"]},
+    {"target": "isla-navarino", "type": "LOCATED_ON", "status_required": ["verified"]},
+    {"target": "canal-beagle", "type": "ADJACENT_TO", "status_required": ["verified"]},
+    {"target": "puerto-williams", "type": "DISTINCT_FROM", "status_required": ["verified"]}
+  ],
+  "blocked_context": [
+    "current maritime timetable",
+    "ticket availability",
+    "visitor access assumptions",
+    "current helicopter availability",
+    "current population",
+    "future road opening or construction status",
+    "superlative southernmost claims without a defined comparison scope",
+    "unverified coordinates"
+  ],
+  "principles": {
+    "no_parallel_canonical_entity": true,
+    "claim_level_provenance_required": true,
+    "operational_information_requires_live_verification": true,
+    "unknown_or_unsupported_relationships_must_not_be_inferred": true,
+    "canonical_geometry_required_before_coordinates": true
+  }
 }
