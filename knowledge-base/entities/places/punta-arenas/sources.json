@@ -31,6 +31,15 @@
       "title": "Reporte Comunal 2025: Punta Arenas",
       "url": "https://www.bcn.cl/siit/reportescomunales/comunas_v.html?idcom=12101",
       "verified_at": "2026-09-02"
+    },
+    {
+      "id": "mma-prc-punta-arenas-urban-areas",
+      "institution": "Municipalidad de Punta Arenas / Ministerio del Medio Ambiente",
+      "source_type": "official_planning_report_pdf",
+      "title": "Modificación Plan Regulador Comunal de Punta Arenas — Informe Ambiental",
+      "url": "https://eae.mma.gob.cl/storage/documents/02_2do_IA_PRC_Punta_Arenas.pdf.pdf",
+      "verified_at": "2026-09-02",
+      "provenance_note": "El informe identifica las Áreas Urbanas de la Comuna de Punta Arenas y lista Punta Arenas como área urbana principal de la comuna."
     }
   ]
 }
