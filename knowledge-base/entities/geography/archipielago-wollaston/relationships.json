@@ -1,0 +1,1 @@
+{"relationships":[{"predicate":"CONTAINS_ISLAND","target":"isla-hornos","status":"verified","source_ids":["cmn-isla-hornos-wollaston-2005"]},{"predicate":"CONTAINS_PROTECTED_AREA","target":"parque-nacional-cabo-de-hornos","status":"verified","source_ids":["conaf-parque-cabo-hornos-wollaston"]}]}
