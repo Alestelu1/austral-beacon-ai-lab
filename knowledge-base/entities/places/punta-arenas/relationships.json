@@ -15,8 +15,8 @@
     {
       "predicate": "LOCATED_IN",
       "target": "comuna-punta-arenas",
-      "status": "candidate",
-      "source_ids": ["bcn-comuna-punta-arenas-2025", "ine-degurba-punta-arenas"]
+      "status": "verified",
+      "source_ids": ["mma-prc-punta-arenas-urban-areas", "bcn-comuna-punta-arenas-2025"]
     }
   ]
 }
