@@ -20,6 +20,13 @@
       "status": "verified",
       "sensitivity": "public_core",
       "source_ids": ["chile-travel-punta-arenas-2026"]
+    },
+    {
+      "id": "punta-arenas-claim-004",
+      "statement": "El área urbana de Punta Arenas forma parte de la Comuna de Punta Arenas.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["mma-prc-punta-arenas-urban-areas"]
     }
   ]
 }
