@@ -1,0 +1,11 @@
+{
+  "id": "provincia-magallanes",
+  "canonical_name": "Provincia de Magallanes",
+  "entity_type": "province",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["travel", "atlas", "observatory", "connectivity", "antarctic-gateway"],
+  "country": "Chile",
+  "parent_jurisdiction": "region-magallanes-antartica-chilena",
+  "governance_notes": "Current authorities, population and changing statistical indicators are dynamic and must not be treated as stable identity claims."
+}
