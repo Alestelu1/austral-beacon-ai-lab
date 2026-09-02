@@ -1,0 +1,12 @@
+{
+  "chunks": [
+    {
+      "id": "comuna-punta-arenas-chunk-001",
+      "text": "La Comuna de Punta Arenas pertenece a la Provincia de Magallanes y a la Región de Magallanes y de la Antártica Chilena.",
+      "claim_ids": ["comuna-punta-arenas-claim-001"],
+      "source_ids": ["bcn-comuna-punta-arenas-2025"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    }
+  ]
+}
