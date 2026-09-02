@@ -1,0 +1,11 @@
+{
+  "id": "comuna-punta-arenas",
+  "canonical_name": "Comuna de Punta Arenas",
+  "entity_type": "commune",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["travel", "atlas", "observatory", "connectivity", "antarctic-gateway"],
+  "country": "Chile",
+  "parent_jurisdiction": "provincia-magallanes",
+  "governance_notes": "Population, current authorities and time-varying municipal indicators are dynamic. The commune and the city of Punta Arenas are distinct referents even though they share a name."
+}
