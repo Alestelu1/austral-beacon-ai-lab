@@ -1,0 +1,22 @@
+{
+  "relationships": [
+    {
+      "predicate": "LOCATED_IN",
+      "target": "region-magallanes-antartica-chilena",
+      "status": "verified",
+      "source_ids": ["bcn-comuna-punta-arenas-2025", "bcn-dl-1230-1975-magallanes"]
+    },
+    {
+      "predicate": "HAS_CAPITAL",
+      "target": "punta-arenas",
+      "status": "verified",
+      "source_ids": ["bcn-dl-1230-1975-magallanes"]
+    },
+    {
+      "predicate": "CONTAINS_JURISDICTION",
+      "target": "comuna-punta-arenas",
+      "status": "verified",
+      "source_ids": ["bcn-comuna-punta-arenas-2025"]
+    }
+  ]
+}
