@@ -1,35 +1,37 @@
 {
   "projection_id": "travel-strait-of-magellan-v1",
   "source_of_truth": "knowledge-base",
-  "consumer": "end-of-the-world-travel-assistant",
-  "geographic_scopes": ["magallanes", "patagonia"],
+  "consumer": "end-of-the-world-travel",
   "entity_id": "strait-of-magellan",
   "canonical_name_es": "Estrecho de Magallanes",
   "canonical_name_en": "Strait of Magellan",
-  "status": "ready_for_implementation_review",
+  "status": "ready_for_preview",
   "projection_mode": "stable_public_core_only",
   "principles": {
     "no_parallel_canonical_entity": true,
-    "no_direct_projection_from_legacy_atlas": true,
     "claim_level_provenance_required": true,
     "operational_information_requires_live_verification": true,
     "restricted_context_not_publicly_projectable": true,
     "verified_chilean_geographic_context_is_public_core": true,
-    "classify_intent_not_keywords": true,
-    "unknown_or_unsupported_relationships_must_not_be_inferred": true
+    "unknown_or_unsupported_relationships_must_not_be_inferred": true,
+    "canonical_geometry_required_before_coordinates": true
   },
   "allowed_claims": [
     {
-      "claim_id": "strait-length-330-nm",
-      "use": "stable_geographic_context",
+      "claim_id": "strait-geographic-setting",
+      "use": "stable_geographic_identity",
       "embedding_eligible": true
     },
     {
       "claim_id": "strait-jurisdiction-chile",
       "use": "stable_chilean_geographic_and_jurisdictional_context",
       "embedding_eligible": true,
-      "requires_human_review": false,
-      "guard": "May be stated as a sourced descriptive fact. Do not extend it into treaty interpretation, disputed-boundary reasoning, legal conclusions or geopolitical argumentation."
+      "guard": "State only as a sourced descriptive fact from DIRECTEMAR. Do not extend into treaty interpretation, disputed-boundary reasoning, legal conclusions, sovereignty argumentation or geopolitical advocacy."
+    },
+    {
+      "claim_id": "strait-length-330-nm",
+      "use": "stable_geographic_extent",
+      "embedding_eligible": true
     }
   ],
   "conditionally_allowed_claims": [
@@ -37,132 +39,74 @@
       "claim_id": "first-narrows-length",
       "use": "stable_geographic_description_only",
       "embedding_eligible": false,
-      "requires_scope_guard": true,
-      "reason": "Do not combine with currents, tides or navigation advice in the stable travel projection."
+      "guard": "Do not combine with current, tide, ferry or navigation advice."
     },
     {
       "claim_id": "second-narrows-length",
       "use": "stable_geographic_description_only",
       "embedding_eligible": false,
-      "requires_scope_guard": true,
-      "reason": "Do not combine with currents or navigation advice in the stable travel projection."
+      "guard": "Do not combine with current or navigation advice."
     },
     {
       "claim_id": "paso-tortuoso-length",
       "use": "stable_geographic_description_only",
       "embedding_eligible": false,
-      "requires_scope_guard": true,
-      "reason": "Paso Tortuoso operational context is separately classified operational_dynamic."
-    }
-  ],
-  "blocked_claims": [
-    {
-      "claim_id": "strait-navigation-open-all-flags",
-      "reason": "restricted legal/treaty context pending primary legal-source review"
-    },
-    {
-      "claim_id": "strait-navigation-interest-areas",
-      "reason": "operational navigation model"
-    },
-    {
-      "claim_id": "first-narrows-current-tide",
-      "reason": "operational_dynamic"
-    },
-    {
-      "claim_id": "paso-tortuoso-traffic-control",
-      "reason": "operational_dynamic and requires current verification"
+      "guard": "Do not combine with traffic-control, current or pilotage advice."
     }
   ],
   "allowed_relationships": [
     {
-      "target": "goleta-ancud",
-      "type": "historically_related_to",
-      "status_required": ["verified"]
-    },
-    {
-      "target": "taking-possession-strait-of-magellan-1843",
-      "type": "site_of_historical_event",
-      "status_required": ["verified"],
-      "requires_neutral_historical_framing": true
-    }
-  ],
-  "conditionally_allowed_relationships": [
-    {
       "target": "punta-arenas",
-      "type": "logistically_connected_to",
-      "current_status": "sourced_or_existing_entity",
-      "requirement_before_projection": "verify explicit canonical claim/provenance for Punta Arenas relationship"
-    },
-    {
-      "target": "fuerte-bulnes",
-      "type": "historically_related_to",
-      "current_status": "verified_initial",
-      "requirement_before_projection": "promote relationship after package review"
-    },
-    {
-      "target": "puerto-del-hambre",
-      "type": "historically_related_to",
-      "current_status": "verified_initial",
-      "requirement_before_projection": "promote relationship after package review"
+      "type": "ADJACENT_TO",
+      "status_required": ["verified"],
+      "guard": "Geographic relationship only. Do not infer current port, ferry, pilotage, transport or visitor operations."
     }
   ],
-  "blocked_relationship_types": [
-    "contains_navigation_sector",
-    "navigation_control_point"
+  "deferred_relationships": [
+    "punta-dungenes",
+    "islotes-evangelistas",
+    "primera-angostura",
+    "segunda-angostura",
+    "paso-tortuoso",
+    "cabo-froward",
+    "cabo-pilar",
+    "goleta-ancud",
+    "taking-possession-strait-of-magellan-1843",
+    "fuerte-bulnes",
+    "puerto-del-hambre",
+    "patagonian-kelp-forests"
   ],
-  "atlas_only_or_internal_context": [
-    "hydrology BNA units",
-    "marine ecosystem classification detail",
-    "navigation currents and tides",
+  "blocked_claims": [
+    "strait-navigation-open-all-flags",
+    "strait-navigation-interest-areas",
+    "first-narrows-current-tide",
+    "paso-tortuoso-traffic-control"
+  ],
+  "blocked_context": [
+    "current currents and tides",
+    "current pilotage requirements",
     "traffic-control procedures",
-    "pilotage and radio procedures",
-    "treaty interpretation",
-    "unresolved or disputed boundary analysis",
-    "competing territorial claims",
+    "radio procedures and frequencies",
+    "current ferry or crossing status",
+    "current port or vessel operations",
+    "weather and navigation conditions",
+    "legal or treaty interpretation",
+    "disputed-boundary analysis",
     "sovereignty argumentation",
-    "strategic or military interpretation"
+    "strategic or military interpretation",
+    "unverified coordinates"
   ],
   "required_answer_behaviors": {
-    "identity_questions": "Answer from stable public-core facts and include relevant verified Chilean country/region/jurisdiction context rather than omitting it.",
-    "location_questions": "State verified Chilean geographic and administrative context normally. Do not treat mentions of Chile, Chilean regions or ordinary jurisdiction as restricted by themselves.",
-    "navigation_questions": "Do not answer from stable projection; route to live/current verification or state that current official verification is required.",
-    "legal_or_treaty_interpretation_questions": "Do not adjudicate or expand from travel projection; use restricted-context workflow with human review where authorized.",
-    "relationship_questions": "Use only explicitly approved relationships from this projection contract.",
-    "classification_rule": "Classify user intent and claim type, not isolated vocabulary. Terms such as Chile, Chilean, jurisdiction, territorial or sovereignty must not automatically suppress otherwise verified public-core geography.",
-    "language": "Prefer output language matching the user query when supported by the application layer."
+    "identity_or_location": "Use only allowed stable claims and normal verified Chilean geographic context.",
+    "navigation_or_crossing": "Require current official verification; do not answer from the stable projection.",
+    "legal_or_treaty": "Do not expand from Travel; route to a separately authorized restricted-context workflow if one exists.",
+    "relationships": "Render only relationships explicitly approved by this projection."
   },
-  "initial_supported_query_intents": [
-    "what_is_strait_of_magellan",
-    "where_is_strait_of_magellan",
-    "stable_geographic_context_strait",
-    "which_country_is_strait_of_magellan_in",
-    "chilean_geographic_context_strait"
-  ],
-  "deferred_query_intents": [
-    "current_navigation_conditions",
-    "currents_and_tides",
-    "shipping_or_vessel_guidance",
-    "ferry_or_crossing_status",
-    "legal_treaty_interpretation",
-    "unresolved_boundary_analysis",
-    "competing_claim_analysis",
-    "sovereignty_argumentation"
-  ],
   "implementation_constraints": {
     "do_not_modify_canonical_knowledge": true,
-    "do_not_copy_full_entity_into_data_entities_as_new_truth": true,
     "projection_must_reference_canonical_claim_ids": true,
     "projection_must_preserve_source_ids": true,
-    "existing_travel_agent_regressions_must_remain_green": true
-  },
-  "minimum_tests_for_first_integration": [
-    "Spanish Strait identity question includes verified Chilean context",
-    "Spanish Strait location question identifies Chile normally",
-    "English Strait identity question",
-    "no navigation-current/tide leakage",
-    "no treaty interpretation leakage",
-    "verified Chilean geographic/jurisdictional fact is not blocked by keyword guards",
-    "unsupported dynamic Strait query requires live verification or returns safe unsupported response",
-    "existing Puerto Williams/Puerto Toro/Villa Ukika/Cape Horn regressions remain green"
-  ]
+    "do_not_render_deferred_relationships": true,
+    "existing_destination_previews_must_remain_unchanged": true
+  }
 }
