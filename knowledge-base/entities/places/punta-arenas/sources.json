@@ -23,6 +23,14 @@
       "title": "Reporte resultado aplicación de piloto Grado de Urbanización (DEGURBA) en Chile",
       "url": "https://www.ine.gob.cl/docs/default-source/geodatos-abiertos/publicaciones/indicadores-urbanos/reporte-resultado-aplicaci%C3%B3n-de-piloto-grado-de-urbanizaci%C3%B3n-%28degurba%29-en-chile.pdf",
       "verified_at": "2026-09-01"
+    },
+    {
+      "id": "bcn-comuna-punta-arenas-2025",
+      "institution": "Biblioteca del Congreso Nacional de Chile",
+      "source_type": "official_public_report",
+      "title": "Reporte Comunal 2025: Punta Arenas",
+      "url": "https://www.bcn.cl/siit/reportescomunales/comunas_v.html?idcom=12101",
+      "verified_at": "2026-09-02"
     }
   ]
 }
