@@ -3,46 +3,54 @@
   "sources": [
     {
       "id": "directemar-generalidades-estrecho-magallanes",
-      "institution": "Dirección General del Territorio Marítimo y de Marina Mercante (DIRECTEMAR)",
+      "institution": "Dirección General del Territorio Marítimo y de Marina Mercante (DIRECTEMAR), Armada de Chile",
       "country": "Chile",
       "source_type": "institutional_primary",
       "priority": "high",
       "title": "Generalidades del Estrecho de Magallanes",
+      "url": "https://www.directemar.cl/directemar/generalidades-del-estrecho-de-magallanes",
       "drive_file_id": "1eE7bF_YJk06jk_YDzeKRse_WlTBpWVJv",
       "captured_at": "2026-08-29",
-      "topics": ["jurisdiction", "navigation", "length", "maritime_safety", "currents", "tides", "lighthouses", "pilotage"]
+      "verified_at": "2026-09-02",
+      "topics": ["geography", "jurisdiction", "length", "navigation", "maritime_safety"]
     },
     {
       "id": "directemar-primera-angostura",
-      "institution": "Dirección General del Territorio Marítimo y de Marina Mercante (DIRECTEMAR)",
+      "institution": "Dirección General del Territorio Marítimo y de Marina Mercante (DIRECTEMAR), Armada de Chile",
       "country": "Chile",
       "source_type": "institutional_primary",
       "priority": "high",
       "title": "Primera Angostura",
+      "url": "https://www.directemar.cl/directemar/primera-angostura",
       "drive_file_id": "1SVoCyALs5dW7XnWPRYgX_jI-HGdei3ZN",
       "captured_at": "2026-08-29",
+      "verified_at": "2026-09-02",
       "topics": ["first_narrows", "currents", "tides", "ferry_crossing", "navigation"]
     },
     {
       "id": "directemar-segunda-angostura",
-      "institution": "Dirección General del Territorio Marítimo y de Marina Mercante (DIRECTEMAR)",
+      "institution": "Dirección General del Territorio Marítimo y de Marina Mercante (DIRECTEMAR), Armada de Chile",
       "country": "Chile",
       "source_type": "institutional_primary",
       "priority": "high",
       "title": "Segunda Angostura",
+      "url": "https://www.directemar.cl/directemar/site/edic/base/port/estrechodemagallanes_es.html",
       "drive_file_id": "19J6gIqMOjuxd6Pn_hJXf_YJiNSzAaVqB",
       "captured_at": "2026-08-29",
+      "verified_at": "2026-09-02",
       "topics": ["second_narrows", "currents", "navigation"]
     },
     {
       "id": "directemar-paso-tortuoso",
-      "institution": "Dirección General del Territorio Marítimo y de Marina Mercante (DIRECTEMAR)",
+      "institution": "Dirección General del Territorio Marítimo y de Marina Mercante (DIRECTEMAR), Armada de Chile",
       "country": "Chile",
       "source_type": "institutional_primary",
       "priority": "high",
       "title": "Paso Tortuoso",
+      "url": "https://www.directemar.cl/directemar/site/tax/port/all/taxport_72_264__1.html",
       "drive_file_id": "12_--iY-QY9enYJG51SfzTXa0w5OpW93n",
       "captured_at": "2026-08-29",
+      "verified_at": "2026-09-02",
       "topics": ["paso_tortuoso", "currents", "traffic_control", "navigation", "pilotage"]
     }
   ]
