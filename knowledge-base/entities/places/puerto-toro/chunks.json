@@ -10,7 +10,7 @@
     },
     {
       "id": "puerto-toro-chunk-002",
-      "text": "Puerto Toro cuenta con infraestructura portuaria pública inaugurada por el Ministerio de Obras Públicas en 2025.",
+      "text": "En 2025, el Ministerio de Obras Públicas inauguró en Puerto Toro infraestructura portuaria compuesta por una rampa de conectividad, una explanada y un refugio.",
       "claim_ids": ["puerto-toro-claim-003"],
       "source_ids": ["mop-puerto-toro-port-2025"],
       "sensitivity": "public_core",
