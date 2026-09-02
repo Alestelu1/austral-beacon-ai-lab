@@ -17,6 +17,15 @@
       "verified_at": "2026-09-01"
     },
     {
+      "id": "mop-dap-puerto-toro-navarino-2025",
+      "institution": "Dirección de Aeropuertos, Ministerio de Obras Públicas",
+      "source_type": "official_webpage",
+      "title": "Presidente Boric inauguró en Puerto Toro el punto de posada para helicópteros más austral de Chile",
+      "url": "https://aeropuertos.mop.gob.cl/2025/11/27/presidente-boric-inauguro-en-puerto-toro-el-punto-de-posada-para-helicopteros-mas-austral-de-chile/",
+      "verified_at": "2026-09-02",
+      "provenance_note": "La fuente ubica explícitamente Puerto Toro en la zona oriental de Isla Navarino, al sur del Canal Beagle. No reutilizar población, frecuencia de ferry o disponibilidad operativa sin verificación actual."
+    },
+    {
       "id": "sernatur-puerto-toro-attractiveness-catalog",
       "institution": "Servicio Nacional de Turismo",
       "source_type": "official_catalog_pdf",
