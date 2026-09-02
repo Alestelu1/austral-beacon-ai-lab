@@ -2,75 +2,72 @@
   "entity_id": "strait-of-magellan",
   "chunks": [
     {
-      "id": "strait-core-geography-jurisdiction",
-      "text": "El Estrecho de Magallanes es un paso marítimo natural situado en el extremo sur de Sudamérica, entre la Patagonia chilena, la Isla Grande de Tierra del Fuego y el sistema insular occidental. DIRECTEMAR señala que el Estrecho se encuentra íntegramente bajo jurisdicción de Chile.",
+      "id": "strait-core-geography",
+      "text": "DIRECTEMAR describe el Estrecho de Magallanes como un paso localizado en el extremo sur de Sudamérica, entre la Patagonia chilena, la Isla Grande de Tierra del Fuego y el sistema insular situado al oeste hacia el Océano Pacífico.",
+      "claim_ids": ["strait-geographic-setting"],
       "source_ids": ["directemar-generalidades-estrecho-magallanes"],
-      "topics": ["geography", "jurisdiction"],
-      "stability": "stable",
-      "sensitivity": "public_core"
+      "sensitivity": "public_core",
+      "embedding_eligible": true
+    },
+    {
+      "id": "strait-core-jurisdiction",
+      "text": "DIRECTEMAR señala que el Estrecho de Magallanes se encuentra íntegramente dentro de la jurisdicción de Chile y en la Región de Magallanes y de la Antártica Chilena.",
+      "claim_ids": ["strait-jurisdiction-chile"],
+      "source_ids": ["directemar-generalidades-estrecho-magallanes"],
+      "sensitivity": "public_core",
+      "embedding_eligible": true,
+      "governance_guard": "Uso descriptivo solamente; no extender a interpretación jurídica, tratados, controversias o argumentación geopolítica."
     },
     {
       "id": "strait-length-and-mouths",
-      "text": "Para efectos de navegación, DIRECTEMAR define el Estrecho de Magallanes desde Punta Dúngenes, en la boca oriental, hasta Islotes Evangelistas, en la boca occidental, con una longitud total de 330 millas náuticas.",
+      "text": "DIRECTEMAR define el Estrecho de Magallanes desde Punta Dúngenes, en la boca oriental, hasta Islotes Evangelistas, en la boca occidental, con una longitud total de 330 millas náuticas.",
+      "claim_ids": ["strait-length-330-nm"],
       "source_ids": ["directemar-generalidades-estrecho-magallanes"],
-      "topics": ["geography", "navigation"],
-      "stability": "stable",
-      "sensitivity": "public_core"
+      "sensitivity": "public_core",
+      "embedding_eligible": true
     },
     {
-      "id": "strait-navigation-sectors",
-      "text": "DIRECTEMAR identifica tres áreas principales de interés para la navegación dentro del Estrecho de Magallanes: Primera Angostura, Segunda Angostura y Paso Tortuoso.",
-      "source_ids": ["directemar-generalidades-estrecho-magallanes"],
-      "topics": ["navigation", "geography"],
-      "stability": "stable_operational_model",
-      "sensitivity": "operational_dynamic",
-      "requires_current_verification": true,
-      "embedding_eligible": false,
-      "blocked_consumers": ["travel-agent"]
-    },
-    {
-      "id": "first-narrows-navigation",
-      "text": "La Primera Angostura tiene una extensión aproximada de 8 millas náuticas desde Punta Delgada hasta el bajo Satélite. DIRECTEMAR la describe como el sector del Estrecho más afectado por corrientes y mareas; en sicigias la corriente puede alcanzar 8 nudos y la amplitud de marea 8 metros.",
+      "id": "first-narrows-length-stable",
+      "text": "DIRECTEMAR describe la Primera Angostura con una extensión aproximada de 8 millas náuticas desde Punta Delgada hasta el bajo Satélite.",
+      "claim_ids": ["first-narrows-length"],
       "source_ids": ["directemar-primera-angostura"],
-      "topics": ["first_narrows", "currents", "tides"],
-      "stability": "mixed_stable_and_operational",
-      "sensitivity": "operational_dynamic",
-      "requires_current_verification": true,
-      "embedding_eligible": false,
-      "blocked_consumers": ["travel-agent"]
+      "sensitivity": "public_core",
+      "embedding_eligible": false
     },
     {
-      "id": "second-narrows-navigation",
-      "text": "La Segunda Angostura se extiende aproximadamente 12 millas náuticas desde Cabo Gregorio hasta Cabo San Vicente. Su parte más angosta alcanza unas 4 millas náuticas y DIRECTEMAR indica corrientes de hasta 6 nudos en sicigias.",
+      "id": "second-narrows-length-stable",
+      "text": "DIRECTEMAR describe la Segunda Angostura con una extensión aproximada de 12 millas náuticas desde Cabo Gregorio hasta Cabo San Vicente.",
+      "claim_ids": ["second-narrows-length"],
       "source_ids": ["directemar-segunda-angostura"],
-      "topics": ["second_narrows", "currents"],
-      "stability": "mixed_stable_and_operational",
-      "sensitivity": "operational_dynamic",
-      "requires_current_verification": true,
-      "embedding_eligible": false,
-      "blocked_consumers": ["travel-agent"]
+      "sensitivity": "public_core",
+      "embedding_eligible": false
     },
     {
-      "id": "paso-tortuoso-navigation",
-      "text": "Paso Tortuoso se extiende aproximadamente 6,3 millas náuticas entre Punta San Jerónimo y Cabo Quod. DIRECTEMAR destaca la presencia de corrientes cruzadas asociadas al Canal Jerónimo y establece procedimientos especiales de reporte y control de tráfico para la navegación por este sector.",
+      "id": "paso-tortuoso-length-stable",
+      "text": "DIRECTEMAR describe Paso Tortuoso con una extensión aproximada de 6,3 millas náuticas entre Punta San Jerónimo y Cabo Quod.",
+      "claim_ids": ["paso-tortuoso-length"],
       "source_ids": ["directemar-paso-tortuoso"],
-      "topics": ["paso_tortuoso", "currents", "traffic_control"],
-      "stability": "mixed_stable_and_dynamic_operational",
+      "sensitivity": "public_core",
+      "embedding_eligible": false
+    },
+    {
+      "id": "strait-navigation-operational-boundary",
+      "text": "Corrientes, mareas, pilotaje, frecuencias de radio, tráfico marítimo, calados, señalización, preferencias de paso, ferry y otras condiciones de navegación del Estrecho requieren verificación oficial vigente antes de cualquier uso operacional o de viaje actual.",
+      "claim_ids": ["strait-navigation-interest-areas", "first-narrows-current-tide", "paso-tortuoso-traffic-control"],
+      "source_ids": ["directemar-generalidades-estrecho-magallanes", "directemar-primera-angostura", "directemar-segunda-angostura", "directemar-paso-tortuoso"],
       "sensitivity": "operational_dynamic",
       "requires_current_verification": true,
       "embedding_eligible": false,
       "blocked_consumers": ["travel-agent"]
     },
     {
-      "id": "strait-operational-safety-boundary",
-      "text": "La información sobre calados máximos, procedimientos de pilotaje, frecuencias de radio, señalización, estaciones de control, preferencias de paso y otras condiciones operacionales del Estrecho debe verificarse contra fuentes DIRECTEMAR vigentes antes de utilizarse como consejo de navegación o información de viaje actual.",
-      "source_ids": ["directemar-generalidades-estrecho-magallanes", "directemar-paso-tortuoso"],
-      "topics": ["safety", "live_verification"],
-      "stability": "dynamic_operational",
-      "sensitivity": "operational_dynamic",
-      "requires_current_verification": true,
+      "id": "strait-legal-context-boundary",
+      "text": "La interpretación del régimen jurídico o de tratados asociados al Estrecho no forma parte del contenido estable de Travel y requiere fuentes jurídicas primarias y revisión separada.",
+      "claim_ids": ["strait-navigation-open-all-flags"],
+      "source_ids": ["directemar-generalidades-estrecho-magallanes"],
+      "sensitivity": "restricted_context",
       "embedding_eligible": false,
-      "blocked_consumers": ["travel-agent"]
+      "blocked_consumers": ["travel-agent", "end-of-the-world-travel"]
     }
   ]
 }
