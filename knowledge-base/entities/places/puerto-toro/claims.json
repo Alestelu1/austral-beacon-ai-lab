@@ -20,6 +20,13 @@
       "status": "verified",
       "sensitivity": "public_core",
       "source_ids": ["mop-puerto-toro-port-2025"]
+    },
+    {
+      "id": "puerto-toro-claim-004",
+      "statement": "El Ministerio de Obras Públicas ubica Puerto Toro en la zona oriental de Isla Navarino, al sur del Canal Beagle.",
+      "status": "verified",
+      "sensitivity": "public_core",
+      "source_ids": ["mop-dap-puerto-toro-navarino-2025"]
     }
   ]
 }
