@@ -10,7 +10,13 @@
       "predicate": "LOCATED_ON",
       "target": "isla-navarino",
       "status": "verified",
-      "source_ids": ["sernatur-puerto-toro-attractiveness-catalog"]
+      "source_ids": ["mop-dap-puerto-toro-navarino-2025", "sernatur-puerto-toro-attractiveness-catalog"]
+    },
+    {
+      "predicate": "ADJACENT_TO",
+      "target": "canal-beagle",
+      "status": "verified",
+      "source_ids": ["mop-dap-puerto-toro-navarino-2025"]
     },
     {
       "predicate": "DISTINCT_FROM",
