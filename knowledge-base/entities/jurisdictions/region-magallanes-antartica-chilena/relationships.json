@@ -5,6 +5,12 @@
       "target": "provincia-antartica-chilena",
       "status": "verified",
       "source_ids": ["bcn-region-magallanes-antartica-chilena"]
+    },
+    {
+      "predicate": "CONTAINS_JURISDICTION",
+      "target": "provincia-magallanes",
+      "status": "verified",
+      "source_ids": ["bcn-dl-1230-1975-magallanes"]
     }
   ]
 }
