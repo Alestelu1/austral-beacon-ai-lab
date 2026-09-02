@@ -1,19 +1,78 @@
 {
   "entity_id": "strait-of-magellan",
   "relationships": [
-    {"target": "punta-arenas", "type": "logistically_connected_to", "status": "sourced_or_existing_entity"},
-    {"target": "punta-dungenes", "type": "eastern_mouth_reference", "status": "sourced"},
-    {"target": "islotes-evangelistas", "type": "western_mouth_reference", "status": "sourced"},
-    {"target": "primera-angostura", "type": "contains_navigation_sector", "status": "sourced"},
-    {"target": "segunda-angostura", "type": "contains_navigation_sector", "status": "sourced"},
-    {"target": "paso-tortuoso", "type": "contains_navigation_sector", "status": "sourced"},
-    {"target": "punta-delgada", "type": "navigation_control_point", "status": "sourced"},
-    {"target": "cabo-froward", "type": "geographic_sector_related_to", "status": "pending_dedicated_entity"},
-    {"target": "cabo-pilar", "type": "geographic_sector_related_to", "status": "pending_dedicated_entity"},
-    {"target": "goleta-ancud", "type": "historically_related_to", "status": "verified"},
-    {"target": "taking-possession-strait-of-magellan-1843", "type": "site_of_historical_event", "status": "verified"},
-    {"target": "fuerte-bulnes", "type": "historically_related_to", "status": "verified_initial"},
-    {"target": "puerto-del-hambre", "type": "historically_related_to", "status": "verified_initial"},
-    {"target": "patagonian-kelp-forests", "type": "contains_marine_ecosystem", "status": "verified"}
+    {
+      "predicate": "ADJACENT_TO",
+      "target": "punta-arenas",
+      "status": "verified",
+      "source_ids": ["directemar-generalidades-estrecho-magallanes"]
+    },
+    {
+      "predicate": "HAS_EASTERN_MOUTH_REFERENCE",
+      "target": "punta-dungenes",
+      "status": "candidate_target",
+      "source_ids": ["directemar-generalidades-estrecho-magallanes"]
+    },
+    {
+      "predicate": "HAS_WESTERN_MOUTH_REFERENCE",
+      "target": "islotes-evangelistas",
+      "status": "candidate_target",
+      "source_ids": ["directemar-generalidades-estrecho-magallanes"]
+    },
+    {
+      "predicate": "CONTAINS_GEOGRAPHIC_SECTOR",
+      "target": "primera-angostura",
+      "status": "candidate_target",
+      "source_ids": ["directemar-generalidades-estrecho-magallanes", "directemar-primera-angostura"]
+    },
+    {
+      "predicate": "CONTAINS_GEOGRAPHIC_SECTOR",
+      "target": "segunda-angostura",
+      "status": "candidate_target",
+      "source_ids": ["directemar-generalidades-estrecho-magallanes", "directemar-segunda-angostura"]
+    },
+    {
+      "predicate": "CONTAINS_GEOGRAPHIC_SECTOR",
+      "target": "paso-tortuoso",
+      "status": "candidate_target",
+      "source_ids": ["directemar-generalidades-estrecho-magallanes", "directemar-paso-tortuoso"]
+    },
+    {
+      "predicate": "RELATED_TO_GEOGRAPHY",
+      "target": "cabo-froward",
+      "status": "candidate_target",
+      "source_ids": ["directemar-generalidades-estrecho-magallanes"]
+    },
+    {
+      "predicate": "RELATED_TO_GEOGRAPHY",
+      "target": "cabo-pilar",
+      "status": "candidate_target",
+      "source_ids": ["directemar-generalidades-estrecho-magallanes"]
+    },
+    {
+      "predicate": "HISTORICALLY_RELATED_TO",
+      "target": "goleta-ancud",
+      "status": "candidate_provenance_review"
+    },
+    {
+      "predicate": "SITE_OF_HISTORICAL_EVENT",
+      "target": "taking-possession-strait-of-magellan-1843",
+      "status": "candidate_provenance_review"
+    },
+    {
+      "predicate": "HISTORICALLY_RELATED_TO",
+      "target": "fuerte-bulnes",
+      "status": "candidate_provenance_review"
+    },
+    {
+      "predicate": "HISTORICALLY_RELATED_TO",
+      "target": "puerto-del-hambre",
+      "status": "candidate_provenance_review"
+    },
+    {
+      "predicate": "CONTAINS_MARINE_ECOSYSTEM",
+      "target": "patagonian-kelp-forests",
+      "status": "candidate_provenance_review"
+    }
   ]
 }
