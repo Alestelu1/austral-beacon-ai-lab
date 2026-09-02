@@ -5,12 +5,6 @@
       "target": "provincia-magallanes",
       "status": "verified",
       "source_ids": ["bcn-comuna-punta-arenas-2025"]
-    },
-    {
-      "predicate": "DISTINCT_FROM",
-      "target": "punta-arenas",
-      "status": "governance_assertion",
-      "source_ids": ["bcn-comuna-punta-arenas-2025"]
     }
   ]
 }
