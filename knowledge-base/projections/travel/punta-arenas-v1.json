@@ -3,19 +3,85 @@
   "source_of_truth": "knowledge-base",
   "consumer": "end-of-the-world-travel-assistant",
   "entity_id": "punta-arenas",
-  "status": "ready_for_runtime",
+  "status": "ready_for_preview",
   "projection_mode": "stable_public_core_only",
   "allowed_claims": [
-    {"claim_id": "punta-arenas-claim-001", "embedding_eligible": true},
-    {"claim_id": "punta-arenas-claim-002", "embedding_eligible": true},
-    {"claim_id": "punta-arenas-claim-003", "embedding_eligible": true},
-    {"claim_id": "punta-arenas-claim-004", "embedding_eligible": true}
+    {
+      "claim_id": "punta-arenas-claim-001",
+      "use": "stable_regional_capital_identity",
+      "embedding_eligible": true
+    },
+    {
+      "claim_id": "punta-arenas-claim-002",
+      "use": "stable_strait_geographic_context",
+      "embedding_eligible": true
+    },
+    {
+      "claim_id": "punta-arenas-claim-003",
+      "use": "attributed_official_antarctic_gateway_context",
+      "embedding_eligible": true,
+      "guard": "Preserve attribution to Chile Travel/SERNATUR. Do not expand 'base estratégica para la exploración antártica' into claims of principal gateway status, superiority, market share, passenger volume, traffic share, current expedition availability or current commercial operations."
+    },
+    {
+      "claim_id": "punta-arenas-claim-004",
+      "use": "stable_city_commune_context",
+      "embedding_eligible": true
+    }
   ],
   "allowed_relationships": [
-    {"target": "region-magallanes-antartica-chilena", "type": "CAPITAL_OF", "status_required": ["verified"]},
-    {"target": "strait-of-magellan", "type": "ADJACENT_TO", "status_required": ["verified"]},
-    {"target": "comuna-punta-arenas", "type": "LOCATED_IN", "status_required": ["verified"]}
+    {
+      "target": "region-magallanes-antartica-chilena",
+      "type": "CAPITAL_OF",
+      "status_required": ["verified"]
+    },
+    {
+      "target": "strait-of-magellan",
+      "type": "ADJACENT_TO",
+      "status_required": ["verified"],
+      "guard": "Geographic relationship only. Do not infer current port, ferry, cruise or vessel operations."
+    },
+    {
+      "target": "comuna-punta-arenas",
+      "type": "LOCATED_IN",
+      "status_required": ["verified"]
+    }
   ],
-  "blocked_context": ["current flights", "seasonal international routes", "current ferry schedules", "weather", "expedition availability", "current visitor services", "unverified coordinates"],
-  "principles": {"no_parallel_canonical_entity": true, "claim_level_provenance_required": true, "operational_information_requires_live_verification": true, "unknown_or_unsupported_relationships_must_not_be_inferred": true}
+  "blocked_context": [
+    "current flights",
+    "seasonal international routes",
+    "current ferry schedules",
+    "weather",
+    "expedition availability",
+    "current expedition departures",
+    "current cruise availability",
+    "current visitor services",
+    "current airport or port operating conditions",
+    "aggregate Antarctic passenger traffic",
+    "Antarctic gateway market share",
+    "Antarctic traffic share",
+    "unsupported gateway rankings or superlatives",
+    "current prices, fares or seat availability",
+    "unverified coordinates"
+  ],
+  "required_answer_behaviors": {
+    "city_identity": "Use only stable approved claims and relationships.",
+    "antarctic_context": "Keep the official Chile Travel attribution explicit and do not infer aggregate traffic, ranking, market share or current commercial availability.",
+    "transport_or_departures": "Require current official/operator verification and do not answer from this stable projection.",
+    "relationships": "Render only relationships explicitly approved by this projection."
+  },
+  "principles": {
+    "no_parallel_canonical_entity": true,
+    "claim_level_provenance_required": true,
+    "operational_information_requires_live_verification": true,
+    "unknown_or_unsupported_relationships_must_not_be_inferred": true,
+    "aggregate_antarctic_traffic_requires_authoritative_statistical_source": true,
+    "canonical_geometry_required_before_coordinates": true
+  },
+  "implementation_constraints": {
+    "do_not_modify_canonical_knowledge": true,
+    "projection_must_reference_canonical_claim_ids": true,
+    "projection_must_preserve_source_ids": true,
+    "existing_destination_previews_must_remain_unchanged": true,
+    "do_not_promote_operator_marketing_into_independent_statistical_fact": true
+  }
 }
