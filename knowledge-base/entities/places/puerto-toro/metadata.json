@@ -9,5 +9,5 @@
   "parent_jurisdiction": "comuna-cabo-de-hornos",
   "geographic_context": ["isla-navarino"],
   "geometry_status": "pending_authoritative_point",
-  "governance_notes": "Do not infer current maritime schedules, visitor availability or coordinates from tourism material. Puerto Toro is distinct from Puerto Williams and Puerto Navarino."
+  "governance_notes": "Do not infer current maritime schedules, visitor availability, population or coordinates from tourism material. Puerto Toro is distinct from Puerto Williams and Puerto Navarino. Superlatives such as 'southernmost settlement' must not be projected as Austral Beacon facts unless separately defined and verified with an explicit comparison scope."
 }
