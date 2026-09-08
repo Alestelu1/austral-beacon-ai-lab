@@ -1,0 +1,20 @@
+{
+  "entity_id": "carretera-austral",
+  "chunks": [
+    {
+      "id": "carretera-austral-core",
+      "scope": ["travel", "connectivity", "observatory"],
+      "text": "La Carretera Austral / Ruta 7 es un corredor estratégico de conectividad de la Patagonia chilena que articula territorios de Los Lagos y Aysén. Para consultas operativas deben verificarse fuentes actuales del MOP y autoridades competentes."
+    },
+    {
+      "id": "carretera-austral-plan-2026-2030",
+      "scope": ["connectivity", "radar", "observatory", "dispatch"],
+      "text": "El Plan Ruta Austral: Soberanía que conecta (2026-2030) del Ministerio de Obras Públicas contempla inversión pública e intervenciones viales, marítimas y lacustres asociadas a Ruta 7. Montos, avances y cronogramas son información dinámica."
+    },
+    {
+      "id": "carretera-austral-narrative-signal-2026",
+      "scope": ["travel", "radar", "dispatch"],
+      "text": "En septiembre de 2026, EL PAÍS Chile presentó la Carretera Austral como una ruta que abre las puertas al 'fin del mundo'. Austral Beacon conserva esta formulación como señal de narrativa y posicionamiento internacional, no como autoridad factual primaria."
+    }
+  ]
+}
