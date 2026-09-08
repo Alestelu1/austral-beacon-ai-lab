@@ -1,0 +1,47 @@
+{
+  "entity_id": "carretera-austral",
+  "claims": [
+    {
+      "id": "carretera-austral-route-identity",
+      "claim": "The Carretera Austral is Ruta 7, a principal longitudinal route through Chilean Patagonia connecting territories in Los Lagos and Aysén.",
+      "status": "verified_primary",
+      "authority": "Ministerio de Obras Públicas de Chile",
+      "source_id": "mop-plan-ruta-austral-2026-04-30",
+      "stability": "high"
+    },
+    {
+      "id": "plan-ruta-austral-2026-2030",
+      "claim": "The Plan Ruta Austral: Soberanía que conecta is a 2026-2030 public investment program centered on Ruta 7 and associated austral connectivity infrastructure.",
+      "status": "verified_primary",
+      "authority": "Ministerio de Obras Públicas de Chile",
+      "source_id": "mop-plan-ruta-austral-2026-04-30",
+      "stability": "medium"
+    },
+    {
+      "id": "plan-ruta-austral-investment-scope",
+      "claim": "The plan announced investment close to CLP 800 billion and intervention across 244 km, with road, maritime and lacustrine projects.",
+      "status": "verified_primary",
+      "authority": "Ministerio de Obras Públicas de Chile",
+      "source_id": "mop-plan-ruta-austral-2026-04-30",
+      "stability": "medium",
+      "verification_rule": "Re-check against MOP for later execution or budget changes."
+    },
+    {
+      "id": "territorial-role",
+      "claim": "The Chilean state explicitly associates investment in the Carretera Austral with connectivity, territorial integration, sovereignty, regional development and tourism.",
+      "status": "verified_primary",
+      "authority": "Ministerio de Obras Públicas de Chile",
+      "source_id": "mop-plan-ruta-austral-2026-04-30",
+      "stability": "medium"
+    },
+    {
+      "id": "international-end-of-world-framing",
+      "claim": "EL PAÍS framed the Carretera Austral in September 2026 as a route that opens access to the 'end of the world', a useful signal of international narrative positioning for Chilean Patagonia.",
+      "status": "supported_secondary",
+      "authority": "EL PAÍS Chile",
+      "source_id": "elpais-carretera-austral-2026-09-07",
+      "stability": "high",
+      "use": "narrative_analysis"
+    }
+  ]
+}
