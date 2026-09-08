@@ -1,0 +1,15 @@
+{
+  "entity_id": "carretera-austral",
+  "relationships": [
+    {"type": "traverses_region", "target": "los-lagos"},
+    {"type": "traverses_region", "target": "aysen"},
+    {"type": "connects_with", "target": "lago-general-carrera"},
+    {"type": "connects_with", "target": "cochrane"},
+    {"type": "connects_with", "target": "villa-ohiggins"},
+    {"type": "provides_access_to", "target": "parque-nacional-patagonia"},
+    {"type": "provides_access_to", "target": "cerro-castillo"},
+    {"type": "associated_air_gateway", "target": "aeropuerto-balmaceda"},
+    {"type": "tracked_by", "target": "observatorio-conectividad-austral"}
+  ],
+  "note": "Targets may be existing or pending canonical entities; relationship resolution should not fabricate missing entities."
+}
