@@ -1,0 +1,38 @@
+{
+  "entity_id": "carretera-austral",
+  "sources": [
+    {
+      "id": "mop-plan-ruta-austral-2026-04-30",
+      "publisher": "Ministerio de Obras Públicas de Chile / SEREMI MOP Aysén",
+      "source_type": "primary_institutional",
+      "priority": "high",
+      "published_at": "2026-04-30",
+      "url": "https://aysen.mop.gob.cl/presidente-kast-y-ministro-arrau-anuncian-plan-historico-por-mas-de-800-mil-millones-para-potenciar-la-carretera-austral/"
+    },
+    {
+      "id": "mop-rio-ibanez-2026-08-26",
+      "publisher": "Ministerio de Obras Públicas de Chile / Dirección de Vialidad",
+      "source_type": "primary_institutional",
+      "priority": "high",
+      "published_at": "2026-08-26",
+      "url": "https://vialidad.mop.gob.cl/2026/08/26/comenzo-pavimentacion-de-nuevo-tramo-de-la-carretera-austral-en-rio-ibanez-con-inversion-de-70-mil-millones-de-pesos/"
+    },
+    {
+      "id": "elpais-carretera-austral-2026-09-07",
+      "publisher": "EL PAÍS Chile",
+      "source_type": "secondary_editorial",
+      "priority": "medium",
+      "published_at": "2026-09-07",
+      "url": "https://elpais.com/chile/2026-09-07/la-carretera-austral-la-ruta-que-abre-las-puertas-al-fin-del-mundo-es-imposible-no-querer-quedarse-en-la-patagonia-chilena.html",
+      "use": "narrative framing and international positioning; not authority for operational facts"
+    },
+    {
+      "id": "drive-carretera-austral-pdf",
+      "publisher": "Drive source pending metadata normalization",
+      "source_type": "supporting_document",
+      "priority": "pending_review",
+      "drive_file_id": "1XQStYiAa-NLw93PjOKJagt-nDObacq-C",
+      "title": "Carretera-Austral-El-camino-mas-espectacular-de-Sudamerica.pdf"
+    }
+  ]
+}
