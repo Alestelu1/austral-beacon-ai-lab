@@ -1,0 +1,11 @@
+{
+  "id": "carretera-austral",
+  "canonical_name": "Carretera Austral / Ruta 7",
+  "entity_type": "strategic_austral_route",
+  "status": "canonical",
+  "sensitivity": "public_core",
+  "retrieval_scope": ["travel", "connectivity", "observatory", "radar", "dispatch"],
+  "country": "Chile",
+  "regions": ["Los Lagos", "Aysén"],
+  "governance_notes": "The route identity, territorial role and institutional planning context are reusable. Pavement status, closures, ferry operations, construction schedules, investment execution, travel times and other operational conditions are dynamic and require current verification from Chilean authorities."
+}
