@@ -1,0 +1,103 @@
+{
+  "record_id": "carretera-austral-el-pais-2026-09-07",
+  "title": "La Carretera Austral, la ruta que abre las puertas al fin del mundo",
+  "published_at": "2026-09-07",
+  "ingested_at": "2026-09-08",
+  "source_type": "secondary_editorial",
+  "source_priority": "medium",
+  "publisher": "EL PAÍS Chile",
+  "url": "https://elpais.com/chile/2026-09-07/la-carretera-austral-la-ruta-que-abre-las-puertas-al-fin-del-mundo-es-imposible-no-querer-quedarse-en-la-patagonia-chilena.html",
+  "language": "es",
+  "geographic_scope": [
+    "Patagonia chilena",
+    "Región de Aysén",
+    "Región de Los Lagos",
+    "Carretera Austral / Ruta 7"
+  ],
+  "projects": [
+    "Austral Intelligence Radar",
+    "End of the World Travel",
+    "Observatorio de Conectividad Austral",
+    "Austral Dispatch"
+  ],
+  "themes": [
+    "connectivity",
+    "infrastructure",
+    "tourism",
+    "territorial development",
+    "conservation",
+    "austral narrative"
+  ],
+  "narrative_signal": {
+    "importance": "high",
+    "summary": "The report frames the Carretera Austral as a gateway to the 'end of the world', expanding that international narrative beyond Tierra del Fuego and Cape Horn toward the wider Chilean Patagonia corridor.",
+    "editorial_use": "Treat as evidence of international positioning and narrative framing, not as the authority for infrastructure or operational facts."
+  },
+  "candidate_entities": [
+    "carretera-austral",
+    "aysen",
+    "puerto-rio-tranquilo",
+    "valle-exploradores",
+    "glaciar-exploradores",
+    "monte-san-valentin",
+    "campo-de-hielo-norte",
+    "glaciar-calluqueo",
+    "cochrane",
+    "puerto-bertrand",
+    "rio-baker",
+    "lago-general-carrera",
+    "parque-nacional-patagonia",
+    "cerro-castillo",
+    "aeropuerto-balmaceda"
+  ],
+  "claims": [
+    {
+      "claim": "The Carretera Austral is being internationally framed as a route that opens access to the Chilean 'end of the world'.",
+      "status": "supported_secondary",
+      "authority": "EL PAÍS Chile",
+      "use": "narrative_analysis"
+    },
+    {
+      "claim": "The 2026-2030 Plan Ruta Austral: Soberanía que conecta is an integrated state connectivity program centered on Ruta 7 in Aysén.",
+      "status": "verified_primary",
+      "authority": "Ministerio de Obras Públicas de Chile",
+      "primary_source": "https://aysen.mop.gob.cl/presidente-kast-y-ministro-arrau-anuncian-plan-historico-por-mas-de-800-mil-millones-para-potenciar-la-carretera-austral/"
+    },
+    {
+      "claim": "The plan considers investment close to CLP 800 billion and intervention of 244 km, including road, maritime and lacustrine connectivity projects.",
+      "status": "verified_primary",
+      "authority": "Ministerio de Obras Públicas de Chile",
+      "primary_source": "https://aysen.mop.gob.cl/presidente-kast-y-ministro-arrau-anuncian-plan-historico-por-mas-de-800-mil-millones-para-potenciar-la-carretera-austral/"
+    },
+    {
+      "claim": "The state program explicitly links Carretera Austral investment with connectivity, territorial integration, sovereignty, regional development and tourism.",
+      "status": "verified_primary",
+      "authority": "Ministerio de Obras Públicas de Chile",
+      "primary_source": "https://aysen.mop.gob.cl/presidente-kast-y-ministro-arrau-anuncian-plan-historico-por-mas-de-800-mil-millones-para-potenciar-la-carretera-austral/"
+    }
+  ],
+  "primary_corroboration": [
+    {
+      "publisher": "Ministerio de Obras Públicas de Chile / Dirección de Vialidad",
+      "published_at": "2026-04-30",
+      "url": "https://vialidad.mop.gob.cl/2026/04/30/presidente-kast-y-ministro-arrau-anunciaron-plan-historico-por-mas-de-800-mil-millones-para-potenciar-la-carretera-austral/",
+      "role": "primary_authority"
+    },
+    {
+      "publisher": "Ministerio de Obras Públicas de Chile / Dirección de Vialidad",
+      "published_at": "2026-08-26",
+      "url": "https://vialidad.mop.gob.cl/2026/08/26/comenzo-pavimentacion-de-nuevo-tramo-de-la-carretera-austral-en-rio-ibanez-con-inversion-de-70-mil-millones-de-pesos/",
+      "role": "primary_project_update"
+    }
+  ],
+  "existing_drive_evidence": {
+    "title": "Carretera-Austral-El-camino-mas-espectacular-de-Sudamerica.pdf",
+    "drive_file_id": "1XQStYiAa-NLw93PjOKJagt-nDObacq-C",
+    "relationship": "existing supporting source; not assumed to be the same publication as EL PAÍS"
+  },
+  "promotion": {
+    "canonical_target": "knowledge-base/entities/routes/carretera-austral/",
+    "status": "candidate",
+    "next_step": "Create or enrich the canonical Carretera Austral route entity using primary Chilean institutional sources; keep tourism narratives and changing operational data in provenance-aware layers."
+  }
+}
