@@ -338,6 +338,113 @@
       "general_embedding_allowed": true,
       "blocked_consumers": [],
       "source_classification": "source_documented"
+    },
+    {
+      "id": "ac05-001",
+      "claim": "El historial oficial del IGM registra una actividad denominada Campaña Campo de Hielo Sur 2025.",
+      "source_ids": [
+        "igm-campo-hielo-sur-campaign-2025"
+      ],
+      "provenance": [
+        {
+          "source_id": "igm-campo-hielo-sur-campaign-2025",
+          "source_url": "https://www.igm.cl/?menu=5&page=noticias-actividades-igm2",
+          "locator": "Historial de noticias; fila de 13-10-2025: mediciones en Villa O?Higgins para la Campaña Campo de Hielo Sur 2025",
+          "retrieved_at": "2026-09-13"
+        }
+      ],
+      "entity_ids": [
+        "villa-ohiggins",
+        "campo-de-hielo-sur"
+      ],
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-13",
+      "source_classification": "source_documented",
+      "fact_scope": "Título y fecha en el historial oficial del IGM: denominación de campaña, mediciones en Villa O’Higgins y año 2025. No se recuperó el cuerpo de la noticia.",
+      "knowledge_class": "non_embedding_reference",
+      "sensitivity": "internal_research",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "general_embedding_allowed": false,
+      "vector_ingestion_status": "not_performed",
+      "sovereignty_implication": false,
+      "boundary_results_status": "requires_authoritative_review",
+      "blocked_consumers": [
+        "general-rag",
+        "travel-agent"
+      ]
+    },
+    {
+      "id": "ac05-002",
+      "claim": "El título publicado por el IGM informa mediciones en Villa O’Higgins para esa campaña.",
+      "source_ids": [
+        "igm-campo-hielo-sur-campaign-2025"
+      ],
+      "provenance": [
+        {
+          "source_id": "igm-campo-hielo-sur-campaign-2025",
+          "source_url": "https://www.igm.cl/?menu=5&page=noticias-actividades-igm2",
+          "locator": "Historial de noticias; fila de 13-10-2025: mediciones en Villa O?Higgins para la Campaña Campo de Hielo Sur 2025",
+          "retrieved_at": "2026-09-13"
+        }
+      ],
+      "entity_ids": [
+        "villa-ohiggins"
+      ],
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-13",
+      "source_classification": "source_documented",
+      "fact_scope": "Título y fecha en el historial oficial del IGM: denominación de campaña, mediciones en Villa O’Higgins y año 2025. No se recuperó el cuerpo de la noticia.",
+      "knowledge_class": "non_embedding_reference",
+      "sensitivity": "internal_research",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "general_embedding_allowed": false,
+      "vector_ingestion_status": "not_performed",
+      "sovereignty_implication": false,
+      "boundary_results_status": "requires_authoritative_review",
+      "blocked_consumers": [
+        "general-rag",
+        "travel-agent"
+      ]
+    },
+    {
+      "id": "ac05-003",
+      "claim": "La campaña se identifica con el año 2025; su entrada en el historial del IGM está fechada el 13 de octubre de 2025.",
+      "source_ids": [
+        "igm-campo-hielo-sur-campaign-2025"
+      ],
+      "provenance": [
+        {
+          "source_id": "igm-campo-hielo-sur-campaign-2025",
+          "source_url": "https://www.igm.cl/?menu=5&page=noticias-actividades-igm2",
+          "locator": "Historial de noticias; fila de 13-10-2025: mediciones en Villa O?Higgins para la Campaña Campo de Hielo Sur 2025",
+          "retrieved_at": "2026-09-13"
+        }
+      ],
+      "entity_ids": [
+        "villa-ohiggins",
+        "campo-de-hielo-sur"
+      ],
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-13",
+      "source_classification": "source_documented",
+      "fact_scope": "Título y fecha en el historial oficial del IGM: denominación de campaña, mediciones en Villa O’Higgins y año 2025. No se recuperó el cuerpo de la noticia.",
+      "knowledge_class": "non_embedding_reference",
+      "sensitivity": "internal_research",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "general_embedding_allowed": false,
+      "vector_ingestion_status": "not_performed",
+      "sovereignty_implication": false,
+      "boundary_results_status": "requires_authoritative_review",
+      "blocked_consumers": [
+        "general-rag",
+        "travel-agent"
+      ]
     }
   ]
 }

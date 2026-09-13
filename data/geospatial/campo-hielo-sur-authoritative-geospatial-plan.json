@@ -78,5 +78,15 @@
   "wave": 1,
   "boundary_status": "requires_authoritative_review",
   "embedding_ready": false,
-  "embedding_eligible": false
+  "embedding_eligible": false,
+  "product_registry_ref": "data/geospatial/campo-hielo-sur-igm-product-registry.json",
+  "authority_validation_ref": "data/verification/campo-hielo-sur-chilean-authority-validation.json",
+  "official_metadata_source_ids": [
+    "igm-campos-de-hielo-sur-250k",
+    "igm-j134-cerro-ohiggins-50k",
+    "igm-villa-lago-ohiggins-50k-catalog",
+    "difrol-official-maps-2026"
+  ],
+  "geometry_acquisition_status": "candidate_pending_acquisition_and_license_review",
+  "geometry_acquisition_authorized": false
 }

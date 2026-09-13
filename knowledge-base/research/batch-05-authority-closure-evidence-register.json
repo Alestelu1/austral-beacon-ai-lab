@@ -1,0 +1,371 @@
+{
+  "batch": "05",
+  "wave": 1,
+  "patch": "authority_closure",
+  "base_commit": "01baf78d67431fc8fedc60641fb563d0dd9401c9",
+  "retrieved_at": "2026-09-13",
+  "claims": [
+    {
+      "id": "ac05-001",
+      "claim": "El historial oficial del IGM registra una actividad denominada Campaña Campo de Hielo Sur 2025.",
+      "source_ids": [
+        "igm-campo-hielo-sur-campaign-2025"
+      ],
+      "provenance": [
+        {
+          "source_id": "igm-campo-hielo-sur-campaign-2025",
+          "source_url": "https://www.igm.cl/?menu=5&page=noticias-actividades-igm2",
+          "locator": "Historial de noticias; fila de 13-10-2025: mediciones en Villa O?Higgins para la Campaña Campo de Hielo Sur 2025",
+          "retrieved_at": "2026-09-13"
+        }
+      ],
+      "entity_ids": [
+        "villa-ohiggins",
+        "campo-de-hielo-sur"
+      ],
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-13",
+      "source_classification": "source_documented",
+      "fact_scope": "Título y fecha en el historial oficial del IGM: denominación de campaña, mediciones en Villa O’Higgins y año 2025. No se recuperó el cuerpo de la noticia.",
+      "knowledge_class": "non_embedding_reference",
+      "sensitivity": "internal_research",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "general_embedding_allowed": false,
+      "vector_ingestion_status": "not_performed",
+      "sovereignty_implication": false,
+      "boundary_results_status": "requires_authoritative_review",
+      "blocked_consumers": [
+        "general-rag",
+        "travel-agent"
+      ]
+    },
+    {
+      "id": "ac05-002",
+      "claim": "El título publicado por el IGM informa mediciones en Villa O’Higgins para esa campaña.",
+      "source_ids": [
+        "igm-campo-hielo-sur-campaign-2025"
+      ],
+      "provenance": [
+        {
+          "source_id": "igm-campo-hielo-sur-campaign-2025",
+          "source_url": "https://www.igm.cl/?menu=5&page=noticias-actividades-igm2",
+          "locator": "Historial de noticias; fila de 13-10-2025: mediciones en Villa O?Higgins para la Campaña Campo de Hielo Sur 2025",
+          "retrieved_at": "2026-09-13"
+        }
+      ],
+      "entity_ids": [
+        "villa-ohiggins"
+      ],
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-13",
+      "source_classification": "source_documented",
+      "fact_scope": "Título y fecha en el historial oficial del IGM: denominación de campaña, mediciones en Villa O’Higgins y año 2025. No se recuperó el cuerpo de la noticia.",
+      "knowledge_class": "non_embedding_reference",
+      "sensitivity": "internal_research",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "general_embedding_allowed": false,
+      "vector_ingestion_status": "not_performed",
+      "sovereignty_implication": false,
+      "boundary_results_status": "requires_authoritative_review",
+      "blocked_consumers": [
+        "general-rag",
+        "travel-agent"
+      ]
+    },
+    {
+      "id": "ac05-003",
+      "claim": "La campaña se identifica con el año 2025; su entrada en el historial del IGM está fechada el 13 de octubre de 2025.",
+      "source_ids": [
+        "igm-campo-hielo-sur-campaign-2025"
+      ],
+      "provenance": [
+        {
+          "source_id": "igm-campo-hielo-sur-campaign-2025",
+          "source_url": "https://www.igm.cl/?menu=5&page=noticias-actividades-igm2",
+          "locator": "Historial de noticias; fila de 13-10-2025: mediciones en Villa O?Higgins para la Campaña Campo de Hielo Sur 2025",
+          "retrieved_at": "2026-09-13"
+        }
+      ],
+      "entity_ids": [
+        "villa-ohiggins",
+        "campo-de-hielo-sur"
+      ],
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-13",
+      "source_classification": "source_documented",
+      "fact_scope": "Título y fecha en el historial oficial del IGM: denominación de campaña, mediciones en Villa O’Higgins y año 2025. No se recuperó el cuerpo de la noticia.",
+      "knowledge_class": "non_embedding_reference",
+      "sensitivity": "internal_research",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "general_embedding_allowed": false,
+      "vector_ingestion_status": "not_performed",
+      "sovereignty_implication": false,
+      "boundary_results_status": "requires_authoritative_review",
+      "blocked_consumers": [
+        "general-rag",
+        "travel-agent"
+      ]
+    },
+    {
+      "id": "ac05-004",
+      "claim": "El IGM ofrece en su catálogo una carta Campos de Hielo Sur a escala 1:250.000 en formato JPG.",
+      "source_ids": [
+        "igm-campos-de-hielo-sur-250k"
+      ],
+      "provenance": [
+        {
+          "source_id": "igm-campos-de-hielo-sur-250k",
+          "source_url": "https://www.igm.cl/tiendaonline/inicio/5760-campos-de-hielo-sur-jpg.html",
+          "locator": "Título y descripción del producto; referencia 59291180618",
+          "retrieved_at": "2026-09-13"
+        }
+      ],
+      "entity_ids": [
+        "campo-de-hielo-sur"
+      ],
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-13",
+      "source_classification": "source_documented",
+      "fact_scope": "Sólo los hechos identificados en evidence_register; sin inferencias de soberanía, resultados fronterizos ni operación actual.",
+      "knowledge_class": "non_embedding_reference",
+      "sensitivity": "internal_research",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "general_embedding_allowed": false,
+      "vector_ingestion_status": "not_performed",
+      "sovereignty_implication": false,
+      "boundary_results_status": "requires_authoritative_review",
+      "blocked_consumers": [
+        "general-rag",
+        "travel-agent"
+      ]
+    },
+    {
+      "id": "ac05-005",
+      "claim": "El catálogo del IGM identifica J134 Cerro O’Higgins a escala 1:50.000 y lista variantes JPG, GeoTIFF, SHP y papel.",
+      "source_ids": [
+        "igm-j134-cerro-ohiggins-50k"
+      ],
+      "provenance": [
+        {
+          "source_id": "igm-j134-cerro-ohiggins-50k",
+          "source_url": "https://www.igm.cl/tiendaonline/1178-carta-j134-cerro-o-higgins",
+          "locator": "Carta J134; descripción y listado de cuatro variantes; metadatos adicionales en ficha SHP 4346",
+          "retrieved_at": "2026-09-13"
+        }
+      ],
+      "entity_ids": [
+        "campo-de-hielo-sur"
+      ],
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-13",
+      "source_classification": "source_documented",
+      "fact_scope": "Sólo los hechos identificados en evidence_register; sin inferencias de soberanía, resultados fronterizos ni operación actual.",
+      "knowledge_class": "non_embedding_reference",
+      "sensitivity": "internal_research",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "general_embedding_allowed": false,
+      "vector_ingestion_status": "not_performed",
+      "sovereignty_implication": false,
+      "boundary_results_status": "requires_authoritative_review",
+      "blocked_consumers": [
+        "general-rag",
+        "travel-agent"
+      ]
+    },
+    {
+      "id": "ac05-006",
+      "claim": "El catálogo oficial del IGM incluye la carta J113 Villa O’Higgins bajo la serie 1:50.000; las variantes individuales no fueron verificadas.",
+      "source_ids": [
+        "igm-villa-lago-ohiggins-50k-catalog"
+      ],
+      "provenance": [
+        {
+          "source_id": "igm-villa-lago-ohiggins-50k-catalog",
+          "source_url": "https://www.igm.cl/tiendaonline/content/4-nuestra-tienda",
+          "locator": "Menú Cartografías > 1:50.000 > Sección J: J113, J135, J136; catálogo Sección J página 34 para J113",
+          "retrieved_at": "2026-09-13"
+        }
+      ],
+      "entity_ids": [
+        "villa-ohiggins"
+      ],
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-13",
+      "source_classification": "source_documented",
+      "fact_scope": "Identidad y pertenencia a la serie 1:50.000 en el catálogo; J113 además tiene una entrada descriptiva en Sección J página 34. No se verificaron sus fichas individuales ni variantes.",
+      "knowledge_class": "non_embedding_reference",
+      "sensitivity": "internal_research",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "general_embedding_allowed": false,
+      "vector_ingestion_status": "not_performed",
+      "sovereignty_implication": false,
+      "boundary_results_status": "requires_authoritative_review",
+      "blocked_consumers": [
+        "general-rag",
+        "travel-agent"
+      ]
+    },
+    {
+      "id": "ac05-007",
+      "claim": "El catálogo oficial del IGM incluye la carta J135 Lago O’Higgins bajo la serie 1:50.000; las variantes individuales no fueron verificadas.",
+      "source_ids": [
+        "igm-villa-lago-ohiggins-50k-catalog"
+      ],
+      "provenance": [
+        {
+          "source_id": "igm-villa-lago-ohiggins-50k-catalog",
+          "source_url": "https://www.igm.cl/tiendaonline/content/4-nuestra-tienda",
+          "locator": "Menú Cartografías > 1:50.000 > Sección J: J113, J135, J136; catálogo Sección J página 34 para J113",
+          "retrieved_at": "2026-09-13"
+        }
+      ],
+      "entity_ids": [
+        "lago-ohiggins"
+      ],
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-13",
+      "source_classification": "source_documented",
+      "fact_scope": "Identidad y pertenencia a la serie 1:50.000 en el catálogo; J113 además tiene una entrada descriptiva en Sección J página 34. No se verificaron sus fichas individuales ni variantes.",
+      "knowledge_class": "non_embedding_reference",
+      "sensitivity": "internal_research",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "general_embedding_allowed": false,
+      "vector_ingestion_status": "not_performed",
+      "sovereignty_implication": false,
+      "boundary_results_status": "requires_authoritative_review",
+      "blocked_consumers": [
+        "general-rag",
+        "travel-agent"
+      ]
+    },
+    {
+      "id": "ac05-008",
+      "claim": "El catálogo oficial del IGM incluye la carta J136 Brazo Nordeste–Lago O’Higgins bajo la serie 1:50.000; las variantes individuales no fueron verificadas.",
+      "source_ids": [
+        "igm-villa-lago-ohiggins-50k-catalog"
+      ],
+      "provenance": [
+        {
+          "source_id": "igm-villa-lago-ohiggins-50k-catalog",
+          "source_url": "https://www.igm.cl/tiendaonline/content/4-nuestra-tienda",
+          "locator": "Menú Cartografías > 1:50.000 > Sección J: J113, J135, J136; catálogo Sección J página 34 para J113",
+          "retrieved_at": "2026-09-13"
+        }
+      ],
+      "entity_ids": [
+        "lago-ohiggins"
+      ],
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-13",
+      "source_classification": "source_documented",
+      "fact_scope": "Identidad y pertenencia a la serie 1:50.000 en el catálogo; J113 además tiene una entrada descriptiva en Sección J página 34. No se verificaron sus fichas individuales ni variantes.",
+      "knowledge_class": "non_embedding_reference",
+      "sensitivity": "internal_research",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "general_embedding_allowed": false,
+      "vector_ingestion_status": "not_performed",
+      "sovereignty_implication": false,
+      "boundary_results_status": "requires_authoritative_review",
+      "blocked_consumers": [
+        "general-rag",
+        "travel-agent"
+      ]
+    },
+    {
+      "id": "ac05-009",
+      "claim": "DIFROL dispone una colección de esquicios en Adobe Illustrator y PDF; la página identifica versión 2.0 y fecha de publicación 30 de diciembre de 2025.",
+      "source_ids": [
+        "difrol-official-maps-2026"
+      ],
+      "provenance": [
+        {
+          "source_id": "difrol-official-maps-2026",
+          "source_url": "https://www.difrol.cl/descarga-esquicio-de-chile/",
+          "locator": "Esquicio de Chile; formatos, Datos de los esquicios y lista de recursos",
+          "retrieved_at": "2026-09-13"
+        }
+      ],
+      "entity_ids": [],
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-13",
+      "source_classification": "source_documented",
+      "fact_scope": "Página oficial de recursos: disponibilidad de esquicios y versión 2.0, fecha publicada 30-12-2025. El nombre de archivo 2026 identifica el ciclo de revisión, no una fecha de edición.",
+      "knowledge_class": "non_embedding_reference",
+      "sensitivity": "internal_research",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "general_embedding_allowed": false,
+      "vector_ingestion_status": "not_performed",
+      "sovereignty_implication": false,
+      "boundary_results_status": "requires_authoritative_review",
+      "blocked_consumers": [
+        "general-rag",
+        "travel-agent"
+      ]
+    },
+    {
+      "id": "ac05-010",
+      "claim": "La tabla oficial de DIFROL registra la resolución 76 del 24 de junio de 2025 para SAF: Carta Aeronáutica Villa O’Higgins a escala 1:500.000 con información aeronáutica de 2024.",
+      "source_ids": [
+        "difrol-villa-ohiggins-aeronautical-chart-2025"
+      ],
+      "provenance": [
+        {
+          "source_id": "difrol-villa-ohiggins-aeronautical-chart-2025",
+          "source_url": "https://www.difrol.cl/transparencia/terceros_instrucciones-dictamenes-circulares_2025.html",
+          "locator": "Tabla 2025 de actos con efectos sobre terceros; fila RESOLUCIÓN 76, SAF, 24-6-2025",
+          "retrieved_at": "2026-09-13"
+        }
+      ],
+      "entity_ids": [
+        "villa-ohiggins"
+      ],
+      "verification_status": "qualified",
+      "status": "qualified",
+      "verified_at": "2026-09-13",
+      "source_classification": "source_documented",
+      "fact_scope": "Existencia, número, fecha y objeto de la resolución verificados en la tabla oficial de DIFROL. No equivale a lectura del texto íntegro, verificación de firma o revisión de cláusulas.",
+      "knowledge_class": "non_embedding_reference",
+      "sensitivity": "internal_research",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "general_embedding_allowed": false,
+      "vector_ingestion_status": "not_performed",
+      "sovereignty_implication": false,
+      "boundary_results_status": "requires_authoritative_review",
+      "blocked_consumers": [
+        "general-rag",
+        "travel-agent"
+      ]
+    }
+  ],
+  "embedding_eligible": false,
+  "embedding_ready": false,
+  "general_embedding_allowed": false,
+  "vector_ingestion_status": "not_performed",
+  "source_records": {
+    "igm-campo-hielo-sur-campaign-2025": "data/sources/igm-campo-hielo-sur-campaign-2025.json",
+    "igm-campos-de-hielo-sur-250k": "data/sources/igm-campos-de-hielo-sur-250k.json",
+    "igm-j134-cerro-ohiggins-50k": "data/sources/igm-j134-cerro-ohiggins-50k.json",
+    "igm-villa-lago-ohiggins-50k-catalog": "data/sources/igm-villa-lago-ohiggins-50k-catalog.json",
+    "difrol-official-maps-2026": "data/sources/difrol-official-maps-2026.json",
+    "difrol-villa-ohiggins-aeronautical-chart-2025": "data/sources/difrol-villa-ohiggins-aeronautical-chart-2025.json"
+  }
+}

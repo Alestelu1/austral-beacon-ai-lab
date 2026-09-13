@@ -183,5 +183,38 @@
     }
   ],
   "candidate_registry": "data/knowledge/campo-hielo-sur-local-graph.json",
-  "reconciliation_registry": "data/knowledge/batch-05-wave-1-reconciliation.json"
+  "reconciliation_registry": "data/knowledge/batch-05-wave-1-reconciliation.json",
+  "source_contexts": [
+    {
+      "predicate": "official_geodetic_activity_context",
+      "target": "igm-campo-hielo-sur-campaign-2025",
+      "target_type": "source_record",
+      "target_status": "documented_activity_reference",
+      "status": "documented",
+      "activity_name": "Campaña Campo de Hielo Sur 2025",
+      "claim_ids": [
+        "ac05-001",
+        "ac05-002",
+        "ac05-003"
+      ],
+      "source_ids": [
+        "igm-campo-hielo-sur-campaign-2025"
+      ],
+      "provenance": [
+        {
+          "source_id": "igm-campo-hielo-sur-campaign-2025",
+          "source_url": "https://www.igm.cl/?menu=5&page=noticias-actividades-igm2",
+          "locator": "Historial de noticias; fila de 13-10-2025: mediciones en Villa O?Higgins para la Campaña Campo de Hielo Sur 2025",
+          "retrieved_at": "2026-09-13"
+        }
+      ],
+      "evidence_ref": "knowledge-base/research/batch-05-authority-closure-evidence-register.json",
+      "fact_scope": "Campaign name, measurements in Villa O’Higgins and year only",
+      "sovereignty_implication": false,
+      "boundary_results_status": "requires_authoritative_review",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "general_embedding_allowed": false
+    }
+  ]
 }

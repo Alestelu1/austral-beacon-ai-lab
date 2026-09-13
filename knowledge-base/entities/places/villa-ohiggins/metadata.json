@@ -20,7 +20,8 @@
     "bienes-nacionales-parque-glaciar-mosco",
     "bienes-nacionales-rp6-campo-hielo-sur",
     "drive-carretera-austral-pdf",
-    "sernatur-carretera-austral-aysen"
+    "sernatur-carretera-austral-aysen",
+    "igm-campo-hielo-sur-campaign-2025"
   ],
   "requires_citation": true,
   "geometry": null,
@@ -71,5 +72,19 @@
       "b05-009"
     ],
     "commune_details": "pending_primary_normalization"
+  },
+  "official_geodetic_activity_context": {
+    "source_ids": [
+      "igm-campo-hielo-sur-campaign-2025"
+    ],
+    "claim_ids": [
+      "ac05-001",
+      "ac05-002",
+      "ac05-003"
+    ],
+    "relationship_registry": "knowledge-base/entities/places/villa-ohiggins/relationships.json",
+    "relationship_collection": "source_contexts",
+    "sovereignty_implication": false,
+    "embedding_eligible": false
   }
 }

@@ -202,6 +202,21 @@
       "id": "sernatur-carretera-austral-aysen",
       "source_type": "primary_chilean_institutional",
       "institution": "SERNATUR"
+    },
+    {
+      "id": "igm-campo-hielo-sur-campaign-2025",
+      "source_type": "primary_chilean_institutional",
+      "source_class": "primary_chilean_institutional",
+      "title": "IGM realizó mediciones en Villa O’Higgins para la Campaña Campo de Hielo Sur 2025",
+      "institution": "Instituto Geográfico Militar de Chile",
+      "url": "https://www.igm.cl/?menu=5&page=noticias-actividades-igm2",
+      "published_at": "2025-10-13",
+      "retrieved_at": "2026-09-13",
+      "record_path": "data/sources/igm-campo-hielo-sur-campaign-2025.json",
+      "verification_scope": "Título y fecha en el historial oficial del IGM: denominación de campaña, mediciones en Villa O’Higgins y año 2025. No se recuperó el cuerpo de la noticia.",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "general_embedding_allowed": false
     }
   ]
 }
