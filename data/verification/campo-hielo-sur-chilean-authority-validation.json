@@ -1,0 +1,266 @@
+{
+  "verification": [
+    {
+      "claim": "AthenaLab sostiene una debilidad de la presencia estatal y de la integración territorial.",
+      "claim_id": "b05-a01",
+      "source": [
+        "athenalab-campo-hielo-sur-research-source"
+      ],
+      "primary_authority_needed": "MINREL/DIFROL; IGM para cartografía; organismo sectorial para infraestructura",
+      "verification_status": "pending",
+      "notes": "claim_pending_primary_source_validation; no embedding general"
+    },
+    {
+      "claim": "AthenaLab interpreta restricciones de representación cartográfica y contrasta mapas chilenos y argentinos.",
+      "claim_id": "b05-a02",
+      "source": [
+        "athenalab-campo-hielo-sur-research-source"
+      ],
+      "primary_authority_needed": "MINREL/DIFROL; IGM para cartografía; organismo sectorial para infraestructura",
+      "verification_status": "pending",
+      "notes": "claim_pending_primary_source_validation; no embedding general"
+    },
+    {
+      "claim": "AthenaLab plantea un camino Bahamondes–Bahía Pescado como propuesta; no acredita obra ejecutada.",
+      "claim_id": "b05-a03",
+      "source": [
+        "athenalab-campo-hielo-sur-research-source"
+      ],
+      "primary_authority_needed": "MINREL/DIFROL; IGM para cartografía; organismo sectorial para infraestructura",
+      "verification_status": "pending",
+      "notes": "claim_pending_primary_source_validation; no embedding general"
+    },
+    {
+      "claim": "AthenaLab describe presencia institucional en Villa O’Higgins y Puerto Bahamondes.",
+      "claim_id": "b05-a04",
+      "source": [
+        "athenalab-campo-hielo-sur-research-source"
+      ],
+      "primary_authority_needed": "MINREL/DIFROL; IGM para cartografía; organismo sectorial para infraestructura",
+      "verification_status": "pending",
+      "notes": "claim_pending_primary_source_validation; no embedding general"
+    },
+    {
+      "claim": "AthenaLab vincula Campo de Hielo Sur con Aysén, Magallanes y áreas protegidas; extensión y polígonos requieren fuente primaria.",
+      "claim_id": "b05-a05",
+      "source": [
+        "athenalab-campo-hielo-sur-research-source"
+      ],
+      "primary_authority_needed": "MINREL/DIFROL; IGM para cartografía; organismo sectorial para infraestructura",
+      "verification_status": "pending",
+      "notes": "claim_pending_primary_source_validation; no embedding general"
+    },
+    {
+      "claim": "Estado actual de trabajos bilaterales en cada sector del Acuerdo de 1998",
+      "source": [
+        "bcn-decreto-1155-acuerdo-1998"
+      ],
+      "primary_authority_needed": "MINREL/DIFROL / Comisión Mixta de Límites",
+      "verification_status": "pending",
+      "notes": "Existencia/texto verificados; ejecución actual no verificada."
+    },
+    {
+      "claim": "Resolución de circulación cartográfica de la copia Mosco",
+      "source": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "primary_authority_needed": "Bienes Nacionales / DIFROL",
+      "verification_status": "insufficient_evidence",
+      "notes": "Campos vacíos en PDF p.2. Solicitar edición final identificada."
+    },
+    {
+      "claim": "Distancia Río Bravo–Villa O’Higgins, tiempos de cruce, vigencia de refugios y navegación",
+      "source": [
+        "bienes-nacionales-parque-glaciar-mosco",
+        "sernatur-carretera-austral-aysen",
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "primary_authority_needed": "MOP/Vialidad, MTT, DIRECTEMAR y administradores competentes",
+      "verification_status": "pending",
+      "notes": "Conservar versiones 90/100 km y 45/50 min sin fusionar."
+    },
+    {
+      "claim": "Longitud oficial RP6",
+      "source": [
+        "bienes-nacionales-rp6-campo-hielo-sur",
+        "bienes-nacionales-rp6-ficha"
+      ],
+      "primary_authority_needed": "Bienes Nacionales",
+      "verification_status": "qualified",
+      "notes": "79,1 km declarados; suma de tabla 79,3 km."
+    }
+  ],
+  "valid_statuses": [
+    "verified",
+    "qualified",
+    "contradicted",
+    "pending",
+    "insufficient_evidence"
+  ],
+  "batch": "05",
+  "wave": 1,
+  "conflicts": [
+    {
+      "id": "rp6-length",
+      "claim_ids": [
+        "b05-002"
+      ],
+      "quantity": "documented_circuit_length",
+      "unit": "km",
+      "observations": [
+        {
+          "value": 79.1,
+          "source_ids": [
+            "bienes-nacionales-rp6-campo-hielo-sur",
+            "bienes-nacionales-rp6-ficha"
+          ],
+          "provenance": [
+            {
+              "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+              "pdf_pages": [
+                6,
+                48
+              ]
+            },
+            {
+              "source_id": "bienes-nacionales-rp6-ficha",
+              "pdf_pages": [
+                2
+              ]
+            }
+          ],
+          "method": "declared_in_source"
+        },
+        {
+          "value": 79.3,
+          "source_ids": [
+            "bienes-nacionales-rp6-campo-hielo-sur"
+          ],
+          "provenance": [
+            {
+              "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+              "pdf_pages": [
+                10
+              ]
+            }
+          ],
+          "method": "arithmetic_sum_of_table_not_official_corrected_distance",
+          "inputs": [
+            6.7,
+            18.1,
+            7.3,
+            13.8,
+            8.6,
+            24.8
+          ]
+        }
+      ],
+      "primary_authority_needed": "Ministerio de Bienes Nacionales",
+      "verification_status": "pending",
+      "resolution": "unresolved",
+      "selected_value": null,
+      "embedding_ready": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "requires_current_verification": true
+    },
+    {
+      "id": "rio-bravo-villa-ohiggins-distance",
+      "claim_ids": [
+        "b05-011",
+        "b05-017"
+      ],
+      "quantity": "documented_road_distance",
+      "unit": "km",
+      "observations": [
+        {
+          "value": 90,
+          "source_ids": [
+            "bienes-nacionales-parque-glaciar-mosco"
+          ],
+          "provenance": [
+            {
+              "source_id": "bienes-nacionales-parque-glaciar-mosco",
+              "pdf_pages": [
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "value": 100,
+          "source_ids": [
+            "sernatur-carretera-austral-aysen"
+          ],
+          "provenance": [
+            {
+              "source_id": "sernatur-carretera-austral-aysen",
+              "pdf_pages": [
+                22
+              ]
+            }
+          ]
+        }
+      ],
+      "primary_authority_needed": "MOP / Dirección de Vialidad",
+      "verification_status": "pending",
+      "resolution": "unresolved",
+      "selected_value": null,
+      "embedding_ready": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "requires_current_verification": true
+    },
+    {
+      "id": "mitchell-crossing-duration",
+      "claim_ids": [
+        "b05-011",
+        "b05-017"
+      ],
+      "quantity": "documented_crossing_duration",
+      "unit": "minute",
+      "observations": [
+        {
+          "value": 45,
+          "source_ids": [
+            "bienes-nacionales-parque-glaciar-mosco"
+          ],
+          "provenance": [
+            {
+              "source_id": "bienes-nacionales-parque-glaciar-mosco",
+              "pdf_pages": [
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "value": 50,
+          "source_ids": [
+            "sernatur-carretera-austral-aysen"
+          ],
+          "provenance": [
+            {
+              "source_id": "sernatur-carretera-austral-aysen",
+              "pdf_pages": [
+                22
+              ]
+            }
+          ]
+        }
+      ],
+      "primary_authority_needed": "MTT / DIRECTEMAR / competent service authority",
+      "verification_status": "pending",
+      "resolution": "unresolved",
+      "selected_value": null,
+      "embedding_ready": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "requires_current_verification": true
+    }
+  ],
+  "boundary_status": "requires_authoritative_review",
+  "current_bilateral_execution_verified": false,
+  "general_embedding_allowed": false,
+  "embedding_ready": false
+}

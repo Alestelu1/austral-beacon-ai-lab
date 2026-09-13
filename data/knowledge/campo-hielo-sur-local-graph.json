@@ -1,0 +1,785 @@
+{
+  "schema_version": "1.0",
+  "canonical_layer": "knowledge-base/entities",
+  "nodes": [
+    {
+      "id": "villa-ohiggins",
+      "canonical_name": "Villa O’Higgins",
+      "aliases": [
+        "villa_ohiggins"
+      ],
+      "entity_type": "settlement",
+      "status": "canonical",
+      "canonical_ref": "knowledge-base/entities/places/villa-ohiggins",
+      "embedding_ready": false,
+      "source_ids": [
+        "athenalab-campo-hielo-sur-research-source",
+        "bienes-nacionales-parque-glaciar-mosco",
+        "bienes-nacionales-rp6-campo-hielo-sur",
+        "drive-carretera-austral-pdf",
+        "sernatur-carretera-austral-aysen"
+      ]
+    },
+    {
+      "id": "lago-ohiggins",
+      "canonical_name": "Lago O’Higgins",
+      "aliases": [
+        "lago_ohiggins"
+      ],
+      "entity_type": "lake",
+      "status": "canonical",
+      "canonical_ref": "knowledge-base/entities/geography/lago-ohiggins",
+      "embedding_ready": false,
+      "source_ids": [
+        "athenalab-campo-hielo-sur-research-source",
+        "bienes-nacionales-rp6-campo-hielo-sur",
+        "bienes-nacionales-rp6-ficha",
+        "drive-carretera-austral-pdf",
+        "sernatur-carretera-austral-aysen"
+      ]
+    },
+    {
+      "id": "candelario-mansilla",
+      "canonical_name": "Candelario Mansilla",
+      "aliases": [
+        "candelario_mansilla"
+      ],
+      "entity_type": "locality",
+      "status": "canonical",
+      "canonical_ref": "knowledge-base/entities/places/candelario-mansilla",
+      "embedding_ready": false,
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur",
+        "bienes-nacionales-rp6-ficha"
+      ]
+    },
+    {
+      "id": "glaciar-ohiggins",
+      "canonical_name": "Glaciar O’Higgins",
+      "aliases": [
+        "glaciar_ohiggins"
+      ],
+      "entity_type": "glacier",
+      "status": "canonical",
+      "canonical_ref": "knowledge-base/entities/geography/glaciar-ohiggins",
+      "embedding_ready": false,
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur",
+        "sernatur-carretera-austral-aysen"
+      ]
+    },
+    {
+      "id": "campo-de-hielo-sur",
+      "canonical_name": "Campo de Hielo Sur",
+      "aliases": [
+        "campo_de_hielo_sur"
+      ],
+      "entity_type": "icefield",
+      "status": "canonical",
+      "canonical_ref": "knowledge-base/entities/geography/campo-de-hielo-sur",
+      "embedding_ready": false,
+      "source_ids": [
+        "athenalab-campo-hielo-sur-research-source",
+        "bcn-decreto-1155-acuerdo-1998",
+        "bienes-nacionales-parque-glaciar-mosco",
+        "sernatur-carretera-austral-aysen"
+      ]
+    },
+    {
+      "id": "parque-glaciar-mosco",
+      "canonical_name": "Parque Glaciar Mosco",
+      "aliases": [
+        "parque_glaciar_mosco"
+      ],
+      "entity_type": "bien_nacional_protegido",
+      "status": "candidate",
+      "canonical_ref": null,
+      "embedding_ready": false,
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "public_retrieval_allowed": false,
+      "promotion_status": "deferred_beyond_wave_1",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    },
+    {
+      "id": "monte-fitz-roy-chalten",
+      "canonical_name": "Monte Fitz Roy / Cerro Chaltén",
+      "aliases": [
+        "monte_fitz_roy_chalten",
+        "Monte Fitz Roy",
+        "Fitz Roy",
+        "Cerro Chaltén"
+      ],
+      "entity_type": "mountain",
+      "status": "canonical",
+      "canonical_ref": "knowledge-base/entities/geography/monte-fitz-roy-chalten",
+      "embedding_ready": false,
+      "source_ids": [
+        "athenalab-campo-hielo-sur-research-source",
+        "bcn-decreto-1155-acuerdo-1998",
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "territorial_guard_ref": "knowledge-base/entities/geography/monte-fitz-roy-chalten/metadata.json#territorial_classification_guard",
+      "automatic_country_assignment_allowed": false
+    },
+    {
+      "id": "cerro-torre",
+      "canonical_name": "Cerro Torre",
+      "aliases": [
+        "cerro_torre"
+      ],
+      "entity_type": "mountain",
+      "status": "candidate",
+      "canonical_ref": null,
+      "embedding_ready": false,
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "public_retrieval_allowed": false,
+      "promotion_status": "deferred_beyond_wave_1",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    },
+    {
+      "id": "lago-chico",
+      "canonical_name": "Lago Chico",
+      "aliases": [
+        "lago_chico"
+      ],
+      "entity_type": "lake",
+      "status": "candidate",
+      "canonical_ref": null,
+      "embedding_ready": false,
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "public_retrieval_allowed": false,
+      "promotion_status": "deferred_beyond_wave_1",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    },
+    {
+      "id": "glaciar-chico",
+      "canonical_name": "Glaciar Chico",
+      "aliases": [
+        "glaciar_chico"
+      ],
+      "entity_type": "glacier",
+      "status": "candidate",
+      "canonical_ref": null,
+      "embedding_ready": false,
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "public_retrieval_allowed": false,
+      "promotion_status": "deferred_beyond_wave_1",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    },
+    {
+      "id": "parque-nacional-bernardo-ohiggins",
+      "canonical_name": "Parque Nacional Bernardo O’Higgins",
+      "aliases": [
+        "parque_nacional_bernardo_ohiggins"
+      ],
+      "entity_type": "national_park",
+      "status": "candidate",
+      "canonical_ref": null,
+      "embedding_ready": false,
+      "source_ids": [
+        "athenalab-campo-hielo-sur-research-source",
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "public_retrieval_allowed": false,
+      "promotion_status": "deferred_beyond_wave_1",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    },
+    {
+      "id": "puerto-yungay",
+      "canonical_name": "Puerto Yungay",
+      "aliases": [
+        "puerto_yungay"
+      ],
+      "entity_type": "transport_locality",
+      "status": "candidate",
+      "canonical_ref": null,
+      "embedding_ready": false,
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco",
+        "drive-carretera-austral-pdf",
+        "sernatur-carretera-austral-aysen"
+      ],
+      "public_retrieval_allowed": false,
+      "promotion_status": "deferred_beyond_wave_1",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    },
+    {
+      "id": "rio-bravo",
+      "canonical_name": "Río Bravo",
+      "aliases": [
+        "rio_bravo"
+      ],
+      "entity_type": "unresolved_toponym",
+      "status": "candidate",
+      "canonical_ref": null,
+      "embedding_ready": false,
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco",
+        "sernatur-carretera-austral-aysen"
+      ],
+      "public_retrieval_allowed": false,
+      "promotion_status": "deferred_beyond_wave_1",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json",
+      "identity_resolution": "River and ferry endpoint/ramp must be separated; no canonical river or infrastructure identity assigned."
+    },
+    {
+      "id": "bahia-bahamondes",
+      "canonical_name": "Bahía Bahamondes",
+      "aliases": [
+        "bahia_bahamondes"
+      ],
+      "entity_type": "bay",
+      "status": "candidate",
+      "canonical_ref": null,
+      "embedding_ready": false,
+      "source_ids": [
+        "athenalab-campo-hielo-sur-research-source",
+        "bienes-nacionales-rp6-campo-hielo-sur",
+        "drive-carretera-austral-pdf"
+      ],
+      "public_retrieval_allowed": false,
+      "promotion_status": "deferred_beyond_wave_1",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    },
+    {
+      "id": "carretera-austral",
+      "canonical_name": "Carretera Austral",
+      "aliases": [
+        "carretera_austral"
+      ],
+      "entity_type": "road_corridor",
+      "status": "canonical",
+      "canonical_ref": "knowledge-base/entities/routes/carretera-austral",
+      "embedding_ready": false,
+      "source_ids": [
+        "drive-carretera-austral-pdf",
+        "sernatur-carretera-austral-aysen"
+      ]
+    },
+    {
+      "id": "ruta-patrimonial-6",
+      "canonical_name": "Ruta Patrimonial Nº6 — Los Glaciares",
+      "aliases": [
+        "ruta_patrimonial_6"
+      ],
+      "entity_type": "heritage_route",
+      "status": "canonical",
+      "canonical_ref": "knowledge-base/entities/routes/ruta-patrimonial-6",
+      "embedding_ready": false,
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur",
+        "bienes-nacionales-rp6-ficha"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "carretera-austral",
+      "predicate": "connects_with",
+      "target": "villa-ohiggins",
+      "status": "documented",
+      "claim_ids": [
+        "b05-016"
+      ],
+      "source_ids": [
+        "sernatur-carretera-austral-aysen"
+      ],
+      "provenance": [
+        {
+          "source_id": "sernatur-carretera-austral-aysen",
+          "pdf_pages": [
+            22
+          ],
+          "source_url": "https://drive.google.com/file/d/1w5FBz8Mdtxo9nkm0vUAO9kvDT9SJBSqI/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "canonical"
+    },
+    {
+      "source": "villa-ohiggins",
+      "predicate": "documented_lacustrine_access_context",
+      "target": "lago-ohiggins",
+      "status": "documented",
+      "claim_ids": [
+        "b05-015"
+      ],
+      "source_ids": [
+        "sernatur-carretera-austral-aysen"
+      ],
+      "provenance": [
+        {
+          "source_id": "sernatur-carretera-austral-aysen",
+          "pdf_pages": [
+            22
+          ],
+          "source_url": "https://drive.google.com/file/d/1w5FBz8Mdtxo9nkm0vUAO9kvDT9SJBSqI/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "canonical"
+    },
+    {
+      "source": "villa-ohiggins",
+      "predicate": "documented_expedition_support_context",
+      "target": "campo-de-hielo-sur",
+      "status": "documented",
+      "claim_ids": [
+        "b05-009"
+      ],
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "canonical"
+    },
+    {
+      "source": "villa-ohiggins",
+      "predicate": "local_trail_context",
+      "target": "parque-glaciar-mosco",
+      "status": "documented",
+      "claim_ids": [
+        "b05-012"
+      ],
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            23
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "candidate"
+    },
+    {
+      "source": "lago-ohiggins",
+      "predicate": "shore_access_context",
+      "target": "candelario-mansilla",
+      "status": "documented",
+      "claim_ids": [
+        "b05-001"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            6
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "canonical"
+    },
+    {
+      "source": "candelario-mansilla",
+      "predicate": "trailhead",
+      "target": "ruta-patrimonial-6",
+      "status": "documented",
+      "claim_ids": [
+        "b05-001"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            6
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "canonical"
+    },
+    {
+      "source": "ruta-patrimonial-6",
+      "predicate": "documented_view_of",
+      "target": "monte-fitz-roy-chalten",
+      "status": "documented",
+      "claim_ids": [
+        "b05-005"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            14,
+            16
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "canonical"
+    },
+    {
+      "source": "ruta-patrimonial-6",
+      "predicate": "documented_view_of",
+      "target": "cerro-torre",
+      "status": "documented",
+      "claim_ids": [
+        "b05-005"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            14,
+            16
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "candidate"
+    },
+    {
+      "source": "ruta-patrimonial-6",
+      "predicate": "documented_view_of",
+      "target": "lago-chico",
+      "status": "documented",
+      "claim_ids": [
+        "b05-006"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            10,
+            23,
+            49
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "candidate"
+    },
+    {
+      "source": "ruta-patrimonial-6",
+      "predicate": "documented_view_of",
+      "target": "glaciar-chico",
+      "status": "documented",
+      "claim_ids": [
+        "b05-006"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            10,
+            23,
+            49
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "candidate"
+    },
+    {
+      "source": "campo-de-hielo-sur",
+      "predicate": "documented_glacier_relation",
+      "target": "glaciar-ohiggins",
+      "status": "documented",
+      "claim_ids": [
+        "b05-015"
+      ],
+      "source_ids": [
+        "sernatur-carretera-austral-aysen"
+      ],
+      "provenance": [
+        {
+          "source_id": "sernatur-carretera-austral-aysen",
+          "pdf_pages": [
+            22
+          ],
+          "source_url": "https://drive.google.com/file/d/1w5FBz8Mdtxo9nkm0vUAO9kvDT9SJBSqI/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "canonical"
+    },
+    {
+      "source": "villa-ohiggins",
+      "predicate": "regional_connectivity_context",
+      "target": "puerto-yungay",
+      "status": "documented",
+      "claim_ids": [
+        "b05-010"
+      ],
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            9
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "candidate"
+    },
+    {
+      "source": "villa-ohiggins",
+      "predicate": "regional_connectivity_context",
+      "target": "rio-bravo",
+      "status": "qualified",
+      "claim_ids": [
+        "b05-010"
+      ],
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            9
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "candidate"
+    },
+    {
+      "source": "bahia-bahamondes",
+      "predicate": "documented_navigation_to",
+      "target": "candelario-mansilla",
+      "status": "documented",
+      "claim_ids": [
+        "b05-019"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            2
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "canonical"
+    },
+    {
+      "source": "parque-glaciar-mosco",
+      "predicate": "nearby_ranger_facility_context",
+      "target": "parque-nacional-bernardo-ohiggins",
+      "status": "documented",
+      "claim_ids": [
+        "b05-013"
+      ],
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            23
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "candidate"
+    },
+    {
+      "source": "monte-fitz-roy-chalten",
+      "predicate": "documented_route_context",
+      "target": "campo-de-hielo-sur",
+      "status": "qualified",
+      "target_status": "canonical",
+      "claim_ids": [
+        "b05-005"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            14,
+            16
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "context_route": "ruta-patrimonial-6",
+      "fact_scope": "Fitz Roy appears as an observation reference in RP6 Los Glaciares, Campo de Hielo Sur; no physical containment or sovereignty inferred.",
+      "sensitivity": "public_core",
+      "embedding_ready": false,
+      "embedding_eligible": false,
+      "sovereignty_implication": false
+    }
+  ],
+  "excluded_pending_relations": [
+    {
+      "source": "campo-de-hielo-sur",
+      "predicate": "protected_area_relation",
+      "target": "parque-nacional-bernardo-ohiggins",
+      "reason": "Relación general requiere evidencia primaria específica; Mosco p.23 sólo acredita contexto de caseta."
+    }
+  ],
+  "prohibited_inferences": [
+    "Un mapa turístico no establece el límite internacional.",
+    "Una línea argentina no constituye aceptación chilena.",
+    "Google Maps, OSM y Wikipedia no son autoridad jurídica fronteriza.",
+    "Ausencia de línea cartográfica no implica ausencia de soberanía.",
+    "No describir todo Campo de Hielo Sur como territorio en disputa.",
+    "Un sector con trabajo pendiente no es adjudicación definitiva.",
+    "No clasificar automáticamente Fitz Roy/Chaltén como exclusivamente argentino.",
+    "Visibilidad desde Chile no determina soberanía.",
+    "Ruta documentada no acredita apertura actual.",
+    "Navegación documentada no acredita frecuencia actual.",
+    "Sendero cartografiado no acredita seguridad ni transitabilidad.",
+    "Fuente secundaria favorable a Chile no sustituye fuente oficial chilena."
+  ],
+  "artifact_role": "derived_graph",
+  "batch": "05",
+  "wave": 1,
+  "evidence_register": "knowledge-base/research/batch-05-wave-1-evidence-register.json",
+  "embedding_ready": false,
+  "general_embedding_allowed": false
+}

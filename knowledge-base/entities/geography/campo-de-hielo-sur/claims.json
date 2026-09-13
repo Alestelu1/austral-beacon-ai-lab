@@ -1,0 +1,146 @@
+{
+  "entity_id": "campo-de-hielo-sur",
+  "claims": [
+    {
+      "id": "b05-009",
+      "claim": "La topoguía Mosco sitúa Villa O’Higgins en el extremo sur de Aysén y documenta apoyo a expediciones al Campo de Hielo Sur, sin establecer un rango comparativo entre accesos.",
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "entity_ids": [
+        "villa-ohiggins",
+        "campo-de-hielo-sur"
+      ],
+      "knowledge_class": "stable_semantic",
+      "verification_status": "verified",
+      "embedding_ready": true,
+      "evidence_scope": "documented_in_source_not_live_operation",
+      "status": "verified",
+      "verified_at": "2026-09-12",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "sensitivity": "public_core",
+      "requires_current_verification": false,
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "blocked_consumers": [],
+      "source_classification": "source_documented"
+    },
+    {
+      "id": "b05-015",
+      "claim": "SERNATUR documenta un contexto de acceso desde Villa O’Higgins por el Lago O’Higgins para observar el Glaciar O’Higgins, al que relaciona con Campo de Hielo Sur. No se afirma operación actual de navegación.",
+      "source_ids": [
+        "sernatur-carretera-austral-aysen"
+      ],
+      "provenance": [
+        {
+          "source_id": "sernatur-carretera-austral-aysen",
+          "pdf_pages": [
+            22
+          ],
+          "source_url": "https://drive.google.com/file/d/1w5FBz8Mdtxo9nkm0vUAO9kvDT9SJBSqI/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "entity_ids": [
+        "villa-ohiggins",
+        "lago-ohiggins",
+        "glaciar-ohiggins",
+        "campo-de-hielo-sur"
+      ],
+      "knowledge_class": "stable_semantic",
+      "verification_status": "verified",
+      "embedding_ready": true,
+      "evidence_scope": "documented_in_source_not_live_operation",
+      "status": "verified",
+      "verified_at": "2026-09-12",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "sensitivity": "public_core",
+      "requires_current_verification": false,
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "blocked_consumers": [],
+      "source_classification": "source_documented"
+    },
+    {
+      "id": "b05-020",
+      "claim": "La copia de Mosco muestra una referencia cartográfica al Acuerdo de 1998 y deja sin completar número/fecha de resolución de circulación.",
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            2
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "entity_ids": [
+        "campo-de-hielo-sur"
+      ],
+      "knowledge_class": "non_embedding_reference",
+      "verification_status": "verified",
+      "embedding_ready": false,
+      "evidence_scope": "documented_in_source_not_live_operation",
+      "status": "verified",
+      "verified_at": "2026-09-12",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "sensitivity": "internal_research",
+      "requires_current_verification": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "blocked_consumers": [
+        "travel-agent",
+        "general-rag"
+      ],
+      "source_classification": "source_documented",
+      "review_route": "data/verification/campo-hielo-sur-chilean-authority-validation.json"
+    },
+    {
+      "id": "b05-legal-01",
+      "claim": "El acuerdo de 16-12-1998 fue promulgado en 1999; artículo I distingue sección A Murallón–Daudet y B Fitz Roy–Murallón y encomienda trabajos cartográficos. No se certifica su ejecución actual.",
+      "source_ids": [
+        "bcn-decreto-1155-acuerdo-1998"
+      ],
+      "provenance": [
+        {
+          "url": "https://www.bcn.cl/leychile/navegar?idNorma=140087",
+          "locator": "Decreto y artículo I"
+        }
+      ],
+      "entity_ids": [
+        "campo-de-hielo-sur",
+        "monte-fitz-roy-chalten"
+      ],
+      "knowledge_class": "sensitive_territorial_claim",
+      "verification_status": "qualified",
+      "embedding_ready": false,
+      "status": "qualified",
+      "verified_at": "2026-09-12",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "sensitivity": "restricted_context",
+      "requires_current_verification": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "blocked_consumers": [
+        "travel-agent",
+        "general-rag"
+      ],
+      "source_classification": "source_documented",
+      "review_route": "data/verification/campo-hielo-sur-chilean-authority-validation.json"
+    }
+  ]
+}

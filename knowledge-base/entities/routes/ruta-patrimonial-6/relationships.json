@@ -1,0 +1,163 @@
+{
+  "entity_id": "ruta-patrimonial-6",
+  "relationships": [
+    {
+      "predicate": "inverse_of_trailhead",
+      "target": "candelario-mansilla",
+      "status": "documented",
+      "claim_ids": [
+        "b05-001"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            6
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "canonical",
+      "inverse_of": {
+        "source": "candelario-mansilla",
+        "predicate": "trailhead",
+        "target": "ruta-patrimonial-6"
+      },
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    },
+    {
+      "predicate": "documented_view_of",
+      "target": "monte-fitz-roy-chalten",
+      "status": "documented",
+      "claim_ids": [
+        "b05-005"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            14,
+            16
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "canonical",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    },
+    {
+      "predicate": "documented_view_of",
+      "target": "cerro-torre",
+      "status": "documented",
+      "claim_ids": [
+        "b05-005"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            14,
+            16
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "candidate",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    },
+    {
+      "predicate": "documented_view_of",
+      "target": "lago-chico",
+      "status": "documented",
+      "claim_ids": [
+        "b05-006"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            10,
+            23,
+            49
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "candidate",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    },
+    {
+      "predicate": "documented_view_of",
+      "target": "glaciar-chico",
+      "status": "documented",
+      "claim_ids": [
+        "b05-006"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            10,
+            23,
+            49
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "candidate",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    }
+  ],
+  "candidate_registry": "data/knowledge/campo-hielo-sur-local-graph.json",
+  "reconciliation_registry": "data/knowledge/batch-05-wave-1-reconciliation.json"
+}

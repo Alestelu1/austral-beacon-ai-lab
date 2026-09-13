@@ -1,0 +1,207 @@
+{
+  "entity_id": "villa-ohiggins",
+  "sources": [
+    {
+      "title": "Ruta Patrimonial Parque Glaciar Mosco: Bien Nacional Protegido",
+      "publisher": "Ministerio de Bienes Nacionales",
+      "source_class": "primary_chilean_institutional",
+      "country": "Chile",
+      "drive_file_id": "1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N",
+      "drive_title": "Ruta Patrimonial Parque Glaciar Mosco: Bien Nacional Protegido",
+      "url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+      "published_at": null,
+      "retrieved_at": "2026-09-12",
+      "extraction_method": "PDF native text, page-indexed; selected visual checks",
+      "stable_entities": [
+        "campo-de-hielo-sur",
+        "parque-glaciar-mosco",
+        "parque-nacional-bernardo-ohiggins",
+        "puerto-yungay",
+        "rio-bravo",
+        "villa-ohiggins"
+      ],
+      "limitations": [
+        "La presencia de un hecho en el PDF no acredita vigencia operativa.",
+        "No se usa como autoridad jurídica fronteriza.",
+        "Fecha de edición no verificada.",
+        "PDF p.2: número y fecha de resolución de circulación aparecen sin completar; también remisión editorial a pág. XX. Esto no demuestra por sí solo que sea borrador ni invalida todo su contenido.",
+        "No confundir Bien Nacional Protegido con Parque Nacional."
+      ],
+      "geometry_use": "non_canonical_reference_only",
+      "embedding_ready": false,
+      "provenance": {
+        "sha256": "0505507d9da8916e133d5248c9c1fc166defdd645f0cce2e1883d864a7a65ce8",
+        "pdf_pages": 59,
+        "page_numbering": "1-based PDF page; Mosco pages contain two printed pages",
+        "repo_base_commit": "664804ca762cba619bb156e3ee46260979b87e93",
+        "processing_state": "batch05_wave1_structured_source_record"
+      },
+      "record_path": "data/sources/bienes-nacionales-parque-glaciar-mosco.json",
+      "embedding_eligible": false,
+      "inference_policy": "Publisher country is not entity sovereignty. No automatic geographic classification.",
+      "documented_entity_mentions": [
+        "campo-de-hielo-sur",
+        "parque-glaciar-mosco",
+        "parque-nacional-bernardo-ohiggins",
+        "puerto-yungay",
+        "rio-bravo",
+        "villa-ohiggins"
+      ],
+      "id": "bienes-nacionales-parque-glaciar-mosco",
+      "source_type": "primary_chilean_institutional",
+      "institution": "Ministerio de Bienes Nacionales"
+    },
+    {
+      "title": "Ruta Patrimonial Nº6 — Los Glaciares, Campo de Hielo Sur",
+      "publisher": "Ministerio de Bienes Nacionales",
+      "source_class": "primary_chilean_institutional",
+      "country": "Chile",
+      "drive_file_id": "1OKYLX91QfGKLs6VLmLPD6GEftMialEwr",
+      "drive_title": "RP6.pdf",
+      "url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+      "published_at": null,
+      "retrieved_at": "2026-09-12",
+      "extraction_method": "PDF native text + page rendering; selected garbled pages OCR, visually checked when used",
+      "stable_entities": [
+        "bahia-bahamondes",
+        "candelario-mansilla",
+        "cerro-torre",
+        "glaciar-chico",
+        "glaciar-ohiggins",
+        "lago-chico",
+        "lago-ohiggins",
+        "monte-fitz-roy-chalten",
+        "ruta-patrimonial-6",
+        "villa-ohiggins"
+      ],
+      "limitations": [
+        "La presencia de un hecho en el PDF no acredita vigencia operativa.",
+        "No se usa como autoridad jurídica fronteriza.",
+        "Fecha de edición no verificada.",
+        "79,1 km en descripción frente a suma de tramos 79,3 km; conservar discrepancia.",
+        "Texto corrupto en algunas páginas: no normalizar mediante conjetura."
+      ],
+      "geometry_use": "non_canonical_reference_only",
+      "embedding_ready": false,
+      "provenance": {
+        "sha256": "166812ba70447626419759e1cdcec3d4efa07b665e49117f4c5e7f5f6355aa13",
+        "pdf_pages": 57,
+        "page_numbering": "1-based PDF page",
+        "repo_base_commit": "664804ca762cba619bb156e3ee46260979b87e93",
+        "processing_state": "batch05_wave1_structured_source_record"
+      },
+      "record_path": "data/sources/bienes-nacionales-rp6-campo-hielo-sur.json",
+      "embedding_eligible": false,
+      "inference_policy": "Publisher country is not entity sovereignty. No automatic geographic classification.",
+      "documented_entity_mentions": [
+        "bahia-bahamondes",
+        "candelario-mansilla",
+        "cerro-torre",
+        "glaciar-chico",
+        "glaciar-ohiggins",
+        "lago-chico",
+        "lago-ohiggins",
+        "monte-fitz-roy-chalten",
+        "ruta-patrimonial-6",
+        "villa-ohiggins"
+      ],
+      "id": "bienes-nacionales-rp6-campo-hielo-sur",
+      "source_type": "primary_chilean_institutional",
+      "institution": "Ministerio de Bienes Nacionales"
+    },
+    {
+      "title": "La Carretera Austral",
+      "publisher": "Ocho Libros Editores; © Linde Waidhofer",
+      "source_class": "secondary_historical_editorial",
+      "country": "Chile",
+      "drive_file_id": "1XQStYiAa-NLw93PjOKJagt-nDObacq-C",
+      "drive_title": "Carretera-Austral-El-camino-mas-espectacular-de-Sudamerica.pdf",
+      "url": "https://drive.google.com/file/d/1XQStYiAa-NLw93PjOKJagt-nDObacq-C/view",
+      "published_at": "2012",
+      "retrieved_at": "2026-09-12",
+      "extraction_method": "PDF native text, page-indexed; selected visual checks",
+      "stable_entities": [
+        "bahia-bahamondes",
+        "carretera-austral",
+        "lago-ohiggins",
+        "puerto-yungay",
+        "villa-ohiggins"
+      ],
+      "limitations": [
+        "La presencia de un hecho en el PDF no acredita vigencia operativa.",
+        "No se usa como autoridad jurídica fronteriza."
+      ],
+      "geometry_use": "non_canonical_reference_only",
+      "embedding_ready": false,
+      "provenance": {
+        "sha256": "abab5a1e122282134b51affbcb78f0fba034afe3fcca2349819d7bb8a289a33a",
+        "pdf_pages": 93,
+        "page_numbering": "1-based PDF page",
+        "repo_base_commit": "664804ca762cba619bb156e3ee46260979b87e93",
+        "processing_state": "batch05_wave1_structured_source_record"
+      },
+      "record_path": "data/sources/carretera-austral-historical-context.json",
+      "embedding_eligible": false,
+      "inference_policy": "Publisher country is not entity sovereignty. No automatic geographic classification.",
+      "documented_entity_mentions": [
+        "bahia-bahamondes",
+        "carretera-austral",
+        "lago-ohiggins",
+        "puerto-yungay",
+        "villa-ohiggins"
+      ],
+      "id": "drive-carretera-austral-pdf",
+      "source_type": "secondary_historical_editorial",
+      "institution": "Ocho Libros Editores; © Linde Waidhofer"
+    },
+    {
+      "title": "Ruta Carretera Austral",
+      "publisher": "SERNATUR",
+      "source_class": "primary_chilean_institutional",
+      "country": "Chile",
+      "drive_file_id": "1w5FBz8Mdtxo9nkm0vUAO9kvDT9SJBSqI",
+      "drive_title": "patagonia_rutacarretera.pdf",
+      "url": "https://drive.google.com/file/d/1w5FBz8Mdtxo9nkm0vUAO9kvDT9SJBSqI/view",
+      "published_at": null,
+      "retrieved_at": "2026-09-12",
+      "extraction_method": "PDF native text, page-indexed; selected visual checks",
+      "stable_entities": [
+        "campo-de-hielo-sur",
+        "carretera-austral",
+        "glaciar-ohiggins",
+        "lago-ohiggins",
+        "villa-ohiggins"
+      ],
+      "limitations": [
+        "La presencia de un hecho en el PDF no acredita vigencia operativa.",
+        "No se usa como autoridad jurídica fronteriza.",
+        "Fecha de edición no verificada.",
+        "PDF p.24: límites de mapas preliminares y no oficiales."
+      ],
+      "geometry_use": "non_canonical_reference_only",
+      "embedding_ready": false,
+      "provenance": {
+        "sha256": "826b41bf861ae2db412c39cddd1f4fb27fb9e76608180170485db5300256a9fb",
+        "pdf_pages": 25,
+        "page_numbering": "1-based PDF page",
+        "repo_base_commit": "664804ca762cba619bb156e3ee46260979b87e93",
+        "processing_state": "batch05_wave1_structured_source_record"
+      },
+      "record_path": "data/sources/sernatur-carretera-austral-aysen.json",
+      "embedding_eligible": false,
+      "inference_policy": "Publisher country is not entity sovereignty. No automatic geographic classification.",
+      "documented_entity_mentions": [
+        "campo-de-hielo-sur",
+        "carretera-austral",
+        "glaciar-ohiggins",
+        "lago-ohiggins",
+        "puerto-yungay",
+        "rio-bravo",
+        "villa-ohiggins"
+      ],
+      "id": "sernatur-carretera-austral-aysen",
+      "source_type": "primary_chilean_institutional",
+      "institution": "SERNATUR"
+    }
+  ]
+}

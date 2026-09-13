@@ -1,0 +1,91 @@
+{
+  "id": "monte-fitz-roy-chalten",
+  "canonical_name": "Monte Fitz Roy / Cerro Chaltén",
+  "entity_type": "mountain",
+  "status": "canonical",
+  "aliases": [
+    "monte_fitz_roy_chalten",
+    "Monte Fitz Roy",
+    "Fitz Roy",
+    "Cerro Chaltén"
+  ],
+  "sensitivity": "public_core",
+  "retrieval_scope": [
+    "atlas",
+    "travel",
+    "travel-agent",
+    "observatory",
+    "editorial"
+  ],
+  "batch": "05",
+  "wave": 1,
+  "source_ids": [
+    "bcn-decreto-1155-acuerdo-1998",
+    "bienes-nacionales-rp6-campo-hielo-sur"
+  ],
+  "requires_citation": true,
+  "geometry": null,
+  "geometry_status": "pending_authoritative_validation",
+  "embedding_eligible": false,
+  "embedding_ready": false,
+  "retrieval_input": "chunks.json only; metadata and complete MDX are not general embedding inputs",
+  "vector_ingestion_status": "not_performed",
+  "prohibited_inferences": [
+    "Un mapa turístico no establece el límite internacional.",
+    "Una línea argentina no constituye aceptación chilena.",
+    "Google Maps, OSM y Wikipedia no son autoridad jurídica fronteriza.",
+    "Ausencia de línea cartográfica no implica ausencia de soberanía.",
+    "No describir todo Campo de Hielo Sur como territorio en disputa.",
+    "Un sector con trabajo pendiente no es adjudicación definitiva.",
+    "No clasificar automáticamente Fitz Roy/Chaltén como exclusivamente argentino.",
+    "Visibilidad desde Chile no determina soberanía.",
+    "Ruta documentada no acredita apertura actual.",
+    "Navegación documentada no acredita frecuencia actual.",
+    "Sendero cartografiado no acredita seguridad ni transitabilidad.",
+    "Fuente secundaria favorable a Chile no sustituye fuente oficial chilena."
+  ],
+  "territorial_classification_guard": {
+    "automatic_country_assignment_allowed": false,
+    "external_dataset_country_inheritance_allowed": false,
+    "country": null,
+    "boundary_status": "requires_authoritative_review",
+    "required_authorities": [
+      "MINREL/DIFROL",
+      "applicable Chilean official instruments",
+      "IGM"
+    ],
+    "prohibited_status_sources": [
+      "Google Maps",
+      "OpenStreetMap",
+      "Wikipedia",
+      "external datasets without competent Chilean validation"
+    ],
+    "international_boundary_reference": {
+      "claim_ids": [
+        "b05-legal-01"
+      ],
+      "source_ids": [
+        "bcn-decreto-1155-acuerdo-1998"
+      ],
+      "sensitivity": "restricted_context",
+      "embedding_eligible": false
+    },
+    "observation": {
+      "observable_from_chilean_route": true,
+      "route_id": "ruta-patrimonial-6",
+      "claim_ids": [
+        "b05-005"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "weather_dependent": true,
+      "sovereignty_implication": false
+    },
+    "icefield_relation": "documented_route_context; no exclusive country or containment inferred",
+    "embedding_ready": false
+  },
+  "country": null,
+  "boundary_status": "requires_authoritative_review",
+  "observable_from_chilean_route": true
+}
