@@ -16,7 +16,7 @@
   "extraction_method": "official HTML text returned by web retrieval",
   "provenance": {
     "source_url": "https://www.igm.cl/?menu=5&page=noticias-actividades-igm2",
-    "locator": "Historial de noticias; fila de 13-10-2025: mediciones en Villa O?Higgins para la Campaña Campo de Hielo Sur 2025",
+    "locator": "Historial de noticias; fila de 13-10-2025: mediciones en Villa O’Higgins para la Campaña Campo de Hielo Sur 2025",
     "retrieved_at": "2026-09-13",
     "repo_base_commit": "01baf78d67431fc8fedc60641fb563d0dd9401c9",
     "processing_state": "authority_closure_metadata_only",
