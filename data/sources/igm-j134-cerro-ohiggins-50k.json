@@ -1,0 +1,75 @@
+{
+  "source_id": "igm-j134-cerro-ohiggins-50k",
+  "title": "Carta J134 — Cerro O’Higgins, 1:50.000",
+  "publisher": "Instituto Geográfico Militar de Chile",
+  "source_class": "primary_chilean_institutional",
+  "country": "Chile",
+  "url": "https://www.igm.cl/tiendaonline/1178-carta-j134-cerro-o-higgins",
+  "published_at": null,
+  "retrieved_at": "2026-09-13",
+  "record_path": "data/sources/igm-j134-cerro-ohiggins-50k.json",
+  "batch": "05",
+  "wave": 1,
+  "patch": "authority_closure",
+  "verification_status": "verified",
+  "verification_scope": "Sólo los hechos identificados en evidence_register; sin inferencias de soberanía, resultados fronterizos ni operación actual.",
+  "extraction_method": "official HTML text returned by web retrieval",
+  "provenance": {
+    "source_url": "https://www.igm.cl/tiendaonline/1178-carta-j134-cerro-o-higgins",
+    "locator": "Carta J134; descripción y listado de cuatro variantes; metadatos adicionales en ficha SHP 4346",
+    "retrieved_at": "2026-09-13",
+    "repo_base_commit": "01baf78d67431fc8fedc60641fb563d0dd9401c9",
+    "processing_state": "authority_closure_metadata_only",
+    "page_numbering": "not applicable; HTML section/row locator",
+    "additional_evidence": [
+      {
+        "source_url": "https://www.igm.cl/tiendaonline/inicio/4346-cerro-o-higgins-shp.html",
+        "locator": "Descripción: Código IGM J-134, proyección, elipsoide, datum, huso y topónimos de cobertura",
+        "access_method": "official product body returned by web search; subsequent direct open failed",
+        "retrieved_at": "2026-09-13"
+      }
+    ]
+  },
+  "evidence_register": "knowledge-base/research/batch-05-authority-closure-evidence-register.json",
+  "claim_ids": [
+    "ac05-005"
+  ],
+  "authority_scope": [
+    "institutional_geodesy_context",
+    "cartographic_product_inventory"
+  ],
+  "land_boundary_status_determination_allowed": false,
+  "geometry_use": "none",
+  "geometry_acquisition_status": "candidate_pending_acquisition_and_license_review",
+  "embedding_eligible": false,
+  "embedding_ready": false,
+  "general_embedding_allowed": false,
+  "vector_ingestion_status": "not_performed",
+  "blocked_consumers": [
+    "general-rag",
+    "travel-agent"
+  ],
+  "destination_projects": [
+    "End of the World Atlas",
+    "Austral Beacon verification"
+  ],
+  "inference_policy": "Publisher country is not entity sovereignty. No automatic geographic classification.",
+  "limitations": [
+    "No se adquirieron productos, datos ni geometrías.",
+    "La consulta de metadatos no otorga licencia de reutilización ni autoriza una frontera canónica.",
+    "Los metadatos técnicos provienen de la variante SHP; no se verificó el CRS interno de ningún archivo.",
+    "La descripción administrativa de la ficha no se normaliza ni se convierte en pertenencia territorial canónica."
+  ],
+  "scale": "1:50000",
+  "format": [
+    "JPG",
+    "GeoTIFF",
+    "SHP",
+    "papel"
+  ],
+  "producer": "Instituto Geográfico Militar de Chile",
+  "availability": "four_variants_listed_for_sale_at_retrieval; stock_not_independently_confirmed",
+  "license_status": "requires_review",
+  "acquisition_status": "not_acquired",
+  "canonical_geometry_authorized": false
+}

@@ -1,0 +1,63 @@
+{
+  "source_id": "igm-villa-lago-ohiggins-50k-catalog",
+  "title": "Catálogo oficial IGM — cartas J113, J135 y J136, serie 1:50.000",
+  "publisher": "Instituto Geográfico Militar de Chile",
+  "source_class": "primary_chilean_institutional",
+  "country": "Chile",
+  "url": "https://www.igm.cl/tiendaonline/content/4-nuestra-tienda",
+  "published_at": null,
+  "retrieved_at": "2026-09-13",
+  "record_path": "data/sources/igm-villa-lago-ohiggins-50k-catalog.json",
+  "batch": "05",
+  "wave": 1,
+  "patch": "authority_closure",
+  "verification_status": "verified",
+  "verification_scope": "Identidad y pertenencia a la serie 1:50.000 en el catálogo; J113 además tiene una entrada descriptiva en Sección J página 34. No se verificaron sus fichas individuales ni variantes.",
+  "extraction_method": "official HTML text returned by web retrieval",
+  "provenance": {
+    "source_url": "https://www.igm.cl/tiendaonline/content/4-nuestra-tienda",
+    "locator": "Menú Cartografías > 1:50.000 > Sección J: J113, J135, J136; catálogo Sección J página 34 para J113",
+    "retrieved_at": "2026-09-13",
+    "repo_base_commit": "01baf78d67431fc8fedc60641fb563d0dd9401c9",
+    "processing_state": "authority_closure_metadata_only",
+    "page_numbering": "not applicable; HTML section/row locator",
+    "additional_evidence": [
+      {
+        "source_url": "https://www.igm.cl/tiendaonline/31-seccion-j?page=34",
+        "locator": "Entrada Carta J113; descripción 1:50.000 y código 50410011300",
+        "retrieved_at": "2026-09-13"
+      }
+    ]
+  },
+  "evidence_register": "knowledge-base/research/batch-05-authority-closure-evidence-register.json",
+  "claim_ids": [
+    "ac05-006",
+    "ac05-007",
+    "ac05-008"
+  ],
+  "authority_scope": [
+    "institutional_geodesy_context",
+    "cartographic_product_inventory"
+  ],
+  "land_boundary_status_determination_allowed": false,
+  "geometry_use": "none",
+  "geometry_acquisition_status": "candidate_pending_acquisition_and_license_review",
+  "embedding_eligible": false,
+  "embedding_ready": false,
+  "general_embedding_allowed": false,
+  "vector_ingestion_status": "not_performed",
+  "blocked_consumers": [
+    "general-rag",
+    "travel-agent"
+  ],
+  "destination_projects": [
+    "End of the World Atlas",
+    "Austral Beacon verification"
+  ],
+  "inference_policy": "Publisher country is not entity sovereignty. No automatic geographic classification.",
+  "limitations": [
+    "No se adquirieron productos, datos ni geometrías.",
+    "La consulta de metadatos no otorga licencia de reutilización ni autoriza una frontera canónica.",
+    "Formatos, proyección, datum, huso, cobertura detallada y licencia de J113/J135/J136 quedan sin verificar; no heredar metadatos de J134."
+  ]
+}

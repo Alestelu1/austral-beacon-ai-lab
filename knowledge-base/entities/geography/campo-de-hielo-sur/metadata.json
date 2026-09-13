@@ -66,6 +66,10 @@
     "note": "Instrument contents are documented; current execution is unverified. Do not classify the entire icefield as disputed.",
     "canonical_boundary_geometry": null,
     "embedding_eligible": false,
-    "general_embedding_allowed": false
-  }
+    "general_embedding_allowed": false,
+    "current_joint_cartographic_execution_status": "requires_authoritative_review",
+    "canonical_boundary_geometry_status": "not_authorized"
+  },
+  "authority_validation_ref": "data/verification/campo-hielo-sur-chilean-authority-validation.json",
+  "igm_product_registry_ref": "data/geospatial/campo-hielo-sur-igm-product-registry.json"
 }

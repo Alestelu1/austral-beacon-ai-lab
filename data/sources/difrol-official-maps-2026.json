@@ -1,0 +1,65 @@
+{
+  "source_id": "difrol-official-maps-2026",
+  "title": "DIFROL — Esquicio de Chile, colección consultada en 2026",
+  "publisher": "Dirección Nacional de Fronteras y Límites del Estado (DIFROL)",
+  "source_class": "primary_chilean_institutional",
+  "country": "Chile",
+  "url": "https://www.difrol.cl/descarga-esquicio-de-chile/",
+  "published_at": "2025-12-30",
+  "retrieved_at": "2026-09-13",
+  "record_path": "data/sources/difrol-official-maps-2026.json",
+  "batch": "05",
+  "wave": 1,
+  "patch": "authority_closure",
+  "verification_status": "verified",
+  "verification_scope": "Página oficial de recursos: disponibilidad de esquicios y versión 2.0, fecha publicada 30-12-2025. El nombre de archivo 2026 identifica el ciclo de revisión, no una fecha de edición.",
+  "extraction_method": "official HTML text returned by web retrieval",
+  "provenance": {
+    "source_url": "https://www.difrol.cl/descarga-esquicio-de-chile/",
+    "locator": "Esquicio de Chile; formatos, Datos de los esquicios y lista de recursos",
+    "retrieved_at": "2026-09-13",
+    "repo_base_commit": "01baf78d67431fc8fedc60641fb563d0dd9401c9",
+    "processing_state": "authority_closure_metadata_only",
+    "page_numbering": "not applicable; HTML section/row locator"
+  },
+  "evidence_register": "knowledge-base/research/batch-05-authority-closure-evidence-register.json",
+  "claim_ids": [
+    "ac05-009"
+  ],
+  "authority_scope": [
+    "official_territorial_representation_reference",
+    "cartographic_QA"
+  ],
+  "land_boundary_status_determination_allowed": false,
+  "geometry_use": "none",
+  "geometry_acquisition_status": "not_authorized",
+  "embedding_eligible": false,
+  "embedding_ready": false,
+  "general_embedding_allowed": false,
+  "vector_ingestion_status": "not_performed",
+  "blocked_consumers": [
+    "general-rag",
+    "travel-agent"
+  ],
+  "destination_projects": [
+    "End of the World Atlas",
+    "Austral Beacon verification"
+  ],
+  "inference_policy": "Publisher country is not entity sovereignty. No automatic geographic classification.",
+  "limitations": [
+    "No se adquirieron productos, datos ni geometrías.",
+    "La consulta de metadatos no otorga licencia de reutilización ni autoriza una frontera canónica.",
+    "El anuncio de 2026 fue localizado sólo en resultados de búsqueda; su texto y URL específica siguen pendientes.",
+    "Escala técnica detallada para Campo de Hielo Sur no acreditada; no usar como sustituto de cartografía de frontera."
+  ],
+  "resource_version": "2.0",
+  "catalogue_observed_year": 2026,
+  "announcement_2026_status": "requires_authoritative_review",
+  "format": [
+    "Adobe Illustrator",
+    "PDF"
+  ],
+  "license_status": "requires_review",
+  "acquisition_status": "not_acquired",
+  "canonical_geometry_authorized": false
+}

@@ -1,0 +1,263 @@
+{
+  "batch": "05",
+  "wave": 1,
+  "patch": "authority_closure",
+  "base_commit": "01baf78d67431fc8fedc60641fb563d0dd9401c9",
+  "retrieved_at": "2026-09-13",
+  "products": [
+    {
+      "product_id": "IGM-CAMPOS-HIELO-SUR-250K",
+      "official_name": "Campos de Hielo Sur",
+      "producer": "Instituto Geográfico Militar de Chile",
+      "scale": "1:250000",
+      "format": [
+        "JPG"
+      ],
+      "projection": null,
+      "datum": null,
+      "utm_zone": null,
+      "coverage": [],
+      "coverage_status": "not_verified",
+      "availability": "listed_for_sale_at_retrieval; stock_not_independently_confirmed",
+      "license_status": "requires_review",
+      "published_license": null,
+      "acquisition_status": "not_acquired",
+      "geometry_acquisition_status": "candidate_pending_acquisition_and_license_review",
+      "canonical_geometry_authorized": false,
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "general_embedding_allowed": false,
+      "vector_ingestion_status": "not_performed",
+      "source_ids": [
+        "igm-campos-de-hielo-sur-250k"
+      ],
+      "claim_ids": [
+        "ac05-004"
+      ],
+      "provenance": [
+        {
+          "source_id": "igm-campos-de-hielo-sur-250k",
+          "source_url": "https://www.igm.cl/tiendaonline/inicio/5760-campos-de-hielo-sur-jpg.html",
+          "locator": "Título y descripción del producto; referencia 59291180618",
+          "retrieved_at": "2026-09-13"
+        }
+      ],
+      "metadata_scope": "Catalogue metadata only; no product files inspected",
+      "metadata_review_status": "partial",
+      "missing_metadata": [
+        "projection",
+        "datum",
+        "utm_zone",
+        "coverage",
+        "license"
+      ]
+    },
+    {
+      "product_id": "J113",
+      "official_name": "Villa O’Higgins",
+      "producer": "Instituto Geográfico Militar de Chile",
+      "scale": "1:50000",
+      "format": [],
+      "projection": null,
+      "datum": null,
+      "utm_zone": null,
+      "coverage": [],
+      "coverage_status": "not_verified",
+      "availability": "indexed_in_official_50k_catalog; individual_variants_not_verified",
+      "license_status": "requires_review",
+      "published_license": null,
+      "acquisition_status": "not_acquired",
+      "geometry_acquisition_status": "candidate_pending_acquisition_and_license_review",
+      "canonical_geometry_authorized": false,
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "general_embedding_allowed": false,
+      "vector_ingestion_status": "not_performed",
+      "source_ids": [
+        "igm-villa-lago-ohiggins-50k-catalog"
+      ],
+      "claim_ids": [
+        "ac05-006"
+      ],
+      "provenance": [
+        {
+          "source_id": "igm-villa-lago-ohiggins-50k-catalog",
+          "source_url": "https://www.igm.cl/tiendaonline/content/4-nuestra-tienda",
+          "locator": "Menú Cartografías > 1:50.000 > Sección J: J113, J135, J136; catálogo Sección J página 34 para J113",
+          "retrieved_at": "2026-09-13"
+        }
+      ],
+      "metadata_scope": "Catalogue metadata only; no product files inspected",
+      "metadata_review_status": "partial",
+      "missing_metadata": [
+        "projection",
+        "datum",
+        "utm_zone",
+        "coverage",
+        "license",
+        "format",
+        "individual_product_availability"
+      ]
+    },
+    {
+      "product_id": "J134",
+      "official_name": "Cerro O’Higgins",
+      "producer": "Instituto Geográfico Militar de Chile",
+      "scale": "1:50000",
+      "format": [
+        "JPG",
+        "GeoTIFF",
+        "SHP",
+        "papel"
+      ],
+      "projection": "U.T.M",
+      "datum": "SIRGAS (WGS84)",
+      "utm_zone": 18,
+      "coverage": [
+        "Ventisquero O’Higgins",
+        "Lago O’Higgins",
+        "Lago Chico"
+      ],
+      "coverage_status": "toponyms_as_published_in_SHP_description; not_a_geometry",
+      "availability": "four_variants_listed_for_sale_at_retrieval; stock_not_independently_confirmed",
+      "license_status": "requires_review",
+      "published_license": null,
+      "acquisition_status": "not_acquired",
+      "geometry_acquisition_status": "candidate_pending_acquisition_and_license_review",
+      "canonical_geometry_authorized": false,
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "general_embedding_allowed": false,
+      "vector_ingestion_status": "not_performed",
+      "source_ids": [
+        "igm-j134-cerro-ohiggins-50k"
+      ],
+      "claim_ids": [
+        "ac05-005"
+      ],
+      "provenance": [
+        {
+          "source_id": "igm-j134-cerro-ohiggins-50k",
+          "source_url": "https://www.igm.cl/tiendaonline/1178-carta-j134-cerro-o-higgins",
+          "locator": "Carta J134; descripción y listado de cuatro variantes; metadatos adicionales en ficha SHP 4346",
+          "retrieved_at": "2026-09-13"
+        },
+        {
+          "source_id": "igm-j134-cerro-ohiggins-50k",
+          "source_url": "https://www.igm.cl/tiendaonline/inicio/4346-cerro-o-higgins-shp.html",
+          "locator": "Descripción técnica de la variante SHP, código J-134",
+          "retrieved_at": "2026-09-13",
+          "access_method": "official product body returned by web search; subsequent direct open failed"
+        }
+      ],
+      "metadata_scope": "Projection, datum, ellipsoid, zone and coverage are transcribed from SHP product description only. No CRS/EPSG inferred; no administrative assignment.",
+      "metadata_review_status": "documented_SHP_description; license_pending",
+      "missing_metadata": [
+        "license",
+        "internal_file_CRS_verification"
+      ],
+      "ellipsoid": "GRS80"
+    },
+    {
+      "product_id": "J135",
+      "official_name": "Lago O’Higgins",
+      "producer": "Instituto Geográfico Militar de Chile",
+      "scale": "1:50000",
+      "format": [],
+      "projection": null,
+      "datum": null,
+      "utm_zone": null,
+      "coverage": [],
+      "coverage_status": "not_verified",
+      "availability": "indexed_in_official_50k_catalog; individual_variants_not_verified",
+      "license_status": "requires_review",
+      "published_license": null,
+      "acquisition_status": "not_acquired",
+      "geometry_acquisition_status": "candidate_pending_acquisition_and_license_review",
+      "canonical_geometry_authorized": false,
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "general_embedding_allowed": false,
+      "vector_ingestion_status": "not_performed",
+      "source_ids": [
+        "igm-villa-lago-ohiggins-50k-catalog"
+      ],
+      "claim_ids": [
+        "ac05-007"
+      ],
+      "provenance": [
+        {
+          "source_id": "igm-villa-lago-ohiggins-50k-catalog",
+          "source_url": "https://www.igm.cl/tiendaonline/content/4-nuestra-tienda",
+          "locator": "Menú Cartografías > 1:50.000 > Sección J: J113, J135, J136; catálogo Sección J página 34 para J113",
+          "retrieved_at": "2026-09-13"
+        }
+      ],
+      "metadata_scope": "Catalogue metadata only; no product files inspected",
+      "metadata_review_status": "partial",
+      "missing_metadata": [
+        "projection",
+        "datum",
+        "utm_zone",
+        "coverage",
+        "license",
+        "format",
+        "individual_product_availability"
+      ]
+    },
+    {
+      "product_id": "J136",
+      "official_name": "Brazo Nordeste–Lago O’Higgins",
+      "producer": "Instituto Geográfico Militar de Chile",
+      "scale": "1:50000",
+      "format": [],
+      "projection": null,
+      "datum": null,
+      "utm_zone": null,
+      "coverage": [],
+      "coverage_status": "not_verified",
+      "availability": "indexed_in_official_50k_catalog; individual_variants_not_verified",
+      "license_status": "requires_review",
+      "published_license": null,
+      "acquisition_status": "not_acquired",
+      "geometry_acquisition_status": "candidate_pending_acquisition_and_license_review",
+      "canonical_geometry_authorized": false,
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "general_embedding_allowed": false,
+      "vector_ingestion_status": "not_performed",
+      "source_ids": [
+        "igm-villa-lago-ohiggins-50k-catalog"
+      ],
+      "claim_ids": [
+        "ac05-008"
+      ],
+      "provenance": [
+        {
+          "source_id": "igm-villa-lago-ohiggins-50k-catalog",
+          "source_url": "https://www.igm.cl/tiendaonline/content/4-nuestra-tienda",
+          "locator": "Menú Cartografías > 1:50.000 > Sección J: J113, J135, J136; catálogo Sección J página 34 para J113",
+          "retrieved_at": "2026-09-13"
+        }
+      ],
+      "metadata_scope": "Catalogue metadata only; no product files inspected",
+      "metadata_review_status": "partial",
+      "missing_metadata": [
+        "projection",
+        "datum",
+        "utm_zone",
+        "coverage",
+        "license",
+        "format",
+        "individual_product_availability"
+      ]
+    }
+  ],
+  "geometry_acquisition_authorized": false,
+  "canonical_geometry_authorized": false,
+  "embedding_eligible": false,
+  "embedding_ready": false,
+  "general_embedding_allowed": false,
+  "vector_ingestion_status": "not_performed",
+  "scope_note": "Five product families; a product listing is not acquisition, reuse permission or evidence of joint Section B completion. Empty fields mean not verified, not absent."
+}

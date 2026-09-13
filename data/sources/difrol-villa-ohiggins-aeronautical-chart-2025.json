@@ -1,0 +1,67 @@
+{
+  "source_id": "difrol-villa-ohiggins-aeronautical-chart-2025",
+  "title": "DIFROL — registro oficial de Resolución 76/2025, Carta Aeronáutica Villa O’Higgins",
+  "publisher": "Dirección Nacional de Fronteras y Límites del Estado (DIFROL)",
+  "source_class": "primary_chilean_institutional",
+  "country": "Chile",
+  "url": "https://www.difrol.cl/transparencia/terceros_instrucciones-dictamenes-circulares_2025.html",
+  "published_at": "2025-06-24",
+  "retrieved_at": "2026-09-13",
+  "record_path": "data/sources/difrol-villa-ohiggins-aeronautical-chart-2025.json",
+  "batch": "05",
+  "wave": 1,
+  "patch": "authority_closure",
+  "verification_status": "qualified",
+  "verification_scope": "Existencia, número, fecha y objeto de la resolución verificados en la tabla oficial de DIFROL. No equivale a lectura del texto íntegro, verificación de firma o revisión de cláusulas.",
+  "extraction_method": "official HTML text returned by web retrieval",
+  "provenance": {
+    "source_url": "https://www.difrol.cl/transparencia/terceros_instrucciones-dictamenes-circulares_2025.html",
+    "locator": "Tabla 2025 de actos con efectos sobre terceros; fila RESOLUCIÓN 76, SAF, 24-6-2025",
+    "retrieved_at": "2026-09-13",
+    "repo_base_commit": "01baf78d67431fc8fedc60641fb563d0dd9401c9",
+    "processing_state": "authority_closure_metadata_only",
+    "page_numbering": "not applicable; HTML section/row locator"
+  },
+  "evidence_register": "knowledge-base/research/batch-05-authority-closure-evidence-register.json",
+  "claim_ids": [
+    "ac05-010"
+  ],
+  "authority_scope": [
+    "aeronautical_cartography_administrative_record",
+    "air_connectivity_context"
+  ],
+  "land_boundary_status_determination_allowed": false,
+  "geometry_use": "none",
+  "geometry_acquisition_status": "not_authorized",
+  "embedding_eligible": false,
+  "embedding_ready": false,
+  "general_embedding_allowed": false,
+  "vector_ingestion_status": "not_performed",
+  "blocked_consumers": [
+    "general-rag",
+    "travel-agent"
+  ],
+  "destination_projects": [
+    "Observatorio de Conectividad Austral",
+    "Austral Beacon verification"
+  ],
+  "inference_policy": "Publisher country is not entity sovereignty. No automatic geographic classification.",
+  "limitations": [
+    "No se adquirieron productos, datos ni geometrías.",
+    "La consulta de metadatos no otorga licencia de reutilización ni autoriza una frontera canónica.",
+    "Se registra el asiento oficial de la resolución; el PDF resolutivo no fue recuperado.",
+    "2025 es el año de la resolución; el registro identifica información aeronáutica de 2024.",
+    "No acredita rutas aéreas operativas, frecuencias ni obras ejecutadas.",
+    "No usar como autoridad para frontera terrestre ni como autorización de reutilización de la carta."
+  ],
+  "resolution_number": "76",
+  "resolution_date": "2025-06-24",
+  "resolution_identity_status": "verified_in_official_register",
+  "resolution_full_text_status": "requires_authoritative_review",
+  "resolution_full_text_url": null,
+  "chart_name": "Carta Aeronáutica Villa O’Higgins",
+  "chart_scale": "1:500000",
+  "aeronautical_information_year": 2024,
+  "listed_applicant": "SAF",
+  "acquisition_status": "not_acquired"
+}

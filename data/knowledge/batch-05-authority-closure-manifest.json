@@ -1,0 +1,57 @@
+{
+  "batch": "05",
+  "wave": 1,
+  "patch": "authority_closure",
+  "base_commit": "01baf78d67431fc8fedc60641fb563d0dd9401c9",
+  "branch": "rag/batch-05-authority-closure",
+  "source_records": {
+    "igm-campo-hielo-sur-campaign-2025": "data/sources/igm-campo-hielo-sur-campaign-2025.json",
+    "igm-campos-de-hielo-sur-250k": "data/sources/igm-campos-de-hielo-sur-250k.json",
+    "igm-j134-cerro-ohiggins-50k": "data/sources/igm-j134-cerro-ohiggins-50k.json",
+    "igm-villa-lago-ohiggins-50k-catalog": "data/sources/igm-villa-lago-ohiggins-50k-catalog.json",
+    "difrol-official-maps-2026": "data/sources/difrol-official-maps-2026.json",
+    "difrol-villa-ohiggins-aeronautical-chart-2025": "data/sources/difrol-villa-ohiggins-aeronautical-chart-2025.json"
+  },
+  "evidence_register": "knowledge-base/research/batch-05-authority-closure-evidence-register.json",
+  "product_registry": "data/geospatial/campo-hielo-sur-igm-product-registry.json",
+  "created_files": [
+    "data/geospatial/campo-hielo-sur-igm-product-registry.json",
+    "data/knowledge/batch-05-authority-closure-manifest.json",
+    "data/sources/difrol-official-maps-2026.json",
+    "data/sources/difrol-villa-ohiggins-aeronautical-chart-2025.json",
+    "data/sources/igm-campo-hielo-sur-campaign-2025.json",
+    "data/sources/igm-campos-de-hielo-sur-250k.json",
+    "data/sources/igm-j134-cerro-ohiggins-50k.json",
+    "data/sources/igm-villa-lago-ohiggins-50k-catalog.json",
+    "docs/rag/batch-05-authority-closure-review.md",
+    "knowledge-base/research/batch-05-authority-closure-evidence-register.json",
+    "tests/knowledge/test_batch05_authority_closure.py"
+  ],
+  "modified_files": [
+    "data/geospatial/campo-hielo-sur-authoritative-geospatial-plan.json",
+    "data/verification/campo-hielo-sur-chilean-authority-validation.json",
+    "knowledge-base/entities/geography/campo-de-hielo-sur/metadata.json",
+    "knowledge-base/entities/places/villa-ohiggins/claims.json",
+    "knowledge-base/entities/places/villa-ohiggins/metadata.json",
+    "knowledge-base/entities/places/villa-ohiggins/relationships.json",
+    "knowledge-base/entities/places/villa-ohiggins/sources.json"
+  ],
+  "new_canonical_entities": [],
+  "promoted_candidate_ids": [],
+  "deferred_node_ids": [
+    "bahia-bahamondes",
+    "cerro-torre",
+    "glaciar-chico",
+    "lago-chico",
+    "parque-glaciar-mosco",
+    "parque-nacional-bernardo-ohiggins",
+    "puerto-yungay",
+    "rio-bravo"
+  ],
+  "wave_2_started": false,
+  "vector_ingestion_status": "not_performed",
+  "geometry_acquisition_authorized": false,
+  "canonical_geometry_authorized": false,
+  "embedding_eligible": false,
+  "review_status": "awaiting_audit"
+}

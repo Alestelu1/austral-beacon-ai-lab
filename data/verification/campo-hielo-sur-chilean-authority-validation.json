@@ -262,5 +262,162 @@
   "boundary_status": "requires_authoritative_review",
   "current_bilateral_execution_verified": false,
   "general_embedding_allowed": false,
-  "embedding_ready": false
+  "embedding_ready": false,
+  "legal_instrument_status": "verified",
+  "official_geodetic_activity_2025": "verified",
+  "official_igm_mapping_products_available": "verified",
+  "current_joint_cartographic_execution_status": "requires_authoritative_review",
+  "canonical_boundary_geometry_status": "not_authorized",
+  "embedding_eligible": false,
+  "authority_closure": {
+    "patch": "authority_closure",
+    "base_commit": "01baf78d67431fc8fedc60641fb563d0dd9401c9",
+    "checked_at": "2026-09-13",
+    "evidence_register": "knowledge-base/research/batch-05-authority-closure-evidence-register.json",
+    "geospatial_registry": "data/geospatial/campo-hielo-sur-igm-product-registry.json",
+    "authority_hierarchy": [
+      {
+        "rank": 1,
+        "authorities": [
+          "MINREL",
+          "DIFROL"
+        ]
+      },
+      {
+        "rank": 2,
+        "authorities": [
+          "Instrumentos internacionales",
+          "Legislación chilena / BCN"
+        ]
+      },
+      {
+        "rank": 3,
+        "authorities": [
+          "IGM"
+        ]
+      },
+      {
+        "rank": 4,
+        "authorities": [
+          "MOP",
+          "Vialidad",
+          "DOP",
+          "MTT",
+          "DIRECTEMAR"
+        ],
+        "scope": "según competencia"
+      },
+      {
+        "rank": 5,
+        "authorities": [
+          "Bienes Nacionales",
+          "Autoridad de áreas protegidas"
+        ]
+      },
+      {
+        "rank": 6,
+        "authorities": [
+          "Instituciones científicas chilenas"
+        ]
+      },
+      {
+        "rank": 7,
+        "authorities": [
+          "Fuentes secundarias"
+        ],
+        "scope": "context_only"
+      }
+    ],
+    "status_evidence": {
+      "legal_instrument_status": {
+        "source_ids": [
+          "bcn-decreto-1155-acuerdo-1998"
+        ],
+        "claim_ids": [
+          "b05-legal-01"
+        ],
+        "scope": "Existencia y texto ya verificados en Wave 1; no nueva certificación de vigencia, interpretación o ejecución bilateral."
+      },
+      "official_geodetic_activity_2025": {
+        "source_ids": [
+          "igm-campo-hielo-sur-campaign-2025"
+        ],
+        "claim_ids": [
+          "ac05-001",
+          "ac05-002",
+          "ac05-003"
+        ],
+        "scope": "Título y fecha en índice IGM; sólo campaña, localidad y año. Sin resultados fronterizos ni técnicas específicas."
+      },
+      "official_igm_mapping_products_available": {
+        "source_ids": [
+          "igm-campos-de-hielo-sur-250k",
+          "igm-j134-cerro-ohiggins-50k",
+          "igm-villa-lago-ohiggins-50k-catalog"
+        ],
+        "claim_ids": [
+          "ac05-004",
+          "ac05-005",
+          "ac05-006",
+          "ac05-007",
+          "ac05-008"
+        ],
+        "scope": "Existencia en catálogo y variantes verificadas; no stock garantizado, adquisición ni licencia."
+      },
+      "current_joint_cartographic_execution_status": {
+        "source_ids": [],
+        "scope": "Requiere declaración oficial chilena explícita y reciente de MINREL/DIFROL sobre los trabajos específicos de Sección B; campaña IGM no satisface ese requisito."
+      },
+      "canonical_boundary_geometry_status": {
+        "source_ids": [],
+        "scope": "Restricción de este parche: no adquisición, importación ni generación de geometría."
+      }
+    },
+    "pending_gaps": [
+      {
+        "id": "section-b-current-execution",
+        "status": "requires_authoritative_review",
+        "competent_authority": "MINREL / DIFROL / Comisión Mixta de Límites",
+        "next_action": "Verificar declaración explícita y reciente sobre el estado específico de trabajos de Sección B."
+      },
+      {
+        "id": "campaign-full-article-and-results",
+        "status": "requires_authoritative_review",
+        "competent_authority": "IGM; MINREL/DIFROL para implicaciones limítrofes",
+        "next_action": "Recuperar cuerpo de noticia; no inferir resultados de su título."
+      },
+      {
+        "id": "product-license-and-acquisition",
+        "status": "requires_review",
+        "competent_authority": "IGM",
+        "next_action": "Revisar condiciones de reutilización y metadatos pendientes antes de proponer adquisición; adquisición no autorizada."
+      },
+      {
+        "id": "difrol-2026-announcement",
+        "status": "requires_authoritative_review",
+        "competent_authority": "DIFROL",
+        "next_action": "Verificar URL y texto del anuncio 2026; conservar fecha 2025-12-30 de los recursos 2.0."
+      },
+      {
+        "id": "aeronautical-resolution-full-text",
+        "status": "requires_authoritative_review",
+        "competent_authority": "DIFROL / SAF",
+        "source_ids": [
+          "difrol-villa-ohiggins-aeronautical-chart-2025"
+        ],
+        "next_action": "Leer resolución íntegra 76/2025; el asiento oficial acredita identidad y objeto, no cláusulas ni operación aérea."
+      },
+      {
+        "id": "connectivity-infrastructure-and-operational-conflicts",
+        "status": "requires_authoritative_review",
+        "competent_authority": "MOP / Vialidad / DOP / MTT / DIRECTEMAR según competencia",
+        "next_action": "Obtener evidencia primaria sobre obras y servicios; no cerrar claims AthenaLab ni conflictos 90/100 km, 45/50 min o longitud RP6 con cartografía IGM."
+      }
+    ],
+    "wave_2_started": false,
+    "promoted_candidate_ids": [],
+    "vector_ingestion_status": "not_performed",
+    "canonical_geometry_authorized": false,
+    "embedding_eligible": false
+  }
 }

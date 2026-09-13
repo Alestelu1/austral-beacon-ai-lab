@@ -1,0 +1,62 @@
+{
+  "source_id": "igm-campo-hielo-sur-campaign-2025",
+  "title": "IGM realizó mediciones en Villa O’Higgins para la Campaña Campo de Hielo Sur 2025",
+  "publisher": "Instituto Geográfico Militar de Chile",
+  "source_class": "primary_chilean_institutional",
+  "country": "Chile",
+  "url": "https://www.igm.cl/?menu=5&page=noticias-actividades-igm2",
+  "published_at": "2025-10-13",
+  "retrieved_at": "2026-09-13",
+  "record_path": "data/sources/igm-campo-hielo-sur-campaign-2025.json",
+  "batch": "05",
+  "wave": 1,
+  "patch": "authority_closure",
+  "verification_status": "verified",
+  "verification_scope": "Título y fecha en el historial oficial del IGM: denominación de campaña, mediciones en Villa O’Higgins y año 2025. No se recuperó el cuerpo de la noticia.",
+  "extraction_method": "official HTML text returned by web retrieval",
+  "provenance": {
+    "source_url": "https://www.igm.cl/?menu=5&page=noticias-actividades-igm2",
+    "locator": "Historial de noticias; fila de 13-10-2025: mediciones en Villa O’Higgins para la Campaña Campo de Hielo Sur 2025",
+    "retrieved_at": "2026-09-13",
+    "repo_base_commit": "01baf78d67431fc8fedc60641fb563d0dd9401c9",
+    "processing_state": "authority_closure_metadata_only",
+    "page_numbering": "not applicable; HTML section/row locator"
+  },
+  "evidence_register": "knowledge-base/research/batch-05-authority-closure-evidence-register.json",
+  "claim_ids": [
+    "ac05-001",
+    "ac05-002",
+    "ac05-003"
+  ],
+  "authority_scope": [
+    "institutional_geodesy_context",
+    "cartographic_product_inventory"
+  ],
+  "land_boundary_status_determination_allowed": false,
+  "geometry_use": "none",
+  "geometry_acquisition_status": "not_authorized",
+  "embedding_eligible": false,
+  "embedding_ready": false,
+  "general_embedding_allowed": false,
+  "vector_ingestion_status": "not_performed",
+  "blocked_consumers": [
+    "general-rag",
+    "travel-agent"
+  ],
+  "destination_projects": [
+    "Observatorio de Conectividad Austral",
+    "Austral Beacon verification"
+  ],
+  "inference_policy": "Publisher country is not entity sovereignty. No automatic geographic classification.",
+  "limitations": [
+    "No se adquirieron productos, datos ni geometrías.",
+    "La consulta de metadatos no otorga licencia de reutilización ni autoriza una frontera canónica.",
+    "La fecha corresponde a la publicación en el índice, no a un día de medición.",
+    "No identifica segmento medido, término de Sección B, nueva delimitación, cambio del límite ni finalización de cartografía conjunta."
+  ],
+  "activity_year": 2025,
+  "activity_name": "Campaña Campo de Hielo Sur 2025",
+  "documented_location": "Villa O’Higgins",
+  "article_full_text_verified": false,
+  "boundary_results_status": "requires_authoritative_review"
+}
