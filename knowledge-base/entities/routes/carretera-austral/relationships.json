@@ -5,7 +5,35 @@
     {"type": "traverses_region", "target": "aysen"},
     {"type": "connects_with", "target": "lago-general-carrera"},
     {"type": "connects_with", "target": "cochrane"},
-    {"type": "connects_with", "target": "villa-ohiggins"},
+    {
+      "type": "connects_with",
+      "target": "villa-ohiggins",
+      "predicate": "connects_with",
+      "status": "documented",
+      "claim_ids": [
+        "b05-016"
+      ],
+      "source_ids": [
+        "sernatur-carretera-austral-aysen"
+      ],
+      "provenance": [
+        {
+          "source_id": "sernatur-carretera-austral-aysen",
+          "pdf_pages": [
+            22
+          ],
+          "source_url": "https://drive.google.com/file/d/1w5FBz8Mdtxo9nkm0vUAO9kvDT9SJBSqI/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "canonical"
+    },
     {"type": "provides_access_to", "target": "parque-nacional-patagonia"},
     {"type": "provides_access_to", "target": "cerro-castillo"},
     {"type": "associated_air_gateway", "target": "aeropuerto-balmaceda"},

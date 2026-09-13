@@ -1,0 +1,187 @@
+{
+  "entity_id": "villa-ohiggins",
+  "relationships": [
+    {
+      "predicate": "inverse_of_connects_with",
+      "target": "carretera-austral",
+      "status": "documented",
+      "claim_ids": [
+        "b05-016"
+      ],
+      "source_ids": [
+        "sernatur-carretera-austral-aysen"
+      ],
+      "provenance": [
+        {
+          "source_id": "sernatur-carretera-austral-aysen",
+          "pdf_pages": [
+            22
+          ],
+          "source_url": "https://drive.google.com/file/d/1w5FBz8Mdtxo9nkm0vUAO9kvDT9SJBSqI/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "canonical",
+      "inverse_of": {
+        "source": "carretera-austral",
+        "predicate": "connects_with",
+        "target": "villa-ohiggins"
+      },
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    },
+    {
+      "predicate": "documented_lacustrine_access_context",
+      "target": "lago-ohiggins",
+      "status": "documented",
+      "claim_ids": [
+        "b05-015"
+      ],
+      "source_ids": [
+        "sernatur-carretera-austral-aysen"
+      ],
+      "provenance": [
+        {
+          "source_id": "sernatur-carretera-austral-aysen",
+          "pdf_pages": [
+            22
+          ],
+          "source_url": "https://drive.google.com/file/d/1w5FBz8Mdtxo9nkm0vUAO9kvDT9SJBSqI/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "canonical",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    },
+    {
+      "predicate": "documented_expedition_support_context",
+      "target": "campo-de-hielo-sur",
+      "status": "documented",
+      "claim_ids": [
+        "b05-009"
+      ],
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "canonical",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    },
+    {
+      "predicate": "local_trail_context",
+      "target": "parque-glaciar-mosco",
+      "status": "documented",
+      "claim_ids": [
+        "b05-012"
+      ],
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            23
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "candidate",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    },
+    {
+      "predicate": "regional_connectivity_context",
+      "target": "puerto-yungay",
+      "status": "documented",
+      "claim_ids": [
+        "b05-010"
+      ],
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            9
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "candidate",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    },
+    {
+      "predicate": "regional_connectivity_context",
+      "target": "rio-bravo",
+      "status": "qualified",
+      "claim_ids": [
+        "b05-010"
+      ],
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            9
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "candidate",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    }
+  ],
+  "candidate_registry": "data/knowledge/campo-hielo-sur-local-graph.json",
+  "reconciliation_registry": "data/knowledge/batch-05-wave-1-reconciliation.json"
+}

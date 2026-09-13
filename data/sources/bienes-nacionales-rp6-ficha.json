@@ -1,0 +1,47 @@
+{
+  "source_id": "bienes-nacionales-rp6-ficha",
+  "title": "Los Glaciares, Campo de hielo sur — ficha",
+  "publisher": "Ministerio de Bienes Nacionales",
+  "source_class": "primary_chilean_institutional",
+  "country": "Chile",
+  "drive_file_id": "1z9WpTBj4403mXajWgqbg1LqGwKBI9eDn",
+  "drive_title": "Los Glaciares, Campo de hielo sur",
+  "url": "https://drive.google.com/file/d/1z9WpTBj4403mXajWgqbg1LqGwKBI9eDn/view",
+  "published_at": null,
+  "retrieved_at": "2026-09-12",
+  "extraction_method": "PDF native text, page-indexed; selected visual checks",
+  "stable_entities": [
+    "candelario-mansilla",
+    "lago-ohiggins",
+    "ruta-patrimonial-6"
+  ],
+  "claims": [
+    {
+      "id": "b05-008",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json#b05-008"
+    }
+  ],
+  "limitations": [
+    "La presencia de un hecho en el PDF no acredita vigencia operativa.",
+    "No se usa como autoridad jurídica fronteriza.",
+    "Fecha de edición no verificada.",
+    "Misma familia documental que RP6; no es corroboración independiente."
+  ],
+  "geometry_use": "non_canonical_reference_only",
+  "embedding_ready": false,
+  "provenance": {
+    "sha256": "0fcf4d49cdecd8b607dd86e373a23571d62f24c0aa2807cb763b965d5f67bc9e",
+    "pdf_pages": 2,
+    "page_numbering": "1-based PDF page",
+    "repo_base_commit": "664804ca762cba619bb156e3ee46260979b87e93",
+    "processing_state": "batch05_wave1_structured_source_record"
+  },
+  "record_path": "data/sources/bienes-nacionales-rp6-ficha.json",
+  "embedding_eligible": false,
+  "inference_policy": "Publisher country is not entity sovereignty. No automatic geographic classification.",
+  "documented_entity_mentions": [
+    "candelario-mansilla",
+    "lago-ohiggins",
+    "ruta-patrimonial-6"
+  ]
+}

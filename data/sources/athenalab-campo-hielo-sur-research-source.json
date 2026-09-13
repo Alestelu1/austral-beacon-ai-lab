@@ -1,0 +1,66 @@
+{
+  "source_id": "athenalab-campo-hielo-sur-research-source",
+  "title": "DT27 — Actualización geopolítica de Campo de Hielo Sur",
+  "publisher": "AthenaLab",
+  "source_class": "secondary_chilean_specialist_source",
+  "country": "Chile",
+  "drive_file_id": "1WRv_TzbaWl-CDjAT9H8qbza0AKWOK8Wp",
+  "drive_title": "DT27 _ Actualización geopolítica de Campo de Hielo Sur - AthenaLAB.pdf",
+  "url": "https://drive.google.com/file/d/1WRv_TzbaWl-CDjAT9H8qbza0AKWOK8Wp/view",
+  "published_at": "2024-03",
+  "retrieved_at": "2026-09-12",
+  "extraction_method": "Tesseract eng OCR, 40 pages; selected metadata visually checked; argument paraphrases require review",
+  "stable_entities": [],
+  "claims": [
+    {
+      "id": "b05-a01",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json#b05-a01"
+    },
+    {
+      "id": "b05-a02",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json#b05-a02"
+    },
+    {
+      "id": "b05-a03",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json#b05-a03"
+    },
+    {
+      "id": "b05-a04",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json#b05-a04"
+    },
+    {
+      "id": "b05-a05",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json#b05-a05"
+    }
+  ],
+  "limitations": [
+    "La presencia de un hecho en el PDF no acredita vigencia operativa.",
+    "No se usa como autoridad jurídica fronteriza.",
+    "Toda afirmación territorial: claim_pending_primary_source_validation.",
+    "OCR con idioma eng: nombres y cifras sensibles pendientes de revisión visual."
+  ],
+  "geometry_use": "non_canonical_reference_only",
+  "embedding_ready": false,
+  "provenance": {
+    "sha256": "f43ccfcf3a3eefc2cc8b240e1b6e8fe53adaf636d17a1f4deab7d622a26a0926",
+    "pdf_pages": 40,
+    "page_numbering": "1-based PDF page",
+    "repo_base_commit": "664804ca762cba619bb156e3ee46260979b87e93",
+    "processing_state": "batch05_wave1_structured_source_record"
+  },
+  "authors": [
+    "John Griffiths",
+    "Marcelo Masalleras"
+  ],
+  "record_path": "data/sources/athenalab-campo-hielo-sur-research-source.json",
+  "embedding_eligible": false,
+  "inference_policy": "Publisher country is not entity sovereignty. No automatic geographic classification.",
+  "documented_entity_mentions": [
+    "bahia-bahamondes",
+    "campo-de-hielo-sur",
+    "lago-ohiggins",
+    "monte-fitz-roy-chalten",
+    "parque-nacional-bernardo-ohiggins",
+    "villa-ohiggins"
+  ]
+}

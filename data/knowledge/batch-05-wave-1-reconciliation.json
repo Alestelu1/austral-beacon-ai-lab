@@ -1,0 +1,105 @@
+{
+  "batch": "05",
+  "wave": 1,
+  "rule": "Aliases resolve identity only, never territory or legal status. Candidate mappings do not promote nodes.",
+  "aliases": [
+    {
+      "alias": "villa_ohiggins",
+      "target": "villa-ohiggins",
+      "status": "canonical"
+    },
+    {
+      "alias": "lago_ohiggins",
+      "target": "lago-ohiggins",
+      "status": "canonical"
+    },
+    {
+      "alias": "candelario_mansilla",
+      "target": "candelario-mansilla",
+      "status": "canonical"
+    },
+    {
+      "alias": "glaciar_ohiggins",
+      "target": "glaciar-ohiggins",
+      "status": "canonical"
+    },
+    {
+      "alias": "campo_de_hielo_sur",
+      "target": "campo-de-hielo-sur",
+      "status": "canonical"
+    },
+    {
+      "alias": "parque_glaciar_mosco",
+      "target": "parque-glaciar-mosco",
+      "status": "candidate"
+    },
+    {
+      "alias": "monte_fitz_roy_chalten",
+      "target": "monte-fitz-roy-chalten",
+      "status": "canonical"
+    },
+    {
+      "alias": "cerro_torre",
+      "target": "cerro-torre",
+      "status": "candidate"
+    },
+    {
+      "alias": "lago_chico",
+      "target": "lago-chico",
+      "status": "candidate"
+    },
+    {
+      "alias": "glaciar_chico",
+      "target": "glaciar-chico",
+      "status": "candidate"
+    },
+    {
+      "alias": "parque_nacional_bernardo_ohiggins",
+      "target": "parque-nacional-bernardo-ohiggins",
+      "status": "candidate"
+    },
+    {
+      "alias": "puerto_yungay",
+      "target": "puerto-yungay",
+      "status": "candidate"
+    },
+    {
+      "alias": "rio_bravo",
+      "target": "rio-bravo",
+      "status": "candidate"
+    },
+    {
+      "alias": "bahia_bahamondes",
+      "target": "bahia-bahamondes",
+      "status": "candidate"
+    },
+    {
+      "alias": "carretera_austral",
+      "target": "carretera-austral",
+      "status": "canonical"
+    },
+    {
+      "alias": "ruta_patrimonial_6",
+      "target": "ruta-patrimonial-6",
+      "status": "canonical"
+    }
+  ],
+  "unresolved_aliases": [
+    {
+      "names": [
+        "Candelario Mansilla",
+        "Candelario Mancilla"
+      ],
+      "status": "requires_documentary_review",
+      "note": "Do not merge alternative locality/institution names from OCR automatically."
+    },
+    {
+      "names": [
+        "Bahía Bahamondes",
+        "Puerto Bahamondes"
+      ],
+      "status": "requires_documentary_review",
+      "note": "Bay and port/infrastructure are not automatically the same entity."
+    }
+  ]
+}

@@ -1,39 +1,47 @@
 {
-  "entity_id": "carretera-austral",
+  "entity_id": "lago-ohiggins",
+  "ingestion_status": "not_performed",
   "chunks": [
     {
-      "id": "carretera-austral-core",
-      "scope": [
-        "travel",
-        "connectivity",
-        "observatory"
-      ],
-      "text": "La Carretera Austral / Ruta 7 es un corredor estratégico de conectividad de la Patagonia chilena que articula territorios de Los Lagos y Aysén. Para consultas operativas deben verificarse fuentes actuales del MOP y autoridades competentes."
-    },
-    {
-      "id": "carretera-austral-plan-2026-2030",
-      "scope": [
-        "connectivity",
-        "radar",
-        "observatory",
-        "dispatch"
-      ],
-      "text": "El Plan Ruta Austral: Soberanía que conecta (2026-2030) del Ministerio de Obras Públicas contempla inversión pública e intervenciones viales, marítimas y lacustres asociadas a Ruta 7. Montos, avances y cronogramas son información dinámica."
-    },
-    {
-      "id": "carretera-austral-narrative-signal-2026",
-      "scope": [
-        "travel",
-        "radar",
-        "dispatch"
-      ],
-      "text": "En septiembre de 2026, EL PAÍS Chile presentó la Carretera Austral como una ruta que abre las puertas al 'fin del mundo'. Austral Beacon conserva esta formulación como señal de narrativa y posicionamiento internacional, no como autoridad factual primaria."
-    },
-    {
-      "id": "carretera-austral-b05-016",
-      "text": "SERNATUR describe Villa O’Higgins como el último pueblo de la Carretera Austral.",
+      "id": "lago-ohiggins-b05-001",
+      "text": "La RP6 describe un circuito que comienza y termina en el embarcadero Candelario Mansilla, a orillas del Lago O’Higgins, en Aysén.",
       "claim_ids": [
-        "b05-016"
+        "b05-001"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            6
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "sensitivity": "public_core",
+      "class": "stable_semantic",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "embedding_ready": true,
+      "embedding_eligible": true,
+      "qa_review": "tests/knowledge/test_batch05_wave1.py",
+      "approved_consumers": [
+        "atlas",
+        "travel",
+        "travel-agent",
+        "observatory",
+        "editorial"
+      ],
+      "vector_ingestion_status": "not_performed",
+      "geometry_use_allowed": false
+    },
+    {
+      "id": "lago-ohiggins-b05-015",
+      "text": "SERNATUR documenta un contexto de acceso desde Villa O’Higgins por el Lago O’Higgins para observar el Glaciar O’Higgins, al que relaciona con Campo de Hielo Sur. No se afirma operación actual de navegación.",
+      "claim_ids": [
+        "b05-015"
       ],
       "source_ids": [
         "sernatur-carretera-austral-aysen"
@@ -62,11 +70,10 @@
         "editorial"
       ],
       "vector_ingestion_status": "not_performed",
-      "geometry_use_allowed": false,
-      "limitations": "No equivale a fijar el extremo geodésico de la Ruta 7."
+      "geometry_use_allowed": false
     },
     {
-      "id": "carretera-austral-b05-018",
+      "id": "lago-ohiggins-b05-018",
       "text": "La obra de 2012 relaciona la historia de la Carretera Austral con Puerto Yungay, Villa O’Higgins, Bahía Bahamondes y Lago O’Higgins.",
       "claim_ids": [
         "b05-018"
@@ -103,22 +110,22 @@
       "temporal_label": "Historical context from the 2012 edition; not current operating state."
     },
     {
-      "id": "carretera-austral-b05-010",
-      "text": "La topoguía describe acceso a Villa O’Higgins por Cochrane, Puerto Yungay, cruce del fiordo Mitchell y Río Bravo.",
+      "id": "lago-ohiggins-b05-019",
+      "text": "RP6 documenta un acceso lacustre desde Bahía Bahamondes, al sur de Villa O’Higgins, hacia Candelario Mansilla; no acredita operación actual.",
       "claim_ids": [
-        "b05-010"
+        "b05-019"
       ],
       "source_ids": [
-        "bienes-nacionales-parque-glaciar-mosco"
+        "bienes-nacionales-rp6-campo-hielo-sur"
       ],
       "provenance": [
         {
-          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
           "pdf_pages": [
-            9
+            2
           ],
-          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
-          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page"
         }
       ],
       "sensitivity": "public_core",
@@ -136,7 +143,7 @@
       ],
       "vector_ingestion_status": "not_performed",
       "geometry_use_allowed": false,
-      "limitations": "Río Bravo se usa aquí como extremo del cruce; identidad de rampa y río debe desambiguarse."
+      "limitations": "Lectura visual de página con texto nativo corrupto; horario, duración y estado actual excluidos."
     }
   ]
 }

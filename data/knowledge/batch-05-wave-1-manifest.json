@@ -1,0 +1,58 @@
+{
+  "batch": "05",
+  "wave": 1,
+  "base_commit": "664804ca762cba619bb156e3ee46260979b87e93",
+  "branch": "rag/batch-05-aysen-wave-1",
+  "canonical_packages": {
+    "villa-ohiggins": "knowledge-base/entities/places/villa-ohiggins",
+    "lago-ohiggins": "knowledge-base/entities/geography/lago-ohiggins",
+    "candelario-mansilla": "knowledge-base/entities/places/candelario-mansilla",
+    "glaciar-ohiggins": "knowledge-base/entities/geography/glaciar-ohiggins",
+    "campo-de-hielo-sur": "knowledge-base/entities/geography/campo-de-hielo-sur",
+    "monte-fitz-roy-chalten": "knowledge-base/entities/geography/monte-fitz-roy-chalten",
+    "carretera-austral": "knowledge-base/entities/routes/carretera-austral",
+    "ruta-patrimonial-6": "knowledge-base/entities/routes/ruta-patrimonial-6"
+  },
+  "new_package_ids": [
+    "campo-de-hielo-sur",
+    "candelario-mansilla",
+    "glaciar-ohiggins",
+    "lago-ohiggins",
+    "monte-fitz-roy-chalten",
+    "ruta-patrimonial-6",
+    "villa-ohiggins"
+  ],
+  "deferred_node_ids": [
+    "bahia-bahamondes",
+    "cerro-torre",
+    "glaciar-chico",
+    "lago-chico",
+    "parque-glaciar-mosco",
+    "parque-nacional-bernardo-ohiggins",
+    "puerto-yungay",
+    "rio-bravo"
+  ],
+  "evidence_register": "knowledge-base/research/batch-05-wave-1-evidence-register.json",
+  "source_records": {
+    "sernatur-carretera-austral-aysen": "data/sources/sernatur-carretera-austral-aysen.json",
+    "bienes-nacionales-parque-glaciar-mosco": "data/sources/bienes-nacionales-parque-glaciar-mosco.json",
+    "athenalab-campo-hielo-sur-research-source": "data/sources/athenalab-campo-hielo-sur-research-source.json",
+    "bcn-decreto-1155-acuerdo-1998": "data/sources/bcn-acuerdo-fitz-roy-daudet-1998.json",
+    "bienes-nacionales-rp6-campo-hielo-sur": "data/sources/bienes-nacionales-rp6-campo-hielo-sur.json",
+    "bienes-nacionales-rp6-ficha": "data/sources/bienes-nacionales-rp6-ficha.json",
+    "drive-carretera-austral-pdf": "data/sources/carretera-austral-historical-context.json"
+  },
+  "vector_ingestion_status": "not_performed",
+  "general_embedding_inputs": [
+    "knowledge-base/entities/places/villa-ohiggins/chunks.json",
+    "knowledge-base/entities/geography/lago-ohiggins/chunks.json",
+    "knowledge-base/entities/places/candelario-mansilla/chunks.json",
+    "knowledge-base/entities/geography/glaciar-ohiggins/chunks.json",
+    "knowledge-base/entities/geography/campo-de-hielo-sur/chunks.json",
+    "knowledge-base/entities/geography/monte-fitz-roy-chalten/chunks.json",
+    "knowledge-base/entities/routes/carretera-austral/chunks.json",
+    "knowledge-base/entities/routes/ruta-patrimonial-6/chunks.json"
+  ],
+  "review_status": "awaiting_final_review",
+  "scope_note": "Existing Carretera Austral chunks preserved; Batch05 gates govern new chunks only."
+}

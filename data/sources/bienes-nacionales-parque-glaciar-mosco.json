@@ -1,0 +1,78 @@
+{
+  "source_id": "bienes-nacionales-parque-glaciar-mosco",
+  "title": "Ruta Patrimonial Parque Glaciar Mosco: Bien Nacional Protegido",
+  "publisher": "Ministerio de Bienes Nacionales",
+  "source_class": "primary_chilean_institutional",
+  "country": "Chile",
+  "drive_file_id": "1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N",
+  "drive_title": "Ruta Patrimonial Parque Glaciar Mosco: Bien Nacional Protegido",
+  "url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+  "published_at": null,
+  "retrieved_at": "2026-09-12",
+  "extraction_method": "PDF native text, page-indexed; selected visual checks",
+  "stable_entities": [
+    "campo-de-hielo-sur",
+    "parque-glaciar-mosco",
+    "parque-nacional-bernardo-ohiggins",
+    "puerto-yungay",
+    "rio-bravo",
+    "villa-ohiggins"
+  ],
+  "claims": [
+    {
+      "id": "b05-009",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json#b05-009"
+    },
+    {
+      "id": "b05-010",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json#b05-010"
+    },
+    {
+      "id": "b05-011",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json#b05-011"
+    },
+    {
+      "id": "b05-012",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json#b05-012"
+    },
+    {
+      "id": "b05-013",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json#b05-013"
+    },
+    {
+      "id": "b05-014",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json#b05-014"
+    },
+    {
+      "id": "b05-020",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json#b05-020"
+    }
+  ],
+  "limitations": [
+    "La presencia de un hecho en el PDF no acredita vigencia operativa.",
+    "No se usa como autoridad jurídica fronteriza.",
+    "Fecha de edición no verificada.",
+    "PDF p.2: número y fecha de resolución de circulación aparecen sin completar; también remisión editorial a pág. XX. Esto no demuestra por sí solo que sea borrador ni invalida todo su contenido.",
+    "No confundir Bien Nacional Protegido con Parque Nacional."
+  ],
+  "geometry_use": "non_canonical_reference_only",
+  "embedding_ready": false,
+  "provenance": {
+    "sha256": "0505507d9da8916e133d5248c9c1fc166defdd645f0cce2e1883d864a7a65ce8",
+    "pdf_pages": 59,
+    "page_numbering": "1-based PDF page; Mosco pages contain two printed pages",
+    "repo_base_commit": "664804ca762cba619bb156e3ee46260979b87e93",
+    "processing_state": "batch05_wave1_structured_source_record"
+  },
+  "record_path": "data/sources/bienes-nacionales-parque-glaciar-mosco.json",
+  "embedding_eligible": false,
+  "inference_policy": "Publisher country is not entity sovereignty. No automatic geographic classification.",
+  "documented_entity_mentions": [
+    "campo-de-hielo-sur",
+    "parque-glaciar-mosco",
+    "parque-nacional-bernardo-ohiggins",
+    "puerto-yungay",
+    "rio-bravo",
+    "villa-ohiggins"
+  ]
+}

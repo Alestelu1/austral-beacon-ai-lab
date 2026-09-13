@@ -1,0 +1,71 @@
+{
+  "id": "campo-de-hielo-sur",
+  "canonical_name": "Campo de Hielo Sur",
+  "entity_type": "icefield",
+  "status": "canonical",
+  "aliases": [
+    "campo_de_hielo_sur"
+  ],
+  "sensitivity": "public_core",
+  "retrieval_scope": [
+    "atlas",
+    "travel",
+    "travel-agent",
+    "observatory",
+    "editorial"
+  ],
+  "batch": "05",
+  "wave": 1,
+  "source_ids": [
+    "bcn-decreto-1155-acuerdo-1998",
+    "bienes-nacionales-parque-glaciar-mosco",
+    "sernatur-carretera-austral-aysen"
+  ],
+  "requires_citation": true,
+  "geometry": null,
+  "geometry_status": "pending_authoritative_validation",
+  "embedding_eligible": false,
+  "embedding_ready": false,
+  "retrieval_input": "chunks.json only; metadata and complete MDX are not general embedding inputs",
+  "vector_ingestion_status": "not_performed",
+  "prohibited_inferences": [
+    "Un mapa turístico no establece el límite internacional.",
+    "Una línea argentina no constituye aceptación chilena.",
+    "Google Maps, OSM y Wikipedia no son autoridad jurídica fronteriza.",
+    "Ausencia de línea cartográfica no implica ausencia de soberanía.",
+    "No describir todo Campo de Hielo Sur como territorio en disputa.",
+    "Un sector con trabajo pendiente no es adjudicación definitiva.",
+    "No clasificar automáticamente Fitz Roy/Chaltén como exclusivamente argentino.",
+    "Visibilidad desde Chile no determina soberanía.",
+    "Ruta documentada no acredita apertura actual.",
+    "Navegación documentada no acredita frecuencia actual.",
+    "Sendero cartografiado no acredita seguridad ni transitabilidad.",
+    "Fuente secundaria favorable a Chile no sustituye fuente oficial chilena."
+  ],
+  "boundary_context": {
+    "boundary_status": "requires_authoritative_review",
+    "current_bilateral_execution_verified": false,
+    "source_ids": [
+      "bcn-decreto-1155-acuerdo-1998"
+    ],
+    "claim_ids": [
+      "b05-legal-01"
+    ],
+    "sector_context": [
+      {
+        "section": "A",
+        "reference": "Murallón–Daudet",
+        "current_execution_status": "requires_authoritative_review"
+      },
+      {
+        "section": "B",
+        "reference": "Fitz Roy–Murallón",
+        "current_execution_status": "requires_authoritative_review"
+      }
+    ],
+    "note": "Instrument contents are documented; current execution is unverified. Do not classify the entire icefield as disputed.",
+    "canonical_boundary_geometry": null,
+    "embedding_eligible": false,
+    "general_embedding_allowed": false
+  }
+}

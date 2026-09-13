@@ -1,0 +1,77 @@
+{
+  "entity_id": "campo-de-hielo-sur",
+  "ingestion_status": "not_performed",
+  "chunks": [
+    {
+      "id": "campo-de-hielo-sur-b05-009",
+      "text": "La topoguía Mosco sitúa Villa O’Higgins en el extremo sur de Aysén y documenta apoyo a expediciones al Campo de Hielo Sur, sin establecer un rango comparativo entre accesos.",
+      "claim_ids": [
+        "b05-009"
+      ],
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "sensitivity": "public_core",
+      "class": "stable_semantic",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "embedding_ready": true,
+      "embedding_eligible": true,
+      "qa_review": "tests/knowledge/test_batch05_wave1.py",
+      "approved_consumers": [
+        "atlas",
+        "travel",
+        "travel-agent",
+        "observatory",
+        "editorial"
+      ],
+      "vector_ingestion_status": "not_performed",
+      "geometry_use_allowed": false
+    },
+    {
+      "id": "campo-de-hielo-sur-b05-015",
+      "text": "SERNATUR documenta un contexto de acceso desde Villa O’Higgins por el Lago O’Higgins para observar el Glaciar O’Higgins, al que relaciona con Campo de Hielo Sur. No se afirma operación actual de navegación.",
+      "claim_ids": [
+        "b05-015"
+      ],
+      "source_ids": [
+        "sernatur-carretera-austral-aysen"
+      ],
+      "provenance": [
+        {
+          "source_id": "sernatur-carretera-austral-aysen",
+          "pdf_pages": [
+            22
+          ],
+          "source_url": "https://drive.google.com/file/d/1w5FBz8Mdtxo9nkm0vUAO9kvDT9SJBSqI/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "sensitivity": "public_core",
+      "class": "stable_semantic",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "embedding_ready": true,
+      "embedding_eligible": true,
+      "qa_review": "tests/knowledge/test_batch05_wave1.py",
+      "approved_consumers": [
+        "atlas",
+        "travel",
+        "travel-agent",
+        "observatory",
+        "editorial"
+      ],
+      "vector_ingestion_status": "not_performed",
+      "geometry_use_allowed": false
+    }
+  ]
+}
