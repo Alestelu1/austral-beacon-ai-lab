@@ -1,0 +1,49 @@
+{
+  "source_id": "drive-carretera-austral-pdf",
+  "title": "La Carretera Austral",
+  "publisher": "Ocho Libros Editores; © Linde Waidhofer",
+  "source_class": "secondary_historical_editorial",
+  "country": "Chile",
+  "drive_file_id": "1XQStYiAa-NLw93PjOKJagt-nDObacq-C",
+  "drive_title": "Carretera-Austral-El-camino-mas-espectacular-de-Sudamerica.pdf",
+  "url": "https://drive.google.com/file/d/1XQStYiAa-NLw93PjOKJagt-nDObacq-C/view",
+  "published_at": "2012",
+  "retrieved_at": "2026-09-12",
+  "extraction_method": "PDF native text, page-indexed; selected visual checks",
+  "stable_entities": [
+    "bahia-bahamondes",
+    "carretera-austral",
+    "lago-ohiggins",
+    "puerto-yungay",
+    "villa-ohiggins"
+  ],
+  "claims": [
+    {
+      "id": "b05-018",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json#b05-018"
+    }
+  ],
+  "limitations": [
+    "La presencia de un hecho en el PDF no acredita vigencia operativa.",
+    "No se usa como autoridad jurídica fronteriza."
+  ],
+  "geometry_use": "non_canonical_reference_only",
+  "embedding_ready": false,
+  "provenance": {
+    "sha256": "abab5a1e122282134b51affbcb78f0fba034afe3fcca2349819d7bb8a289a33a",
+    "pdf_pages": 93,
+    "page_numbering": "1-based PDF page; Mosco pages contain two printed pages",
+    "repo_base_commit": "664804ca762cba619bb156e3ee46260979b87e93",
+    "processing_state": "batch05_wave1_structured_source_record"
+  },
+  "record_path": "data/sources/carretera-austral-historical-context.json",
+  "embedding_eligible": false,
+  "inference_policy": "Publisher country is not entity sovereignty. No automatic geographic classification.",
+  "documented_entity_mentions": [
+    "bahia-bahamondes",
+    "carretera-austral",
+    "lago-ohiggins",
+    "puerto-yungay",
+    "villa-ohiggins"
+  ]
+}

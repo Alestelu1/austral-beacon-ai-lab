@@ -1,0 +1,44 @@
+{
+  "id": "ruta-patrimonial-6",
+  "canonical_name": "Ruta Patrimonial Nº6 — Los Glaciares",
+  "entity_type": "heritage_route",
+  "status": "canonical",
+  "aliases": [
+    "ruta_patrimonial_6"
+  ],
+  "sensitivity": "public_core",
+  "retrieval_scope": [
+    "atlas",
+    "travel",
+    "travel-agent",
+    "observatory",
+    "editorial"
+  ],
+  "batch": "05",
+  "wave": 1,
+  "source_ids": [
+    "bienes-nacionales-rp6-campo-hielo-sur",
+    "bienes-nacionales-rp6-ficha"
+  ],
+  "requires_citation": true,
+  "geometry": null,
+  "geometry_status": "pending_authoritative_validation",
+  "embedding_eligible": false,
+  "embedding_ready": false,
+  "retrieval_input": "chunks.json only; metadata and complete MDX are not general embedding inputs",
+  "vector_ingestion_status": "not_performed",
+  "prohibited_inferences": [
+    "Un mapa turístico no establece el límite internacional.",
+    "Una línea argentina no constituye aceptación chilena.",
+    "Google Maps, OSM y Wikipedia no son autoridad jurídica fronteriza.",
+    "Ausencia de línea cartográfica no implica ausencia de soberanía.",
+    "No describir todo Campo de Hielo Sur como territorio en disputa.",
+    "Un sector con trabajo pendiente no es adjudicación definitiva.",
+    "No clasificar automáticamente Fitz Roy/Chaltén como exclusivamente argentino.",
+    "Visibilidad desde Chile no determina soberanía.",
+    "Ruta documentada no acredita apertura actual.",
+    "Navegación documentada no acredita frecuencia actual.",
+    "Sendero cartografiado no acredita seguridad ni transitabilidad.",
+    "Fuente secundaria favorable a Chile no sustituye fuente oficial chilena."
+  ]
+}

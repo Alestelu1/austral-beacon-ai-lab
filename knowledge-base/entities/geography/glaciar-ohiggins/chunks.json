@@ -1,0 +1,76 @@
+{
+  "entity_id": "glaciar-ohiggins",
+  "ingestion_status": "not_performed",
+  "chunks": [
+    {
+      "id": "glaciar-ohiggins-b05-015",
+      "text": "SERNATUR documenta un contexto de acceso desde Villa O’Higgins por el Lago O’Higgins para observar el Glaciar O’Higgins, al que relaciona con Campo de Hielo Sur. No se afirma operación actual de navegación.",
+      "claim_ids": [
+        "b05-015"
+      ],
+      "source_ids": [
+        "sernatur-carretera-austral-aysen"
+      ],
+      "provenance": [
+        {
+          "source_id": "sernatur-carretera-austral-aysen",
+          "pdf_pages": [
+            22
+          ],
+          "source_url": "https://drive.google.com/file/d/1w5FBz8Mdtxo9nkm0vUAO9kvDT9SJBSqI/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "sensitivity": "public_core",
+      "class": "stable_semantic",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "embedding_ready": true,
+      "embedding_eligible": true,
+      "qa_review": "tests/knowledge/test_batch05_wave1.py",
+      "approved_consumers": [
+        "atlas",
+        "travel",
+        "travel-agent",
+        "observatory",
+        "editorial"
+      ],
+      "vector_ingestion_status": "not_performed",
+      "geometry_use_allowed": false
+    },
+    {
+      "id": "glaciar-ohiggins-b05-w1-glaciar-ohiggins-observation",
+      "text": "La Ruta Patrimonial Nº6 documenta miradores del Glaciar O’Higgins.",
+      "claim_ids": [
+        "b05-w1-glaciar-ohiggins-observation"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            37
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "sensitivity": "public_core",
+      "class": "stable_semantic",
+      "fact_scope": "Documented visual relation; current access not asserted.",
+      "embedding_ready": true,
+      "embedding_eligible": true,
+      "qa_review": "tests/knowledge/test_batch05_wave1.py",
+      "approved_consumers": [
+        "atlas",
+        "travel",
+        "travel-agent",
+        "observatory",
+        "editorial"
+      ],
+      "vector_ingestion_status": "not_performed",
+      "geometry_use_allowed": false
+    }
+  ]
+}

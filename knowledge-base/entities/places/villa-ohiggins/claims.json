@@ -1,0 +1,343 @@
+{
+  "entity_id": "villa-ohiggins",
+  "claims": [
+    {
+      "id": "b05-009",
+      "claim": "La topoguía Mosco sitúa Villa O’Higgins en el extremo sur de Aysén y documenta apoyo a expediciones al Campo de Hielo Sur, sin establecer un rango comparativo entre accesos.",
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "entity_ids": [
+        "villa-ohiggins",
+        "campo-de-hielo-sur"
+      ],
+      "knowledge_class": "stable_semantic",
+      "verification_status": "verified",
+      "embedding_ready": true,
+      "evidence_scope": "documented_in_source_not_live_operation",
+      "status": "verified",
+      "verified_at": "2026-09-12",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "sensitivity": "public_core",
+      "requires_current_verification": false,
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "blocked_consumers": [],
+      "source_classification": "source_documented"
+    },
+    {
+      "id": "b05-010",
+      "claim": "La topoguía describe acceso a Villa O’Higgins por Cochrane, Puerto Yungay, cruce del fiordo Mitchell y Río Bravo.",
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            9
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "entity_ids": [
+        "villa-ohiggins",
+        "puerto-yungay",
+        "rio-bravo"
+      ],
+      "knowledge_class": "stable_semantic",
+      "verification_status": "verified",
+      "embedding_ready": true,
+      "evidence_scope": "documented_in_source_not_live_operation",
+      "notes": "Río Bravo se usa aquí como extremo del cruce; identidad de rampa y río debe desambiguarse.",
+      "status": "verified",
+      "verified_at": "2026-09-12",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "sensitivity": "public_core",
+      "requires_current_verification": false,
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "blocked_consumers": [],
+      "source_classification": "source_documented"
+    },
+    {
+      "id": "b05-011",
+      "claim": "Mosco registra 90 km Río Bravo–Villa O’Higgins y 45 minutos de cruce; SERNATUR difiere.",
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            9
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "entity_ids": [
+        "villa-ohiggins",
+        "rio-bravo",
+        "puerto-yungay"
+      ],
+      "knowledge_class": "dynamic_revalidation_required",
+      "verification_status": "qualified",
+      "embedding_ready": false,
+      "evidence_scope": "documented_in_source_not_live_operation",
+      "status": "qualified",
+      "verified_at": "2026-09-12",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "sensitivity": "operational_dynamic",
+      "requires_current_verification": true,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "blocked_consumers": [
+        "travel-agent",
+        "general-rag"
+      ],
+      "source_classification": "source_documented",
+      "review_route": "data/verification/campo-hielo-sur-chilean-authority-validation.json",
+      "conflict_ids": [
+        "rio-bravo-villa-ohiggins-distance",
+        "mitchell-crossing-duration"
+      ]
+    },
+    {
+      "id": "b05-012",
+      "claim": "La red de senderos de Mosco parte de su administración; describe sendero Miradores Urbanos y vistas sobre Villa O’Higgins.",
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            23
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "entity_ids": [
+        "parque-glaciar-mosco",
+        "villa-ohiggins"
+      ],
+      "knowledge_class": "stable_semantic",
+      "verification_status": "verified",
+      "embedding_ready": true,
+      "evidence_scope": "documented_in_source_not_live_operation",
+      "status": "verified",
+      "verified_at": "2026-09-12",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "sensitivity": "public_core",
+      "requires_current_verification": false,
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "blocked_consumers": [],
+      "source_classification": "source_documented"
+    },
+    {
+      "id": "b05-015",
+      "claim": "SERNATUR documenta un contexto de acceso desde Villa O’Higgins por el Lago O’Higgins para observar el Glaciar O’Higgins, al que relaciona con Campo de Hielo Sur. No se afirma operación actual de navegación.",
+      "source_ids": [
+        "sernatur-carretera-austral-aysen"
+      ],
+      "provenance": [
+        {
+          "source_id": "sernatur-carretera-austral-aysen",
+          "pdf_pages": [
+            22
+          ],
+          "source_url": "https://drive.google.com/file/d/1w5FBz8Mdtxo9nkm0vUAO9kvDT9SJBSqI/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "entity_ids": [
+        "villa-ohiggins",
+        "lago-ohiggins",
+        "glaciar-ohiggins",
+        "campo-de-hielo-sur"
+      ],
+      "knowledge_class": "stable_semantic",
+      "verification_status": "verified",
+      "embedding_ready": true,
+      "evidence_scope": "documented_in_source_not_live_operation",
+      "status": "verified",
+      "verified_at": "2026-09-12",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "sensitivity": "public_core",
+      "requires_current_verification": false,
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "blocked_consumers": [],
+      "source_classification": "source_documented"
+    },
+    {
+      "id": "b05-016",
+      "claim": "SERNATUR describe Villa O’Higgins como el último pueblo de la Carretera Austral.",
+      "source_ids": [
+        "sernatur-carretera-austral-aysen"
+      ],
+      "provenance": [
+        {
+          "source_id": "sernatur-carretera-austral-aysen",
+          "pdf_pages": [
+            22
+          ],
+          "source_url": "https://drive.google.com/file/d/1w5FBz8Mdtxo9nkm0vUAO9kvDT9SJBSqI/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "entity_ids": [
+        "villa-ohiggins",
+        "carretera-austral"
+      ],
+      "knowledge_class": "stable_semantic",
+      "verification_status": "verified",
+      "embedding_ready": true,
+      "evidence_scope": "documented_in_source_not_live_operation",
+      "notes": "No equivale a fijar el extremo geodésico de la Ruta 7.",
+      "status": "verified",
+      "verified_at": "2026-09-12",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "sensitivity": "public_core",
+      "requires_current_verification": false,
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "blocked_consumers": [],
+      "source_classification": "source_documented"
+    },
+    {
+      "id": "b05-017",
+      "claim": "SERNATUR describe 100 km Río Bravo–Villa O’Higgins y unos 50 minutos de barcaza.",
+      "source_ids": [
+        "sernatur-carretera-austral-aysen"
+      ],
+      "provenance": [
+        {
+          "source_id": "sernatur-carretera-austral-aysen",
+          "pdf_pages": [
+            22
+          ],
+          "source_url": "https://drive.google.com/file/d/1w5FBz8Mdtxo9nkm0vUAO9kvDT9SJBSqI/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "entity_ids": [
+        "villa-ohiggins",
+        "rio-bravo",
+        "puerto-yungay"
+      ],
+      "knowledge_class": "dynamic_revalidation_required",
+      "verification_status": "qualified",
+      "embedding_ready": false,
+      "evidence_scope": "documented_in_source_not_live_operation",
+      "status": "qualified",
+      "verified_at": "2026-09-12",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "sensitivity": "operational_dynamic",
+      "requires_current_verification": true,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "blocked_consumers": [
+        "travel-agent",
+        "general-rag"
+      ],
+      "source_classification": "source_documented",
+      "review_route": "data/verification/campo-hielo-sur-chilean-authority-validation.json",
+      "conflict_ids": [
+        "rio-bravo-villa-ohiggins-distance",
+        "mitchell-crossing-duration"
+      ]
+    },
+    {
+      "id": "b05-018",
+      "claim": "La obra de 2012 relaciona la historia de la Carretera Austral con Puerto Yungay, Villa O’Higgins, Bahía Bahamondes y Lago O’Higgins.",
+      "source_ids": [
+        "drive-carretera-austral-pdf"
+      ],
+      "provenance": [
+        {
+          "source_id": "drive-carretera-austral-pdf",
+          "pdf_pages": [
+            9
+          ],
+          "source_url": "https://drive.google.com/file/d/1XQStYiAa-NLw93PjOKJagt-nDObacq-C/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "entity_ids": [
+        "carretera-austral",
+        "puerto-yungay",
+        "villa-ohiggins",
+        "bahia-bahamondes",
+        "lago-ohiggins"
+      ],
+      "knowledge_class": "contextual_rag_chunk",
+      "verification_status": "verified",
+      "embedding_ready": true,
+      "evidence_scope": "documented_in_source_not_live_operation",
+      "status": "verified",
+      "verified_at": "2026-09-12",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "sensitivity": "public_core",
+      "requires_current_verification": false,
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "blocked_consumers": [],
+      "source_classification": "source_documented",
+      "source_date": "2012",
+      "temporal_label": "Historical context from the 2012 edition; not current operating state."
+    },
+    {
+      "id": "b05-019",
+      "claim": "RP6 documenta un acceso lacustre desde Bahía Bahamondes, al sur de Villa O’Higgins, hacia Candelario Mansilla; no acredita operación actual.",
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            2
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "entity_ids": [
+        "bahia-bahamondes",
+        "villa-ohiggins",
+        "candelario-mansilla",
+        "lago-ohiggins"
+      ],
+      "knowledge_class": "stable_semantic",
+      "verification_status": "verified",
+      "embedding_ready": true,
+      "evidence_scope": "documented_in_source_not_live_operation",
+      "notes": "Lectura visual de página con texto nativo corrupto; horario, duración y estado actual excluidos.",
+      "status": "verified",
+      "verified_at": "2026-09-12",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "sensitivity": "public_core",
+      "requires_current_verification": false,
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "blocked_consumers": [],
+      "source_classification": "source_documented"
+    }
+  ]
+}

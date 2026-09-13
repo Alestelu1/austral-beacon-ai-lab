@@ -1,0 +1,65 @@
+{
+  "source_id": "sernatur-carretera-austral-aysen",
+  "title": "Ruta Carretera Austral",
+  "publisher": "SERNATUR",
+  "source_class": "primary_chilean_institutional",
+  "country": "Chile",
+  "drive_file_id": "1w5FBz8Mdtxo9nkm0vUAO9kvDT9SJBSqI",
+  "drive_title": "patagonia_rutacarretera.pdf",
+  "url": "https://drive.google.com/file/d/1w5FBz8Mdtxo9nkm0vUAO9kvDT9SJBSqI/view",
+  "published_at": null,
+  "retrieved_at": "2026-09-12",
+  "extraction_method": "PDF native text, page-indexed; selected visual checks",
+  "stable_entities": [
+    "campo-de-hielo-sur",
+    "carretera-austral",
+    "glaciar-ohiggins",
+    "lago-ohiggins",
+    "villa-ohiggins"
+  ],
+  "claims": [
+    {
+      "id": "b05-015",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json#b05-015"
+    },
+    {
+      "id": "b05-016",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json#b05-016"
+    },
+    {
+      "id": "b05-017",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json#b05-017"
+    },
+    {
+      "id": "b05-021",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json#b05-021"
+    }
+  ],
+  "limitations": [
+    "La presencia de un hecho en el PDF no acredita vigencia operativa.",
+    "No se usa como autoridad jurídica fronteriza.",
+    "Fecha de edición no verificada.",
+    "PDF p.24: límites de mapas preliminares y no oficiales."
+  ],
+  "geometry_use": "non_canonical_reference_only",
+  "embedding_ready": false,
+  "provenance": {
+    "sha256": "826b41bf861ae2db412c39cddd1f4fb27fb9e76608180170485db5300256a9fb",
+    "pdf_pages": 25,
+    "page_numbering": "1-based PDF page; Mosco pages contain two printed pages",
+    "repo_base_commit": "664804ca762cba619bb156e3ee46260979b87e93",
+    "processing_state": "batch05_wave1_structured_source_record"
+  },
+  "record_path": "data/sources/sernatur-carretera-austral-aysen.json",
+  "embedding_eligible": false,
+  "inference_policy": "Publisher country is not entity sovereignty. No automatic geographic classification.",
+  "documented_entity_mentions": [
+    "campo-de-hielo-sur",
+    "carretera-austral",
+    "glaciar-ohiggins",
+    "lago-ohiggins",
+    "puerto-yungay",
+    "rio-bravo",
+    "villa-ohiggins"
+  ]
+}

@@ -1,49 +1,38 @@
 {
-  "entity_id": "carretera-austral",
+  "entity_id": "campo-de-hielo-sur",
   "sources": [
     {
-      "id": "mop-plan-ruta-austral-2026-04-30",
-      "publisher": "Ministerio de Obras Públicas de Chile / SEREMI MOP Aysén",
-      "source_type": "primary_institutional",
-      "priority": "high",
-      "published_at": "2026-04-30",
-      "url": "https://aysen.mop.gob.cl/presidente-kast-y-ministro-arrau-anuncian-plan-historico-por-mas-de-800-mil-millones-para-potenciar-la-carretera-austral/"
-    },
-    {
-      "id": "mop-rio-ibanez-2026-08-26",
-      "publisher": "Ministerio de Obras Públicas de Chile / Dirección de Vialidad",
-      "source_type": "primary_institutional",
-      "priority": "high",
-      "published_at": "2026-08-26",
-      "url": "https://vialidad.mop.gob.cl/2026/08/26/comenzo-pavimentacion-de-nuevo-tramo-de-la-carretera-austral-en-rio-ibanez-con-inversion-de-70-mil-millones-de-pesos/"
-    },
-    {
-      "id": "elpais-carretera-austral-2026-09-07",
-      "publisher": "EL PAÍS Chile",
-      "source_type": "secondary_editorial",
-      "priority": "medium",
-      "published_at": "2026-09-07",
-      "url": "https://elpais.com/chile/2026-09-07/la-carretera-austral-la-ruta-que-abre-las-puertas-al-fin-del-mundo-es-imposible-no-querer-quedarse-en-la-patagonia-chilena.html",
-      "use": "narrative framing and international positioning; not authority for operational facts"
-    },
-    {
-      "id": "drive-carretera-austral-pdf",
-      "publisher": "Ocho Libros Editores; © Linde Waidhofer",
-      "source_type": "secondary_historical_editorial",
-      "priority": "contextual",
-      "drive_file_id": "1XQStYiAa-NLw93PjOKJagt-nDObacq-C",
-      "title": "Carretera-Austral-El-camino-mas-espectacular-de-Sudamerica.pdf",
-      "published_at": "2012",
-      "url": "https://drive.google.com/file/d/1XQStYiAa-NLw93PjOKJagt-nDObacq-C/view",
+      "title": "Decreto 1155 / Acuerdo Fitz Roy–Daudet",
+      "publisher": "MINREL; texto publicado por BCN",
+      "source_class": "primary_chilean_legal",
+      "country": "Chile",
+      "url": "https://www.bcn.cl/leychile/navegar?idNorma=140087",
+      "difrol_catalogue": "https://www.difrol.cl/download/acuerdo-para-precisar-el-recorrido-del-limite-desde-el-monte-fitz-roy-hasta-el-cerro-daudet-1998/",
+      "retrieved_at": "2026-09-12",
+      "drive_file_id": null,
+      "drive_title": null,
+      "extraction_method": "official HTML text read",
+      "stable_entities": [],
+      "limitations": [
+        "No acredita avance bilateral actual; no se digitalizaron anexos ni coordenadas."
+      ],
+      "geometry_use": "none",
+      "embedding_ready": false,
       "provenance": {
-        "sha256": "abab5a1e122282134b51affbcb78f0fba034afe3fcca2349819d7bb8a289a33a",
-        "pdf_pages": 93,
-        "page_numbering": "1-based PDF page; Mosco pages contain two printed pages",
-        "repo_base_commit": "664804ca762cba619bb156e3ee46260979b87e93",
+        "locator": "Decreto y artículo I, secciones A y B",
+        "scope": "existencia y texto del instrumento",
         "processing_state": "batch05_wave1_structured_source_record"
       },
-      "record_path": "data/sources/carretera-austral-historical-context.json",
-      "use": "Historical context, 2012 edition; no current operations or legal authority."
+      "record_path": "data/sources/bcn-acuerdo-fitz-roy-daudet-1998.json",
+      "embedding_eligible": false,
+      "inference_policy": "Publisher country is not entity sovereignty. No automatic geographic classification.",
+      "documented_entity_mentions": [
+        "campo-de-hielo-sur",
+        "monte-fitz-roy-chalten"
+      ],
+      "id": "bcn-decreto-1155-acuerdo-1998",
+      "source_type": "primary_chilean_legal",
+      "institution": "MINREL; texto publicado por BCN"
     },
     {
       "title": "Ruta Patrimonial Parque Glaciar Mosco: Bien Nacional Protegido",
@@ -92,7 +81,66 @@
         "villa-ohiggins"
       ],
       "id": "bienes-nacionales-parque-glaciar-mosco",
-      "source_type": "primary_chilean_institutional"
+      "source_type": "primary_chilean_institutional",
+      "institution": "Ministerio de Bienes Nacionales"
+    },
+    {
+      "title": "Ruta Patrimonial Nº6 — Los Glaciares, Campo de Hielo Sur",
+      "publisher": "Ministerio de Bienes Nacionales",
+      "source_class": "primary_chilean_institutional",
+      "country": "Chile",
+      "drive_file_id": "1OKYLX91QfGKLs6VLmLPD6GEftMialEwr",
+      "drive_title": "RP6.pdf",
+      "url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+      "published_at": null,
+      "retrieved_at": "2026-09-12",
+      "extraction_method": "PDF native text + page rendering; selected garbled pages OCR, visually checked when used",
+      "stable_entities": [
+        "bahia-bahamondes",
+        "candelario-mansilla",
+        "cerro-torre",
+        "glaciar-chico",
+        "glaciar-ohiggins",
+        "lago-chico",
+        "lago-ohiggins",
+        "monte-fitz-roy-chalten",
+        "ruta-patrimonial-6",
+        "villa-ohiggins"
+      ],
+      "limitations": [
+        "La presencia de un hecho en el PDF no acredita vigencia operativa.",
+        "No se usa como autoridad jurídica fronteriza.",
+        "Fecha de edición no verificada.",
+        "79,1 km en descripción frente a suma de tramos 79,3 km; conservar discrepancia.",
+        "Texto corrupto en algunas páginas: no normalizar mediante conjetura."
+      ],
+      "geometry_use": "non_canonical_reference_only",
+      "embedding_ready": false,
+      "provenance": {
+        "sha256": "166812ba70447626419759e1cdcec3d4efa07b665e49117f4c5e7f5f6355aa13",
+        "pdf_pages": 57,
+        "page_numbering": "1-based PDF page; Mosco pages contain two printed pages",
+        "repo_base_commit": "664804ca762cba619bb156e3ee46260979b87e93",
+        "processing_state": "batch05_wave1_structured_source_record"
+      },
+      "record_path": "data/sources/bienes-nacionales-rp6-campo-hielo-sur.json",
+      "embedding_eligible": false,
+      "inference_policy": "Publisher country is not entity sovereignty. No automatic geographic classification.",
+      "documented_entity_mentions": [
+        "bahia-bahamondes",
+        "candelario-mansilla",
+        "cerro-torre",
+        "glaciar-chico",
+        "glaciar-ohiggins",
+        "lago-chico",
+        "lago-ohiggins",
+        "monte-fitz-roy-chalten",
+        "ruta-patrimonial-6",
+        "villa-ohiggins"
+      ],
+      "id": "bienes-nacionales-rp6-campo-hielo-sur",
+      "source_type": "primary_chilean_institutional",
+      "institution": "Ministerio de Bienes Nacionales"
     },
     {
       "title": "Ruta Carretera Austral",
@@ -140,7 +188,8 @@
         "villa-ohiggins"
       ],
       "id": "sernatur-carretera-austral-aysen",
-      "source_type": "primary_chilean_institutional"
+      "source_type": "primary_chilean_institutional",
+      "institution": "SERNATUR"
     }
   ]
 }

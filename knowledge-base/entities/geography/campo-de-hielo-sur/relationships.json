@@ -1,0 +1,106 @@
+{
+  "entity_id": "campo-de-hielo-sur",
+  "relationships": [
+    {
+      "predicate": "inverse_of_documented_expedition_support_context",
+      "target": "villa-ohiggins",
+      "status": "documented",
+      "claim_ids": [
+        "b05-009"
+      ],
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "canonical",
+      "inverse_of": {
+        "source": "villa-ohiggins",
+        "predicate": "documented_expedition_support_context",
+        "target": "campo-de-hielo-sur"
+      },
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    },
+    {
+      "predicate": "documented_glacier_relation",
+      "target": "glaciar-ohiggins",
+      "status": "documented",
+      "claim_ids": [
+        "b05-015"
+      ],
+      "source_ids": [
+        "sernatur-carretera-austral-aysen"
+      ],
+      "provenance": [
+        {
+          "source_id": "sernatur-carretera-austral-aysen",
+          "pdf_pages": [
+            22
+          ],
+          "source_url": "https://drive.google.com/file/d/1w5FBz8Mdtxo9nkm0vUAO9kvDT9SJBSqI/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": false,
+      "embedding_ready": false,
+      "fact_scope": "documented_context_not_current_service",
+      "target_status": "canonical",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    },
+    {
+      "predicate": "inverse_of_documented_route_context",
+      "target": "monte-fitz-roy-chalten",
+      "status": "qualified",
+      "target_status": "canonical",
+      "claim_ids": [
+        "b05-005"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            14,
+            16
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "context_route": "ruta-patrimonial-6",
+      "fact_scope": "Fitz Roy appears as an observation reference in RP6 Los Glaciares, Campo de Hielo Sur; no physical containment or sovereignty inferred.",
+      "sensitivity": "public_core",
+      "embedding_ready": false,
+      "embedding_eligible": false,
+      "sovereignty_implication": false,
+      "inverse_of": {
+        "source": "monte-fitz-roy-chalten",
+        "predicate": "documented_route_context",
+        "target": "campo-de-hielo-sur"
+      },
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    }
+  ],
+  "candidate_registry": "data/knowledge/campo-hielo-sur-local-graph.json",
+  "reconciliation_registry": "data/knowledge/batch-05-wave-1-reconciliation.json"
+}

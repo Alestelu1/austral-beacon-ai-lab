@@ -42,6 +42,239 @@
       "source_id": "elpais-carretera-austral-2026-09-07",
       "stability": "high",
       "use": "narrative_analysis"
+    },
+    {
+      "id": "b05-016",
+      "claim": "SERNATUR describe Villa O’Higgins como el último pueblo de la Carretera Austral.",
+      "source_ids": [
+        "sernatur-carretera-austral-aysen"
+      ],
+      "provenance": [
+        {
+          "source_id": "sernatur-carretera-austral-aysen",
+          "pdf_pages": [
+            22
+          ],
+          "source_url": "https://drive.google.com/file/d/1w5FBz8Mdtxo9nkm0vUAO9kvDT9SJBSqI/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "entity_ids": [
+        "villa-ohiggins",
+        "carretera-austral"
+      ],
+      "knowledge_class": "stable_semantic",
+      "verification_status": "verified",
+      "embedding_ready": true,
+      "evidence_scope": "documented_in_source_not_live_operation",
+      "notes": "No equivale a fijar el extremo geodésico de la Ruta 7.",
+      "status": "verified",
+      "verified_at": "2026-09-12",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "sensitivity": "public_core",
+      "requires_current_verification": false,
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "blocked_consumers": [],
+      "source_classification": "source_documented"
+    },
+    {
+      "id": "b05-018",
+      "claim": "La obra de 2012 relaciona la historia de la Carretera Austral con Puerto Yungay, Villa O’Higgins, Bahía Bahamondes y Lago O’Higgins.",
+      "source_ids": [
+        "drive-carretera-austral-pdf"
+      ],
+      "provenance": [
+        {
+          "source_id": "drive-carretera-austral-pdf",
+          "pdf_pages": [
+            9
+          ],
+          "source_url": "https://drive.google.com/file/d/1XQStYiAa-NLw93PjOKJagt-nDObacq-C/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "entity_ids": [
+        "carretera-austral",
+        "puerto-yungay",
+        "villa-ohiggins",
+        "bahia-bahamondes",
+        "lago-ohiggins"
+      ],
+      "knowledge_class": "contextual_rag_chunk",
+      "verification_status": "verified",
+      "embedding_ready": true,
+      "evidence_scope": "documented_in_source_not_live_operation",
+      "status": "verified",
+      "verified_at": "2026-09-12",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "sensitivity": "public_core",
+      "requires_current_verification": false,
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "blocked_consumers": [],
+      "source_classification": "source_documented",
+      "source_date": "2012",
+      "temporal_label": "Historical context from the 2012 edition; not current operating state."
+    },
+    {
+      "id": "b05-021",
+      "claim": "SERNATUR advierte que los límites de sus mapas tienen carácter preliminar no oficial.",
+      "source_ids": [
+        "sernatur-carretera-austral-aysen"
+      ],
+      "provenance": [
+        {
+          "source_id": "sernatur-carretera-austral-aysen",
+          "pdf_pages": [
+            24
+          ],
+          "source_url": "https://drive.google.com/file/d/1w5FBz8Mdtxo9nkm0vUAO9kvDT9SJBSqI/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "entity_ids": [
+        "carretera-austral"
+      ],
+      "knowledge_class": "non_embedding_reference",
+      "verification_status": "verified",
+      "embedding_ready": false,
+      "evidence_scope": "documented_in_source_not_live_operation",
+      "status": "verified",
+      "verified_at": "2026-09-12",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "sensitivity": "internal_research",
+      "requires_current_verification": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "blocked_consumers": [
+        "travel-agent",
+        "general-rag"
+      ],
+      "source_classification": "source_documented",
+      "review_route": "data/verification/campo-hielo-sur-chilean-authority-validation.json"
+    },
+    {
+      "id": "b05-010",
+      "claim": "La topoguía describe acceso a Villa O’Higgins por Cochrane, Puerto Yungay, cruce del fiordo Mitchell y Río Bravo.",
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            9
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "entity_ids": [
+        "villa-ohiggins",
+        "puerto-yungay",
+        "rio-bravo"
+      ],
+      "knowledge_class": "stable_semantic",
+      "verification_status": "verified",
+      "embedding_ready": true,
+      "evidence_scope": "documented_in_source_not_live_operation",
+      "notes": "Río Bravo se usa aquí como extremo del cruce; identidad de rampa y río debe desambiguarse.",
+      "status": "verified",
+      "verified_at": "2026-09-12",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "sensitivity": "public_core",
+      "requires_current_verification": false,
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "blocked_consumers": [],
+      "source_classification": "source_documented"
+    },
+    {
+      "id": "b05-011",
+      "claim": "Mosco registra 90 km Río Bravo–Villa O’Higgins y 45 minutos de cruce; SERNATUR difiere.",
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            9
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "entity_ids": [
+        "villa-ohiggins",
+        "rio-bravo",
+        "puerto-yungay"
+      ],
+      "knowledge_class": "dynamic_revalidation_required",
+      "verification_status": "qualified",
+      "embedding_ready": false,
+      "evidence_scope": "documented_in_source_not_live_operation",
+      "status": "qualified",
+      "verified_at": "2026-09-12",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "sensitivity": "operational_dynamic",
+      "requires_current_verification": true,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "blocked_consumers": [
+        "travel-agent",
+        "general-rag"
+      ],
+      "source_classification": "source_documented",
+      "review_route": "data/verification/campo-hielo-sur-chilean-authority-validation.json",
+      "conflict_ids": [
+        "rio-bravo-villa-ohiggins-distance",
+        "mitchell-crossing-duration"
+      ]
+    },
+    {
+      "id": "b05-017",
+      "claim": "SERNATUR describe 100 km Río Bravo–Villa O’Higgins y unos 50 minutos de barcaza.",
+      "source_ids": [
+        "sernatur-carretera-austral-aysen"
+      ],
+      "provenance": [
+        {
+          "source_id": "sernatur-carretera-austral-aysen",
+          "pdf_pages": [
+            22
+          ],
+          "source_url": "https://drive.google.com/file/d/1w5FBz8Mdtxo9nkm0vUAO9kvDT9SJBSqI/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "entity_ids": [
+        "villa-ohiggins",
+        "rio-bravo",
+        "puerto-yungay"
+      ],
+      "knowledge_class": "dynamic_revalidation_required",
+      "verification_status": "qualified",
+      "embedding_ready": false,
+      "evidence_scope": "documented_in_source_not_live_operation",
+      "status": "qualified",
+      "verified_at": "2026-09-12",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "sensitivity": "operational_dynamic",
+      "requires_current_verification": true,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "blocked_consumers": [
+        "travel-agent",
+        "general-rag"
+      ],
+      "source_classification": "source_documented",
+      "review_route": "data/verification/campo-hielo-sur-chilean-authority-validation.json",
+      "conflict_ids": [
+        "rio-bravo-villa-ohiggins-distance",
+        "mitchell-crossing-duration"
+      ]
     }
   ]
 }

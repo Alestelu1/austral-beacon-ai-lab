@@ -1,0 +1,43 @@
+{
+  "entity_id": "monte-fitz-roy-chalten",
+  "ingestion_status": "not_performed",
+  "chunks": [
+    {
+      "id": "monte-fitz-roy-chalten-b05-005",
+      "text": "La RP6 documenta vistas de Fitz Roy y Cerro Torre desde el lado chileno, en el mirador SNUPIE 2, condicionadas al tiempo atmosférico.",
+      "claim_ids": [
+        "b05-005"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            14,
+            16
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "sensitivity": "public_core",
+      "class": "stable_semantic",
+      "fact_scope": "Source-documented context; no assertion of current operation or boundary execution.",
+      "embedding_ready": true,
+      "embedding_eligible": true,
+      "qa_review": "tests/knowledge/test_batch05_wave1.py",
+      "approved_consumers": [
+        "atlas",
+        "travel",
+        "travel-agent",
+        "observatory",
+        "editorial"
+      ],
+      "vector_ingestion_status": "not_performed",
+      "geometry_use_allowed": false,
+      "limitations": "Página 14 revisada visualmente. Visibilidad no determina soberanía."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "verified_geometries": [],
+  "required": [
+    {
+      "geometry": "international_boundary",
+      "authority": "MINREL/DIFROL / Comisión Mixta / IGM",
+      "status": "pending",
+      "required_metadata": [
+        "source_layer",
+        "version_date",
+        "CRS",
+        "scale",
+        "accuracy",
+        "license",
+        "retrieved_at"
+      ]
+    },
+    {
+      "geometry": "protected_area_polygons",
+      "authority": "Autoridad de áreas protegidas competente, Bienes Nacionales y decretos oficiales",
+      "status": "pending",
+      "required_metadata": [
+        "source_layer",
+        "version_date",
+        "CRS",
+        "scale",
+        "accuracy",
+        "license",
+        "retrieved_at"
+      ]
+    },
+    {
+      "geometry": "glaciers_lakes_rivers",
+      "authority": "DGA / IGM y metadatos de fecha y CRS",
+      "status": "pending",
+      "required_metadata": [
+        "source_layer",
+        "version_date",
+        "CRS",
+        "scale",
+        "accuracy",
+        "license",
+        "retrieved_at"
+      ]
+    },
+    {
+      "geometry": "roads_ramps_trails",
+      "authority": "MOP/Vialidad/DOP; Bienes Nacionales para RP6/Mosco",
+      "status": "pending",
+      "required_metadata": [
+        "source_layer",
+        "version_date",
+        "CRS",
+        "scale",
+        "accuracy",
+        "license",
+        "retrieved_at"
+      ]
+    }
+  ],
+  "reference_only_source_ids": [
+    "bienes-nacionales-rp6-campo-hielo-sur",
+    "bienes-nacionales-rp6-ficha",
+    "bienes-nacionales-parque-glaciar-mosco",
+    "sernatur-carretera-austral-aysen",
+    "drive-carretera-austral-pdf",
+    "athenalab-campo-hielo-sur-research-source"
+  ],
+  "forbidden_boundary_inputs": [
+    "tourism_map_line",
+    "Google Maps",
+    "OpenStreetMap",
+    "Wikipedia",
+    "secondary map reproduction"
+  ],
+  "canonical_boundary_generation_authorized": false,
+  "batch": "05",
+  "wave": 1,
+  "boundary_status": "requires_authoritative_review",
+  "embedding_ready": false,
+  "embedding_eligible": false
+}
