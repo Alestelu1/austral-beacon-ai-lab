@@ -36,7 +36,7 @@
       "provenance": {
         "sha256": "166812ba70447626419759e1cdcec3d4efa07b665e49117f4c5e7f5f6355aa13",
         "pdf_pages": 57,
-        "page_numbering": "1-based PDF page; Mosco pages contain two printed pages",
+        "page_numbering": "1-based PDF page",
         "repo_base_commit": "664804ca762cba619bb156e3ee46260979b87e93",
         "processing_state": "batch05_wave1_structured_source_record"
       },
@@ -86,7 +86,7 @@
       "provenance": {
         "sha256": "0fcf4d49cdecd8b607dd86e373a23571d62f24c0aa2807cb763b965d5f67bc9e",
         "pdf_pages": 2,
-        "page_numbering": "1-based PDF page; Mosco pages contain two printed pages",
+        "page_numbering": "1-based PDF page",
         "repo_base_commit": "664804ca762cba619bb156e3ee46260979b87e93",
         "processing_state": "batch05_wave1_structured_source_record"
       },
@@ -129,7 +129,7 @@
       "provenance": {
         "sha256": "abab5a1e122282134b51affbcb78f0fba034afe3fcca2349819d7bb8a289a33a",
         "pdf_pages": 93,
-        "page_numbering": "1-based PDF page; Mosco pages contain two printed pages",
+        "page_numbering": "1-based PDF page",
         "repo_base_commit": "664804ca762cba619bb156e3ee46260979b87e93",
         "processing_state": "batch05_wave1_structured_source_record"
       },
@@ -176,7 +176,7 @@
       "provenance": {
         "sha256": "826b41bf861ae2db412c39cddd1f4fb27fb9e76608180170485db5300256a9fb",
         "pdf_pages": 25,
-        "page_numbering": "1-based PDF page; Mosco pages contain two printed pages",
+        "page_numbering": "1-based PDF page",
         "repo_base_commit": "664804ca762cba619bb156e3ee46260979b87e93",
         "processing_state": "batch05_wave1_structured_source_record"
       },

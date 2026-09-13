@@ -32,7 +32,7 @@
   "provenance": {
     "sha256": "abab5a1e122282134b51affbcb78f0fba034afe3fcca2349819d7bb8a289a33a",
     "pdf_pages": 93,
-    "page_numbering": "1-based PDF page; Mosco pages contain two printed pages",
+    "page_numbering": "1-based PDF page",
     "repo_base_commit": "664804ca762cba619bb156e3ee46260979b87e93",
     "processing_state": "batch05_wave1_structured_source_record"
   },
