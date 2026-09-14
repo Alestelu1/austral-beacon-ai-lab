@@ -1,0 +1,217 @@
+{
+  "batch": 5,
+  "wave": 2,
+  "base_commit": "8ce686831f14bed8f9ebb16e1f586cb37004153a",
+  "branch": "rag/batch-05-wave-2-connectivity-protected-areas",
+  "canonical_packages": {
+    "puerto-yungay": "knowledge-base/entities/places/puerto-yungay",
+    "rio-bravo": "knowledge-base/entities/infrastructure/rio-bravo",
+    "bahia-bahamondes": "knowledge-base/entities/geography/bahia-bahamondes",
+    "parque-glaciar-rio-mosco": "knowledge-base/entities/protected-areas/parque-glaciar-rio-mosco",
+    "parque-nacional-bernardo-ohiggins": "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins"
+  },
+  "new_package_ids": [
+    "puerto-yungay",
+    "rio-bravo",
+    "bahia-bahamondes",
+    "parque-glaciar-rio-mosco",
+    "parque-nacional-bernardo-ohiggins"
+  ],
+  "deferred_node_ids": [
+    "cerro-torre",
+    "lago-chico",
+    "glaciar-chico"
+  ],
+  "graph_projection": "data/knowledge/batch-05-wave-2-connectivity-graph.json",
+  "reconciliation_registry": "data/knowledge/batch-05-wave-2-reconciliation.json",
+  "retrieval_policy": "knowledge-base/research/batch-05-wave-2-retrieval-policy.json",
+  "verification_registry": "data/verification/batch-05-wave-2-connectivity-validation.json",
+  "source_records": {
+    "mop-puerto-yungay-design-2026": "data/sources/mop-puerto-yungay-design-2026.json",
+    "mop-puerto-yungay-design-2023": "data/sources/mop-puerto-yungay-design-2023.json",
+    "mop-bahia-bahamonde-port-2021": "data/sources/mop-bahia-bahamonde-port-2021.json",
+    "bienes-nacionales-rio-mosco-web": "data/sources/bienes-nacionales-rio-mosco-web.json",
+    "conaf-parque-nacional-bernardo-ohiggins": "data/sources/conaf-parque-nacional-bernardo-ohiggins.json"
+  },
+  "reused_source_records": {
+    "bienes-nacionales-parque-glaciar-mosco": "data/sources/bienes-nacionales-parque-glaciar-mosco.json",
+    "bienes-nacionales-rp6-campo-hielo-sur": "data/sources/bienes-nacionales-rp6-campo-hielo-sur.json",
+    "sernatur-carretera-austral-aysen": "data/sources/sernatur-carretera-austral-aysen.json"
+  },
+  "new_claim_ids": [
+    "b05w2-001",
+    "b05w2-002",
+    "b05w2-003",
+    "b05w2-004",
+    "b05w2-005",
+    "b05w2-006",
+    "b05w2-007",
+    "b05w2-008",
+    "b05w2-009",
+    "b05w2-010",
+    "b05w2-011",
+    "b05w2-012",
+    "b05w2-013",
+    "b05w2-014",
+    "b05w2-015",
+    "b05w2-016",
+    "b05w2-017",
+    "b05w2-018",
+    "b05w2-019",
+    "b05w2-020",
+    "b05w2-021"
+  ],
+  "claim_locations": {
+    "b05w2-001": [
+      "knowledge-base/entities/places/puerto-yungay/claims.json",
+      "knowledge-base/entities/infrastructure/rio-bravo/claims.json"
+    ],
+    "b05w2-002": [
+      "knowledge-base/entities/places/puerto-yungay/claims.json",
+      "knowledge-base/entities/infrastructure/rio-bravo/claims.json"
+    ],
+    "b05w2-003": [
+      "knowledge-base/entities/places/puerto-yungay/claims.json",
+      "knowledge-base/entities/infrastructure/rio-bravo/claims.json"
+    ],
+    "b05w2-004": [
+      "knowledge-base/entities/places/puerto-yungay/claims.json"
+    ],
+    "b05w2-005": [
+      "knowledge-base/entities/infrastructure/rio-bravo/claims.json",
+      "knowledge-base/entities/places/puerto-yungay/claims.json"
+    ],
+    "b05w2-006": [
+      "knowledge-base/entities/infrastructure/rio-bravo/claims.json",
+      "knowledge-base/entities/places/puerto-yungay/claims.json"
+    ],
+    "b05w2-007": [
+      "knowledge-base/entities/geography/bahia-bahamondes/claims.json"
+    ],
+    "b05w2-008": [
+      "knowledge-base/entities/geography/bahia-bahamondes/claims.json"
+    ],
+    "b05w2-009": [
+      "knowledge-base/entities/geography/bahia-bahamondes/claims.json"
+    ],
+    "b05w2-010": [
+      "knowledge-base/entities/geography/bahia-bahamondes/claims.json"
+    ],
+    "b05w2-011": [
+      "knowledge-base/entities/protected-areas/parque-glaciar-rio-mosco/claims.json"
+    ],
+    "b05w2-012": [
+      "knowledge-base/entities/protected-areas/parque-glaciar-rio-mosco/claims.json"
+    ],
+    "b05w2-013": [
+      "knowledge-base/entities/protected-areas/parque-glaciar-rio-mosco/claims.json"
+    ],
+    "b05w2-014": [
+      "knowledge-base/entities/protected-areas/parque-glaciar-rio-mosco/claims.json"
+    ],
+    "b05w2-015": [
+      "knowledge-base/entities/protected-areas/parque-glaciar-rio-mosco/claims.json"
+    ],
+    "b05w2-016": [
+      "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins/claims.json"
+    ],
+    "b05w2-017": [
+      "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins/claims.json"
+    ],
+    "b05w2-018": [
+      "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins/claims.json"
+    ],
+    "b05w2-019": [
+      "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins/claims.json"
+    ],
+    "b05w2-020": [
+      "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins/claims.json"
+    ],
+    "b05w2-021": [
+      "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins/claims.json"
+    ]
+  },
+  "new_relationship_ids": [
+    "b05w2-rel-01",
+    "b05w2-rel-01-inverse",
+    "b05w2-rel-02",
+    "b05w2-rel-02-inverse",
+    "b05w2-rel-03",
+    "b05w2-rel-03-inverse",
+    "b05w2-rel-04",
+    "b05w2-rel-04-inverse",
+    "b05w2-rel-05",
+    "b05w2-rel-05-inverse",
+    "b05w2-rel-06",
+    "b05w2-rel-06-inverse",
+    "b05w2-rel-07",
+    "b05w2-rel-07-inverse",
+    "b05w2-rel-08",
+    "b05w2-rel-08-inverse",
+    "b05w2-rel-09",
+    "b05w2-rel-09-inverse",
+    "b05w2-rel-10",
+    "b05w2-rel-10-inverse"
+  ],
+  "embedding_excluded_claim_ids": [
+    "b05w2-004",
+    "b05w2-006",
+    "b05w2-014",
+    "b05w2-015",
+    "b05w2-016",
+    "b05w2-021"
+  ],
+  "all_chunks_pending_audit": true,
+  "vector_ingestion_status": "not_performed",
+  "runtime_consumers_changed": false,
+  "wave_3_started": false,
+  "geometry_acquisition_authorized": false,
+  "authority_closure_preserved_byte_for_byte": true,
+  "review_status": "pending_audit",
+  "created_files": [
+    "data/knowledge/batch-05-wave-2-connectivity-graph.json",
+    "data/knowledge/batch-05-wave-2-manifest.json",
+    "data/knowledge/batch-05-wave-2-reconciliation.json",
+    "data/sources/bienes-nacionales-rio-mosco-web.json",
+    "data/sources/conaf-parque-nacional-bernardo-ohiggins.json",
+    "data/sources/mop-bahia-bahamonde-port-2021.json",
+    "data/sources/mop-puerto-yungay-design-2023.json",
+    "data/sources/mop-puerto-yungay-design-2026.json",
+    "data/verification/batch-05-wave-2-connectivity-validation.json",
+    "knowledge-base/entities/geography/bahia-bahamondes/bahia-bahamondes.mdx",
+    "knowledge-base/entities/geography/bahia-bahamondes/chunks.json",
+    "knowledge-base/entities/geography/bahia-bahamondes/claims.json",
+    "knowledge-base/entities/geography/bahia-bahamondes/metadata.json",
+    "knowledge-base/entities/geography/bahia-bahamondes/relationships.json",
+    "knowledge-base/entities/geography/bahia-bahamondes/sources.json",
+    "knowledge-base/entities/infrastructure/rio-bravo/chunks.json",
+    "knowledge-base/entities/infrastructure/rio-bravo/claims.json",
+    "knowledge-base/entities/infrastructure/rio-bravo/metadata.json",
+    "knowledge-base/entities/infrastructure/rio-bravo/relationships.json",
+    "knowledge-base/entities/infrastructure/rio-bravo/rio-bravo.mdx",
+    "knowledge-base/entities/infrastructure/rio-bravo/sources.json",
+    "knowledge-base/entities/places/puerto-yungay/chunks.json",
+    "knowledge-base/entities/places/puerto-yungay/claims.json",
+    "knowledge-base/entities/places/puerto-yungay/metadata.json",
+    "knowledge-base/entities/places/puerto-yungay/puerto-yungay.mdx",
+    "knowledge-base/entities/places/puerto-yungay/relationships.json",
+    "knowledge-base/entities/places/puerto-yungay/sources.json",
+    "knowledge-base/entities/protected-areas/parque-glaciar-rio-mosco/chunks.json",
+    "knowledge-base/entities/protected-areas/parque-glaciar-rio-mosco/claims.json",
+    "knowledge-base/entities/protected-areas/parque-glaciar-rio-mosco/metadata.json",
+    "knowledge-base/entities/protected-areas/parque-glaciar-rio-mosco/parque-glaciar-rio-mosco.mdx",
+    "knowledge-base/entities/protected-areas/parque-glaciar-rio-mosco/relationships.json",
+    "knowledge-base/entities/protected-areas/parque-glaciar-rio-mosco/sources.json",
+    "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins/chunks.json",
+    "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins/claims.json",
+    "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins/metadata.json",
+    "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins/parque-nacional-bernardo-ohiggins.mdx",
+    "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins/relationships.json",
+    "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins/sources.json",
+    "knowledge-base/research/batch-05-wave-2-audit.md",
+    "knowledge-base/research/batch-05-wave-2-retrieval-policy.json",
+    "tests/knowledge/test_batch05_wave2.py"
+  ],
+  "modified_files": [],
+  "deleted_files": []
+}

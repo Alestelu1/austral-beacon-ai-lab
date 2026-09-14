@@ -1,0 +1,156 @@
+{
+  "entity_id": "bahia-bahamondes",
+  "ingestion_status": "not_performed",
+  "retrieval_policy": "knowledge-base/research/batch-05-wave-2-retrieval-policy.json",
+  "chunks": [
+    {
+      "id": "bahia-bahamondes-b05w2-007",
+      "text": "MOP sitúa Bahía Bahamonde en la ribera del Lago O’Higgins.",
+      "claim_ids": [
+        "b05w2-007"
+      ],
+      "source_ids": [
+        "mop-bahia-bahamonde-port-2021"
+      ],
+      "provenance": [
+        {
+          "source_id": "mop-bahia-bahamonde-port-2021",
+          "source_url": "https://aysen.mop.gob.cl/nueva-infraestructura-portuaria-en-bahia-bahamonde-mejora-conectividad-de-pobladores-e-impulsa-el-turismo-en-la-zona/",
+          "locator": "párrafo sobre habitantes de la ribera del Lago O’Higgins",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "category": "geography",
+      "fact_class": "stable_fact",
+      "sensitivity": "public_core",
+      "requires_current_verification": false,
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "embedding_ready": false,
+      "preparation_status": "prepared_pending_audit",
+      "blocked_consumers": [],
+      "vector_ingestion_status": "not_performed",
+      "geometry_use_allowed": false,
+      "temporal_scope": {
+        "source_published_at": "2021-06-10",
+        "scope": "as documented in cited publication; not a live observation"
+      },
+      "conditions_claim_ids": []
+    },
+    {
+      "id": "bahia-bahamondes-b05w2-008",
+      "text": "MOP documentó terminal portuario, muelle y ampliación de rampa existente en 2021.",
+      "claim_ids": [
+        "b05w2-008"
+      ],
+      "source_ids": [
+        "mop-bahia-bahamonde-port-2021"
+      ],
+      "provenance": [
+        {
+          "source_id": "mop-bahia-bahamonde-port-2021",
+          "source_url": "https://aysen.mop.gob.cl/nueva-infraestructura-portuaria-en-bahia-bahamonde-mejora-conectividad-de-pobladores-e-impulsa-el-turismo-en-la-zona/",
+          "locator": "sección Obras: componentes terrestres y marítimos",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "category": "identity",
+      "fact_class": "stable_fact",
+      "sensitivity": "public_core",
+      "requires_current_verification": false,
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "embedding_ready": false,
+      "preparation_status": "prepared_pending_audit",
+      "blocked_consumers": [],
+      "vector_ingestion_status": "not_performed",
+      "geometry_use_allowed": false,
+      "temporal_scope": {
+        "source_published_at": "2021-06-10",
+        "scope": "as documented in cited publication; not a live observation"
+      },
+      "conditions_claim_ids": []
+    },
+    {
+      "id": "bahia-bahamondes-b05w2-009",
+      "text": "MOP relaciona esta infraestructura con desplazamientos por el Lago O’Higgins.",
+      "claim_ids": [
+        "b05w2-009"
+      ],
+      "source_ids": [
+        "mop-bahia-bahamonde-port-2021"
+      ],
+      "provenance": [
+        {
+          "source_id": "mop-bahia-bahamonde-port-2021",
+          "source_url": "https://aysen.mop.gob.cl/nueva-infraestructura-portuaria-en-bahia-bahamonde-mejora-conectividad-de-pobladores-e-impulsa-el-turismo-en-la-zona/",
+          "locator": "párrafos sobre conectividad de pobladores del lago",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "category": "connectivity",
+      "fact_class": "stable_fact",
+      "sensitivity": "public_core",
+      "requires_current_verification": false,
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "embedding_ready": false,
+      "preparation_status": "prepared_pending_audit",
+      "blocked_consumers": [],
+      "vector_ingestion_status": "not_performed",
+      "geometry_use_allowed": false,
+      "temporal_scope": {
+        "source_published_at": "2021-06-10",
+        "scope": "as documented in cited publication; not a live observation"
+      },
+      "conditions_claim_ids": []
+    },
+    {
+      "id": "bahia-bahamondes-b05w2-010",
+      "text": "RP6 ubica Bahía Bahamondes al sur de Villa O’Higgins y documenta acceso lacustre hacia Candelario Mansilla.",
+      "claim_ids": [
+        "b05w2-010"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            2
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "category": "access",
+      "fact_class": "stable_fact",
+      "sensitivity": "public_core",
+      "requires_current_verification": false,
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "embedding_ready": false,
+      "preparation_status": "prepared_pending_audit",
+      "blocked_consumers": [],
+      "vector_ingestion_status": "not_performed",
+      "geometry_use_allowed": false,
+      "temporal_scope": {
+        "source_published_at": null,
+        "scope": "documented in Wave 1 source; edition date unverified; no live assertion"
+      },
+      "conditions_claim_ids": []
+    }
+  ]
+}

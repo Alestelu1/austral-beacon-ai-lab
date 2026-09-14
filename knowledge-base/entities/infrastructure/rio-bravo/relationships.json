@@ -1,0 +1,70 @@
+{
+  "entity_id": "rio-bravo",
+  "relationships": [
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-001"
+      ],
+      "source_ids": [
+        "mop-puerto-yungay-design-2026"
+      ],
+      "provenance": [
+        {
+          "source_id": "mop-puerto-yungay-design-2026",
+          "source_url": "https://aysen.mop.gob.cl/diseno-para-ampliar-infraestructura-portuaria-en-puerto-yungay-ingreso-a-mideso-para-obtener-recomendacion-satisfactoria-y-posteriormente-licitar-obras/",
+          "locator": "párrafo sobre intervención vial y recorrido hacia Río Bravo",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/places/puerto-yungay/claims.json",
+      "id": "b05w2-rel-02-inverse",
+      "source": "rio-bravo",
+      "predicate": "inverse_of_connects_by_ferry",
+      "target": "puerto-yungay",
+      "inverse_relation_id": "b05w2-rel-02",
+      "target_status": "canonical"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-003"
+      ],
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            9
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/places/puerto-yungay/claims.json",
+      "id": "b05w2-rel-04",
+      "source": "rio-bravo",
+      "predicate": "road_access_context",
+      "target": "villa-ohiggins",
+      "inverse_relation_id": "b05w2-rel-04-inverse",
+      "target_status": "canonical"
+    }
+  ],
+  "inverse_registry": "data/knowledge/batch-05-wave-2-connectivity-graph.json",
+  "reconciliation_registry": "data/knowledge/batch-05-wave-2-reconciliation.json"
+}

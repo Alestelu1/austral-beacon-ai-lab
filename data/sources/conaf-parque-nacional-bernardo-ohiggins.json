@@ -1,0 +1,35 @@
+{
+  "source_id": "conaf-parque-nacional-bernardo-ohiggins",
+  "title": "Parque Nacional Bernardo O’Higgins",
+  "publisher": "Corporación Nacional Forestal",
+  "source_class": "primary_chilean_institutional",
+  "country": "Chile",
+  "published_at": null,
+  "retrieved_at": "2026-09-14",
+  "url": "https://www.conaf.cl/parque_nacionales/parque-nacional-bernardo-ohiggins/",
+  "verification_status": "verified",
+  "verification_scope": "Ficha institucional del parque y accesos condicionados; publicación sin fecha, no verificación operacional en tiempo real.",
+  "extraction_method": "official HTML read; paraphrase with section locators",
+  "provenance": {
+    "source_url": "https://www.conaf.cl/parque_nacionales/parque-nacional-bernardo-ohiggins/",
+    "retrieved_at": "2026-09-14",
+    "page_numbering": "not applicable; HTML section/paragraph locator"
+  },
+  "embedding_eligible": false,
+  "general_embedding_allowed": false,
+  "vector_ingestion_status": "not_performed",
+  "land_boundary_status_determination_allowed": false,
+  "geometry_use_allowed": false,
+  "limitations": [
+    "Publisher country is not entity sovereignty.",
+    "Publication records do not establish current service, permissions or project completion."
+  ],
+  "claim_ids": [
+    "b05w2-016",
+    "b05w2-017",
+    "b05w2-018",
+    "b05w2-019",
+    "b05w2-020",
+    "b05w2-021"
+  ]
+}

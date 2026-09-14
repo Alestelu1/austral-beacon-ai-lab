@@ -1,0 +1,50 @@
+{
+  "id": "bahia-bahamondes",
+  "canonical_name": "Bahía Bahamondes",
+  "entity_type": "bay",
+  "status": "canonical",
+  "batch": 5,
+  "wave": 2,
+  "review_status": "pending_audit",
+  "sensitivity": "public_core",
+  "retrieval_scope": [
+    "atlas",
+    "travel",
+    "travel-agent",
+    "observatory",
+    "knowledge-layer"
+  ],
+  "retrieval_policy": "knowledge-base/research/batch-05-wave-2-retrieval-policy.json",
+  "public_projection_status": "prepared_not_connected",
+  "automatic_country_assignment_allowed": false,
+  "sovereignty_implication": false,
+  "aliases": [
+    "Bahía Bahamonde",
+    "Bahía Bahamondes"
+  ],
+  "alias_registry": "data/knowledge/batch-05-wave-2-reconciliation.json",
+  "geometry": null,
+  "geometry_acquisition_authorized": false,
+  "protected_area_geometry": null,
+  "international_boundary_geometry": null,
+  "geometry_layers_must_remain_separate": true,
+  "vector_ingestion_status": "not_performed",
+  "embedding_ready": false,
+  "canonical_package_layout": "mdx_inside_entity_directory",
+  "source_ids": [
+    "bienes-nacionales-rp6-campo-hielo-sur",
+    "mop-bahia-bahamonde-port-2021"
+  ],
+  "infrastructure_context": {
+    "components": [
+      "terminal portuario",
+      "muelle",
+      "rampa"
+    ],
+    "claim_ids": [
+      "b05w2-008"
+    ],
+    "identity_equivalence_with_bay": false,
+    "current_operation": "not_asserted"
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "entity_id": "parque-nacional-bernardo-ohiggins",
+  "claims": [
+    {
+      "id": "b05w2-016",
+      "claim": "CONAF fecha la creación del parque el 22-07-1969, mediante DS 264 de Agricultura.",
+      "entity_ids": [
+        "parque-nacional-bernardo-ohiggins"
+      ],
+      "fact_class": "historical_fact",
+      "chunk_category": "historical context",
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-14",
+      "source_classification": "source_documented",
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "requires_current_verification": false,
+      "sensitivity": "internal_research",
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "embedding_ready": false,
+      "vector_ingestion_status": "not_performed",
+      "review_status": "pending_audit",
+      "blocked_consumers": [
+        "general-rag",
+        "travel-agent"
+      ],
+      "source_ids": [
+        "conaf-parque-nacional-bernardo-ohiggins"
+      ],
+      "provenance": [
+        {
+          "source_id": "conaf-parque-nacional-bernardo-ohiggins",
+          "source_url": "https://www.conaf.cl/parque_nacionales/parque-nacional-bernardo-ohiggins/",
+          "locator": "Datos generales",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "temporal_scope": {
+        "source_published_at": null,
+        "scope": "as documented in cited publication; not a live observation"
+      },
+      "creation_date": "1969-07-22",
+      "legal_instrument": "DS 264 del Ministerio de Agricultura",
+      "legal_instrument_full_text_verified": false
+    },
+    {
+      "id": "b05w2-017",
+      "claim": "La ficha CONAF declara 3.525.901,20 ha.",
+      "entity_ids": [
+        "parque-nacional-bernardo-ohiggins"
+      ],
+      "fact_class": "stable_fact",
+      "chunk_category": "protected-area status",
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-14",
+      "source_classification": "source_documented",
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "requires_current_verification": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "embedding_ready": false,
+      "vector_ingestion_status": "not_performed",
+      "review_status": "pending_audit",
+      "blocked_consumers": [],
+      "source_ids": [
+        "conaf-parque-nacional-bernardo-ohiggins"
+      ],
+      "provenance": [
+        {
+          "source_id": "conaf-parque-nacional-bernardo-ohiggins",
+          "source_url": "https://www.conaf.cl/parque_nacionales/parque-nacional-bernardo-ohiggins/",
+          "locator": "Superficie (Ha)",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "temporal_scope": {
+        "source_published_at": null,
+        "scope": "as documented in cited publication; not a live observation"
+      },
+      "area_ha": 3525901.2,
+      "area_scope": "published park area; no geometry derived"
+    },
+    {
+      "id": "b05w2-018",
+      "claim": "CONAF describe presencia del parque en Aysén y Magallanes.",
+      "entity_ids": [
+        "parque-nacional-bernardo-ohiggins"
+      ],
+      "fact_class": "stable_fact",
+      "chunk_category": "geography",
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-14",
+      "source_classification": "source_documented",
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "requires_current_verification": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "embedding_ready": false,
+      "vector_ingestion_status": "not_performed",
+      "review_status": "pending_audit",
+      "blocked_consumers": [],
+      "source_ids": [
+        "conaf-parque-nacional-bernardo-ohiggins"
+      ],
+      "provenance": [
+        {
+          "source_id": "conaf-parque-nacional-bernardo-ohiggins",
+          "source_url": "https://www.conaf.cl/parque_nacionales/parque-nacional-bernardo-ohiggins/",
+          "locator": "Datos generales",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "temporal_scope": {
+        "source_published_at": null,
+        "scope": "as documented in cited publication; not a live observation"
+      },
+      "administrative_detail_status": "requires_review",
+      "limitation": "La fila Comunas y el texto Datos generales no coinciden; no se normalizan comunas."
+    },
+    {
+      "id": "b05w2-019",
+      "claim": "CONAF relaciona el parque con Campo de Hielo Sur.",
+      "entity_ids": [
+        "parque-nacional-bernardo-ohiggins",
+        "campo-de-hielo-sur"
+      ],
+      "fact_class": "stable_fact",
+      "chunk_category": "geography",
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-14",
+      "source_classification": "source_documented",
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "requires_current_verification": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "embedding_ready": false,
+      "vector_ingestion_status": "not_performed",
+      "review_status": "pending_audit",
+      "blocked_consumers": [],
+      "source_ids": [
+        "conaf-parque-nacional-bernardo-ohiggins"
+      ],
+      "provenance": [
+        {
+          "source_id": "conaf-parque-nacional-bernardo-ohiggins",
+          "source_url": "https://www.conaf.cl/parque_nacionales/parque-nacional-bernardo-ohiggins/",
+          "locator": "Datos generales y Servicios",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "temporal_scope": {
+        "source_published_at": null,
+        "scope": "as documented in cited publication; not a live observation"
+      }
+    },
+    {
+      "id": "b05w2-020",
+      "claim": "CONAF documenta acceso desde Villa O’Higgins por Lago O’Higgins hacia Paso Marconi.",
+      "entity_ids": [
+        "parque-nacional-bernardo-ohiggins",
+        "villa-ohiggins",
+        "lago-ohiggins"
+      ],
+      "fact_class": "stable_fact",
+      "chunk_category": "access",
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-14",
+      "source_classification": "source_documented",
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "requires_current_verification": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "embedding_ready": false,
+      "vector_ingestion_status": "not_performed",
+      "review_status": "pending_audit",
+      "blocked_consumers": [],
+      "source_ids": [
+        "conaf-parque-nacional-bernardo-ohiggins"
+      ],
+      "provenance": [
+        {
+          "source_id": "conaf-parque-nacional-bernardo-ohiggins",
+          "source_url": "https://www.conaf.cl/parque_nacionales/parque-nacional-bernardo-ohiggins/",
+          "locator": "Accesos y Servicios",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "temporal_scope": {
+        "source_published_at": null,
+        "scope": "as documented in cited publication; not a live observation"
+      },
+      "access_scope": "documented route context only",
+      "operational_conditions_claim_ids": [
+        "b05w2-021"
+      ]
+    },
+    {
+      "id": "b05w2-021",
+      "claim": "La ficha exige coordinación y autorización previa de CONAF Aysén bajo el reglamento de zonas remotas; verificar vigencia antes de viajar.",
+      "entity_ids": [
+        "parque-nacional-bernardo-ohiggins"
+      ],
+      "fact_class": "dynamic_operational_fact",
+      "chunk_category": "dynamic operational context",
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-14",
+      "source_classification": "source_documented",
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "requires_current_verification": true,
+      "sensitivity": "operational_dynamic",
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "embedding_ready": false,
+      "vector_ingestion_status": "not_performed",
+      "review_status": "pending_audit",
+      "blocked_consumers": [
+        "general-rag",
+        "travel-agent"
+      ],
+      "source_ids": [
+        "conaf-parque-nacional-bernardo-ohiggins"
+      ],
+      "provenance": [
+        {
+          "source_id": "conaf-parque-nacional-bernardo-ohiggins",
+          "source_url": "https://www.conaf.cl/parque_nacionales/parque-nacional-bernardo-ohiggins/",
+          "locator": "Servicios y Accesos",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "temporal_scope": {
+        "source_published_at": null,
+        "scope": "as documented in cited publication; not a live observation"
+      },
+      "live_verification_route": "competent protected-area authority; verify regulation, authorization and access conditions at request time"
+    }
+  ]
+}

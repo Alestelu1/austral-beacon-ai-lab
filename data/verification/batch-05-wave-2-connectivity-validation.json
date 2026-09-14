@@ -1,0 +1,51 @@
+{
+  "batch": 5,
+  "wave": 2,
+  "review_status": "pending_audit",
+  "conflict_registry": "data/verification/campo-hielo-sur-chilean-authority-validation.json",
+  "preserved_conflict_ids": [
+    "rp6-length",
+    "rio-bravo-villa-ohiggins-distance",
+    "mitchell-crossing-duration"
+  ],
+  "unresolved_items": [
+    {
+      "id": "puerto-yungay-project-current-state",
+      "claim_ids": [
+        "b05w2-004"
+      ],
+      "authority_needed": "MOP / DOP",
+      "status": "requires_current_verification",
+      "note": "Latest verified publication here is 2026-08-07; no completion, procurement outcome or expenditure inferred."
+    },
+    {
+      "id": "pnbo-municipalities",
+      "claim_ids": [
+        "b05w2-018"
+      ],
+      "authority_needed": "CONAF / competent protected-area authority",
+      "status": "requires_authoritative_review",
+      "note": "CONAF table lists Tortel, O’Higgins and Palena; Datos generales names Tortel and Puerto Natales. Commune normalization withheld."
+    },
+    {
+      "id": "mosco-legal-text",
+      "claim_ids": [
+        "b05w2-011"
+      ],
+      "authority_needed": "Bienes Nacionales / BCN",
+      "status": "requires_authoritative_review",
+      "note": "Institutional BNP designation verified; cited decree full text and current management not independently verified."
+    },
+    {
+      "id": "operational-state",
+      "status": "requires_current_verification",
+      "authority_needed": "MTT / DIRECTEMAR / MOP / protected-area authority according to competence",
+      "topics_ref": "knowledge-base/research/batch-05-wave-2-retrieval-policy.json"
+    }
+  ],
+  "authority_closure_changed": false,
+  "current_joint_cartographic_execution_status": "requires_authoritative_review",
+  "canonical_boundary_geometry_status": "not_authorized",
+  "igm_acquisition_status": "not_acquired",
+  "vector_ingestion_status": "not_performed"
+}

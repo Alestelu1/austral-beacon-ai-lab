@@ -1,0 +1,31 @@
+{
+  "source_id": "mop-puerto-yungay-design-2026",
+  "title": "Diseño para ampliar infraestructura portuaria en Puerto Yungay ingresó a MIDESO para obtener recomendación satisfactoria y posteriormente licitar obras",
+  "publisher": "MOP Aysén / Dirección de Obras Portuarias",
+  "source_class": "primary_chilean_institutional",
+  "country": "Chile",
+  "published_at": "2026-08-07",
+  "retrieved_at": "2026-09-14",
+  "url": "https://aysen.mop.gob.cl/diseno-para-ampliar-infraestructura-portuaria-en-puerto-yungay-ingreso-a-mideso-para-obtener-recomendacion-satisfactoria-y-posteriormente-licitar-obras/",
+  "verification_status": "verified",
+  "verification_scope": "Proyecto portuario y conexión con Río Bravo; estado e inversión a la fecha de publicación.",
+  "extraction_method": "official HTML read; paraphrase with section locators",
+  "provenance": {
+    "source_url": "https://aysen.mop.gob.cl/diseno-para-ampliar-infraestructura-portuaria-en-puerto-yungay-ingreso-a-mideso-para-obtener-recomendacion-satisfactoria-y-posteriormente-licitar-obras/",
+    "retrieved_at": "2026-09-14",
+    "page_numbering": "not applicable; HTML section/paragraph locator"
+  },
+  "embedding_eligible": false,
+  "general_embedding_allowed": false,
+  "vector_ingestion_status": "not_performed",
+  "land_boundary_status_determination_allowed": false,
+  "geometry_use_allowed": false,
+  "limitations": [
+    "Publisher country is not entity sovereignty.",
+    "Publication records do not establish current service, permissions or project completion."
+  ],
+  "claim_ids": [
+    "b05w2-001",
+    "b05w2-004"
+  ]
+}

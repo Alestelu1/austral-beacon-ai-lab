@@ -1,0 +1,33 @@
+{
+  "source_id": "bienes-nacionales-rio-mosco-web",
+  "title": "Río Mosco",
+  "publisher": "Ministerio de Bienes Nacionales",
+  "source_class": "primary_chilean_institutional",
+  "country": "Chile",
+  "published_at": null,
+  "retrieved_at": "2026-09-14",
+  "url": "https://www.bienesnacionales.cl/rio-mosco/",
+  "verification_status": "verified",
+  "verification_scope": "Ficha del BNP: superficie, conservación, localización y ruta; decreto citado, no texto legal adquirido.",
+  "extraction_method": "official HTML read; paraphrase with section locators",
+  "provenance": {
+    "source_url": "https://www.bienesnacionales.cl/rio-mosco/",
+    "retrieved_at": "2026-09-14",
+    "page_numbering": "not applicable; HTML section/paragraph locator"
+  },
+  "embedding_eligible": false,
+  "general_embedding_allowed": false,
+  "vector_ingestion_status": "not_performed",
+  "land_boundary_status_determination_allowed": false,
+  "geometry_use_allowed": false,
+  "limitations": [
+    "Publisher country is not entity sovereignty.",
+    "Publication records do not establish current service, permissions or project completion."
+  ],
+  "claim_ids": [
+    "b05w2-011",
+    "b05w2-012",
+    "b05w2-013",
+    "b05w2-014"
+  ]
+}

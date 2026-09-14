@@ -1,0 +1,169 @@
+{
+  "entity_id": "bahia-bahamondes",
+  "claims": [
+    {
+      "id": "b05w2-007",
+      "claim": "MOP sitúa Bahía Bahamonde en la ribera del Lago O’Higgins.",
+      "entity_ids": [
+        "bahia-bahamondes",
+        "lago-ohiggins"
+      ],
+      "fact_class": "stable_fact",
+      "chunk_category": "geography",
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-14",
+      "source_classification": "source_documented",
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "requires_current_verification": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "embedding_ready": false,
+      "vector_ingestion_status": "not_performed",
+      "review_status": "pending_audit",
+      "blocked_consumers": [],
+      "source_ids": [
+        "mop-bahia-bahamonde-port-2021"
+      ],
+      "provenance": [
+        {
+          "source_id": "mop-bahia-bahamonde-port-2021",
+          "source_url": "https://aysen.mop.gob.cl/nueva-infraestructura-portuaria-en-bahia-bahamonde-mejora-conectividad-de-pobladores-e-impulsa-el-turismo-en-la-zona/",
+          "locator": "párrafo sobre habitantes de la ribera del Lago O’Higgins",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "temporal_scope": {
+        "source_published_at": "2021-06-10",
+        "scope": "as documented in cited publication; not a live observation"
+      }
+    },
+    {
+      "id": "b05w2-008",
+      "claim": "MOP documentó terminal portuario, muelle y ampliación de rampa existente en 2021.",
+      "entity_ids": [
+        "bahia-bahamondes"
+      ],
+      "fact_class": "stable_fact",
+      "chunk_category": "identity",
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-14",
+      "source_classification": "source_documented",
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "requires_current_verification": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "embedding_ready": false,
+      "vector_ingestion_status": "not_performed",
+      "review_status": "pending_audit",
+      "blocked_consumers": [],
+      "source_ids": [
+        "mop-bahia-bahamonde-port-2021"
+      ],
+      "provenance": [
+        {
+          "source_id": "mop-bahia-bahamonde-port-2021",
+          "source_url": "https://aysen.mop.gob.cl/nueva-infraestructura-portuaria-en-bahia-bahamonde-mejora-conectividad-de-pobladores-e-impulsa-el-turismo-en-la-zona/",
+          "locator": "sección Obras: componentes terrestres y marítimos",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "temporal_scope": {
+        "source_published_at": "2021-06-10",
+        "scope": "as documented in cited publication; not a live observation"
+      }
+    },
+    {
+      "id": "b05w2-009",
+      "claim": "MOP relaciona esta infraestructura con desplazamientos por el Lago O’Higgins.",
+      "entity_ids": [
+        "bahia-bahamondes",
+        "lago-ohiggins"
+      ],
+      "fact_class": "stable_fact",
+      "chunk_category": "connectivity",
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-14",
+      "source_classification": "source_documented",
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "requires_current_verification": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "embedding_ready": false,
+      "vector_ingestion_status": "not_performed",
+      "review_status": "pending_audit",
+      "blocked_consumers": [],
+      "source_ids": [
+        "mop-bahia-bahamonde-port-2021"
+      ],
+      "provenance": [
+        {
+          "source_id": "mop-bahia-bahamonde-port-2021",
+          "source_url": "https://aysen.mop.gob.cl/nueva-infraestructura-portuaria-en-bahia-bahamonde-mejora-conectividad-de-pobladores-e-impulsa-el-turismo-en-la-zona/",
+          "locator": "párrafos sobre conectividad de pobladores del lago",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "temporal_scope": {
+        "source_published_at": "2021-06-10",
+        "scope": "as documented in cited publication; not a live observation"
+      }
+    },
+    {
+      "id": "b05w2-010",
+      "claim": "RP6 ubica Bahía Bahamondes al sur de Villa O’Higgins y documenta acceso lacustre hacia Candelario Mansilla.",
+      "entity_ids": [
+        "bahia-bahamondes",
+        "villa-ohiggins",
+        "lago-ohiggins"
+      ],
+      "fact_class": "stable_fact",
+      "chunk_category": "access",
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-14",
+      "source_classification": "source_documented",
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "requires_current_verification": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "embedding_ready": false,
+      "vector_ingestion_status": "not_performed",
+      "review_status": "pending_audit",
+      "blocked_consumers": [],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            2
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "derived_from_claim_ids": [
+        "b05-019"
+      ],
+      "temporal_scope": {
+        "source_published_at": null,
+        "scope": "documented in Wave 1 source; edition date unverified; no live assertion"
+      }
+    }
+  ]
+}

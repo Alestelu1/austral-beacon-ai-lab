@@ -1,0 +1,32 @@
+{
+  "source_id": "mop-bahia-bahamonde-port-2021",
+  "title": "Nueva infraestructura portuaria en Bahía Bahamonde mejora conectividad de pobladores e impulsa el turismo en la zona",
+  "publisher": "MOP Aysén / Dirección de Obras Portuarias",
+  "source_class": "primary_chilean_institutional",
+  "country": "Chile",
+  "published_at": "2021-06-10",
+  "retrieved_at": "2026-09-14",
+  "url": "https://aysen.mop.gob.cl/nueva-infraestructura-portuaria-en-bahia-bahamonde-mejora-conectividad-de-pobladores-e-impulsa-el-turismo-en-la-zona/",
+  "verification_status": "verified",
+  "verification_scope": "Infraestructura inaugurada y contexto lacustre, sin confirmar operación actual.",
+  "extraction_method": "official HTML read; paraphrase with section locators",
+  "provenance": {
+    "source_url": "https://aysen.mop.gob.cl/nueva-infraestructura-portuaria-en-bahia-bahamonde-mejora-conectividad-de-pobladores-e-impulsa-el-turismo-en-la-zona/",
+    "retrieved_at": "2026-09-14",
+    "page_numbering": "not applicable; HTML section/paragraph locator"
+  },
+  "embedding_eligible": false,
+  "general_embedding_allowed": false,
+  "vector_ingestion_status": "not_performed",
+  "land_boundary_status_determination_allowed": false,
+  "geometry_use_allowed": false,
+  "limitations": [
+    "Publisher country is not entity sovereignty.",
+    "Publication records do not establish current service, permissions or project completion."
+  ],
+  "claim_ids": [
+    "b05w2-007",
+    "b05w2-008",
+    "b05w2-009"
+  ]
+}
