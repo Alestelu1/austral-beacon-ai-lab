@@ -1,0 +1,39 @@
+{
+  "batch": 5,
+  "wave": 2,
+  "status": "prepared_not_connected",
+  "canonical_manifest": "data/knowledge/batch-05-wave-2-manifest.json",
+  "fact_classes": [
+    "stable_fact",
+    "historical_fact",
+    "dynamic_operational_fact",
+    "conflicted_fact",
+    "authority_sensitive_fact"
+  ],
+  "rules": {
+    "stable_fact": "eligible only when verified and not requiring current verification; pending audit, no vector ingestion",
+    "historical_fact": "date-bound reference only in this wave; no general embeddings",
+    "dynamic_operational_fact": "live authority verification, never stable retrieval",
+    "conflicted_fact": "show conflict with source alternatives; no selected value or general embeddings",
+    "authority_sensitive_fact": "specialist authoritative review; no general embeddings"
+  },
+  "live_required_topics": [
+    "ferry_schedule",
+    "fare",
+    "suspension",
+    "road_condition",
+    "weather",
+    "navigation",
+    "trail_opening",
+    "refuge_operation",
+    "operator",
+    "permission",
+    "service_frequency"
+  ],
+  "live_tools_connected": false,
+  "live_fallback": "State that current information is unverified; consult competent official authority. Do not fabricate operational answers.",
+  "conditional_access_rule": "Access chunks describe geography only; any itinerary/action request must also apply conditions_claim_ids and live verification.",
+  "authority_sensitive_registry": "data/verification/campo-hielo-sur-chilean-authority-validation.json",
+  "vector_ingestion_status": "not_performed",
+  "wave_3_started": false
+}

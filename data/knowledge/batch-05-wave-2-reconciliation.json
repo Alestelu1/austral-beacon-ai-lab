@@ -1,0 +1,137 @@
+{
+  "batch": 5,
+  "wave": 2,
+  "active_projection": "data/knowledge/batch-05-wave-2-connectivity-graph.json",
+  "predecessor_registry": "data/knowledge/batch-05-wave-1-reconciliation.json",
+  "scope": "Wave 2 review projection only; no runtime consumer switched",
+  "renamed_candidate_ids": [
+    {
+      "old_id": "parque-glaciar-mosco",
+      "canonical_id": "parque-glaciar-rio-mosco",
+      "scope": "protected-area candidate only; not river or glacier",
+      "basis": "approved Wave 2 naming normalization",
+      "automatic_identity_merge_allowed": false,
+      "territorial_inference_allowed": false
+    }
+  ],
+  "aliases": [
+    {
+      "alias": "Bahía Bahamonde",
+      "source_ids": [
+        "mop-bahia-bahamonde-port-2021"
+      ],
+      "provenance": [
+        {
+          "source_id": "mop-bahia-bahamonde-port-2021",
+          "source_url": "https://aysen.mop.gob.cl/nueva-infraestructura-portuaria-en-bahia-bahamonde-mejora-conectividad-de-pobladores-e-impulsa-el-turismo-en-la-zona/",
+          "locator": "title"
+        }
+      ],
+      "scope": "documented port-sector name; no polygon equivalence",
+      "automatic_identity_merge_allowed": false,
+      "territorial_inference_allowed": false,
+      "entity_id": "bahia-bahamondes"
+    },
+    {
+      "alias": "Bahía Bahamondes",
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "locator": "PDF page 2"
+        }
+      ],
+      "scope": "documented lake-access locality name",
+      "automatic_identity_merge_allowed": false,
+      "territorial_inference_allowed": false,
+      "entity_id": "bahia-bahamondes"
+    },
+    {
+      "alias": "Parque Glaciar Mosco",
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "locator": "document title"
+        }
+      ],
+      "scope": "protected-area naming context only",
+      "automatic_identity_merge_allowed": false,
+      "territorial_inference_allowed": false,
+      "entity_id": "parque-glaciar-rio-mosco"
+    },
+    {
+      "alias": "Río Mosco",
+      "source_ids": [
+        "bienes-nacionales-rio-mosco-web"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rio-mosco-web",
+          "source_url": "https://www.bienesnacionales.cl/rio-mosco/",
+          "locator": "title and BNP description"
+        }
+      ],
+      "scope": "BNP context only; never automatic river identity",
+      "automatic_identity_merge_allowed": false,
+      "territorial_inference_allowed": false,
+      "entity_id": "parque-glaciar-rio-mosco"
+    },
+    {
+      "alias": "Parque Glaciar Río Mosco",
+      "source_ids": [
+        "bienes-nacionales-rio-mosco-web"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rio-mosco-web",
+          "source_url": "https://www.bienesnacionales.cl/rio-mosco/",
+          "locator": "BNP description; preferred display name selected by approved Wave 2 brief"
+        }
+      ],
+      "scope": "editorial preferred name; not asserted verbatim legal denomination",
+      "automatic_identity_merge_allowed": false,
+      "territorial_inference_allowed": false,
+      "entity_id": "parque-glaciar-rio-mosco"
+    }
+  ],
+  "unverified_aliases": [
+    {
+      "alias": "Puerto Bahía Bahamondes",
+      "candidate_entity_id": "bahia-bahamondes",
+      "status": "requires_source_verification",
+      "automatic_identity_merge_allowed": false,
+      "territorial_inference_allowed": false,
+      "reason": "No verified locator for this exact form; not admitted as an identity alias."
+    }
+  ],
+  "identity_resolution": [
+    {
+      "entity_id": "rio-bravo",
+      "scope": "ferry endpoint in source travel corridor; no river or surveyed ramp identity assigned",
+      "claim_ids": [
+        "b05w2-005"
+      ]
+    },
+    {
+      "entity_id": "parque-glaciar-rio-mosco",
+      "scope": "BNP context; route, river and glacier remain distinct related objects",
+      "claim_ids": [
+        "b05w2-011",
+        "b05w2-014"
+      ]
+    }
+  ],
+  "deferred_node_ids": [
+    "cerro-torre",
+    "lago-chico",
+    "glaciar-chico"
+  ],
+  "territorial_inference_allowed": false
+}

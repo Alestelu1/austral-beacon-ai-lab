@@ -1,0 +1,30 @@
+{
+  "source_id": "mop-puerto-yungay-design-2023",
+  "title": "Obras Portuarias expone en Caleta Tortel y Villa O´Higgins estudio para ampliar infraestructura portuaria en Puerto Yungay",
+  "publisher": "MOP Aysén / Dirección de Obras Portuarias",
+  "source_class": "primary_chilean_institutional",
+  "country": "Chile",
+  "published_at": "2023-11-09",
+  "retrieved_at": "2026-09-14",
+  "url": "https://aysen.mop.gob.cl/direccion-de-obras-portuarias-del-mop-expone-en-caleta-tortel-y-villa-ohiggins-estudio-de-diseno-para-ampliar-infraestructura-portuaria-en-puerto-yungay/",
+  "verification_status": "verified",
+  "verification_scope": "Continuidad de Ruta 7 hacia Río Bravo; antecedente de diseño, no operación vigente.",
+  "extraction_method": "official HTML read; paraphrase with section locators",
+  "provenance": {
+    "source_url": "https://aysen.mop.gob.cl/direccion-de-obras-portuarias-del-mop-expone-en-caleta-tortel-y-villa-ohiggins-estudio-de-diseno-para-ampliar-infraestructura-portuaria-en-puerto-yungay/",
+    "retrieved_at": "2026-09-14",
+    "page_numbering": "not applicable; HTML section/paragraph locator"
+  },
+  "embedding_eligible": false,
+  "general_embedding_allowed": false,
+  "vector_ingestion_status": "not_performed",
+  "land_boundary_status_determination_allowed": false,
+  "geometry_use_allowed": false,
+  "limitations": [
+    "Publisher country is not entity sovereignty.",
+    "Publication records do not establish current service, permissions or project completion."
+  ],
+  "claim_ids": [
+    "b05w2-002"
+  ]
+}

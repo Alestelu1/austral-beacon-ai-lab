@@ -1,0 +1,38 @@
+{
+  "id": "rio-bravo",
+  "canonical_name": "Río Bravo — extremo del cruce",
+  "entity_type": "ferry_endpoint",
+  "status": "canonical",
+  "batch": 5,
+  "wave": 2,
+  "review_status": "pending_audit",
+  "sensitivity": "public_core",
+  "retrieval_scope": [
+    "atlas",
+    "travel",
+    "travel-agent",
+    "observatory",
+    "knowledge-layer"
+  ],
+  "retrieval_policy": "knowledge-base/research/batch-05-wave-2-retrieval-policy.json",
+  "public_projection_status": "prepared_not_connected",
+  "automatic_country_assignment_allowed": false,
+  "sovereignty_implication": false,
+  "aliases": [],
+  "alias_registry": "data/knowledge/batch-05-wave-2-reconciliation.json",
+  "geometry": null,
+  "geometry_acquisition_authorized": false,
+  "protected_area_geometry": null,
+  "international_boundary_geometry": null,
+  "geometry_layers_must_remain_separate": true,
+  "vector_ingestion_status": "not_performed",
+  "embedding_ready": false,
+  "canonical_package_layout": "mdx_inside_entity_directory",
+  "source_ids": [
+    "bienes-nacionales-parque-glaciar-mosco",
+    "mop-puerto-yungay-design-2023",
+    "mop-puerto-yungay-design-2026",
+    "sernatur-carretera-austral-aysen"
+  ],
+  "identity_scope": "Río Bravo ferry endpoint; river, basin and exact infrastructure geometry are not identified or merged."
+}

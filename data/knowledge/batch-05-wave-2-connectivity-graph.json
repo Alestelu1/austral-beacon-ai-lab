@@ -1,0 +1,905 @@
+{
+  "schema_version": "1.0",
+  "batch": 5,
+  "wave": 2,
+  "artifact_role": "current_wave_2_projection_pending_audit_not_runtime_connected",
+  "canonical_layer": "knowledge-base/entities",
+  "predecessor_graph": "data/knowledge/campo-hielo-sur-local-graph.json",
+  "predecessor_commit": "8ce686831f14bed8f9ebb16e1f586cb37004153a",
+  "inherit_predecessor_relations": true,
+  "relation_resolution_policy": "Use reconciliation to resolve predecessor targets and look up current status in these nodes; predecessor files are immutable audit snapshots. Do not treat their old candidate flags as current Wave 2 status. New relations supplement predecessor relations, not overwrite them.",
+  "reconciliation_registry": "data/knowledge/batch-05-wave-2-reconciliation.json",
+  "nodes": [
+    {
+      "id": "villa-ohiggins",
+      "canonical_name": "Villa O’Higgins",
+      "aliases": [
+        "villa_ohiggins"
+      ],
+      "entity_type": "settlement",
+      "status": "canonical",
+      "canonical_ref": "knowledge-base/entities/places/villa-ohiggins",
+      "embedding_ready": false,
+      "source_ids": [
+        "athenalab-campo-hielo-sur-research-source",
+        "bienes-nacionales-parque-glaciar-mosco",
+        "bienes-nacionales-rp6-campo-hielo-sur",
+        "drive-carretera-austral-pdf",
+        "sernatur-carretera-austral-aysen"
+      ]
+    },
+    {
+      "id": "lago-ohiggins",
+      "canonical_name": "Lago O’Higgins",
+      "aliases": [
+        "lago_ohiggins"
+      ],
+      "entity_type": "lake",
+      "status": "canonical",
+      "canonical_ref": "knowledge-base/entities/geography/lago-ohiggins",
+      "embedding_ready": false,
+      "source_ids": [
+        "athenalab-campo-hielo-sur-research-source",
+        "bienes-nacionales-rp6-campo-hielo-sur",
+        "bienes-nacionales-rp6-ficha",
+        "drive-carretera-austral-pdf",
+        "sernatur-carretera-austral-aysen"
+      ]
+    },
+    {
+      "id": "candelario-mansilla",
+      "canonical_name": "Candelario Mansilla",
+      "aliases": [
+        "candelario_mansilla"
+      ],
+      "entity_type": "locality",
+      "status": "canonical",
+      "canonical_ref": "knowledge-base/entities/places/candelario-mansilla",
+      "embedding_ready": false,
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur",
+        "bienes-nacionales-rp6-ficha"
+      ]
+    },
+    {
+      "id": "glaciar-ohiggins",
+      "canonical_name": "Glaciar O’Higgins",
+      "aliases": [
+        "glaciar_ohiggins"
+      ],
+      "entity_type": "glacier",
+      "status": "canonical",
+      "canonical_ref": "knowledge-base/entities/geography/glaciar-ohiggins",
+      "embedding_ready": false,
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur",
+        "sernatur-carretera-austral-aysen"
+      ]
+    },
+    {
+      "id": "campo-de-hielo-sur",
+      "canonical_name": "Campo de Hielo Sur",
+      "aliases": [
+        "campo_de_hielo_sur"
+      ],
+      "entity_type": "icefield",
+      "status": "canonical",
+      "canonical_ref": "knowledge-base/entities/geography/campo-de-hielo-sur",
+      "embedding_ready": false,
+      "source_ids": [
+        "athenalab-campo-hielo-sur-research-source",
+        "bcn-decreto-1155-acuerdo-1998",
+        "bienes-nacionales-parque-glaciar-mosco",
+        "sernatur-carretera-austral-aysen"
+      ]
+    },
+    {
+      "id": "parque-glaciar-rio-mosco",
+      "canonical_name": "Parque Glaciar Río Mosco",
+      "entity_type": "bien_nacional_protegido",
+      "status": "canonical",
+      "canonical_ref": "knowledge-base/entities/protected-areas/parque-glaciar-rio-mosco",
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco",
+        "bienes-nacionales-rio-mosco-web"
+      ],
+      "promotion_status": "wave_2_pending_audit",
+      "public_retrieval_allowed": false,
+      "embedding_ready": false
+    },
+    {
+      "id": "monte-fitz-roy-chalten",
+      "canonical_name": "Monte Fitz Roy / Cerro Chaltén",
+      "aliases": [
+        "monte_fitz_roy_chalten",
+        "Monte Fitz Roy",
+        "Fitz Roy",
+        "Cerro Chaltén"
+      ],
+      "entity_type": "mountain",
+      "status": "canonical",
+      "canonical_ref": "knowledge-base/entities/geography/monte-fitz-roy-chalten",
+      "embedding_ready": false,
+      "source_ids": [
+        "athenalab-campo-hielo-sur-research-source",
+        "bcn-decreto-1155-acuerdo-1998",
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "territorial_guard_ref": "knowledge-base/entities/geography/monte-fitz-roy-chalten/metadata.json#territorial_classification_guard",
+      "automatic_country_assignment_allowed": false
+    },
+    {
+      "id": "cerro-torre",
+      "canonical_name": "Cerro Torre",
+      "aliases": [
+        "cerro_torre"
+      ],
+      "entity_type": "mountain",
+      "status": "candidate",
+      "canonical_ref": null,
+      "embedding_ready": false,
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "public_retrieval_allowed": false,
+      "promotion_status": "deferred_beyond_wave_2",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    },
+    {
+      "id": "lago-chico",
+      "canonical_name": "Lago Chico",
+      "aliases": [
+        "lago_chico"
+      ],
+      "entity_type": "lake",
+      "status": "candidate",
+      "canonical_ref": null,
+      "embedding_ready": false,
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "public_retrieval_allowed": false,
+      "promotion_status": "deferred_beyond_wave_2",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    },
+    {
+      "id": "glaciar-chico",
+      "canonical_name": "Glaciar Chico",
+      "aliases": [
+        "glaciar_chico"
+      ],
+      "entity_type": "glacier",
+      "status": "candidate",
+      "canonical_ref": null,
+      "embedding_ready": false,
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "public_retrieval_allowed": false,
+      "promotion_status": "deferred_beyond_wave_2",
+      "evidence_ref": "knowledge-base/research/batch-05-wave-1-evidence-register.json"
+    },
+    {
+      "id": "parque-nacional-bernardo-ohiggins",
+      "canonical_name": "Parque Nacional Bernardo O’Higgins",
+      "entity_type": "national_park",
+      "status": "canonical",
+      "canonical_ref": "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins",
+      "source_ids": [
+        "conaf-parque-nacional-bernardo-ohiggins"
+      ],
+      "promotion_status": "wave_2_pending_audit",
+      "public_retrieval_allowed": false,
+      "embedding_ready": false
+    },
+    {
+      "id": "puerto-yungay",
+      "canonical_name": "Puerto Yungay",
+      "entity_type": "transport_locality",
+      "status": "canonical",
+      "canonical_ref": "knowledge-base/entities/places/puerto-yungay",
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco",
+        "mop-puerto-yungay-design-2023",
+        "mop-puerto-yungay-design-2026",
+        "sernatur-carretera-austral-aysen"
+      ],
+      "promotion_status": "wave_2_pending_audit",
+      "public_retrieval_allowed": false,
+      "embedding_ready": false
+    },
+    {
+      "id": "rio-bravo",
+      "canonical_name": "Río Bravo — extremo del cruce",
+      "entity_type": "ferry_endpoint",
+      "status": "canonical",
+      "canonical_ref": "knowledge-base/entities/infrastructure/rio-bravo",
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco",
+        "mop-puerto-yungay-design-2023",
+        "mop-puerto-yungay-design-2026",
+        "sernatur-carretera-austral-aysen"
+      ],
+      "promotion_status": "wave_2_pending_audit",
+      "public_retrieval_allowed": false,
+      "embedding_ready": false
+    },
+    {
+      "id": "bahia-bahamondes",
+      "canonical_name": "Bahía Bahamondes",
+      "entity_type": "bay",
+      "status": "canonical",
+      "canonical_ref": "knowledge-base/entities/geography/bahia-bahamondes",
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur",
+        "mop-bahia-bahamonde-port-2021"
+      ],
+      "promotion_status": "wave_2_pending_audit",
+      "public_retrieval_allowed": false,
+      "embedding_ready": false
+    },
+    {
+      "id": "carretera-austral",
+      "canonical_name": "Carretera Austral",
+      "aliases": [
+        "carretera_austral"
+      ],
+      "entity_type": "road_corridor",
+      "status": "canonical",
+      "canonical_ref": "knowledge-base/entities/routes/carretera-austral",
+      "embedding_ready": false,
+      "source_ids": [
+        "drive-carretera-austral-pdf",
+        "sernatur-carretera-austral-aysen"
+      ]
+    },
+    {
+      "id": "ruta-patrimonial-6",
+      "canonical_name": "Ruta Patrimonial Nº6 — Los Glaciares",
+      "aliases": [
+        "ruta_patrimonial_6"
+      ],
+      "entity_type": "heritage_route",
+      "status": "canonical",
+      "canonical_ref": "knowledge-base/entities/routes/ruta-patrimonial-6",
+      "embedding_ready": false,
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur",
+        "bienes-nacionales-rp6-ficha"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-002"
+      ],
+      "source_ids": [
+        "mop-puerto-yungay-design-2023"
+      ],
+      "provenance": [
+        {
+          "source_id": "mop-puerto-yungay-design-2023",
+          "source_url": "https://aysen.mop.gob.cl/direccion-de-obras-portuarias-del-mop-expone-en-caleta-tortel-y-villa-ohiggins-estudio-de-diseno-para-ampliar-infraestructura-portuaria-en-puerto-yungay/",
+          "locator": "declaración sobre continuidad de Ruta 7 hacia Río Bravo",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/places/puerto-yungay/claims.json",
+      "id": "b05w2-rel-01",
+      "source": "carretera-austral",
+      "predicate": "connects_with",
+      "target": "puerto-yungay",
+      "inverse_relation_id": "b05w2-rel-01-inverse"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-002"
+      ],
+      "source_ids": [
+        "mop-puerto-yungay-design-2023"
+      ],
+      "provenance": [
+        {
+          "source_id": "mop-puerto-yungay-design-2023",
+          "source_url": "https://aysen.mop.gob.cl/direccion-de-obras-portuarias-del-mop-expone-en-caleta-tortel-y-villa-ohiggins-estudio-de-diseno-para-ampliar-infraestructura-portuaria-en-puerto-yungay/",
+          "locator": "declaración sobre continuidad de Ruta 7 hacia Río Bravo",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/places/puerto-yungay/claims.json",
+      "id": "b05w2-rel-01-inverse",
+      "source": "puerto-yungay",
+      "predicate": "inverse_of_connects_with",
+      "target": "carretera-austral",
+      "inverse_relation_id": "b05w2-rel-01"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-001"
+      ],
+      "source_ids": [
+        "mop-puerto-yungay-design-2026"
+      ],
+      "provenance": [
+        {
+          "source_id": "mop-puerto-yungay-design-2026",
+          "source_url": "https://aysen.mop.gob.cl/diseno-para-ampliar-infraestructura-portuaria-en-puerto-yungay-ingreso-a-mideso-para-obtener-recomendacion-satisfactoria-y-posteriormente-licitar-obras/",
+          "locator": "párrafo sobre intervención vial y recorrido hacia Río Bravo",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/places/puerto-yungay/claims.json",
+      "id": "b05w2-rel-02",
+      "source": "puerto-yungay",
+      "predicate": "connects_by_ferry",
+      "target": "rio-bravo",
+      "inverse_relation_id": "b05w2-rel-02-inverse"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-001"
+      ],
+      "source_ids": [
+        "mop-puerto-yungay-design-2026"
+      ],
+      "provenance": [
+        {
+          "source_id": "mop-puerto-yungay-design-2026",
+          "source_url": "https://aysen.mop.gob.cl/diseno-para-ampliar-infraestructura-portuaria-en-puerto-yungay-ingreso-a-mideso-para-obtener-recomendacion-satisfactoria-y-posteriormente-licitar-obras/",
+          "locator": "párrafo sobre intervención vial y recorrido hacia Río Bravo",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/places/puerto-yungay/claims.json",
+      "id": "b05w2-rel-02-inverse",
+      "source": "rio-bravo",
+      "predicate": "inverse_of_connects_by_ferry",
+      "target": "puerto-yungay",
+      "inverse_relation_id": "b05w2-rel-02"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-002"
+      ],
+      "source_ids": [
+        "mop-puerto-yungay-design-2023"
+      ],
+      "provenance": [
+        {
+          "source_id": "mop-puerto-yungay-design-2023",
+          "source_url": "https://aysen.mop.gob.cl/direccion-de-obras-portuarias-del-mop-expone-en-caleta-tortel-y-villa-ohiggins-estudio-de-diseno-para-ampliar-infraestructura-portuaria-en-puerto-yungay/",
+          "locator": "declaración sobre continuidad de Ruta 7 hacia Río Bravo",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/places/puerto-yungay/claims.json",
+      "id": "b05w2-rel-03",
+      "source": "puerto-yungay",
+      "predicate": "connectivity_context",
+      "target": "carretera-austral",
+      "inverse_relation_id": "b05w2-rel-03-inverse"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-002"
+      ],
+      "source_ids": [
+        "mop-puerto-yungay-design-2023"
+      ],
+      "provenance": [
+        {
+          "source_id": "mop-puerto-yungay-design-2023",
+          "source_url": "https://aysen.mop.gob.cl/direccion-de-obras-portuarias-del-mop-expone-en-caleta-tortel-y-villa-ohiggins-estudio-de-diseno-para-ampliar-infraestructura-portuaria-en-puerto-yungay/",
+          "locator": "declaración sobre continuidad de Ruta 7 hacia Río Bravo",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/places/puerto-yungay/claims.json",
+      "id": "b05w2-rel-03-inverse",
+      "source": "carretera-austral",
+      "predicate": "inverse_of_connectivity_context",
+      "target": "puerto-yungay",
+      "inverse_relation_id": "b05w2-rel-03"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-003"
+      ],
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            9
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/places/puerto-yungay/claims.json",
+      "id": "b05w2-rel-04",
+      "source": "rio-bravo",
+      "predicate": "road_access_context",
+      "target": "villa-ohiggins",
+      "inverse_relation_id": "b05w2-rel-04-inverse"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-003"
+      ],
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            9
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/places/puerto-yungay/claims.json",
+      "id": "b05w2-rel-04-inverse",
+      "source": "villa-ohiggins",
+      "predicate": "inverse_of_road_access_context",
+      "target": "rio-bravo",
+      "inverse_relation_id": "b05w2-rel-04"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-010"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            2
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/geography/bahia-bahamondes/claims.json",
+      "id": "b05w2-rel-05",
+      "source": "villa-ohiggins",
+      "predicate": "lacustrine_access_context",
+      "target": "bahia-bahamondes",
+      "inverse_relation_id": "b05w2-rel-05-inverse"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-010"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            2
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/geography/bahia-bahamondes/claims.json",
+      "id": "b05w2-rel-05-inverse",
+      "source": "bahia-bahamondes",
+      "predicate": "inverse_of_lacustrine_access_context",
+      "target": "villa-ohiggins",
+      "inverse_relation_id": "b05w2-rel-05"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-009"
+      ],
+      "source_ids": [
+        "mop-bahia-bahamonde-port-2021"
+      ],
+      "provenance": [
+        {
+          "source_id": "mop-bahia-bahamonde-port-2021",
+          "source_url": "https://aysen.mop.gob.cl/nueva-infraestructura-portuaria-en-bahia-bahamonde-mejora-conectividad-de-pobladores-e-impulsa-el-turismo-en-la-zona/",
+          "locator": "párrafos sobre conectividad de pobladores del lago",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/geography/bahia-bahamondes/claims.json",
+      "id": "b05w2-rel-06",
+      "source": "bahia-bahamondes",
+      "predicate": "lacustrine_connectivity_context",
+      "target": "lago-ohiggins",
+      "inverse_relation_id": "b05w2-rel-06-inverse"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-009"
+      ],
+      "source_ids": [
+        "mop-bahia-bahamonde-port-2021"
+      ],
+      "provenance": [
+        {
+          "source_id": "mop-bahia-bahamonde-port-2021",
+          "source_url": "https://aysen.mop.gob.cl/nueva-infraestructura-portuaria-en-bahia-bahamonde-mejora-conectividad-de-pobladores-e-impulsa-el-turismo-en-la-zona/",
+          "locator": "párrafos sobre conectividad de pobladores del lago",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/geography/bahia-bahamondes/claims.json",
+      "id": "b05w2-rel-06-inverse",
+      "source": "lago-ohiggins",
+      "predicate": "inverse_of_lacustrine_connectivity_context",
+      "target": "bahia-bahamondes",
+      "inverse_relation_id": "b05w2-rel-06"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-013"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rio-mosco-web"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rio-mosco-web",
+          "source_url": "https://www.bienesnacionales.cl/rio-mosco/",
+          "locator": "descripción de localización",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/protected-areas/parque-glaciar-rio-mosco/claims.json",
+      "id": "b05w2-rel-07",
+      "source": "villa-ohiggins",
+      "predicate": "local_protected_area_context",
+      "target": "parque-glaciar-rio-mosco",
+      "inverse_relation_id": "b05w2-rel-07-inverse"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-013"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rio-mosco-web"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rio-mosco-web",
+          "source_url": "https://www.bienesnacionales.cl/rio-mosco/",
+          "locator": "descripción de localización",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/protected-areas/parque-glaciar-rio-mosco/claims.json",
+      "id": "b05w2-rel-07-inverse",
+      "source": "parque-glaciar-rio-mosco",
+      "predicate": "inverse_of_local_protected_area_context",
+      "target": "villa-ohiggins",
+      "inverse_relation_id": "b05w2-rel-07"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-020"
+      ],
+      "source_ids": [
+        "conaf-parque-nacional-bernardo-ohiggins"
+      ],
+      "provenance": [
+        {
+          "source_id": "conaf-parque-nacional-bernardo-ohiggins",
+          "source_url": "https://www.conaf.cl/parque_nacionales/parque-nacional-bernardo-ohiggins/",
+          "locator": "Accesos y Servicios",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins/claims.json",
+      "id": "b05w2-rel-08",
+      "source": "villa-ohiggins",
+      "predicate": "access_context",
+      "target": "parque-nacional-bernardo-ohiggins",
+      "inverse_relation_id": "b05w2-rel-08-inverse"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-020"
+      ],
+      "source_ids": [
+        "conaf-parque-nacional-bernardo-ohiggins"
+      ],
+      "provenance": [
+        {
+          "source_id": "conaf-parque-nacional-bernardo-ohiggins",
+          "source_url": "https://www.conaf.cl/parque_nacionales/parque-nacional-bernardo-ohiggins/",
+          "locator": "Accesos y Servicios",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins/claims.json",
+      "id": "b05w2-rel-08-inverse",
+      "source": "parque-nacional-bernardo-ohiggins",
+      "predicate": "inverse_of_access_context",
+      "target": "villa-ohiggins",
+      "inverse_relation_id": "b05w2-rel-08"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-020"
+      ],
+      "source_ids": [
+        "conaf-parque-nacional-bernardo-ohiggins"
+      ],
+      "provenance": [
+        {
+          "source_id": "conaf-parque-nacional-bernardo-ohiggins",
+          "source_url": "https://www.conaf.cl/parque_nacionales/parque-nacional-bernardo-ohiggins/",
+          "locator": "Accesos y Servicios",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins/claims.json",
+      "id": "b05w2-rel-09",
+      "source": "lago-ohiggins",
+      "predicate": "navigation_access_context",
+      "target": "parque-nacional-bernardo-ohiggins",
+      "inverse_relation_id": "b05w2-rel-09-inverse"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-020"
+      ],
+      "source_ids": [
+        "conaf-parque-nacional-bernardo-ohiggins"
+      ],
+      "provenance": [
+        {
+          "source_id": "conaf-parque-nacional-bernardo-ohiggins",
+          "source_url": "https://www.conaf.cl/parque_nacionales/parque-nacional-bernardo-ohiggins/",
+          "locator": "Accesos y Servicios",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins/claims.json",
+      "id": "b05w2-rel-09-inverse",
+      "source": "parque-nacional-bernardo-ohiggins",
+      "predicate": "inverse_of_navigation_access_context",
+      "target": "lago-ohiggins",
+      "inverse_relation_id": "b05w2-rel-09"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-019"
+      ],
+      "source_ids": [
+        "conaf-parque-nacional-bernardo-ohiggins"
+      ],
+      "provenance": [
+        {
+          "source_id": "conaf-parque-nacional-bernardo-ohiggins",
+          "source_url": "https://www.conaf.cl/parque_nacionales/parque-nacional-bernardo-ohiggins/",
+          "locator": "Datos generales y Servicios",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins/claims.json",
+      "id": "b05w2-rel-10",
+      "source": "parque-nacional-bernardo-ohiggins",
+      "predicate": "official_icefield_context",
+      "target": "campo-de-hielo-sur",
+      "inverse_relation_id": "b05w2-rel-10-inverse"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-019"
+      ],
+      "source_ids": [
+        "conaf-parque-nacional-bernardo-ohiggins"
+      ],
+      "provenance": [
+        {
+          "source_id": "conaf-parque-nacional-bernardo-ohiggins",
+          "source_url": "https://www.conaf.cl/parque_nacionales/parque-nacional-bernardo-ohiggins/",
+          "locator": "Datos generales y Servicios",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins/claims.json",
+      "id": "b05w2-rel-10-inverse",
+      "source": "campo-de-hielo-sur",
+      "predicate": "inverse_of_official_icefield_context",
+      "target": "parque-nacional-bernardo-ohiggins",
+      "inverse_relation_id": "b05w2-rel-10"
+    }
+  ],
+  "embedding_ready": false,
+  "general_embedding_allowed": false,
+  "vector_ingestion_status": "not_performed",
+  "international_boundary_geometry": null,
+  "inherited_guard_policy": "All predecessor prohibited inferences, excluded pending relations and claim-level qualifications remain applicable. Promotion does not upgrade inherited evidence or resolve pending authority.",
+  "prohibited_inferences": [
+    "Un mapa turístico no establece el límite internacional.",
+    "Una línea argentina no constituye aceptación chilena.",
+    "Google Maps, OSM y Wikipedia no son autoridad jurídica fronteriza.",
+    "Ausencia de línea cartográfica no implica ausencia de soberanía.",
+    "No describir todo Campo de Hielo Sur como territorio en disputa.",
+    "Un sector con trabajo pendiente no es adjudicación definitiva.",
+    "No clasificar automáticamente Fitz Roy/Chaltén como exclusivamente argentino.",
+    "Visibilidad desde Chile no determina soberanía.",
+    "Ruta documentada no acredita apertura actual.",
+    "Navegación documentada no acredita frecuencia actual.",
+    "Sendero cartografiado no acredita seguridad ni transitabilidad.",
+    "Fuente secundaria favorable a Chile no sustituye fuente oficial chilena."
+  ],
+  "excluded_pending_relations": [
+    {
+      "source": "campo-de-hielo-sur",
+      "predicate": "protected_area_relation",
+      "target": "parque-nacional-bernardo-ohiggins",
+      "reason": "Relación general requiere evidencia primaria específica; Mosco p.23 sólo acredita contexto de caseta."
+    }
+  ]
+}

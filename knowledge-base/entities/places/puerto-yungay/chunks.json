@@ -1,0 +1,247 @@
+{
+  "entity_id": "puerto-yungay",
+  "ingestion_status": "not_performed",
+  "retrieval_policy": "knowledge-base/research/batch-05-wave-2-retrieval-policy.json",
+  "chunks": [
+    {
+      "id": "puerto-yungay-b05w2-001",
+      "text": "MOP documenta conexión por embarcación entre Puerto Yungay y Río Bravo.",
+      "claim_ids": [
+        "b05w2-001"
+      ],
+      "source_ids": [
+        "mop-puerto-yungay-design-2026"
+      ],
+      "provenance": [
+        {
+          "source_id": "mop-puerto-yungay-design-2026",
+          "source_url": "https://aysen.mop.gob.cl/diseno-para-ampliar-infraestructura-portuaria-en-puerto-yungay-ingreso-a-mideso-para-obtener-recomendacion-satisfactoria-y-posteriormente-licitar-obras/",
+          "locator": "párrafo sobre intervención vial y recorrido hacia Río Bravo",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "category": "connectivity",
+      "fact_class": "stable_fact",
+      "sensitivity": "public_core",
+      "requires_current_verification": false,
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "embedding_ready": false,
+      "preparation_status": "prepared_pending_audit",
+      "blocked_consumers": [],
+      "vector_ingestion_status": "not_performed",
+      "geometry_use_allowed": false,
+      "temporal_scope": {
+        "source_published_at": "2026-08-07",
+        "scope": "as documented in cited publication; not a live observation"
+      },
+      "conditions_claim_ids": []
+    },
+    {
+      "id": "puerto-yungay-b05w2-002",
+      "text": "MOP vincula Puerto Yungay y Río Bravo con la continuidad de Ruta 7.",
+      "claim_ids": [
+        "b05w2-002"
+      ],
+      "source_ids": [
+        "mop-puerto-yungay-design-2023"
+      ],
+      "provenance": [
+        {
+          "source_id": "mop-puerto-yungay-design-2023",
+          "source_url": "https://aysen.mop.gob.cl/direccion-de-obras-portuarias-del-mop-expone-en-caleta-tortel-y-villa-ohiggins-estudio-de-diseno-para-ampliar-infraestructura-portuaria-en-puerto-yungay/",
+          "locator": "declaración sobre continuidad de Ruta 7 hacia Río Bravo",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "category": "connectivity",
+      "fact_class": "stable_fact",
+      "sensitivity": "public_core",
+      "requires_current_verification": false,
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "embedding_ready": false,
+      "preparation_status": "prepared_pending_audit",
+      "blocked_consumers": [],
+      "vector_ingestion_status": "not_performed",
+      "geometry_use_allowed": false,
+      "temporal_scope": {
+        "source_published_at": "2023-11-09",
+        "scope": "as documented in cited publication; not a live observation"
+      },
+      "conditions_claim_ids": []
+    },
+    {
+      "id": "puerto-yungay-b05w2-003",
+      "text": "La topoguía Mosco sitúa Puerto Yungay y Río Bravo en el acceso a Villa O’Higgins.",
+      "claim_ids": [
+        "b05w2-003"
+      ],
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            9
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "category": "access",
+      "fact_class": "stable_fact",
+      "sensitivity": "public_core",
+      "requires_current_verification": false,
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "embedding_ready": false,
+      "preparation_status": "prepared_pending_audit",
+      "blocked_consumers": [],
+      "vector_ingestion_status": "not_performed",
+      "geometry_use_allowed": false,
+      "temporal_scope": {
+        "source_published_at": null,
+        "scope": "documented in Wave 1 source; edition date unverified; no live assertion"
+      },
+      "conditions_claim_ids": []
+    },
+    {
+      "id": "puerto-yungay-b05w2-004",
+      "text": "Al 7-08-2026, MOP informaba diseño ingresado a evaluación y una inversión prevista de 10.500 millones de pesos.",
+      "claim_ids": [
+        "b05w2-004"
+      ],
+      "source_ids": [
+        "mop-puerto-yungay-design-2026"
+      ],
+      "provenance": [
+        {
+          "source_id": "mop-puerto-yungay-design-2026",
+          "source_url": "https://aysen.mop.gob.cl/diseno-para-ampliar-infraestructura-portuaria-en-puerto-yungay-ingreso-a-mideso-para-obtener-recomendacion-satisfactoria-y-posteriormente-licitar-obras/",
+          "locator": "párrafos sobre ingreso a MIDESO e inversión",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "category": "historical context",
+      "fact_class": "historical_fact",
+      "sensitivity": "internal_research",
+      "requires_current_verification": true,
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "embedding_ready": false,
+      "preparation_status": "reference_only_excluded",
+      "blocked_consumers": [
+        "general-rag",
+        "travel-agent"
+      ],
+      "vector_ingestion_status": "not_performed",
+      "geometry_use_allowed": false,
+      "temporal_scope": {
+        "source_published_at": "2026-08-07",
+        "scope": "as documented in cited publication; not a live observation"
+      },
+      "conditions_claim_ids": []
+    },
+    {
+      "id": "puerto-yungay-b05w2-005",
+      "text": "Río Bravo se documenta como extremo del cruce desde Puerto Yungay.",
+      "claim_ids": [
+        "b05w2-005"
+      ],
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            9
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "category": "identity",
+      "fact_class": "stable_fact",
+      "sensitivity": "public_core",
+      "requires_current_verification": false,
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "embedding_ready": false,
+      "preparation_status": "prepared_pending_audit",
+      "blocked_consumers": [],
+      "vector_ingestion_status": "not_performed",
+      "geometry_use_allowed": false,
+      "temporal_scope": {
+        "source_published_at": null,
+        "scope": "documented in Wave 1 source; edition date unverified; no live assertion"
+      },
+      "conditions_claim_ids": []
+    },
+    {
+      "id": "puerto-yungay-b05w2-006",
+      "text": "Persisten discrepancias documentales: 90/100 km entre Río Bravo y Villa O’Higgins y 45/50 minutos de cruce.",
+      "claim_ids": [
+        "b05w2-006"
+      ],
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco",
+        "sernatur-carretera-austral-aysen"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            9
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        },
+        {
+          "source_id": "sernatur-carretera-austral-aysen",
+          "pdf_pages": [
+            22
+          ],
+          "source_url": "https://drive.google.com/file/d/1w5FBz8Mdtxo9nkm0vUAO9kvDT9SJBSqI/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "category": "dynamic operational context",
+      "fact_class": "conflicted_fact",
+      "sensitivity": "operational_dynamic",
+      "requires_current_verification": true,
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "embedding_ready": false,
+      "preparation_status": "reference_only_excluded",
+      "blocked_consumers": [
+        "general-rag",
+        "travel-agent"
+      ],
+      "vector_ingestion_status": "not_performed",
+      "geometry_use_allowed": false,
+      "temporal_scope": {
+        "source_published_at": null,
+        "scope": "documented in Wave 1 source; edition date unverified; no live assertion"
+      },
+      "conditions_claim_ids": []
+    }
+  ]
+}

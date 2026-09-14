@@ -1,0 +1,215 @@
+{
+  "entity_id": "parque-glaciar-rio-mosco",
+  "claims": [
+    {
+      "id": "b05w2-011",
+      "claim": "Bienes Nacionales identifica Río Mosco como BNP de 10.316,52 ha.",
+      "entity_ids": [
+        "parque-glaciar-rio-mosco"
+      ],
+      "fact_class": "stable_fact",
+      "chunk_category": "protected-area status",
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-14",
+      "source_classification": "source_documented",
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "requires_current_verification": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "embedding_ready": false,
+      "vector_ingestion_status": "not_performed",
+      "review_status": "pending_audit",
+      "blocked_consumers": [],
+      "source_ids": [
+        "bienes-nacionales-rio-mosco-web"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rio-mosco-web",
+          "source_url": "https://www.bienesnacionales.cl/rio-mosco/",
+          "locator": "Superficie y descripción del BNP",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "temporal_scope": {
+        "source_published_at": null,
+        "scope": "as documented in cited publication; not a live observation"
+      },
+      "designation": "Bien Nacional Protegido",
+      "area_ha": 10316.52,
+      "area_scope": "BNP Río Mosco; no park, river or glacier polygon equivalence"
+    },
+    {
+      "id": "b05w2-012",
+      "claim": "La conservación del BNP incluye el hábitat del huemul.",
+      "entity_ids": [
+        "parque-glaciar-rio-mosco"
+      ],
+      "fact_class": "stable_fact",
+      "chunk_category": "protected-area status",
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-14",
+      "source_classification": "source_documented",
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "requires_current_verification": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "embedding_ready": false,
+      "vector_ingestion_status": "not_performed",
+      "review_status": "pending_audit",
+      "blocked_consumers": [],
+      "source_ids": [
+        "bienes-nacionales-rio-mosco-web"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rio-mosco-web",
+          "source_url": "https://www.bienesnacionales.cl/rio-mosco/",
+          "locator": "Objetivo de Conservación",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "temporal_scope": {
+        "source_published_at": null,
+        "scope": "as documented in cited publication; not a live observation"
+      }
+    },
+    {
+      "id": "b05w2-013",
+      "claim": "Bienes Nacionales sitúa el BNP Río Mosco a dos kilómetros al este de Villa O’Higgins.",
+      "entity_ids": [
+        "parque-glaciar-rio-mosco",
+        "villa-ohiggins"
+      ],
+      "fact_class": "stable_fact",
+      "chunk_category": "geography",
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-14",
+      "source_classification": "source_documented",
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "requires_current_verification": false,
+      "sensitivity": "public_core",
+      "embedding_eligible": true,
+      "general_embedding_allowed": true,
+      "embedding_ready": false,
+      "vector_ingestion_status": "not_performed",
+      "review_status": "pending_audit",
+      "blocked_consumers": [],
+      "source_ids": [
+        "bienes-nacionales-rio-mosco-web"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rio-mosco-web",
+          "source_url": "https://www.bienesnacionales.cl/rio-mosco/",
+          "locator": "descripción de localización",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "temporal_scope": {
+        "source_published_at": null,
+        "scope": "as documented in cited publication; not a live observation"
+      }
+    },
+    {
+      "id": "b05w2-014",
+      "claim": "La ficha registra una Ruta Patrimonial creada en 2002, desde Villa O’Higgins hacia Glaciar Mosco.",
+      "entity_ids": [
+        "parque-glaciar-rio-mosco",
+        "villa-ohiggins"
+      ],
+      "fact_class": "historical_fact",
+      "chunk_category": "historical context",
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-14",
+      "source_classification": "source_documented",
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "requires_current_verification": false,
+      "sensitivity": "internal_research",
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "embedding_ready": false,
+      "vector_ingestion_status": "not_performed",
+      "review_status": "pending_audit",
+      "blocked_consumers": [
+        "general-rag",
+        "travel-agent"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rio-mosco-web"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rio-mosco-web",
+          "source_url": "https://www.bienesnacionales.cl/rio-mosco/",
+          "locator": "descripción de Ruta Patrimonial Glaciar Río Mosco",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "temporal_scope": {
+        "source_published_at": null,
+        "scope": "as documented in cited publication; not a live observation"
+      }
+    },
+    {
+      "id": "b05w2-015",
+      "claim": "La topoguía documenta senderos de Mosco; su apertura y condiciones actuales no fueron comprobadas.",
+      "entity_ids": [
+        "parque-glaciar-rio-mosco"
+      ],
+      "fact_class": "dynamic_operational_fact",
+      "chunk_category": "dynamic operational context",
+      "verification_status": "verified",
+      "status": "verified",
+      "verified_at": "2026-09-14",
+      "source_classification": "source_documented",
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "requires_current_verification": true,
+      "sensitivity": "operational_dynamic",
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "embedding_ready": false,
+      "vector_ingestion_status": "not_performed",
+      "review_status": "pending_audit",
+      "blocked_consumers": [
+        "general-rag",
+        "travel-agent"
+      ],
+      "source_ids": [
+        "bienes-nacionales-parque-glaciar-mosco"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-parque-glaciar-mosco",
+          "pdf_pages": [
+            23
+          ],
+          "source_url": "https://drive.google.com/file/d/1l-UD0Xa4oyjJHz6cgCgiVqyv-t8zTt_N/view",
+          "page_numbering": "1-based PDF page; Mosco PDF page contains two printed pages"
+        }
+      ],
+      "derived_from_claim_ids": [
+        "b05-012"
+      ],
+      "temporal_scope": {
+        "source_published_at": null,
+        "scope": "documented in Wave 1 source; edition date unverified; no live assertion"
+      }
+    }
+  ]
+}

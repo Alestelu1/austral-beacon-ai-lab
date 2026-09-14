@@ -1,0 +1,70 @@
+{
+  "entity_id": "bahia-bahamondes",
+  "relationships": [
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-010"
+      ],
+      "source_ids": [
+        "bienes-nacionales-rp6-campo-hielo-sur"
+      ],
+      "provenance": [
+        {
+          "source_id": "bienes-nacionales-rp6-campo-hielo-sur",
+          "pdf_pages": [
+            2
+          ],
+          "source_url": "https://drive.google.com/file/d/1OKYLX91QfGKLs6VLmLPD6GEftMialEwr/view",
+          "page_numbering": "1-based PDF page"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/geography/bahia-bahamondes/claims.json",
+      "id": "b05w2-rel-05-inverse",
+      "source": "bahia-bahamondes",
+      "predicate": "inverse_of_lacustrine_access_context",
+      "target": "villa-ohiggins",
+      "inverse_relation_id": "b05w2-rel-05",
+      "target_status": "canonical"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-009"
+      ],
+      "source_ids": [
+        "mop-bahia-bahamonde-port-2021"
+      ],
+      "provenance": [
+        {
+          "source_id": "mop-bahia-bahamonde-port-2021",
+          "source_url": "https://aysen.mop.gob.cl/nueva-infraestructura-portuaria-en-bahia-bahamonde-mejora-conectividad-de-pobladores-e-impulsa-el-turismo-en-la-zona/",
+          "locator": "párrafos sobre conectividad de pobladores del lago",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/geography/bahia-bahamondes/claims.json",
+      "id": "b05w2-rel-06",
+      "source": "bahia-bahamondes",
+      "predicate": "lacustrine_connectivity_context",
+      "target": "lago-ohiggins",
+      "inverse_relation_id": "b05w2-rel-06-inverse",
+      "target_status": "canonical"
+    }
+  ],
+  "inverse_registry": "data/knowledge/batch-05-wave-2-connectivity-graph.json",
+  "reconciliation_registry": "data/knowledge/batch-05-wave-2-reconciliation.json"
+}

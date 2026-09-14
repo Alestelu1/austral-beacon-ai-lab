@@ -1,0 +1,68 @@
+{
+  "id": "parque-glaciar-rio-mosco",
+  "canonical_name": "Parque Glaciar Río Mosco",
+  "entity_type": "bien_nacional_protegido",
+  "status": "canonical",
+  "batch": 5,
+  "wave": 2,
+  "review_status": "pending_audit",
+  "sensitivity": "public_core",
+  "retrieval_scope": [
+    "atlas",
+    "travel",
+    "travel-agent",
+    "observatory",
+    "knowledge-layer"
+  ],
+  "retrieval_policy": "knowledge-base/research/batch-05-wave-2-retrieval-policy.json",
+  "public_projection_status": "prepared_not_connected",
+  "automatic_country_assignment_allowed": false,
+  "sovereignty_implication": false,
+  "aliases": [
+    "Parque Glaciar Mosco",
+    "Río Mosco",
+    "Parque Glaciar Río Mosco"
+  ],
+  "alias_registry": "data/knowledge/batch-05-wave-2-reconciliation.json",
+  "geometry": null,
+  "geometry_acquisition_authorized": false,
+  "protected_area_geometry": null,
+  "international_boundary_geometry": null,
+  "geometry_layers_must_remain_separate": true,
+  "vector_ingestion_status": "not_performed",
+  "embedding_ready": false,
+  "canonical_package_layout": "mdx_inside_entity_directory",
+  "source_ids": [
+    "bienes-nacionales-parque-glaciar-mosco",
+    "bienes-nacionales-rio-mosco-web"
+  ],
+  "official_designation": "Bien Nacional Protegido Río Mosco",
+  "preferred_name_basis": "approved Wave 2 editorial normalization; official designation retained separately",
+  "related_objects": [
+    {
+      "name": "Ruta Patrimonial Glaciar Río Mosco",
+      "entity_type": "heritage_route",
+      "relation": "documented_trail_context",
+      "claim_ids": [
+        "b05w2-014"
+      ],
+      "identity_equivalent": false
+    },
+    {
+      "name": "Río Mosco",
+      "entity_type": "river",
+      "relation": "homonymous_hydrological_context_pending_review",
+      "verification_status": "requires_authoritative_review",
+      "identity_equivalent": false
+    },
+    {
+      "name": "Glaciar Mosco",
+      "entity_type": "glacier",
+      "relation": "documented_route_destination",
+      "claim_ids": [
+        "b05w2-014"
+      ],
+      "identity_equivalent": false
+    }
+  ]
+}

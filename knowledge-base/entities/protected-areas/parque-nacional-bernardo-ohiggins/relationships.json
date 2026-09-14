@@ -1,0 +1,100 @@
+{
+  "entity_id": "parque-nacional-bernardo-ohiggins",
+  "relationships": [
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-020"
+      ],
+      "source_ids": [
+        "conaf-parque-nacional-bernardo-ohiggins"
+      ],
+      "provenance": [
+        {
+          "source_id": "conaf-parque-nacional-bernardo-ohiggins",
+          "source_url": "https://www.conaf.cl/parque_nacionales/parque-nacional-bernardo-ohiggins/",
+          "locator": "Accesos y Servicios",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins/claims.json",
+      "id": "b05w2-rel-08-inverse",
+      "source": "parque-nacional-bernardo-ohiggins",
+      "predicate": "inverse_of_access_context",
+      "target": "villa-ohiggins",
+      "inverse_relation_id": "b05w2-rel-08",
+      "target_status": "canonical"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-020"
+      ],
+      "source_ids": [
+        "conaf-parque-nacional-bernardo-ohiggins"
+      ],
+      "provenance": [
+        {
+          "source_id": "conaf-parque-nacional-bernardo-ohiggins",
+          "source_url": "https://www.conaf.cl/parque_nacionales/parque-nacional-bernardo-ohiggins/",
+          "locator": "Accesos y Servicios",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins/claims.json",
+      "id": "b05w2-rel-09-inverse",
+      "source": "parque-nacional-bernardo-ohiggins",
+      "predicate": "inverse_of_navigation_access_context",
+      "target": "lago-ohiggins",
+      "inverse_relation_id": "b05w2-rel-09",
+      "target_status": "canonical"
+    },
+    {
+      "status": "documented",
+      "claim_ids": [
+        "b05w2-019"
+      ],
+      "source_ids": [
+        "conaf-parque-nacional-bernardo-ohiggins"
+      ],
+      "provenance": [
+        {
+          "source_id": "conaf-parque-nacional-bernardo-ohiggins",
+          "source_url": "https://www.conaf.cl/parque_nacionales/parque-nacional-bernardo-ohiggins/",
+          "locator": "Datos generales y Servicios",
+          "retrieved_at": "2026-09-14",
+          "page_numbering": "not applicable; HTML section/paragraph locator"
+        }
+      ],
+      "operational_status": "not_asserted",
+      "sovereignty_implication": false,
+      "embedding_eligible": false,
+      "general_embedding_allowed": false,
+      "sensitivity": "public_core",
+      "fact_scope": "documented context, not current operation",
+      "evidence_ref": "knowledge-base/entities/protected-areas/parque-nacional-bernardo-ohiggins/claims.json",
+      "id": "b05w2-rel-10",
+      "source": "parque-nacional-bernardo-ohiggins",
+      "predicate": "official_icefield_context",
+      "target": "campo-de-hielo-sur",
+      "inverse_relation_id": "b05w2-rel-10-inverse",
+      "target_status": "canonical"
+    }
+  ],
+  "inverse_registry": "data/knowledge/batch-05-wave-2-connectivity-graph.json",
+  "reconciliation_registry": "data/knowledge/batch-05-wave-2-reconciliation.json"
+}
