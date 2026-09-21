@@ -1,0 +1,62 @@
+{
+  "artifact_role": "offline_test_fixture_not_runtime_configuration",
+  "base_commit": "472671e043babf555eb801ff34261f01345140b0",
+  "capabilities": {
+    "embeddings_generated": false,
+    "geometry_required": false,
+    "live_api_connected": false,
+    "llm_connected": false,
+    "runtime_consumers_connected": false,
+    "vector_ingestion": false,
+    "wave_3_started": false
+  },
+  "created_files": [
+    "data/knowledge/travel-agent-wave2-query-contract.json",
+    "tests/knowledge/travel_agent_wave2_contract.mjs",
+    "tests/knowledge/travel_agent_wave2_cases.mjs",
+    "tests/knowledge/test_travel_agent_wave2_contract.mjs",
+    "docs/rag/travel-agent-wave2-end-to-end-test.md"
+  ],
+  "expected": {
+    "conflicted_claim_ids": [
+      "b05w2-006"
+    ],
+    "live_required_topics": [
+      "ferry_schedule",
+      "fare",
+      "operator",
+      "service_frequency",
+      "suspension",
+      "road_condition",
+      "weather"
+    ],
+    "must_not_select_conflicted_value": true,
+    "requires_live_verification": true,
+    "route_context": [
+      "carretera-austral",
+      "puerto-yungay",
+      "rio-bravo",
+      "villa-ohiggins"
+    ],
+    "stable_answer_available": true,
+    "stable_claim_ids": [
+      "b05w2-001",
+      "b05w2-002",
+      "b05w2-003",
+      "b05w2-005"
+    ]
+  },
+  "inputs": {
+    "claim_packages": [
+      "knowledge-base/entities/places/puerto-yungay/claims.json",
+      "knowledge-base/entities/infrastructure/rio-bravo/claims.json"
+    ],
+    "graph": "data/knowledge/batch-05-wave-2-connectivity-graph.json",
+    "policy": "knowledge-base/research/batch-05-wave-2-retrieval-policy.json",
+    "verification": "data/verification/campo-hielo-sur-chilean-authority-validation.json"
+  },
+  "query": "¿Cómo se conecta Puerto Yungay con Villa O’Higgins y qué partes debo verificar antes de viajar?",
+  "query_type": "connectivity_with_live_operational_requirements",
+  "schema_version": 1,
+  "scope": "Single approved Spanish connectivity query and typographic equivalents. Not a general query engine. Conflicted claims are inspected as offline guard diagnostics, never supplied to general retrieval or a live consumer."
+}
