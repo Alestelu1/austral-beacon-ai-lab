@@ -70,8 +70,23 @@ unchanged([...baseline.keys()].filter(p=>baseline.get(p).type==='blob'));
 console.log('All pre-existing repository blobs byte-identical');
 const changed=git('diff','--name-only',fixture.base_commit).trim().split('\n').filter(Boolean);
 const untracked=git('ls-files','--others','--exclude-standard').trim().split('\n').filter(Boolean);
-assert.deepEqual([...new Set([...changed,...untracked])].sort(),[...fixture.created_files].sort());
-console.log('Only five authorized new test/fixture/documentation files');
+// Explicit additions authorized by the internal-service integration. The historical
+// fixture and every pre-existing blob checked above remain untouched.
+const integrationFiles = [
+  'shared/knowledge/travelAgentWave2Contract.mjs',
+  'shared/knowledge/travelAgentWave2Contract.d.mts',
+  'projects/end-of-the-world-travel-agent/src/knowledge/knowledgeQueryService.ts',
+  'projects/end-of-the-world-travel-agent/src/knowledge/connectivityQuery.ts',
+  'projects/end-of-the-world-travel-agent/src/knowledge/knowledgeTypes.ts',
+  'projects/end-of-the-world-travel-agent/src/knowledge/knowledgeRepository.ts',
+  'projects/end-of-the-world-travel-agent/tests/deterministicConnectivity.test.ts',
+  'docs/rag/travel-agent-deterministic-connectivity.md'
+];
+assert.deepEqual([...new Set([...changed,...untracked])].sort(),
+  [...fixture.created_files,...integrationFiles].sort());
+assert.equal(read('shared/knowledge/travelAgentWave2Contract.mjs').toString('utf8').replace(/\r\n/g,'\n'),
+  git('show','7e8abef2a9c57ebdf79fb4867a694c2480bacd5c:tests/knowledge/travel_agent_wave2_contract.mjs'));
+console.log('Authorized contract/service scope and unchanged shared algorithm');
 assert.equal(git('diff','--check',fixture.base_commit),'');
 assert.equal(read('data/knowledge/travel-agent-wave2-query-contract.json').toString('utf8').replace(/\r\n/g,'\n'),
   JSON.stringify(fixture,null,2)+'\n');
