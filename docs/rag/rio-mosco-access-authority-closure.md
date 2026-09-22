@@ -1,6 +1,6 @@
 # Río Mosco: auditoría de autoridad para acceso
 
-Fecha de consulta: 2026-09-22. Base: `0be8f9e501b26c4a36452585fdc0ab7ae4ce8816`.
+Fecha de consulta: 2026-09-21. Base: `0be8f9e501b26c4a36452585fdc0ab7ae4ce8816`.
 Rama: `research/rio-mosco-access-authority-closure`.
 Estado: investigación/propuesta exclusivamente; no habilita retrieval de producto, embeddings ni relaciones.
 
