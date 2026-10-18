@@ -1,0 +1,302 @@
+{
+  "schema_version": "1.0",
+  "proposal_id": "beagle-corridor-geometry-profile-v0",
+  "created_at": "2026-10-18",
+  "status": "proposal_not_canonical",
+  "purpose": "Define the minimum authoritative geometry required for Beagle corridor entities without promoting census units, historic road lines, inferred coordinates, or visualization products as current canonical truth.",
+  "governing_principle": "The agent interprets and contextualizes; the source accredits.",
+  "source_artifacts": {
+    "ine_censo_2024_region_12": {
+      "producer": "Instituto Nacional de Estadísticas de Chile",
+      "dataset_title": "Cartografía Censo 2024 — Región de Magallanes y de la Antártica Chilena",
+      "distribution_format": "GeoPackage plus XLSX data dictionary",
+      "source_file": "Cartografia_censo2024_R12.zip",
+      "inspected_at": "2026-10-18",
+      "crs": "EPSG:4674 (SIRGAS 2000)",
+      "license": "CC BY-SA 4.0 under INE open-data terms",
+      "license_url": "https://www.ine.gob.cl/terminos-de-uso-y-licencia-de-datos-abiertos",
+      "sha256": {
+        "zip": "29e47b1ef88859f832c9286a80cb685c05547499e15181af17585985f8434ae0",
+        "geopackage": "a813dda3a813c7016042c0fc018ce13291d53823ae2e2467102d54e4db32fe52",
+        "data_dictionary": "e09d706364a0436b56854bfd3e6e0f1b045f7ea411eeb4e7142b4f7f8b2d182d"
+      },
+      "source_url": "https://storage.googleapis.com/bktdescargascenso2024/Cartografia/GPKG/Cartografia_censo2024_R12.zip",
+      "source_page_url": "https://censo2024.ine.gob.cl/resultados/",
+      "distribution_catalog_url": "https://brave-grass-0c5df3c0f.3.azurestaticapps.net/datos.json",
+      "source_url_verified_at": "2026-10-18",
+      "source_verification_note": "Exact R12 download URL found in the catalog embedded by the official INE results page. Existing hashes identify the previously inspected user-provided copy; the current remote ZIP has not been re-downloaded for byte comparison.",
+      "available_copy_recorded_at": "2026-10-16"
+    },
+    "mop_red_vial_2013": {
+      "producer": "Dirección de Vialidad, Ministerio de Obras Públicas",
+      "dataset_title": "RED_VIAL_MOP / Red_Vial_Chile",
+      "distribution_format": "ArcGIS Feature Service",
+      "source_url": "https://services3.arcgis.com/Dhl01RVOOnbjTdY7/ArcGIS/rest/services/RED_VIAL_MOP/FeatureServer/0",
+      "inspected_at": "2026-10-18",
+      "stated_update_year": 2013,
+      "crs": "EPSG:4326",
+      "license": "not_explicitly_published",
+      "warning": "Working database; the layer states that it does not represent the legal nature of the roads."
+    },
+    "mop_dop_port_infrastructure_2026": {
+      "producer": "Dirección de Obras Portuarias, Ministerio de Obras Públicas",
+      "dataset_title": "Infraestructura Portuaria",
+      "distribution_format": "ArcGIS MapServer feature layer",
+      "metadata_url": "https://geoportal.cl/geoportal/catalog/36784/Infraestructura%20Portuaria",
+      "source_url": "https://rest-sit.mop.gob.cl/arcgis/rest/services/DOP/CATASTRO_DOP/MapServer/0",
+      "published_at": "2026-02-18",
+      "inspected_at": "2026-10-18",
+      "crs_source": "EPSG:5360",
+      "query_output_crs": "EPSG:4326",
+      "geometry_type": "Point",
+      "scale_context": "Topographic surveys at 1:10,000 compiled at 1:50,000 according to the metadata record.",
+      "attribution": "Dirección de Obras Portuarias",
+      "warning": "A port-infrastructure point is not a settlement representative point. The OPERATIVA attribute applies to the mapped work and must not be expanded into schedules, passenger service, access or construction completion claims.",
+      "license": "not_verified",
+      "reuse_status": "blocked_pending_explicit_usage_terms_review",
+      "retrieved_at": "2026-10-18",
+      "transformation_note": "Service query requested outSR=4326 from source EPSG:5360; the server-selected datum transformation was not recorded. These coordinates remain research candidates, not precision-certified canonical geometry."
+    }
+  },
+  "geometry_roles": {
+    "source_geometry": "Unmodified feature retrieved from the producing dataset.",
+    "contextual_geometry": "Dated geometry used to explain the scope of a source, never presented as a timeless boundary.",
+    "representative_point": "Authoritative named-place point or documented derivation for map labels and map exploration; not a routing destination or access point without separate verification.",
+    "operational_geometry": "Geometry whose current usability or condition has been verified by the competent live source.",
+    "infrastructure_point": "Point representing a named infrastructure work; it must not substitute for a settlement representative point."
+  },
+  "targets": [
+    {
+      "entity_id": "puerto-williams",
+      "entity_type": "city",
+      "required_outputs": [
+        {
+          "role": "contextual_geometry",
+          "preferred_geometry_type": "MultiPolygon",
+          "status": "source_identified_derivation_not_approved",
+          "source_ref": "ine_censo_2024_region_12",
+          "layer": "Limite_Urbano_CPV24",
+          "selection_rule": "ENTIDAD = 'PUERTO WILLIAMS' AND AREA_C = 'URBANO'",
+          "feature_identifiers": {
+            "OBJECTID": 428,
+            "ID_ENTIDAD": 1220102600101,
+            "ID_LOCALIDAD": 122011026
+          },
+          "semantic_label": "Censo 2024 urban boundary",
+          "must_not_be_described_as": [
+            "municipal boundary",
+            "property boundary",
+            "current built-up footprint",
+            "service area"
+          ]
+        },
+        {
+          "role": "representative_point",
+          "preferred_geometry_type": "Point",
+          "status": "method_decision_pending",
+          "allowed_methods": [
+            "first-party authoritative named-place point",
+            "point-on-surface derived from the approved Censo 2024 urban polygon"
+          ],
+          "prohibited_methods": [
+            "Google Maps coordinate copy",
+            "tourism-map coordinate copy",
+            "unrecorded manual placement"
+          ],
+          "note": "A derived point must retain the polygon source, transformation algorithm, software/version, CRS and derivation timestamp."
+        }
+      ],
+      "name_collision_rule": "Do not merge the urban entity with the rural locality also named Puerto Williams.",
+      "supporting_geometries": [
+        {
+          "role": "infrastructure_point",
+          "status": "authoritative_feature_identified_context_only",
+          "source_ref": "mop_dop_port_infrastructure_2026",
+          "feature_identifiers": {
+            "OBJECTID": 1948,
+            "LOCATION": "120201-02"
+          },
+          "source_name": "Terminal de Conectividad Puerto Williams",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -67.59677608,
+              -54.93238914411335
+            ],
+            "crs": "EPSG:4326"
+          }
+        },
+        {
+          "role": "infrastructure_point",
+          "status": "authoritative_feature_identified_context_only",
+          "source_ref": "mop_dop_port_infrastructure_2026",
+          "feature_identifiers": {
+            "OBJECTID": 1961,
+            "LOCATION": "120201-020"
+          },
+          "source_name": "Caleta Pesquera Puerto Williams",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -67.59926112499994,
+              -54.93274135611334
+            ],
+            "crs": "EPSG:4326"
+          }
+        },
+        {
+          "role": "infrastructure_point",
+          "status": "authoritative_feature_identified_context_only",
+          "source_ref": "mop_dop_port_infrastructure_2026",
+          "feature_identifiers": {
+            "OBJECTID": 2426,
+            "LOCATION": "120201-021"
+          },
+          "source_name": "Infraestructura Portuaria Multiproposito de Puerto Williams",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -67.60122829199997,
+              -54.931886429113355
+            ],
+            "crs": "EPSG:4326"
+          }
+        }
+      ],
+      "supporting_geometry_warning": "These points identify port works, not the representative point or boundary of Puerto Williams. OPERATIVA must remain scoped to each mapped work."
+    },
+    {
+      "entity_id": "puerto-toro",
+      "entity_type": "settlement",
+      "required_outputs": [
+        {
+          "role": "contextual_geometry",
+          "preferred_geometry_type": "MultiPolygon",
+          "status": "source_identified_context_only",
+          "source_ref": "ine_censo_2024_region_12",
+          "layer": "Entidades_CPV24",
+          "selection_rule": "ENTIDAD = 'PUERTO TORO' AND AREA_C = 'RURAL'",
+          "feature_identifiers": {
+            "OBJECTID": 23515,
+            "ID_ENTIDAD": 1220102502404,
+            "ID_LOCALIDAD": 122012025
+          },
+          "semantic_label": "Censo 2024 rural census entity",
+          "must_not_be_described_as": [
+            "built settlement footprint",
+            "port boundary",
+            "visitor-access area"
+          ]
+        },
+        {
+          "role": "representative_point",
+          "preferred_geometry_type": "Point",
+          "status": "blocked_pending_authoritative_named_place_point",
+          "disallowed_derivation": "Do not derive a settlement point from the centroid of the broad rural census polygon.",
+          "preferred_source_order": [
+            "IDE Chile or IGM named-place feature",
+            "competent Chilean public producer with explicit feature provenance"
+          ]
+        }
+      ],
+      "supporting_geometries": [
+        {
+          "role": "infrastructure_point",
+          "status": "authoritative_feature_identified_context_only",
+          "source_ref": "mop_dop_port_infrastructure_2026",
+          "layer": "Infraestructura Obras Portuarias",
+          "selection_rule": "NOMBRE = 'Embarcadero Muelle Puerto Toro'",
+          "feature_identifiers": {
+            "OBJECTID": 1947,
+            "LOCATION": "120201-01"
+          },
+          "source_attributes": {
+            "NOMBRE": "Embarcadero Muelle Puerto Toro",
+            "OPERATIVA": "Si",
+            "PROVINCIA": "Antártica Chilena",
+            "COMUNA": "Cabo de Hornos"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -67.07408206899999,
+              -55.082070474115056
+            ],
+            "crs": "EPSG:4326"
+          },
+          "semantic_label": "MOP/DOP port-infrastructure point",
+          "prohibited_substitution": "Do not use this point as the canonical point of the Puerto Toro settlement."
+        }
+      ]
+    },
+    {
+      "entity_id": "ruta-y905",
+      "entity_type": "road",
+      "required_outputs": [
+        {
+          "role": "contextual_geometry",
+          "preferred_geometry_type": "LineString or MultiLineString",
+          "status": "historic_candidate_not_approved",
+          "source_ref": "mop_red_vial_2013",
+          "layer": "Red_Vial_Chile",
+          "selection_rule": "ROL = 'Y-905'",
+          "feature_identifiers": {
+            "OBJECTID": 3476,
+            "GlobalID": "5c945491-9cbc-445e-9d7c-6b30d3c7bd81"
+          },
+          "semantic_label": "MOP road line, stated update 2013",
+          "must_not_be_described_as": [
+            "current road condition",
+            "open route",
+            "continuous access to Puerto Toro",
+            "legal road status"
+          ],
+          "blocking_reasons": [
+            "dataset age",
+            "no explicit reuse license",
+            "source warning about legal status"
+          ]
+        },
+        {
+          "role": "operational_geometry",
+          "preferred_geometry_type": "LineString or MultiLineString",
+          "status": "blocked_pending_current_competent_source"
+        }
+      ]
+    }
+  ],
+  "provenance_required_for_any_derived_file": [
+    "producer",
+    "dataset title",
+    "distribution and original filename or service URL",
+    "retrieved_at",
+    "source file SHA-256 when applicable",
+    "layer name",
+    "feature identifier and selection rule",
+    "source CRS",
+    "output CRS",
+    "geometry type",
+    "transformation steps and software version",
+    "license and attribution text",
+    "temporal label",
+    "review status"
+  ],
+  "attribution_template": "Fuente: Instituto Nacional de Estadísticas de Chile, Cartografía Censo 2024 — Región de Magallanes y de la Antártica Chilena. Derivación de Austral Beacon; cambios indicados. Licencia CC BY-SA 4.0.",
+  "promotion_gates": [
+    "The semantic role of the geometry is explicit.",
+    "The source feature can be selected reproducibly.",
+    "License and attribution obligations are satisfied.",
+    "Any transformation is reproducible and recorded.",
+    "The geometry is not used to infer access, schedules, road condition or service availability.",
+    "A human review confirms that the map label and legend preserve the source's temporal and statistical meaning."
+  ],
+  "next_actions": [
+    "Locate an authoritative named-place point for Puerto Toro; the DOP port point is supporting infrastructure only.",
+    "Decide whether Puerto Williams needs a first-party named-place point or a point-on-surface derivation from the Censo 2024 urban polygon.",
+    "Locate a current MOP road distribution with explicit reuse terms before adopting Y-905 linework.",
+    "Review the exact semantics and update cycle of the DOP OPERATIVA field before using it in any user-facing operational answer.",
+    "Prepare a separate implementation PR only after these decisions are approved."
+  ],
+  "research_only": true,
+  "promotion_allowed": false
+}
