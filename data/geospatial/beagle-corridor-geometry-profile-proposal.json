@@ -11,7 +11,6 @@
       "dataset_title": "Cartografía Censo 2024 — Región de Magallanes y de la Antártica Chilena",
       "distribution_format": "GeoPackage plus XLSX data dictionary",
       "source_file": "Cartografia_censo2024_R12.zip",
-      "retrieved_at": "2026-10-16",
       "inspected_at": "2026-10-18",
       "crs": "EPSG:4674 (SIRGAS 2000)",
       "license": "CC BY-SA 4.0 under INE open-data terms",
@@ -20,7 +19,13 @@
         "zip": "29e47b1ef88859f832c9286a80cb685c05547499e15181af17585985f8434ae0",
         "geopackage": "a813dda3a813c7016042c0fc018ce13291d53823ae2e2467102d54e4db32fe52",
         "data_dictionary": "e09d706364a0436b56854bfd3e6e0f1b045f7ea411eeb4e7142b4f7f8b2d182d"
-      }
+      },
+      "source_url": "https://storage.googleapis.com/bktdescargascenso2024/Cartografia/GPKG/Cartografia_censo2024_R12.zip",
+      "source_page_url": "https://censo2024.ine.gob.cl/resultados/",
+      "distribution_catalog_url": "https://brave-grass-0c5df3c0f.3.azurestaticapps.net/datos.json",
+      "source_url_verified_at": "2026-10-18",
+      "source_verification_note": "Exact R12 download URL found in the catalog embedded by the official INE results page. Existing hashes identify the previously inspected user-provided copy; the current remote ZIP has not been re-downloaded for byte comparison.",
+      "available_copy_recorded_at": "2026-10-16"
     },
     "mop_red_vial_2013": {
       "producer": "Dirección de Vialidad, Ministerio de Obras Públicas",
@@ -46,14 +51,19 @@
       "geometry_type": "Point",
       "scale_context": "Topographic surveys at 1:10,000 compiled at 1:50,000 according to the metadata record.",
       "attribution": "Dirección de Obras Portuarias",
-      "warning": "A port-infrastructure point is not a settlement representative point. The OPERATIVA attribute applies to the mapped work and must not be expanded into schedules, passenger service, access or construction completion claims."
+      "warning": "A port-infrastructure point is not a settlement representative point. The OPERATIVA attribute applies to the mapped work and must not be expanded into schedules, passenger service, access or construction completion claims.",
+      "license": "not_verified",
+      "reuse_status": "blocked_pending_explicit_usage_terms_review",
+      "retrieved_at": "2026-10-18",
+      "transformation_note": "Service query requested outSR=4326 from source EPSG:5360; the server-selected datum transformation was not recorded. These coordinates remain research candidates, not precision-certified canonical geometry."
     }
   },
   "geometry_roles": {
     "source_geometry": "Unmodified feature retrieved from the producing dataset.",
     "contextual_geometry": "Dated geometry used to explain the scope of a source, never presented as a timeless boundary.",
-    "representative_point": "Authoritative named-place point or separately documented derivation used for map labels and navigation.",
-    "operational_geometry": "Geometry whose current usability or condition has been verified by the competent live source."
+    "representative_point": "Authoritative named-place point or documented derivation for map labels and map exploration; not a routing destination or access point without separate verification.",
+    "operational_geometry": "Geometry whose current usability or condition has been verified by the competent live source.",
+    "infrastructure_point": "Point representing a named infrastructure work; it must not substitute for a settlement representative point."
   },
   "targets": [
     {
@@ -286,5 +296,7 @@
     "Locate a current MOP road distribution with explicit reuse terms before adopting Y-905 linework.",
     "Review the exact semantics and update cycle of the DOP OPERATIVA field before using it in any user-facing operational answer.",
     "Prepare a separate implementation PR only after these decisions are approved."
-  ]
+  ],
+  "research_only": true,
+  "promotion_allowed": false
 }
