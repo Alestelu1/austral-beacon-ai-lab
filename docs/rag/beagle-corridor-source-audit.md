@@ -406,3 +406,32 @@ La descarga oficial reemplaza al servicio Esri/Censo 2017 como fuente preferente
 5. separación entre geometría censal y afirmaciones sobre acceso, infraestructura o conectividad.
 
 La mejora de actualidad no elimina la obligación de explicar qué representa cada geometría. El mapa debe conducir al dataset del INE y a su definición estadística, no reemplazarlos.
+
+
+## Hallazgo geoespacial complementario — infraestructura portuaria MOP/DOP
+
+El Catálogo Nacional de Información Geoespacial registra `Infraestructura Portuaria`, publicada el 2026-02-18 y producida por la Dirección de Obras Portuarias del MOP. La ficha enlaza el servicio:
+
+`https://rest-sit.mop.gob.cl/arcgis/rest/services/DOP/CATASTRO_DOP/MapServer/0`
+
+La capa es puntual, consultable y declara como contexto cartográfico levantamientos topográficos a escala 1:10.000 compilados a escala 1:50.000. La consulta por nombre localizó:
+
+| Obra | Identificador MOP | OBJECTID | Uso permitido en esta auditoría |
+|---|---|---:|---|
+| Embarcadero Muelle Puerto Toro | `120201-01` | 1947 | punto de infraestructura portuaria; no punto canónico del asentamiento |
+| Terminal de Conectividad Puerto Williams | `120201-02` | 1948 | punto de obra portuaria; no centro de la ciudad |
+| Caleta Pesquera Puerto Williams | `120201-020` | 1961 | punto de obra portuaria |
+| Infraestructura Portuaria Multipropósito de Puerto Williams | `120201-021` | 2426 | punto de obra portuaria; no prueba por sí solo el estado de la segunda etapa ni disponibilidad de servicios |
+
+La capa publica `OPERATIVA = Si` para estos registros. Ese atributo se conserva estrictamente como propiedad de la obra cartografiada: no permite inferir horarios, frecuencia, acceso público, atención de pasajeros, capacidad disponible ni finalización de ampliaciones posteriores.
+
+### Decisión
+
+**ACEPTAR COMO GEOMETRÍA DE INFRAESTRUCTURA; PROHIBIR SUSTITUCIÓN DE ENTIDAD.**
+
+El punto del muelle de Puerto Toro mejora la inmersión cartográfica porque permite mostrar una obra oficial relacionada con el asentamiento. Sin embargo, no resuelve la geometría de `puerto-toro` como lugar. En el Atlas futuro deberán existir, si la evidencia lo permite, dos objetos diferenciados:
+
+- entidad territorial: Puerto Toro;
+- infraestructura: Embarcadero Muelle Puerto Toro.
+
+La misma separación se aplica entre Puerto Williams y sus distintas obras portuarias.
