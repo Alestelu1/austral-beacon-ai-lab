@@ -282,3 +282,72 @@ Se localizó autoridad primaria suficiente para reemplazar o acotar varios datos
 **INVENTARIO ABIERTO — NO PROMOVER.**
 
 La base existente permite iniciar la auditoría, pero todavía no demuestra cobertura suficiente y uniforme para presentar el corredor Beagle como paquete multimodal y geoespacial integrado. No se autorizan cambios canónicos, embeddings, nuevas geometrías, rutas live ni modificaciones del Travel Agent desde esta rama.
+
+
+## Verificación geoespacial — 2026-10-18
+
+### Método
+
+Se consultaron directamente los endpoints REST públicos de las capas candidatas. La selección se hizo mediante atributos, no por inspección visual ni por proximidad:
+
+- Ruta Y-905: `ROL = 'Y-905'`.
+- Puerto Williams: capa `Ciudades - 2017`, `URBANO = 'PUERTO WILLIAMS'`.
+- Puerto Toro: capa `Caserios - 2017`, `NOM_ENT = 'PUERTO TORO'`.
+
+Las consultas se limitaron a identificar registros, metadatos y condiciones de reutilización. No se copiaron geometrías al repositorio ni se modificaron entidades canónicas.
+
+### Resultados
+
+| Objeto | Productor/origen | Capa y registro | Geometría/CRS | Hallazgo | Decisión |
+|---|---|---|---|---|---|
+| Ruta Y-905 | Dirección de Vialidad/MOP, republicada en ArcGIS por `SubtelChile` | `RED_VIAL_MOP / Red_Vial_Chile`; `OBJECTID 3476`; `GlobalID 5c945491-9cbc-445e-9d7c-6b30d3c7bd81` | línea; servicio en EPSG:4326 | El registro identifica `Y-905` como “Puerto Navarino - Puerto Williams - Caleta Eugenia”, carpeta `RIPIO`, Región de Magallanes y de la Antártica Chilena | Candidato sólo como trazado vial histórico/fechado; no promover como red actual |
+| Puerto Williams | INE, Censo 2017; capa nominada por Esri Chile desde Geodatos Abiertos INE | `Ciudades - 2017`; `OBJECTID 222`; `URBANO PUERTO WILLIAMS` | polígono; EPSG:3857 | Clasificado como capital provincial y ciudad; el polígono representa delimitación censal 2017 | Candidato para contexto censal fechado, no como límite urbano actual sin contraste con fuente INE vigente |
+| Puerto Toro | INE, Censo 2017; capa nominada por Esri Chile desde Geodatos Abiertos INE | `Caserios - 2017`; `OBJECTID 3643`; `COD_LOC 25`; `COD_ENT 30` | polígono; EPSG:3857 | Clasificado como `CASERÍO`; el área y perímetro publicados son demasiado extensos para asumir que representan la huella precisa del asentamiento | Rechazar como punto o límite canónico de Puerto Toro; conservar sólo como evidencia censal fechada de la entidad |
+
+### Procedencia y límites de uso
+
+#### Red Vial MOP
+
+- Servicio: `https://services3.arcgis.com/Dhl01RVOOnbjTdY7/ArcGIS/rest/services/RED_VIAL_MOP/FeatureServer`.
+- Ítem ArcGIS: `833efdfc62f14c9cb1e901e3be2f7349`.
+- La descripción de la capa indica levantamientos GPS 2000–2003, actualizaciones parciales y fecha de actualización 2013.
+- La propia capa declara que es una base dinámica de trabajo y que **no representa la naturaleza jurídica** de los caminos.
+- El ítem público no publica licencia ni términos de uso explícitos.
+
+Consecuencia: el registro respalda la identificación histórica del rol y nombre de la Y-905, pero no autoriza todavía copiar su geometría al repositorio ni usarla como prueba de condición, transitabilidad, continuidad o estado actual.
+
+#### Ciudades y pueblos — Censo 2017
+
+- Servicio: `https://services.arcgis.com/r7t1P5pnkoOLRdhr/arcgis/rest/services/Ciudades__Pueblos___Censo_2017_WFL1/FeatureServer`.
+- Ítem ArcGIS: `879c8fb5409547a9bfa171f0bb8cf8e1`.
+- Esri Chile declara que nominó datos obtenidos desde Geodatos Abiertos del INE; el productor acreditado es el Instituto Nacional de Estadísticas.
+- El ítem publica licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional y exige reconocer autoría, enlazar la licencia, indicar cambios y no atribuir al INE análisis o transformaciones de terceros.
+- Las capas corresponden al Censo 2017. Sus cifras, categorías y delimitaciones deben conservar esa fecha.
+
+Consecuencia: la reutilización es potencialmente admisible con atribución y ShareAlike, pero antes de incorporar geometría se debe localizar el producto directo del INE y comprobar si existe una versión 2024 o posterior equivalente.
+
+### Evaluación de suficiencia
+
+| Requisito | Y-905 | Puerto Williams | Puerto Toro |
+|---|---:|---:|---:|
+| Productor identificado | sí | sí | sí |
+| Registro seleccionable de forma reproducible | sí | sí | sí |
+| Geometría consultable | sí | sí | sí |
+| Fecha/temporalidad entendida | sí, actualización 2013 | sí, Censo 2017 | sí, Censo 2017 |
+| Licencia explícita | no | sí, CC BY-SA 4.0 | sí, CC BY-SA 4.0 |
+| Adecuada como geometría canónica actual | no | no todavía | no |
+| Apta para contexto fechado | sí, con límites | sí | sí, sin interpretar el polígono como huella urbana |
+
+### Decisión del bloque
+
+**CANDIDATOS IDENTIFICADOS — GEOMETRÍA CANÓNICA BLOQUEADA.**
+
+La consulta por atributos elimina la ambigüedad de identidad, pero no resuelve actualidad, granularidad ni licencia en todos los casos. Por tanto:
+
+1. no se crearán archivos GeoJSON ni coordenadas canónicas desde estas capas;
+2. no se inferirá conectividad operacional desde el trazado Y-905;
+3. el polígono censal de Puerto Williams sólo podrá presentarse como delimitación de 2017;
+4. el polígono de Puerto Toro no se usará como huella del asentamiento;
+5. el siguiente paso es localizar la descarga directa y metadatos vigentes del INE, además de una fuente MOP actual con condiciones claras de reutilización.
+
+Este tratamiento conserva el principio rector: Austral Beacon puede orientar al usuario hacia la evidencia espacial y explicar sus límites, pero la visualización o síntesis no sustituye al dataset productor.
