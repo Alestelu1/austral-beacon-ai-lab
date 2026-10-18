@@ -435,3 +435,30 @@ El punto del muelle de Puerto Toro mejora la inmersión cartográfica porque per
 - infraestructura: Embarcadero Muelle Puerto Toro.
 
 La misma separación se aplica entre Puerto Williams y sus distintas obras portuarias.
+
+
+## Búsqueda del punto de asentamiento Puerto Toro — 2026-10-18
+
+### Evidencia revisada
+
+- IGM, ficha «Puerto Williams (JPG)»: https://www.igm.cl/tiendaonline/inicio/5752-puerto-williams-jpg.html . Identifica Puerto Toro entre los poblados cubiertos por la carta 1:250.000, edición 1988, datum sudamericano 1956. La ficha no entrega un registro vectorial puntual del asentamiento. Las coordenadas de cobertura de la hoja no son coordenadas de Puerto Toro.
+- Biblioteca Nacional Digital, registro 329821: https://www.bibliotecanacionaldigital.gob.cl/bnd/631/w3-article-329821.html . Confirma la carta de 1988 y señala restricciones de reproducción y consulta al IGM. Su descripción advierte que el trazado del límite internacional es aproximado y no oficial. No se digitalizó ni reutilizó el mapa.
+- AADC, registro 25791: https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=25791 . Devuelve el topónimo Puerto Toro, pero lo clasifica como puerto y sitúa en -51.41670, -73.13330, fuera del objetivo en Navarino. Declara origen GeoNames, enero de 2010, precisión y método desconocidos. Se rechaza para esta entidad: el nombre coincidente y la etiqueta «Official» no bastan para establecer identidad.
+
+### Resultado y regla de presentación
+
+No se localizó en este bloque un punto primario reutilizable del asentamiento. Esto no demuestra que no exista.
+
+- Mantener `puerto-toro.geometry_status = pending_authoritative_point`.
+- Presentar, en una implementación posterior aprobada, el polígono INE sólo como unidad censal rural y el punto DOP sólo como muelle; no sustituir uno por otro.
+- Si una interfaz requiere un marcador del poblado, omitirlo hasta validar una fuente adecuada. No generar un centroide del polígono rural como solución automática.
+- No bloquear la auditoría documental ni la futura capa contextual de Puerto Williams por esta brecha particular. Cada geometría tendrá su propio criterio de aprobación.
+- Una consulta al IGM sobre un punto de localidad, precisión, datum y licencia es un siguiente paso posible; no se envió ninguna consulta ni se compró cartografía.
+
+### Casos de evaluación propuestos (no ejecutados)
+
+1. Un resultado con nombre Puerto Toro y coordenadas fuera de Navarino debe rechazarse.
+2. Una consulta por el asentamiento no debe devolver silenciosamente el punto del muelle.
+3. Una leyenda de polígono INE debe incluir unidad censal y año 2024.
+4. La ausencia de punto debe conservarse explícita, sin coordenadas inventadas.
+5. La categoría o etiqueta oficial de un registro no debe reemplazar la validación de productor, entidad, ubicación y alcance.
