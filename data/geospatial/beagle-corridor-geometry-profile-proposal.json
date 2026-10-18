@@ -32,6 +32,21 @@
       "crs": "EPSG:4326",
       "license": "not_explicitly_published",
       "warning": "Working database; the layer states that it does not represent the legal nature of the roads."
+    },
+    "mop_dop_port_infrastructure_2026": {
+      "producer": "Dirección de Obras Portuarias, Ministerio de Obras Públicas",
+      "dataset_title": "Infraestructura Portuaria",
+      "distribution_format": "ArcGIS MapServer feature layer",
+      "metadata_url": "https://geoportal.cl/geoportal/catalog/36784/Infraestructura%20Portuaria",
+      "source_url": "https://rest-sit.mop.gob.cl/arcgis/rest/services/DOP/CATASTRO_DOP/MapServer/0",
+      "published_at": "2026-02-18",
+      "inspected_at": "2026-10-18",
+      "crs_source": "EPSG:5360",
+      "query_output_crs": "EPSG:4326",
+      "geometry_type": "Point",
+      "scale_context": "Topographic surveys at 1:10,000 compiled at 1:50,000 according to the metadata record.",
+      "attribution": "Dirección de Obras Portuarias",
+      "warning": "A port-infrastructure point is not a settlement representative point. The OPERATIVA attribute applies to the mapped work and must not be expanded into schedules, passenger service, access or construction completion claims."
     }
   },
   "geometry_roles": {
@@ -81,7 +96,64 @@
           "note": "A derived point must retain the polygon source, transformation algorithm, software/version, CRS and derivation timestamp."
         }
       ],
-      "name_collision_rule": "Do not merge the urban entity with the rural locality also named Puerto Williams."
+      "name_collision_rule": "Do not merge the urban entity with the rural locality also named Puerto Williams.",
+      "supporting_geometries": [
+        {
+          "role": "infrastructure_point",
+          "status": "authoritative_feature_identified_context_only",
+          "source_ref": "mop_dop_port_infrastructure_2026",
+          "feature_identifiers": {
+            "OBJECTID": 1948,
+            "LOCATION": "120201-02"
+          },
+          "source_name": "Terminal de Conectividad Puerto Williams",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -67.59677608,
+              -54.93238914411335
+            ],
+            "crs": "EPSG:4326"
+          }
+        },
+        {
+          "role": "infrastructure_point",
+          "status": "authoritative_feature_identified_context_only",
+          "source_ref": "mop_dop_port_infrastructure_2026",
+          "feature_identifiers": {
+            "OBJECTID": 1961,
+            "LOCATION": "120201-020"
+          },
+          "source_name": "Caleta Pesquera Puerto Williams",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -67.59926112499994,
+              -54.93274135611334
+            ],
+            "crs": "EPSG:4326"
+          }
+        },
+        {
+          "role": "infrastructure_point",
+          "status": "authoritative_feature_identified_context_only",
+          "source_ref": "mop_dop_port_infrastructure_2026",
+          "feature_identifiers": {
+            "OBJECTID": 2426,
+            "LOCATION": "120201-021"
+          },
+          "source_name": "Infraestructura Portuaria Multiproposito de Puerto Williams",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -67.60122829199997,
+              -54.931886429113355
+            ],
+            "crs": "EPSG:4326"
+          }
+        }
+      ],
+      "supporting_geometry_warning": "These points identify port works, not the representative point or boundary of Puerto Williams. OPERATIVA must remain scoped to each mapped work."
     },
     {
       "entity_id": "puerto-toro",
@@ -115,6 +187,35 @@
             "IDE Chile or IGM named-place feature",
             "competent Chilean public producer with explicit feature provenance"
           ]
+        }
+      ],
+      "supporting_geometries": [
+        {
+          "role": "infrastructure_point",
+          "status": "authoritative_feature_identified_context_only",
+          "source_ref": "mop_dop_port_infrastructure_2026",
+          "layer": "Infraestructura Obras Portuarias",
+          "selection_rule": "NOMBRE = 'Embarcadero Muelle Puerto Toro'",
+          "feature_identifiers": {
+            "OBJECTID": 1947,
+            "LOCATION": "120201-01"
+          },
+          "source_attributes": {
+            "NOMBRE": "Embarcadero Muelle Puerto Toro",
+            "OPERATIVA": "Si",
+            "PROVINCIA": "Antártica Chilena",
+            "COMUNA": "Cabo de Hornos"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -67.07408206899999,
+              -55.082070474115056
+            ],
+            "crs": "EPSG:4326"
+          },
+          "semantic_label": "MOP/DOP port-infrastructure point",
+          "prohibited_substitution": "Do not use this point as the canonical point of the Puerto Toro settlement."
         }
       ]
     },
@@ -180,9 +281,10 @@
     "A human review confirms that the map label and legend preserve the source's temporal and statistical meaning."
   ],
   "next_actions": [
-    "Locate an authoritative named-place point for Puerto Toro.",
-    "Decide whether Puerto Williams needs a first-party point or a point-on-surface derivation.",
+    "Locate an authoritative named-place point for Puerto Toro; the DOP port point is supporting infrastructure only.",
+    "Decide whether Puerto Williams needs a first-party named-place point or a point-on-surface derivation from the Censo 2024 urban polygon.",
     "Locate a current MOP road distribution with explicit reuse terms before adopting Y-905 linework.",
+    "Review the exact semantics and update cycle of the DOP OPERATIVA field before using it in any user-facing operational answer.",
     "Prepare a separate implementation PR only after these decisions are approved."
   ]
 }
