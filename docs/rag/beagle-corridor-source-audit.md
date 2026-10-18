@@ -351,3 +351,58 @@ La consulta por atributos elimina la ambigüedad de identidad, pero no resuelve 
 5. el siguiente paso es localizar la descarga directa y metadatos vigentes del INE, además de una fuente MOP actual con condiciones claras de reutilización.
 
 Este tratamiento conserva el principio rector: Austral Beacon puede orientar al usuario hacia la evidencia espacial y explicar sus límites, pero la visualización o síntesis no sustituye al dataset productor.
+
+
+## Contraste con cartografía oficial Censo 2024 — 2026-10-18
+
+### Material inspeccionado
+
+Se inspeccionó la descarga regional oficial conservada como `Cartografia_censo2024_R12.zip`, correspondiente a la Región de Magallanes y de la Antártica Chilena. El paquete contiene:
+
+- `Cartografia_censo2024_R12.gpkg`, GeoPackage con diez capas vectoriales;
+- `Diccionario_variables_geograficas_CPV24.xlsx`, diccionario de campos por capa.
+
+Identificadores de integridad calculados durante la auditoría:
+
+| Archivo | SHA-256 |
+|---|---|
+| ZIP regional | `29e47b1ef88859f832c9286a80cb685c05547499e15181af17585985f8434ae0` |
+| GeoPackage | `a813dda3a813c7016042c0fc018ce13291d53823ae2e2467102d54e4db32fe52` |
+| Diccionario | `e09d706364a0436b56854bfd3e6e0f1b045f7ea411eeb4e7142b4f7f8b2d182d` |
+
+El GeoPackage declara `SIRGAS 2000 / EPSG:4674`. Las capas relevantes usan geometría `MULTIPOLYGON`.
+
+### Registros localizados
+
+| Objeto | Capa 2024 | Regla de selección | Identificadores | Clasificación publicada | Interpretación permitida |
+|---|---|---|---|---|---|
+| Puerto Williams urbano | `Limite_Urbano_CPV24` | `ENTIDAD = 'PUERTO WILLIAMS'` | `OBJECTID 428`; `ID_ENTIDAD 1220102600101`; `ID_LOCALIDAD 122011026` | `AREA_C URBANO`; categoría `Ciudad` | delimitación censal urbana 2024, no límite municipal, predial ni operacional |
+| Puerto Williams rural | `Localidades_CPV24` | `LOCALIDAD = 'PUERTO WILLIAMS'` y `AREA_C = 'RURAL'` | `OBJECTID 7611`; `ID_LOCALIDAD 122012026` | localidad rural | entidad estadística distinta del límite urbano; no fusionar por igualdad de nombre |
+| Puerto Toro | `Entidades_CPV24` | `ENTIDAD = 'PUERTO TORO'` | `OBJECTID 23515`; `ID_ENTIDAD 1220102502404`; `ID_LOCALIDAD 122012025` | `AREA_C RURAL`; categoría `Caserío` | polígono de entidad censal rural; no asumir huella construida del poblado |
+| Puerto Toro | `Localidades_CPV24` | `LOCALIDAD = 'PUERTO TORO'` | `OBJECTID 7610`; `ID_LOCALIDAD 122012025` | localidad rural | contexto territorial censal; no punto canónico del asentamiento |
+
+Los valores demográficos contenidos en las capas no se promueven en este bloque. Su uso futuro requerirá definir exactamente el universo estadístico y evitar sumar o comparar unidades urbanas y rurales sólo porque comparten un topónimo.
+
+### Comparación con Censo 2017
+
+| Tema | Capa 2017 republicada | Descarga INE 2024 | Decisión |
+|---|---|---|---|
+| Autoridad y cadena de procedencia | datos INE nominados por Esri Chile | paquete regional directo del Censo 2024/INE | priorizar 2024 |
+| Puerto Williams | ciudad, polígono EPSG:3857 | límite urbano + localidad rural homónima, EPSG:4674 | usar límite urbano 2024 sólo como geometría censal fechada |
+| Puerto Toro | caserío en polígono muy extenso | entidad y localidad rural, con IDs oficiales 2024 | 2024 mejora actualidad e identidad, pero no equivale a huella física precisa |
+| Licencia | CC BY-SA 4.0 declarada en el ítem Esri | términos abiertos generales del INE: CC BY-SA 4.0 | reutilización potencial con atribución, enlace, indicación de cambios y ShareAlike |
+| Uso canónico inmediato | bloqueado | todavía requiere perfil de derivación y atribución | mantener bloqueado hasta aprobar transformación mínima |
+
+### Decisión actualizada
+
+**FUENTE DIRECTA 2024 ACEPTADA PARA LA AUDITORÍA — DERIVADOS CANÓNICOS AÚN BLOQUEADOS.**
+
+La descarga oficial reemplaza al servicio Esri/Censo 2017 como fuente preferente para geometría censal de Puerto Williams y Puerto Toro. Antes de incorporar un derivado al repositorio se requiere una propuesta separada que defina:
+
+1. qué unidad se necesita —límite urbano, localidad rural, entidad rural o punto representativo—;
+2. si se conservará la geometría completa o se derivará un centroide/punto, con método reproducible;
+3. atribución INE, enlace a licencia CC BY-SA 4.0 e indicación explícita de transformaciones;
+4. conservación de `EPSG:4674`, IDs oficiales, versión Censo 2024 y hashes de procedencia;
+5. separación entre geometría censal y afirmaciones sobre acceso, infraestructura o conectividad.
+
+La mejora de actualidad no elimina la obligación de explicar qué representa cada geometría. El mapa debe conducir al dataset del INE y a su definición estadística, no reemplazarlos.
