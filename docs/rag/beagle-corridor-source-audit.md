@@ -10,7 +10,7 @@
 - **Efecto en runtime:** ninguno
 - **Cambios canónicos autorizados:** ninguno
 
-Este documento abre una auditoría documental y geoespacial del corredor formado por Puerto Williams, Puerto Toro, isla Navarino y el canal Beagle. No crea entidades, claims, relaciones, chunks, embeddings ni geometrías. Tampoco habilita nuevas respuestas en Travel Agent.
+Este documento abre una auditoría documental y geoespacial del corredor formado por Puerto Williams, Puerto Toro, isla Navarino y el canal Beagle. No crea entidades, claims, relaciones, chunks, embeddings ni geometrías canónicas. El perfil de propuesta asociado conserva cuatro puntos DOP como evidencia de investigación, con promoción y reutilización pendientes. Tampoco habilita nuevas respuestas en Travel Agent.
 
 ## Principio rector
 
@@ -281,7 +281,7 @@ Se localizó autoridad primaria suficiente para reemplazar o acotar varios datos
 
 **INVENTARIO ABIERTO — NO PROMOVER.**
 
-La base existente permite iniciar la auditoría, pero todavía no demuestra cobertura suficiente y uniforme para presentar el corredor Beagle como paquete multimodal y geoespacial integrado. No se autorizan cambios canónicos, embeddings, nuevas geometrías, rutas live ni modificaciones del Travel Agent desde esta rama.
+La base existente permite iniciar la auditoría, pero todavía no demuestra cobertura suficiente y uniforme para presentar el corredor Beagle como paquete multimodal y geoespacial integrado. No se autorizan cambios canónicos, embeddings, geometrías de producción, rutas live ni modificaciones del Travel Agent desde esta rama. Los puntos candidatos del perfil son evidencia de investigación.
 
 
 ## Verificación geoespacial — 2026-10-18
@@ -427,7 +427,7 @@ La capa publica `OPERATIVA = Si` para estos registros. Ese atributo se conserva 
 
 ### Decisión
 
-**ACEPTAR COMO GEOMETRÍA DE INFRAESTRUCTURA; PROHIBIR SUSTITUCIÓN DE ENTIDAD.**
+**ACEPTAR COMO CANDIDATO DE INVESTIGACIÓN DE INFRAESTRUCTURA; REUTILIZACIÓN PENDIENTE.**
 
 El punto del muelle de Puerto Toro mejora la inmersión cartográfica porque permite mostrar una obra oficial relacionada con el asentamiento. Sin embargo, no resuelve la geometría de `puerto-toro` como lugar. En el Atlas futuro deberán existir, si la evidencia lo permite, dos objetos diferenciados:
 
@@ -462,3 +462,14 @@ No se localizó en este bloque un punto primario reutilizable del asentamiento. 
 3. Una leyenda de polígono INE debe incluir unidad censal y año 2024.
 4. La ausencia de punto debe conservarse explícita, sin coordenadas inventadas.
 5. La categoría o etiqueta oficial de un registro no debe reemplazar la validación de productor, entidad, ubicación y alcance.
+
+
+## Correcciones de revisión — 2026-10-18
+
+- Se incorporó la URL exacta del ZIP R12: https://storage.googleapis.com/bktdescargascenso2024/Cartografia/GPKG/Cartografia_censo2024_R12.zip .
+- Cadena de descubrimiento: https://censo2024.ine.gob.cl/resultados/ → aplicación embebida https://brave-grass-0c5df3c0f.3.azurestaticapps.net/ → catálogo público /datos.json → descarga regional. Los hashes ya registrados identifican la copia aportada e inspeccionada; no se ha repetido la descarga remota para comparar bytes.
+- La fecha 2026-10-16 corresponde al registro de disponibilidad de la copia aportada, no a una descarga del productor realizada por esta auditoría. La inspección se realizó el 2026-10-18.
+- Los cuatro puntos DOP son candidatos de investigación. Su licencia está marcada como no verificada; su reutilización sigue pendiente. Atribuir al productor no sustituye verificar sus condiciones de uso.
+- Se documentó que la consulta DOP solicitó salida EPSG:4326 desde EPSG:5360. No se registró la transformación de datum elegida por el servidor; deberá resolverse antes de promover coordenadas de precisión.
+- Se definió el rol `infrastructure_point`. El punto representativo para etiquetas y exploración del mapa no se considera destino de rutas ni acceso físico validado.
+- Estas correcciones no ejecutan los cinco casos de evaluación funcional propuestos: todavía no existe una implementación de interfaz bajo prueba en este PR.
