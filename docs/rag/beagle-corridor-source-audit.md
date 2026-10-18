@@ -216,6 +216,67 @@ Las respuestas deben explicar y conducir a fuentes, no sustituirlas:
 5. Construir la matriz claim–source sin editar paquetes canónicos.
 6. Someter el resultado a revisión antes de abrir una rama de implementación.
 
+
+## Verificación documental — 2026-10-18
+
+### Resultado de los cuatro candidatos
+
+| Candidato | Verificación | Clasificación | Decisión |
+|---|---|---|---|
+| Gob.cl — inicio de segunda etapa | La URL aportada devolvió 403 durante esta revisión, pero el mismo hecho tiene respaldo primario accesible en MOP Magallanes: `https://magallanes.mop.gob.cl/presidente-gabriel-boric-encabeza-inicio-de-obras-de-la-ii-etapa-de-la-construccion-de-infraestructura-portuaria-multiproposito/` | `dated_historical` para el inicio de obras; identidad/alcance del proyecto potencialmente estable | Conservar el enlace Gob.cl como pista; usar MOP como fuente primaria de trabajo |
+| Radio Magallanes — 55 % y marzo de 2027 | La página no fue accesible durante esta revisión. Una publicación oficial MOP del 2026-09-22 informa posteriormente 64 % de avance, término proyectado para febrero de 2027 e inicio de operaciones proyectado durante 2027: `https://magallanes.mop.gob.cl/segunda-etapa-del-muelle-multiproposito-de-puerto-williams-supera-el-60-de-avance-y-proyecta-iniciar-operaciones-en-2027/` | porcentaje: `dated_historical`; término/operación: `planned` | No promover 55 % ni marzo de 2027 como estado actual. Registrar cada corte temporal por separado y priorizar MOP |
+| Radio Polar — The Cormorant | Publicación fechada 2026-09-17. Atribuye a un representante del hotel la llegada de primeros huéspedes el 2026-10-19 y describe 150 habitaciones. El sitio oficial `https://www.thecormorantat55south.com/` y el registro SERNATUR `https://serviciosturisticos.sernatur.cl/850-the-cormorant-at-55-south-lodge` respaldan identidad y localización, pero la fecha futura no prueba apertura cumplida | identidad/localización: candidata `stable`; apertura: `planned` y luego `dynamic` hasta verificación posterior | No afirmar “hotel abierto” antes de evidencia posterior al 2026-10-19. Separar infraestructura privada de servicio disponible |
+| Kusanovic — MOP y avance hacia Puerto Toro | Nota fechada 2026-08-22. Informa una mesa de trabajo y dice que el senador “planteó la necesidad” de avanzar posteriormente desde Yendegaia hacia Puerto Toro. No constituye aprobación, financiamiento ni ejecución de esa extensión | reunión: `dated_historical`; extensión Yendegaia–Puerto Toro: `interpretation/proposal` | No modelar una ruta aprobada Yendegaia–Puerto Toro desde esta nota |
+
+### Fuentes primarias localizadas durante la verificación
+
+| Fuente | Alcance válido | Límite |
+|---|---|---|
+| `https://www.mop.gob.cl/project/construccion-obras-maritimas-infraestructura-portuaria-multiproposito-en-puerto-williams/` | Identidad y ficha general del proyecto portuario | La ficha general no sustituye el último corte de avance |
+| `https://magallanes.mop.gob.cl/segunda-etapa-del-muelle-multiproposito-de-puerto-williams-supera-el-60-de-avance-y-proyecta-iniciar-operaciones-en-2027/` | Corte oficial publicado el 2026-09-22: 64 % de avance y término proyectado para febrero de 2027 | Avance mutable; operación futura no cumplida por el solo anuncio |
+| `https://proyectos.mop.gob.cl/proyecto.asp?cod_p=41639` | Registro presupuestario/proyecto MOP 2026 para Puerto Williams | No prueba puesta en servicio |
+| `https://vialidad.mop.gob.cl/2025/12/09/presentan-proyecto-definitivo-de-camino-de-penetracion-caleta-eugenia-puerto-toro-a-comunidad-de-la-provincia-antartica-chilena/` | Proyecto definitivo Caleta Eugenia–Puerto Toro presentado a la comunidad | No equivale a ruta terminada ni a extensión terrestre directa desde Yendegaia |
+| `https://vialidad.mop.gob.cl/2025/05/05/avanza-la-construccion-de-la-ruta-mas-austral-del-mundo/` | Estado publicado del camino Vicuña–Yendegaia y proyección del corredor bimodal | Proyección 2031; no afirmar finalización ni continuidad vial a Puerto Toro |
+| `https://magallanes.mop.gob.cl/grandes-noticias-para-la-provincia-antartica-mop-inicio-obras-de-construccion-de-infraestructuras-portuarias-en-puerto-toro-y-en-puerto-navarino/` | Inicio documentado de infraestructura portuaria en Puerto Toro y Puerto Navarino | Debe contrastarse con fuentes posteriores para estado final y operación |
+| `https://magallanes.mop.gob.cl/mop-realiza-entrega-de-terreno-para-iniciar-obras-de-infraestructura-portuaria-en-puerto-toro/` | Alcance original publicado de las obras de Puerto Toro | No reutilizar proyecciones antiguas como estado actual |
+| `https://www.thecormorantat55south.com/` | Fuente del propio establecimiento para identidad y propuesta comercial | Fuente interesada; no reemplaza registro público ni prueba por sí sola una apertura efectiva |
+| `https://serviciosturisticos.sernatur.cl/850-the-cormorant-at-55-south-lodge` | Registro SERNATUR que vincula el establecimiento con Puerto Williams | La inscripción no prueba disponibilidad de habitaciones en una fecha concreta |
+
+### Primera matriz afirmación–fuente
+
+| Afirmación candidata | Fuente preferente | Fecha/temporalidad | Estado |
+|---|---|---|---|
+| Existe un proyecto de infraestructura portuaria multipropósito en Puerto Williams | Ficha de proyecto MOP | estable como identidad del proyecto | respaldada para auditoría; ya existe paquete canónico |
+| La segunda etapa registraba 64 % de avance | MOP Magallanes | corte del 2026-09-22 | respaldada sólo como dato histórico fechado |
+| El término estaba proyectado para febrero de 2027 | MOP Magallanes | proyección publicada el 2026-09-22 | respaldada como `planned`; no como cumplimiento |
+| El muelle operará en 2027 | MOP Magallanes | proyección | no afirmar operación efectiva; requiere verificación futura |
+| The Cormorant está localizado en Puerto Williams | SERNATUR + sitio oficial | verificado como identidad/localización | candidata estable con atribución |
+| The Cormorant abrirá/abrió el 2026-10-19 | Radio Polar/representante del hotel | fecha futura al momento de esta auditoría | bloqueada hasta evidencia posterior a la fecha |
+| El camino Vicuña–Yendegaia está en construcción y forma parte de un esquema bimodal hacia Puerto Williams | Vialidad/MOP | estado y proyección publicados | usar sólo con fecha y alcance de la fuente |
+| Existe una ruta terrestre aprobada Yendegaia–Puerto Toro | ninguna fuente localizada | — | no respaldada; rechazar |
+| Existe un proyecto definitivo Caleta Eugenia–Puerto Toro | Dirección de Vialidad | presentado en 2025 | respaldado como proyecto; no como obra terminada |
+| Puerto Toro posee infraestructura portuaria documentada | MOP/DOP | obra documentada; operación requiere corte posterior | identidad/alcance potencialmente estable; operación dinámica |
+
+### Discrepancias resueltas y abiertas
+
+- **55 % frente a 64 %:** no es una contradicción canónica si son cortes de fechas distintas. Para el estado más reciente de la auditoría se prioriza el 64 % oficial del 2026-09-22; ambos valores siguen siendo históricos y no deben incrustarse como verdad atemporal.
+- **Marzo de 2027 frente a febrero de 2027:** las fechas se refieren aparentemente a hitos distintos —operaciones y término de obras— y proceden de publicaciones diferentes. No se deben fusionar en una sola fecha. La operación continúa como proyección.
+- **Yendegaia hacia Puerto Toro:** la aspiración parlamentaria no debe mezclarse con el camino Vicuña–Yendegaia ni con el proyecto separado Caleta Eugenia–Puerto Toro.
+- **Hotel próximo a abrir frente a abierto:** identidad y registro turístico no prueban inicio efectivo de atención a huéspedes. Se requiere evidencia posterior al 2026-10-19.
+
+### Decisión de este bloque
+
+**VERIFICACIÓN PARCIAL — SIN PROMOCIÓN CANÓNICA.**
+
+Se localizó autoridad primaria suficiente para reemplazar o acotar varios datos secundarios, pero siguen pendientes:
+
+1. comprobar apertura efectiva de The Cormorant después del 2026-10-19;
+2. localizar un corte oficial posterior sobre operación del muelle cuando corresponda;
+3. verificar el estado contractual/ejecutivo del camino Caleta Eugenia–Puerto Toro;
+4. ampliar la evidencia hidrográfica y geoespacial de SHOA/IDE Chile;
+5. revisar la operación actual de conectividad sólo mediante fuentes live competentes.
+
+
 ## Decisión actual
 
 **INVENTARIO ABIERTO — NO PROMOVER.**
