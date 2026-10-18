@@ -1,0 +1,24 @@
+{
+  "status": "experimental_context_only",
+  "atlas_ready": false,
+  "producer": "Instituto Nacional de Estadísticas de Chile",
+  "dataset": "Cartografía Censo 2024 — Región 12",
+  "source_url": "https://storage.googleapis.com/bktdescargascenso2024/Cartografia/GPKG/Cartografia_censo2024_R12.zip",
+  "source_sha256": "a813dda3a813c7016042c0fc018ce13291d53823ae2e2467102d54e4db32fe52",
+  "layer": "Limite_Urbano_CPV24",
+  "ID_ENTIDAD": "1220102600101",
+  "source_crs": "EPSG:4674 — SIRGAS 2000",
+  "output": "SVG with local equirectangular display projection",
+  "transformation": "ISO WKB MultiSurface/CurvePolygon/CompoundCurve decoded; circular arcs sampled at maximum angular step 1 degree in source CRS. Display: x=(lon-midlon)*cos(midlat); y=midlat-lat; uniformly fitted to SVG. No datum conversion or representative point.",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "ine_terms": "https://www.ine.gob.cl/terminos-de-uso-y-licencia-de-datos-abiertos",
+  "coordinate_count": 1104,
+  "polygon_count": 1,
+  "bounds_source_crs": [
+    -67.61971614099991,
+    -54.93856141799995,
+    -67.59272475499995,
+    -54.93251488099992
+  ]
+}
