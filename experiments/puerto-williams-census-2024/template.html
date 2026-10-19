@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Puerto Williams · Censo 2024 | Austral Beacon Lab</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#0b1921;color:#edf3ef;font:16px/1.6 system-ui,sans-serif}main{max-width:1160px;margin:auto;padding:32px 24px}header{border-bottom:1px solid #34444c;padding-bottom:24px}.eyebrow{color:#b0c8bb;letter-spacing:.14em;font-size:12px;text-transform:uppercase}h1{font-size:clamp(30px,5vw,52px);line-height:1.1;margin:16px 0}p{max-width:780px;color:#c2d0d5}.badge{display:inline-block;background:#233f3b;color:#c8e8d6;padding:4px 12px;border-radius:20px;font-size:13px}.map{margin:28px 0;border:1px solid #3d555c;border-radius:16px;overflow:hidden;background:#10262e}.toolbar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:14px 18px;border-bottom:1px solid #3d555c}button{background:#dae7d8;color:#122321;border:0;border-radius:6px;padding:8px 14px;font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #f7c978;outline-offset:4px}svg{display:block;width:100%;height:auto;touch-action:pan-y}path{fill:#98bfa6;fill-opacity:.38;stroke:#bee3bc;stroke-width:2;vector-effect:non-scaling-stroke;fill-rule:evenodd}.legend{padding:12px 18px;color:#d6e7df;font-size:14px}.swatch{display:inline-block;background:#6c927d;border:1px solid #bee3bc;width:18px;height:12px;margin-right:8px}article{display:grid;grid-template-columns:1fr 1fr;gap:32px}h2{font-size:21px}a{color:#c9e8ac}footer{border-top:1px solid #34444c;margin-top:30px;padding-top:20px;font-size:14px;color:#b8c8c9}@media(max-width:650px){main{padding:24px 16px}article{grid-template-columns:1fr;gap:0}}
+</style>
+<main>
+<header><div class="eyebrow">Austral Beacon · Laboratorio cartográfico</div><h1>Puerto Williams</h1><span class="badge">Límite urbano censal · 2024</span><p>Explora la unidad urbana que utiliza el INE en la cartografía del Censo 2024. Este primer experimento permite leer el polígono junto a su origen y significado.</p></header>
+<section class="map" aria-label="Vista del polígono censal">
+<div class="toolbar"><button id="in" aria-label="Acercar polígono">Acercar +</button><button id="out" aria-label="Alejar polígono">Alejar −</button><button id="reset">Restablecer</button><label><input id="show" type="checkbox" checked> Mostrar límite censal</label><span id="zoom" aria-live="polite">Vista 100 %</span></div>
+<svg id="map" viewBox="0 0 1000 560" role="img" aria-labelledby="maptitle mapdesc"><title id="maptitle">Polígono del límite urbano censal de Puerto Williams, INE 2024</title><desc id="mapdesc">Contorno de la entidad urbana, representado sin mapa base. El norte está arriba. Las curvas de origen se aproximan mediante segmentos para pantalla.</desc><g id="shape"><!-- POLYGONS --></g><text x="40" y="50" fill="#c5d8d7" font-size="18">N ↑</text><text x="40" y="530" fill="#a4bcc1" font-size="15">Vista sin mapa base · esquema geográfico local</text></svg>
+<div class="legend"><span class="swatch"></span>Límite urbano censal de Puerto Williams · INE, Censo 2024</div></section>
+<article><section><h2>¿Qué representa?</h2><p>Una delimitación estadística urbana del Censo 2024. Permite explorar cómo el INE organiza esta parte del territorio para sus resultados censales.</p><p>El contorno no representa el límite de la comuna, una propiedad ni una zona de servicios. Tampoco indica acceso, rutas o condiciones actuales de viaje.</p></section><section><h2>Volver a la fuente</h2><p><a href="https://censo2024.ine.gob.cl/resultados/">Resultados y cartografía del Censo 2024 →</a></p><p><a href="https://storage.googleapis.com/bktdescargascenso2024/Cartografia/GPKG/Cartografia_censo2024_R12.zip">Descargar cartografía INE de la Región de Magallanes (ZIP, ~248 MiB) →</a></p><p>Capa: <code>Limite_Urbano_CPV24</code><br>Entidad: <code>1220102600101</code><br>Referencia original: SIRGAS 2000, EPSG:4674.</p></section></article>
+<footer>Fuente: Instituto Nacional de Estadísticas de Chile, Cartografía Censo 2024, Región de Magallanes y de la Antártica Chilena. Visualización de Austral Beacon: selección de una entidad, aproximación de curvas mediante segmentos y proyección local para pantalla. <a href="https://creativecommons.org/licenses/by-sa/4.0/">Datos y visualización derivada: CC BY-SA 4.0</a>. <a href="https://www.ine.gob.cl/terminos-de-uso-y-licencia-de-datos-abiertos">Condiciones INE</a>. Experimento para revisión.</footer>
+</main>
+<script>
+let factor=1;const shape=document.getElementById('shape');
+function render(){shape.setAttribute('transform',`translate(500 280) scale(${factor}) translate(-500 -280)`);document.getElementById('zoom').textContent=`Vista ${Math.round(factor*100)} %`;}
+document.getElementById('in').onclick=()=>{factor=Math.min(4,factor*1.25);render();};
+document.getElementById('out').onclick=()=>{factor=Math.max(.5,factor/1.25);render();};
+document.getElementById('reset').onclick=()=>{factor=1;render();};
+document.getElementById('show').onchange=e=>{shape.style.display=e.target.checked?'':'none';};
+</script>
+</html>
