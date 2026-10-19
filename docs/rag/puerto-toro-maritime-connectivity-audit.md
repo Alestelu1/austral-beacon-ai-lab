@@ -1,7 +1,7 @@
 # Investigación — conectividad Puerto Williams–Puerto Toro
 
 Apertura: 2026-10-19 (America/Santiago).
-Estado: investigación inicial, sin promoción canónica.
+Estado: investigación documental con ficha comparativa v0.1, sin promoción canónica.
 Pregunta: ¿qué servicios se documentan, a quién atienden y qué debe verificarse antes de utilizarlos?
 
 ## Estado consolidado de la investigación — 2026-10-19
@@ -16,6 +16,47 @@ Esta tabla resume la evidencia más reciente del expediente; las matrices inicia
 | Operación posterior a contingencias | Viajes en rodaje en abril y calendario anunciado en agosto 2026 | No acredita cada viaje ejecutado |
 | Disponibilidad octubre 2026 | No confirmada | No equivale a suspensión |
 | Oferta comercial Ecolodge | Anunciada para 2026–2027 | No confundir con contrato subsidiado |
+
+## Ficha comparativa de consulta — versión 0.1
+
+Corte documental: 2026-10-19, America/Santiago. Estado: candidata para revisión; no es calendario ni guía de reserva. Los identificadores S remiten a enlaces originales y límites de lectura de este mismo expediente.
+
+| Aspecto | Lancha subsidiada CAM0114 | Ferry/corredor CAM0064 | Excursión comercial |
+|---|---|---|---|
+| Finalidad documentada | Conectividad de zonas aisladas, prioridad comunitaria (S1, S8) | Transporte subsidiado de pasajeros y carga (S14) | Experiencia turística anunciada (S7) |
+| Corredor | Puerto Williams con Kanasaka, Puerto Toro y Bahía Douglas (S10) | Ruta 1 Punta Arenas–Puerto Williams; Ruta 2 Puerto Williams–Puerto Toro (S14) | Navegación Puerto Toro; itinerario detallado pendiente (S7) |
+| Empresa en evidencia fechada | Errante en anuncio 2024 y ejecución 2025 (S1, S11) | Transbordadora Austral Broom en contrato 2023 (S14) | Errante Ecolodge en su propia oferta (S7); identidad legal pendiente |
+| Frecuencia histórica | Seis viajes mensuales a Puerto Toro anunciados en 2024 (S1) | Una conexión mensual a Puerto Toro en contrato 2023 (S14) | Sin frecuencia verificada |
+| Acceso de visitantes | Condicionado a prioridad de residentes/carga en anuncio agosto 2026 (S8) | Condiciones específicas de elegibilidad y cupos no auditadas | Oferta comercial publicada; salida/cupo no confirmados |
+| Precio | Gratuidad anunciada en 2024; reconfirmación actual pendiente (S1) | Tarifa vigente no verificada | Tarifa no verificada |
+| Última evidencia operacional examinada | Calendario anunciado de agosto 2026, sin comprobar ejecución de cada salida (S8) | No hay calendario operacional actual verificado | Oferta 2026–2027, sin comprobar ejecución (S7) |
+| Qué falta para orientar un viaje | Calendario del día, inscripción, cupo, embarque y retorno confirmados | Programación específica, tarifa, cupo y condiciones de embarque/retorno | Fecha, itinerario, tarifa, cupo y condiciones del operador |
+| Vacío documental central | Contrato Errante 2024 | Inicio efectivo y modificaciones posteriores | Condiciones comerciales completas |
+
+### Qué puede explicar ya Austral Beacon
+
+- Existen modalidades documentadas con finalidades y condiciones distintas. El nombre Puerto Toro no identifica por sí solo una oferta.
+- La prioridad comunitaria de la lancha exige contextualizar cualquier uso de visitantes.
+- Los seis viajes anunciados para lancha y el viaje mensual previsto para ferry pertenecen a evidencias y años diferentes: no sumarlos como frecuencia actual.
+- Un muelle habilitado, un contrato aprobado, una programación anunciada y un viaje ejecutado son hechos diferentes.
+- La misma denominación Errante no demuestra que la excursión y el servicio subsidiado compartan entidad legal, embarcación o régimen tarifario.
+
+### Casos de revisión para el futuro agente
+
+| Consulta | Respuesta documental permitida | Confirmación faltante |
+|---|---|---|
+| ¿Puedo ir mañana a Puerto Toro? | Explicar alternativas y enlazar la fuente competente; indicar que no se verificó la salida | Fecha, cupo y retorno |
+| ¿La lancha es gratuita? | Fechar el anuncio de gratuidad de 2024 | Condición vigente del viaje solicitado |
+| ¿TABSA tiene seis salidas mensuales? | Señalar que seis corresponde al anuncio de lancha CAM0114, no al contrato CAM0064 | Calendario vigente TABSA |
+| ¿Errante Ecolodge ofrece el transporte subsidiado? | No afirmar identidad legal entre ofertas sólo por el nombre | Documento que vincule entidades/servicios |
+| ¿El servicio sigue suspendido desde marzo? | Explicar que existen viajes en rodaje en abril y programación anunciada en agosto | Estado operacional de hoy |
+
+### Evidencia necesaria para la siguiente versión
+
+1. Obtener contrato Errante mediante el alcance documental ya preparado.
+2. Verificar para un mes concreto el calendario y los canales de coordinación de ambas conexiones.
+3. Auditar acceso de pasajeros, carga y retorno en el contrato CAM0064 y sus modificaciones.
+4. Recién entonces proponer datos estructurados o respuestas de producto; hasta aquí se conserva como investigación.
 
 ## Línea base
 
