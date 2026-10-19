@@ -50,7 +50,63 @@ El índice de búsqueda refiere un contrato CAM0064 con Transbordadora Austral B
 
 Uso: pista pendiente; no se extrajeron condiciones contractuales ni se acepta como documento leído. Localizar copia primaria accesible antes de atribuir alcance o duración.
 
-## Matriz de decisiones inicial
+## Ampliación de evidencia — 2026-10-19
+
+### S6 — Delegación provincial, 2026-04-28 (original en Facebook: 2026-04-24)
+
+https://dppantartica.dpp.gob.cl/2026/04/28/delegado-moncada-detalla-avances-ante-contingencias-por-educacion-y-conectividad-maritima-en-puerto-toro/
+
+La autoridad informa que Errante Primero navegaba durante abril tras cambiar su motor, todavía en rodaje y antes del restablecimiento oficial de la regularidad. Distingue el hundimiento de Loica del desperfecto de la embarcación de respaldo.
+
+Uso: evidencia de viajes durante abril y recuperación parcial; no acredita normalización permanente ni disponibilidad en octubre.
+
+### S7 — Errante Ecolodge, sitio comercial sin fecha editorial
+
+https://www.errantecolodge.com/
+
+La portada consultada presenta una excursión denominada Navegación Puerto Toro y enlaces de reserva para temporada 2026–2027.
+
+Uso: oferta comercial publicada, distinta del servicio subsidiado. No se verificaron fechas disponibles, tarifas ni ejecución de viajes. La semejanza del nombre no acredita identidad legal con Transportes Errante SpA ni uso de la misma embarcación.
+
+### S8 — Delegación provincial, 2026-08-10 (original en Facebook: 2026-08-04)
+
+https://dppantartica.dpp.gob.cl/2026/08/10/afiches-calendario-de-zarpes-puerto-williams-puerto-toro-para-el-mes-de-agosto-de-2026/
+
+Publica programación de agosto para transporte subsidiado. Mantiene prioridad de residentes y carga, acceso de otros pasajeros condicionado y posibilidad de cambios por meteorología o necesidades comunitarias.
+
+Uso: evidencia posterior a abril de programación anunciada; no prueba que cada viaje ocurrió. Los afiches no fueron transcritos. No trasladar ese calendario a octubre.
+
+### S9 — Delegación provincial, 2026-03-23 (original en Facebook: 2026-03-16)
+
+https://dppantartica.dpp.gob.cl/2026/03/23/afiches-calendario-de-zarpes-puerto-williams-puerto-toro-durante-marzo-y-abril-de-2026/
+
+Anuncia restablecimiento y calendario marzo–abril. Sus términos deben conservarse junto a las contingencias posteriores de S3 y el rodaje descrito en S6. No asumir una recuperación única y continua, ni atribuir el calendario a una embarcación que el texto no identifica.
+
+## Lectura temporal actualizada
+
+| Evidencia | Qué permite afirmar | Qué queda pendiente |
+|---|---|---|
+| S9, marzo | Se anunció restablecimiento y programación | Ejecución y cambios posteriores |
+| S3, fin de marzo | Se informó una contingencia | Alcance temporal de cada falla |
+| S6, abril | Hubo viajes en rodaje de Errante Primero | Normalización oficial sostenida |
+| S8, agosto | Se publicó una programación posterior | Viajes efectivamente ejecutados y calendario octubre |
+| S7, consulta actual | Existe oferta comercial anunciada para 2026–2027 | Disponibilidad de una salida concreta |
+
+Esta ampliación reemplaza la impresión inicial de que sólo existía evidencia hasta marzo. El estado para una fecha concreta de octubre sigue **NO CONFIRMADO**: no equivale a suspensión.
+
+## Modalidades que deben mantenerse separadas
+
+1. Lancha subsidiada para conectividad de zonas aisladas, con prioridad comunitaria.
+2. Ferry/corredor TABSA: documentación contractual y calendario específico todavía pendientes.
+3. Excursión comercial anunciada por Errante Ecolodge: condiciones propias por verificar.
+
+El apoyo de Armada durante contingencias se registra como respuesta institucional, sin convertirlo en una cuarta oferta reservable.
+
+## Próxima verificación prioritaria
+
+Buscar calendario octubre/noviembre y condiciones de retorno; localizar documentación MTT/DTPR accesible de cada contrato. Si no aparecen, conservar explícitamente el vacío. No publicar frecuencias históricas ni precios de terceros como instrucciones de viaje actuales.
+
+## Matriz de decisiones inicial (conservar como registro de apertura)
 
 | Pregunta | Evidencia | Decisión |
 |---|---|---|
@@ -63,13 +119,13 @@ Uso: pista pendiente; no se extrajeron condiciones contractuales ni se acepta co
 | ¿La frecuencia de lancha equivale a frecuencia de ferry TABSA? | No | Mantener registros separados |
 | ¿El apoyo de Armada constituye servicio turístico reservable? | S3 no lo acredita | No inferir |
 
-## Estado operacional al momento de apertura
+## Estado operacional al momento de apertura (actualizado por S6–S9)
 
 **DESCONOCIDO.** No presentar la conexión como abierta o cerrada hoy. La búsqueda incompleta de novedades no prueba ausencia de servicio. El contrato, el anuncio de recuperación y la existencia del muelle son evidencias con alcances diferentes.
 
 ## Siguiente bloque, en orden
 
-1. Buscar un comunicado primario posterior a marzo de 2026 que confirme reanudación, reemplazo de embarcación o nuevo operador.
+1. Completado parcialmente con S6 y S8: recuperación en rodaje y programación de agosto. Pendiente confirmar calendario y condiciones de octubre/noviembre.
 2. Localizar en MTT/DTPR contratos y modificaciones de lancha y ferry; conservar IDs separados.
 3. Confirmar en el sitio renderizado de TABSA los canales y la modalidad de Puerto Toro.
 4. Consultar avisos de la autoridad marítima para condiciones de zarpe, sin interpretarlos como calendario comercial.
