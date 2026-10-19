@@ -283,3 +283,39 @@ El lector devolvió HTTP 403 al consultar esa ruta. La página antigua de Gobier
 
 Criterio de avance: cerrar esta etapa como ficha documental con vacíos explícitos. No bloquear la organización del conocimiento por falta de calendario actual; mantener cualquier recomendación de viaje pendiente de confirmación. Una eventual solicitud de información requerirá una acción separada: aquí sólo queda definido su alcance, sin envío.
 
+
+## Búsqueda específica de Errante y control de identidad — 2026-10-19
+
+Se consultaron combinaciones de CAM0114, Transportes Errante SpA, contrato, acto aprobatorio, decreto, resolución y 2024 en índices públicos. No se localizó el contrato de Errante. La consulta pública del filtro «licitaciones cerradas» de la región 12 devolvió un listado vacío en este intento; no se considera inventario completo ni prueba de ausencia.
+
+### S16 — MTT, antecedente de una lancha denominada Loica (2020)
+
+https://www.subtrans.gob.cl/magallanes-nueva-lancha-loica-se-traslada-a-william-para-prestar-servicios-de-conectividad-en-isla-navarino/
+
+Publicación de 14 de agosto de 2020. Describe una Loica destinada a los mismos tramos y menciona al operador Canal Beagle Ltda. Es un antecedente anterior a Nikanchile y Errante.
+
+Regla de identidad: no equiparar contratos, propietarios, matrícula o continuidad operacional sólo por compartir nombre de nave o corredor. La identidad de la Loica descrita en 2020 y la anunciada en 2024 requeriría matrícula u otro identificador estable. La fuente 2020 no sustituye el contrato 2024 ni sus características.
+
+## Solicitud documental preparada — SIN ENVIAR
+
+Destino institucional propuesto: Subsecretaría de Transportes (DTPR), con eventual derivación a Seremi de Magallanes según custodia documental. Alcance delimitado a CAM0114; CAM0064 se mantiene en expediente separado.
+
+Texto para una futura solicitud:
+
+Solicito copia electrónica de los siguientes documentos del servicio marítimo subsidiado ID CAM0114, que conecta Puerto Williams con Kanasaka, Puerto Toro y Bahía Douglas:
+
+1. Acto administrativo aprobatorio, contrato y anexos suscritos con Transportes Errante SpA, cuyo inicio fue anunciado por la Delegación Presidencial Provincial de la Antártica Chilena el 4 de octubre de 2024.
+2. Comunicación de inicio efectivo del servicio, con fecha y periodo contractual aplicable.
+3. Modificaciones, prórrogas, autorizaciones de sustitución de embarcación y actos relativos a suspensión o reanudación, desde el inicio del contrato hasta el 19 de octubre de 2026.
+4. Documento vigente que establezca frecuencias, gratuidad o tarifas, prioridad de residentes, condiciones para otros pasajeros y mecanismo de coordinación de viajes y retorno.
+
+Referencia para individualizar el expediente:
+https://dppantartica.dpp.gob.cl/2024/10/04/entra-en-operacion-el-nuevo-contrato-de-lancha-que-da-conectividad-a-las-zonas-mas-apartadas-de-la-provincia-antartica-chilena/
+
+Si alguno de estos documentos se encuentra publicado, solicito su enlace directo y la identificación del acto, con número y fecha. Si no obra en poder del organismo, solicito indicar esa circunstancia y efectuar la derivación que corresponda.
+
+Estado: borrador documental; no se ingresó solicitud, no existe folio y no se contactó a funcionarios. La autorización para investigar no se interpreta como autorización para enviar comunicaciones.
+
+### Decisión de continuidad
+
+La localización indexada no ha resuelto este vacío. El siguiente paso para obtener el contrato es consultar el expediente mediante el canal institucional, usando el texto anterior. Mientras tanto, la ficha comparativa puede avanzar con estado «contrato Errante pendiente», manteniendo separados anuncio oficial, registro presupuestario y contrato leído.
