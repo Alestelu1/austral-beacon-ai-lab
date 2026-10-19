@@ -31,13 +31,31 @@ Es una aproximación para explorar el documento cartográfico. No certifica prec
 - Un polígono de salida con 1.104 coordenadas.
 - Documento HTML con atribución, fecha censal, fuente y licencia.
 
-La prueba con Playwright no llegó a ejecutarse: el entorno no tenía Chromium y su descarga falló. Quedan pendientes la inspección visual en escritorio/móvil y la prueba de acercar, alejar, restablecer y ocultar la capa. No se consideran aprobadas por los despliegues Vercel.
+### Revisión manual — 2026-10-18 (America/Santiago)
+
+Pruebas realizadas por el usuario sobre el HTML local y revisadas en esta conversación:
+
+| Comprobación | Evidencia | Resultado |
+|---|---|---|
+| Presentación en escritorio, leyenda y atribución | Captura 19:44:59 | Satisfactorio visualmente |
+| Acercar | Captura 19:47:59, vista al 250 % | Confirmado |
+| Enlaces originales | Confirmación del usuario 19:48 | Confirmado por el usuario |
+| Ocultar y mostrar la capa | Confirmación del usuario 19:51 | Confirmado por el usuario |
+| Restablecer | Confirmación del usuario 19:52 | Confirmado por el usuario |
+| Contorno en QGIS | Capturas 21:08:18 y 21:15:19; sólo capa Limite_Urbano_CPV24, proyecto final EPSG:32719 | Coincidencia visual de los rasgos principales |
+| Proyecto QGIS guardado | Confirmación del usuario 21:22 | Guardado localmente; archivo no incorporado al repositorio |
+
+La captura final QGIS muestra proporciones y rasgos coherentes con la vista HTML. Es un contraste visual independiente con otro lector, no una medición de errores ni una certificación de la aproximación de curvas. La captura no muestra el filtro ni la tabla de atributos; la identidad exacta del registro se basa en el procedimiento seguido y la selección del generador.
+
+Quedan pendientes: botón Alejar por separado, ancho móvil y comparación numérica independiente de curvas. El recorte al aumentar el zoom es esperado; esta versión no tiene desplazamiento por arrastre.
+
+La prueba con Playwright no llegó a ejecutarse: el entorno no tenía Chromium y su descarga falló. Las pruebas manuales anteriores no se atribuyen a Playwright ni a Vercel.
 
 ## Revisión antes de integrar
 
-1. Comparar el contorno con QGIS u otro lector independiente del GeoPackage, especialmente la aproximación de curvas.
-2. Abrir `index.html` y verificar los controles, la legibilidad y el ancho móvil.
-3. Confirmar que leyenda y atribución siguen visibles y que la interpretación censal resulta clara.
+1. Revisar el contraste visual QGIS y las pruebas manuales registradas arriba.
+2. Mantener explícitos los pendientes de móvil, Alejar y precisión numérica de curvas.
+3. Limitar cualquier integración al directorio experimental; la promoción Atlas requiere una revisión separada.
 
 Mantener este experimento fuera de los consumidores de producción hasta completar la revisión. `atlas_ready` permanece en `false`.
 
