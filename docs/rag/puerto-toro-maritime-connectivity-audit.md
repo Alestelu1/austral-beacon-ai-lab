@@ -213,3 +213,34 @@ SHA-256: a059b0603dff3c095136de35b6fe6e9fddb9fc2bd32a118ed3251139882f8421
 
 Las búsquedas por septiembre/octubre de 2026 no localizaron programación verificable posterior a agosto. Esto no prueba que no exista ni que el servicio esté suspendido. Los próximos pasos se centran en la segunda página del expediente CAM0064 y el acto de contratación de Errante; no repetir búsquedas generales sin un nuevo dato.
 
+
+## S14 — Contrato CAM0064 localizado en segunda página
+
+Fecha de consulta: 2026-10-19, America/Santiago.
+
+Ficha de origen: https://dtpr.mtt.gob.cl/ConsultaLicitaciones/WebPage/ConsultasServicios.aspx?id=3904
+
+Documento «APRUEBA CONTRATO»: https://dtpr.mtt.gob.cl/ConsultaLicitaciones/Descarga/Descarga.ashx?id=22448734
+
+Se accedió a la segunda página mediante la solicitud de paginación pública del portal. Contiene «ALCANCE ADJUDICACIÓN» (adjunto 21385124, no leído) y «APRUEBA CONTRATO» (22448734, descargado).
+
+El documento contiene el Decreto Exento 4536/2023 DTPR, de 15 de diciembre de 2023, y reproduce el contrato suscrito el 20 de octubre de 2023 con Transbordadora Austral Broom S.A.
+
+### Lectura acotada
+
+- Cláusula cuarta: duración de tres años desde el inicio del servicio comunicado por escrito por la Secretaría Regional. No calcular vencimiento desde la firma o decreto: falta esa comunicación.
+- Cláusula quinta A: Ruta 1 Punta Arenas–Puerto Williams; Ruta 2 Puerto Williams–Puerto Toro.
+- Quinta B, Ruta 2, página PDF 5: un viaje mensual para pasajeros y carga, vinculado al viaje Punta Arenas–Puerto Williams de la última semana del mes. La tabla histórica indica domingo 08:00 hacia Puerto Toro y 12:00 de regreso.
+- La nota de la tabla considera los horarios referenciales y sujetos a acuerdo previo con contraparte técnica. Se contemplan variaciones por contingencias y modificaciones autorizadas (quinta D).
+- Yendegaia tiene condiciones específicas de desvío y coordinación; no convertirlo en escala general garantizada.
+
+Verificación: extracción de texto y revisión visual de página PDF 5, incluidas notas al pie. No se auditó íntegramente el contrato ni se validaron tarifas, modificaciones posteriores, inicio efectivo, cumplimiento o disponibilidad actual. La frecuencia y horas anteriores son antecedentes contractuales de 2023, **no instrucciones para viajar en octubre de 2026**.
+
+SHA-256: 66f12eece1bed7212b70aab063409e600969977698ea1bd2321a9227f6ed83c6
+
+### Actualización de pendientes
+
+Se resuelve la localización del instrumento aprobatorio que reproduce el contrato CAM0064. Siguen pendientes sus modificaciones posteriores y comunicación de inicio. El acto de Errante CAM0114 de 2024 no se localizó en las búsquedas dirigidas; no confundir con contrato Nikanchile de S12. Calendario octubre permanece no confirmado.
+
+Próximo bloque útil: revisar modificaciones/alcances de CAM0064 y buscar el contrato de Errante mediante transparencia activa del MTT; conservar estos vacíos sin retrasar indefinidamente la ficha documental comparativa.
+
