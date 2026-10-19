@@ -55,7 +55,7 @@ Corte documental: 2026-10-19, America/Santiago. Estado: candidata para revisión
 
 1. Obtener contrato Errante mediante el alcance documental ya preparado.
 2. Verificar para un mes concreto el calendario y los canales de coordinación de ambas conexiones.
-3. Auditar acceso de pasajeros, carga y retorno en el contrato CAM0064 y sus modificaciones.
+3. Completada la lectura focalizada de pasajeros, carga y retorno de S14; pendientes manual de operación y modificaciones posteriores.
 4. Recién entonces proponer datos estructurados o respuestas de producto; hasta aquí se conserva como investigación.
 
 ## Línea base
@@ -78,7 +78,7 @@ https://dppantartica.dpp.gob.cl/2025/09/29/afiches-calendario-de-zarpes-a-puerto
 
 Calendarios correspondientes a septiembre/octubre de 2025. La publicación da prioridad a residentes y sus cargas, condiciona cupos de visitantes y advierte cambios por meteorología o necesidades locales. Caracteriza la navegación como transporte para zonas aisladas.
 
-Uso: prueba fechada del funcionamiento y sus restricciones publicadas. No reutilizar fechas de 2025 como calendario 2026. Los afiches incrustados no fueron transcritos ni usados para extraer horarios.
+Uso: prueba fechada de programación anunciada y restricciones publicadas; no acredita la ejecución de cada viaje. No reutilizar fechas de 2025 como calendario 2026. Los afiches incrustados no fueron transcritos ni usados para extraer horarios.
 
 ### S3 — Delegación provincial, 2026-03-30
 
@@ -151,7 +151,7 @@ Esta ampliación reemplaza la impresión inicial de que sólo existía evidencia
 ## Modalidades que deben mantenerse separadas
 
 1. Lancha subsidiada para conectividad de zonas aisladas, con prioridad comunitaria.
-2. Ferry/corredor TABSA: documentación contractual y calendario específico todavía pendientes.
+2. Ferry/corredor TABSA: contrato CAM0064 localizado (S14); modificaciones y calendario actual pendientes.
 3. Excursión comercial anunciada por Errante Ecolodge: condiciones propias por verificar.
 
 El apoyo de Armada durante contingencias se registra como respuesta institucional, sin convertirlo en una cuarta oferta reservable.
@@ -180,10 +180,10 @@ Buscar calendario octubre/noviembre y condiciones de retorno; localizar document
 ## Siguiente bloque, en orden
 
 1. Completado parcialmente con S6 y S8: recuperación en rodaje y programación de agosto. Pendiente confirmar calendario y condiciones de octubre/noviembre.
-2. Localizar en MTT/DTPR contratos y modificaciones de lancha y ferry; conservar IDs separados.
+2. Obtener contrato Errante CAM0114 y modificaciones de ambos servicios; CAM0064 ya localizado en S14.
 3. Confirmar en el sitio renderizado de TABSA los canales y la modalidad de Puerto Toro.
 4. Consultar avisos de la autoridad marítima para condiciones de zarpe, sin interpretarlos como calendario comercial.
-5. Crear una ficha candidata de consulta con fecha de verificación, operador, beneficiarios, condiciones de visitantes y enlace original; sólo después proponer cambios al RAG.
+5. Ficha candidata v0.1 incorporada al inicio; mantenerla como investigación documental.
 
 ## Identificación administrativa — segunda ampliación, 2026-10-19
 
@@ -191,7 +191,7 @@ Buscar calendario octubre/noviembre y condiciones de retorno; localizar document
 
 https://dtpr.mtt.gob.cl/ConsultaLicitaciones/WebPage/ConsultasLicitacionesDTPR.aspx?mod=ZAOM&reg=12
 
-El listado oficial distingue CAM0114 (Puerto Williams–Kanasaka–Puerto Toro–Bahía Douglas) y CAM0064 (Puerto Williams–Puerto Toro–Punta Arenas). Son IDs de servicio, no identificadores únicos de un contrato firmado. Para CAM0114 aparecen fechas de relleno 01-01-0001: no tratarlas como fechas reales. No se accedió al detalle dinámico ni al contrato completo.
+El listado oficial distingue CAM0114 (Puerto Williams–Kanasaka–Puerto Toro–Bahía Douglas) y CAM0064 (Puerto Williams–Puerto Toro–Punta Arenas). Son IDs de servicio, no identificadores únicos de un contrato firmado. Para CAM0114 aparecen fechas de relleno 01-01-0001: no tratarlas como fechas reales. En esta primera consulta no se accedió al detalle; las fichas y el contrato CAM0064 se localizaron después (S12–S14).
 
 ### S11 — DTPR, ejecución presupuestaria segundo trimestre 2025
 
@@ -204,7 +204,7 @@ Uso: corroboración administrativa histórica de ID y entidad ejecutora; no demu
 | ID de servicio | Corredor del listado DTPR | Entidad en ejecución 2025 | Pendiente |
 |---|---|---|---|
 | CAM0114 | Puerto Williams–Kanasaka–Puerto Toro–Bahía Douglas | Transportes Errante SpA | Contrato firmado, modificaciones y calendario vigente |
-| CAM0064 | Puerto Williams–Puerto Toro–Punta Arenas | Transbordadora Austral Broom S.A. | Contrato completo, modificaciones y condiciones actuales de escala en Puerto Toro |
+| CAM0064 | Puerto Williams–Puerto Toro–Punta Arenas | Transbordadora Austral Broom S.A. | Comunicación de inicio, modificaciones y condiciones actuales; contrato localizado en S14 |
 
 La asociación entre las modalidades descritas antes y estos IDs queda respaldada por el cruce de listado e informe, sin sustituir la lectura de contratos.
 
@@ -214,7 +214,7 @@ Consulta: 2026-10-19, America/Santiago. Búsquedas por calendario octubre 2026 e
 
 S5 continúa como candidato no leído: el resultado indexado menciona Decreto 14 de 2023, pero no se promueve su contenido contractual sin acceso directo.
 
-Próxima acción delimitada: localizar los documentos por CAM0114 y CAM0064 en DTPR/MTT y la programación del mes solicitado. Mantener separadas evidencia presupuestaria, contrato, calendario anunciado y viaje ejecutado.
+Actualización: CAM0064 localizado en S14. Pendientes contrato Errante CAM0114, modificaciones posteriores de ambos servicios y programación del mes solicitado. Mantener separadas evidencia presupuestaria, contrato, calendario anunciado y viaje ejecutado.
 
 ## Criterio de respuesta futura
 
@@ -249,7 +249,7 @@ Ficha: https://dtpr.mtt.gob.cl/ConsultaLicitaciones/WebPage/ConsultasServicios.a
 
 Adjudicación: https://dtpr.mtt.gob.cl/ConsultaLicitaciones/Descarga/Descarga.ashx?id=21385122
 
-La ficha presenta bases, modificaciones y adjudicación; informa 10 adjuntos en dos páginas. Sólo se inspeccionó la primera página del listado. El PDF de adjudicación fue descargado y su primera página renderizada e inspeccionada visualmente: Decreto Afecto 69, de 31 de julio de 2023, para CAM0064, con sello de toma de razón con alcances de 11 de septiembre de 2023 (Oficio E391690/2023).
+La ficha presenta bases, modificaciones y adjudicación; informa 10 adjuntos en dos páginas. En este primer bloque sólo se inspeccionó la primera página; la segunda se revisó en S14. El PDF de adjudicación fue descargado y su primera página renderizada e inspeccionada visualmente: Decreto Afecto 69, de 31 de julio de 2023, para CAM0064, con sello de toma de razón con alcances de 11 de septiembre de 2023 (Oficio E391690/2023).
 
 Alcance: portada e identificación del acto, sin lectura integral de condiciones ni del contrato firmado. Adjudicación no equivale a contrato vigente. No reconciliar todavía este acto con el Decreto 14 citado en S5: pueden corresponder a instrumentos distintos y falta leer ambos.
 
@@ -262,10 +262,10 @@ SHA-256: a059b0603dff3c095136de35b6fe6e9fddb9fc2bd32a118ed3251139882f8421
 | CAM0114, contrato de Nikanchile y prórroga | Localizados; etapa histórica identificada |
 | CAM0114, contrato de Errante anunciado en octubre 2024 | Pendiente |
 | CAM0064, adjudicación de 2023 | Localizada; portada verificada |
-| CAM0064, contrato firmado y modificaciones posteriores | Pendiente; revisar también segunda página de adjuntos |
+| CAM0064, contrato firmado y modificaciones posteriores | Contrato reproducido en S14; modificaciones posteriores pendientes |
 | Calendario octubre 2026 | No localizado en búsquedas de este bloque |
 
-Las búsquedas por septiembre/octubre de 2026 no localizaron programación verificable posterior a agosto. Esto no prueba que no exista ni que el servicio esté suspendido. Los próximos pasos se centran en la segunda página del expediente CAM0064 y el acto de contratación de Errante; no repetir búsquedas generales sin un nuevo dato.
+Las búsquedas por septiembre/octubre de 2026 no localizaron programación verificable posterior a agosto. Esto no prueba que no exista ni que el servicio esté suspendido. La segunda página se revisó en S14. Quedan pendientes modificaciones posteriores y el acto de contratación de Errante; no repetir búsquedas generales sin un nuevo dato.
 
 
 ## S14 — Contrato CAM0064 localizado en segunda página
@@ -276,7 +276,7 @@ Ficha de origen: https://dtpr.mtt.gob.cl/ConsultaLicitaciones/WebPage/ConsultasS
 
 Documento «APRUEBA CONTRATO»: https://dtpr.mtt.gob.cl/ConsultaLicitaciones/Descarga/Descarga.ashx?id=22448734
 
-Se accedió a la segunda página mediante la solicitud de paginación pública del portal. Contiene «ALCANCE ADJUDICACIÓN» (adjunto 21385124, no leído) y «APRUEBA CONTRATO» (22448734, descargado).
+Se accedió a la segunda página mediante la solicitud de paginación pública del portal. Contiene «ALCANCE ADJUDICACIÓN» (adjunto 21385124, leído posteriormente en S15) y «APRUEBA CONTRATO» (22448734, descargado).
 
 El documento contiene el Decreto Exento 4536/2023 DTPR, de 15 de diciembre de 2023, y reproduce el contrato suscrito el 20 de octubre de 2023 con Transbordadora Austral Broom S.A.
 
@@ -288,7 +288,7 @@ El documento contiene el Decreto Exento 4536/2023 DTPR, de 15 de diciembre de 20
 - La nota de la tabla considera los horarios referenciales y sujetos a acuerdo previo con contraparte técnica. Se contemplan variaciones por contingencias y modificaciones autorizadas (quinta D).
 - Yendegaia tiene condiciones específicas de desvío y coordinación; no convertirlo en escala general garantizada.
 
-Verificación: extracción de texto y revisión visual de página PDF 5, incluidas notas al pie. No se auditó íntegramente el contrato ni se validaron tarifas, modificaciones posteriores, inicio efectivo, cumplimiento o disponibilidad actual. La frecuencia y horas anteriores son antecedentes contractuales de 2023, **no instrucciones para viajar en octubre de 2026**.
+Verificación: extracción de texto y revisión visual de página PDF 5, incluidas notas al pie. No se auditó íntegramente el contrato. Las tarifas históricas de Ruta 2 se revisaron posteriormente en «Revisión ampliada S14». Siguen sin verificarse modificaciones posteriores, inicio efectivo, cumplimiento o disponibilidad actual. La frecuencia y horas anteriores son antecedentes contractuales de 2023, **no instrucciones para viajar en octubre de 2026**.
 
 SHA-256: 66f12eece1bed7212b70aab063409e600969977698ea1bd2321a9227f6ed83c6
 
@@ -296,7 +296,7 @@ SHA-256: 66f12eece1bed7212b70aab063409e600969977698ea1bd2321a9227f6ed83c6
 
 Se resuelve la localización del instrumento aprobatorio que reproduce el contrato CAM0064. Siguen pendientes sus modificaciones posteriores y comunicación de inicio. El acto de Errante CAM0114 de 2024 no se localizó en las búsquedas dirigidas; no confundir con contrato Nikanchile de S12. Calendario octubre permanece no confirmado.
 
-Próximo bloque útil: revisar modificaciones/alcances de CAM0064 y buscar el contrato de Errante mediante transparencia activa del MTT; conservar estos vacíos sin retrasar indefinidamente la ficha documental comparativa.
+El alcance de adjudicación se revisó en S15; siguen pendientes modificaciones posteriores y contrato Errante. La ruta de transparencia y sus límites constan más abajo.
 
 
 ## S15 — Alcance de Contraloría sobre CAM0064
@@ -333,7 +333,7 @@ Se consultaron combinaciones de CAM0114, Transportes Errante SpA, contrato, acto
 
 https://www.subtrans.gob.cl/magallanes-nueva-lancha-loica-se-traslada-a-william-para-prestar-servicios-de-conectividad-en-isla-navarino/
 
-Publicación de 14 de agosto de 2020. Describe una Loica destinada a los mismos tramos y menciona al operador Canal Beagle Ltda. Es un antecedente anterior a Nikanchile y Errante.
+Publicación de 14 de agosto de 2020, examinada a través del contenido indexado; la apertura directa devolvió timeout. Describe una Loica destinada a los mismos tramos y menciona al operador Canal Beagle Ltda. Es un antecedente anterior a Nikanchile y Errante.
 
 Regla de identidad: no equiparar contratos, propietarios, matrícula o continuidad operacional sólo por compartir nombre de nave o corredor. La identidad de la Loica descrita en 2020 y la anunciada en 2024 requeriría matrícula u otro identificador estable. La fuente 2020 no sustituye el contrato 2024 ni sus características.
 
