@@ -131,6 +131,37 @@ Buscar calendario octubre/noviembre y condiciones de retorno; localizar document
 4. Consultar avisos de la autoridad marítima para condiciones de zarpe, sin interpretarlos como calendario comercial.
 5. Crear una ficha candidata de consulta con fecha de verificación, operador, beneficiarios, condiciones de visitantes y enlace original; sólo después proponer cambios al RAG.
 
+## Identificación administrativa — segunda ampliación, 2026-10-19
+
+### S10 — DTPR, consulta de licitaciones de Magallanes
+
+https://dtpr.mtt.gob.cl/ConsultaLicitaciones/WebPage/ConsultasLicitacionesDTPR.aspx?mod=ZAOM&reg=12
+
+El listado oficial distingue CAM0114 (Puerto Williams–Kanasaka–Puerto Toro–Bahía Douglas) y CAM0064 (Puerto Williams–Puerto Toro–Punta Arenas). Son IDs de servicio, no identificadores únicos de un contrato firmado. Para CAM0114 aparecen fechas de relleno 01-01-0001: no tratarlas como fechas reales. No se accedió al detalle dinámico ni al contrato completo.
+
+### S11 — DTPR, ejecución presupuestaria segundo trimestre 2025
+
+https://www.dtpr.gob.cl/pdf/MenuSuperior/Presupuesto/2025/Subtitulo24_T2_2025.pdf
+
+PDF consultado, página 110 (índice PDF 109), tabla de detalle: asocia CAM0114 con Transportes Errante SpA y CAM0064 con Transbordadora Austral Broom S.A.
+
+Uso: corroboración administrativa histórica de ID y entidad ejecutora; no demuestra operación actual, calendario, tarifa, cupos ni cumplimiento de cada viaje. No se suman partidas ni se interpretan como precio del contrato.
+
+| ID de servicio | Corredor del listado DTPR | Entidad en ejecución 2025 | Pendiente |
+|---|---|---|---|
+| CAM0114 | Puerto Williams–Kanasaka–Puerto Toro–Bahía Douglas | Transportes Errante SpA | Contrato firmado, modificaciones y calendario vigente |
+| CAM0064 | Puerto Williams–Puerto Toro–Punta Arenas | Transbordadora Austral Broom S.A. | Contrato completo, modificaciones y condiciones actuales de escala en Puerto Toro |
+
+La asociación entre las modalidades descritas antes y estos IDs queda respaldada por el cruce de listado e informe, sin sustituir la lectura de contratos.
+
+## Registro de búsqueda y vacíos
+
+Consulta: 2026-10-19, America/Santiago. Búsquedas por calendario octubre 2026 en la Delegación, CAM0114/Errante y CAM0064/contrato en DTPR. Se localizaron los registros S10–S11, pero no un calendario de octubre suficientemente verificable ni contratos completos accesibles en este bloque. Esto describe el alcance de la búsqueda, no la inexistencia de documentos.
+
+S5 continúa como candidato no leído: el resultado indexado menciona Decreto 14 de 2023, pero no se promueve su contenido contractual sin acceso directo.
+
+Próxima acción delimitada: localizar los documentos por CAM0114 y CAM0064 en DTPR/MTT y la programación del mes solicitado. Mantener separadas evidencia presupuestaria, contrato, calendario anunciado y viaje ejecutado.
+
 ## Criterio de respuesta futura
 
 Explicar qué conexión está documentada, fechar cada condición y conducir al canal competente para verificar viaje y retorno. Horarios, reservas, tarifa, cupos y suspensión requieren evidencia reciente para la fecha solicitada. No cargar condiciones históricas como disponibilidad permanente.
