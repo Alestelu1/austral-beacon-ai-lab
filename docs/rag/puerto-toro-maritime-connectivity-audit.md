@@ -169,3 +169,47 @@ Explicar qué conexión está documentada, fechar cada condición y conducir al 
 ## Cierre de este bloque
 
 Inventario y discrepancias iniciados. Ningún cambio a entidades, embeddings, rutas live o Travel Agent; no se contactó a personas ni se enviaron consultas externas.
+
+## Localización de expedientes y adjuntos — 2026-10-19
+
+Se siguieron las claves y la función pública de descarga expuestas en el HTML del listado DTPR. Las fichas y tres PDF respondieron por descarga HTTP directa, aunque el lector web no pudo abrirlos. No se enviaron formularios ni consultas.
+
+### S12 — Ficha CAM0114 y contrato anterior
+
+Ficha: https://dtpr.mtt.gob.cl/ConsultaLicitaciones/WebPage/ConsultasServicios.aspx?id=6906
+
+- Contrato por trato directo: https://dtpr.mtt.gob.cl/ConsultaLicitaciones/Descarga/Descarga.ashx?id=21525387
+- Prórroga: https://dtpr.mtt.gob.cl/ConsultaLicitaciones/Descarga/Descarga.ashx?id=21602948
+
+El primer PDF contiene el Decreto Exento 1430/2023 DTPR, de 18 de abril de 2023, que aprueba contratación con Sociedad de Turismo y Servicios Nikanchile SpA. El segundo contiene el Decreto Exento 445/2024 DTPR, de 5 de febrero de 2024; sus considerandos identifican el contrato firmado el 27 de enero de 2023 y la extensión hasta el 27 de julio de 2024.
+
+Alcance de lectura: extracción de texto de los actos, especialmente identificación del contratante y prórroga. Estos adjuntos documentan la etapa anterior a Errante. No usar sus condiciones como contrato de Transportes Errante anunciado en S1; ese contrato sigue pendiente de localización.
+
+SHA-256 de los bytes consultados:
+- Contrato anterior: 8c54f9d8923a89574300efca1e7fee2b5f3f3c6b58534c874d38af75e461e3e1
+- Prórroga: 07ed14b118239b56e6bc8e7b777e89239f9ce20ac62e63e8cdca987707b0de71
+
+### S13 — Ficha CAM0064 y adjudicación
+
+Ficha: https://dtpr.mtt.gob.cl/ConsultaLicitaciones/WebPage/ConsultasServicios.aspx?id=3904
+
+Adjudicación: https://dtpr.mtt.gob.cl/ConsultaLicitaciones/Descarga/Descarga.ashx?id=21385122
+
+La ficha presenta bases, modificaciones y adjudicación; informa 10 adjuntos en dos páginas. Sólo se inspeccionó la primera página del listado. El PDF de adjudicación fue descargado y su primera página renderizada e inspeccionada visualmente: Decreto Afecto 69, de 31 de julio de 2023, para CAM0064, con sello de toma de razón con alcances de 11 de septiembre de 2023 (Oficio E391690/2023).
+
+Alcance: portada e identificación del acto, sin lectura integral de condiciones ni del contrato firmado. Adjudicación no equivale a contrato vigente. No reconciliar todavía este acto con el Decreto 14 citado en S5: pueden corresponder a instrumentos distintos y falta leer ambos.
+
+SHA-256: a059b0603dff3c095136de35b6fe6e9fddb9fc2bd32a118ed3251139882f8421
+
+### Balance de localización
+
+| Documento buscado | Resultado |
+|---|---|
+| CAM0114, contrato de Nikanchile y prórroga | Localizados; etapa histórica identificada |
+| CAM0114, contrato de Errante anunciado en octubre 2024 | Pendiente |
+| CAM0064, adjudicación de 2023 | Localizada; portada verificada |
+| CAM0064, contrato firmado y modificaciones posteriores | Pendiente; revisar también segunda página de adjuntos |
+| Calendario octubre 2026 | No localizado en búsquedas de este bloque |
+
+Las búsquedas por septiembre/octubre de 2026 no localizaron programación verificable posterior a agosto. Esto no prueba que no exista ni que el servicio esté suspendido. Los próximos pasos se centran en la segunda página del expediente CAM0064 y el acto de contratación de Errante; no repetir búsquedas generales sin un nuevo dato.
+
