@@ -49,7 +49,9 @@ La captura final QGIS muestra proporciones y rasgos coherentes con la vista HTML
 
 Actualización 23:25 del 2026-10-18 (America/Santiago): el usuario confirmó que Alejar y Restablecer funcionan. Las capturas 23:21:58 y 23:22:27 muestran una ventana de escritorio estrecha con controles que se redistribuyen y textos, enlaces y atribución legibles. No muestran el modo de dispositivo ni un ancho CSS de 390 px; por ello no se considera completada la prueba móvil de 390 px.
 
-Quedan pendientes: ancho móvil de 390 px y comparación numérica independiente de curvas. El recorte al aumentar el zoom es esperado; esta versión no tiene desplazamiento por arrastre.
+Actualización 23:31 del 2026-10-18: la captura `screencapture-file-C-Users-stelu-Downloads-index-html-2026-10-18-23_31_18.png` muestra la distribución estrecha en una columna, botones acomodados, polígono completo al 100 % y leyenda, fuente y licencia legibles. No se aprecia recorte horizontal del contenido. La captura omite la barra de dimensiones de Chrome: confirma adaptación visual al ancho mostrado, pero no permite certificar 390 píxeles CSS.
+
+Quedan pendientes: verificación instrumental del ancho exacto de 390 px y comparación numérica independiente de curvas. El recorte al aumentar el zoom es esperado; esta versión no tiene desplazamiento por arrastre.
 
 La prueba con Playwright no llegó a ejecutarse: el entorno no tenía Chromium y su descarga falló. Las pruebas manuales anteriores no se atribuyen a Playwright ni a Vercel.
 
