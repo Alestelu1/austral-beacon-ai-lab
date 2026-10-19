@@ -27,8 +27,8 @@ Corte documental: 2026-10-19, America/Santiago. Estado: candidata para revisión
 | Corredor | Puerto Williams con Kanasaka, Puerto Toro y Bahía Douglas (S10) | Ruta 1 Punta Arenas–Puerto Williams; Ruta 2 Puerto Williams–Puerto Toro (S14) | Navegación Puerto Toro; itinerario detallado pendiente (S7) |
 | Empresa en evidencia fechada | Errante en anuncio 2024 y ejecución 2025 (S1, S11) | Transbordadora Austral Broom en contrato 2023 (S14) | Errante Ecolodge en su propia oferta (S7); identidad legal pendiente |
 | Frecuencia histórica | Seis viajes mensuales a Puerto Toro anunciados en 2024 (S1) | Una conexión mensual a Puerto Toro en contrato 2023 (S14) | Sin frecuencia verificada |
-| Acceso de visitantes | Condicionado a prioridad de residentes/carga en anuncio agosto 2026 (S8) | Condiciones específicas de elegibilidad y cupos no auditadas | Oferta comercial publicada; salida/cupo no confirmados |
-| Precio | Gratuidad anunciada en 2024; reconfirmación actual pendiente (S1) | Tarifa vigente no verificada | Tarifa no verificada |
+| Acceso de visitantes | Condicionado a prioridad de residentes/carga en anuncio agosto 2026 (S8) | Preferencia de residentes en reservas y cupos según quinta E; disponibilidad de visitantes pendiente de confirmación | Oferta comercial publicada; salida/cupo no confirmados |
+| Precio | Gratuidad anunciada en 2024; reconfirmación actual pendiente (S1) | Ruta 2 gratuita para pasajeros/carga según octava (2023); vigencia actual pendiente | Tarifa no verificada |
 | Última evidencia operacional examinada | Calendario anunciado de agosto 2026, sin comprobar ejecución de cada salida (S8) | No hay calendario operacional actual verificado | Oferta 2026–2027, sin comprobar ejecución (S7) |
 | Qué falta para orientar un viaje | Calendario del día, inscripción, cupo, embarque y retorno confirmados | Programación específica, tarifa, cupo y condiciones de embarque/retorno | Fecha, itinerario, tarifa, cupo y condiciones del operador |
 | Vacío documental central | Contrato Errante 2024 | Inicio efectivo y modificaciones posteriores | Condiciones comerciales completas |
@@ -360,3 +360,34 @@ Estado: borrador documental; no se ingresó solicitud, no existe folio y no se c
 ### Decisión de continuidad
 
 La localización indexada no ha resuelto este vacío. El siguiente paso para obtener el contrato es consultar el expediente mediante el canal institucional, usando el texto anterior. Mientras tanto, la ficha comparativa puede avanzar con estado «contrato Errante pendiente», manteniendo separados anuncio oficial, registro presupuestario y contrato leído.
+
+## Revisión ampliada S14 — pasajeros, carga y retorno CAM0064
+
+Fecha: 2026-10-19. Mismo PDF y SHA-256 de S14, comprobado nuevamente. Lectura focalizada de cláusulas quinta E, sexta, séptima y octava. Tablas y reglas de Ruta 2 verificadas visualmente en páginas PDF 11 y 13.
+
+| Tema | Condición documentada en contrato 2023 | Alcance y límite |
+|---|---|---|
+| Pasajeros Ruta 2 | Octava a), iii), página 11: sin costo para ningún tipo de pasajero, Puerto Toro–Puerto Williams y viceversa | No extender gratuidad a Punta Arenas; confirmar modificaciones posteriores |
+| Carga Ruta 2 | Octava b), iii), página 13: transporte gratuito por sentido para todo tipo de carga | La gratuidad no acredita capacidad, admisión de cualquier mercancía ni servicios adicionales gratuitos |
+| Reservas y retorno | Quinta E a): sistema para reservar/adquirir ida y retorno de usuarios regulares y su carga, con preferencia de residentes | Obligación contractual del sistema, no prueba de cupo disponible ni de implementación actual |
+| Residentes | Listado provincial entregado por Secretaría Regional y actualizable trimestralmente | No definir residencia mediante criterio inventado por el agente |
+| Reserva de carga | Quinta E t): al menos 10% de capacidad para residentes hasta siete días antes del viaje | Regla general del servicio; verificar aplicación operativa y capacidad de nave asignada |
+| Información | Quinta E d)–e): información de arribo/zarpe y demoras | Canales y avisos concretos siguen pendientes |
+| Almacenaje | Octava c): contempla cobros por retiro tardío en puntos de Punta Arenas o Puerto Williams | No equiparar transporte gratuito con almacenaje gratuito; no atribuir almacenaje en Puerto Toro |
+| Nave | Sexta identifica Yaghan, matrícula 3276; séptima permite cambios autorizados | Identidad contractual original, no afirmar que sea la nave de la próxima salida |
+
+### Precisiones sobre cupos y reservas
+
+Quinta E contempla reservas anticipadas y adquisición de pasajes/carga, con plazos y preferencia de residentes. También regula asientos cama y cupos protegidos. Estas reglas pertenecen al servicio CAM0064 y deben interpretarse con su manual y ruta concreta: no trasladar automáticamente condiciones de la travesía larga a una visita corta a Puerto Toro. No se publican como instrucciones de reserva vigentes.
+
+La inclusión del regreso en el sistema no garantiza continuidad meteorológica ni retorno de un visitante en una fecha sin confirmar. Antes de orientar un viaje deben comprobarse ambos sentidos y las condiciones de la salida específica.
+
+### Corrección de la ficha comparativa
+
+Ya existe evidencia de tarifa en Ruta 2: la gratuidad está expresamente documentada para pasajeros y transporte de carga en el contrato de 2023. La incertidumbre restante es su aplicación vigente y las condiciones operativas, no la ausencia de una cláusula histórica. Los resúmenes anteriores que indicaban tarifa no verificada se entienden limitados a tarifa actual.
+
+### Consecuencia para el futuro agente
+
+Ante «¿el ferry a Puerto Toro es gratis?», puede explicar que el contrato aprobado en 2023 establece gratuidad para ese tramo y enlazar cláusula/página; debe indicar que falta confirmar condiciones actuales, cupo y retorno con el operador. Nunca responder «todo TABSA es gratis» ni prometer embarque por existir gratuidad contractual.
+
+Estado: revisión documental acotada, sin cambios a entidades, RAG o runtime. No se verificó cumplimiento del operador ni se hizo auditoría jurídica integral.
