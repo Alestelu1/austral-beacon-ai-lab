@@ -47,14 +47,16 @@ Pruebas realizadas por el usuario sobre el HTML local y revisadas en esta conver
 
 La captura final QGIS muestra proporciones y rasgos coherentes con la vista HTML. Es un contraste visual independiente con otro lector, no una medición de errores ni una certificación de la aproximación de curvas. La captura no muestra el filtro ni la tabla de atributos; la identidad exacta del registro se basa en el procedimiento seguido y la selección del generador.
 
-Quedan pendientes: botón Alejar por separado, ancho móvil y comparación numérica independiente de curvas. El recorte al aumentar el zoom es esperado; esta versión no tiene desplazamiento por arrastre.
+Actualización 23:25 del 2026-10-18 (America/Santiago): el usuario confirmó que Alejar y Restablecer funcionan. Las capturas 23:21:58 y 23:22:27 muestran una ventana de escritorio estrecha con controles que se redistribuyen y textos, enlaces y atribución legibles. No muestran el modo de dispositivo ni un ancho CSS de 390 px; por ello no se considera completada la prueba móvil de 390 px.
+
+Quedan pendientes: ancho móvil de 390 px y comparación numérica independiente de curvas. El recorte al aumentar el zoom es esperado; esta versión no tiene desplazamiento por arrastre.
 
 La prueba con Playwright no llegó a ejecutarse: el entorno no tenía Chromium y su descarga falló. Las pruebas manuales anteriores no se atribuyen a Playwright ni a Vercel.
 
 ## Revisión antes de integrar
 
 1. Revisar el contraste visual QGIS y las pruebas manuales registradas arriba.
-2. Mantener explícitos los pendientes de móvil, Alejar y precisión numérica de curvas.
+2. Mantener explícitos los pendientes de móvil de 390 px y precisión numérica de curvas.
 3. Limitar cualquier integración al directorio experimental; la promoción Atlas requiere una revisión separada.
 
 Mantener este experimento fuera de los consumidores de producción hasta completar la revisión. `atlas_ready` permanece en `false`.
