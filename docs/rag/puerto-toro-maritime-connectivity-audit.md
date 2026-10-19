@@ -4,6 +4,19 @@ Apertura: 2026-10-19 (America/Santiago).
 Estado: investigación inicial, sin promoción canónica.
 Pregunta: ¿qué servicios se documentan, a quién atienden y qué debe verificarse antes de utilizarlos?
 
+## Estado consolidado de la investigación — 2026-10-19
+
+Esta tabla resume la evidencia más reciente del expediente; las matrices iniciales se conservan como historial, no como estado vigente.
+
+| Elemento | Estado documental | Límite |
+|---|---|---|
+| CAM0114, etapa Nikanchile | Contrato 1430/2023 y prórroga 445/2024 localizados | Etapa anterior, hasta julio 2024 según prórroga |
+| CAM0114, etapa Errante | Anuncio oficial de octubre 2024 y ejecución 2025 | Acto aprobatorio y contrato aún no localizados |
+| CAM0064 | Adjudicación 69/2023, alcance E391690 y contrato aprobado por 4536/2023 localizados | Comunicación de inicio y modificaciones posteriores pendientes |
+| Operación posterior a contingencias | Viajes en rodaje en abril y calendario anunciado en agosto 2026 | No acredita cada viaje ejecutado |
+| Disponibilidad octubre 2026 | No confirmada | No equivale a suspensión |
+| Oferta comercial Ecolodge | Anunciada para 2026–2027 | No confundir con contrato subsidiado |
+
 ## Línea base
 
 Revisados: knowledge-base/entities/places/puerto-toro/sources.json y data/live/puerto-williams-live-source-registry-v1.json. El paquete distingue infraestructura de operación y el registro live exige evidencia oficial reciente. Se conserva ese criterio. La revisión del mapa continúa por separado.
@@ -243,4 +256,30 @@ SHA-256: 66f12eece1bed7212b70aab063409e600969977698ea1bd2321a9227f6ed83c6
 Se resuelve la localización del instrumento aprobatorio que reproduce el contrato CAM0064. Siguen pendientes sus modificaciones posteriores y comunicación de inicio. El acto de Errante CAM0114 de 2024 no se localizó en las búsquedas dirigidas; no confundir con contrato Nikanchile de S12. Calendario octubre permanece no confirmado.
 
 Próximo bloque útil: revisar modificaciones/alcances de CAM0064 y buscar el contrato de Errante mediante transparencia activa del MTT; conservar estos vacíos sin retrasar indefinidamente la ficha documental comparativa.
+
+
+## S15 — Alcance de Contraloría sobre CAM0064
+
+https://dtpr.mtt.gob.cl/ConsultaLicitaciones/Descarga/Descarga.ashx?id=21385124
+
+Oficio E391690/2023, de 11 de septiembre de 2023. PDF de una página leído por extracción de texto y revisión visual. Da curso con alcance al Decreto 69/2023: según los antecedentes acompañados, los servicios adjudicados se iniciarían durante el año presupuestario 2024; los pagos quedan sujetos a disponibilidad presupuestaria y condiciones correspondientes.
+
+Esto precisa la cronología prevista, pero no confirma el día efectivo de inicio ni permite calcular por sí solo el vencimiento del contrato. No se identifican aquí cambios de frecuencia o tarifa.
+
+SHA-256: ec5d2646ded7d405223942211710872f80c79b2c4c4721458b8e09c9d0dd5f1e
+
+## Ruta de transparencia y cierre de búsqueda dirigida
+
+El enlace oficial de Transparencia Activa en https://www.subtrans.gob.cl/subsecretaria/ conduce a:
+https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=AN001
+
+El lector devolvió HTTP 403 al consultar esa ruta. La página antigua de Gobierno Transparente también devolvió 502. No se inspeccionó contenido protegido ni se enviaron formularios. Las búsquedas indexadas por razón social, CAM0114, decreto y año no localizaron el acto Errante. Son límites de acceso y búsqueda, no prueba de ausencia del documento.
+
+### Documentos exactos pendientes para consulta posterior
+
+- CAM0114: acto aprobatorio, contrato y anexos con Transportes Errante SpA anunciado por la Delegación el 4 de octubre de 2024; comunicación de inicio; modificaciones y actos relativos a sustitución de embarcación o contingencias de 2026.
+- CAM0064: comunicación de inicio del contrato reproducido en Decreto Exento 4536/2023 y modificaciones posteriores; manual/programación vigente aplicable a Puerto Toro.
+- Operación: calendario octubre/noviembre 2026, condiciones de acceso de visitantes y coordinación de retorno.
+
+Criterio de avance: cerrar esta etapa como ficha documental con vacíos explícitos. No bloquear la organización del conocimiento por falta de calendario actual; mantener cualquier recomendación de viaje pendiente de confirmación. Una eventual solicitud de información requerirá una acción separada: aquí sólo queda definido su alcance, sin envío.
 
