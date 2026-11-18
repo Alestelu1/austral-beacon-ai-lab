@@ -1,0 +1,7 @@
+{
+  "name": "austral-beacon-preview-api",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "description": "Vercel preview entrypoints; canonical Travel Assistant remains under projects/end-of-the-world-travel-agent."
+}
