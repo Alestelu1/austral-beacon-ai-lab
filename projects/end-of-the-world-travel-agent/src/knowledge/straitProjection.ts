@@ -29,7 +29,7 @@ import type { StraitProjectedFact } from "../domain/types.js";
 
 type CanonicalClaim = {
   id: string;
-  claim: string;
+  statement: string;
   status?: string;
   stability?: string;
   sensitivity?: string;
@@ -76,7 +76,7 @@ const canonicalSourceIds = new Set<string>(
 
 /** Claim ids the contract explicitly blocks — must never be projected. */
 const blockedClaimIds = new Set<string>(
-  (contract.blocked_claims ?? []).map((c: { claim_id: string }) => c.claim_id)
+  (contract.blocked_claims ?? [])
 );
 
 /** Conditionally-allowed claim ids are NOT part of v1 (require guards/review). */
@@ -156,7 +156,7 @@ export function buildStraitProjectionFacts(): StraitProjectedFact[] {
     }
 
     // Prefer safe canonical chunk text; fall back to the canonical claim text.
-    const text = findSafeChunkText(claim) ?? claim.claim;
+    const text = findSafeChunkText(claim) ?? claim.statement;
 
     facts.push({
       entityId: claimsData.entity_id ?? STRAIT_ENTITY_ID,
