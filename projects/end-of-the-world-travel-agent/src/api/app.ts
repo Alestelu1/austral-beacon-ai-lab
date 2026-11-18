@@ -3,6 +3,8 @@ import { answerViaAssistant } from "../application/answerViaAssistant.js";
 import { handleStaticRequest } from "./staticHandler.js";
 
 const MAX_BODY_BYTES = 16384; // 16 KB
+const MAX_QUESTION_CHARS = 2000;
+const DEFAULT_ANSWER_TIMEOUT_MS = 12000;
 
 function sendJson(res: ServerResponse, status: number, body: unknown): void {
   const payload = JSON.stringify(body);
@@ -50,10 +52,13 @@ function readBody(req: IncomingMessage): Promise<string> {
 export interface CreateAppOptions {
   /** Override the answer function. Async answerers are supported for semantic retrieval. */
   answerFn?: (question: string) => unknown | Promise<unknown>;
+  /** Timeout for the answer operation; does not cancel downstream work. */
+  answerTimeoutMs?: number;
 }
 
 export function createApp(options?: CreateAppOptions): Server {
   const answer = options?.answerFn ?? answerViaAssistant;
+  const answerTimeoutMs = options?.answerTimeoutMs ?? DEFAULT_ANSWER_TIMEOUT_MS;
 
   return createServer(async (req: IncomingMessage, res: ServerResponse) => {
     try {
@@ -79,6 +84,11 @@ export function createApp(options?: CreateAppOptions): Server {
         if (method !== "POST") {
           res.setHeader("Allow", "POST");
           sendError(res, 405, "METHOD_NOT_ALLOWED", "Method not allowed");
+          return;
+        }
+
+        if (!/^application\/json(?:\s*;|\s*$)/i.test(req.headers["content-type"] ?? "")) {
+          sendError(res, 415, "UNSUPPORTED_MEDIA_TYPE", "Content-Type must be application/json");
           return;
         }
 
@@ -127,8 +137,29 @@ export function createApp(options?: CreateAppOptions): Server {
         }
 
         const question = obj["question"].trim();
-        const result = await answer(question);
-        sendJson(res, 200, result);
+        if (question.length > MAX_QUESTION_CHARS) {
+          sendError(res, 400, "QUESTION_TOO_LONG", "Question exceeds 2000 characters");
+          return;
+        }
+        // A timeout caps client wait, but does not cancel an underlying external fetch.
+        let timer: ReturnType<typeof setTimeout> | undefined;
+        try {
+          const result = await Promise.race([
+            Promise.resolve().then(() => answer(question)),
+            new Promise<never>((_, reject) => {
+              timer = setTimeout(() => reject(new Error("ANSWER_TIMEOUT")), answerTimeoutMs);
+            })
+          ]);
+          sendJson(res, 200, result);
+        } catch (error) {
+          if (error instanceof Error && error.message === "ANSWER_TIMEOUT") {
+            sendError(res, 504, "ANSWER_TIMEOUT", "Answer timed out");
+            return;
+          }
+          throw error;
+        } finally {
+          if (timer) clearTimeout(timer);
+        }
         return;
       }
 
