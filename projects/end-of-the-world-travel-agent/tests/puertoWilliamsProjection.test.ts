@@ -55,7 +55,7 @@ describe("Puerto Williams travel projection v1", () => {
     const answer = answerTravelQuestion("¿Qué es Puerto Williams?");
     expect(answer.status).toBe("supported");
     expect(answer.intent).toBe("destination-info");
-    if (answer.intent !== "destination-info" || !answer.card) throw new Error("Expected destination card");
+    if (answer.intent !== "destination-info" || !("card" in answer) || !answer.card) throw new Error("Expected destination card");
     expect(answer.card.id).toBe("puerto-williams");
     expect(answer.card.coordinates).toBeUndefined();
     expect(answer.card.verifiedAt).toBe("2026-09-01");
