@@ -39,6 +39,9 @@ jobs:
       - name: Typecheck
         run: npm run typecheck
 
+      - name: Build browser client
+        run: npm run build:client
+
   rag-regression:
     runs-on: ubuntu-latest
     defaults:
@@ -58,5 +61,5 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run RAG regression suite
-        run: npm run test:rag
+      - name: Run full test suite (including web rendering)
+        run: npm test
