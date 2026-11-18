@@ -1,6 +1,7 @@
 import { afterEach, describe, expect, it } from "vitest";
 import { POST, GET as answerGet } from "../../../api/answer.js";
 import { GET as healthGet } from "../../../api/health.js";
+import { GET as demoGet } from "../../../api/demo.js";
 
 const original = process.env.TRAVEL_ASSISTANT_PREVIEW_ENABLED;
 afterEach(() => {
@@ -47,6 +48,13 @@ describe("isolated Vercel preview API", () => {
     const tooLong = await POST(request({ question: "x".repeat(2001) }));
     expect(tooLong.status).toBe(400);
     expect((await tooLong.json()).error.code).toBe("QUESTION_TOO_LONG");
+  });
+
+  it("sets noindex and a same-origin content security policy for demo HTML", async () => {
+    const response = demoGet();
+    expect(response.headers.get("x-robots-tag")).toContain("noindex");
+    expect(response.headers.get("content-security-policy")).toContain("connect-src 'self'");
+    expect(await response.text()).toContain("Travel Assistant");
   });
 
   it("responds 405 to GET /api/answer and health only returns non-sensitive state", async () => {
