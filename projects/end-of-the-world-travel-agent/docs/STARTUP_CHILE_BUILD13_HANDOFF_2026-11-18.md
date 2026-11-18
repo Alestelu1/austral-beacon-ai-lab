@@ -55,3 +55,12 @@ Priorizar motor determinístico y GoldenCorpusRetriever offline; sin obligación
 
 ## Protocolo contra longitud del chat
 Este archivo es el handoff persistente. Al abrir un chat nuevo, pedir: «Continúa desde projects/end-of-the-world-travel-agent/docs/STARTUP_CHILE_BUILD13_HANDOFF_2026-11-18.md del repo austral-beacon-ai-lab. Comprueba estado actual de git, aplica el siguiente paso sin reiniciar arquitectura ni suponer tareas completadas. Respeta la fecha 23 de noviembre». Actualizar este archivo al final de cada etapa con commit/PR, tests, blockers y decisiones. No guardar credenciales en el documento.
+
+## Actualización técnica 2026-11-18 — PR #27 (primera implementación)
+- Draft PR: https://github.com/Alestelu1/austral-beacon-ai-lab/pull/27, rama fix/travel-assistant-web-intents-build13. No fusionado, no producción ni DNS.
+- Se añadió renderizador web de `relationship`, `antarctic-access`, `strait-info`, `knowledge`, con resumen, advertencias, fuentes seguras y enlaces internos controlados; pruebas web nuevas.
+- Se corrigieron incompatibilidades TypeScript preexistentes: campo canónico Strait `statement` vs `claim`, lista de `blocked_claims` como strings y type narrowing en test de Puerto Williams.
+- CI de GitHub run https://github.com/Alestelu1/austral-beacon-ai-lab/actions/runs/44246207214: **success** en typecheck, build:client, test:rag y tests web enfocados. Las pruebas se ejecutaron en GitHub Actions, no en la máquina local.
+- Nota de deuda técnica: al ensayar temporalmente `npm test` completo, se observaron **29 fallos / 435 tests** repartidos en pruebas históricas de varios subsistemas (incluidos tests que llaman a un commit base ya ausente). No son evidencia de regresión en los tests web nuevos; requieren issue separada, investigación y rebaseline. No declarar «suite completa verde».
+- Además `npm ci` reportó 9 vulnerabilidades por audit en dependencias (1 moderate, 6 high, 2 critical). Revisar `npm audit` y mitigaciones antes de publicar API, sin `npm audit fix --force` a ciegas.
+- Próximo paso de código: revisar PR #27, luego implementar protección API/hosting y widget Astro con preview; ejecutar smoke test y sincronización EN/ES. No fusionar automáticamente sin revisión.
