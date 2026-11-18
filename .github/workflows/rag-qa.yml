@@ -61,5 +61,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run full test suite (including web rendering)
-        run: npm test
+      - name: Run RAG regression suite
+        run: npm run test:rag
+
+      - name: Test web rendering (including extended intents)
+        run: npx vitest run tests/web-render.test.ts tests/web-render.property.test.ts tests/web-extended-intents.test.ts
