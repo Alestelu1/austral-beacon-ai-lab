@@ -131,3 +131,7 @@ CI última rama `feat/travel-vercel-preview-api-build13` commit `12bb8ead7d41205
 - En AI Lab PR #30 `api/demo.ts` y `api/demo-en.ts` se añadieron enlaces de regreso a guías PW ES y EN, respectivamente. GitHub CI del Lab SUCCESS (run 44455892266) al HEAD. No fusionado.
 - Astro CI `44455823613`: SUCCESS. Se inició un Preview explícito de Astro deployment `dpl_2geT3sKcvDQqaCEmbU2NiFt93kp3`, url `https://end-of-the-world-travel-astro-92cjkpzy1-alestelu1s-projects.vercel.app`; **seguía BUILDING al último chequeo**. Debe verificarse READY y las rutas `/assistant-preview/`, `/es/assistant-preview/`; no declarar flujo end-to-end aprobado todavía.
 - Importante: esto es navegación de demostración entre vertical y tecnología, NO widget ni integración directa en el sitio público. Usuarios anónimos necesitan acceso Vercel para el asistente. Falta seguridad pública, rate limiting, revisión npm audit, y evaluación de mercado / postulación.
+
+### Confirmación final Astro Preview (19 nov 2026)
+- Deployment `dpl_2geT3sKcvDQqaCEmbU2NiFt93kp3` llegó a **READY**. GET protegidos vía Vercel `/assistant-preview/` EN y `/es/assistant-preview/` ES **HTTP 200**, ambos con `noindex`, enlaces al alias real del agente y retorno a la guía de Puerto Williams. URL Preview base `https://end-of-the-world-travel-astro-92cjkpzy1-alestelu1s-projects.vercel.app`.
+- Comprobación servidor de ambas páginas y alias sí; falta visita manual CTA → Vercel Authentication → consulta → retorno por navegador (E2E humano). No afirmar widget público funcionando.
