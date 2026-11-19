@@ -1,4 +1,4 @@
-import { answerViaAssistant } from "../projects/end-of-the-world-travel-agent/src/application/answerViaAssistant.js";
+import { POST as answerPost } from "./answer.js";
 
 /**
  * Protected-preview smoke test, not a public monitoring endpoint.
@@ -15,12 +15,18 @@ export async function GET(): Promise<Response> {
   const results: Array<{ id: string; actualStatus: string; intent: string; passed: boolean }> = [];
   try {
     for (const testCase of cases) {
-      const answer = await answerViaAssistant(testCase.question);
+      // Route through the *actual* POST handler, not a shortcut to the engine.
+      const response = await answerPost(new Request("https://preview.local/api/answer", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ question: testCase.question }),
+      }));
+      const answer = await response.json() as { status?: string; intent?: string };
       results.push({
         id: testCase.id,
-        actualStatus: answer.status,
-        intent: answer.intent,
-        passed: answer.status === testCase.expectedStatus,
+        actualStatus: answer.status ?? "invalid",
+        intent: answer.intent ?? "invalid",
+        passed: response.status === 200 && answer.status === testCase.expectedStatus,
       });
     }
     const ok = results.every((result) => result.passed);
