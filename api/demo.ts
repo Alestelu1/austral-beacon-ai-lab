@@ -15,7 +15,7 @@ export function GET(): Response {
     textarea{font:inherit;width:100%;box-sizing:border-box;padding:1rem;border:1px solid #74948d;border-radius:8px;min-height:110px}
     button{font:inherit;font-weight:700;background:#0d3738;color:#fff;padding:.8rem 1.3rem;border:0;border-radius:8px;cursor:pointer;width:max-content}
     button:disabled{opacity:.5}section{background:white;border:1px solid #d7e0dd;border-radius:12px;padding:1.1rem;margin-top:1.2rem}
-    .muted{color:#566c68;font-size:.9rem}a{color:#145d62;overflow-wrap:anywhere}:focus-visible{outline:3px solid #a87827;outline-offset:3px}
+    .muted{color:#566c68;font-size:.9rem}details{margin-top:1rem;font-size:.9rem;color:#455c59}summary{cursor:pointer;font-weight:600}a{color:#145d62;overflow-wrap:anywhere}:focus-visible{outline:3px solid #a87827;outline-offset:3px}
     [hidden]{display:none!important}
   </style>
 </head>
@@ -31,14 +31,16 @@ export function GET(): Response {
   <p id="status" role="status" aria-live="polite"></p>
   <section id="result" hidden>
     <h2>Respuesta</h2><p id="summary"></p>
-    <div id="warning-area" hidden><h3>Advertencias</h3><ul id="warnings"></ul></div>
+    <div id="warning-area" hidden><h3>Información importante para tu consulta</h3><ul id="warnings"></ul></div>
+    <details id="technical-notes" hidden><summary>Notas adicionales de verificación</summary><ul id="other-warnings"></ul></details>
     <div id="source-area" hidden><h3>Fuentes</h3><ul id="sources"></ul></div>
-    <p class="muted">Las condiciones operacionales deben verificarse directamente con el operador o fuente oficial antes de viajar.</p>
+    <p class="muted" id="travel-disclaimer" hidden>Para horarios, tarifas y disponibilidad, confirma siempre con el operador o la fuente oficial.</p>
   </section>
   <script>
     const form=document.getElementById('form'),input=document.getElementById('question'),button=document.getElementById('submit');
     const status=document.getElementById('status'),result=document.getElementById('result'),summary=document.getElementById('summary');
     const warnings=document.getElementById('warnings'),sources=document.getElementById('sources');
+    const extraWarnings=document.getElementById('other-warnings'),notes=document.getElementById('technical-notes'),disclaimer=document.getElementById('travel-disclaimer');
     form.addEventListener('submit',async(e)=>{
       e.preventDefault();const question=input.value.trim();if(!question||question.length>2000)return;
       button.disabled=true;result.hidden=true;status.textContent='Consultando…';
@@ -48,9 +50,28 @@ export function GET(): Response {
         if(!response.ok)throw new Error('Servicio no disponible');
         const data=await response.json();
         summary.textContent=typeof data.summary==='string'?data.summary:'No hay información suficiente.';
-        warnings.replaceChildren();sources.replaceChildren();
-        for(const value of Array.isArray(data.warnings)?data.warnings:[]){if(typeof value!=='string')continue;const item=document.createElement('li');item.textContent=value;warnings.append(item);}
+        warnings.replaceChildren();extraWarnings.replaceChildren();sources.replaceChildren();
+        // Preserve every warning; prioritize only notices relevant to the question.
+        // Presentation filtering cannot change the underlying verified answer or safeguards.
+        const normalized=question.toLocaleLowerCase('es').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'');
+        const aboutTravel=/\\b(como llegar|viajar|vuelo|ferry|transporte|horario|frecuencia|tarifa|precio|cupo|disponibilidad|reserv|route|flight|schedule|price|fare|availability|how (do|can) i get|travel)\\b/.test(normalized);
+        const aboutCommunity=/\\b(yagan|yaman|ukika|comunidad|indigena|community|indigenous|visit|visitar)\\b/.test(normalized);
+        const aboutCoordinates=/\\b(coordenada|latitud|longitud|mapa|ubicacion exacta|coordinate|latitude|longitude|map|exact location)\\b/.test(normalized);
+        const all=Array.isArray(data.warnings)?data.warnings:[];
+        for(const value of all){
+          if(typeof value!=='string')continue;
+          const low=value.toLocaleLowerCase('es');
+          const transport=low.includes('horarios')&&low.includes('tarifas');
+          const community=low.includes('comunidades indigenas')||low.includes('comunidades indígenas');
+          const coordinates=low.includes('coordenadas')||low.includes('geometría canónica');
+          const show=(transport&&aboutTravel)||(community&&aboutCommunity)||(coordinates&&aboutCoordinates)||(!transport&&!community&&!coordinates);
+          const item=document.createElement('li');item.textContent=value;
+          (show?warnings:extraWarnings).append(item);
+        }
         document.getElementById('warning-area').hidden=!warnings.childElementCount;
+        notes.hidden=!extraWarnings.childElementCount;
+        notes.open=false;
+        disclaimer.hidden=!aboutTravel;
         for(const source of Array.isArray(data.sources)?data.sources:[]){if(!source||typeof source.title!=='string')continue;const item=document.createElement('li');let valid=false;try{const url=new URL(source.url);valid=url.protocol==='http:'||url.protocol==='https:';}catch{}if(valid){const link=document.createElement('a');link.href=source.url;link.textContent=source.title;link.rel='noopener noreferrer';link.target='_blank';item.append(link);}else item.textContent=source.title;sources.append(item);}
         document.getElementById('source-area').hidden=!sources.childElementCount;
         status.textContent='';result.hidden=false;
