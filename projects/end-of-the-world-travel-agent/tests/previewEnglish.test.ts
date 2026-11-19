@@ -62,6 +62,9 @@ describe("audited English MVP", () => {
     expect(html).toContain("English coverage is currently limited");
     expect(html).toContain("locale:'en'");
     expect(html).toContain("What is Puerto Williams?");
+    expect(html).toContain("low.includes('schedules')");
+    expect(html).toContain("low.includes('indigenous communities')");
+    expect(html).toContain("low.includes('coordinates')");
     const script = html.match(/<script>([\s\S]*?)<\/script>/)?.[1];
     expect(script).toBeTruthy();
     expect(() => new Script(script!)).not.toThrow();
