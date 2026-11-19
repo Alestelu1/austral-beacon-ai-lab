@@ -12,6 +12,8 @@ export async function GET(): Promise<Response> {
     ['<html lang="es">', '<html lang="en">'],
     ['<nav aria-label="Idioma"><strong>Español</strong> · <a href="/api/demo-en" lang="en">English preview</a></nav>',
      '<nav aria-label="Language"><a href="/api/demo" lang="es">Español</a> · <strong>English preview</strong></nav>'],
+    ['<p><a href="https://www.endoftheworld.travel/es/destinations/puerto-williams/" rel="noopener noreferrer">Volver a la guía de Puerto Williams en End of the World Travel ↗</a></p>',
+     '<p><a href="https://www.endoftheworld.travel/destinations/puerto-williams/" rel="noopener noreferrer">Return to the Puerto Williams guide on End of the World Travel ↗</a></p>'],
     ['(demostración)', '(preview)'],
     ['Demostración documental. Informa sobre destinos del sur austral de Chile. No confirma horarios, tarifas, cupos ni condiciones actuales.',
      'Documented information about Chile’s far south. This preview does not confirm live schedules, fares, seats or availability. English coverage is currently limited to two verified examples.'],
