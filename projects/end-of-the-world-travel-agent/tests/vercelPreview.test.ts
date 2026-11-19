@@ -62,7 +62,7 @@ describe("isolated Vercel preview API", () => {
     expect(html).toContain("aboutTravel");
     expect(html).toContain("aboutCommunity");
     expect(html).toContain("aboutCoordinates");
-    const script = html.match(/<script>([\\s\\S]*?)<\\/script>/)?.[1];
+    const script = html.match(/<script>([\s\S]*?)<\/script>/)?.[1];
     expect(script).toBeTruthy();
     expect(() => new Script(script!)).not.toThrow();
   });
