@@ -20,6 +20,11 @@ describe("Puerto Williams travel projection v1", () => {
     expect(card.name).toBe("Puerto Williams");
     expect(card.region).toContain("Magallanes");
     expect(card.comuna).toBe("Cabo de Hornos");
+    // A visitor-facing introduction should not be only the 2019 INE classification.
+    expect(card.summary).toContain("Isla Navarino");
+    expect(card.summary).toContain("comuna de Cabo de Hornos");
+    expect(card.summary).toContain("2019");
+    expect(card.summary).toContain("Best Tourism Villages");
   });
 
   it("does not publish coordinates without canonical authoritative geometry", () => {
