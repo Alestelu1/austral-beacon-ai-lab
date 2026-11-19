@@ -22,6 +22,7 @@ export function GET(): Response {
 <body>
   <p class="eyebrow">Austral Beacon AI Lab · MVP</p>
   <h1>Travel Assistant</h1>
+  <nav aria-label="Idioma"><strong>Español</strong> · <a href="/api/demo-en" lang="en">English preview</a></nav>
   <p>Demostración documental. Informa sobre destinos del sur austral de Chile. No confirma horarios, tarifas, cupos ni condiciones actuales.</p>
   <form id="form">
     <label for="question">Consulta</label>
