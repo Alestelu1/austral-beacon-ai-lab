@@ -20,6 +20,11 @@ describe("Puerto Williams travel projection v1", () => {
     expect(card.name).toBe("Puerto Williams");
     expect(card.region).toContain("Magallanes");
     expect(card.comuna).toBe("Cabo de Hornos");
+    // A visitor-facing introduction should not be only the 2019 INE classification.
+    expect(card.summary).toContain("Isla Navarino");
+    expect(card.summary).toContain("comuna de Cabo de Hornos");
+    expect(card.summary).toContain("2019");
+    expect(card.summary).toContain("Best Tourism Villages");
   });
 
   it("does not publish coordinates without canonical authoritative geometry", () => {
@@ -55,7 +60,7 @@ describe("Puerto Williams travel projection v1", () => {
     const answer = answerTravelQuestion("¿Qué es Puerto Williams?");
     expect(answer.status).toBe("supported");
     expect(answer.intent).toBe("destination-info");
-    if (answer.intent !== "destination-info" || !answer.card) throw new Error("Expected destination card");
+    if (answer.intent !== "destination-info" || !("card" in answer) || !answer.card) throw new Error("Expected destination card");
     expect(answer.card.id).toBe("puerto-williams");
     expect(answer.card.coordinates).toBeUndefined();
     expect(answer.card.verifiedAt).toBe("2026-09-01");

@@ -60,3 +60,6 @@ jobs:
 
       - name: Run RAG regression suite
         run: npm run test:rag
+
+      - name: Test preview serverless handler
+        run: npx vitest run tests/vercelPreview.test.ts tests/puertoWilliamsProjection.test.ts tests/puntaArenasTravelCopy.test.ts tests/previewEnglish.test.ts

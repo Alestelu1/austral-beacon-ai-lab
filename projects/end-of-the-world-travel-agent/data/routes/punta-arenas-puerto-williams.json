@@ -2,14 +2,36 @@
   "id": "punta-arenas-puerto-williams",
   "origin": "Punta Arenas",
   "destination": "Puerto Williams",
-  "summary": "Punta Arenas y Puerto Williams forman un corredor de conectividad austral con opciones aéreas y marítimas publicadas por operadores. La identidad del corredor se deriva de la Knowledge Base; la operación concreta debe verificarse antes de viajar.",
+  "summary": "Para viajar de Punta Arenas a Puerto Williams, puedes consultar dos alternativas publicadas: los vuelos de Aerovías DAP y la ruta marítima de TABSA. Antes de planificar, confirma directamente con cada operador los días de servicio, horarios, tarifas y disponibilidad.",
   "stages": [
-    {"from":"Punta Arenas","to":"Puerto Williams","mode":"air-or-sea","stability":"dynamic","note":"La modalidad, horarios, frecuencias, tarifas, cupos y disponibilidad requieren verificación actual con los operadores responsables."}
+    {
+      "from": "Punta Arenas",
+      "to": "Puerto Williams",
+      "mode": "air-or-sea",
+      "stability": "dynamic",
+      "note": "Consulta vuelos con Aerovías DAP y servicios marítimos con TABSA. No se confirman fechas, frecuencias, duración, tarifas ni cupos en tiempo real."
+    }
   ],
-  "warnings": ["Esta ficha es una proyección de conocimiento canónico, no una fuente independiente.","No asumir horarios, precios, frecuencias, duración ni disponibilidad vigente."],
+  "warnings": [
+    "Los servicios pueden cambiar por condiciones operativas y meteorológicas. Confirma la información vigente antes de comprar pasajes o iniciar el viaje."
+  ],
   "sources": [
-    {"title":"Vuelos Regulares — Punta Arenas–Puerto Williams","publisher":"Aerovías DAP","url":"https://dapairline.com/vuelos-regulares/","verifiedAt":"2026-09-01","status":"verified","evidenceNote":"Confirma que el operador publica la ruta; no garantiza disponibilidad para una fecha concreta."},
-    {"title":"Ruta Punta Arenas–Puerto Williams","publisher":"Transbordadora Austral Broom (TABSA)","url":"https://www.tabsa.cl/rutas/parenas-pwilliams/","verifiedAt":"2026-08-24","status":"verified","evidenceNote":"Confirma identidad de la ruta publicada; horarios y cupos son dinámicos."}
+    {
+      "title": "Vuelos Regulares — Punta Arenas–Puerto Williams",
+      "publisher": "Aerovías DAP",
+      "url": "https://dapairline.com/vuelos-regulares/",
+      "verifiedAt": "2026-09-01",
+      "status": "verified",
+      "evidenceNote": "Confirma que el operador publica la ruta; no garantiza disponibilidad para una fecha concreta."
+    },
+    {
+      "title": "Ruta Punta Arenas–Puerto Williams",
+      "publisher": "Transbordadora Austral Broom (TABSA)",
+      "url": "https://www.tabsa.cl/rutas/parenas-pwilliams/",
+      "verifiedAt": "2026-08-24",
+      "status": "verified",
+      "evidenceNote": "Confirma identidad de la ruta publicada; horarios y cupos son dinámicos."
+    }
   ],
   "recommendedPage": "/puerto-williams-travel-guide.html",
   "verifiedAt": "2026-09-01"

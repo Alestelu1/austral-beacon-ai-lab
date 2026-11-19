@@ -119,7 +119,8 @@ export function buildPuertoWilliamsDestinationCard(): DestinationCard {
     name: metadata.canonical_name,
     region: region.canonical_name,
     comuna: commune.canonical_name.replace(/^Comuna de /, ""),
-    summary: claimText(identity),
+    // Lead with location and visitor context; preserve the sourced INE city classification.
+    summary: `${claimText(geography)} ${claimText(identity)} ${claimText(recognition)}`,
     stableData: {
       geographicContext: claimText(geography),
       culturalContext: `${claimText(recognition)} El contexto cultural yagán vivo se mantiene en entidades canónicas separadas; esta proyección no infiere población, genealogía ni representación comunitaria.`,
