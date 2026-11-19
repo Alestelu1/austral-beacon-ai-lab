@@ -1,4 +1,5 @@
 import { afterEach, describe, expect, it } from "vitest";
+import { Script } from "node:vm";
 import { POST, GET as answerGet } from "../../../api/answer.js";
 import { GET as healthGet } from "../../../api/health.js";
 import { GET as demoGet } from "../../../api/demo.js";
@@ -61,6 +62,9 @@ describe("isolated Vercel preview API", () => {
     expect(html).toContain("aboutTravel");
     expect(html).toContain("aboutCommunity");
     expect(html).toContain("aboutCoordinates");
+    const script = html.match(/<script>([\\s\\S]*?)<\\/script>/)?.[1];
+    expect(script).toBeTruthy();
+    expect(() => new Script(script!)).not.toThrow();
   });
 
   it("responds 405 to GET /api/answer and health only returns non-sensitive state", async () => {
