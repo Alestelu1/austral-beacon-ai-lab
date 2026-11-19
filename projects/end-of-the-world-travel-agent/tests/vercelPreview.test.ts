@@ -54,7 +54,13 @@ describe("isolated Vercel preview API", () => {
     const response = demoGet();
     expect(response.headers.get("x-robots-tag")).toContain("noindex");
     expect(response.headers.get("content-security-policy")).toContain("connect-src 'self'");
-    expect(await response.text()).toContain("Travel Assistant");
+    const html = await response.text();
+    expect(html).toContain("Travel Assistant");
+    expect(html).toContain("Notas adicionales de verificación");
+    expect(html).toContain("other-warnings");
+    expect(html).toContain("aboutTravel");
+    expect(html).toContain("aboutCommunity");
+    expect(html).toContain("aboutCoordinates");
   });
 
   it("responds 405 to GET /api/answer and health only returns non-sensitive state", async () => {
