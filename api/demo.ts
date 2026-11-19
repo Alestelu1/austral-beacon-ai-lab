@@ -62,9 +62,9 @@ export function GET(): Response {
         for(const value of all){
           if(typeof value!=='string')continue;
           const low=value.toLocaleLowerCase('es');
-          const transport=low.includes('horarios')&&low.includes('tarifas');
-          const community=low.includes('comunidades indigenas')||low.includes('comunidades indígenas');
-          const coordinates=low.includes('coordenadas')||low.includes('geometría canónica');
+          const transport=(low.includes('horarios')&&low.includes('tarifas'))||(low.includes('schedules')&&low.includes('fares'));
+          const community=low.includes('comunidades indigenas')||low.includes('comunidades indígenas')||low.includes('indigenous communities');
+          const coordinates=low.includes('coordenadas')||low.includes('geometría canónica')||low.includes('coordinates');
           const show=(transport&&aboutTravel)||(community&&aboutCommunity)||(coordinates&&aboutCoordinates)||(!transport&&!community&&!coordinates);
           const item=document.createElement('li');item.textContent=value;
           (show?warnings:extraWarnings).append(item);
