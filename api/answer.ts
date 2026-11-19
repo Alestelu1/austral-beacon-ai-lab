@@ -1,4 +1,5 @@
 import { answerViaAssistant } from "../projects/end-of-the-world-travel-agent/src/application/answerViaAssistant.js";
+import { localizePreviewAnswer, type PreviewLocale } from "./locale.js";
 
 const MAX_BODY_BYTES = 16_384;
 const MAX_QUESTION_CHARS = 2_000;
@@ -64,6 +65,11 @@ export async function POST(request: Request): Promise<Response> {
   if (typeof question !== "string" || !question.trim()) {
     return error(400, "INVALID_REQUEST", 'Field "question" must be a non-empty string');
   }
+  const rawLocale = (payload as Record<string, unknown>).locale;
+  if (rawLocale !== undefined && rawLocale !== "es" && rawLocale !== "en") {
+    return error(400, "INVALID_LOCALE", "Locale must be es or en");
+  }
+  const locale: PreviewLocale = rawLocale === "en" ? "en" : "es";
   const trimmed = question.trim();
   if (trimmed.length > MAX_QUESTION_CHARS) {
     return error(400, "QUESTION_TOO_LONG", "Question exceeds 2000 characters");
@@ -77,7 +83,7 @@ export async function POST(request: Request): Promise<Response> {
         timer = setTimeout(() => reject(new Error("ANSWER_TIMEOUT")), TIMEOUT_MS);
       }),
     ]);
-    return json(200, result);
+    return json(200, localizePreviewAnswer(result, locale));
   } catch (cause) {
     if (cause instanceof Error && cause.message === "ANSWER_TIMEOUT") {
       return error(504, "ANSWER_TIMEOUT", "Answer timed out");
