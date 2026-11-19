@@ -60,3 +60,6 @@ jobs:
 
       - name: Run RAG regression suite
         run: npm run test:rag
+
+      - name: Test API request safeguards
+        run: npx vitest run tests/api.test.ts tests/apiGuards.test.ts
