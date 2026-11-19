@@ -135,3 +135,10 @@ CI última rama `feat/travel-vercel-preview-api-build13` commit `12bb8ead7d41205
 ### Confirmación final Astro Preview (19 nov 2026)
 - Deployment `dpl_2geT3sKcvDQqaCEmbU2NiFt93kp3` llegó a **READY**. GET protegidos vía Vercel `/assistant-preview/` EN y `/es/assistant-preview/` ES **HTTP 200**, ambos con `noindex`, enlaces al alias real del agente y retorno a la guía de Puerto Williams. URL Preview base `https://end-of-the-world-travel-astro-92cjkpzy1-alestelu1s-projects.vercel.app`.
 - Comprobación servidor de ambas páginas y alias sí; falta visita manual CTA → Vercel Authentication → consulta → retorno por navegador (E2E humano). No afirmar widget público funcionando.
+
+## 19 nov 2026 — Confirmación humana de navegación y observaciones UI
+- El usuario confirmó «los enlaces funcionan igual» tras compartir dos capturas del puente Astro Preview. Archivos de evidencia en conversación: `travel-assistant-integration-preview-end-of-the-world-travel-20261119-013604.png` y `travel-assistant-integration-preview-end-of-the-world-travel-20261119-013641.png`.
+- La página de puente renderiza diseño y CTAs. Ambas capturas muestran **English Preview**, no constituyen todavía evidencia visual de `/es/assistant-preview/`; esa ruta sí había pasado HTTP 200 y noindex mediante Vercel.
+- Hallazgo nuevo: contraste deficiente del header (marca y menú blancos sobre fondo muy claro), porque `BaseLayout.astro` usa header transparente/blanco fuera de rutas `about` y `photo-credits`. Corregir mediante estilo de encabezado claro específico para las rutas `/assistant-preview` y `/es/assistant-preview` sin tocar las guías ni homepage.
+- El usuario reporta que funcionan los enlaces de la página, pero no ha documentado aún un recorrido completo con pregunta y retorno a guía en ambos idiomas. Registrar como prueba de navegación reportada, no como E2E automático.
+- PR Astro #3 sigue Draft; PR AI Lab #30 sigue Draft. Próximo: corregir contraste del header en PR #3, comprobar CI+Preview, luego finalizar demo para postulación Build 13; nada en producción.
