@@ -9,8 +9,10 @@ export async function GET(): Promise<Response> {
     return Response.json({ error: { code: "PREVIEW_DISABLED" } }, { status: 503, headers: { "Cache-Control": "no-store" } });
   }
   const cases = [
-    { id: "puerto-williams", question: "¿Qué es Puerto Williams?", expectedStatus: "supported" },
-    { id: "no-evidence", question: "¿Cuánto cuesta un café?", expectedStatus: "unsupported" },
+    { id: "puerto-williams", question: "¿Qué es Puerto Williams?", expectedStatus: "supported", locale: "es" },
+    { id: "no-evidence", question: "¿Cuánto cuesta un café?", expectedStatus: "unsupported", locale: "es" },
+    { id: "puerto-williams-en", question: "What is Puerto Williams?", expectedStatus: "supported", locale: "en" },
+    { id: "route-en", question: "How can I travel from Punta Arenas to Puerto Williams?", expectedStatus: "supported", locale: "en" },
   ] as const;
   const results: Array<{ id: string; actualStatus: string; intent: string; passed: boolean }> = [];
   try {
@@ -19,14 +21,15 @@ export async function GET(): Promise<Response> {
       const response = await answerPost(new Request("https://preview.local/api/answer", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ question: testCase.question }),
+        body: JSON.stringify({ question: testCase.question, locale: testCase.locale }),
       }));
-      const answer = await response.json() as { status?: string; intent?: string };
+      const answer = await response.json() as { status?: string; intent?: string; summary?: string };
+      const englishOk = testCase.locale !== "en" || (typeof answer.summary === "string" && !answer.summary.includes("se encuentra") && (testCase.id !== "route-en" || (answer.summary.includes("DAP") && answer.summary.includes("TABSA"))));
       results.push({
         id: testCase.id,
         actualStatus: answer.status ?? "invalid",
         intent: answer.intent ?? "invalid",
-        passed: response.status === 200 && answer.status === testCase.expectedStatus,
+        passed: response.status === 200 && answer.status === testCase.expectedStatus && englishOk,
       });
     }
     const ok = results.every((result) => result.passed);
