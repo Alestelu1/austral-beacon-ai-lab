@@ -17,7 +17,7 @@ const routeWarning =
 
 export function localizePreviewAnswer(answer: Answer, locale: PreviewLocale): Answer {
   if (locale === "es") return answer;
-  if (answer.status === "supported" && answer.intent === "destination-info" && answer.card?.id === "puerto-williams") {
+  if (answer.status === "supported" && answer.intent === "destination-info" && "card" in answer && answer.card?.id === "puerto-williams") {
     return {
       ...answer,
       summary: pwSummary,
